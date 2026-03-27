@@ -1,0 +1,386 @@
+[
+  {
+    "vibe_tags": ["corrompu", "securite-forte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "La milice ferme les yeux sur un violent réseau de contrebande qui opère depuis ce quartier.",
+      "en": "The militia turns a blind eye to a violent smuggling ring operating here."
+    }
+  },
+  {
+    "vibe_tags": ["securite-forte", "religion-forte", "loi-stricte"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Le commandant local recrute de force quiconque traîne trop longtemps dans les rues à la nuit tombée.",
+      "en": "The local commander forcibly recruits anyone lingering in the streets after dark."
+    }
+  },
+  {
+    "vibe_tags": ["all"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Les réserves de nourriture de {Lieu} diminuent mystérieusement chaque nuit, et de monstrueuses empreintes ont été trouvées.",
+      "en": "The food reserves of {Lieu} mysteriously dwindle each night, and monstrous tracks were found."
+    }
+  },
+  {
+    "vibe_tags": ["magie-forte", "luxe-opulence"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Un noble excentrique de {Lieu} achèterait des artefacts magiques maudits à prix d'or dans la clandestinité.",
+      "en": "An eccentric noble in {Lieu} is supposedly buying cursed magical artifacts for a fortune in secret."
+    }
+  },
+  {
+    "vibe_tags": ["bienveillant", "accueillant"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Malgré les lois strictes, les habitants cachent et nourrissent un héros local injustement recherché par la couronne.",
+      "en": "Despite strict laws, the locals are hiding and feeding a local hero unjustly wanted by the crown."
+    }
+  },
+  {
+    "vibe_tags": ["miserable", "sauvage"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Une fièvre noire ronge les bas-fonds. Les désespérés murmurent qu'il faut pactiser avec une sorcière des bois pour en guérir.",
+      "en": "A black fever is ravaging the slums. The desperate whisper that one must make a pact with a woods witch to be cured."
+    }
+  },
+  {
+    "vibe_tags": ["religion-forte", "corrompu", "pieux"],
+    "size_tags": ["Village", "Petite Ville", "Grande Cité", "Capitale"],
+    "text": {
+      "fr": "Le clergé local vendrait de fausses saintes reliques aux pèlerins pour financer des fêtes privées décadentes.",
+      "en": "The local clergy is allegedly selling fake holy relics to pilgrims to fund decadent private parties."
+    }
+  },
+  {
+    "vibe_tags": ["sauvage", "mystique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Quand la lune est pleine, une créature hurle aux portes de {Lieu}. Les derniers chasseurs partis la traquer ne sont jamais revenus.",
+      "en": "When the moon is full, a creature howls at the gates of {Lieu}. The last hunters who went to track it never returned."
+    }
+  },
+  {
+    "vibe_tags": ["all"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "La rumeur court que la redoutable Guilde des Voleurs prépare le plus gros casse du siècle pour le prochain festival.",
+      "en": "Rumor has it that the dreaded Thieves' Guild is planning the biggest heist of the century for the upcoming festival."
+    }
+  },
+  {
+    "vibe_tags": ["paranoia", "mystique"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Faites attention aux miroirs de la taverne... Certains jurent y avoir vu des reflets qui ne leur appartenaient pas.",
+      "en": "Be careful with the mirrors in the tavern... Some swear they saw reflections that weren't theirs."
+    }
+  },
+  {
+    "vibe_tags": ["commerce-fort", "luxe-opulence", "corrompu"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Un navire marchand vient d'arriver avec une cargaison de soie rare, mais on murmure que l'équipage a été remplacé par des mercenaires.",
+      "en": "A merchant ship just arrived with a cargo of rare silk, but whispers say the crew was replaced by mercenaries."
+    }
+  },
+  {
+    "vibe_tags": ["loi-stricte", "securite-forte", "paranoia"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Les murs ont des oreilles. Ne parlez jamais en mal du bourgmestre, même chez vous. Ses espions sont partout.",
+      "en": "The walls have ears. Never speak ill of the burgomaster, even in your own home. His spies are everywhere."
+    }
+  },
+  {
+    "vibe_tags": ["loi-faible", "corrompu"],
+    "size_tags": ["Campement", "Hameau", "Village", "Petite Ville"],
+    "text": {
+      "fr": "On dit que le chef du village prend sa part sur chaque attaque de bandits qui frappe les caravanes marchandes.",
+      "en": "Rumor has it the village chief takes a cut from every bandit attack on merchant caravans."
+    }
+  },
+  {
+    "vibe_tags": ["pieux", "mystique", "religion-forte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "La statue sur la place centrale pleurerait des larmes de sang à chaque fois qu'un meurtre est commis dans {Lieu}.",
+      "en": "The statue in the central square supposedly weeps tears of blood every time a murder is committed in {Lieu}."
+    }
+  },
+  {
+    "vibe_tags": ["religion-faible", "commerce-fort"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "L'ancien temple a été racheté par une guilde marchande. Ils en auraient fait une salle de jeu clandestine dans la crypte.",
+      "en": "The old temple was bought by a merchant guild. They allegedly turned the crypt into an underground gambling hall."
+    }
+  },
+  {
+    "vibe_tags": ["miserable", "paranoia"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Les mendiants disparaissent les uns après les autres. Les gens affamés commencent à regarder le boucher d'un sale œil.",
+      "en": "Beggars are disappearing one after another. Starving people are starting to look at the butcher with suspicion."
+    }
+  },
+  {
+    "vibe_tags": ["festif", "luxe-opulence", "corrompu"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Le grand bal masqué de ce soir servira de couverture pour assassiner un rival politique de haut rang.",
+      "en": "Tonight's grand masquerade ball will serve as a cover to assassinate a high-ranking political rival."
+    }
+  },
+  {
+    "vibe_tags": ["accueillant", "bienveillant"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Il y a une vieille femme à la sortie de {Lieu} qui offre des remèdes gratuitement, mais on dit qu'elle n'a pas vieilli d'un jour en 30 ans.",
+      "en": "There is an old woman on the outskirts of {Lieu} who offers free remedies, but they say she hasn't aged a day in 30 years."
+    }
+  },
+  {
+    "vibe_tags": ["magie-forte", "mystique"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "N'achetez pas de potions au mage de la tour ouest. La dernière fois, il a transformé un fermier en chèvre par erreur.",
+      "en": "Don't buy potions from the mage in the west tower. Last time, he accidentally turned a farmer into a goat."
+    }
+  },
+  {
+    "vibe_tags": ["commerce-fort", "loi-faible"],
+    "size_tags": ["Petite Ville", "Grande Cité"],
+    "text": {
+      "fr": "Pour éviter les taxes écrasantes, les marchands utilisent les vieux égouts abandonnés pour faire entrer leurs marchandises.",
+      "en": "To avoid crushing taxes, merchants use the old abandoned sewers to smuggle their goods in."
+    }
+  },
+  {
+    "vibe_tags": ["pieux", "bienveillant", "religion-forte"],
+    "size_tags": ["Village", "Petite Ville", "Grande Cité"],
+    "text": {
+      "fr": "L'orphelinat local serait protégé par une véritable entité angélique. Quiconque lève la main sur un enfant est frappé par la foudre.",
+      "en": "The local orphanage is said to be protected by an actual angelic entity. Anyone who strikes a child is struck by lightning."
+    }
+  },
+  {
+    "vibe_tags": ["paranoia", "securite-forte"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "Ne faites pas confiance à la Garde. On dit que la moitié d'entre eux a été discrètement remplacée par des métamorphes.",
+      "en": "Don't trust the Guard. Rumor has it half of them have been quietly replaced by shapeshifters."
+    }
+  },
+  {
+    "vibe_tags": ["religion-faible", "corrompu"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Les prêtres de {Lieu} ont perdu la foi. Ils parient l'or des offrandes dans des combats de chiens clandestins.",
+      "en": "The priests of {Lieu} have lost their faith. They gamble offering gold in underground dog fights."
+    }
+  },
+  {
+    "vibe_tags": ["loi-stricte", "paranoia"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Il est illégal de porter une capuche en public ici. Les gardes ont ordre de tirer à vue sur les individus masqués.",
+      "en": "It's illegal to wear a hood in public here. Guards have orders to shoot masked individuals on sight."
+    }
+  },
+  {
+    "vibe_tags": ["sauvage", "loi-faible"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Ici, on ne fait pas appel au juge pour régler un litige. Les dettes se payent à mains nues, au premier sang.",
+      "en": "Here, we don't call a judge to settle a dispute. Debts are paid bare-knuckled, to first blood."
+    }
+  },
+  {
+    "vibe_tags": ["miserable", "religion-forte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Une procession de flagellants traverse les rues chaque nuit, propageant la maladie qu'ils prétendent conjurer.",
+      "en": "A procession of flagellants roams the streets every night, spreading the disease they claim to ward off."
+    }
+  },
+  {
+    "vibe_tags": ["luxe-opulence", "corrompu"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "La Comtesse garde sa jeunesse éternelle en prenant des bains dans le sang de jeunes elfes enlevés dans la région.",
+      "en": "The Countess maintains her eternal youth by bathing in the blood of young elves kidnapped in the region."
+    }
+  },
+  {
+    "vibe_tags": ["festif", "mystique", "sauvage"],
+    "size_tags": ["Campement", "Village", "Petite Ville"],
+    "text": {
+      "fr": "Les musiciens du festival ne sont pas humains. Si on regarde bien sous leurs capes, on peut apercevoir des sabots.",
+      "en": "The festival musicians aren't human. If you look closely under their cloaks, you can spot hooves."
+    }
+  },
+  {
+    "vibe_tags": ["accueillant", "commerce-fort"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Une caravane marchande vient d'arriver et distribue des échantillons gratuits d'une épice incroyablement addictive.",
+      "en": "A merchant caravan just arrived and is giving out free samples of an incredibly addictive spice."
+    }
+  },
+  {
+    "vibe_tags": ["magie-forte", "paranoia"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Ne lisez aucun livre trouvé dans la rue. Il y a un démon qui les enchante pour voler les souvenirs de ceux qui les lisent.",
+      "en": "Don't read any book found on the street. There's a demon enchanting them to steal the memories of readers."
+    }
+  },
+  {
+    "vibe_tags": ["bienveillant", "loi-faible"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Comme nous n'avons pas de prison, les voleurs pris la main dans le sac sont souvent relâchés avec un simple repas chaud et une leçon de morale.",
+      "en": "Since we have no jail, thieves caught red-handed are often released with just a hot meal and a moral lesson."
+    }
+  },
+  {
+    "vibe_tags": ["pieux", "mystique"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "L'eau du puits sacré au centre de {Lieu} peut guérir la cécité... mais ceux qui la boivent commencent à voir des fantômes.",
+      "en": "The holy well water in the center of {Lieu} can cure blindness... but those who drink it start seeing ghosts."
+    }
+  },
+  {
+    "vibe_tags": ["loi-stricte", "commerce-fort", "corrompu"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Capitale"],
+    "text": {
+      "fr": "Les taxes douanières sont devenues si aberrantes que la guilde des marchands prépare discrètement une révolte armée.",
+      "en": "Custom taxes have become so absurd that the merchants' guild is quietly preparing an armed revolt."
+    }
+  },
+  {
+    "vibe_tags": ["religion-faible", "miserable"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Les dieux ont abandonné cet endroit le jour où l'ancien temple a brûlé. Plus aucune prière n'est exaucée ici.",
+      "en": "The gods abandoned this place the day the old temple burned. No prayers are ever answered here anymore."
+    }
+  },
+  {
+    "vibe_tags": ["sauvage", "magie-forte"],
+    "size_tags": ["Campement", "Hameau", "Village", "Petite Ville"],
+    "text": {
+      "fr": "Les druides de la forêt voisine sont en colère. Ils éveillent les vieux arbres pour écraser {Lieu} sous leurs racines.",
+      "en": "The druids of the nearby forest are angry. They are awakening the old trees to crush {Lieu} beneath their roots."
+    }
+  },
+  {
+    "vibe_tags": ["paranoia", "corrompu", "securite-forte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "La milice empoisonne doucement les réserves d'eau avec une drogue pour garder la population soumise et fatiguée.",
+      "en": "The militia is slowly poisoning the water reserves with a drug to keep the population docile and tired."
+    }
+  },
+  {
+    "vibe_tags": ["festif", "sauvage"],
+    "size_tags": ["Village", "Petite Ville", "Grande Cité"],
+    "text": {
+      "fr": "Méfiez-vous du grand banquet de la Moisson. On dit qu'à minuit, la fête se transforme toujours en une violente chasse à l'homme.",
+      "en": "Beware the great Harvest banquet. Rumor has it that at midnight, the party always turns into a violent manhunt."
+    }
+  },
+  {
+    "vibe_tags": ["accueillant", "mystique", "bienveillant"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "L'aubergiste de {Lieu} est incroyable. On raconte qu'il devine toujours votre plat préféré avant même que vous ne l'ayez commandé.",
+      "en": "The innkeeper in {Lieu} is incredible. They say he always guesses your favorite meal before you even order."
+    }
+  },
+  {
+    "vibe_tags": ["luxe-opulence", "magie-forte"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "text": {
+      "fr": "La nouvelle mode chez les nobles est d'utiliser des carrosses lévitants, mais leurs cristaux instables lâchent parfois en plein vol.",
+      "en": "The new trend among nobles is using levitating carriages, but their unstable crystals sometimes fail mid-flight."
+    }
+  },
+  {
+    "vibe_tags": ["miserable", "loi-faible", "criminelle"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole"],
+    "text": {
+      "fr": "Dans le quartier pauvre, la vie ne vaut rien. Tu peux payer un coupe-jarret trois pièces de cuivre pour faire disparaître quelqu'un.",
+      "en": "In the poor district, life is cheap. You can pay a cutthroat three copper coins to make someone disappear."
+    }
+  },
+  {
+    "vibe_tags": ["religion-forte", "paranoia", "loi-stricte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "L'Inquisition arrive la semaine prochaine. Cachez vos livres et méfiez-vous, ils brûlent quiconque possède un grain de beauté suspect.",
+      "en": "The Inquisition arrives next week. Hide your books and beware, they burn anyone with a suspicious mole."
+    }
+  },
+  {
+    "vibe_tags": ["commerce-fort", "mystique"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Capitale"],
+    "text": {
+      "fr": "Un épicier vend un curry étranger très rare. Ceux qui en mangent se réveillent en connaissant la date exacte de leur mort.",
+      "en": "A grocer sells a very rare foreign curry. Those who eat it wake up knowing the exact date of their death."
+    }
+  },
+  {
+    "vibe_tags": ["bienveillant", "pieux"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Le grand prêtre a distribué tout l'or de son église aux pauvres. Il dort désormais dans la rue avec les mendiants.",
+      "en": "The high priest distributed all his church's gold to the poor. He now sleeps on the street with the beggars."
+    }
+  },
+  {
+    "vibe_tags": ["securite-forte", "loi-stricte", "climat-terreur"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Capitale"],
+    "text": {
+      "fr": "Les grandes portes se verrouillent au coucher du soleil. Si vous êtes encore dehors après le troisième gong, les archers ont ordre de tirer.",
+      "en": "The main gates lock at sunset. If you're still outside after the third gong, the archers have orders to shoot."
+    }
+  },
+  {
+    "vibe_tags": ["corrompu", "festif", "luxe-opulence"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Les somptueux banquets du maire sont magnifiques, mais tout le monde sait qu'ils sont financés par le Syndicat du Crime local.",
+      "en": "The mayor's lavish banquets are beautiful, but everyone knows they are funded by the local Crime Syndicate."
+    }
+  },
+  {
+    "vibe_tags": ["sauvage", "accueillant", "mystique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "text": {
+      "fr": "Les villageois sont très polis avec les voyageurs, mais chaque nuit, ils vont tous nourrir une chose gigantesque tapie dans la caverne nord.",
+      "en": "The villagers are very polite to travelers, but every night, they all go feed a gigantic thing lurking in the north cave."
+    }
+  },
+  {
+    "vibe_tags": ["religion-faible", "magie-forte", "commerce-fort"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole"],
+    "text": {
+      "fr": "Les alchimistes vendent des potions si puissantes que plus personne ne va prier pour guérir. Le clergé réclame l'interdiction de la magie.",
+      "en": "Alchemists sell potions so powerful that no one prays for healing anymore. The clergy is demanding a ban on magic."
+    }
+  },
+  {
+    "vibe_tags": ["paranoia", "loi-stricte", "securite-forte"],
+    "size_tags": ["all"],
+    "text": {
+      "fr": "Le magistrat a interdit de chuchoter dans les lieux publics sous peine de flagellation. Tout le monde doit parler à voix haute.",
+      "en": "The magistrate banned whispering in public places under penalty of flogging. Everyone must speak loudly."
+    }
+  }
+]
