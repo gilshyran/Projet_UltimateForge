@@ -1,0 +1,38 @@
+[
+  {
+    "require_stage_tags": [],
+    "require_vibe_tags": ["miserable", "sauvage"],
+    "require_eco_tags": ["survie-pauvre", "criminel"],
+    "secret_mj": {
+      "fr": "Désespoir pur. L'entité rencontrée (PNJ ou animal) est affamée ou terrifiée. Elle est prête à tout pour survivre, quitte à agir de manière erratique ou désespérée, mais elle n'est pas une menace organisée."
+    },
+    "output_tags": ["desespoir", "survie", "imprevisible"]
+  },
+  {
+    "require_stage_tags": ["obstacle_naturel", "vestiges"],
+    "require_vibe_tags": ["corrompu", "sauvage", "loi-faible"],
+    "require_eco_tags": [],
+    "secret_mj": {
+      "fr": "Embuscade tactique. Ce que le groupe voit n'est qu'un appât ou une diversion. Le reste des assaillants est caché, attendant le moment parfait pour encercler les héros."
+    },
+    "output_tags": ["piege", "hostile", "embuscade"]
+  },
+  {
+    "require_stage_tags": [],
+    "require_vibe_tags": ["securite-forte", "paranoia", "loi-stricte"],
+    "require_eco_tags": ["militaire"],
+    "secret_mj": {
+      "fr": "Contrôle strict. Ils chercheront à interroger, fouiller ou taxer le groupe. Tout manque de respect ou comportement suspect entraînera une escalade rapide de la situation."
+    },
+    "output_tags": ["militaire", "controle", "autorite"]
+  },
+  {
+    "require_stage_tags": ["halte", "ressource", "abri"],
+    "require_vibe_tags": ["bienveillant", "accueillant", "luxe-opulence", "commerce-fort"],
+    "require_eco_tags": ["commerce", "artisanat"],
+    "secret_mj": {
+      "fr": "Opportunité d'échange. La rencontre est pacifique et curieuse. C'est l'occasion pour les joueurs de troquer, d'apprendre des rumeurs locales ou de se reposer en bonne compagnie."
+    },
+    "output_tags": ["pacifique", "commerce", "social"]
+  }
+]
