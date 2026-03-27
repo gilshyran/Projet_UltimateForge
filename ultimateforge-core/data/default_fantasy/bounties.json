@@ -1,5 +1,15 @@
 {
   "villagerRequests": [
+    { "tags": ["isole", "agricole", "elevage"], "fr": "Cherche bras armés pour protéger le troupeau cette nuit. Les loups hurlent beaucoup trop près de la clôture.", "en": "Looking for armed help to protect the herd tonight. Wolves are howling too close to the fence." },
+    { "tags": ["isole", "minerai"], "fr": "N'entrez sous aucun prétexte dans la galerie Est ! Les étais sont fragiles et on entend des voix dans la roche.", "en": "Do not enter the East tunnel under any circumstances! The props are weak and voices can be heard in the rock." },
+    { "tags": ["isole", "religion-forte", "pieux"], "fr": "Pèlerins de passage, merci de laisser une offrande matérielle pour l'entretien du sanctuaire. La foi ne remplit pas l'assiette.", "en": "Passing pilgrims, please leave a material offering for the maintenance of the sanctuary. Faith doesn't fill the plate." },
+    { "tags": ["isole", "commerce"], "fr": "Un client est parti sans payer en direction du gué. Rattrapez-le, ramenez-moi mon or et gardez le reste de ses affaires.", "en": "A patron left without paying towards the ford. Catch him, bring me my gold and keep the rest of his belongings." },
+    { "tags": ["isole", "artisanat"], "fr": "Le mécanisme principal s'est coincé à cause d'un tronc charrié par le courant. J'ai besoin de force brute pour le dégager.", "en": "The main mechanism is jammed by a log carried by the current. I need brute force to clear it." },
+    { "tags": ["isole", "sauvage"], "fr": "Si vous trouvez un cheval sellé errant seul sur la route du nord, ramenez-le ici. Son cavalier n'en aura manifestement plus besoin.", "en": "If you find a saddled horse wandering alone on the north road, bring it here. Its rider obviously won't need it anymore." },
+    { "tags": ["isole", "all"], "fr": "Avis aux voyageurs : Le prochain lieu civilisé est à 4 jours de marche acharnée. Ravitaillez-vous ici ou priez les dieux.", "en": "Notice to travelers: The next civilized place is a 4-day hard march away. Restock here or pray to the gods." },
+    { "tags": ["isole", "survie-pauvre", "miserable"], "fr": "Échange un outil de travail en bon état contre un remède contre la fièvre. C'est pour ma fille, pitié.", "en": "Trading a working tool in good condition for a fever remedy. It's for my daughter, please." },
+    { "tags": ["isole", "paranoia"], "fr": "Fermez vos portes à double tour ce soir. Le vent porte des murmures qui ne sont pas humains.", "en": "Double lock your doors tonight. The wind carries whispers that are not human." },
+    { "tags": ["isole", "savoir-magie"], "fr": "Cherche ingrédients rares trouvables uniquement sur les cimes. Ne posez pas de questions sur leur utilité.", "en": "Looking for rare ingredients found only on the peaks. Don't ask questions about their use." },
     { "tags": ["all"], "fr": "J'ai perdu mon chien près de {Lieu}. Récompense : 2 {Currency}.", "en": "I lost my dog near {Lieu}. Reward: 2 {Currency}." },
     { "tags": ["all"], "fr": "Je donne des cours d'épée pour débutants. Demandez {NPC}.", "en": "Giving sword lessons for beginners. Ask for {NPC}." },
     { "tags": ["famine", "survie-pauvre", "miserable"], "fr": "Échange vieux chaudron en fonte contre un sac de farine. C'est urgent.", "en": "Trading an old iron cauldron for a bag of flour. Urgent." },
@@ -302,6 +312,30 @@
       "title": { "fr": "Convoi de Ravitaillement", "en": "Supply Convoy" }, 
       "desc": { "fr": "La ville meurt de faim. Prime doublée pour quiconque ramène un chariot de vivres intact.", "en": "The town is starving. Double bounty for anyone who brings back an intact food cart." }, 
       "reward": 250 
+    },
+    { 
+      "tags": ["isole", "sauvage", "predateurs"],
+      "title": { "fr": "La Bête de la Route", "en": "The Road Beast" }, 
+      "desc": { "fr": "Un prédateur anormalement intelligent harcèle les voyageurs isolés et a tué notre chien de garde. Ramenez sa tête.", "en": "An abnormally intelligent predator harasses isolated travelers and killed our guard dog. Bring its head." }, 
+      "reward": 100 
+    },
+    { 
+      "tags": ["isole", "criminelle", "corrompu"],
+      "title": { "fr": "Bandits de Grand Chemin", "en": "Highwaymen" }, 
+      "desc": { "fr": "Un groupe de renégats a monté un camp dans les bois voisins et rackette nos ravitaillements. Nettoyez le campement.", "en": "A group of renegades set up camp in the nearby woods and extort our supplies. Clear the camp." }, 
+      "reward": 250 
+    },
+    { 
+      "tags": ["isole", "mystique", "magie-forte"],
+      "title": { "fr": "Anomalie Nocturne", "en": "Nocturnal Anomaly" }, 
+      "desc": { "fr": "Des lumières étranges dansent au-dessus des collines la nuit et terrifient les bêtes. Cherchons quelqu'un pour investiguer le phénomène.", "en": "Strange lights dance over the hills at night and terrify the beasts. Looking for someone to investigate the phenomenon." }, 
+      "reward": "150 + Butin trouvé" 
+    },
+    { 
+      "tags": ["isole", "religion-forte"],
+      "title": { "fr": "Pèlerin Disparu", "en": "Missing Pilgrim" }, 
+      "desc": { "fr": "Un religieux important a fait halte ici avant de partir vers les ruines. Il n'est jamais revenu. Retrouvez-le, vivant ou mort.", "en": "An important cleric stopped here before heading to the ruins. He never returned. Find him, dead or alive." }, 
+      "reward": 300 
     }
   ]
 }
