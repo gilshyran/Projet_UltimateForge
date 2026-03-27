@@ -1,0 +1,307 @@
+{
+  "villagerRequests": [
+    { "tags": ["all"], "fr": "J'ai perdu mon chien près de {Lieu}. Récompense : 2 {Currency}.", "en": "I lost my dog near {Lieu}. Reward: 2 {Currency}." },
+    { "tags": ["all"], "fr": "Je donne des cours d'épée pour débutants. Demandez {NPC}.", "en": "Giving sword lessons for beginners. Ask for {NPC}." },
+    { "tags": ["famine", "survie-pauvre", "miserable"], "fr": "Échange vieux chaudron en fonte contre un sac de farine. C'est urgent.", "en": "Trading an old iron cauldron for a bag of flour. Urgent." },
+    { "tags": ["famine", "survie-pauvre", "sauvage"], "fr": "Attention ! Des rôdeurs affamés ont été vus près du gué sud.", "en": "Warning! Starving prowlers spotted near the south ford." },
+    { "tags": ["avant-poste", "militaire", "dictature-militaire"], "fr": "L'armée réquisitionne le fer. Apportez vos vieux outils à la forge.", "en": "The army is requisitioning iron. Bring your old tools to the forge." },
+    { "tags": ["commerce", "luxe-opulence", "age_or"], "fr": "Cherche gardes du corps pour escorter une cargaison précieuse. Paie généreuse.", "en": "Looking for bodyguards to escort a precious shipment. Generous pay." },
+    { "tags": ["religion-forte", "pelerinage", "theocratie-majeure"], "fr": "Que les hérétiques tremblent ! La purification approche. Signalez tout comportement suspect.", "en": "Let the heretics tremble! Purification is near. Report any suspicious behavior." },
+    { "tags": ["agricole", "ressource-agriculture", "elevage"], "fr": "La moisson approche. Cherche bras costauds, nourris et logés. Voir {NPC}.", "en": "Harvest is coming. Looking for strong arms, room and board included. See {NPC}." },
+    { "tags": ["savoir-magie", "magie-forte", "herbe"], "fr": "Achète herbes luisantes cueillies à minuit les nuits de pleine lune. Bon prix.", "en": "Buying glowing herbs picked at midnight on full moons. Good price." },
+    { "tags": ["artisanat", "bois", "minerai"], "fr": "On a volé mes outils dans mon atelier ! Récompense si ramenés à {NPC}.", "en": "My tools were stolen from my workshop! Reward if brought back to {NPC}." },
+    { "tags": ["criminelle", "cartel-criminel", "corrompu"], "fr": "Arrivage d'épices rares... sans poser de questions. Cherchez {NPC} derrière la taverne.", "en": "Rare spices arrived... no questions asked. Look for {NPC} behind the tavern." },
+    { "tags": ["isole", "defense-naturelle", "sauvage"], "fr": "Ne sortez pas seuls la nuit. Les loups sont devenus fous près de {Lieu}.", "en": "Do not go out alone at night. The wolves have gone mad near {Lieu}." },
+    { "tags": ["bienveillant", "festif", "accueillant"], "fr": "Avis ! Grand banquet ce soir sur la place. Musiciens voyageurs bienvenus !", "en": "Notice! Grand banquet tonight in the square. Traveling musicians welcome!" },
+    { "tags": ["gouvernance-mystique", "mystique", "pieux", "paranoia"], "fr": "La fin est proche ! Les signes ne trompent pas. Repentez-vous avant qu'il ne soit trop tard.", "en": "The end is near! The signs do not lie. Repent before it's too late." },
+    { "tags": ["climat-terreur", "tyrannie", "inegalite"], "fr": "Aidez-moi, je vous en supplie. Ils ont emmené mon fils au donjon et... (le reste du mot est arraché).", "en": "Help me, I beg you. They took my son to the keep and... (the rest of the note is torn off)." },
+    { "tags": ["fleau", "miserable", "survie"], "fr": "Échange relique de famille contre remède miracle. {NPC} se meurt de la fièvre.", "en": "Trading family heirloom for a miracle cure. {NPC} is dying of fever." },
+    { "tags": ["mine", "ressource-minerai", "artisanat"], "fr": "Recherche hommes courageux pour dégager l'entrée de la galerie ouest. Risques d'éboulement.", "en": "Looking for brave men to clear the west tunnel entrance. Cave-in risks." },
+    { "tags": ["ressource-eau", "survie-pauvre", "Désert"], "fr": "Le puits de l'est est presque à sec. Par décret, rationnez votre eau !", "en": "The east well is almost dry. By decree, ration your water!" },
+    { "tags": ["tourisme-foi", "pelerinage", "commerce-fort"], "fr": "Chambres d'hôtes complètes chez {NPC}. Ne frappez plus à ma porte, merci.", "en": "Guest rooms full at {NPC}'s. Stop knocking on my door, thank you." },
+    { "tags": ["democratie-locale", "egalite", "tradition"], "fr": "N'oubliez pas l'assemblée citoyenne de demain ! L'avenir du pont sera voté.", "en": "Don't forget tomorrow's citizen assembly! The future of the bridge will be voted on." },
+    { "tags": ["agricole", "ressource-agriculture"], "fr": "Échange deux poules pondeuses contre une bêche en bon état.", "en": "Trading two laying hens for a spade in good condition." },
+    { "tags": ["ressource-elevage", "sauvage"], "fr": "Mes moutons disparaissent ! Celui qui trouve le loup aura toute ma gratitude (et un gigot).", "en": "My sheep are disappearing! Whoever finds the wolf gets my gratitude (and a leg of lamb)." },
+    { "tags": ["survie-pauvre", "miserable"], "fr": "Cherche vieilles couvertures, même trouées. L'hiver sera rude.", "en": "Looking for old blankets, even with holes. Winter will be harsh." },
+    { "tags": ["luxe-opulence", "bourgeois"], "fr": "Le Seigneur {NPC} cherche un précepteur pour son fils. Patience exigée, très bien payé.", "en": "Lord {NPC} is looking for a tutor for his son. Patience required, very well paid." },
+    { "tags": ["savoir-magie", "magocratie", "mystique"], "fr": "Recherche apprenti(e). Doit résister aux brûlures magiques mineures.", "en": "Looking for an apprentice. Must be resistant to minor magical burns." },
+    { "tags": ["criminelle", "cartel-criminel", "corrompu"], "fr": "Quelqu'un a 'trouvé' une chevalière en or près du port ? Je la rachète sans poser de questions.", "en": "Did someone 'find' a gold signet ring near the port? I'll buy it back, no questions asked." },
+    { "tags": ["religion-forte", "theocratie-majeure", "pieux"], "fr": "Venez laver vos péchés ! Le temple offre l'absolution à moitié prix ce soir.", "en": "Come wash away your sins! The temple is offering absolution at half price tonight." },
+    { "tags": ["bienveillant", "festif"], "fr": "Concours de mangeurs de tartes ce soir ! Inscription : 1 {Currency}.", "en": "Pie-eating contest tonight! Entry fee: 1 {Currency}." },
+    { "tags": ["artisanat", "bois"], "fr": "Apprenti charpentier cherche maître. Je suis travailleur et je ne bois presque pas.", "en": "Apprentice carpenter looking for a master. I'm hard-working and barely drink." },
+    { "tags": ["militaire", "dictature-militaire", "securite-forte"], "fr": "Avis à la population : Le couvre-feu est avancé à la tombée de la nuit. Les contrevenants seront battus.", "en": "Notice to the population: Curfew is moved to dusk. Violators will be beaten." },
+    { "tags": ["commerce", "carrefour"], "fr": "Caravane en partance pour la capitale cherche conducteurs de chariots.", "en": "Caravan departing for the capital looking for cart drivers." },
+    { "tags": ["eau", "ressource-eau"], "fr": "L'eau du puits nord a un goût de ferraille. N'en donnez pas aux enfants.", "en": "The north well water tastes like scrap metal. Don't give it to children." },
+    { "tags": ["peche", "ressource-peche", "Littoral"], "fr": "Vend filets raccommodés. Moitié prix car ils sentent un peu le gobelin mouillé.", "en": "Selling mended nets. Half price because they smell a bit like a wet goblin." },
+    { "tags": ["mine", "minerai", "ressource-minerai"], "fr": "Cherche bras costauds pour charger du charbon. Paie à la journée.", "en": "Looking for strong arms to load coal. Paid by the day." },
+    { "tags": ["magie-forte", "conseil-occulte"], "fr": "Perdu : chat noir qui répond au nom de Belzébuth. Ne le regardez pas dans les yeux.", "en": "Lost: black cat answering to Beelzebub. Do not look him in the eyes." },
+    { "tags": ["tradition", "tribal"], "fr": "La fête de l'Équinoxe approche. Ramenez vos offrandes de chasse au chaman.", "en": "The Equinox festival is approaching. Bring your hunting offerings to the shaman." },
+    { "tags": ["anarchie", "faiblesse-politique"], "fr": "Si le lâche qui a volé mes bottes lit ceci, je te retrouverai et je te les ferai manger.", "en": "If the coward who stole my boots is reading this, I will find you and make you eat them." },
+    { "tags": ["justice-expeditive", "climat-terreur"], "fr": "Exécution publique à midi. Venez nombreux, c'est éducatif pour les enfants.", "en": "Public execution at noon. Come one, come all, it's educational for the kids." },
+    { "tags": ["tourisme", "tourisme-foi"], "fr": "Vrai fragment d'os de Saint ! Pas cher ! Idéal pour soigner les rhumatismes.", "en": "True fragment of a Saint's bone! Cheap! Ideal for curing rheumatism." },
+    { "tags": ["isole", "paranoia", "sauvage"], "fr": "J'ai encore entendu des grattements sous le plancher. Ils reviennent. Aidez-moi.", "en": "I heard scratching under the floorboards again. They are coming back. Help me." },
+    { "tags": ["egalite", "democratie-locale", "accueillant"], "fr": "Réunion citoyenne pour décider de la couleur de la nouvelle grange communale.", "en": "Citizen meeting to decide the color of the new communal barn." },
+    { "tags": ["gouvernance-mystique", "pieux"], "fr": "L'Oracle ne recevra plus le mardi. Merci de respecter ses cycles de transe.", "en": "The Oracle will no longer receive visitors on Tuesdays. Please respect their trance cycles." },
+    { "tags": ["oligarchie-marchande", "luxe-opulence"], "fr": "La Guilde des Marchands rappelle que vendre du pain sans licence est passible de prison.", "en": "The Merchants' Guild reminds you that selling bread without a license is punishable by prison." },
+    { "tags": ["chaleur", "ressource-chaleur"], "fr": "Les bains chauds sont fermés pour nettoyage suite à l'incident avec le nain poilu.", "en": "The hot baths are closed for cleaning following the incident with the hairy dwarf." },
+    { "tags": ["vestige-majeur", "mystere"], "fr": "Achète vieux parchemins illisibles trouvés dans les ruines. Prix selon l'état.", "en": "Buying illegible old scrolls found in the ruins. Price depends on condition." },
+    { "tags": ["pierre_precieuse", "artisanat"], "fr": "Cherche apprenti tailleur de gemmes. Doit avoir les mains qui ne tremblent pas.", "en": "Looking for apprentice gem cutter. Must have steady hands." },
+    { "tags": ["loi-faible", "criminelle"], "fr": "Bagarre clandestine ce soir dans la cave de {NPC}. Les armes blanches sont interdites.", "en": "Underground fight tonight in {NPC}'s cellar. Bladed weapons are forbidden." },
+    { "tags": ["avant-poste", "survie"], "fr": "Échange bottes de cuir contre flèches. Je ne survivrai pas sans munitions.", "en": "Trading leather boots for arrows. I won't survive without ammo." },
+    { "tags": ["pelerinage", "religion-forte"], "fr": "Le dortoir des pèlerins est plein. Merci aux habitants d'ouvrir leurs portes par charité.", "en": "The pilgrim dormitory is full. Thank you to the locals for opening their doors out of charity." },
+    { "tags": ["defense-naturelle", "isole"], "fr": "Le pont de corde est usé. Ne traversez pas à plus de deux à la fois !", "en": "The rope bridge is worn. Do not cross with more than two people at a time!" },
+    { "tags": ["herbe", "ressource-herbe", "Forêt"], "fr": "Cueillette collective de champignons ce matin. Attention aux toxiques !", "en": "Collective mushroom foraging this morning. Watch out for the toxic ones!" },
+    { "tags": ["tyrannie", "inegalite"], "fr": "Le Seigneur rappelle que regarder son carrosse avec insistance est un crime.", "en": "The Lord reminds you that staring at his carriage is a crime." },
+    { "tags": ["elevage", "agricole"], "fr": "Vache égarée, répond au nom de Marguerite. Elle est très affectueuse.", "en": "Lost cow, answers to Marguerite. She is very affectionate." },
+    { "tags": ["magie-forte", "savoir-magie"], "fr": "Cherche testeur pour potion d'invisibilité. Vous devez accepter de rester potentiellement transparent.", "en": "Looking for a tester for an invisibility potion. You must agree to potentially remain transparent." },
+    { "tags": ["militaire", "loi-stricte"], "fr": "La garde recrute ! Paie régulière, trois repas par jour et une belle armure.", "en": "The guard is recruiting! Steady pay, three meals a day, and nice armor." },
+    { "tags": ["bourgeois", "luxe"], "fr": "Cherche portraitiste talentueux pour peindre mon chien. Paie en pièces d'or.", "en": "Looking for a talented portraitist to paint my dog. Paid in gold coins." },
+    { "tags": ["survie-pauvre", "famine"], "fr": "Vends rats grillés sur bâton. Meilleurs que ça en a l'air.", "en": "Selling grilled rats on a stick. Tastes better than it looks." },
+    { "tags": ["corrompu", "cartel-criminel"], "fr": "Si tu veux que ta boutique ne brûle pas cette nuit, n'oublie pas la 'taxe'.", "en": "If you don't want your shop to burn tonight, don't forget the 'tax'." },
+    { "tags": ["festif", "commerce-fort"], "fr": "Arrivage de bière naine à la taverne ! Le premier tonneau est offert par la maison !", "en": "Dwarven beer arrival at the tavern! The first keg is on the house!" },
+    { "tags": ["all"], "fr": "J'ai vu quelqu'un rôder près du cimetière. Que la garde fasse son travail !", "en": "I saw someone lurking near the graveyard. Let the guard do their job!" }
+  
+  ],
+  "bounties": [
+    { 
+      "tags": ["loi-faible", "sauvage", "Plaines", "Forêt"],
+      "title": { "fr": "Élimination de Nid", "en": "Nest Elimination" }, 
+      "desc": { "fr": "Un nid de monstres bloque la route au nord de {Lieu}.", "en": "A monster nest blocks the road north of {Lieu}." }, 
+      "reward": 150 
+    },
+    { 
+      "tags": ["criminelle", "corrompu", "survie-pauvre"],
+      "title": { "fr": "Recherche de Fugitif", "en": "Fugitive Wanted" }, 
+      "desc": { "fr": "{NPC}, bandit borgne, recherché vif pour vol et extorsion.", "en": "{NPC}, one-eyed bandit, wanted alive for theft and extortion." }, 
+      "reward": 300 
+    },
+    { 
+      "tags": ["commerce", "luxe-opulence", "carrefour"],
+      "title": { "fr": "Escorte requise", "en": "Escort Required" }, 
+      "desc": { "fr": "Marchand cherche mercenaires pour traverser la passe dangereuse.", "en": "Merchant looking for mercenaries to cross the dangerous pass." }, 
+      "reward": 50 
+    },
+    { 
+      "tags": ["avant-poste", "militaire", "dictature-militaire"],
+      "title": { "fr": "Prime de Désertion", "en": "Desertion Bounty" }, 
+      "desc": { "fr": "Ramenez la tête de {NPC}, déserteur de l'armée locale.", "en": "Bring back the head of {NPC}, local army deserter." }, 
+      "reward": 500 
+    },
+    { 
+      "tags": ["religion-forte", "theocratie-majeure", "justice-expeditive"],
+      "title": { "fr": "Chasse à l'Hérétique", "en": "Heretic Hunt" }, 
+      "desc": { "fr": "Un prêcheur interdit sème le chaos. À livrer aux inquisiteurs de {Lieu}.", "en": "A forbidden preacher is sowing chaos. Deliver to the inquisitors of {Lieu}." }, 
+      "reward": 400 
+    },
+    { 
+      "tags": ["vestige-majeur", "magie-forte", "savoir-magie"],
+      "title": { "fr": "Récupération d'Artefact", "en": "Artifact Retrieval" }, 
+      "desc": { "fr": "La Guilde recherche un grimoire précis dans les ruines enfouies sous la ville.", "en": "The Guild seeks a specific grimoire in the ruins buried beneath the town." }, 
+      "reward": 800 
+    },
+    { 
+      "tags": ["ressource-minerai", "mine", "Montagne"],
+      "title": { "fr": "Nettoyage de Mine", "en": "Mine Clearance" }, 
+      "desc": { "fr": "Des bêtes souterraines ont infesté le puits n°4. Exterminez-les.", "en": "Underground beasts have infested shaft 4. Exterminate them." }, 
+      "reward": 250 
+    },
+    { 
+      "tags": ["ressource-peche", "eau", "Littoral", "Aquatique"],
+      "title": { "fr": "Terreur des Flots", "en": "Terror of the Waves" }, 
+      "desc": { "fr": "Une monstruosité détruit les bateaux de pêcheurs près des récifs.", "en": "A monstrosity is destroying fishing boats near the reefs." }, 
+      "reward": 600 
+    },
+    { 
+      "tags": ["justice-expeditive", "securite-forte", "loi-stricte"],
+      "title": { "fr": "Démantèlement de Réseau", "en": "Network Dismantling" }, 
+      "desc": { "fr": "Prime pour toute information menant au repaire de la guilde des voleurs locale.", "en": "Bounty for any info leading to the local thieves' guild hideout." }, 
+      "reward": 350 
+    },
+    { 
+      "tags": ["luxe-opulence", "oligarchie-marchande", "tyrannie", "bourgeois"],
+      "title": { "fr": "Sauvetage Noble", "en": "Noble Rescue" }, 
+      "desc": { "fr": "La fille du Bourgmestre a été enlevée. Récompense énorme, discrétion exigée.", "en": "The Burgomaster's daughter was kidnapped. Huge reward, discretion required." }, 
+      "reward": 1500 
+    },
+    { 
+      "tags": ["ressource-bois", "ressource-elevage", "Forêt"],
+      "title": { "fr": "Braconniers Recherchés", "en": "Poachers Wanted" }, 
+      "desc": { "fr": "Mettez fin aux agissements des braconniers dans le domaine seigneurial.", "en": "Put an end to the poachers' activities in the lord's domain." }, 
+      "reward": 100 
+    },
+    { 
+      "tags": ["magocratie", "conseil-occulte", "paranoia"],
+      "title": { "fr": "Sorcier Renégat", "en": "Renegade Warlock" }, 
+      "desc": { "fr": "{NPC} pratique la magie du sang illégale. Danger extrême, feu à vue.", "en": "{NPC} practices illegal blood magic. Extreme danger, fire on sight." }, 
+      "reward": 750 
+    },
+    { 
+      "tags": ["famine", "agricole", "ressource-agriculture"],
+      "title": { "fr": "Pillards de Silos", "en": "Silo Raiders" }, 
+      "desc": { "fr": "Protégez les greniers cette nuit contre une bande de pillards affamés.", "en": "Protect the granaries tonight against a band of starving raiders." }, 
+      "reward": 80 
+    },
+    { 
+      "tags": ["sauvage", "anarchie", "isole"],
+      "title": { "fr": "La Tête du Roi", "en": "The King's Head" }, 
+      "desc": { "fr": "Le Roi des Bandits de la région doit tomber. Ramenez son crâne.", "en": "The region's Bandit King must fall. Bring back his skull." }, 
+      "reward": 1000 
+    },
+    { 
+      "tags": ["Montagne", "survie", "ressource-chaleur", "Arctique"],
+      "title": { "fr": "Mangeur d'Hommes", "en": "Man-Eater" }, 
+      "desc": { "fr": "Un ours des neiges géant terrorise les trappeurs du col.", "en": "A giant snow bear is terrorizing the pass trappers." }, 
+      "reward": 200 
+    },
+    { 
+      "tags": ["carrefour", "commerce-fort", "Désert"],
+      "title": { "fr": "Pillards des Dunes", "en": "Dune Raiders" }, 
+      "desc": { "fr": "Sécurisez la route commerciale sud en éliminant les pillards nomades.", "en": "Secure the south trade route by eliminating the nomadic raiders." }, 
+      "reward": 450 
+    },
+    { 
+      "tags": ["mystique", "vestige-majeur", "Marais"],
+      "title": { "fr": "Exorcisme Requis", "en": "Exorcism Required" }, 
+      "desc": { "fr": "Un esprit vengeur empêche les voyageurs d'emprunter la vieille route de {Lieu}.", "en": "A vengeful spirit prevents travelers from using the old {Lieu} road." }, 
+      "reward": 300 
+    },
+    { 
+      "tags": ["climat-terreur", "corrompu", "cartel-criminel"],
+      "title": { "fr": "Recouvrement de Dettes", "en": "Debt Collection" }, 
+      "desc": { "fr": "{NPC} a oublié de payer sa protection. Rappelez-lui les règles (sans le tuer).", "en": "{NPC} forgot to pay for protection. Remind him of the rules (non-lethal)." }, 
+      "reward": 120 
+    },
+    { 
+      "tags": ["faiblesse-politique", "loi-faible"],
+      "title": { "fr": "Garde Privée", "en": "Private Guard" }, 
+      "desc": { "fr": "La milice est inutile. Bourgeois cherche gros bras pour protéger sa demeure cette nuit.", "en": "The militia is useless. Burgher seeks muscle to protect his home tonight." }, 
+      "reward": 150 
+    },
+    { 
+      "tags": ["savoir-magie", "artisanat"],
+      "title": { "fr": "Ingrédients Dangereux", "en": "Dangerous Ingredients" }, 
+      "desc": { "fr": "L'alchimiste cherche 3 glandes de venin de Manticore. Payé à la livraison.", "en": "The alchemist needs 3 Manticore venom glands. Paid on delivery." }, 
+      "reward": 500 
+    },
+    { 
+      "tags": ["agricole", "sauvage", "Plaines"],
+      "title": { "fr": "Sanglier Géant", "en": "Giant Boar" }, 
+      "desc": { "fr": "Une bête monstrueuse ravage les champs de maïs de l'ouest. Tuez-la.", "en": "A monstrous beast is ravaging the western cornfields. Kill it." }, 
+      "reward": 120 
+    },
+    { 
+      "tags": ["corrompu", "oligarchie-marchande", "criminelle"],
+      "title": { "fr": "Récupération 'Discrète'", "en": "'Discreet' Retrieval" }, 
+      "desc": { "fr": "Un registre de comptes compromettant a été volé. Le rapporter au maître de la guilde sans l'ouvrir.", "en": "A compromising account ledger was stolen. Return it to the guild master without opening it." }, 
+      "reward": 400 
+    },
+    { 
+      "tags": ["magocratie", "conseil-occulte", "savoir-magie"],
+      "title": { "fr": "Anomalie Arcanique", "en": "Arcane Anomaly" }, 
+      "desc": { "fr": "Un rituel a mal tourné dans la vieille tour. Chercheurs de frissons pour nettoyer la zone.", "en": "A ritual went wrong in the old tower. Thrill-seekers needed to clear the area." }, 
+      "reward": 650 
+    },
+    { 
+      "tags": ["justice-expeditive", "dictature-militaire", "tyrannie"],
+      "title": { "fr": "Tête du Rebelle", "en": "Rebel's Head" }, 
+      "desc": { "fr": "{NPC} a osé parler contre le Seigneur. Sa tête vaut son pesant d'or.", "en": "{NPC} dared speak against the Lord. His head is worth its weight in gold." }, 
+      "reward": 800 
+    },
+    { 
+      "tags": ["mine", "minerai", "Montagne", "Outreterre"],
+      "title": { "fr": "Sabotage Minier", "en": "Mine Sabotage" }, 
+      "desc": { "fr": "Des rivaux ont fait sauter le puits principal. Escortez nos ingénieurs pour le réparer.", "en": "Rivals blew up the main shaft. Escort our engineers to repair it." }, 
+      "reward": 300 
+    },
+    { 
+      "tags": ["religion-forte", "theocratie-majeure", "pieux"],
+      "title": { "fr": "Relique Volée", "en": "Stolen Relic" }, 
+      "desc": { "fr": "L'ossuaire sacré a été profané. Ramenez le crâne de Saint-Aric et tuez les pilleurs.", "en": "The sacred ossuary was desecrated. Return the skull of Saint Aric and kill the looters." }, 
+      "reward": 500 
+    },
+    { 
+      "tags": ["isole", "survie", "sauvage"],
+      "title": { "fr": "Disparitions dans la Brume", "en": "Disappearances in the Mist" }, 
+      "desc": { "fr": "Trois trappeurs ne sont pas rentrés. Retrouvez-les ou rapportez leurs plaques.", "en": "Three trappers haven't returned. Find them or bring back their tags." }, 
+      "reward": 180 
+    },
+    { 
+      "tags": ["luxe-opulence", "bourgeois", "commerce"],
+      "title": { "fr": "Voleur Fantôme", "en": "Phantom Thief" }, 
+      "desc": { "fr": "Un monte-en-l'air d'une agilité folle pille les demeures nobles. Capturez-le vif.", "en": "An incredibly agile cat burglar is looting noble homes. Capture him alive." }, 
+      "reward": 1000 
+    },
+    { 
+      "tags": ["eau", "ressource-eau", "Marais", "Désert"],
+      "title": { "fr": "La Source Empoisonnée", "en": "Poisoned Spring" }, 
+      "desc": { "fr": "L'oasis locale est infectée par une créature corrompue. Purifiez les eaux.", "en": "The local oasis is infected by a corrupted creature. Purify the waters." }, 
+      "reward": 350 
+    },
+    { 
+      "tags": ["avant-poste", "militaire", "securite-forte"],
+      "title": { "fr": "Patrouille d'Éclaireurs", "en": "Scout Patrol" }, 
+      "desc": { "fr": "Aidez la milice à nettoyer le campement orc qui s'installe à la frontière.", "en": "Help the militia clear the orc camp settling at the border." }, 
+      "reward": 250 
+    },
+    { 
+      "tags": ["peche", "Littoral", "Aquatique", "commerce-fort"],
+      "title": { "fr": "Pirates de la Baie", "en": "Bay Pirates" }, 
+      "desc": { "fr": "Un navire pirate bloque le commerce. Coulez-le ou ramenez le capitaine.", "en": "A pirate ship is blocking trade. Sink it or bring back the captain." }, 
+      "reward": 1200 
+    },
+    { 
+      "tags": ["vestige-majeur", "mystere", "savoir-magie"],
+      "title": { "fr": "Cartographier les Gouffres", "en": "Map the Chasms" }, 
+      "desc": { "fr": "Un érudit paie grassement pour une carte détaillée des ruines inférieures. Survie non garantie.", "en": "A scholar pays handsomely for a detailed map of the lower ruins. Survival not guaranteed." }, 
+      "reward": 450 
+    },
+    { 
+      "tags": ["climat-terreur", "paranoia", "gouvernance-mystique"],
+      "title": { "fr": "La Chasse aux Sorcières", "en": "Witch Hunt" }, 
+      "desc": { "fr": "Signalez et livrez toute personne pratiquant des arts non approuvés par le conseil.", "en": "Report and hand over anyone practicing arts not approved by the council." }, 
+      "reward": 200 
+    },
+    { 
+      "tags": ["elevage", "agricole", "Forêt"],
+      "title": { "fr": "Vengeance d'un Fermier", "en": "Farmer's Revenge" }, 
+      "desc": { "fr": "Une meute de Wargs a tué tout mon troupeau. Tuez l'Alpha et ramenez sa peau.", "en": "A pack of Wargs killed my entire herd. Kill the Alpha and bring its pelt." }, 
+      "reward": 150 
+    },
+    { 
+      "tags": ["cartel-criminel", "loi-faible", "anarchie"],
+      "title": { "fr": "Contrat d'Assassinat", "en": "Assassination Contract" }, 
+      "desc": { "fr": "[Prime Non-Officielle] Le chef de gang rival doit disparaître. Parlez au barman.", "en": "[Unofficial Bounty] The rival gang leader must disappear. Talk to the bartender." }, 
+      "reward": 600 
+    },
+    { 
+      "tags": ["bois", "artisanat", "ressource-bois", "Forêt"],
+      "title": { "fr": "Gardiens de la Forêt", "en": "Forest Guardians" }, 
+      "desc": { "fr": "Les bûcherons sont attaqués par des esprits de la forêt en colère. Pacifiez la zone.", "en": "Lumberjacks are being attacked by angry forest spirits. Pacify the area." }, 
+      "reward": 280 
+    },
+    { 
+      "tags": ["democratie-locale", "egalite", "bienveillant"],
+      "title": { "fr": "Héros du Peuple", "en": "Hero of the People" }, 
+      "desc": { "fr": "La mairie a mis en place une cagnotte pour ceux qui chasseront les gobelins du vieux pont.", "en": "The town hall set up a fund for those who chase the goblins from the old bridge." }, 
+      "reward": 100 
+    },
+    { 
+      "tags": ["pierre_precieuse", "mine", "luxe-opulence"],
+      "title": { "fr": "Filon de Sang", "en": "Blood Vein" }, 
+      "desc": { "fr": "Un nouveau filon de rubis a été découvert, mais il est gardé par un basilic. À vos risques.", "en": "A new ruby vein was discovered, but it is guarded by a basilisk. At your own risk." }, 
+      "reward": 900 
+    },
+    { 
+      "tags": ["tradition", "tribal", "sauvage"],
+      "title": { "fr": "L'Épreuve du Chasseur", "en": "Hunter's Trial" }, 
+      "desc": { "fr": "Prouvez votre valeur à la tribu en ramenant le cœur du Grand Prédateur de la vallée.", "en": "Prove your worth to the tribe by bringing back the heart of the valley's Great Predator." }, 
+      "reward": 0 
+    },
+    { 
+      "tags": ["famine", "survie-pauvre", "miserable"],
+      "title": { "fr": "Convoi de Ravitaillement", "en": "Supply Convoy" }, 
+      "desc": { "fr": "La ville meurt de faim. Prime doublée pour quiconque ramène un chariot de vivres intact.", "en": "The town is starving. Double bounty for anyone who brings back an intact food cart." }, 
+      "reward": 250 
+    }
+  ]
+}
