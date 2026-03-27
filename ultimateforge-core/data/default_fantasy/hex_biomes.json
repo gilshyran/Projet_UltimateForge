@@ -1,0 +1,69 @@
+{
+  "biomes": {
+    "Plaines": {
+      "name": { "fr": "Plaines", "en": "Plains" },
+      "travel_difficulty": 1,
+      "description": { "fr": "De vastes étendues herbeuses, idéales pour l'agriculture et les voyages rapides.", "en": "Vast grassy expanses, ideal for agriculture and fast travel." }
+    },
+    "Forêt": {
+      "name": { "fr": "Forêt", "en": "Forest" },
+      "travel_difficulty": 1.5,
+      "description": { "fr": "Des bois denses abritant une faune riche et des mystères anciens.", "en": "Dense woods harboring rich wildlife and ancient mysteries." }
+    },
+    "Collines": {
+      "name": { "fr": "Collines", "en": "Hills" },
+      "travel_difficulty": 1.5,
+      "description": { "fr": "Des reliefs vallonnés offrant de bons points de vue mais fatiguant la marche.", "en": "Rolling terrain offering good vantage points but tiring to walk." }
+    },
+    "Montagne": {
+      "name": { "fr": "Montagne", "en": "Mountain" },
+      "travel_difficulty": 3,
+      "description": { "fr": "Des pics acérés et rocailleux, dangereux et froids.", "en": "Sharp and rocky peaks, dangerous and cold." }
+    },
+    "Littoral": {
+      "name": { "fr": "Littoral", "en": "Coast" },
+      "travel_difficulty": 1,
+      "description": { "fr": "Des plages et falaises bordant la mer, souvent battues par les vents.", "en": "Beaches and cliffs bordering the sea, often battered by winds." }
+    },
+    "Marais": {
+      "name": { "fr": "Marais", "en": "Swamp" },
+      "travel_difficulty": 2,
+      "description": { "fr": "Des terres inondées, boueuses et nauséabondes, souvent toxiques.", "en": "Flooded, muddy and foul-smelling lands, often toxic." }
+    },
+    "Désert": {
+      "name": { "fr": "Désert", "en": "Desert" },
+      "travel_difficulty": 2,
+      "description": { "fr": "Un océan de dunes de sable, mortel pour ceux qui n'ont pas d'eau.", "en": "An ocean of sand dunes, deadly to those without water." }
+    },
+    "Arctique": {
+      "name": { "fr": "Arctique", "en": "Arctic" },
+      "travel_difficulty": 2.5,
+      "description": { "fr": "Des étendues de glace et de neige, où le froid mortel est le pire ennemi.", "en": "Expanses of ice and snow, where deadly cold is the worst enemy." }
+    },
+    "Jungle": {
+      "name": { "fr": "Jungle", "en": "Jungle" },
+      "travel_difficulty": 2.5,
+      "description": { "fr": "Une végétation dense et étouffante, grouillante de vie sauvage et de maladies.", "en": "Dense, stifling vegetation, teeming with wildlife and disease." }
+    },
+    "Outreterre": {
+      "name": { "fr": "Outreterre", "en": "Underdark" },
+      "travel_difficulty": 3,
+      "description": { "fr": "Un réseau de cavernes plongé dans l'obscurité totale et rempli de dangers indicibles.", "en": "A network of caverns plunged in total darkness and filled with unspeakable dangers." }
+    },
+    "Sub-aquatique": {
+      "name": { "fr": "Sub-aquatique", "en": "Underwater" },
+      "travel_difficulty": 3,
+      "description": { "fr": "Les profondeurs marines, un environnement impitoyable réservé à ceux qui respirent sous l'eau.", "en": "The ocean depths, a ruthless environment reserved for those who can breathe underwater." }
+    },
+    "Aquatique": {
+      "name": { "fr": "Aquatique", "en": "Aquatic" },
+      "travel_difficulty": 1,
+      "description": { "fr": "La haute mer. Voyager ici nécessite un navire et de bonnes connaissances en navigation.", "en": "The open sea. Traveling here requires a ship and good navigation skills." }
+    },
+    "Taïga": {
+      "name": { "fr": "Taïga", "en": "Taiga" },
+      "travel_difficulty": 2,
+      "description": { "fr": "Une vaste forêt de conifères glaciale et enneigée, difficile à traverser en hiver.", "en": "A vast, freezing, and snow-covered coniferous forest, difficult to traverse in winter." }
+    }
+  }
+}
