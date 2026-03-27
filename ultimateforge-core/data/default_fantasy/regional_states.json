@@ -1,0 +1,42 @@
+{
+  "paix": {
+    "name": { "fr": "🕊️ Stabilité & Paix", "en": "🕊️ Stability & Peace" },
+    "description": { "fr": "La région est calme. Les affaires suivent leur cours normal.", "en": "The region is calm. Business as usual." },
+    "vibe_modifiers": { "bienveillant": 20,"accueillant":10, "luxe-opulence": 10 },
+    "eco_modifiers": { "agricole": 20, "artisanat": 20 },
+    "price_multiplier": 1.0,
+    "encounter_themes": ["marchands", "pelerins", "animaux-sauvages", "voyageurs", "bivouac-paisible"]
+  },
+  "guerre": {
+    "name": { "fr": "⚔️ Guerre Ouverte", "en": "⚔️ Open Warfare" },
+    "description": { "fr": "La région est attaquée. Les milices sont sur le qui-vive et les prix flambent.", "en": "The region is under attack. Militias are on edge and prices soar." },
+    "vibe_modifiers": { "paranoia": 50, "loi-stricte": 30, "climat-terreur": 20,"miserable": 20, "commerce-fort": -20, "bienveillant": -20, "accueillant": -20 },
+    "eco_modifiers": { "militaire": 50, "artisanat": 20 },
+    "price_multiplier": 1.5,
+    "encounter_themes": ["patrouilles-armees", "refugies", "deserteurs", "champs-bataille", "pillage"]
+  },
+  "rebellion": {
+    "name": { "fr": "🔥 Guerre Civile / Rébellion", "en": "🔥 Civil War / Rebellion" },
+    "description": { "fr": "L'autorité locale est contestée. La corruption et la violence règnent.", "en": "Local authority is challenged. Corruption and violence rule." },
+    "vibe_modifiers": { "corrompu": 40, "climat-terreur": 30, "paranoia": 30, "religion-forte": 10, "pieux": 10, "commerce-fort": -30 },
+    "eco_modifiers": { "criminel": 40, "survie-pauvre": 20 },
+    "price_multiplier": 1.2,
+    "encounter_themes": ["rebelles", "milice-corrompue", "executions-publiques", "contrebande", "espions"]
+  },
+  "age_or": {
+    "name": { "fr": "💰 Âge d'Or / Prospérité", "en": "💰 Golden Age / Prosperity" },
+    "description": { "fr": "Une nouvelle ressource a été découverte ou le commerce explose.", "en": "A new resource was discovered or trade is booming." },
+    "vibe_modifiers": { "luxe-opulence": 30, "accueillant": 40, "festif": 30 },
+    "eco_modifiers": { "commerce": 50, "luxe": 30 },
+    "price_multiplier": 0.8,
+    "encounter_themes": ["caravanes-riches", "artistes-itinerants", "noblesse-voyageuse", "bandits-audacieux"]
+  },
+  "fleau": {
+    "name": { "fr": "💀 Fléau ou Famine", "en": "💀 Plague or Famine" },
+    "description": { "fr": "La mort rôde. Les habitants survivent comme ils peuvent.", "en": "Death prowls. The inhabitants survive however they can." },
+    "vibe_modifiers": { "miserable": 60, "paranoia": 40, "pieux": 30 },
+    "eco_modifiers": { "survie-pauvre": 60, "commerce": -40, "tourisme": -80, "agricole": -60 },
+    "price_multiplier": 2.0,
+    "encounter_themes": ["cadavres", "malades", "pillards-desesperes", "charognards", "fanatiques-religieux"]
+  }
+}
