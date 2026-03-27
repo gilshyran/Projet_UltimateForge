@@ -1,0 +1,30 @@
+{
+  "Pangea": {
+    "name": { "fr": "Pangea", "en": "Pangea" },
+    "biome_rules": {
+      "forbidden": [""],
+      "weighted": { "Plaines": 20, "Forêt": 10, "Collines": 10, "Montagne": 10, "Littoral": 15, "Marais": 10, "Désert": 10 , "Arctique": 1 , "Jungle": 10 , "Taïga": 1, "Aquatique": 1, "Outreterre": 1, "Sub-aquatique" :1  }
+    },
+    "weather_rules": {
+      "weighted": { "clear": 40, "rain": 30, "fog": 15, "storm": 10, "snow": 1 }
+    },
+    "size_rules": {
+      "forbidden": [""],
+      "weighted": { "Campement": 5, "Hameau": 10, "Village": 40, "Petite Ville": 25, "Grande Cité": 15, "Métropole": 4, "Capitale": 1 }
+    },
+    "race_rules": {
+      "weighted": { "Humain": 25, "Elfe": 20, "Nain": 20, "Halfelin": 15, "Demi-Elfe": 5, "Gnoll": 5, "Centaure": 5, "Autres": 5 }
+    },
+    "leader_titles": {
+      "Campement": { "fr": "du Maître de guet", "en": "the Watchmaster" },
+      "Hameau": { "fr": "du Chef", "en": "the Chieff" },
+      "Village": { "fr": "du Bailli", "en": "the Bailiff" },
+      "Petite Ville": { "fr": "du Maire", "en": "the Mayor" },
+      "Grande Cité": { "fr": "du Grand Duc", "en": "the Grand Duke" },
+      "Métropole": { "fr": "du Maréchal", "en": "the Marshal" },
+      "Capitale": { "fr": "du Roi", "en": "the King" }
+    },
+    "vibe_rules": { "bienveillant": 30, "corrompu": 20, "securite-forte": 20, "religion-forte": 10 , "magie-forte": 5, "luxe-opulence": 5, "miserable": 5, "sauvage": 5},
+    "eco_rules": { "commerce": 40, "militaire": 30, "artisanat": 15,"magie": 10, "industrie": 5}
+  }
+}
