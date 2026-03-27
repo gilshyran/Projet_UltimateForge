@@ -1,0 +1,20 @@
+{
+  "CITYFORGE": {
+    "Title": "Avantis CityForge",
+    "Subtitle": "Les fondations s'élèvent, guidées par le Vrill et l'environnement...",
+    "RegionLabel": "Région",
+    "RegionSelect": "Choisissez une région...",
+    "BiomeLabel": "Biome Dominant",
+    "SizeLabel": "Taille du Lieu",
+    "Random": "🎲 Aléatoire (Selon la région)",
+    "GenerateBtn": "Forger la Cité",
+    "SoulTitle": "L'Âme (Fondation)",
+    "Origin": "Origine",
+    "Age": "Âge",
+    "Vibe": "Ambiance",
+    "BodyTitle": "Le Corps (Structure)",
+    "Governance": "Gouvernance",
+    "Economy": "Économie",
+    "DistrictsTitle": "Les Quartiers"
+  }
+}
