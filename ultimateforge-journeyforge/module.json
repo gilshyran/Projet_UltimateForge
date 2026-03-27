@@ -1,0 +1,34 @@
+{
+  "id": "ultimateforge-journeyforge",
+  "title": "UltimateForge : JourneyForge",
+  "description": "Moteur narratif et générateur d'événements de voyage, lisant dynamiquement la carte, le climat et l'aura des villes.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Ours_glace"
+    }
+  ],
+  "esmodules": [
+    "scripts/apps/ultimateforge-journeyforge.mjs"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "ultimateforge-core",
+        "type": "module"
+      },
+      {
+        "id": "ultimateforge-hexforge",
+        "type": "module"
+      },
+      {
+        "id": "ultimateforge-cityforge",
+        "type": "module"
+      }
+    ]
+  }
+}
