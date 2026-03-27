@@ -1,0 +1,43 @@
+{
+  "id": "ultimateforge-hexforge",
+  "title": "UltimateForge : HexForge",
+  "description": "Générateur de biomes optimisé pour le jeu Avantis.World mais fonctionnant pour tout type d'univers.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Ours_glace",
+      "url": "https://www.avantis.world",
+      "email": "contact@avantis.world"
+    }
+  ],
+  "esmodules": [
+    "scripts/apps/ultimateforge-hexforge.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "ultimateforge-core",
+        "type": "module"
+      }
+    ]
+  },
+  "url": "https://avantis.world",
+  "manifest": "",
+  "download": ""
+}
