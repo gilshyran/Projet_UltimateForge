@@ -1,0 +1,68 @@
+{
+  "ranks": {
+    "Sbire": {
+      "pvi": 15, "pve": 5,
+      "armes": [
+        { "fr": "Dague (Qualité 0)", "en": "Dagger (Quality 0)" },
+        { "fr": "Gourdin noueux", "en": "Knotted Club" }
+      ],
+      "tenues": [
+        { "fr": "Vêtements de voyage", "en": "Travel clothes" },
+        { "fr": "Tunique en cuir souple", "en": "Soft leather tunic" }
+      ]
+    },
+    "Vétéran": {
+      "pvi": 20, "pve": 10,
+      "armes": [
+        { "fr": "Épée longue (Qualité 1)", "en": "Longsword (Quality 1)" },
+        { "fr": "Hache d'arme", "en": "Battleaxe" }
+      ],
+      "tenues": [
+        { "fr": "Gambison usé", "en": "Worn gambeson" },
+        { "fr": "Cotte de mailles légère", "en": "Light chainmail" }
+      ]
+    },
+    "Élite": {
+      "pvi": 30, "pve": 20,
+      "armes": [
+        { "fr": "Épée bâtarde (Qualité 2)", "en": "Bastard sword (Quality 2)" }
+      ],
+      "tenues": [
+        { "fr": "Plastron de la Sentinelle", "en": "Sentinel Breastplate" }
+      ]
+    },
+    "Boss": {
+      "pvi": 50, "pve": 35,
+      "armes": [
+        { "fr": "Épée à deux mains (Qualité 3)", "en": "Greatsword (Quality 3)" }
+      ],
+      "tenues": [
+        { "fr": "Harnois complet (Qualité 3)", "en": "Full Plate Armor (Quality 3)" }
+      ]
+    }
+  },
+  "appearances": [
+    { "fr": "Le visage barré d'une vieille cicatrice.", "en": "Face scarred by an old wound." },
+    { "fr": "Porte de riches étoffes.", "en": "Wears rich fabrics." },
+    { "fr": "Un regard fatigué mais perçant.", "en": "A tired but piercing gaze." },
+    { "fr": "Une carrure imposante et droite.", "en": "An imposing and upright posture." }
+  ],
+  "traits": [
+    { "fr": "Pragmatique et froid.", "en": "Pragmatic and cold." },
+    { "fr": "Bavard, souriant mais calculateur.", "en": "Talkative, smiling but calculating." },
+    { "fr": "Paranoïaque.", "en": "Paranoid." },
+    { "fr": "Avide de pouvoir et d'influence.", "en": "Hungry for power and influence." }
+  ],
+  "secrets": [
+    { "fr": "Doit de l'argent à un cartel criminel local.", "en": "Owes money to a local criminal cartel." },
+    { "fr": "Est un hérétique en secret.", "en": "Is secretly a heretic." },
+    { "fr": "A trouvé une relique des Anciens sous sa maison.", "en": "Found a Relic of the Ancients under their house." },
+    { "fr": "Protège un fugitif activement recherché.", "en": "Protects a highly wanted fugitive." }
+  ],
+  "loot": [
+    { "fr": "Bourse bien remplie", "en": "Well-filled pouch" },
+    { "fr": "Dague ornée d'Aletria", "en": "Ornate Aletrian dagger" },
+    { "fr": "Amulette en Khora", "en": "Khora amulet" },
+    { "fr": "Livre de comptes crypté", "en": "Encrypted ledger" }
+  ]
+}
