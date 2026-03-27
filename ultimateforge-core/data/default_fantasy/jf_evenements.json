@@ -1,0 +1,512 @@
+[
+  {
+    "require_stage_tags": ["pont", "faille"],
+    "require_motiv_tags": ["extorsion", "peage_illegal"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un groupe d'individus patibulaires bloque le passage. Leurs armes sont ostensiblement sorties et leur chef, un sourire carnassier aux lèvres, vous annonce qu'une « taxe de sécurité locale » doit être acquittée pour passer.",
+      "en": "A group of sinister individuals blocks the passage. Their weapons are ostensibly drawn and their leader, with a predatory smile, announces that a 'local security tax' must be paid to pass."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["militaire", "fouille", "autorite"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Une escouade armée lourdement équipée vous barre la route. Le sergent s'avance, la main sur le pommeau de son épée, et vous ordonne sèchement de décliner votre identité et d'ouvrir vos sacs pour une inspection.",
+      "en": "A heavily equipped armed squad blocks your path. The sergeant steps forward, hand on the pommel of his sword, and sharply orders you to state your identity and open your bags for inspection."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["militaire_corrompu", "pot-de-vin"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vous croisez des gardes aux uniformes officiels, mais à l'attitude nonchalante. L'un d'eux vous arrête sous un prétexte farfelu, insinuant lourdement qu'une « amende payée sur place » arrangerait les choses.",
+      "en": "You pass guards in official uniforms, but with a nonchalant attitude. One of them stops you under a bizarre pretext, heavily insinuating that a 'fine paid on the spot' would sort things out."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["commerce_riche", "rumeurs"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Une somptueuse caravane s'avance sur la route. Les chariots sont peints et de nombreux mercenaires les escortent. Le maître marchand vous salue poliment, ravi de croiser des voyageurs à qui proposer ses marchandises de luxe.",
+      "en": "A sumptuous caravan advances on the road. The carts are painted and many mercenaries escort them. The master merchant greets you politely, delighted to meet travelers to whom he can offer his luxury goods."
+    }
+  },
+  {
+    "require_stage_tags": ["boue", "ralentissement"],
+    "require_motiv_tags": ["marchand_detresse", "entraide"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Sur le côté du chemin, un modeste chariot est embourbé jusqu'aux essieux. Son propriétaire, couvert de boue et d'épuisement, tente vainement de faire avancer sa bête de somme et vous lance un regard suppliant.",
+      "en": "On the side of the path, a modest cart is bogged down to the axles. Its owner, covered in mud and exhaustion, vainly tries to move his beast of burden and gives you a pleading look."
+    }
+  },
+  {
+    "require_stage_tags": ["halte", "repos", "clairiere"],
+    "require_motiv_tags": ["fete", "hospitalite"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "De la musique, des rires et l'odeur de viande rôtie flottent dans l'air. Un groupe de voyageurs a monté le camp et célèbre joyeusement. En vous voyant, ils lèvent leurs chopes et vous invitent à partager la fête.",
+      "en": "Music, laughter and the smell of roasting meat float in the air. A group of travelers has set up camp and is joyfully celebrating. Seeing you, they raise their mugs and invite you to share the feast."
+    }
+  },
+  {
+    "require_stage_tags": ["eau", "ressource"],
+    "require_motiv_tags": ["rencontre_civile", "paisible"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Près de l'eau, quelques personnes s'affairent à des tâches quotidiennes : remplir des seaux ou nettoyer du linge. Ils s'interrompent un instant pour vous observer, méfiants mais peu hostiles.",
+      "en": "Near the water, a few people are busy with daily tasks: filling buckets or washing clothes. They pause for a moment to observe you, wary but hardly hostile."
+    }
+  },
+  {
+    "require_stage_tags": ["ruine", "vestiges", "abri"],
+    "require_motiv_tags": ["refugies", "desespoir"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'endroit n'est pas désert. Blottis dans les recoins les plus dissimulés, des gens en haillons sursautent à votre approche. Leurs visages sont creusés par la peur et la faim.",
+      "en": "The place is not deserted. Huddled in the most hidden corners, people in rags jump at your approach. Their faces are hollowed by fear and hunger."
+    }
+  },
+  {
+    "require_stage_tags": ["grotte", "souterrain"],
+    "require_motiv_tags": ["exiles", "clandestins"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Des bruits de pas furtifs résonnent plus loin dans l'obscurité. Vous distinguez brièvement des silhouettes encapuchonnées qui reculent dans les ombres, cherchant visiblement à éviter tout contact.",
+      "en": "Furtive footsteps echo further in the darkness. You briefly make out hooded silhouettes retreating into the shadows, visibly seeking to avoid any contact."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["mendiants", "harcelement"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un petit groupe de miséreux, attirés par votre équipement, s'approche de vous en tendant des mains sales. Leurs plaintes forment un chœur lancinant et ils se pressent peut-être un peu trop près de vos bourses.",
+      "en": "A small group of wretches, attracted by your equipment, approaches you holding out dirty hands. Their complaints form a throbbing chorus and they press perhaps a little too close to your purses."
+    }
+  },
+  {
+    "require_stage_tags": ["sanctuaire", "cimetiere"],
+    "require_motiv_tags": ["pelerins", "rite_religieux"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vous surprenez quelques individus agenouillés devant l'autel ou la pierre sacrée, murmurant des litanies anciennes. L'air sent l'encens froid et la ferveur.",
+      "en": "You catch a few individuals kneeling before the altar or sacred stone, murmuring ancient litanies. The air smells of cold incense and fervor."
+    }
+  },
+  {
+    "require_stage_tags": ["monolithes", "magie_ancienne"],
+    "require_motiv_tags": ["secte", "fanatiques"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un cercle de silhouettes encapuchonnées entoure les pierres. Ils psalmodient dans une langue gutturale et interdite. L'un d'eux se retourne vers vous, les yeux exorbités par un fanatisme terrifiant.",
+      "en": "A circle of hooded silhouettes surrounds the stones. They chant in a guttural, forbidden tongue. One of them turns towards you, eyes bulging with terrifying fanaticism."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["moines", "soins"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vous croisez le chemin de voyageurs vêtus de robes humbles. Ils marchent pieds nus ou en sandales, le visage serein. Ils s'arrêtent pour vous saluer, offrant une prière ou un peu d'eau fraîche.",
+      "en": "You cross paths with travelers dressed in humble robes. They walk barefoot or in sandals, their faces serene. They stop to greet you, offering a prayer or a little fresh water."
+    }
+  },
+  {
+    "require_stage_tags": ["cristaux", "magie_active"],
+    "require_motiv_tags": ["mages", "etude_magique"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Des individus concentrés, vêtus d'habits raffinés, auscultent les cristaux à l'aide d'étranges instruments en laiton. Ils prennent des notes fébriles et semblent totalement absorbés par leur tâche.",
+      "en": "Focused individuals, dressed in refined clothes, examine the crystals using strange brass instruments. They take feverish notes and seem totally absorbed by their task."
+    }
+  },
+  {
+    "require_stage_tags": ["arbre", "clairiere"],
+    "require_motiv_tags": ["druides", "herboristes"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Des figures drapées de capes tressées de feuilles et de mousse récoltent précautionneusement des champignons ou de la sève. L'harmonie qu'ils dégagent avec la nature environnante est palpable.",
+      "en": "Figures draped in cloaks woven with leaves and moss carefully harvest mushrooms or sap. The harmony they exude with the surrounding nature is palpable."
+    }
+  },
+  {
+    "require_stage_tags": ["grotte", "souterrain"],
+    "require_motiv_tags": ["laboratoire_secret", "magie_noire"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Une odeur âcre de produits chimiques et de chair brûlée s'échappe de la cavité. Des caisses brisées et des os traînent à l'entrée, préfigurant l'horreur de ce qui se trame à l'intérieur.",
+      "en": "A pungent smell of chemicals and burned flesh escapes from the cavity. Broken crates and bones lie at the entrance, foreshadowing the horror of what is brewing inside."
+    }
+  },
+  {
+    "require_stage_tags": ["taniere", "predateurs"],
+    "require_motiv_tags": ["betes_sauvages", "combat_animal"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un grognement sourd fait vibrer le sol. De l'ombre émerge une créature massive, tous crocs dehors. Elle se campe solidement sur ses pattes, prête à défendre furieusement son domaine.",
+      "en": "A low growl makes the ground vibrate. From the shadow emerges a massive creature, all fangs bared. It plants itself solidly on its feet, ready to furiously defend its domain."
+    }
+  },
+  {
+    "require_stage_tags": ["traces", "piste"],
+    "require_motiv_tags": ["traque", "embuscade_animale"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vos instincts se mettent en alerte. Des brindilles craquent tout autour de vous. Dans les fourrés environnants, plusieurs paires d'yeux luisants vous fixent : vous êtes encerclés.",
+      "en": "Your instincts go on high alert. Twigs snap all around you. In the surrounding bushes, several pairs of glowing eyes stare at you: you are surrounded."
+    }
+  },
+  {
+    "require_stage_tags": ["eau", "lac", "danger_eau"],
+    "require_motiv_tags": ["monstre_aquatique", "surprise"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "La surface de l'eau se met soudain à bouillir. Une masse sombre et rapide fend les flots et s'approche à une vitesse fulgurante de la berge où vous vous tenez.",
+      "en": "The surface of the water suddenly starts to boil. A dark, fast mass cuts through the waves and approaches the bank where you stand at lightning speed."
+    }
+  },
+  {
+    "require_stage_tags": ["arbre", "monumental"],
+    "require_motiv_tags": ["attaque_aerienne", "monstres_arboricoles"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Une ombre immense passe furtivement au-dessus de vos têtes. Un bruissement violent secoue les hautes branches, suivi d'un cri perçant qui glace le sang. Quelque chose plonge vers vous !",
+      "en": "An immense shadow passes stealthily overhead. A violent rustling shakes the high branches, followed by a piercing, blood-curdling scream. Something is diving towards you!"
+    }
+  },
+  {
+    "require_stage_tags": ["corruption", "maladie"],
+    "require_motiv_tags": ["nuée", "parasites"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Le bourdonnement devient assourdissant. Une véritable marée noire grouillante d'insectes difformes ou de charognards émerge des entrailles de la terre corrompue, dévorant tout sur son passage.",
+      "en": "The buzzing becomes deafening. A veritable black tide swarming with deformed insects or scavengers emerges from the bowels of the corrupted earth, devouring everything in its path."
+    }
+  },
+  {
+    "require_stage_tags": ["cimetiere", "mort", "macabre"],
+    "require_motiv_tags": ["morts-vivants", "reveil_macabre"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "La terre meuble se soulève lugubrement. Des doigts décharnés et des os blanchis percent la surface du sol. Les morts s'arrachent à leur sommeil pour fondre sur les vivants qui ont osé les déranger.",
+      "en": "The loose earth heaves mournfully. Emaciated fingers and bleached bones pierce the surface of the ground. The dead tear themselves from their sleep to fall upon the living who dared disturb them."
+    }
+  },
+  {
+    "require_stage_tags": ["faille", "danger_invisible"],
+    "require_motiv_tags": ["esprits", "piege_mortel"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Des murmures désincarnés flottent dans l'air, essayant de vous désorienter. Vous sentez presque des mains invisibles vous pousser sournoisement vers le bord du précipice.",
+      "en": "Disembodied whispers float in the air, trying to disorient you. You can almost feel invisible hands slyly pushing you towards the edge of the precipice."
+    }
+  },
+  {
+    "require_stage_tags": ["ruine", "melancolie"],
+    "require_motiv_tags": ["fantome", "quete_narrative"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'air se refroidit brusquement. Une silhouette diaphane erre au milieu des vestiges, répétant les mêmes gestes tragiques en boucle, prisonnière d'un chagrin vieux de plusieurs siècles.",
+      "en": "The air suddenly chills. A diaphanous figure wanders among the remains, repeating the same tragic gestures on a loop, trapped in a centuries-old sorrow."
+    }
+  },
+  {
+    "require_stage_tags": ["pont", "passage_oblige"],
+    "require_motiv_tags": ["gardien", "enigme"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Au beau milieu du passage se dresse une imposante figure (une statue animée, un vieux sage ou une bête féérique). Elle croise les bras et annonce d'une voix tonitruante que nul ne passe sans prouver sa valeur.",
+      "en": "Right in the middle of the passage stands an imposing figure (an animated statue, an old sage or a fey beast). It crosses its arms and announces in a booming voice that none shall pass without proving their worth."
+    }
+  },
+  {
+    "require_stage_tags": ["glace", "lac"],
+    "require_motiv_tags": ["sauvetage", "danger_imminent"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un craquement sinistre résonne, suivi d'un cri terrifié. Plus loin sur la surface glacée, une personne (ou une grosse bête) a traversé la croûte et se débat désespérément dans l'eau glaciale.",
+      "en": "A sinister crack echoes, followed by a terrified scream. Further out on the icy surface, a person (or a large beast) has broken through the crust and is desperately struggling in the freezing water."
+    }
+  },
+  {
+    "require_stage_tags": ["cascade", "bruit_assourdissant"],
+    "require_motiv_tags": ["contrebandiers", "repaire_criminel"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Protégés par le vacarme de l'eau, des individus rudes chargent des caisses discrètes à l'arrière d'un chariot ou dans une cavité secrète. Ils sursautent en vous voyant et portent la main à leurs lames.",
+      "en": "Protected by the roar of the water, rough individuals are loading discreet crates into the back of a cart or a secret cavity. They jump upon seeing you and reach for their blades."
+    }
+  },
+  {
+    "require_stage_tags": ["clairiere", "repos"],
+    "require_motiv_tags": ["noblesse", "arrogance"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "La zone a été réquisitionnée par un groupe de nobles vêtus de velours, entourés de chiens de chasse et de gardes du corps. Ils vous toisent de haut, agacés que de simples roturiers troublent leur divertissement.",
+      "en": "The area has been commandeered by a group of velvet-clad nobles, surrounded by hunting dogs and bodyguards. They look down their noses at you, annoyed that mere commoners are disturbing their entertainment."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["personne_perdue", "quete_annexe"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vous trouvez une personne en larmes, fouillant désespérément les buissons ou hurlant un nom à pleins poumons. Quelque chose, ou quelqu'un de très précieux, vient de disparaître dans les environs.",
+      "en": "You find a person in tears, desperately searching the bushes or shouting a name at the top of their lungs. Something, or someone very precious, has just disappeared nearby."
+    }
+  },
+  {
+    "require_stage_tags": ["croisement", "choix"],
+    "require_motiv_tags": ["marche_noir", "commerce_illicite"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un étrange marchand solitaire s'approche de vous. En regardant à droite et à gauche, il entrouvre son lourd manteau pour dévoiler des fioles illicites et des reliques volées, chuchotant des prix défiant toute concurrence.",
+      "en": "A strange lone merchant approaches you. Looking left and right, he opens his heavy coat to reveal illicit vials and stolen relics, whispering unbeatable prices."
+    }
+  },
+  {
+    "require_stage_tags": ["chute_mortelle", "faille"],
+    "require_motiv_tags": ["fugitifs_acciles", "negociation_tendue"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Adossés au vide mortel, des fuyards blessés halètent de terreur. Croyant que vous êtes leurs poursuivants, ils pointent des armes rouillées vers vous, jurant qu'ils préfèrent sauter plutôt que d'être capturés.",
+      "en": "Backed against the deadly void, wounded fugitives pant in terror. Believing you to be their pursuers, they point rusty weapons at you, swearing they would rather jump than be captured."
+    }
+  },
+  {
+    "require_stage_tags": ["cristaux", "ressource"],
+    "require_motiv_tags": ["mineurs", "guilde_artisanale"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Le tintement régulier des pioches se fait entendre. Une équipe de mineurs burinés extrait minutieusement la précieuse roche. Ils vous jettent des regards avertis, protégeant instinctivement leur récolte du jour.",
+      "en": "The steady clink of pickaxes can be heard. A team of weathered miners meticulously extracts the precious rock. They cast warning glances your way, instinctively protecting their day's harvest."
+    }
+  },
+  {
+    "require_stage_tags": ["ruine", "exploration"],
+    "require_motiv_tags": ["pilleurs", "aventuriers_rivaux"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Vous n'êtes pas les premiers arrivés. Un groupe de mercenaires sans scrupules est en train de forcer à coups de barre à mine la porte d'un vieux tombeau. En vous apercevant, ils dégainent leurs armes pour protéger leur futur butin.",
+      "en": "You are not the first to arrive. A group of unscrupulous mercenaries is forcing open the door of an old tomb with crowbars. Upon noticing you, they draw their weapons to protect their future loot."
+    }
+  },
+  {
+    "require_stage_tags": ["foudre", "monolithes", "magie_ancienne"],
+    "require_motiv_tags": ["anomalie_magique", "danger_environnemental"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'énergie de l'endroit est hors de contrôle. De dangereux arcs électriques ou des vortex d'énergie pure jaillissent du sol et des pierres, rendant la simple traversée de la zone mortellement périlleuse.",
+      "en": "The energy of the place is out of control. Dangerous electric arcs or vortexes of pure energy shoot from the ground and stones, making simply crossing the area mortally perilous."
+    }
+  },
+  {
+    "require_stage_tags": ["tour", "observation"],
+    "require_motiv_tags": ["metamorphe", "illusion"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Le guetteur en haut de la tour vous fait un grand signe amical pour vous inviter à monter vous mettre à l'abri. Pourtant, quelque chose cloche dans ses proportions, et son sourire est beaucoup trop large pour être humain.",
+      "en": "The lookout at the top of the tower gives you a big, friendly wave inviting you to come up and take shelter. Yet, something is wrong with his proportions, and his smile is much too wide to be human."
+    }
+  },
+  {
+    "require_stage_tags": ["lac", "mystere"],
+    "require_motiv_tags": ["apparition_divine", "indice_cache"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'eau s'illumine d'une douce lueur. Une entité luminescente se forme un bref instant au-dessus de la surface. Sans un mot, elle tend un bras éthéré vers une direction précise avant de se dissoudre dans l'air.",
+      "en": "The water illuminates with a soft glow. A luminescent entity forms for a brief moment above the surface. Without a word, it points an ethereal arm in a specific direction before dissolving into the air."
+    }
+  },
+  {
+    "require_stage_tags": ["perte_reperes", "mystere"],
+    "require_motiv_tags": ["labyrinthe_naturel", "perte_orientation"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "La géographie environnante n'a plus aucun sens. Le chemin derrière vous a été avalé par la végétation, et peu importe la direction que vous prenez, vous semblez tourner en rond. Une magie espiègle ou malveillante est à l'œuvre.",
+      "en": "The surrounding geography makes no sense anymore. The path behind you has been swallowed by vegetation, and no matter which direction you take, you seem to be walking in circles. Mischievous or malevolent magic is at work."
+    }
+  },
+  {
+    "require_stage_tags": ["glissant", "pont"],
+    "require_motiv_tags": ["sabotage", "piege_chute"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un reflet métallique trahit la présence d'un fin câble tendu en travers de votre route, juste au pire endroit. Quelqu'un a méticuleusement piégé ce passage pour envoyer les voyageurs dans le vide.",
+      "en": "A metallic reflection betrays the presence of a thin wire stretched across your path, right in the worst spot. Someone has meticulously trapped this passage to send travelers plunging into the void."
+    }
+  },
+  {
+    "require_stage_tags": ["arbre", "monumental"],
+    "require_motiv_tags": ["ressource_epique", "epreuve_physique"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un morceau de l'arbre géant, imprégné d'une sève brillante aux vertus inestimables, vient de chuter. Mais il est resté coincé dans un enchevêtrement de ronces acérées, nécessitant d'agir vite et avec force pour le récupérer.",
+      "en": "A piece of the giant tree, imbued with a glowing sap of inestimable virtue, has just fallen. But it is stuck in a tangle of sharp brambles, requiring fast and forceful action to retrieve it."
+    }
+  },
+  {
+    "require_stage_tags": ["cimetiere", "solennel"],
+    "require_motiv_tags": ["enterrement", "recueillement"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un petit cortège de villageois endeuillés creuse la terre humide. Les chants tristes s'élèvent sous le ciel pendant qu'un ancien prononce les derniers mots. Ils interrompent leur chant en vous voyant.",
+      "en": "A small procession of mourning villagers digs the damp earth. Sad songs rise under the sky while an elder speaks the final words. They stop their singing upon seeing you."
+    }
+  },
+  {
+    "require_stage_tags": ["halte", "traces"],
+    "require_motiv_tags": ["mercenaires", "avis_de_recherche"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Autour d'un feu de camp ronflant, des traqueurs professionnels aiguisent leurs armes. L'un d'eux déroule un parchemin chiffonné et plisse les yeux en dévisageant les membres de votre groupe un par un.",
+      "en": "Around a roaring campfire, professional trackers sharpen their weapons. One of them unrolls a crumpled parchment and squints, examining the members of your group one by one."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["saltimbanques", "divertissement"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Un chariot bariolé de couleurs vives est garé sur le bas-côté. Des cracheurs de feu et des jongleurs s'entraînent joyeusement. Un illusionniste au grand chapeau s'approche pour vous proposer un tour en échange d'une piécette.",
+      "en": "A brightly colored wagon is parked on the roadside. Fire-breathers and jugglers practice happily. An illusionist in a big hat approaches to offer you a trick for a small coin."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["guerre_des_gangs", "opportunite_pillage"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Le fracas de l'acier contre l'acier résonne. Plus loin sur la route, deux bandes rivales (ou des miliciens contre des hors-la-loi) sont en plein affrontement sanglant, laissant leurs chariots de ravitaillement sans surveillance.",
+      "en": "The clash of steel against steel echoes. Further down the road, two rival bands (or militiamen against outlaws) are in a bloody clash, leaving their supply carts unguarded."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["oracle", "prophetie"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Une figure pitoyable aux yeux blancs, aveugle mais étrangement lucide, se jette sur vos pas. Elle agrippe votre bras avec une force inattendue et hurle une prédiction glaçante qui semble étrangement liée à votre destin.",
+      "en": "A pitiful figure with white eyes, blind but strangely lucid, throws itself into your path. It grips your arm with unexpected strength and screams a chilling prediction that seems strangely tied to your fate."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": ["ambiance_pure", "neutre"],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Le vent fait doucement bruisser la nature environnante. Un aigle solitaire tourne haut dans le ciel, ou peut-être est-ce un cerf qui vous observe brièvement avant de bondir dans les buissons. Le monde continue de tourner paisiblement.",
+      "en": "The wind softly rustles the surrounding nature. A lone eagle circles high in the sky, or perhaps a stag briefly watches you before bounding into the bushes. The world continues to turn peacefully."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": ["sauvage"],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "La sauvagerie de la région s'impose à vous. La piste est difficile à suivre et la faune locale, bien qu'invisible, semble vous scruter à chaque instant.",
+      "en": "The savagery of the region imposes itself on you. The trail is difficult to follow and the local fauna, though invisible, seems to scrutinize you at every moment."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": ["magie-forte"],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'air crépite d'une étrange électricité statique. Les couleurs de la nature environnante semblent légèrement trop vibrantes, prouvant la forte imprégnation magique du territoire.",
+      "en": "The air crackles with strange static electricity. The colors of the surrounding nature seem slightly too vibrant, proving the territory's strong magical impregnation."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": ["securite-forte"],
+    "require_eco_tags": ["militaire"],
+    "text": {
+      "fr": "Vous remarquez les restes récents d'un campement militaire extrêmement discipliné. La région est lourdement patrouillée, l'ordre y règne d'une main de fer.",
+      "en": "You notice the recent remains of an extremely disciplined military camp. The region is heavily patrolled, order rules with an iron fist."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": ["miserable"],
+    "require_eco_tags": ["survie-pauvre"],
+    "text": {
+      "fr": "La pauvreté de la région est frappante. Les quelques abris que vous croisez sont délabrés et la terre semble refuser de nourrir ses habitants. Le voyage est morose.",
+      "en": "The poverty of the region is striking. The few shelters you pass are dilapidated and the earth seems to refuse to feed its inhabitants. The journey is gloomy."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": ["corrompu"],
+    "require_eco_tags": ["criminelle"],
+    "text": {
+      "fr": "L'ambiance est lourde. Vous apercevez des symboles discrets gravés sur les arbres, indiquant que le crime organisé règne en maître sur ces routes.",
+      "en": "The atmosphere is heavy. You notice discreet symbols carved into the trees, indicating that organized crime reigns supreme on these roads."
+    }
+  },
+  {
+    "require_stage_tags": [],
+    "require_motiv_tags": [],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Votre marche se poursuit dans un calme relatif, vous laissant le temps de discuter ou de panser vos plaies en profitant du voyage.",
+      "en": "Your march continues in relative calm, leaving you time to chat or tend your wounds while enjoying the journey."
+    }
+  }
+]
