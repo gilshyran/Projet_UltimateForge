@@ -1,0 +1,75 @@
+{
+  "ages": {
+    "weighted": { "Récent": 15, "Établi": 45, "Ancien": 30, "Millénaire": 10 },
+    "descriptions": {
+      "Récent": { 
+        "fr": "fondé il y a seulement quelques années par des pionniers courageux", 
+        "en": "founded only a few years ago by courageous pioneers" 
+      },
+      "Établi": { 
+        "fr": "établi depuis plusieurs décennies et solidement ancré dans la région", 
+        "en": "established for several decades and firmly rooted in the region" 
+      },
+      "Ancien": { 
+        "fr": "très ancien, vieux de plusieurs siècles et marqué par l'usure du temps", 
+        "en": "very ancient, centuries old and marked by the wear of time" 
+      },
+      "Millénaire": { 
+        "fr": "millénaire, dont les fondations mystiques datent de la Première Ère", 
+        "en": "millennial, whose mystical foundations date back to the First Age" 
+      }
+    }
+  },
+  "past_events": [
+    { "fr": "La ville a survécu à un incendie dévastateur qui a ravagé la moitié des bâtiments d'origine.", "en": "The town survived a devastating fire that ravaged half the original buildings." },
+    { "fr": "Une ancienne épidémie a laissé un quartier entier vide et scellé jusqu'à ce jour.", "en": "An old plague left an entire district empty and sealed to this day." },
+    { "fr": "Un siège meurtrier dans le passé a poussé les habitants à fortifier de manière obsessionnelle leurs caves.", "en": "A deadly siege in the past forced inhabitants to obsessively fortify their cellars." },
+    { "fr": "Le lieu a été abandonné puis recolonisé à trois reprises au cours de son histoire.", "en": "The place was abandoned and recolonized three times throughout its history." },
+    { "fr": "Un traité de paix historique a été signé ici entre les peuples de la surface et les tribus humanoïdes.", "en": "A historic peace treaty was signed here between surface dwellers and humanoid tribes." },
+    { "fr": "La ville a repoussé un dragon rouge ; son immense crâne orne encore la place principale.", "en": "The town fended off a red dragon; its massive skull still adorns the main square." },
+    { "fr": "Une expérience magique ratée a fait exploser la tour d'un mage, recouvrant la ville de poussière de cristal.", "en": "A failed magical experiment blew up a wizard's tower, covering the town in crystal dust." },
+    { "fr": "Un seigneur vampire a régné en secret sur la population pendant près d'un siècle avant d'être démasqué.", "en": "A vampire lord ruled the population in secret for nearly a century before being exposed." },
+    { "fr": "Un portail instable vers la Féerie s'est ouvert il y a longtemps, rendant la flore locale étrangement exubérante.", "en": "An unstable portal to the Feywild opened long ago, making local flora strangely exuberant." },
+    { "fr": "Des Drows ont mené un raid nocturne dévastateur depuis l'Outreterre, laissant une peur bleue de l'obscurité.", "en": "Drows led a devastating night raid from the Underdark, leaving a deep fear of the dark." },
+    { "fr": "La légendaire Tarrasque est passée à quelques kilomètres d'ici, modifiant à jamais le relief environnant.", "en": "The legendary Tarrasque passed a few miles from here, forever altering the surrounding terrain." },
+    { "fr": "Une ruée vers l'or (ou vers l'adamantium) a provoqué une croissance explosive et chaotique de la cité.", "en": "A gold (or adamantine) rush caused an explosive and chaotic growth of the city." },
+    { "fr": "Un culte démoniaque a presque réussi à invoquer un Seigneur Démon avant d'être arrêté par des paladins.", "en": "A demonic cult almost succeeded in summoning a Demon Lord before being stopped by paladins." },
+    { "fr": "Un fragment de cité volante d'un ancien empire s'est écrasé près d'ici, fournissant d'étranges matériaux de construction.", "en": "A fragment of a flying city from an ancient empire crashed nearby, providing strange building materials." },
+    { "fr": "Une épidémie de pétrification a frappé la ville ; plusieurs statues décoratives sont en réalité d'anciens habitants.", "en": "A petrification plague struck the town; several decorative statues are actually former residents." },
+    { "fr": "Une horde de gobelinoïdes a été massacrée aux portes de la ville, fertilisant les champs pour des décennies.", "en": "A goblinoid horde was slaughtered at the city gates, fertilizing the fields for decades." },
+    { "fr": "Des mineurs ont accidentellement percé une faille vers le Plan du Feu, nécessitant l'intervention d'archimages.", "en": "Miners accidentally breached a rift to the Plane of Fire, requiring the intervention of archmages." },
+    { "fr": "L'avatar d'une divinité loyale est apparu lors d'une famine pour bénir les puits et multiplier les récoltes.", "en": "The avatar of a lawful deity appeared during a famine to bless the wells and multiply the crops." },
+    { "fr": "La guilde des voleurs a pris le contrôle total du gouvernement de manière officielle pendant dix ans.", "en": "The thieves' guild took official and total control of the government for ten years." },
+    { "fr": "Une ancienne malédiction fait que les morts se relèvent s'ils ne sont pas incinérés dans les 24 heures.", "en": "An ancient curse causes the dead to rise if not cremated within 24 hours." },
+    { "fr": "Un Aboleth caché dans les nappes phréatiques a contrôlé l'esprit des dirigeants pendant une génération.", "en": "An Aboleth hidden in the groundwater mind-controlled the leaders for a generation." },
+    { "fr": "Une météorite de métal stellaire s'est abattue au centre de la ville, creusant le cratère où se trouve la place centrale.", "en": "A starmetal meteorite crashed in the town center, carving the crater where the main square now lies." },
+    { "fr": "Un sabbat de guenaudes a maudit le sang royal, provoquant la chute de l'ancienne dynastie dirigeante.", "en": "A hag coven cursed the royal bloodline, causing the fall of the former ruling dynasty." },
+    { "fr": "Un barde mythique a composé ici sa plus célèbre ballade, faisant de la ville un lieu de pèlerinage artistique.", "en": "A mythical bard composed his most famous ballad here, making the town an artistic pilgrimage site." },
+    { "fr": "La cité a été partiellement engloutie par les boues et rebâtie directement sur les toits de l'ancienne ville.", "en": "The city was partially swallowed by mud and rebuilt directly on the roofs of the old town." },
+    { "fr": "Un Djinn a exaucé le vœu d'un ancien bourgmestre, ce qui a eu des conséquences désastreuses et imprévisibles.", "en": "A Djinni granted a former burgomaster's wish, which had disastrous and unpredictable consequences." },
+    { "fr": "Une invasion d'araignées géantes a forcé la condamnation définitive des anciennes catacombes.", "en": "A giant spider invasion forced the permanent sealing of the old catacombs." },
+    { "fr": "Lors d'une tristement célèbre lune de sang, un tiers de la milice s'est transformé en lycanthropes.", "en": "During an infamous blood moon, a third of the militia turned into lycanthropes." },
+    { "fr": "La ville a été accidentellement transportée dans le Plan Astral pendant un mois avant de revenir.", "en": "The town was accidentally transported to the Astral Plane for a month before returning." },
+    { "fr": "Un roi tyran a été assassiné sur les marches du temple, laissant une tache de sang magique impossible à laver.", "en": "A tyrant king was assassinated on the temple steps, leaving a magical bloodstain impossible to wash away." },
+    { "fr": "Une grande croisade sainte est partie de ces murs, rapportant d'immenses richesses mais peu de survivants.", "en": "A great holy crusade departed from these walls, bringing back immense wealth but few survivors." },
+    { "fr": "Une tempête magique a fait pleuvoir des poissons et des amphibiens pendant une semaine entière.", "en": "A magical storm rained fish and amphibians for a whole week." },
+    { "fr": "Une bête gargantuesque a ravagé les quartiers extérieurs avant d'être repoussée par un héros anonyme.", "en": "A gargantuan beast ravaged the outer districts before being driven back by an anonymous hero." },
+    { "fr": "Les fondateurs ont passé un pacte sombre avec un Diable des Fosses pour survivre à un hiver mortel.", "en": "The founders made a dark pact with a Pit Fiend to survive a deadly winter." },
+    { "fr": "Un paladin légendaire est enterré sous la ville, son aura protégeant toujours les lieux des morts-vivants.", "en": "A legendary paladin is buried under the town, his aura still protecting the place from undead." },
+    { "fr": "La population a vécu pendant cinq ans sous l'illusion collective d'un Enchanteur fou sans s'en rendre compte.", "en": "The population lived for five years under the collective illusion of a mad Enchanter without realizing it." },
+    { "fr": "Une micro-faille vers la Gisombre s'est ouverte, recouvrant un quartier d'une pénombre et d'un brouillard perpétuels.", "en": "A micro-rift to the Shadowfell opened, covering a district in perpetual gloom and fog." },
+    { "fr": "Un chef de guerre orque a été vaincu ici lors d'un duel singulier, son épée géante servant aujourd'hui de monument.", "en": "An orc warlord was defeated here in a single duel, his giant sword now serving as a monument." },
+    { "fr": "Des Élémentaires de Terre ont été magiquement liés par d'anciens mages pour ériger les remparts en une seule nuit.", "en": "Earth Elementals were magically bound by ancient mages to erect the ramparts in a single night." },
+    { "fr": "La source d'eau principale a été maudite et a coulé couleur sang pendant tout un cycle lunaire.", "en": "The main water source was cursed and ran blood-red for a full lunar cycle." },
+    { "fr": "Le repaire d'un Tyrannœil a été découvert sous les égouts ; ses trésors ont financé l'expansion de la ville.", "en": "A Beholder's lair was discovered beneath the sewers; its treasures funded the city's expansion." },
+    { "fr": "Un Dragon de Laiton a pris la ville sous sa protection pendant une décennie en échange de conversations intéressantes.", "en": "A Brass Dragon took the town under its protection for a decade in exchange for interesting conversations." },
+    { "fr": "Une anomalie de chronomancie a enfermé la ville dans une boucle temporelle ; les habitants ont revécu la même journée des centaines de fois.", "en": "A chronomancy anomaly trapped the town in a time loop; residents relived the same day hundreds of times." },
+    { "fr": "Des aigles géants nichaient autrefois dans les plus hautes tours, cohabitant pacifiquement avec les habitants.", "en": "Giant eagles used to nest in the highest towers, coexisting peacefully with the inhabitants." },
+    { "fr": "Le seigneur bien-aimé s'est avéré être un Rakshasa déguisé, ce qui a déclenché une sanglante guerre civile.", "en": "The beloved lord turned out to be a disguised Rakshasa, sparking a bloody civil war." },
+    { "fr": "Un artefact divin a été caché ici, attirant pendant des années des nuées d'aventuriers avides et de cultistes.", "en": "A divine artifact was hidden here, attracting swarms of greedy adventurers and cultists for years." },
+    { "fr": "Un cercle de druides a éveillé les arbres environnants pour défendre la cité contre une armée d'envahisseurs.", "en": "A druid circle awakened the surrounding trees to defend the city against an invading army." },
+    { "fr": "Le sol s'est effondré au centre-ville, révélant des ruines elfiques intactes qui servent aujourd'hui de fondations.", "en": "The ground collapsed downtown, revealing intact elven ruins that now serve as foundations." },
+    { "fr": "Un Céleste blessé est tombé du ciel au milieu de la ville ; ses plumes sont toujours conservées comme de précieuses reliques.", "en": "A wounded Celestial fell from the sky in the middle of town; its feathers are still kept as precious relics." },
+    { "fr": "La ville a été le théâtre d'une immense bataille entre deux guildes de mages rivaux, laissant la roche locale vitrifiée.", "en": "The city was the site of a massive battle between two rival mage guilds, leaving the local rock vitrified." }
+  ]
+}
