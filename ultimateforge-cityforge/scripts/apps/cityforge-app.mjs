@@ -619,6 +619,12 @@ export class AvantisCityForgeApp extends Application {
                     </p>
                 </div>
             </div>
+
+            <div style="margin-top: 15px; font-size: 0.85em; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 8px; text-align: center;">
+                <strong><i class="fas fa-fingerprint"></i> Empreinte de la cité :</strong> 
+                <span style="color: #8e44ad; text-transform: capitalize;">${vibeTags.length ? vibeTags.join(', ') : 'Aucune'}</span> | 
+                <span style="color: #27ae60; text-transform: capitalize;">${ecoTags.length ? ecoTags.join(', ') : 'Aucune'}</span>
+            </div>
         `;
 
         html.find('#res-narrative').html(narrativeHTML);
@@ -647,6 +653,11 @@ export class AvantisCityForgeApp extends Application {
 
         html.find('#watabou-btn').data('name', settlementName).data('size', size).data('biome', biome);
         html.find('#results-section').removeClass('hidden');
+
+        // NOUVEAU : Propagation des Auras sur la carte autour de la cité !
+        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
+            this._propagateAurasToMap(this.targetedHexId, vibeTags, ecoTags);
+        }
     }
 
     // ==========================================
@@ -962,4 +973,206 @@ export class AvantisCityForgeApp extends Application {
         const url = `https://watabou.github.io/city-generator/?name=${name}&size=${wSize}&citadel=${hasCitadel}&plaza=${hasPlaza}&temple=${hasTemple}&walls=${hasWalls}&shantytown=${shantytown}&coast=${coast}&river=${river}`;
         window.open(url, '_blank');
     }
+
+
+    // =========================================================================
+    // NOUVEAU : LE GÉNÉRATEUR FANTÔME POUR LES LIEUX ISOLÉS (Bypass l'UI)
+    // =========================================================================
+    static async generateIsolatedPlaceJournal(hexId, traitId, regionId, biome) {
+        const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
+        
+        let basePath = "modules/ultimateforge-core/data/default_fantasy";
+        if (game.settings.settings.has("ultimateforge-core.activeThemePath")) {
+            basePath = game.settings.get("ultimateforge-core", "activeThemePath");
+            if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
+        }
+
+        // 1. Charger silencieusement TOUS les JSON (Ajout de jf_decors.json)
+        const [
+            namesData, tavernsData, shopsData, bountiesData, npcsData, 
+            regionData, statesData, themeSettings, isolatedData, decorsData
+        ] = await Promise.all([
+            fetch(`${basePath}/names.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/taverns.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/shops_loot.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/bounties.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/npcs.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/regions-structure.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/regional_states.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/theme.json`).then(r => r.json()).catch(()=>null),
+            fetch(`${basePath}/isolated_places.json`).then(r => r.json()).catch(()=>({})),
+            fetch(`${basePath}/jf_decors.json`).then(r => r.json()).catch(()=>[]) // <-- NOUVEAU
+        ]);
+
+        const getText = (item) => (typeof item === 'object') ? (item[lang] || item.fr || "") : (item || "");
+
+        // 2. ADN de la case (Sécurisé)
+        const hexData = canvas.scene.getFlag("ultimateforge-hexforge", hexId) || {};
+        const vibeTags = (hexData.vibe_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
+        const ecoTags = (hexData.eco_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
+        const stateId = hexData.state || null;
+        const stateInfo = stateId ? statesData[stateId] : null;
+        const priceMult = stateInfo ? stateInfo.price_multiplier : 1.0;
+        const govTags = ["isole"];
+        const size = "Campement";
+        
+        const safeRegionId = regionId || Object.keys(regionData)[0] || "inconnue";
+        const regionInfo = regionData[safeRegionId] || {};
+        const safeBiome = biome || "Plaines";
+        const weatherId = canvas.scene?.weather || "clear"; // Capture de la météo actuelle
+        
+        let currencySym = "PO";
+        if (themeSettings && themeSettings.currency && themeSettings.currency.symbol) {
+            currencySym = themeSettings.currency.symbol[lang] || themeSettings.currency.symbol.fr;
+        }
+
+        // 3. Nom du Dirigeant
+        let leaderName = lang === 'en' ? "Unknown Owner" : "Propriétaire Inconnu";
+        let charPool = namesData[safeRegionId]?.characters;
+        if (!charPool) {
+            const fallbackRegion = Object.keys(namesData)[0];
+            if (fallbackRegion) charPool = namesData[fallbackRegion]?.characters;
+        }
+        if (charPool) {
+            const sex = Math.random() > 0.5 ? 'm' : 'f';
+            const charData = charPool[sex];
+            if (charData && charData.firstnames && charData.firstnames.length > 0) {
+                const rawFirstName = charData.firstnames[Math.floor(Math.random() * charData.firstnames.length)];
+                let rawLastName = charData.lastnames[Math.floor(Math.random() * charData.lastnames.length)];
+                leaderName = (getText(rawFirstName) + " " + getText(rawLastName)).replace("{Lieu}", "").trim();
+            }
+        }
+
+        // 4. LECTURE DATA-DRIVEN DE LA RECETTE
+        const isoConfig = isolatedData[traitId] || {
+            name_format: { fr: "Lieu de {Leader}", en: "{Leader}'s Place" },
+            leader_title: { fr: "Propriétaire", en: "Owner" },
+            recipe: ["bazar"],
+            description: { fr: "Un lieu isolé et mystérieux.", en: "An isolated and mysterious place." }
+        };
+
+        const settlementName = (isoConfig.name_format[lang] || isoConfig.name_format.fr).replace("{Leader}", leaderName);
+        const leaderTitle = isoConfig.leader_title[lang] || isoConfig.leader_title.fr;
+        const recipe = isoConfig.recipe;
+        
+        // --- NOUVEAU : LA MAGIE NARRATIVE DU DÉCOR ---
+        let finalDescription = isoConfig.description[lang] || isoConfig.description.fr;
+        const validDecors = decorsData.filter(d => d.trait_id === traitId && (!d.weather_tags || d.weather_tags.length === 0 || d.weather_tags.includes(weatherId) || d.weather_tags.includes("all")));
+        if (validDecors.length > 0) {
+            const selectedDecor = validDecors[Math.floor(Math.random() * validDecors.length)];
+            finalDescription = selectedDecor.text[lang] || selectedDecor.text.fr;
+        }
+        // ----------------------------------------------
+
+        // 5. Générer les Pages
+        let pages = [];
+        const regionNameText = regionInfo.name ? (regionInfo.name[lang] || regionInfo.name.fr) : safeRegionId;
+        const stateText = stateInfo ? (lang === 'en' ? stateInfo.description.en : stateInfo.description.fr) : "";
+        
+        // Formatage élégant des tags d'auras (Mise en majuscules)
+        const formatTags = (tagsArray) => tagsArray.map(t => t.charAt(0).toUpperCase() + t.slice(1).replace(/-/g, ' ')).join(', ');
+        
+        let auraText = vibeTags.length > 0 ? `<br>L'atmosphère du lieu est marquée par : <strong style="color:#8e44ad;">${formatTags(vibeTags)}</strong>.` : "";
+        let ecoTextDesc = ecoTags.length > 0 ? `<br>Les activités locales s'articulent autour de : <strong style="color:#27ae60;">${formatTags(ecoTags)}</strong>.` : "";
+
+        const npcData = InternalNpcGenerator.generate(leaderName, "Lieu Isolé / Autonomie totale", size, safeRegionId, settlementName, "Humain", npcsData, leaderTitle);
+
+        // PAGE 1 : L'Aperçu injecte la description tirée de jf_decors.json !
+        const overviewHTML = `
+            <div style="font-family: var(--font-primary);">
+                <h1 style="color: #2980b9; border-bottom: 2px solid #3498db;"><i class="fas fa-home"></i> ${settlementName}</h1>
+                <p style="text-align: justify; font-size: 1.15em; line-height: 1.6; color: #2c3e50; border-left: 3px solid #f39c12; padding-left: 10px; background: #fcf3cf; padding: 10px;">
+                    <em>${finalDescription}</em>
+                </p>
+                <p style="font-size: 0.95em; color: #555;">
+                    Ce refuge est situé au cœur du biome <strong>${safeBiome}</strong> de la région de <strong>${regionNameText}</strong>.
+                </p>
+                <p style="font-size: 0.95em; border: 1px solid #eee; padding: 8px; background: #fafafa;">${auraText}${ecoTextDesc}</p>
+                ${stateText ? `<p style="color: #c0392b; border-left: 3px solid #c0392b; padding-left: 10px;"><strong>Contexte Régional :</strong> ${stateText}</p>` : ''}
+                
+                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+                <h3 style="color: #27ae60;"><i class="fas fa-map-signs"></i> Navigation</h3>
+                <p style="color: #555; font-style: italic;">Utilisez l'index sur la gauche du journal pour visiter les différentes installations de ce lieu.</p>
+                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+                
+                ${npcData.html}
+            </div>
+        `;
+
+        pages.push({ name: "1. Vue d'ensemble", type: "text", text: { content: overviewHTML, format: 1 } });
+
+        let pageIndex = 2;
+        for (const poi of recipe) {
+            let poiName = poi.replace(/_/g, ' ');
+            poiName = poiName.charAt(0).toUpperCase() + poiName.slice(1);
+            let contentHTML = "";
+
+            if (poi.includes("taverne")) {
+                contentHTML = InternalTavernGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, tavernsData, safeBiome, stateId, priceMult, currencySym, govTags, ecoTags, vibeTags);
+            } else if (poi.includes("panneau") || poi.includes("primes")) {
+                contentHTML = InternalBountyGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, bountiesData, safeBiome, stateId, govTags, ecoTags, vibeTags, currencySym);
+            } else {
+                contentHTML = InternalShopGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, shopsData, safeBiome, stateId, priceMult, currencySym);
+            }
+
+            pages.push({ name: `${pageIndex}. ${poiName}`, type: "text", text: { content: contentHTML, format: 1 } });
+            pageIndex++;
+        }
+
+        const entry = await JournalEntry.create({ name: settlementName, pages: pages });
+        await canvas.scene.setFlag("ultimateforge-hexforge", hexId, { cityJournalId: entry.id });
+
+        ui.notifications.success(`CityForge | Le lieu isolé "${settlementName}" a été généré !`);
+        entry.sheet.render(true);
+    }
+
+
+
+    // =========================================================================
+    // NOUVEAU : LA RADIATION CULTURELLE ET ÉCONOMIQUE (Propagation sur 2 cases)
+    // =========================================================================
+    async _propagateAurasToMap(centerHexId, vibeTags, ecoTags) {
+        if (!vibeTags.length && !ecoTags.length) return;
+        
+        const parts = centerHexId.split('_');
+        if (parts.length !== 3) return;
+        const cRow = parseInt(parts[1]);
+        const cCol = parseInt(parts[2]);
+        
+        const radius = 2; // Propagation sur 2 cases autour de la ville
+        let flagUpdates = {};
+        
+        // On dessine un "carré" autour de la ville, en ignorant les coins extrêmes pour simuler un cercle/hexagone
+        for (let r = cRow - radius; r <= cRow + radius; r++) {
+            for (let c = cCol - radius; c <= cCol + radius; c++) {
+                if (Math.abs(r - cRow) === radius && Math.abs(c - cCol) === radius) continue; 
+                
+                const hexId = `hex_${r}_${c}`;
+                const existingData = canvas.scene.getFlag("ultimateforge-hexforge", hexId) || {};
+                
+                const currentVibes = existingData.vibe_tags || [];
+                const currentEcos = existingData.eco_tags || [];
+                
+                // Fusion intelligente : on ajoute les tags de la ville sans créer de doublons
+                const newVibes = [...new Set([...currentVibes, ...vibeTags])];
+                const newEcos = [...new Set([...currentEcos, ...ecoTags])];
+                
+                // Si la case n'avait pas ces tags, on prépare la mise à jour
+                if (currentVibes.length !== newVibes.length || currentEcos.length !== newEcos.length) {
+                    flagUpdates[`flags.ultimateforge-hexforge.${hexId}`] = {
+                        ...existingData, 
+                        vibe_tags: newVibes,
+                        eco_tags: newEcos
+                    };
+                }
+            }
+        }
+        
+        // On applique la peinture d'aura sur toutes les cases d'un coup !
+        if (Object.keys(flagUpdates).length > 0) {
+            await canvas.scene.update(flagUpdates);
+            ui.notifications.info(`RealmsForge | L'influence de la cité s'est propagée sur les terres environnantes !`);
+        }
+    }
+
 }

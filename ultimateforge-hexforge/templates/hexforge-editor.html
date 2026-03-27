@@ -40,15 +40,17 @@
     </div>
 
     <div class="form-group">
-        <label><i class="fas fa-map-signs"></i> Trait Remarquable</label>
-        <div class="form-fields">
-            <select name="trait">
-                <option value="">-- Aucun trait --</option>
-                {{#each traits as |trait key|}}
-                <option value="{{key}}" {{#if (eq ../data.trait key)}}selected{{/if}}>{{trait.name.fr}}</option>
+        <label><i class="fas fa-landmark"></i> Trait Remarquable</label>
+        <select name="trait" id="hf-trait-select">
+            <option value="">-- Aucun --</option>
+            {{#each traitsGroups}}
+            <optgroup label="{{this.label}}">
+                {{#each this.items}}
+                <option value="{{this.id}}" data-category="{{../category}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
                 {{/each}}
-            </select>
-        </div>
+            </optgroup>
+            {{/each}}
+        </select>
     </div>
 
     <div class="form-group" style="border-top: 1px solid #777; padding-top: 10px; margin-top: 10px;">
@@ -135,15 +137,10 @@
         </div>
     </div>
 
-    <div class="hf-stacked-section">
-        <label><i class="fas fa-city"></i> Cité / Colonie</label>
-        <button type="button" id="hf-btn-cityforge" style="background: #2c3e50; color: white; border: 1px solid #1a252f; width: 100%; transition: 0.2s;">
-            {{#if data.cityJournalId}}
-                <i class="fas fa-door-open"></i> Ouvrir la Cité
-            {{else}}
-                <i class="fas fa-hammer"></i> Fonder une Cité
-            {{/if}}
-        </button>
+    <div class="hf-stacked-section" id="hf-cityforge-container" style="display: none;">
+        <label id="hf-cityforge-label"><i class="fas fa-map-marker-alt"></i> Lieu Interactif</label>
+        <button type="button" id="hf-btn-cityforge" data-has-city="{{#if data.cityJournalId}}true{{else}}false{{/if}}" style="color: white; border: none; width: 100%; transition: 0.2s;">
+            </button>
     </div>
 
     <button type="submit" style="margin-top: 15px; background: #e0e0d1; border: 1px solid #b5b5a6;">

@@ -1,0 +1,32 @@
+{
+  "taverne_isolee": {
+    "name_format": { "fr": "Le Relais de {Leader}", "en": "The Inn of {Leader}" },
+    "leader_title": { "fr": "Aubergiste", "en": "Innkeeper" },
+    "recipe": ["taverne", "ecurie", "panneau_annonces"],
+    "description": { "fr": "Un havre de repos vital pour les voyageurs fatigués, offrant chaleur, bière et un lit relativement propre à l'écart du monde.", "en": "A vital rest haven for weary travelers, offering warmth, ale, and a relatively clean bed away from the world." }
+  },
+  "ferme": {
+    "name_format": { "fr": "La Ferme de {Leader}", "en": "{Leader}'s Farm" },
+    "leader_title": { "fr": "Fermier", "en": "Farmer" },
+    "recipe": ["marchand_vivres", "ecurie", "bazar"],
+    "description": { "fr": "Un vaste domaine agricole robuste, arrachant difficilement ses récoltes à la terre environnante pour subvenir à ses besoins.", "en": "A robust agricultural estate, painstakingly wresting its harvests from the surrounding land to survive." }
+  },
+  "moulin": {
+    "name_format": { "fr": "Le Moulin de {Leader}", "en": "{Leader}'s Mill" },
+    "leader_title": { "fr": "Meunier", "en": "Miller" },
+    "recipe": ["marchand_vivres", "bazar"],
+    "description": { "fr": "Une imposante structure utilitaire qui rythme la vie des rares habitants des alentours grâce à sa meule infatigable.", "en": "An imposing utilitarian structure that sets the rhythm of life for the few nearby inhabitants with its tireless millstone." }
+  },
+  "camp_minier": {
+    "name_format": { "fr": "Camp Minier de {Leader}", "en": "Mining Camp of {Leader}" },
+    "leader_title": { "fr": "Contremaître", "en": "Foreman" },
+    "recipe": ["forge", "taverne_louche", "panneau_annonces"],
+    "description": { "fr": "Un regroupement chaotique de tentes et de cabanes de bois, peuplé de travailleurs rudes cherchant fortune sous la roche.", "en": "A chaotic cluster of tents and wooden shacks, populated by rough workers seeking fortune beneath the rock." }
+  },
+  "monastere": {
+    "name_format": { "fr": "L'Abbaye de {Leader}", "en": "Monastery of {Leader}" },
+    "leader_title": { "fr": "Abbé", "en": "Abbot" },
+    "recipe": ["librairie_esoterique", "apothicaire", "panneau_annonces"],
+    "description": { "fr": "Un sanctuaire de paix, de prière et de savoir. Les moines y préservent d'anciens secrets et cultivent des remèdes miracles loin du tumulte des villes.", "en": "A sanctuary of peace, prayer, and knowledge. Monks preserve ancient secrets here and cultivate miracle cures far from the hustle and bustle of cities." }
+  }
+}

@@ -42,7 +42,7 @@ export class HexForgeEditor extends FormApplication {
         }
         
         let regions = {}, biomes = {}, states = {}, traits = {}, overlays = {};
-        let temperaments = {}, economies = []; // NOUVEAU
+        let temperaments = {}, economies = []; 
 
         try {
             regions = await fetch(`${basePath}/regions-structure.json`).then(r => r.json());
@@ -50,15 +50,38 @@ export class HexForgeEditor extends FormApplication {
             states = await fetch(`${basePath}/hex_states.json`).then(r => r.json());
             traits = await fetch(`${basePath}/hex_traits.json`).then(r => r.json());
             overlays = await fetch(`${basePath}/hex_overlays.json`).then(r => r.json());
-            temperaments = await fetch(`${basePath}/temperament.json`).then(r => r.json()); // NOUVEAU
-            economies = await fetch(`${basePath}/economy.json`).then(r => r.json()); // NOUVEAU
+            temperaments = await fetch(`${basePath}/temperament.json`).then(r => r.json()); 
+            economies = await fetch(`${basePath}/economy.json`).then(r => r.json()); 
             
             this.overlaysData = overlays.overlays || {};
         } catch(e) {
             console.warn("HexForge | Impossible de lire certains fichiers JSON du thème.", e);
         }
 
-        // EXTRACTION DYNAMIQUE DES TAGS
+        const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
+
+        // LECTURE DES TRAITS GROUPÉS
+        const formattedTraits = [];
+        if (traits) {
+            for (const [catKey, catData] of Object.entries(traits)) {
+                if (!catData.traits) continue;
+                const group = {
+                    label: catData.label[lang] || catData.label.fr,
+                    category: catKey,
+                    items: []
+                };
+                for (const [traitId, traitData] of Object.entries(catData.traits)) {
+                    group.items.push({
+                        id: traitId,
+                        name: traitData.name[lang] || traitData.name.fr,
+                        selected: existingData.trait === traitId
+                    });
+                }
+                formattedTraits.push(group);
+            }
+        }
+
+        // EXTRACTION DYNAMIQUE DES TAGS (Vibe & Eco)
         const vibeSet = new Set();
         for (const category of Object.values(temperaments)) {
             if (Array.isArray(category)) {
@@ -95,17 +118,16 @@ export class HexForgeEditor extends FormApplication {
             regions: regions || {},
             biomes: biomes.biomes || {},
             states: states.states || {},
-            traits: traits.traits || {},
+            traitsGroups: formattedTraits, // NOUVEAU : Les traits sont maintenant groupés
             overlays: filteredOverlays,
             currentRegion: this.currentRegion,
             currentBiome: this.currentBiome,
             data: existingData,
-            vibeTags: vibeTags, // NOUVEAU
-            ecoTags: ecoTags    // NOUVEAU
+            vibeTags: vibeTags, 
+            ecoTags: ecoTags    
         };
     }
 
-    // NOUVEAU : On écoute les changements dans les menus déroulants en temps réel
     activateListeners(html) {
         super.activateListeners(html);
 
@@ -122,11 +144,44 @@ export class HexForgeEditor extends FormApplication {
             this._updateOverlayOptions(html);
         });
 
-        // LE PONT VERS CITYFORGE
+        // NOUVEAU : GESTION DYNAMIQUE DU BOUTON CITYFORGE / LIEUX ISOLÉS
+        const traitSelect = html.find('#hf-trait-select');
+        const cfContainer = html.find('#hf-cityforge-container');
+        const cfLabel = html.find('#hf-cityforge-label');
+        const cfBtn = html.find('#hf-btn-cityforge');
+        const hasCity = cfBtn.data('has-city') === true;
+
+        const updateCityForgeButton = () => {
+            const selectedOption = traitSelect.find('option:selected');
+            const category = selectedOption.data('category');
+
+            if (!category || category === 'geography') {
+                cfContainer.hide(); // On cache le bouton pour les rivières, ruines, etc.
+            } else {
+                cfContainer.show();
+                if (hasCity) {
+                    cfLabel.html('<i class="fas fa-door-open"></i> Accès au Lieu');
+                    cfBtn.html('<i class="fas fa-book-reader"></i> Ouvrir le Journal du Lieu');
+                    cfBtn.css({'background': 'linear-gradient(to bottom, #27ae60, #2ecc71)', 'box-shadow': '0 0 8px rgba(39, 174, 96, 0.5)'});
+                } else if (category === 'isolated') {
+                    cfLabel.html('<i class="fas fa-home"></i> Micro-Hub (Lieu Isolé)');
+                    cfBtn.html('<i class="fas fa-hammer"></i> Générer le Lieu Isolé');
+                    cfBtn.css({'background': 'linear-gradient(to bottom, #2980b9, #3498db)', 'box-shadow': 'none'});
+                } else if (category === 'settlements') {
+                    cfLabel.html('<i class="fas fa-city"></i> Agglomération (CityForge)');
+                    cfBtn.html('<i class="fas fa-hammer"></i> Fonder la Cité');
+                    cfBtn.css({'background': 'linear-gradient(to bottom, #2c3e50, #34495e)', 'box-shadow': 'none'});
+                }
+            }
+        };
+
+        traitSelect.change(updateCityForgeButton);
+        updateCityForgeButton(); // Déclenchement à l'ouverture de la fenêtre
+
+        // LE PONT VERS CITYFORGE (Le clic sur le bouton)
         html.find('#hf-btn-cityforge').click(async (e) => {
             e.preventDefault();
             
-            // 1. Vérifie que CityForge est bien installé et activé
             if (!game.modules.get("ultimateforge-cityforge")?.active) {
                 ui.notifications.error("HexForge | Le module CityForge n'est pas activé !");
                 return;
@@ -135,20 +190,48 @@ export class HexForgeEditor extends FormApplication {
             const existingData = canvas.scene.getFlag("ultimateforge-hexforge", this.hexId) || {};
             let cityDataToLoad = null;
 
-            // 2. Si la case possède déjà un ID de Journal (une ville existe), on la charge !
             if (existingData.cityJournalId) {
                 const journal = game.journal.get(existingData.cityJournalId);
                 if (journal) {
                     cityDataToLoad = journal.getFlag("ultimateforge-cityforge", "cityData");
-                } else {
-                    ui.notifications.warn("HexForge | Le journal de la cité est introuvable (peut-être supprimé ?).");
                 }
             }
 
-            // 3. On lance CityForge en lui passant l'ADN de la ville (s'il existe) ET l'ID de la case
+            const selectedOption = traitSelect.find('option:selected');
+            const category = selectedOption.data('category');
+            const traitId = selectedOption.val();
+
             if (globalThis.AvantisCityForgeApp) {
-                new globalThis.AvantisCityForgeApp({ loadedCityData: cityDataToLoad }, this.hexId).render(true);
-                this.close(); // Ferme la pop-up HexForge pour ne pas encombrer l'écran
+                // LOGIQUE POUR LES LIEUX ISOLÉS
+                if (category === 'isolated') {
+                    if (!existingData.cityJournalId) {
+                        // Pas encore généré : on lance le Générateur Fantôme
+                        if (globalThis.AvantisCityForgeApp.generateIsolatedPlaceJournal) {
+                            ui.notifications.info("CityForge | Génération du lieu isolé en cours...");
+                            await globalThis.AvantisCityForgeApp.generateIsolatedPlaceJournal(this.hexId, traitId, this.currentRegion, this.currentBiome);
+                            this.close();
+                            return; 
+                        }
+                    } else {
+                        // Déjà généré : on ouvre directement le Journal Foundry !
+                        const journal = game.journal.get(existingData.cityJournalId);
+                        if (journal) {
+                            journal.sheet.render(true);
+                            this.close();
+                            return;
+                        } else {
+                            ui.notifications.warn("HexForge | Le journal de ce lieu est introuvable (peut-être supprimé ?).");
+                        }
+                    }
+                }
+                
+                // LOGIQUE POUR LES VILLES (Settlements) : Comportement classique
+                new globalThis.AvantisCityForgeApp({ 
+                    loadedCityData: cityDataToLoad,
+                    traitCategory: category,
+                    traitId: traitId
+                }, this.hexId).render(true);
+                this.close(); 
             } else {
                 ui.notifications.warn("L'interface CityForge n'est pas accessible.");
             }
@@ -180,7 +263,8 @@ export class HexForgeEditor extends FormApplication {
     async _updateObject(event, formData) {
 
         console.log(`HexForge | Sauvegarde des données pour ${this.hexId} :`, formData);
-        // --- NOUVEAU : Formatage strict des tags en Tableaux (Arrays) ---
+        
+        // --- Formatage strict des tags en Tableaux (Arrays) ---
         if (formData.vibe_tags) {
             formData.vibe_tags = Array.isArray(formData.vibe_tags) ? formData.vibe_tags : [formData.vibe_tags];
         } else {
@@ -192,7 +276,6 @@ export class HexForgeEditor extends FormApplication {
         } else {
             formData.eco_tags = [];
         }
-        
         
         await canvas.scene.setFlag("ultimateforge-hexforge", this.hexId, formData);
         
