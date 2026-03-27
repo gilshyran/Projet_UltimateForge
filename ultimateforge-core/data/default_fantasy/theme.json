@@ -1,0 +1,7 @@
+{
+  "theme_name": "Pandora",
+  "currency": {
+    "symbol": { "fr": "PO", "en": "GP" },
+    "name": { "fr": "Pièces d'or", "en": "Gold Piece" }
+  }
+}
