@@ -1,0 +1,24 @@
+{
+  "states": {
+    "paisible": {
+      "name": { "fr": "Paisible", "en": "Peaceful" },
+      "description": { "fr": "La nature suit son cours, peu de dangers artificiels.", "en": "Nature takes its course, few artificial dangers." }
+    },
+    "sauvage": {
+      "name": { "fr": "Sauvage", "en": "Wild" },
+      "description": { "fr": "Une nature indomptée où les prédateurs règnent en maîtres.", "en": "Untamed nature where predators rule supreme." }
+    },
+    "corrompu": {
+      "name": { "fr": "Corrompu", "en": "Corrupted" },
+      "description": { "fr": "Une magie impie ou une maladie flétrit la terre et rend la faune agressive.", "en": "Unholy magic or disease blights the land and makes wildlife aggressive." }
+    },
+    "guerre": {
+      "name": { "fr": "Dévasté par la guerre", "en": "War-torn" },
+      "description": { "fr": "Cratères, cadavres, armes brisées et patrouilles hostiles.", "en": "Craters, corpses, broken weapons, and hostile patrols." }
+    },
+    "mystique": {
+      "name": { "fr": "Instabilité Magique", "en": "Magical Instability" },
+      "description": { "fr": "La trame magique est déchirée ici, provoquant des anomalies.", "en": "The magic weave is torn here, causing anomalies." }
+    }
+  }
+}
