@@ -1,0 +1,198 @@
+[
+  {
+    "id": "dist_camp_01",
+    "eco_tags": ["all"],
+    "biome_tags": ["all"],
+    "size_tags": ["Campement"],
+    "name": { "fr": "Le Cœur du Campement", "en": "The Heart of the Camp" },
+    "description": { "fr": "Un espace dégagé en terre battue où la communauté se rassemble.", "en": "A cleared dirt space where the community gathers." },
+    "poi_types": ["gouvernance"] 
+  },
+  {
+    "id": "dist_camp_02",
+    "eco_tags": ["survie-pauvre"],
+    "biome_tags": ["all"],
+    "size_tags": ["Hameau","Village"],
+    "name": { "fr": "Le Centre du village", "en": "The Heart of the Camp" },
+    "description": { "fr": "Un espace dégagé en terre battue où la communauté se rassemble.", "en": "A cleared dirt space where the community gathers." },
+    "poi_types": ["gouvernance", "taverne_louche"] 
+  },
+  {
+    "id": "dist_camp_03",
+    "eco_tags": ["agricole", "artisanat", "commerce"],
+    "biome_tags": ["all"],
+    "size_tags": ["Hameau","Village"],
+    "name": { "fr": "Le Centre du village", "en": "The Heart of the Camp" },
+    "description": { "fr": "Un espace dégagé en terre battue où la communauté se rassemble.", "en": "A cleared dirt space where the community gathers." },
+    "poi_types": ["gouvernance", "taverne","ecurie", "forge","tanneur","marchand_vivres","panneau_annonces" ] 
+  },
+  {
+    "id": "dist_camp_04",
+    "eco_tags": ["militaire", "securite-forte"],
+    "biome_tags": ["all"],
+    "size_tags": ["Hameau","Village"],
+    "name": { "fr": "Le Centre du village", "en": "The Heart of the Camp" },
+    "description": { "fr": "Un espace dégagé en terre battue où la communauté se rassemble.", "en": "A cleared dirt space where the community gathers." },
+    "poi_types": ["gouvernance", "taverne", "caserne","forge","archerie","armurerie","bureau_primes"] 
+  },
+  {
+    "id": "dist_camp_05",
+    "eco_tags": ["agricole","artisanat","bois","commerce","militaire","savoir-magie","criminelle","tourisme-foi","survie-pauvre","herbe","minerai","eau","chaleur"],
+    "biome_tags": ["all"],
+    "size_tags": [ "Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Le Centre-ville", "en": "The City Center" },
+    "description": { "fr": "Rues pavées et bâtiments administratifs d'époque.", "en": "Cobbled streets and period administrative buildings." },
+    "poi_types": ["taverne", "gouvernance", "panneau_annonces"] 
+  },
+  {
+    "id": "dist_camp06",
+    "eco_tags": ["luxe", "bourgeois"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "La Haute-Ville", "en": "The High City" },
+    "description": { "fr": "De vastes demeures sécurisées et des jardins bien entretenus.", "en": "Vast secure mansions and well-kept gardens." },
+    "poi_types": ["gouvernance", "taverne_luxueuse","joaillier","librairie","antiquaire","marchand_luxe","changeur_monnaie", "bureau_primes"]
+  },
+
+
+  {
+    "id": "dist_eau_petit",
+    "eco_tags": ["all"],
+    "biome_tags": ["Littoral", "Aquatique"],
+    "size_tags": ["Campement", "Hameau"],
+    "name": { "fr": "Cabanes de Pêcheurs", "en": "Fishermen's Huts" },
+    "description": { "fr": "Des cabanons de bois branlants sentant fort la saumure et le poisson écaillé.", "en": "Rickety wooden shacks smelling strongly of brine and scaled fish." },
+    "poi_types": ["marchand_poissons"]
+  },
+  {
+    "id": "dist_eau_moyen",
+    "eco_tags": ["all"],
+    "biome_tags": ["Littoral", "Aquatique"],
+    "size_tags": ["Village"],
+    "name": { "fr": "Le Petit Débarcadère", "en": "The Small Landing" },
+    "description": { "fr": "Quelques pontons de bois rongés par le sel et l'humidité.", "en": "A few wooden pontoons gnawed by salt and moisture." },
+    "poi_types": ["taverne", "marchand_poissons"] 
+  },
+  {
+    "id": "dist_eau_grand",
+    "eco_tags": ["all"],
+    "biome_tags": ["Littoral", "Aquatique"],
+    "size_tags": ["Petite Ville"],
+    "name": { "fr": "Les Docks", "en": "The Docks" },
+    "description": { "fr": "Une odeur de sel, de poisson pourri et un incessant balai de navires.", "en": "A smell of salt, rotting fish, and a constant sweep of ships." },
+    "poi_types": ["taverne", "taverne_louche", "marchand_vivres", "bureau_primes", "marchand_poissons"]
+  },
+  {
+    "id": "dist_eau_tresgrand",
+    "eco_tags": ["all"],
+    "biome_tags": ["Littoral", "Aquatique"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Les Docks Commerciaux", "en": "Commercial Docks" },
+    "description": { "fr": "Un ballet incessant de navires marchands, de grues grinçantes et de marins bruyants.", "en": "An endless ballet of merchant ships, creaking cranes, and loud sailors." },
+    "poi_types": ["taverne", "taverne_louche", "marchand_vivres", "bureau_primes"]
+  },
+
+  
+  {
+    "id": "dist_pauvre001",
+    "eco_tags": ["survie-pauvre","militaire","commerce","criminelle"],
+    "biome_tags": ["all"],
+    "size_tags": ["Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Les Bas-Fonds", "en": "The Slums" },
+    "description": { "fr": "Des ruelles boueuses où la misère et le crime s'y cachent.", "en": "Muddy alleys where misery and crime hide." },
+    "poi_types": ["taverne_louche", "marchand_noir","armurerie_louche","bazar"]
+  },
+  {
+    "id": "dist_pauvre002",
+    "eco_tags": ["survie-pauvre","militaire"],
+    "biome_tags": ["all"],
+    "size_tags": ["Village", "Petite Ville"],
+    "name": { "fr": "Le Camp des Parias", "en": "Outcasts' Camp" },
+    "description": { "fr": "Un amas de tentes de fortune et d'abris en tôle hors des murs.", "en": "A jumble of makeshift tents and tin shelters outside the walls." },
+    "poi_types": ["taverne_louche","marchand_noir"]
+  },
+  {
+    "id": "dist_march001",
+    "eco_tags": ["agricole","artisanat","commerce","herbe","minerai"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Quartier Populaire", "en": "Working-Class Neighborhood" },
+    "description": { "fr": "C'est l'un des quartiers les plus animés et denses.", "en": "It's one of the liveliest and most densely populated neighborhoods." },
+    "poi_types": ["taverne", "cartographe","librairie","marchand_vivres", "bureau_primes"]
+  },
+  {
+    "id": "dist_march002",
+    "eco_tags": ["commerce", "luxe", "artisanat","tourisme","bourgeois"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Le Quartier Marchand", "en": "Merchants' Promenade" },
+    "description": { "fr": "Grandes avenues bordées d'échoppes colorées et de crieurs.", "en": "Large avenues lined with colorful stalls and criers." },
+    "poi_types": ["marchand_vivres", "taverne","bazar","cartographe","changeur_monnaie","antiquaire","curiosite","librairie_esoterique","tailleur", "taverne_luxueuse", "panneau_annonces"]
+  },
+  {
+    "id": "dist_march002",
+    "eco_tags": ["commerce", "luxe", "artisanat","tourisme","bourgeois","minerai","herbe"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Le Quartier des Artisans", "en": "Merchants' Promenade" },
+    "description": { "fr": "Grandes avenues bordées d'échoppes colorées et de crieurs.", "en": "Large avenues lined with colorful stalls and criers." },
+    "poi_types": ["armurerie", "tailleur","archerie","apothicaire","joaillier","menagerie", "tanneur", "panneau_annonces"]
+  },
+
+  {
+    "id": "dist_mine001",
+    "eco_tags": ["artisanat","minerai"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Le Quartier des Forges", "en": "The Forge District" },
+    "description": { "fr": "L'air y est saturé de suie, de fumée et du bruit des marteaux.", "en": "The air is saturated with soot, smoke, and the sound of hammers." },
+    "poi_types": ["forgeron", "armurerie", "tanneur"]
+  },
+  {
+    "id": "dist_mil001",
+    "eco_tags": ["militaire", "securite-forte"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Le Bastion de la Garnison", "en": "Garrison Bastion" },
+    "description": { "fr": "Casernes austères, terrains d'entraînement et patrouilles lourdes.", "en": "Austere barracks, training grounds, and heavy patrols." },
+    "poi_types": ["bureau_primes", "caserne","gouvernance", "archerie","taverne"]
+  },
+  {
+    "id": "dist_farm001",
+    "eco_tags": ["agricole","elevage"],
+    "biome_tags": ["all"],
+    "size_tags": ["Village"],
+    "name": { "fr": "Terres Agricoles", "en": "Farmland" },
+    "description": { "fr": "Un amas de granges et de moulins encerclant le Village.", "en": "A cluster of barns and mills circling the village." },
+    "poi_types": ["marchand_vivres", "taverne","ferme", "panneau_annonces"]
+  },
+  {
+    "id": "dist_farm002",
+    "eco_tags": ["agricole","elevage"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Les Faubourgs Agricoles", "en": "Agricultural Suburbs" },
+    "description": { "fr": "Un amas de granges et de moulins encerclant la ville.", "en": "A cluster of barns and mills circling the town." },
+    "poi_types": ["marchand", "marchand_vivres", "taverne","ferme", "panneau_annonces"]
+  },
+  
+  {
+    "id": "dist_art001",
+    "eco_tags": ["herbe","savoir-magie"],
+    "biome_tags": ["all"],
+    "size_tags": ["Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "La Rue des Alchimistes", "en": "Alchemists' Street" },
+    "description": { "fr": "Des odeurs étranges et des fumerolles colorées s'échappent des toits.", "en": "Strange smells and colorful smoke escape from the roofs." },
+    "poi_types": ["apothicaire", "librairie_esoterique","librairie","graveur_pierre"]
+  },
+  
+  {
+    "id": "dist_011",
+    "eco_tags": ["bois","commerce"],
+    "biome_tags": ["Forêt"],
+    "size_tags": ["Village","Petite Ville", "Grande Cité", "Métropole", "Capitale"],
+    "name": { "fr": "Comptoirs forestiers", "en": "Forestry trading posts" },
+    "description": { "fr": "Un odeur de bois scié et de sève traversent les ruelles.", "en": "The smell of sawn wood and sap wafts through the alleyways." },
+    "poi_types": ["taverne", "taverne_louche", "marchand_bois", "scierie"]
+  }
+]
