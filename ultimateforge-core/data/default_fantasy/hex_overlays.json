@@ -1,6 +1,6 @@
 {
   "overlays": {
-    "campement_med": { 
+    "campement": { 
       "name": { "fr": "Campement", "en": "Camp" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_camp_med.png",
       "regions": ["all"],
@@ -12,14 +12,26 @@
       "regions": ["all"],
       "biomes": ["Désert"]
     },
+    "camp_taiga": { 
+      "name": { "fr": "Campement de Yourtes", "en": "Yurt Camp" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_camp_taiga.png",
+      "regions": ["all"],
+      "biomes": ["Désert"]
+    },
+    "hameau": { 
+      "name": { "fr": "Village", "en": "hamlet" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_hameau_med.png",
+      "regions": ["all"],
+      "biomes": ["Plaines", "Forêt","Collines","Montagne","Littoral","Jungle","Outreterre"]
+    },
     "village": { 
       "name": { "fr": "Village", "en": "Village" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_village_med.png",
       "regions": ["all"],
-      "biomes": ["Plaines", "Forêt","Collines","Montagne","Littoral","Jungle","Outreterre","Sub-aquatique"]
+      "biomes": ["Plaines", "Forêt","Collines","Montagne","Littoral","Jungle","Outreterre"]
     },
     "village_lacustre": { 
-      "name": { "fr": "Village lacustre", "en": "Village lacustre" }, 
+      "name": { "fr": "Village lacustre", "en": "Lakeside village" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_village_lacustre.png",
       "regions": ["all"],
       "biomes": ["Littoral","Marais"]
@@ -28,7 +40,7 @@
       "name": { "fr": "Village (Aquatique)", "en": "Village (Aquatic)" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_bazar_flottant.png",
       "regions": ["all"],
-      "biomes": ["Aquatique"]
+      "biomes": ["Aquatique","Sub-aquatique"]
     },
     "village_desert": { 
       "name": { "fr": "Village du désert", "en": "Village du désert" }, 
@@ -37,92 +49,152 @@
       "biomes": ["Désert"]
     },
     "village_taiga": { 
-      "name": { "fr": "Village dans la taïga", "en": "Village du désert" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_village_taiga.png",
+      "name": { "fr": "Village de la taïga", "en": "Taiga village" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_village_bois.png",
       "regions": ["all"],
       "biomes": ["Taïga"]
     },
-    "campement": { 
-      "name": { "fr": "Campement abandonné", "en": "Abandoned Camp" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_camp_abandon.png",
+    "village_troglodyte": { 
+      "name": { "fr": "Village troglodyte", "en": "troglodyte village" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_village_troglodyte.png",
+      "regions": ["all"],
+      "biomes": ["Collines","Montagne","Désert"]
+    },
+    "small_cite": { 
+      "name": { "fr": "Petit Cité", "en": "Small City" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_petite_ville_med.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
     "cite": { 
-      "name": { "fr": "Cité", "en": "City" }, 
+      "name": { "fr": "Grande Cité", "en": "Big City" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_city_med.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
-    "tour_guet": { 
-      "name": { "fr": "Tour de guet / Avant-poste", "en": "Watchtower / Outpost" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_tour_guet.png",
+    "capitale": { 
+      "name": { "fr": "Capitale", "en": "Capital" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_cityBIG_med.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
-    "monastere": { 
+    "cite_desert": { 
+      "name": { "fr": "Cité du désert", "en": "Desert City" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_cite_desert.png",
+      "regions": ["all"],
+      "biomes": ["Désert"]
+    },
+    "cite_lacustre": { 
+      "name": { "fr": "Cité lacustre", "en": "Lakeside City" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_city_lacustre.png",
+      "regions": ["all"],
+      "biomes": ["Littoral","Marais"]
+    },
+    "mine": { 
+      "name": { "fr": "Camp minier", "en": "Mining camp" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_camp_mine.png",
+      "regions": ["all"],
+      "biomes": ["all"]
+    },
+    "cimetiere": { 
+      "name": { "fr": "Cimetière", "en": "Cimetary" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_cimetiere.png",
+      "regions": ["all"],
+      "biomes": ["all"]
+    },
+    "ferme": { 
+      "name": { "fr": "Ferme isolée", "en": "Isolated Farm" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_ferme.png",
+      "regions": ["all"],
+      "biomes": ["all"]
+    },
+    "inn": { 
+      "name": { "fr": "Auberge isolée", "en": "Isolated Inn" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_inn.png",
+      "regions": ["all"],
+      "biomes": ["all"]
+    },
+    "monastery": { 
       "name": { "fr": "Monastère", "en": "Monastery" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_monastere.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
-    "faille": { 
-      "name": { "fr": "Faille / Gouffre", "en": "Chasm / Gorge" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_faille.png",
+    "windmill": { 
+      "name": { "fr": "Moulin à vent", "en": "Windmill" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_moulin_vent.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
-    "cristaux": { 
-      "name": { "fr": "Affleurement Cristallin", "en": "Crystal Outcropping" }, 
+    "crital": { 
+      "name": { "fr": "Crital", "en": "Crystal" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_crital.png",
       "regions": ["all"],
       "biomes": ["all"]
     },
-    "arbre_geant": { 
-      "name": { "fr": "Arbre Millénaire / Géant", "en": "Ancient / Giant Tree" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_big_tree.png",
-      "regions": ["all"],
-      "biomes": ["all"]
-    },
-    "monolithe": { 
-      "name": { "fr": "Monolithes / Pierres dressées", "en": "Monoliths / Standing Stones" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_city_med.png",
-      "regions": ["all"],
-      "biomes": ["all"]
-    },
-    "sanctuaire": { 
-      "name": { "fr": "Sanctuaire oublié", "en": "City" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_city_med.png",
-      "regions": ["all"],
-      "biomes": ["all"]
-    },
-    "pont(NS)": { 
-      "name": { "fr": "Pont (NS)", "en": "Bridge (NS)" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_pont N-S.png",
-      "regions": ["all"],
-      "biomes": ["all"]
-    },
-    "pont(EW)": { 
-      "name": { "fr": "Pont (EO)", "en": "Bridge (EW)" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_pont E-W.png",
-      "regions": ["all"],
-      "biomes": ["all"]
-    },
     "grotte": { 
-      "name": { "fr": "grotte", "en": "Cave" }, 
+      "name": { "fr": "Grotte", "en": "Cave" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_grotte.png",
       "regions": ["all"],
-      "biomes": ["all"]
+      "biomes": ["Collines","Montagne","Désert"]
     },
-    "repère": { 
+    "cascade": { 
+      "name": { "fr": "Cascade", "en": "Cascade" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_cascade_grotte.png",
+      "regions": ["all"],
+      "biomes": ["Collines","Montagne","Littoral"]
+    },
+    "taniere": { 
       "name": { "fr": "Tanière", "en": "Lair" }, 
       "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_taniere.png",
       "regions": ["all"],
+      "biomes": ["Collines","Forêt","Jungle"]
+    },
+    "temple": { 
+      "name": { "fr": "Temple ancien", "en": "Ancien Temple" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_temple.png",
+      "regions": ["all"],
+      "biomes": ["Forêt","Jungle"]
+    },
+    "monolithe": { 
+      "name": { "fr": "Monolithe", "en": "Monolith" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_monolithe.png",
+      "regions": ["all"],
+      "biomes": ["Plaines","Collines"]
+    },
+    "tour_guet": { 
+      "name": { "fr": "Tour de guet", "en": "Watchtower" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_tour_guet.png",
+      "regions": ["all"],
+      "biomes": ["Plaines","Collines"]
+    },
+    "tour_mage": { 
+      "name": { "fr": "Tour de mage", "en": "Wizard's tower" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_tour_mage.png",
+      "regions": ["all"],
+      "biomes": ["Plaines","Collines"]
+    },
+    "statue_guerrier": { 
+      "name": { "fr": "Temple ancien", "en": "Ancien Temple" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_statue_guerrier.png",
+      "regions": ["all"],
+      "biomes": ["PLaines","Littoral"]
+    },
+    "statue_deite": { 
+      "name": { "fr": "Pachamama", "en": "Pachamama" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_statue_pachamama.png",
+      "regions": ["all"],
       "biomes": ["all"]
     },
-    "dungeon": { 
-      "name": { "fr": "Donjon", "en": "Dungeon" }, 
-      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_temple.png",
+    "faille": { 
+      "name": { "fr": "Faille", "en": "Rift" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_faille.png",
+      "regions": ["all"],
+      "biomes": ["Plaines","Collines","Montagne"]
+    },
+    "ruines_cite": { 
+      "name": { "fr": "Ruines d'un ancien lieu de vie", "en": "Ruins of a former dwelling" }, 
+      "path": "modules/ultimateforge-core/data/default_fantasy/assets/ico_city_ruins.png",
       "regions": ["all"],
       "biomes": ["all"]
     }

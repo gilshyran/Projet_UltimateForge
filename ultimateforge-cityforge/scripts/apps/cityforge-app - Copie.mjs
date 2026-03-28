@@ -142,27 +142,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 
                 this._rebuildCity(html); 
             }, 100);
-        } else if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            // NOUVEAU : Pré-remplissage intelligent depuis HexForge !
-            setTimeout(() => {
-                const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
-                
-                if (hexData.region) html.find('#region-select').val(hexData.region).trigger('change');
-                if (hexData.biome) html.find('#biome-select').val(hexData.biome);
-                if (hexData.state) html.find('#state-select').val(hexData.state);
-                
-                // Déduction mathématique de la taille depuis le Trait HexForge
-                const traitId = this.options.traitId || hexData.trait;
-                if (traitId) {
-                    const sizeMap = { 
-                        "campement": "Campement", "hameau": "Hameau", "village": "Village", 
-                        "petite_ville": "Petite Ville", "grande_cite": "Grande Cité", 
-                        "metropole": "Métropole", "capitale": "Capitale" 
-                    };
-                    const matchedSize = sizeMap[traitId.toLowerCase()] || Object.values(sizeMap).find(s => traitId.toLowerCase().includes(s.toLowerCase()));
-                    if (matchedSize) html.find('#size-select').val(matchedSize);
-                }
-            }, 150);
         }
     }
 
@@ -500,15 +479,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const shuffledAxes = allAxes.sort(() => 0.5 - Math.random());
         const selectedAxes = shuffledAxes.slice(0, 2);
         const finalTraits = [];
-        
-        // NOUVEAU : HÉRITAGE DE LA CARTE (RealmsForge/HexForge)
         let vibeTags = [];
-        let existingEcos = [];
-        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
-            vibeTags = [...(hexData.vibe_tags || [])];
-            existingEcos = [...(hexData.eco_tags || [])];
-        }
 
         selectedAxes.forEach(axeName => {
             const traitsArray = this.temperamentData[axeName];
@@ -531,8 +502,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const randomTrait = traitsArray[selectedIndex];
 
             finalTraits.push(randomTrait.trait[lang] || randomTrait.trait.fr);
-            // FUSION : On cumule l'aura de la case AVEC l'aura générée !
-            vibeTags = [...new Set(vibeTags.concat(randomTrait.output_tags || []))];
+            vibeTags = vibeTags.concat(randomTrait.output_tags || []);
         });
         
         const andWord = lang === 'en' ? 'and' : 'et';
@@ -611,8 +581,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const selectedEcoIndex = this._rollWeighted(ecoWeightObj);
             const selectedEco = validEco[selectedEcoIndex];
             ecoText = (selectedEco.description[lang] || selectedEco.description.fr) + barterText;
-            // FUSION DES TAGS ÉCONOMIQUES (Carte + Génération)
-            ecoTags = [...new Set(existingEcos.concat(selectedEco.output_tags || []))];
+            ecoTags = selectedEco.output_tags || [];
         }
 
        // --- PHASE 3 : QUARTIERS ---

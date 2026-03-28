@@ -92,7 +92,7 @@
   },
   {
     "id": "vit_av_refuge_thermal",
-    "origin_tags": ["ressource-chaleur", "survie", "isole"],
+    "origin_tags": ["ressource-chaleur", "isole"],
     "description": { "fr": "L'activité géothermique locale offre un confort inespéré. De plus en plus de voyageurs fatigués viennent s'y réfugier pour échapper aux rigueurs du climat extérieur.", "en": "The local geothermal activity offers unexpected comfort. More and more weary travelers come to take refuge here to escape the harsh outdoor climate." },
     "vibe_modifiers": { "bienveillant": 50, "accueillant": 50, "miserable": -40, "sauvage": -30 },
     "output_tags": ["refugies", "voyageurs", "campement"]

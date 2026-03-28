@@ -1,6 +1,6 @@
 /* Style global de la fenêtre HUD */
 #ultimateforge-hud {
-    background: url('../../ui/parchment.jpg') repeat; /* Fond parchemin natif de Foundry */
+    background: url('../../../ui/parchment.jpg') repeat; /* Fond parchemin natif de Foundry */
     border: 2px solid #3c352b;
     border-radius: 8px;
     box-shadow: 0 0 15px #000000;

@@ -1,0 +1,39 @@
+{
+  "id": "ultimateforge-realmsforge",
+  "title": "UltimateForge - RealmsForge",
+  "description": "Générateur et gestionnaire de Factions, Royaumes et d'Influence géopolitique.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Ours_glace",
+      "url": "https://www.avantis.world",
+      "email": "contact@avantis.world"
+    }
+  ],
+  "esmodules": [
+    "scripts/apps/realmsforge-app.mjs"
+  ],
+  "styles": [
+    "styles/realmsforge.css"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "ultimateforge-core",
+        "type": "module"
+      },
+      {
+        "id": "ultimateforge-hexforge",
+        "type": "module"
+      },
+      {
+        "id": "ultimateforge-cityforge",
+        "type": "module"
+      }
+    ]
+  }
+}

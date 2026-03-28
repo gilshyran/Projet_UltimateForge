@@ -1,22 +1,42 @@
 console.log("UltimateForge | Chargement du HUD...");
 
-export class UltimateForgeHUD extends Application {
-    
-    static get defaultOptions() {
-        return foundry.utils.mergeObject(super.defaultOptions, {
-            id: "ultimateforge-hud",
-            title: "UltimateForge | Tableau de Bord",
-            template: "modules/ultimateforge-core/templates/ultimateforge-hud.html",
-            width: 320,
-            height: "auto",
-            popOut: true,
-            minimizable: true,
-            resizable: false
-        });
-    }
+const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
-    activateListeners(html) {
-        super.activateListeners(html);
+export class UltimateForgeHUD extends HandlebarsApplicationMixin(ApplicationV2) {
+    
+    // NOUVELLE SYNTAXE V2 POUR LES OPTIONS
+    static DEFAULT_OPTIONS = {
+        id: "ultimateforge-hud",
+        window: {
+            title: "UltimateForge | Tableau de Bord",
+            resizable: false,
+            minimizable: true
+        },
+        position: {
+            width: 320,
+            height: "auto"
+        }
+    };
+
+    // NOUVELLE SYNTAXE V2 POUR LE TEMPLATE
+    static PARTS = {
+        main: {
+            template: "modules/ultimateforge-core/templates/ultimateforge-hud.html"
+        }
+    };
+
+    // NOUVELLE SYNTAXE V2 POUR LES BOUTONS
+    _onRender(context, options) {
+        super._onRender(context, options);
+        
+        const html = $(this.element);
+
+        // CORRECTION V13 : Adoucir les titres
+        html.find('h1, h2, h3, h4').css({
+            'font-weight': '500', 
+            'text-shadow': 'none', 
+            'letter-spacing': '0.5px'
+        });
 
         // 1. GESTION DU TEMPS
         html.find('.uf-time-btn').click(async (e) => {
@@ -45,6 +65,22 @@ export class UltimateForgeHUD extends Application {
             ui.notifications.success(`Météo mise à jour !`);
         });
 
+        // ====================================================================
+        // CORRECTION V13 FINALE : GRILLE ET DÉBORDEMENT DU CADRE GRIS
+        // ====================================================================
+        const forgesContainer = html.find('#uf-btn-hexforge').parent();
+        forgesContainer.css({
+            'display': 'grid',
+            'grid-template-columns': 'repeat(3, 1fr)',
+            'row-gap': '25px',
+            'column-gap': '10px',
+            'align-items': 'start',
+            'padding-bottom': '30px',  // <-- On pousse le fond gris plus bas
+            'margin-bottom': '5px',    // <-- On aère un peu en dessous
+            'height': 'auto',          // <-- On force le recalcul de la hauteur V13
+            'min-height': 'min-content'
+        });
+
         // 3. GESTION DES 6 FORGES (Centralisée)
         const forges = [
             { 
@@ -59,7 +95,7 @@ export class UltimateForgeHUD extends Application {
             { 
                 id: '#uf-btn-cityforge', module: 'ultimateforge-cityforge', isToggle: false,
                 action: () => {
-                    if (globalThis.AvantisCityForgeApp) new globalThis.AvantisCityForgeApp().render(true);
+                    if (globalThis.AvantisCityForgeApp) new globalThis.AvantisCityForgeApp().render({force: true});
                     else ui.notifications.warn("L'interface CityForge est introuvable.");
                 }
             },
@@ -73,7 +109,13 @@ export class UltimateForgeHUD extends Application {
                     return game.ultimateforge.explorationActive;
                 }
             },
-            { id: '#uf-btn-realmsforge', module: 'ultimateforge-realmsforge', isToggle: false, action: () => ui.notifications.info("RealmsForge arrive bientôt !") },
+            { 
+                id: '#uf-btn-realmsforge', module: 'ultimateforge-realmsforge', isToggle: false, 
+                action: () => {
+                    if (globalThis.AvantisRealmsForgeApp) new globalThis.AvantisRealmsForgeApp().render({force: true});
+                    else ui.notifications.warn("L'interface RealmsForge n'est pas accessible.");
+                } 
+            },
             { id: '#uf-btn-donjonforge', module: 'ultimateforge-donjonforge', isToggle: false, action: () => ui.notifications.info("DonjonForge arrive bientôt !") },
             { id: '#uf-btn-guildforge', module: 'ultimateforge-guildforge', isToggle: false, action: () => ui.notifications.info("GuildForge arrive bientôt !") }
         ];
@@ -83,39 +125,72 @@ export class UltimateForgeHUD extends Application {
             const img = btn.find('img');
             const isActiveModule = game.modules.get(forge.module)?.active;
 
-            // Style par défaut
-            btn.css({ 'padding': '2px', 'background': 'transparent', 'border': '1px solid transparent' });
-            img.css({ 'width': '100%', 'border-radius': '4px', 'display': 'block', 'transition': '0.2s' });
+            btn.css({ 
+                'padding': '0', 
+                'margin': '0',
+                'background': 'transparent', 
+                'border': 'none', 
+                'outline': 'none', 
+                'box-shadow': 'none',
+                'line-height': '0', 
+                'display': 'block'
+            });
+            
+            img.css({ 
+                'width': '100%', 
+                'height': 'auto', 
+                'border-radius': '6px', 
+                'display': 'block', 
+                'transition': 'all 0.3s ease',
+                'vertical-align': 'middle' // Élimine l'espace invisible sous les images
+            });
 
             if (!isActiveModule) {
                 // Si non installé : grisé, inactif
                 img.css({ 'filter': 'grayscale(100%) opacity(40%)' });
                 btn.css({ 'cursor': 'not-allowed' });
-                btn.click(() => ui.notifications.warn(`Le module ${forge.module} n'est pas installé ou activé.`));
+                btn.click((e) => { e.preventDefault(); ui.notifications.warn(`Le module ${forge.module} n'est pas installé ou activé.`); });
             } else {
                 // Si installé
                 btn.css({ 'cursor': 'pointer' });
                 
-                // Effet de survol basique
+                // Effet de survol doux
                 btn.hover(
-                    () => { if (!forge.isToggle || !forge.getState()) img.css('transform', 'scale(1.05)'); },
-                    () => { img.css('transform', 'scale(1)'); }
+                    () => { 
+                        if (!forge.isToggle || !forge.getState()) img.css({ 'transform': 'scale(1.05)', 'filter': 'drop-shadow(0 4px 6px rgba(0,0,0,0.3))' }); 
+                    },
+                    () => { 
+                        if (!forge.isToggle || !forge.getState()) img.css({ 'transform': 'scale(1)', 'filter': 'none' }); 
+                    }
                 );
 
                 if (forge.isToggle) {
-                    // Si c'est un toggle (HexForge / JourneyForge), on vérifie l'état initial
-                    if (forge.getState && forge.getState()) {
-                        btn.css({'box-shadow': '0 0 12px #d4af37', 'border': '1px solid #d4af37', 'border-radius': '6px'});
-                    }
+                    // Création de l'effet "Allumé"
+                    const applyActiveStyle = (el) => el.css({
+                        'transform': 'scale(1.05)', 
+                        'filter': 'drop-shadow(0px 0px 10px rgba(243, 156, 18, 0.8))'
+                    });
+                    const applyInactiveStyle = (el) => el.css({
+                        'transform': 'scale(1)', 
+                        'filter': 'none'
+                    });
+
+                    // Vérification de l'état initial
+                    if (forge.getState && forge.getState()) applyActiveStyle(img);
+                    
                     // Action au clic
-                    btn.click(() => {
+                    btn.click((e) => {
+                        e.preventDefault();
                         const state = forge.action();
-                        if (state) btn.css({'box-shadow': '0 0 12px #d4af37', 'border': '1px solid #d4af37', 'border-radius': '6px'});
-                        else btn.css({'box-shadow': 'none', 'border': '1px solid transparent'});
+                        if (state) applyActiveStyle(img);
+                        else applyInactiveStyle(img);
                     });
                 } else {
                     // Si c'est un bouton simple (CityForge)
-                    btn.click(() => forge.action());
+                    btn.click((e) => {
+                        e.preventDefault();
+                        forge.action();
+                    });
                 }
             }
         });
@@ -133,7 +208,7 @@ Hooks.on('getSceneControlButtons', (controls) => {
             icon: "fas fa-globe",
             button: true,
             visible: true,
-            onClick: () => new UltimateForgeHUD().render(true)
+            onChange: () => new UltimateForgeHUD().render({force: true}) 
         };
 
         if (Array.isArray(tokenControls.tools) && !tokenControls.tools.find(t => t.name === "ultimateforge-hud")) {

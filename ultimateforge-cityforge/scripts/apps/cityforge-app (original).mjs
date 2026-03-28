@@ -4,15 +4,13 @@ import { InternalShopGenerator } from "./internal-shop.mjs";
 import { InternalBountyGenerator } from "./internal-bounty.mjs";
 import { InternalGovernanceGenerator } from "./internal-governance.mjs";
 
-const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
+export class AvantisCityForgeApp extends Application {
 
-export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV2) {
-
+    // NOUVEAU : On accepte un HexId en paramètre pour faire le lien avec la carte !
     constructor(options = {}, targetedHexId = null) {
         super(options);
-        // Rétrocompatibilité
-        this.targetedHexId = targetedHexId || options.targetedHexId || null; 
-        this.loadedCityData = options.loadedCityData || null; 
+        this.targetedHexId = targetedHexId; 
+        this.loadedCityData = options.loadedCityData || null; // NOUVEAU : Réception de l'ADN !
         this.regionData = {}; 
         this.originsData = [];
         this.vitalityData = [];
@@ -29,87 +27,89 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         this.bountiesData = {};
         this.statesData = {};
         this.historyData = {};
-        this.govBuildingsData = {};
         this.currentCityJournalData = null;
     }
 
-    static DEFAULT_OPTIONS = {
-        id: "avantis-cityforge",
-        window: {
+    static get defaultOptions() {
+        return foundry.utils.mergeObject(super.defaultOptions, {
+            id: "avantis-cityforge",
             title: "Avantis CityForge",
-            resizable: true
-        },
-        position: { width: 800, height: 680 },
-        classes: ["avantis-window", "avantis-cityforge-app"]
-    };
-
-    static PARTS = {
-        main: { template: "modules/ultimateforge-cityforge/templates/cityforge-app.html" }
-    };
-
-    async _prepareContext(options) {
-        if (Object.keys(this.regionData).length === 0) {
-            try {
-                let basePath = game.settings.get("ultimateforge-core", "activeThemePath");
-                if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
-
-                const themeRes = await fetch(`${basePath}/theme.json`).catch(() => null);
-                this.themeSettings = themeRes ? await themeRes.json() : null;
-
-                const [regRes, origRes, vitRes, tempRes, govRes, ecoRes, distRes, poiRes, namesRes, shopsRes, rumRes, npcsRes, tavRes, bountiesRes, statesRes, histRes, govBuildRes] = await Promise.all([
-                    fetch(`${basePath}/regions-structure.json`), fetch(`${basePath}/origins.json`), fetch(`${basePath}/vitality.json`), fetch(`${basePath}/temperament.json`),
-                    fetch(`${basePath}/governance.json`), fetch(`${basePath}/economy.json`), fetch(`${basePath}/districts.json`), fetch(`${basePath}/poi_seeds.json`),
-                    fetch(`${basePath}/names.json`), fetch(`${basePath}/shops_loot.json`), fetch(`${basePath}/rumors.json`), fetch(`${basePath}/npcs.json`),
-                    fetch(`${basePath}/taverns.json`), fetch(`${basePath}/bounties.json`), fetch(`${basePath}/regional_states.json`), fetch(`${basePath}/history.json`),
-                    fetch(`${basePath}/gov_buildings.json`)
-                ]);
-
-                this.regionData = await regRes.json();
-                this.originsData = await origRes.json();
-                this.vitalityData = await vitRes.json();
-                this.temperamentData = await tempRes.json();
-                this.governanceData = await govRes.json();
-                this.economyData = await ecoRes.json();
-                this.districtsData = await distRes.json();
-                this.poiSeedsData = await poiRes.json();
-                this.namesData = await namesRes.json();
-                this.shopsData = await shopsRes.json();
-                this.rumorsData = await rumRes.json();
-                this.npcsData = await npcsRes.json();
-                this.tavernsData = await tavRes.json();
-                this.bountiesData = await bountiesRes.json();
-                this.statesData = await statesRes.json();
-                this.historyData = await histRes.json();
-                this.govBuildingsData = await govBuildRes.json();
-            } catch (error) {
-                console.error("CITYFORGE | Erreur de chargement des JSON :", error);
-            }
-        }
-        return {};
+            template: "modules/ultimateforge-cityforge/templates/cityforge-app.html",
+            width: 850,
+            height: 750,       
+            resizable: true,   
+            classes: ["avantis-window", "avantis-cityforge-app"]
+        });
     }
 
-    _onRender(context, options) {
-        super._onRender(context, options);
-        const html = $(this.element);
-        const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
+    async _render(force, options) {
+        try {
+            let basePath = game.settings.get("ultimateforge-core", "activeThemePath");
+            if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
 
-        // CORRECTION V13 : On cible l'intérieur de la fenêtre vers le BAS (find)
-        const windowContent = html.find('.window-content');
-        
-        // On force le conteneur natif de Foundry à gérer le défilement
-        windowContent.css({ 
-            'overflow-y': 'auto', 
-            'overflow-x': 'hidden',
-            'padding': '15px',
-            'box-sizing': 'border-box'
-        });
+            const themeRes = await fetch(`${basePath}/theme.json`).catch(() => null);
+            this.themeSettings = themeRes ? await themeRes.json() : null;
 
-        // On s'assure que ton propre HTML n'est pas bloqué
-        html.find('.avantis-cityforge').css({
-            'height': 'auto',
-            'min-height': '100%',
-            'overflow': 'visible'
-        });
+            const regRes = await fetch(`${basePath}/regions-structure.json`);
+            this.regionData = await regRes.json();
+            
+            const origRes = await fetch(`${basePath}/origins.json`);
+            this.originsData = await origRes.json();
+
+            const vitRes = await fetch(`${basePath}/vitality.json`);
+            this.vitalityData = await vitRes.json();
+
+            const tempRes = await fetch(`${basePath}/temperament.json`);
+            this.temperamentData = await tempRes.json();
+
+            const govRes = await fetch(`${basePath}/governance.json`);
+            this.governanceData = await govRes.json();
+
+            const ecoRes = await fetch(`${basePath}/economy.json`);
+            this.economyData = await ecoRes.json();
+
+            const distRes = await fetch(`${basePath}/districts.json`);
+            this.districtsData = await distRes.json();
+
+            const poiRes = await fetch(`${basePath}/poi_seeds.json`);
+            this.poiSeedsData = await poiRes.json();
+
+            const namesRes = await fetch(`${basePath}/names.json`);
+            this.namesData = await namesRes.json();
+            
+            const shopsRes = await fetch(`${basePath}/shops_loot.json`);
+            this.shopsData = await shopsRes.json();
+
+            const rumRes = await fetch(`${basePath}/rumors.json`);
+            this.rumorsData = await rumRes.json();
+
+            const npcsRes = await fetch(`${basePath}/npcs.json`);
+            this.npcsData = await npcsRes.json();
+
+            const tavRes = await fetch(`${basePath}/taverns.json`);
+            this.tavernsData = await tavRes.json();
+
+            const bountiesRes = await fetch(`${basePath}/bounties.json`);
+            this.bountiesData = await bountiesRes.json();
+
+            const statesRes = await fetch(`${basePath}/regional_states.json`);
+            this.statesData = await statesRes.json();
+
+            const histRes = await fetch(`${basePath}/history.json`);
+            this.historyData = await histRes.json();
+
+            const govBuildRes = await fetch(`${basePath}/gov_buildings.json`);
+            this.govBuildingsData = await govBuildRes.json();
+            
+        } catch (error) {
+            console.error("CITYFORGE | Erreur de chargement des JSON pour ce thème :", error);
+        }
+        await super._render(force, options);
+    }
+
+    activateListeners(html) {
+        super.activateListeners(html);
+        const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
 
         const regionSelect = html.find('#region-select');
         regionSelect.empty().append(`<option value="none" selected disabled>${game.i18n.localize('CITYFORGE.RegionSelect')}</option>`);
@@ -133,6 +133,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         html.find('#save-city-btn').click(this._onSaveCityJournal.bind(this));
         html.find('#watabou-btn').click(this._onOpenWatabou.bind(this));
 
+        // NOUVEAU : Si on a reçu l'ADN d'une ville (loadedCityData), on reconstruit l'interface !
         if (this.loadedCityData) {
             setTimeout(() => {
                 html.find('#region-select').val(this.loadedCityData.regionId).trigger('change');
@@ -140,44 +141,22 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 html.find('#size-select').val(this.loadedCityData.size);
                 html.find('#state-select').val(this.loadedCityData.stateId);
                 
-                this._rebuildCity(html); 
+                this._rebuildCity(html); // Appel de la fonction de restauration
             }, 100);
-        } else if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            // NOUVEAU : Pré-remplissage intelligent depuis HexForge !
-            setTimeout(() => {
-                const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
-                
-                if (hexData.region) html.find('#region-select').val(hexData.region).trigger('change');
-                if (hexData.biome) html.find('#biome-select').val(hexData.biome);
-                if (hexData.state) html.find('#state-select').val(hexData.state);
-                
-                // Déduction mathématique de la taille depuis le Trait HexForge
-                const traitId = this.options.traitId || hexData.trait;
-                if (traitId) {
-                    const sizeMap = { 
-                        "campement": "Campement", "hameau": "Hameau", "village": "Village", 
-                        "petite_ville": "Petite Ville", "grande_cite": "Grande Cité", 
-                        "metropole": "Métropole", "capitale": "Capitale" 
-                    };
-                    const matchedSize = sizeMap[traitId.toLowerCase()] || Object.values(sizeMap).find(s => traitId.toLowerCase().includes(s.toLowerCase()));
-                    if (matchedSize) html.find('#size-select').val(matchedSize);
-                }
-            }, 150);
         }
     }
 
-
-    // =========================================================================
-    // NOUVEAU : LA FONCTION DE RECONSTRUCTION DE L'INTERFACE (AVEC LE BOUTON ÉCLAIR)
-    // =========================================================================
+    // NOUVEAU : Fonction qui restaure instantanément l'interface avec la mémoire
     _rebuildCity(html) {
         const data = this.loadedCityData;
         
+        // Sécurité : Vérifie si la ville a été sauvegardée avec l'interface HTML
         if (!data.narrativeHTML) {
-            ui.notifications.warn("CityForge | Veuillez cliquer sur 'Générer' puis 'Archiver' pour mettre cette ville à jour.");
+            ui.notifications.warn("CityForge | Veuillez cliquer sur 'Générer' puis 'Archiver' pour mettre cette ville à jour vers la V2.");
             return;
         }
 
+        // Restauration de l'interface en 1 milliseconde
         html.find('#res-title').text(data.settlementName);
         const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
         const regionInfo = this.regionData[data.regionId];
@@ -195,168 +174,8 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         html.find('#watabou-btn').data('name', data.settlementName).data('size', data.size).data('biome', data.biome);
         html.find('#results-section').removeClass('hidden');
-
-        // INJECTION DU BOUTON ACTUALISER
-        let updateBtn = html.find('#update-atmosphere-btn');
-        if (updateBtn.length === 0) {
-            updateBtn = $(`<button id="update-atmosphere-btn" class="cf-action-btn" style="width: auto; padding: 8px 20px; font-size: 1.1em; background: linear-gradient(to bottom, #e67e22, #d35400); border-color: #e67e22; margin-left: 15px;" title="Met à jour l'atmosphère selon les modificateurs de la carte RealmsForge"><i class="fas fa-bolt"></i> Actualiser l'Atmosphère</button>`);
-            html.find('#watabou-btn').after(updateBtn);
-            
-            updateBtn.click(async (e) => {
-                e.preventDefault();
-                await this._triggerAtmosphereUpdate(html);
-            });
-        }
-
-        ui.notifications.success(`CityForge | La cité ${data.settlementName} a été chargée depuis la carte.`);
+        ui.notifications.success(`CityForge | La cité ${data.settlementName} a été restaurée depuis la carte !`);
     }
-
-    // =========================================================================
-    // LE DÉCLENCHEUR D'ACTUALISATION (Refondu pour recalculer les textes)
-    // =========================================================================
-    // =========================================================================
-    // LE DÉCLENCHEUR D'ACTUALISATION (Avec Gouvernance et Boutons)
-    // =========================================================================
-    async _triggerAtmosphereUpdate(html) {
-        if (!this.targetedHexId) {
-            ui.notifications.error("Impossible d'actualiser : Aucune case ciblée sur la carte.");
-            return;
-        }
-        const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId);
-        if (!hexData || !hexData.cityJournalId) {
-            ui.notifications.warn("CityForge | Cette ville n'est pas archivée. Cliquez sur 'Archiver' d'abord.");
-            return;
-        }
-        const journal = game.journal.get(hexData.cityJournalId);
-        if (!journal) return;
-
-        ui.notifications.info(`CityForge | Les érudits recalculent l'atmosphère de la cité...`);
-
-        const data = this.loadedCityData;
-        const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
-
-        // 1. Lire la nouvelle donne depuis la case
-        const newVibeTags = (hexData.vibe_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
-        const newEcoTags = (hexData.eco_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
-        const newStateId = hexData.state || null;
-
-        // 2. NOUVEAU : Recalculer la GOUVERNANCE
-        let newGovTags = [];
-        let newGovText = lang === 'en' ? "led by a local chief." : "dirigé par un chef local.";
-        let newSafeGovText = "Chef local";
-
-        const validGov = this.governanceData.filter(gov => {
-            return (gov.size_tags.includes("all") || gov.size_tags.includes(data.size)) &&
-                   (gov.vibe_tags.includes("all") || gov.vibe_tags.some(tag => newVibeTags.includes(tag)));
-        });
-
-        if (validGov.length > 0) {
-            let govWeightObj = {};
-            validGov.forEach((gov, index) => {
-                let baseWeight = 10; 
-                if (gov.vibe_tags) gov.vibe_tags.forEach(tag => { if (newVibeTags.includes(tag)) baseWeight += 50; });
-                if (gov.vibe_tags.includes("all")) baseWeight = 5; 
-                govWeightObj[index] = baseWeight;
-            });
-            const selectedGovIndex = this._rollWeighted(govWeightObj);
-            const selectedGov = validGov[selectedGovIndex];
-            newGovText = selectedGov.description[lang] || selectedGov.description.fr;
-            newSafeGovText = newGovText.replace(/['"]/g, "&apos;").trim();
-            if (newSafeGovText.startsWith(",")) newSafeGovText = newSafeGovText.substring(1).trim();
-            newGovTags = selectedGov.output_tags || [];
-        }
-
-        // 3. Recalculer l'Ambiance (Vibe)
-        const finalTraits = [];
-        Object.keys(this.temperamentData).forEach(axeName => {
-            const traitsArray = this.temperamentData[axeName];
-            const matching = traitsArray.filter(t => t.output_tags && t.output_tags.some(tag => newVibeTags.includes(tag)));
-            if (matching.length > 0) {
-                const randomTrait = matching[Math.floor(Math.random() * matching.length)];
-                finalTraits.push(randomTrait.trait[lang] || randomTrait.trait.fr);
-            }
-        });
-        let newVibeText = lang === 'en' ? "a shifting atmosphere" : "une atmosphère changeante et incertaine";
-        if (finalTraits.length > 0) {
-            const selected = finalTraits.sort(() => 0.5 - Math.random()).slice(0, 2);
-            newVibeText = selected.join(` <span style='color:#7b1e1e; font-weight:bold;'>${lang === 'en' ? 'and' : 'et'}</span> `);
-        }
-
-        // 4. Recalculer l'Économie
-        let newEcoText = data.ecoText; 
-        const stateInfo = newStateId ? this.statesData[newStateId] : null;
-        const validEco = this.economyData.filter(eco => eco.output_tags && eco.output_tags.some(tag => newEcoTags.includes(tag)));
-        if (validEco.length > 0) {
-            const selectedEco = validEco[Math.floor(Math.random() * validEco.length)];
-            let barterText = (stateInfo && stateInfo.price_multiplier >= 1.5) ? (lang === 'en' ? " <br><em>Note: Barter is heavily practiced here.</em>" : " <br><em>Note : La région étant en crise, le troc est massivement pratiqué.</em>") : "";
-            newEcoText = (selectedEco.description[lang] || selectedEco.description.fr) + barterText;
-        }
-
-        // 5. Contexte Régional
-        let newStateHtmlBlock = "";
-        if (stateInfo && stateInfo.description) {
-            const stateDesc = lang === 'en' ? stateInfo.description.en : stateInfo.description.fr;
-            const contextTitle = lang === 'en' ? 'Current Context' : 'Contexte Régional';
-            newStateHtmlBlock = `
-                <div style="margin-bottom: 15px; border-left: 4px solid #c0392b; background: rgba(192, 57, 43, 0.05); padding: 10px; border-radius: 0 4px 4px 0;">
-                    <h4 style="margin: 0 0 5px 0; color: #c0392b;"><i class="fas fa-exclamation-triangle"></i> ${contextTitle}</h4>
-                    <p style="margin: 0; font-size: 0.95em; color: #444;">${stateDesc}</p>
-                </div>`;
-        }
-
-        let updatedHTML = data.narrativeHTML;
-
-        // Remplacement par expressions régulières sécurisées
-        const vibeRegex = /(<span style="display:inline-block; margin-top:5px;">.*?<strong>)(.*?)(<\/strong>\.<\/span>)/;
-        updatedHTML = updatedHTML.replace(vibeRegex, `$1${newVibeText}$3`);
-
-        const survieFr = "Pour prospérer, la population s'appuie sur son environnement :";
-        const survieEn = "To survive, the settlement relies on:";
-        const ecoRegex = new RegExp(`(${survieFr}|${survieEn})(.*?)(<\/p>)`, "s");
-        updatedHTML = updatedHTML.replace(ecoRegex, `$1 ${newEcoText}\n$3`);
-        
-        // Remplacement de la Gouvernance
-        const govRegex = /(<strong class="cf-leader-highlight">.*?data-gov=")[^"]*(".*?(?:<\/i><\/strong>|<\/strong><\/a>)\s*)(.*?)(<\/p>)/s;
-        updatedHTML = updatedHTML.replace(govRegex, `$1${newSafeGovText}$2${newGovText}\n$4`);
-
-        const stateRegex = /(<\/div>\s*)(<div style="margin-bottom: 15px; border-left: 4px solid #c0392b;.*?<\/div>\s*)?(<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">)/s;
-        updatedHTML = updatedHTML.replace(stateRegex, `$1${newStateHtmlBlock}\n$3`);
-
-        const tagsRegex = /(<strong><i class="fas fa-fingerprint"><\/i>[^<]*<\/strong>\s*)<span[^>]*>.*?<\/span>(\s*\|\s*)<span[^>]*>.*?<\/span>/;
-        const newVibeTagsHTML = newVibeTags.length ? newVibeTags.join(', ') : 'Aucune';
-        const newEcoTagsHTML = newEcoTags.length ? newEcoTags.join(', ') : 'Aucune';
-        updatedHTML = updatedHTML.replace(tagsRegex, `$1<span style="color: #8e44ad; text-transform: capitalize;">${newVibeTagsHTML}</span>$2<span style="color: #27ae60; text-transform: capitalize;">${newEcoTagsHTML}</span>`);
-
-        // NOUVEAU : Remplacement des tags cachés dans les boutons des lieux (Tavernes, Primes...)
-        let updatedDistricts = data.districtsHTML;
-        updatedDistricts = updatedDistricts.replace(/data-vibetags="[^"]*"/g, `data-vibetags="${newVibeTags.join(',')}"`);
-        updatedDistricts = updatedDistricts.replace(/data-ecotags="[^"]*"/g, `data-ecotags="${newEcoTags.join(',')}"`);
-        updatedDistricts = updatedDistricts.replace(/data-govtags="[^"]*"/g, `data-govtags="${newGovTags.join(',')}"`);
-        updatedDistricts = updatedDistricts.replace(/data-state="[^"]*"/g, `data-state="${newStateId || ""}"`);
-
-        // 6. MISE À JOUR DE LA MÉMOIRE DU GÉNÉRATEUR
-        data.govTags = newGovTags;
-        data.govText = newGovText;
-        data.vibeTags = newVibeTags;
-        data.ecoTags = newEcoTags;
-        data.stateId = newStateId;
-        data.narrativeHTML = updatedHTML;
-        data.districtsHTML = updatedDistricts; // Important pour les clics futurs !
-        
-        const journalNarrativeHTML = updatedHTML.replace(/<i class="fas fa-external-link-alt gen-leader-btn"[\s\S]*?<\/i>/g, '');
-        this.currentCityJournalData = {
-            name: data.settlementName,
-            content: journalNarrativeHTML + data.districtsHTML,
-            rawData: data
-        };
-
-        await AvantisCityForgeApp.updateCityAtmosphere(journal, this.targetedHexId, this.currentCityJournalData);
-        this.loadedCityData = data;
-        html.find('#state-select').val(newStateId);
-        this._rebuildCity(html);
-    }
-
-
 
     _updateDynamicFields(html, regionId) {
         const data = this.regionData[regionId];
@@ -500,15 +319,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const shuffledAxes = allAxes.sort(() => 0.5 - Math.random());
         const selectedAxes = shuffledAxes.slice(0, 2);
         const finalTraits = [];
-        
-        // NOUVEAU : HÉRITAGE DE LA CARTE (RealmsForge/HexForge)
         let vibeTags = [];
-        let existingEcos = [];
-        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
-            vibeTags = [...(hexData.vibe_tags || [])];
-            existingEcos = [...(hexData.eco_tags || [])];
-        }
 
         selectedAxes.forEach(axeName => {
             const traitsArray = this.temperamentData[axeName];
@@ -531,8 +342,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const randomTrait = traitsArray[selectedIndex];
 
             finalTraits.push(randomTrait.trait[lang] || randomTrait.trait.fr);
-            // FUSION : On cumule l'aura de la case AVEC l'aura générée !
-            vibeTags = [...new Set(vibeTags.concat(randomTrait.output_tags || []))];
+            vibeTags = vibeTags.concat(randomTrait.output_tags || []);
         });
         
         const andWord = lang === 'en' ? 'and' : 'et';
@@ -611,8 +421,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const selectedEcoIndex = this._rollWeighted(ecoWeightObj);
             const selectedEco = validEco[selectedEcoIndex];
             ecoText = (selectedEco.description[lang] || selectedEco.description.fr) + barterText;
-            // FUSION DES TAGS ÉCONOMIQUES (Carte + Génération)
-            ecoTags = [...new Set(existingEcos.concat(selectedEco.output_tags || []))];
+            ecoTags = selectedEco.output_tags || [];
         }
 
        // --- PHASE 3 : QUARTIERS ---
@@ -624,26 +433,10 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         let selectedDistricts = [];
 
-        // 1. LA RÈGLE D'OR : FORCER LE QUARTIER GOUVERNEMENTAL (Le Centre)
-        const govDistricts = this.districtsData.filter(d => 
-            d.poi_types && d.poi_types.includes("gouvernance") &&
-            (!d.size_tags || d.size_tags.includes("all") || d.size_tags.includes(size)) &&
-            (!d.biome_tags || d.biome_tags.includes("all") || d.biome_tags.includes(biome)) &&
-            (!d.eco_tags || d.eco_tags.includes("all") || d.eco_tags.some(tag => ecoTags.includes(tag)))
-        );
-        
-        // S'il y a un quartier gouvernemental valide, on le prend en premier !
-        if (govDistricts.length > 0) {
-            const coreDistrict = govDistricts[Math.floor(Math.random() * govDistricts.length)];
-            selectedDistricts.push(coreDistrict);
-        }
-
-        // 2. FORCER LE QUARTIER D'EAU (Si littoral/aquatique)
-        if ((biome === "Rivage" || biome === "Aquatique") && selectedDistricts.length < numDistricts) {
+        if (biome === "Rivage" || biome === "Aquatique") {
             const waterDistricts = this.districtsData.filter(d => 
                 d.biome_tags && (d.biome_tags.includes("Rivage") || d.biome_tags.includes("Aquatique")) &&
-                (!d.size_tags || d.size_tags.includes("all") || d.size_tags.includes(size)) &&
-                !selectedDistricts.includes(d) // Éviter les doublons
+                (!d.size_tags || d.size_tags.includes("all") || d.size_tags.includes(size))
             );
             
             if (waterDistricts.length > 0) {
@@ -652,7 +445,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }
         }
 
-        // 3. REMPLIR LE RESTE DES QUARTIERS ALÉATOIREMENT
         const validDistricts = this.districtsData.filter(d => {
             if (selectedDistricts.includes(d)) return false; 
             const validBiome = !d.biome_tags || d.biome_tags.includes("all") || d.biome_tags.includes(biome);
@@ -661,10 +453,8 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             return validBiome && validEco && validSize;
         });
 
-        // On calcule combien de quartiers il manque pour atteindre la taille de la ville
-        const remainingSlots = Math.max(0, numDistricts - selectedDistricts.length);
         const shuffledDistricts = validDistricts.sort(() => 0.5 - Math.random());
-        selectedDistricts = selectedDistricts.concat(shuffledDistricts.slice(0, remainingSlots));
+        selectedDistricts = selectedDistricts.concat(shuffledDistricts.slice(0, Math.max(0, numDistricts)));
 
         // --- PRÉPARATION DES VARIABLES NARRATIVES ---
         const regionName = regionInfo.name[lang] || regionInfo.name.fr;
@@ -829,12 +619,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                     </p>
                 </div>
             </div>
-
-            <div style="margin-top: 15px; font-size: 0.85em; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 8px; text-align: center;">
-                <strong><i class="fas fa-fingerprint"></i> Empreinte de la cité :</strong> 
-                <span style="color: #8e44ad; text-transform: capitalize;">${vibeTags.length ? vibeTags.join(', ') : 'Aucune'}</span> | 
-                <span style="color: #27ae60; text-transform: capitalize;">${ecoTags.length ? ecoTags.join(', ') : 'Aucune'}</span>
-            </div>
         `;
 
         html.find('#res-narrative').html(narrativeHTML);
@@ -863,11 +647,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         html.find('#watabou-btn').data('name', settlementName).data('size', size).data('biome', biome);
         html.find('#results-section').removeClass('hidden');
-
-        // NOUVEAU : Propagation des Auras sur la carte autour de la cité !
-        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            this._propagateAurasToMap(this.targetedHexId, vibeTags, ecoTags);
-        }
     }
 
     // ==========================================
@@ -1076,13 +855,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }]
         });
 
-        // NOUVEAU : On ajoute une balise secrète pour que le Recalculateur puisse le retrouver !
-        await entry.setFlag("ultimateforge-cityforge", "poiData", {
-            type: type,
-            district: district,
-            parentHexId: this.targetedHexId
-        });
-
         ui.notifications.info(`Le lieu ${name} a été documenté !`);
         entry.sheet.render(true);
     }
@@ -1190,303 +962,4 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const url = `https://watabou.github.io/city-generator/?name=${name}&size=${wSize}&citadel=${hasCitadel}&plaza=${hasPlaza}&temple=${hasTemple}&walls=${hasWalls}&shantytown=${shantytown}&coast=${coast}&river=${river}`;
         window.open(url, '_blank');
     }
-
-
-    // =========================================================================
-    // NOUVEAU : LE GÉNÉRATEUR FANTÔME POUR LES LIEUX ISOLÉS (Bypass l'UI)
-    // =========================================================================
-    static async generateIsolatedPlaceJournal(hexId, traitId, regionId, biome) {
-        const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
-        
-        let basePath = "modules/ultimateforge-core/data/default_fantasy";
-        if (game.settings.settings.has("ultimateforge-core.activeThemePath")) {
-            basePath = game.settings.get("ultimateforge-core", "activeThemePath");
-            if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
-        }
-
-        // 1. Charger silencieusement TOUS les JSON (Ajout de jf_decors.json)
-        const [
-            namesData, tavernsData, shopsData, bountiesData, npcsData, 
-            regionData, statesData, themeSettings, isolatedData, decorsData
-        ] = await Promise.all([
-            fetch(`${basePath}/names.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/taverns.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/shops_loot.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/bounties.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/npcs.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/regions-structure.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/regional_states.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/theme.json`).then(r => r.json()).catch(()=>null),
-            fetch(`${basePath}/isolated_places.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/jf_decors.json`).then(r => r.json()).catch(()=>[]) // <-- NOUVEAU
-        ]);
-
-        const getText = (item) => (typeof item === 'object') ? (item[lang] || item.fr || "") : (item || "");
-
-        // 2. ADN de la case (Sécurisé)
-        const hexData = canvas.scene.getFlag("ultimateforge-hexforge", hexId) || {};
-        const vibeTags = (hexData.vibe_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
-        const ecoTags = (hexData.eco_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
-        const stateId = hexData.state || null;
-        const stateInfo = stateId ? statesData[stateId] : null;
-        const priceMult = stateInfo ? stateInfo.price_multiplier : 1.0;
-        const govTags = ["isole"];
-        const size = "Campement";
-        
-        const safeRegionId = regionId || Object.keys(regionData)[0] || "inconnue";
-        const regionInfo = regionData[safeRegionId] || {};
-        const safeBiome = biome || "Plaines";
-        const weatherId = canvas.scene?.weather || "clear"; // Capture de la météo actuelle
-        
-        let currencySym = "PO";
-        if (themeSettings && themeSettings.currency && themeSettings.currency.symbol) {
-            currencySym = themeSettings.currency.symbol[lang] || themeSettings.currency.symbol.fr;
-        }
-
-        // 3. Nom du Dirigeant
-        let leaderName = lang === 'en' ? "Unknown Owner" : "Propriétaire Inconnu";
-        let charPool = namesData[safeRegionId]?.characters;
-        if (!charPool) {
-            const fallbackRegion = Object.keys(namesData)[0];
-            if (fallbackRegion) charPool = namesData[fallbackRegion]?.characters;
-        }
-        if (charPool) {
-            const sex = Math.random() > 0.5 ? 'm' : 'f';
-            const charData = charPool[sex];
-            if (charData && charData.firstnames && charData.firstnames.length > 0) {
-                const rawFirstName = charData.firstnames[Math.floor(Math.random() * charData.firstnames.length)];
-                let rawLastName = charData.lastnames[Math.floor(Math.random() * charData.lastnames.length)];
-                leaderName = (getText(rawFirstName) + " " + getText(rawLastName)).replace("{Lieu}", "").trim();
-            }
-        }
-
-        // 4. LECTURE DATA-DRIVEN DE LA RECETTE
-        const isoConfig = isolatedData[traitId] || {
-            name_format: { fr: "Lieu de {Leader}", en: "{Leader}'s Place" },
-            leader_title: { fr: "Propriétaire", en: "Owner" },
-            recipe: ["bazar"],
-            description: { fr: "Un lieu isolé et mystérieux.", en: "An isolated and mysterious place." }
-        };
-
-        const settlementName = (isoConfig.name_format[lang] || isoConfig.name_format.fr).replace("{Leader}", leaderName);
-        const leaderTitle = isoConfig.leader_title[lang] || isoConfig.leader_title.fr;
-        const recipe = isoConfig.recipe;
-        
-        // --- NOUVEAU : LA MAGIE NARRATIVE DU DÉCOR ---
-        let finalDescription = isoConfig.description[lang] || isoConfig.description.fr;
-        const validDecors = decorsData.filter(d => d.trait_id === traitId && (!d.weather_tags || d.weather_tags.length === 0 || d.weather_tags.includes(weatherId) || d.weather_tags.includes("all")));
-        if (validDecors.length > 0) {
-            const selectedDecor = validDecors[Math.floor(Math.random() * validDecors.length)];
-            finalDescription = selectedDecor.text[lang] || selectedDecor.text.fr;
-        }
-        // ----------------------------------------------
-
-        // 5. Générer les Pages
-        let pages = [];
-        const regionNameText = regionInfo.name ? (regionInfo.name[lang] || regionInfo.name.fr) : safeRegionId;
-        const stateText = stateInfo ? (lang === 'en' ? stateInfo.description.en : stateInfo.description.fr) : "";
-        
-        // Formatage élégant des tags d'auras (Mise en majuscules)
-        const formatTags = (tagsArray) => tagsArray.map(t => t.charAt(0).toUpperCase() + t.slice(1).replace(/-/g, ' ')).join(', ');
-        
-        let auraText = vibeTags.length > 0 ? `<br>L'atmosphère du lieu est marquée par : <strong style="color:#8e44ad;">${formatTags(vibeTags)}</strong>.` : "";
-        let ecoTextDesc = ecoTags.length > 0 ? `<br>Les activités locales s'articulent autour de : <strong style="color:#27ae60;">${formatTags(ecoTags)}</strong>.` : "";
-
-        const npcData = InternalNpcGenerator.generate(leaderName, "Lieu Isolé / Autonomie totale", size, safeRegionId, settlementName, "Humain", npcsData, leaderTitle);
-
-        // PAGE 1 : L'Aperçu injecte la description tirée de jf_decors.json !
-        const overviewHTML = `
-            <div style="font-family: var(--font-primary);">
-                <h1 style="color: #2980b9; border-bottom: 2px solid #3498db;"><i class="fas fa-home"></i> ${settlementName}</h1>
-                <p style="text-align: justify; font-size: 1.15em; line-height: 1.6; color: #2c3e50; border-left: 3px solid #f39c12; padding-left: 10px; background: #fcf3cf; padding: 10px;">
-                    <em>${finalDescription}</em>
-                </p>
-                <p style="font-size: 0.95em; color: #555;">
-                    Ce refuge est situé au cœur du biome <strong>${safeBiome}</strong> de la région de <strong>${regionNameText}</strong>.
-                </p>
-                <p style="font-size: 0.95em; border: 1px solid #eee; padding: 8px; background: #fafafa;">${auraText}${ecoTextDesc}</p>
-                ${stateText ? `<p style="color: #c0392b; border-left: 3px solid #c0392b; padding-left: 10px;"><strong>Contexte Régional :</strong> ${stateText}</p>` : ''}
-                
-                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
-                <h3 style="color: #27ae60;"><i class="fas fa-map-signs"></i> Navigation</h3>
-                <p style="color: #555; font-style: italic;">Utilisez l'index sur la gauche du journal pour visiter les différentes installations de ce lieu.</p>
-                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
-                
-                ${npcData.html}
-            </div>
-        `;
-
-        pages.push({ name: "1. Vue d'ensemble", type: "text", text: { content: overviewHTML, format: 1 } });
-
-        let pageIndex = 2;
-        for (const poi of recipe) {
-            let poiName = poi.replace(/_/g, ' ');
-            poiName = poiName.charAt(0).toUpperCase() + poiName.slice(1);
-            let contentHTML = "";
-
-            if (poi.includes("taverne")) {
-                contentHTML = InternalTavernGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, tavernsData, safeBiome, stateId, priceMult, currencySym, govTags, ecoTags, vibeTags);
-            } else if (poi.includes("panneau") || poi.includes("primes")) {
-                contentHTML = InternalBountyGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, bountiesData, safeBiome, stateId, govTags, ecoTags, vibeTags, currencySym);
-            } else {
-                contentHTML = InternalShopGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, shopsData, safeBiome, stateId, priceMult, currencySym);
-            }
-
-            pages.push({ name: `${pageIndex}. ${poiName}`, type: "text", text: { content: contentHTML, format: 1 } });
-            pageIndex++;
-        }
-
-        const entry = await JournalEntry.create({ name: settlementName, pages: pages });
-        await canvas.scene.setFlag("ultimateforge-hexforge", hexId, { cityJournalId: entry.id });
-
-        ui.notifications.success(`CityForge | Le lieu isolé "${settlementName}" a été généré !`);
-        entry.sheet.render(true);
-    }
-
-
-
-    // =========================================================================
-    // LA RADIATION CULTURELLE AVEC RÈGLE D'ÉROSION (Propagation sur 2 cases)
-    // =========================================================================
-    async _propagateAurasToMap(centerHexId, vibeTags, ecoTags) {
-        if (!vibeTags.length && !ecoTags.length) return;
-        
-        const parts = centerHexId.split('_');
-        if (parts.length !== 3) return;
-        const cRow = parseInt(parts[1]);
-        const cCol = parseInt(parts[2]);
-        
-        const radius = 2; // Propagation sur 2 cases
-        let flagUpdates = {};
-        
-        for (let r = cRow - radius; r <= cRow + radius; r++) {
-            for (let c = cCol - radius; c <= cCol + radius; c++) {
-                if (Math.abs(r - cRow) === radius && Math.abs(c - cCol) === radius) continue; 
-                
-                const hexId = `hex_${r}_${c}`;
-                const existingData = canvas.scene.getFlag("ultimateforge-hexforge", hexId) || {};
-                
-                let currentVibes = existingData.vibe_tags || [];
-                const currentEcos = existingData.eco_tags || [];
-                
-                if (vibeTags.length > 0 && currentVibes.length > 0) {
-                    let removableVibes = currentVibes.filter(t => !vibeTags.includes(t));
-                    removableVibes = removableVibes.sort(() => 0.5 - Math.random());
-                    const tagsToDrop = removableVibes.slice(0, 2);
-                    currentVibes = currentVibes.filter(t => !tagsToDrop.includes(t));
-                }
-                
-                const newVibes = [...new Set([...currentVibes, ...vibeTags])];
-                const newEcos = [...new Set([...currentEcos, ...ecoTags])];
-                
-                if (currentVibes.length !== newVibes.length || currentEcos.length !== newEcos.length) {
-                    flagUpdates[`flags.ultimateforge-hexforge.${hexId}`] = {
-                        ...existingData, 
-                        vibe_tags: newVibes,
-                        eco_tags: newEcos
-                    };
-                }
-            }
-        }
-        
-        if (Object.keys(flagUpdates).length > 0) {
-            await canvas.scene.update(flagUpdates);
-        }
-    }
-
-    // =========================================================================
-    // LE RECALCULATEUR D'ATMOSPHÈRE GLOBAL (Aperçu + Lieux secondaires)
-    // =========================================================================
-    static async updateCityAtmosphere(journal, hexId, journalData) {
-        const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
-        
-        let basePath = "modules/ultimateforge-core/data/default_fantasy";
-        if (game.settings.settings.has("ultimateforge-core.activeThemePath")) {
-            basePath = game.settings.get("ultimateforge-core", "activeThemePath");
-            if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
-        }
-
-        const [namesData, tavernsData, bountiesData, statesData, themeSettings] = await Promise.all([
-            fetch(`${basePath}/names.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/taverns.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/bounties.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/regional_states.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/theme.json`).then(r => r.json()).catch(()=>null)
-        ]);
-
-        const cityData = journalData.rawData;
-        const stateInfo = cityData.stateId ? statesData[cityData.stateId] : null;
-        const priceMult = stateInfo ? stateInfo.price_multiplier : 1.0;
-        let currencySym = "PO";
-        if (themeSettings && themeSettings.currency && themeSettings.currency.symbol) {
-            currencySym = themeSettings.currency.symbol[lang] || themeSettings.currency.symbol.fr;
-        }
-
-        let nbUpdated = 0;
-
-        // 1. MISE À JOUR DU JOURNAL PRINCIPAL (Aperçu de la ville)
-        const mainUpdates = [];
-        for (const page of journal.pages.contents) {
-            if (page.name.includes("Vue d'ensemble")) {
-                mainUpdates.push({ _id: page.id, "text.content": journalData.content });
-                nbUpdated++;
-            }
-        }
-        if (mainUpdates.length > 0) {
-            await journal.updateEmbeddedDocuments("JournalEntryPage", mainUpdates);
-            await journal.setFlag("ultimateforge-cityforge", "cityData", cityData);
-        }
-
-        // 2. NOUVEAU : RECHERCHE ET MISE À JOUR DES JOURNAUX DE LIEUX SÉPARÉS
-        const allJournals = game.journal.contents;
-        const linkedJournals = allJournals.filter(j => {
-            const poiData = j.getFlag("ultimateforge-cityforge", "poiData");
-            if (poiData && poiData.parentHexId === hexId) return true;
-            // Rétrocompatibilité pour les lieux créés avant cette mise à jour
-            if (j.name.includes(`(${cityData.settlementName})`)) return true;
-            return false;
-        });
-
-        for (const poiJournal of linkedJournals) {
-            const poiUpdates = [];
-            const poiData = poiJournal.getFlag("ultimateforge-cityforge", "poiData") || {};
-            let type = poiData.type || "inconnu";
-            let district = poiData.district || "Quartier";
-
-            // Déduction pour les vieux journaux sans balise
-            if (type === "inconnu") {
-                const lowerName = poiJournal.name.toLowerCase();
-                if (lowerName.includes("taverne")) type = lowerName.includes("louche") ? "taverne_louche" : (lowerName.includes("luxueuse") ? "taverne_luxueuse" : "taverne");
-                else if (lowerName.includes("panneau") || lowerName.includes("primes")) type = "panneau_annonces";
-            }
-
-            for (const page of poiJournal.pages.contents) {
-                let content = page.text.content;
-                let pageUpdated = false;
-                const cleanName = poiJournal.name;
-                
-                if (type.includes("taverne")) {
-                    content = InternalTavernGenerator.generateHTML(cleanName, type, district, cityData.size, cityData.regionId, cityData.settlementName, namesData, tavernsData, cityData.biome, cityData.stateId, priceMult, currencySym, cityData.govTags, cityData.ecoTags, cityData.vibeTags);
-                    pageUpdated = true;
-                } else if (type.includes("panneau") || type.includes("primes")) {
-                    content = InternalBountyGenerator.generateHTML(cleanName, "panneau_annonces", district, cityData.size, cityData.regionId, cityData.settlementName, namesData, bountiesData, cityData.biome, cityData.stateId, cityData.govTags, cityData.ecoTags, cityData.vibeTags, currencySym);
-                    pageUpdated = true;
-                }
-
-                if (pageUpdated) {
-                    poiUpdates.push({ _id: page.id, "text.content": content });
-                }
-            }
-
-            if (poiUpdates.length > 0) {
-                await poiJournal.updateEmbeddedDocuments("JournalEntryPage", poiUpdates);
-                nbUpdated++;
-            }
-        }
-
-        if (nbUpdated > 0) {
-            ui.notifications.success(`RealmsForge | L'atmosphère et les lieux ont été actualisés (${nbUpdated} pages modifiées) !`);
-        }
-    }
-
 }
