@@ -2,9 +2,8 @@
   "geography": {
     "label": { "fr": "Géographie & Vestiges", "en": "Geography & Ruins" },
     "traits": {
-      "route_pavee": { "name": { "fr": "Route Impériale / Pavée", "en": "Imperial / Paved Road" } },
+      "route_pavee": { "name": { "fr": "Route Commerciale / Pavée", "en": "Imperial / Paved Road" } },
       "chemin_terre": { "name": { "fr": "Chemin de terre / Sentier", "en": "Dirt Path / Trail" } },
-      "carrefour": { "name": { "fr": "Carrefour / Croisement", "en": "Crossroads" } },
       "pont": { "name": { "fr": "Pont (Pierre ou Bois)", "en": "Bridge" } },
       "tour_guet": { "name": { "fr": "Tour de guet ruinée", "en": "Ruined Watchtower" } },
       "ruines": { "name": { "fr": "Ruines Antiques", "en": "Ancient Ruins" } },
