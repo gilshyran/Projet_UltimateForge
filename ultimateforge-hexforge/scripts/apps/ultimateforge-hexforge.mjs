@@ -452,13 +452,12 @@ export class HexForgeManager {
     static initGraphics() {
         HexForgeManager.destroyGraphics();
 
-        // 1. Le calque pour dessiner l'Aura
+        // 1. Le calque pour dessiner l'Aura (Accroché à l'INTERFACE pour être toujours au-dessus)
         HexForgeManager.highlightGraphics = new PIXI.Graphics();
-        HexForgeManager.highlightGraphics.zIndex = 500; 
+        HexForgeManager.highlightGraphics.zIndex = 9999; 
         
-        // On l'accroche au calque principal de la scène pour être sûr qu'il soit visible
-        if (canvas.primary) {
-            canvas.primary.addChild(HexForgeManager.highlightGraphics);
+        if (canvas.interface) {
+            canvas.interface.addChild(HexForgeManager.highlightGraphics);
         } else {
             canvas.stage.addChild(HexForgeManager.highlightGraphics);
         }
@@ -468,9 +467,7 @@ export class HexForgeManager {
         HexForgeManager.shieldLayer.hitArea = new PIXI.Rectangle(0, 0, canvas.dimensions.width, canvas.dimensions.height);
         HexForgeManager.shieldLayer.eventMode = 'static'; 
         HexForgeManager.shieldLayer.interactive = true; 
-        
-        // CORRECTION : Retour au Viseur (Crosshair)
-        HexForgeManager.shieldLayer.cursor = 'crosshair'; 
+        HexForgeManager.shieldLayer.cursor = 'crosshair'; // Le fameux viseur !
         HexForgeManager.shieldLayer.zIndex = 1000;
         
         HexForgeManager.shieldLayer.on('pointerdown', (e) => {
@@ -546,14 +543,14 @@ export class HexForgeManager {
         
         await canvas.scene.setFlag("ultimateforge-hexforge", hex.id, updates);
     }
-
     // =========================================================================
-    // DESSIN DES AURAS SUR LA CARTE (Correction Forme V13)
+    // DESSIN DES AURAS SUR LA CARTE (Cercles Universels)
     // =========================================================================
     static drawHighlights() {
         if (!canvas.ready || !this.highlightGraphics) return;
         this.highlightGraphics.clear();
 
+        // On ne dessine que si on a le pinceau en main
         if (this.currentMode !== 'brush' || !this.isToolActive) return;
 
         let targetKey = "";
@@ -564,8 +561,8 @@ export class HexForgeManager {
 
         const allHexes = canvas.scene.getFlag("ultimateforge-hexforge") || {};
         
-        this.highlightGraphics.beginFill(0x27ae60, 0.6); 
-        this.highlightGraphics.lineStyle(3, 0x2ecc71, 1); 
+        this.highlightGraphics.beginFill(0x2ecc71, 0.4); // Vert fluo intérieur
+        this.highlightGraphics.lineStyle(3, 0x2ecc71, 1); // Vert fluo extérieur
 
         for (const [hexId, hexData] of Object.entries(allHexes)) {
             if (hexData && hexData[targetKey] === targetValue) {
@@ -574,27 +571,20 @@ export class HexForgeManager {
                 const row = parseInt(parts[1]);
                 const col = parseInt(parts[2]);
 
-                let ptX, ptY;
-                if (canvas.grid.getTopLeftPoint) { 
-                    const pt = canvas.grid.getTopLeftPoint({i: col, j: row});
-                    ptX = pt.x; ptY = pt.y;
+                let cx, cy;
+                // Calcul robuste du centre de la case
+                if (canvas.grid.getCenterPoint) { 
+                    const pt = canvas.grid.getCenterPoint({i: col, j: row});
+                    cx = pt.x; cy = pt.y;
                 } else { 
-                    const arr = canvas.grid.grid.getPixelsFromGridPosition(row, col);
-                    ptX = arr[0]; ptY = arr[1];
+                    const pt = canvas.grid.grid.getPixelsFromGridPosition(row, col);
+                    cx = pt[0] + (canvas.grid.w / 2);
+                    cy = pt[1] + (canvas.grid.h / 2);
                 }
 
-                // CORRECTION V13 : On utilise la propriété "shape" et non la fonction "getShape()"
-                if (canvas.grid.shape) { 
-                    const poly = canvas.grid.shape;
-                    const shifted = [];
-                    for(let i=0; i < poly.points.length; i+=2) {
-                        shifted.push(poly.points[i] + ptX, poly.points[i+1] + ptY);
-                    }
-                    this.highlightGraphics.drawPolygon(shifted);
-                } else if (canvas.grid.grid?.getPolygon) { 
-                    const poly = canvas.grid.grid.getPolygon(ptX, ptY, canvas.grid.w, canvas.grid.h);
-                    this.highlightGraphics.drawPolygon(poly);
-                }
+                // Dessin d'un beau cercle au milieu de l'hexagone
+                const radius = (canvas.grid.size / 2) * 0.7;
+                this.highlightGraphics.drawCircle(cx, cy, radius);
             }
         }
         this.highlightGraphics.endFill();
