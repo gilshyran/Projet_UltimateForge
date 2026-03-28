@@ -398,7 +398,7 @@
       "fr": "C'est un établissement frontalier extrême, fondé par des harponneurs courageux pour chasser les grands léviathans des mers de glace.",
       "en": "It is an extreme border settlement, founded by brave harpooners to hunt the great leviathans of the ice seas."
     },
-    "output_tags": ["ressource-peche", "survie", "avant-poste"]
+    "output_tags": ["ressource-peche", "avant-poste"]
   },
   {
     "id": "ori_av_outreterre_01",

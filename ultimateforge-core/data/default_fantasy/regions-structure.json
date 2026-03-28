@@ -1,6 +1,10 @@
 {
   "Pangea": {
     "name": { "fr": "Pangea", "en": "Pangea" },
+    "description": { 
+        "fr": "Pangea est le berceau luxuriant de l'humanité, une terre riche aux collines verdoyantes où les premiers royaumes ont vu le jour.", 
+        "en": "Pangea is the lush cradle of humanity, a rich land with rolling green hills where the first kingdoms were born." 
+    },
     "biome_rules": {
       "forbidden": [""],
       "weighted": { "Plaines": 20, "Forêt": 10, "Collines": 10, "Montagne": 10, "Littoral": 15, "Marais": 10, "Désert": 10 , "Arctique": 1 , "Jungle": 10 , "Taïga": 1, "Aquatique": 1, "Outreterre": 1, "Sub-aquatique" :1  }
