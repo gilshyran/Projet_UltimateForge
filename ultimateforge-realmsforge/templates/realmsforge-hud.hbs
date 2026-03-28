@@ -1,78 +1,97 @@
-<div class="realmsforge-container" style="padding: 10px; font-family: var(--font-primary);">
-    <p style="color: #555; font-style: italic; margin-top: 0;">
-        Gérez les factions, royaumes et menaces. Propagez leur influence sur la carte.
-    </p>
-
-    <div style="margin-bottom: 15px;">
-        <button id="rf-add-faction" style="background: #27ae60; color: white; border: none; font-weight: bold;">
-            <i class="fas fa-plus"></i> Fonder une nouvelle Faction
-        </button>
-    </div>
-
-    <hr style="border-top: 1px dashed #ccc;">
-
-    <div id="rf-factions-list" style="max-height: 400px; overflow-y: auto; padding-right: 5px;">
-        {{#each factions}}
-        <div class="rf-faction-card" data-id="{{this.id}}" style="background: rgba(0,0,0,0.05); border: 1px solid #bdc3c7; border-radius: 5px; padding: 10px; margin-bottom: 15px;">
-            
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <input type="text" class="rf-edit-field" data-field="name" value="{{this.name}}" placeholder="Nom de la Faction" style="font-weight: bold; font-size: 1.2em; border: 1px solid transparent; background: transparent; width: 60%;" title="Modifier le nom">
-                <a class="rf-delete-faction" style="color: #c0392b; cursor: pointer;" title="Détruire la Faction"><i class="fas fa-trash"></i></a>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                <div>
-                    <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Type</label>
-                    <input type="text" class="rf-edit-field" data-field="type" value="{{this.type}}" placeholder="ex: Criminel, Royaume..." style="width: 100%;">
-                </div>
-                <div>
-                    <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Rayon d'Influence</label>
-                    <select class="rf-edit-field" data-field="level" style="width: 100%;">
-                        <option value="1" {{#if (eq this.level "1")}}selected{{/if}}>Niveau 1 (La case ciblée)</option>
-                        <option value="2" {{#if (eq this.level "2")}}selected{{/if}}>Niveau 2 (1 case autour)</option>
-                        <option value="3" {{#if (eq this.level "3")}}selected{{/if}}>Niveau 3 (2 cases autour)</option>
-                        <option value="4" {{#if (eq this.level "4")}}selected{{/if}}>Niveau 4 (3 cases autour)</option>
-                        <option value="5" {{#if (eq this.level "5")}}selected{{/if}}>Niveau 5 (Royaume : 4 cases)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                <div>
-                    <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Aura (Vibe tags séparés par virgules)</label>
-                    <input type="text" class="rf-edit-field" data-field="vibes" value="{{this.vibes}}" placeholder="ex: corrompu, magie-forte" style="width: 100%; border-bottom: 2px solid #8e44ad;">
-                </div>
-                <div>
-                    <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Capitale (ID de la case)</label>
-                    <input type="text" class="rf-edit-field" data-field="hexId" value="{{this.hexId}}" placeholder="ex: hex_5_12" style="width: 100%;">
-                </div>
-            </div>
-
-            <button class="rf-propagate-btn" style="background: #2980b9; color: white; border: none; margin-top: 5px;">
-                <i class="fas fa-broadcast-tower"></i> Propager l'Influence sur la carte
-            </button>
-        </div>
-        {{else}}
-        <p style="text-align: center; color: #95a5a6; padding: 20px;">Aucune faction n'a encore été fondée. Créez votre première puissance !</p>
-        {{/each}}
-    </div>
-
-    <hr style="border-top: 1px solid #e74c3c; margin-top: 20px;">
+<div class="realmsforge-container" style="font-family: var(--font-primary); height: 100%; display: flex; flex-direction: column;">
     
-    <div style="background: rgba(192, 57, 43, 0.1); border: 1px solid #e74c3c; border-radius: 5px; padding: 10px;">
-        <h3 style="color: #c0392b; margin-top: 0; font-size: 1.1em;"><i class="fas fa-radiation"></i> Cataclysme Régional</h3>
-        <p style="font-size: 0.85em; color: #555; margin-bottom: 10px;">Détruit toutes les colonies présentes sur la carte dans la région sélectionnée. (Les journaux sont conservés).</p>
-        
-        <div style="display: flex; gap: 10px;">
-            <select id="rf-purge-region" style="flex-grow: 1; padding: 5px;">
-                <option value="none" selected disabled>Choisir une région à purger...</option>
-                {{#each regions}}
-                <option value="{{this}}">{{this}}</option>
+    <header style="text-align: center; margin-bottom: 15px; padding-top: 5px;">
+        <img src="modules/ultimateforge-core/ui/titre_RealmsForge.png" alt="Avantis RealmsForge" style="max-width: 70%; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+    </header>
+
+    <nav class="rf-tabs" style="display: flex; border-bottom: 2px solid #8e44ad; margin-bottom: 15px; background: rgba(0,0,0,0.05);">
+        <a class="rf-tab-item active" data-tab="factions" style="flex: 1; text-align: center; padding: 10px; font-weight: bold; cursor: pointer; border-bottom: 3px solid #8e44ad; color: #8e44ad;"><i class="fas fa-chess-knight"></i> Factions & Puissances</a>
+        <a class="rf-tab-item" data-tab="regions" style="flex: 1; text-align: center; padding: 10px; font-weight: bold; cursor: pointer; border-bottom: 3px solid transparent; color: #555;"><i class="fas fa-book-journal-whills"></i> Codex Régional</a>
+    </nav>
+
+    <div class="rf-tab-content active" data-tab="factions" style="flex-grow: 1; overflow-y: auto; padding-right: 5px;">
+        <p style="color: #555; font-style: italic; margin-top: 0;">Gérez les puissances et propagez leur influence sur la carte.</p>
+        <div style="margin-bottom: 15px;">
+            <button id="rf-add-faction" style="background: #27ae60; color: white; border: none; font-weight: bold;"><i class="fas fa-plus"></i> Fonder une nouvelle Faction</button>
+        </div>
+
+        <div id="rf-factions-list">
+            {{#each factions}}
+            <div class="rf-faction-card" data-id="{{this.id}}" style="background: rgba(0,0,0,0.05); border: 1px solid #bdc3c7; border-radius: 5px; padding: 10px; margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <input type="text" class="rf-edit-field" data-field="name" value="{{this.name}}" placeholder="Nom de la Faction" style="font-weight: bold; font-size: 1.2em; border: 1px solid transparent; background: transparent; width: 60%;" title="Modifier le nom">
+                    <a class="rf-delete-faction" style="color: #c0392b; cursor: pointer;" title="Détruire la Faction"><i class="fas fa-trash"></i></a>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+                    <div>
+                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Type</label>
+                        <input type="text" class="rf-edit-field" data-field="type" value="{{this.type}}" placeholder="ex: Criminel, Royaume..." style="width: 100%;">
+                    </div>
+                    <div>
+                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Rayon d'Influence</label>
+                        <select class="rf-edit-field" data-field="level" style="width: 100%;">
+                            <option value="1" {{#if (eq this.level "1")}}selected{{/if}}>Niv 1 (La case ciblée)</option>
+                            <option value="2" {{#if (eq this.level "2")}}selected{{/if}}>Niv 2 (1 case autour)</option>
+                            <option value="3" {{#if (eq this.level "3")}}selected{{/if}}>Niv 3 (2 cases autour)</option>
+                            <option value="4" {{#if (eq this.level "4")}}selected{{/if}}>Niv 4 (3 cases autour)</option>
+                            <option value="5" {{#if (eq this.level "5")}}selected{{/if}}>Niv 5 (Royaume : 4 cases)</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+                    <div>
+                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Aura (Cochez les traits)</label>
+                        <div style="max-height: 80px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 4px; background: rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 4px;">
+                            {{#each this.vibeList}}
+                            <label title="{{this.value}}" style="background: {{#if this.selected}}linear-gradient(to bottom, #8e44ad, #732d91){{else}}#ddd{{/if}}; color: {{#if this.selected}}white{{else}}#555{{/if}}; padding: 2px 6px; border-radius: 12px; font-size: 0.75em; cursor: pointer; user-select: none;">
+                                <input type="checkbox" class="rf-vibe-checkbox" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                                {{this.label}}
+                            </label>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div>
+                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Capitale (Ciblez la carte)</label>
+                        <div style="display: flex; gap: 5px;">
+                            <input type="text" class="rf-edit-field" data-field="hexId" value="{{this.hexId}}" placeholder="Ex: hex_5_12" style="width: calc(100% - 45px); background: rgba(255,255,255,0.5);">
+                            <button class="rf-target-btn" title="Cibler une case sur la carte" style="width: 40px; background: #34495e; color: white; border: none; border-radius: 4px; cursor: pointer;"><i class="fas fa-crosshairs"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="rf-propagate-btn" style="background: #2980b9; color: white; border: none; margin-top: 5px;"><i class="fas fa-broadcast-tower"></i> Propager l'Influence</button>
+            </div>
+            {{else}}
+            <p style="text-align: center; color: #95a5a6; padding: 20px;">Aucune faction n'a encore été fondée.</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="rf-tab-content" data-tab="regions" style="flex-grow: 1; overflow-y: auto; padding-right: 5px; display: none;">
+        <div style="margin-bottom: 15px;">
+            <select id="rf-codex-select" style="width: 100%; padding: 8px; font-size: 1.1em; font-weight: bold; background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 5px;">
+                <option value="none" selected disabled>Sélectionnez une région à explorer...</option>
+                {{#each allCodexRegions}}
+                <option value="{{this.id}}">{{this.name}}</option>
                 {{/each}}
             </select>
-            <button id="rf-purge-btn" style="background: #c0392b; color: white; border: none; font-weight: bold; width: 40px; border-radius: 4px; cursor: pointer;" title="Déclencher la Purge">
-                <i class="fas fa-skull"></i>
-            </button>
+        </div>
+
+        <div id="rf-codex-body" style="display: none;">
+            <div style="position: relative; text-align: center; margin-bottom: 15px;">
+                <img id="rf-codex-img" src="icons/svg/mystery-man.svg" title="Cliquez pour changer l'illustration" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #bdc3c7; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.6); color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; pointer-events: none;"><i class="fas fa-camera"></i> Modifier</div>
+            </div>
+
+            <div id="rf-codex-narrative" style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 5px; border-left: 4px solid #3498db; margin-bottom: 15px; font-size: 0.95em; line-height: 1.6; color: #2c3e50; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                </div>
+
+            <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                <button id="rf-btn-codex-journal" style="background: #27ae60; color: white; border: none; padding: 8px;"><i class="fas fa-book-open"></i> Archiver ce Codex dans les Journaux</button>
+                <button id="rf-btn-codex-raz" style="background: #f39c12; color: white; border: none; padding: 8px;"><i class="fas fa-broom"></i> Purger les Auras de la Région (Remise à zéro)</button>
+                <button id="rf-btn-codex-purge" style="background: #c0392b; color: white; border: none; padding: 8px;"><i class="fas fa-radiation"></i> Cataclysme (Détruire les lieux et créer des ruines)</button>
+            </div>
         </div>
     </div>
 </div>
