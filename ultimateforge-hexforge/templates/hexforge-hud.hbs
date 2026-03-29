@@ -6,10 +6,23 @@
     </div>
 
     <div id="hf-brush-options" style="display: none; flex-direction: column; gap: 12px; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; border: 1px solid #bdc3c7;">
+        
+        <div>
+            <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-globe"></i> Région à peindre</label>
+            <select id="hf-brush-region" style="width: 100%; padding: 4px;">
+                <option value="">-- Ne pas modifier --</option>
+                <option value="none">❌ Effacer la région (Gomme)</option>
+                {{#each regions}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
         <div>
             <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-tree"></i> Biome à peindre</label>
             <select id="hf-brush-biome" style="width: 100%; padding: 4px;">
                 <option value="">-- Ne pas modifier --</option>
+                <option value="none">❌ Effacer le biome (Gomme)</option>
                 {{#each biomes}}
                 <option value="{{this.id}}">{{this.name}}</option>
                 {{/each}}
@@ -19,6 +32,7 @@
             <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-road"></i> Trait à peindre</label>
             <select id="hf-brush-trait" style="width: 100%; padding: 4px;">
                 <option value="">-- Ne pas modifier --</option>
+                <option value="none">❌ Effacer le trait (Gomme)</option>
                 <option value="route_pavee">Route Impériale / Pavée</option>
                 <option value="chemin_terre">Chemin de terre / Sentier</option>
                 <option value="riviere">Cours d'eau / Rivière</option>

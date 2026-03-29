@@ -504,10 +504,50 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         // NOUVEAU : HÉRITAGE DE LA CARTE (RealmsForge/HexForge)
         let vibeTags = [];
         let existingEcos = [];
+        let politicalText = ""; // Le texte dynamique des factions
+        
         if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
             const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
             vibeTags = [...(hexData.vibe_tags || [])];
             existingEcos = [...(hexData.eco_tags || [])];
+
+            // --- LECTURE DE L'INFLUENCE GÉOPOLITIQUE ---
+            const influences = hexData.influence || {};
+            const rawFactions = game.settings.get("ultimateforge-realmsforge", "factionsData") || {};
+            
+            let factionsPresent = [];
+            for (const [fId, score] of Object.entries(influences)) {
+                const faction = rawFactions[fId];
+                if (faction) {
+                    factionsPresent.push({ name: faction.name, score: score, type: faction.type, vibes: faction.vibes });
+                    // FUSION : On injecte l'Aura de la faction directement dans la ville !
+                    if (faction.vibes) {
+                        const fVibes = faction.vibes.split(',').map(v => v.trim().toLowerCase());
+                        vibeTags.push(...fVibes);
+                    }
+                }
+            }
+
+            if (factionsPresent.length > 0) {
+                // Tri par influence (du plus fort au plus faible)
+                factionsPresent.sort((a, b) => b.score - a.score);
+                const mainFaction = factionsPresent[0];
+
+                if (factionsPresent.length === 1) {
+                    if (mainFaction.score >= 4) politicalText = lang === 'en' ? `The settlement is firmly under the control of <strong>${mainFaction.name}</strong> (${mainFaction.type}).` : `La cité est fermement sous le contrôle de <strong>${mainFaction.name}</strong> (${mainFaction.type}).`;
+                    else if (mainFaction.score === 3) politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> holds a fragile authority here.` : `<strong>${mainFaction.name}</strong> exerce une autorité officielle mais très fragile sur ce lieu.`;
+                    else politicalText = lang === 'en' ? `Agents of <strong>${mainFaction.name}</strong> secretly infiltrate the upper echelons.` : `Des agents affiliés à <strong>${mainFaction.name}</strong> infiltrent discrètement les sphères d'influence locales.`;
+                } else {
+                    const secondFaction = factionsPresent[1];
+                    if (mainFaction.score >= 4 && secondFaction.score >= 3) {
+                        politicalText = lang === 'en' ? `The city is on the brink of civil war. <strong>${mainFaction.name}</strong> rules officially, but <strong>${secondFaction.name}</strong> violently contests this power.` : `La ville est au bord de la guerre civile. <strong>${mainFaction.name}</strong> dirige officiellement, mais <strong>${secondFaction.name}</strong> conteste violemment ce pouvoir.`;
+                    } else if (mainFaction.score >= 4) {
+                        politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> rules with an iron fist, fighting dissent sown by <strong>${secondFaction.name}</strong>.` : `<strong>${mainFaction.name}</strong> tient la ville d'une main de fer, luttant contre la dissidence semée dans l'ombre par <strong>${secondFaction.name}</strong>.`;
+                    } else {
+                        politicalText = lang === 'en' ? `A nest of vipers where <strong>${mainFaction.name}</strong> and <strong>${secondFaction.name}</strong> wage a shadow war.` : `La cité est un nid de vipères où <strong>${mainFaction.name}</strong> et <strong>${secondFaction.name}</strong> se livrent une guerre d'ombre mortelle.`;
+                    }
+                }
+            }
         }
 
         selectedAxes.forEach(axeName => {
@@ -531,15 +571,14 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const randomTrait = traitsArray[selectedIndex];
 
             finalTraits.push(randomTrait.trait[lang] || randomTrait.trait.fr);
-            // FUSION : On cumule l'aura de la case AVEC l'aura générée !
+            // On s'assure qu'il n'y a pas de doublons dans les tags fusionnés
             vibeTags = [...new Set(vibeTags.concat(randomTrait.output_tags || []))];
         });
         
         const andWord = lang === 'en' ? 'and' : 'et';
         const vibeText = finalTraits.join(` <span style='color:#7b1e1e; font-weight:bold;'>${andWord}</span> `);
-        const atmos = lang === 'en' 
-            ? "The local ambiance is characterized by" 
-            : "L'ambiance locale se distingue par";
+        const atmos = lang === 'en' ? "The local ambiance is characterized by" : "L'ambiance locale se distingue par";
+
 
         // --- PHASE 2 : LE CORPS ---
         let govTags = [];
@@ -816,6 +855,9 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
                 <div style="background: rgba(41, 128, 185, 0.05); padding: 12px; border-radius: 6px; border: 1px solid #d6eaf8;">
                     <h4 style="margin: 0 0 8px 0; color: #2980b9;"><i class="fas fa-landmark"></i> ${govTitle}</h4>
+                    
+                    ${politicalText ? `<div style="background: #fdf5e6; border-left: 3px solid #e67e22; padding: 6px 10px; margin-bottom: 10px; border-radius: 0 4px 4px 0;"><p style="margin: 0; font-size: 0.9em; color: #d35400; font-style: italic;"><i class="fas fa-chess-knight"></i> ${politicalText}</p></div>` : ''}
+                    
                     <p style="margin: 0; font-size: 0.95em; line-height: 1.4;">
                         ${dirige} <strong class="cf-leader-highlight"><i class="fas fa-crown"></i> ${leaderName} <i class="fas fa-external-link-alt gen-leader-btn" data-title="${leaderTitle}" data-name="${leaderName}" data-gov="${safeGovText}" data-size="${size}" data-region="${regionId}" data-city="${settlementName}" data-race="${race}" style="cursor:pointer;" title="Générer la Fiche"></i></strong>
                         ${govText}

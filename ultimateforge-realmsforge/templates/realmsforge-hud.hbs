@@ -1,36 +1,51 @@
 <div class="realmsforge-container" style="font-family: var(--font-primary); height: 100%; display: flex; flex-direction: column;">
     
-    <header style="text-align: center; margin-bottom: 15px; padding-top: 5px;">
-        <img src="modules/ultimateforge-core/ui/titre_RealmsForge.png" alt="Avantis RealmsForge" style="max-width: 70%; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+    <header style="text-align: center; margin-bottom: 10px; padding-top: 5px;">
+        <img src="modules/ultimateforge-core/ui/titre_RealmsForge.png" alt="Avantis RealmsForge" style="max-width: 45%; max-height: 80px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
     </header>
 
     <nav class="rf-tabs" style="display: flex; border-bottom: 2px solid #8e44ad; margin-bottom: 15px; background: rgba(0,0,0,0.05);">
-        <a class="rf-tab-item active" data-tab="factions" style="flex: 1; text-align: center; padding: 10px; font-weight: bold; cursor: pointer; border-bottom: 3px solid #8e44ad; color: #8e44ad;"><i class="fas fa-chess-knight"></i> Factions & Puissances</a>
-        <a class="rf-tab-item" data-tab="regions" style="flex: 1; text-align: center; padding: 10px; font-weight: bold; cursor: pointer; border-bottom: 3px solid transparent; color: #555;"><i class="fas fa-book-journal-whills"></i> Codex Régional</a>
+        <a class="rf-tab-item active" data-tab="factions" style="flex: 1; text-align: center; padding: 8px; font-weight: bold; cursor: pointer; border-bottom: 3px solid #8e44ad; color: #8e44ad;"><i class="fas fa-chess-knight"></i> Factions & Puissances</a>
+        <a class="rf-tab-item" data-tab="regions" style="flex: 1; text-align: center; padding: 8px; font-weight: bold; cursor: pointer; border-bottom: 3px solid transparent; color: #555;"><i class="fas fa-book-journal-whills"></i> Codex Régional</a>
     </nav>
 
     <div class="rf-tab-content active" data-tab="factions" style="flex-grow: 1; overflow-y: auto; padding-right: 5px;">
-        <p style="color: #555; font-style: italic; margin-top: 0;">Gérez les puissances et propagez leur influence sur la carte.</p>
-        <div style="margin-bottom: 15px;">
-            <button id="rf-add-faction" style="background: #27ae60; color: white; border: none; font-weight: bold;"><i class="fas fa-plus"></i> Fonder une nouvelle Faction</button>
+        
+        <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
+            <button id="rf-add-faction" style="flex: 0 1 200px; padding: 6px; background: #27ae60; color: white; border: none; font-weight: bold; border-radius: 4px; font-size: 0.9em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <i class="fas fa-plus"></i> Nouvelle Faction
+            </button>
+            <button id="rf-toggle-polmap" style="flex: 0 1 200px; padding: 6px; background: #8e44ad; color: white; border: none; font-weight: bold; transition: 0.3s; border-radius: 4px; font-size: 0.9em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <i class="fas fa-eye"></i> Vision Politique
+            </button>
         </div>
 
         <div id="rf-factions-list">
             {{#each factions}}
-            <div class="rf-faction-card" data-id="{{this.id}}" style="background: rgba(0,0,0,0.05); border: 1px solid #bdc3c7; border-radius: 5px; padding: 10px; margin-bottom: 15px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <input type="text" class="rf-edit-field" data-field="name" value="{{this.name}}" placeholder="Nom de la Faction" style="font-weight: bold; font-size: 1.2em; border: 1px solid transparent; background: transparent; width: 60%;" title="Modifier le nom">
-                    <a class="rf-delete-faction" style="color: #c0392b; cursor: pointer;" title="Détruire la Faction"><i class="fas fa-trash"></i></a>
+            <div class="rf-faction-card" data-id="{{this.id}}" style="background: rgba(0,0,0,0.03); border: 1px solid #bdc3c7; border-radius: 6px; padding: 12px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 2px solid {{#if this.color}}{{this.color}}{{else}}#8e44ad{{/if}}; padding-bottom: 6px;">
+                    <div style="display: flex; gap: 8px; align-items: center; width: 75%;">
+                        <input type="color" class="rf-edit-field" data-field="color" value="{{#if this.color}}{{this.color}}{{else}}#8e44ad{{/if}}" style="width: 24px; height: 24px; border: none; cursor: pointer; padding: 0; border-radius: 4px;" title="Couleur sur la carte">
+                        <input type="text" class="rf-edit-field" data-field="name" value="{{this.name}}" placeholder="Nom de la Faction" style="font-weight: bold; font-size: 1.15em; border: none; background: transparent; flex-grow: 1;" title="Modifier le nom">
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a class="rf-toggle-visibility" style="color: {{#if (eq this.visible false)}}#95a5a6{{else}}#2c3e50{{/if}}; cursor: pointer; font-size: 1.1em; transition: 0.2s;" title="{{#if (eq this.visible false)}}Afficher sur la carte{{else}}Masquer de la carte{{/if}}">
+                            <i class="fas {{#if (eq this.visible false)}}fa-eye-slash{{else}}fa-eye{{/if}}"></i>
+                        </a>
+                        <a class="rf-delete-faction" style="color: #c0392b; cursor: pointer; font-size: 1.1em; transition: 0.2s;" title="Détruire la Faction"><i class="fas fa-trash"></i></a>
+                    </div>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 12px;">
                     <div>
-                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Type</label>
-                        <input type="text" class="rf-edit-field" data-field="type" value="{{this.type}}" placeholder="ex: Criminel, Royaume..." style="width: 100%;">
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">Type</label>
+                        <input type="text" class="rf-edit-field" data-field="type" value="{{this.type}}" placeholder="ex: Criminel..." style="width: 100%; padding: 4px; border: 1px solid #ccc; border-radius: 3px;">
                     </div>
                     <div>
-                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Rayon d'Influence</label>
-                        <select class="rf-edit-field" data-field="level" style="width: 100%;">
-                            <option value="1" {{#if (eq this.level "1")}}selected{{/if}}>Niv 1 (La case ciblée)</option>
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">Rayon d'Influence</label>
+                        <select class="rf-edit-field" data-field="level" style="width: 100%; padding: 4px; border: 1px solid #ccc; border-radius: 3px;">
+                            <option value="1" {{#if (eq this.level "1")}}selected{{/if}}>Niv 1 (Case ciblée)</option>
                             <option value="2" {{#if (eq this.level "2")}}selected{{/if}}>Niv 2 (1 case autour)</option>
                             <option value="3" {{#if (eq this.level "3")}}selected{{/if}}>Niv 3 (2 cases autour)</option>
                             <option value="4" {{#if (eq this.level "4")}}selected{{/if}}>Niv 4 (3 cases autour)</option>
@@ -38,12 +53,13 @@
                         </select>
                     </div>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 12px;">
                     <div>
-                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Aura (Cochez les traits)</label>
-                        <div style="max-height: 80px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 4px; background: rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 4px;">
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">Aura de Faction</label>
+                        <div style="max-height: 120px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 6px; background: rgba(0,0,0,0.03); display: flex; flex-wrap: wrap; gap: 6px;">
                             {{#each this.vibeList}}
-                            <label title="{{this.value}}" style="background: {{#if this.selected}}linear-gradient(to bottom, #8e44ad, #732d91){{else}}#ddd{{/if}}; color: {{#if this.selected}}white{{else}}#555{{/if}}; padding: 2px 6px; border-radius: 12px; font-size: 0.75em; cursor: pointer; user-select: none;">
+                            <label title="{{this.value}}" style="background: {{#if this.selected}}linear-gradient(to bottom, #8e44ad, #732d91){{else}}#e0e0e0{{/if}}; color: {{#if this.selected}}white{{else}}#444{{/if}}; padding: 3px 8px; border-radius: 12px; font-size: 0.75em; cursor: pointer; user-select: none; transition: 0.2s;">
                                 <input type="checkbox" class="rf-vibe-checkbox" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
                                 {{this.label}}
                             </label>
@@ -51,17 +67,49 @@
                         </div>
                     </div>
                     <div>
-                        <label style="font-size: 0.8em; color: #7f8c8d; font-weight: bold;">Capitale (Ciblez la carte)</label>
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">Capitale (Épicentre)</label>
                         <div style="display: flex; gap: 5px;">
-                            <input type="text" class="rf-edit-field" data-field="hexId" value="{{this.hexId}}" placeholder="Ex: hex_5_12" style="width: calc(100% - 45px); background: rgba(255,255,255,0.5);">
-                            <button class="rf-target-btn" title="Cibler une case sur la carte" style="width: 40px; background: #34495e; color: white; border: none; border-radius: 4px; cursor: pointer;"><i class="fas fa-crosshairs"></i></button>
+                            <input type="text" class="rf-edit-field" data-field="hexId" value="{{this.hexId}}" placeholder="Ex: hex_5_12" style="width: calc(100% - 35px); background: rgba(255,255,255,0.7); padding: 4px; border: 1px solid #ccc; border-radius: 3px;">
+                            <button class="rf-target-btn" title="Cibler une case sur la carte" style="width: 30px; background: #34495e; color: white; border: none; border-radius: 3px; cursor: pointer;"><i class="fas fa-crosshairs"></i></button>
                         </div>
+                        
+                        <button class="rf-propagate-btn" style="background: #2980b9; color: white; border: none; margin-top: 15px; padding: 6px; width: 100%; border-radius: 4px; font-size: 0.85em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fas fa-broadcast-tower"></i> Lancer une vague d'Influence</button>
                     </div>
                 </div>
-                <button class="rf-propagate-btn" style="background: #2980b9; color: white; border: none; margin-top: 5px;"><i class="fas fa-broadcast-tower"></i> Propager l'Influence</button>
+
+                <div style="border-top: 1px dashed #bdc3c7; padding-top: 10px; margin-top: 5px;">
+                    <label style="font-size: 0.8em; color: #34495e; font-weight: bold; display: block; margin-bottom: 5px;"><i class="fas fa-globe-europe"></i> Territoires sous Influence</label>
+                    <div style="max-height: 120px; overflow-y: auto; background: rgba(255,255,255,0.7); border-radius: 4px; padding: 5px; border: 1px solid rgba(0,0,0,0.05); font-size: 0.85em;">
+                        {{#if this.territories.length}}
+                            {{#each this.territories}}
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 3px 0;">
+                                <span style="flex-grow: 1; color: #2c3e50; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 60%;">
+                                    {{#if this.isCity}}<i class="fas fa-city" style="color: #8e44ad;" title="Cité"></i>{{else}}<i class="fas fa-tree" style="color: #27ae60;" title="Case Sauvage"></i>{{/if}} 
+                                    {{this.name}}
+                                </span>
+                                
+                                <span style="margin: 0 8px; letter-spacing: 2px;" title="Niveau d'influence : {{this.score}}/5">
+                                    {{{this.dots}}}
+                                </span>
+
+                                <div style="display: flex; gap: 4px;">
+                                    <button class="rf-inf-btn rf-inf-minus" data-hex="{{this.hexId}}" style="width: 20px; height: 20px; padding: 0; line-height: 1; font-size: 10px; background: #e74c3c; border: none; border-radius: 3px; color: white; cursor: pointer;">-</button>
+                                    <button class="rf-inf-btn rf-inf-plus" data-hex="{{this.hexId}}" style="width: 20px; height: 20px; padding: 0; line-height: 1; font-size: 10px; background: #2ecc71; border: none; border-radius: 3px; color: white; cursor: pointer;">+</button>
+                                </div>
+                            </div>
+                            {{/each}}
+                        {{else}}
+                            <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 5px 0;">Aucun territoire contrôlé.</p>
+                        {{/if}}
+                    </div>
+                </div>
+
             </div>
             {{else}}
-            <p style="text-align: center; color: #95a5a6; padding: 20px;">Aucune faction n'a encore été fondée.</p>
+            <div style="text-align: center; color: #95a5a6; padding: 30px; border: 2px dashed #bdc3c7; border-radius: 8px;">
+                <i class="fas fa-chess-board" style="font-size: 2em; margin-bottom: 10px;"></i>
+                <p style="margin: 0;">Aucune faction n'a encore été fondée sur ce monde.</p>
+            </div>
             {{/each}}
         </div>
     </div>
@@ -83,14 +131,14 @@
             </div>
 
             <div id="rf-codex-narrative" style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 5px; border-left: 4px solid #3498db; margin-bottom: 15px; font-size: 0.95em; line-height: 1.6; color: #2c3e50; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                </div>
+            </div>
 
             <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
 
             <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
-                <button id="rf-btn-codex-journal" style="background: #27ae60; color: white; border: none; padding: 8px;"><i class="fas fa-book-open"></i> Archiver ce Codex dans les Journaux</button>
-                <button id="rf-btn-codex-raz" style="background: #f39c12; color: white; border: none; padding: 8px;"><i class="fas fa-broom"></i> Purger les Auras de la Région (Remise à zéro)</button>
-                <button id="rf-btn-codex-purge" style="background: #c0392b; color: white; border: none; padding: 8px;"><i class="fas fa-radiation"></i> Cataclysme (Détruire les lieux et créer des ruines)</button>
+                <button id="rf-btn-codex-journal" style="background: #27ae60; color: white; border: none; padding: 8px; border-radius: 4px;"><i class="fas fa-book-open"></i> Archiver ce Codex dans les Journaux</button>
+                <button id="rf-btn-codex-raz" style="background: #f39c12; color: white; border: none; padding: 8px; border-radius: 4px;"><i class="fas fa-broom"></i> Purger les Auras de la Région (Remise à zéro)</button>
+                <button id="rf-btn-codex-purge" style="background: #c0392b; color: white; border: none; padding: 8px; border-radius: 4px;"><i class="fas fa-radiation"></i> Cataclysme (Détruire les lieux et créer des ruines)</button>
             </div>
         </div>
     </div>

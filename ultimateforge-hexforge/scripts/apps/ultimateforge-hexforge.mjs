@@ -21,13 +21,23 @@ export class HexForgeHUD extends HandlebarsApplicationMixin(ApplicationV2) {
         if (game.settings.settings.has("ultimateforge-core.activeThemePath")) basePath = game.settings.get("ultimateforge-core", "activeThemePath").replace(/\/$/, "");
         
         let biomes = {};
-        try { const res = await fetch(`${basePath}/hex_biomes.json`).then(r => r.json()); biomes = res.biomes || {}; } catch(e) {}
+        let regions = {}; // NOUVEAU
+        try { 
+            const resBiomes = await fetch(`${basePath}/hex_biomes.json`).then(r => r.json()); 
+            biomes = resBiomes.biomes || {}; 
+            const resRegions = await fetch(`${basePath}/regions-structure.json`).then(r => r.json());
+            regions = resRegions || {}; // NOUVEAU
+        } catch(e) {}
 
         const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
+        
         const biomeList = Object.entries(biomes).map(([id, data]) => ({ id, name: data.name[lang] || data.name.fr }));
         biomeList.sort((a, b) => a.name.localeCompare(b.name));
 
-        return { biomes: biomeList };
+        const regionList = Object.entries(regions).map(([id, data]) => ({ id, name: data.name[lang] || data.name.fr }));
+        regionList.sort((a, b) => a.name.localeCompare(b.name));
+
+        return { biomes: biomeList, regions: regionList };
     }
 
     _onRender(context, options) {
@@ -46,6 +56,11 @@ export class HexForgeHUD extends HandlebarsApplicationMixin(ApplicationV2) {
             html.find('#hf-mode-brush').css('background', '#27ae60');
             html.find('#hf-mode-edit').css('background', '#34495e');
             html.find('#hf-brush-options').slideDown(200);
+        });
+
+        // --- AJOUT DE L'ÉCOUTEUR POUR LA RÉGION ---
+        html.find('#hf-brush-region').change(e => { 
+            HexForgeManager.brushRegion = e.target.value; 
         });
 
         html.find('#hf-brush-biome').change(e => { 
@@ -310,6 +325,18 @@ export class HexForgeEditor extends HandlebarsApplicationMixin(ApplicationV2) {
                 this.render({force: true}); 
             }
         });
+
+        html.find('#hf-brush-region').change(e => { 
+            HexForgeManager.brushRegion = e.target.value; 
+        });
+        html.find('#hf-brush-biome').change(e => { 
+            HexForgeManager.brushBiome = e.target.value; 
+            HexForgeManager.drawHighlights(); 
+        });
+        html.find('#hf-brush-trait').change(e => { 
+            HexForgeManager.brushTrait = e.target.value; 
+            HexForgeManager.drawHighlights(); 
+        });
     }
 
     _updateOverlayOptions(html) {
@@ -397,6 +424,7 @@ export class HexForgeManager {
 
     static isToolActive = false;
     static currentMode = 'edit'; 
+    static brushRegion = "";
     static brushBiome = "";
     static brushTrait = "";
     static hudInstance = null;
@@ -452,23 +480,23 @@ export class HexForgeManager {
     static initGraphics() {
         HexForgeManager.destroyGraphics();
 
-        // 1. Le calque pour dessiner l'Aura (Accroché à l'INTERFACE pour être toujours au-dessus)
+        // 1. Le calque d'Aura (Accroché à canvas.controls pour être au-dessus de tout)
         HexForgeManager.highlightGraphics = new PIXI.Graphics();
         HexForgeManager.highlightGraphics.zIndex = 9999; 
         
-        if (canvas.interface) {
-            canvas.interface.addChild(HexForgeManager.highlightGraphics);
+        if (canvas.controls) {
+            canvas.controls.addChild(HexForgeManager.highlightGraphics);
         } else {
             canvas.stage.addChild(HexForgeManager.highlightGraphics);
         }
 
         // 2. Le Bouclier Invisible (Pour bloquer la sélection Foundry)
         HexForgeManager.shieldLayer = new PIXI.Graphics();
-        HexForgeManager.shieldLayer.hitArea = new PIXI.Rectangle(0, 0, canvas.dimensions.width, canvas.dimensions.height);
+        HexForgeManager.shieldLayer.hitArea = new PIXI.Rectangle(-10000, -10000, 50000, 50000);
         HexForgeManager.shieldLayer.eventMode = 'static'; 
         HexForgeManager.shieldLayer.interactive = true; 
-        HexForgeManager.shieldLayer.cursor = 'crosshair'; // Le fameux viseur !
-        HexForgeManager.shieldLayer.zIndex = 1000;
+        HexForgeManager.shieldLayer.cursor = 'crosshair'; 
+        HexForgeManager.shieldLayer.zIndex = 10000;
         
         HexForgeManager.shieldLayer.on('pointerdown', (e) => {
             if (e.data.button !== 0) return;
@@ -535,59 +563,131 @@ export class HexForgeManager {
         if (HexForgeManager.lastPaintedHex === hex.id) return;
         HexForgeManager.lastPaintedHex = hex.id;
 
-        if (!HexForgeManager.brushBiome && !HexForgeManager.brushTrait) return; 
+        // On vérifie si l'un des trois pinceaux a une valeur
+        if (!HexForgeManager.brushRegion && !HexForgeManager.brushBiome && !HexForgeManager.brushTrait) return; 
 
         let updates = {};
-        if (HexForgeManager.brushBiome) updates["biome"] = HexForgeManager.brushBiome;
-        if (HexForgeManager.brushTrait) updates["trait"] = HexForgeManager.brushTrait;
         
-        await canvas.scene.setFlag("ultimateforge-hexforge", hex.id, updates);
+        // --- PEINTURE DE LA RÉGION ---
+        if (HexForgeManager.brushRegion === "none") {
+            updates["-=region"] = null; // Gomme
+        } else if (HexForgeManager.brushRegion) {
+            updates["region"] = HexForgeManager.brushRegion;
+        }
+
+        // --- PEINTURE DU BIOME ---
+        if (HexForgeManager.brushBiome === "none") {
+            updates["-=biome"] = null; // Gomme
+        } else if (HexForgeManager.brushBiome) {
+            updates["biome"] = HexForgeManager.brushBiome;
+        }
+
+        // --- PEINTURE DU TRAIT ---
+        if (HexForgeManager.brushTrait === "none") {
+            updates["-=trait"] = null; // Gomme
+        } else if (HexForgeManager.brushTrait) {
+            updates["trait"] = HexForgeManager.brushTrait;
+        }
+        
+        // Application de la mise à jour sur les flags de la scène
+        if (Object.keys(updates).length > 0) {
+            await canvas.scene.setFlag("ultimateforge-hexforge", hex.id, updates);
+        }
     }
+
     // =========================================================================
-    // DESSIN DES AURAS SUR LA CARTE (Cercles Universels)
+    // DESSIN DES AURAS SUR LA CARTE (Méthode Géométrique Absolue)
     // =========================================================================
     static drawHighlights() {
         if (!canvas.ready || !this.highlightGraphics) return;
         this.highlightGraphics.clear();
 
-        // On ne dessine que si on a le pinceau en main
+        // On affiche le calque global uniquement si on est en mode Pinceau
         if (this.currentMode !== 'brush' || !this.isToolActive) return;
 
-        let targetKey = "";
-        let targetValue = "";
-        if (this.brushBiome) { targetKey = "biome"; targetValue = this.brushBiome; }
-        else if (this.brushTrait) { targetKey = "trait"; targetValue = this.brushTrait; }
-        else return;
+        const colorMap = {
+            "Plaines": 0x2ecc71, "Forêt": 0x229954, "Collines": 0xd4ac0d, "Montagne": 0x7f8c8d,
+            "Littoral": 0xf1c40f, "Marais": 0x8e44ad, "Désert": 0xe67e22, "Arctique": 0xecf0f1,
+            "Jungle": 0x117a65, "Taïga": 0x1abc9c, "Aquatique": 0x3498db, "Sub-aquatique": 0x2980b9,
+            "Outreterre": 0x34495e, "route_pavee": 0xbdc3c7, "chemin_terre": 0xa67c00,
+            "riviere": 0x3498db, "lac": 0x2980b9, "faille": 0x1c2833, "grotte": 0x2c3e50
+        };
 
-        const allHexes = canvas.scene.getFlag("ultimateforge-hexforge") || {};
+        const allHexes = canvas.scene.flags?.["ultimateforge-hexforge"] || {};
         
-        this.highlightGraphics.beginFill(0x2ecc71, 0.4); // Vert fluo intérieur
-        this.highlightGraphics.lineStyle(3, 0x2ecc71, 1); // Vert fluo extérieur
-
         for (const [hexId, hexData] of Object.entries(allHexes)) {
-            if (hexData && hexData[targetKey] === targetValue) {
-                const parts = hexId.split('_');
-                if (parts.length !== 3) continue;
-                const row = parseInt(parts[1]);
-                const col = parseInt(parts[2]);
+            if (!hexData) continue;
 
-                let cx, cy;
-                // Calcul robuste du centre de la case
-                if (canvas.grid.getCenterPoint) { 
-                    const pt = canvas.grid.getCenterPoint({i: col, j: row});
-                    cx = pt.x; cy = pt.y;
-                } else { 
-                    const pt = canvas.grid.grid.getPixelsFromGridPosition(row, col);
-                    cx = pt[0] + (canvas.grid.w / 2);
-                    cy = pt[1] + (canvas.grid.h / 2);
-                }
+            const bColor = colorMap[hexData.biome];
+            const tColor = colorMap[hexData.trait];
 
-                // Dessin d'un beau cercle au milieu de l'hexagone
-                const radius = (canvas.grid.size / 2) * 0.7;
-                this.highlightGraphics.drawCircle(cx, cy, radius);
+            if (!bColor && !tColor) continue;
+
+            const fillColor = bColor || 0x000000;
+            const fillAlpha = bColor ? 0.45 : 0.0; 
+            const lineColor = tColor || bColor || 0xFFFFFF;
+            const lineAlpha = tColor ? 0.9 : 0.3; 
+            const lineWidth = tColor ? 5 : 2;     
+
+            this.highlightGraphics.beginFill(fillColor, fillAlpha);
+            this.highlightGraphics.lineStyle(lineWidth, lineColor, lineAlpha);
+
+            const parts = hexId.split('_');
+            if (parts.length !== 3) continue;
+            const row = parseInt(parts[1]);
+            const col = parseInt(parts[2]);
+
+            // 1. Récupération de l'origine de la case
+            const pt = canvas.grid.getTopLeftPoint({i: col, j: row});
+            
+            // 2. Récupération des dimensions de la case
+            const width = canvas.grid.sizeX || canvas.grid.w;
+            const height = canvas.grid.sizeY || canvas.grid.h;
+            
+            // 3. Calcul du centre exact
+            const cx = pt.x + (width / 2);
+            const cy = pt.y + (height / 2);
+            const w = width / 2;
+            const h = height / 2;
+
+            // 4. Dessin mathématique de l'hexagone selon l'orientation de la grille
+            const gridType = canvas.scene.grid.type;
+            let points = [];
+
+            if (gridType === 2 || gridType === 3) {
+                // Hexagone "Pointy-topped" (Pointes en haut et en bas)
+                points = [
+                    cx, cy - h,
+                    cx + w, cy - h/2,
+                    cx + w, cy + h/2,
+                    cx, cy + h,
+                    cx - w, cy + h/2,
+                    cx - w, cy - h/2
+                ];
+            } else if (gridType === 4 || gridType === 5) {
+                // Hexagone "Flat-topped" (Bords plats en haut et en bas)
+                points = [
+                    cx - w/2, cy - h,
+                    cx + w/2, cy - h,
+                    cx + w, cy,
+                    cx + w/2, cy + h,
+                    cx - w/2, cy + h,
+                    cx - w, cy
+                ];
+            } else {
+                // Fallback (Grille carrée)
+                points = [
+                    pt.x, pt.y,
+                    pt.x + width, pt.y,
+                    pt.x + width, pt.y + height,
+                    pt.x, pt.y + height
+                ];
             }
+
+            // Dessin
+            this.highlightGraphics.drawPolygon(points);
+            this.highlightGraphics.endFill();
         }
-        this.highlightGraphics.endFill();
     }
 }
 
