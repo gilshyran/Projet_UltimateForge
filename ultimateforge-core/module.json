@@ -10,12 +10,29 @@
   "styles": [
     "styles/ultimateforge.css"
   ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "authors": [
     {
-      "name": "Ours_glace"
+      "name": "Ours_glace",
+      "url": "https://www.avantis.world",
+      "email": "contact@avantis.world"
     }
   ],
   "esmodules": [
     "scripts/main.mjs"
-  ]
+  ],
+  "url": "https://avantis.world",
+  "manifest": "https://raw.githubusercontent.com/gilshyran/Projet_UltimateForge/refs/heads/main/ultimateforge-core/module.json?token=GHSAT0AAAAAADY6NXREPHELYETNENU2MCA22OL36BQ",
+  "download": ""
 }

@@ -12,6 +12,18 @@
       "name": "Ours_glace"
     }
   ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "esmodules": [
     "scripts/apps/ultimateforge-journeyforge.mjs"
   ],
@@ -30,5 +42,9 @@
         "type": "module"
       }
     ]
-  }
+  },
+  
+  "url": "https://avantis.world",
+  "manifest": "https://raw.githubusercontent.com/gilshyran/Projet_UltimateForge/refs/heads/main/ultimateforge-journeyforge/module.json?token=GHSAT0AAAAAADY6NXRFZ3ZUEICOP4KLKH622OL4E5Q",
+  "download": ""
 }

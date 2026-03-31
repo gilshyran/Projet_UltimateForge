@@ -14,6 +14,18 @@
       "email": "contact@avantis.world"
     }
   ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "esmodules": [
     "scripts/apps/realmsforge-app.mjs"
   ],
@@ -35,5 +47,8 @@
         "type": "module"
       }
     ]
-  }
+  },
+  "url": "https://avantis.world",
+  "manifest": "https://raw.githubusercontent.com/gilshyran/Projet_UltimateForge/refs/heads/main/ultimateforge-realmsforge/module.json?token=GHSAT0AAAAAADY6NXRFN2RQWSAT2WXKVC4O2OL4GDA",
+  "download": ""
 }
