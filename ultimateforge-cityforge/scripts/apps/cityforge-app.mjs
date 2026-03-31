@@ -10,7 +10,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
     constructor(options = {}, targetedHexId = null) {
         super(options);
-        // Rétrocompatibilité
         this.targetedHexId = targetedHexId || options.targetedHexId || null; 
         this.loadedCityData = options.loadedCityData || null; 
         this.regionData = {}; 
@@ -93,10 +92,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const html = $(this.element);
         const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
 
-        // CORRECTION V13 : On cible l'intérieur de la fenêtre vers le BAS (find)
         const windowContent = html.find('.window-content');
-        
-        // On force le conteneur natif de Foundry à gérer le défilement
         windowContent.css({ 
             'overflow-y': 'auto', 
             'overflow-x': 'hidden',
@@ -104,7 +100,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             'box-sizing': 'border-box'
         });
 
-        // On s'assure que ton propre HTML n'est pas bloqué
         html.find('.avantis-cityforge').css({
             'height': 'auto',
             'min-height': '100%',
@@ -142,13 +137,28 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 
                 this._rebuildCity(html); 
             }, 100);
+        } else if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
+            setTimeout(() => {
+                const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
+                
+                if (hexData.region) html.find('#region-select').val(hexData.region).trigger('change');
+                if (hexData.biome) html.find('#biome-select').val(hexData.biome);
+                if (hexData.state) html.find('#state-select').val(hexData.state);
+                
+                const traitId = this.options.traitId || hexData.trait;
+                if (traitId) {
+                    const sizeMap = { 
+                        "campement": "Campement", "hameau": "Hameau", "village": "Village", 
+                        "petite_ville": "Petite Ville", "grande_cite": "Grande Cité", 
+                        "metropole": "Métropole", "capitale": "Capitale" 
+                    };
+                    const matchedSize = sizeMap[traitId.toLowerCase()] || Object.values(sizeMap).find(s => traitId.toLowerCase().includes(s.toLowerCase()));
+                    if (matchedSize) html.find('#size-select').val(matchedSize);
+                }
+            }, 150);
         }
     }
 
-
-    // =========================================================================
-    // NOUVEAU : LA FONCTION DE RECONSTRUCTION DE L'INTERFACE (AVEC LE BOUTON ÉCLAIR)
-    // =========================================================================
     _rebuildCity(html) {
         const data = this.loadedCityData;
         
@@ -175,7 +185,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         html.find('#watabou-btn').data('name', data.settlementName).data('size', data.size).data('biome', data.biome);
         html.find('#results-section').removeClass('hidden');
 
-        // INJECTION DU BOUTON ACTUALISER
         let updateBtn = html.find('#update-atmosphere-btn');
         if (updateBtn.length === 0) {
             updateBtn = $(`<button id="update-atmosphere-btn" class="cf-action-btn" style="width: auto; padding: 8px 20px; font-size: 1.1em; background: linear-gradient(to bottom, #e67e22, #d35400); border-color: #e67e22; margin-left: 15px;" title="Met à jour l'atmosphère selon les modificateurs de la carte RealmsForge"><i class="fas fa-bolt"></i> Actualiser l'Atmosphère</button>`);
@@ -191,10 +200,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     // =========================================================================
-    // LE DÉCLENCHEUR D'ACTUALISATION (Refondu pour recalculer les textes)
-    // =========================================================================
-    // =========================================================================
-    // LE DÉCLENCHEUR D'ACTUALISATION (Avec Gouvernance et Boutons)
+    // LE DÉCLENCHEUR D'ACTUALISATION AMÉLIORÉ
     // =========================================================================
     async _triggerAtmosphereUpdate(html) {
         if (!this.targetedHexId) {
@@ -214,12 +220,10 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const data = this.loadedCityData;
         const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
 
-        // 1. Lire la nouvelle donne depuis la case
         const newVibeTags = (hexData.vibe_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
         const newEcoTags = (hexData.eco_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
         const newStateId = hexData.state || null;
 
-        // 2. NOUVEAU : Recalculer la GOUVERNANCE
         let newGovTags = [];
         let newGovText = lang === 'en' ? "led by a local chief." : "dirigé par un chef local.";
         let newSafeGovText = "Chef local";
@@ -245,7 +249,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             newGovTags = selectedGov.output_tags || [];
         }
 
-        // 3. Recalculer l'Ambiance (Vibe)
         const finalTraits = [];
         Object.keys(this.temperamentData).forEach(axeName => {
             const traitsArray = this.temperamentData[axeName];
@@ -261,7 +264,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             newVibeText = selected.join(` <span style='color:#7b1e1e; font-weight:bold;'>${lang === 'en' ? 'and' : 'et'}</span> `);
         }
 
-        // 4. Recalculer l'Économie
         let newEcoText = data.ecoText; 
         const stateInfo = newStateId ? this.statesData[newStateId] : null;
         const validEco = this.economyData.filter(eco => eco.output_tags && eco.output_tags.some(tag => newEcoTags.includes(tag)));
@@ -271,7 +273,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             newEcoText = (selectedEco.description[lang] || selectedEco.description.fr) + barterText;
         }
 
-        // 5. Contexte Régional
         let newStateHtmlBlock = "";
         if (stateInfo && stateInfo.description) {
             const stateDesc = lang === 'en' ? stateInfo.description.en : stateInfo.description.fr;
@@ -283,9 +284,44 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 </div>`;
         }
 
+        // --- RECALCUL DE LA POLITIQUE ---
+        const influences = hexData.influence || {};
+        const rawFactions = game.settings.get("ultimateforge-realmsforge", "factionsData") || {};
+        let factionsPresent = [];
+        let politicalText = "";
+        for (const [fId, score] of Object.entries(influences)) {
+            const faction = rawFactions[fId];
+            if (faction) factionsPresent.push({ name: faction.name, score: score, type: faction.type });
+        }
+        const activeFactions = factionsPresent.filter(f => f.score >= 2);
+        
+        if (activeFactions.length > 0) {
+            const mainFaction = activeFactions[0];
+            if (activeFactions.length === 1) {
+                if (mainFaction.score >= 4) politicalText = lang === 'en' ? `The settlement is firmly under the control of <strong>${mainFaction.name}</strong>.` : `La cité est fermement sous le contrôle de <strong>${mainFaction.name}</strong>.`;
+                else if (mainFaction.score === 3) politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> holds a fragile authority here.` : `<strong>${mainFaction.name}</strong> exerce une autorité fragile sur ce lieu.`;
+                else politicalText = lang === 'en' ? `Agents of <strong>${mainFaction.name}</strong> actively infiltrate the city.` : `Des agents de <strong>${mainFaction.name}</strong> infiltrent activement la ville.`;
+            } else {
+                const secondFaction = activeFactions[1];
+                if (mainFaction.score >= 4 && secondFaction.score >= 3) politicalText = lang === 'en' ? `On the brink of civil war. <strong>${mainFaction.name}</strong> rules officially, but <strong>${secondFaction.name}</strong> violently contests it.` : `Au bord de la guerre civile. <strong>${mainFaction.name}</strong> dirige officiellement, mais <strong>${secondFaction.name}</strong> conteste violemment le pouvoir.`;
+                else if (mainFaction.score >= 4 && secondFaction.score === 2) politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> rules with an iron fist against dissent sown by <strong>${secondFaction.name}</strong>.` : `<strong>${mainFaction.name}</strong> tient la ville d'une main de fer contre la dissidence de <strong>${secondFaction.name}</strong>.`;
+                else politicalText = lang === 'en' ? `War of influence and conspiracies between <strong>${mainFaction.name}</strong> and <strong>${secondFaction.name}</strong>.` : `Guerre d'influence et de complots entre <strong>${mainFaction.name}</strong> et <strong>${secondFaction.name}</strong>.`;
+            }
+        }
+        
         let updatedHTML = data.narrativeHTML;
 
-        // Remplacement par expressions régulières sécurisées
+        // Mise à jour robuste de l'encart politique avec un marqueur indestructible
+        let newPoliticalHtmlBlock = politicalText ? `<div class="cf-political-box" style="background: #fdf5e6; border-left: 3px solid #e67e22; padding: 6px 10px; margin-bottom: 10px; border-radius: 0 4px 4px 0;"><p style="margin: 0; font-size: 0.9em; color: #d35400; font-style: italic;"><i class="fas fa-chess-knight"></i> ${politicalText}</p></div>\n` : '';
+        
+        // 1. On retire proprement l'ancien bloc (même rétrocompatible)
+        updatedHTML = updatedHTML.replace(/<div class="cf-political-box".*?<\/div>\n?/s, '');
+        updatedHTML = updatedHTML.replace(/<div style="background: #fdf5e6; border-left: 3px solid #e67e22;.*?<\/div>\n?/s, ''); 
+        
+        // 2. On injecte le nouveau juste après le titre "Gouvernance"
+        const polRegex = /(<h4 style="margin: 0 0 8px 0; color: #2980b9;"><i class="fas fa-landmark"><\/i>.*?<\/h4>\s*)/s;
+        updatedHTML = updatedHTML.replace(polRegex, `$1${newPoliticalHtmlBlock}`);
+
         const vibeRegex = /(<span style="display:inline-block; margin-top:5px;">.*?<strong>)(.*?)(<\/strong>\.<\/span>)/;
         updatedHTML = updatedHTML.replace(vibeRegex, `$1${newVibeText}$3`);
 
@@ -294,7 +330,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const ecoRegex = new RegExp(`(${survieFr}|${survieEn})(.*?)(<\/p>)`, "s");
         updatedHTML = updatedHTML.replace(ecoRegex, `$1 ${newEcoText}\n$3`);
         
-        // Remplacement de la Gouvernance
         const govRegex = /(<strong class="cf-leader-highlight">.*?data-gov=")[^"]*(".*?(?:<\/i><\/strong>|<\/strong><\/a>)\s*)(.*?)(<\/p>)/s;
         updatedHTML = updatedHTML.replace(govRegex, `$1${newSafeGovText}$2${newGovText}\n$4`);
 
@@ -306,21 +341,28 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const newEcoTagsHTML = newEcoTags.length ? newEcoTags.join(', ') : 'Aucune';
         updatedHTML = updatedHTML.replace(tagsRegex, `$1<span style="color: #8e44ad; text-transform: capitalize;">${newVibeTagsHTML}</span>$2<span style="color: #27ae60; text-transform: capitalize;">${newEcoTagsHTML}</span>`);
 
-        // NOUVEAU : Remplacement des tags cachés dans les boutons des lieux (Tavernes, Primes...)
+        const newFactionDataStr = factionsPresent.slice(0, 2).map(f => f.name.replace(/['"|,]/g, '') + ':' + f.score).join('|');
+        
         let updatedDistricts = data.districtsHTML;
         updatedDistricts = updatedDistricts.replace(/data-vibetags="[^"]*"/g, `data-vibetags="${newVibeTags.join(',')}"`);
         updatedDistricts = updatedDistricts.replace(/data-ecotags="[^"]*"/g, `data-ecotags="${newEcoTags.join(',')}"`);
         updatedDistricts = updatedDistricts.replace(/data-govtags="[^"]*"/g, `data-govtags="${newGovTags.join(',')}"`);
         updatedDistricts = updatedDistricts.replace(/data-state="[^"]*"/g, `data-state="${newStateId || ""}"`);
+        
+        if (!updatedDistricts.includes('data-factions=')) {
+            updatedDistricts = updatedDistricts.replace(/data-vibetags="([^"]*)"/g, `data-vibetags="$1" data-factions="${newFactionDataStr}"`);
+        } else {
+            updatedDistricts = updatedDistricts.replace(/data-factions="[^"]*"/g, `data-factions="${newFactionDataStr}"`);
+        }
 
-        // 6. MISE À JOUR DE LA MÉMOIRE DU GÉNÉRATEUR
         data.govTags = newGovTags;
         data.govText = newGovText;
         data.vibeTags = newVibeTags;
         data.ecoTags = newEcoTags;
         data.stateId = newStateId;
         data.narrativeHTML = updatedHTML;
-        data.districtsHTML = updatedDistricts; // Important pour les clics futurs !
+        data.districtsHTML = updatedDistricts; 
+        data.factionsStr = newFactionDataStr;
         
         const journalNarrativeHTML = updatedHTML.replace(/<i class="fas fa-external-link-alt gen-leader-btn"[\s\S]*?<\/i>/g, '');
         this.currentCityJournalData = {
@@ -334,8 +376,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         html.find('#state-select').val(newStateId);
         this._rebuildCity(html);
     }
-
-
 
     _updateDynamicFields(html, regionId) {
         const data = this.regionData[regionId];
@@ -479,7 +519,59 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const shuffledAxes = allAxes.sort(() => 0.5 - Math.random());
         const selectedAxes = shuffledAxes.slice(0, 2);
         const finalTraits = [];
+        
+        // --- HÉRITAGE DE LA CARTE (Correction de Scope) ---
         let vibeTags = [];
+        let existingEcos = [];
+        let politicalText = ""; 
+        let factionsPresent = [];
+        let factionDataStr = "";
+        
+        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
+            const hexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
+            vibeTags = [...(hexData.vibe_tags || [])];
+            existingEcos = [...(hexData.eco_tags || [])];
+
+            const influences = hexData.influence || {};
+            const rawFactions = game.settings.get("ultimateforge-realmsforge", "factionsData") || {};
+            
+            for (const [fId, score] of Object.entries(influences)) {
+                const faction = rawFactions[fId];
+                if (faction) {
+                    factionsPresent.push({ name: faction.name, score: score, type: faction.type, vibes: faction.vibes });
+                    if (faction.vibes) {
+                        const fVibes = faction.vibes.split(',').map(v => v.trim().toLowerCase());
+                        vibeTags.push(...fVibes);
+                    }
+                }
+            }
+
+            // NOUVELLE LOGIQUE : L'encart de Gouvernance ignore le niveau 1
+            const activeFactions = factionsPresent.filter(f => f.score >= 2);
+
+            if (activeFactions.length > 0) {
+                // Tri déjà fait, on prend les plus fortes parmi les "actives"
+                const mainFaction = activeFactions[0];
+
+                if (activeFactions.length === 1) {
+                    if (mainFaction.score >= 4) politicalText = lang === 'en' ? `The settlement is firmly under the control of <strong>${mainFaction.name}</strong> (${mainFaction.type}).` : `La cité est fermement sous le contrôle de <strong>${mainFaction.name}</strong> (${mainFaction.type}).`;
+                    else if (mainFaction.score === 3) politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> holds a fragile authority here.` : `<strong>${mainFaction.name}</strong> exerce une autorité officielle mais très fragile sur ce lieu.`;
+                    else politicalText = lang === 'en' ? `Agents of <strong>${mainFaction.name}</strong> actively infiltrate the upper echelons.` : `Des agents affiliés à <strong>${mainFaction.name}</strong> infiltrent activement les sphères d'influence locales.`;
+                } else {
+                    const secondFaction = activeFactions[1];
+                    if (mainFaction.score >= 4 && secondFaction.score >= 3) {
+                        politicalText = lang === 'en' ? `The city is on the brink of civil war. <strong>${mainFaction.name}</strong> rules officially, but <strong>${secondFaction.name}</strong> violently contests this power.` : `La ville est au bord de la guerre civile. <strong>${mainFaction.name}</strong> dirige officiellement, mais <strong>${secondFaction.name}</strong> conteste violemment ce pouvoir.`;
+                    } else if (mainFaction.score >= 4 && secondFaction.score === 2) {
+                        politicalText = lang === 'en' ? `<strong>${mainFaction.name}</strong> rules with an iron fist, fighting dissent sown by <strong>${secondFaction.name}</strong>.` : `<strong>${mainFaction.name}</strong> tient la ville d'une main de fer, luttant contre la dissidence semée dans l'ombre par <strong>${secondFaction.name}</strong>.`;
+                    } else {
+                        politicalText = lang === 'en' ? `A nest of vipers where <strong>${mainFaction.name}</strong> and <strong>${secondFaction.name}</strong> wage a shadow war.` : `La cité est un nid de vipères où <strong>${mainFaction.name}</strong> et <strong>${secondFaction.name}</strong> se livrent une guerre d'ombre mortelle.`;
+                    }
+                }
+            }
+        }
+        
+        // C'est cette variable qui était perdue !
+        factionDataStr = factionsPresent.slice(0, 2).map(f => f.name.replace(/['"|,]/g, '') + ':' + f.score).join('|');
 
         selectedAxes.forEach(axeName => {
             const traitsArray = this.temperamentData[axeName];
@@ -502,14 +594,13 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const randomTrait = traitsArray[selectedIndex];
 
             finalTraits.push(randomTrait.trait[lang] || randomTrait.trait.fr);
-            vibeTags = vibeTags.concat(randomTrait.output_tags || []);
+            vibeTags = [...new Set(vibeTags.concat(randomTrait.output_tags || []))];
         });
         
         const andWord = lang === 'en' ? 'and' : 'et';
         const vibeText = finalTraits.join(` <span style='color:#7b1e1e; font-weight:bold;'>${andWord}</span> `);
-        const atmos = lang === 'en' 
-            ? "The local ambiance is characterized by" 
-            : "L'ambiance locale se distingue par";
+        const atmos = lang === 'en' ? "The local ambiance is characterized by" : "L'ambiance locale se distingue par";
+
 
         // --- PHASE 2 : LE CORPS ---
         let govTags = [];
@@ -581,7 +672,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             const selectedEcoIndex = this._rollWeighted(ecoWeightObj);
             const selectedEco = validEco[selectedEcoIndex];
             ecoText = (selectedEco.description[lang] || selectedEco.description.fr) + barterText;
-            ecoTags = selectedEco.output_tags || [];
+            ecoTags = [...new Set(existingEcos.concat(selectedEco.output_tags || []))];
         }
 
        // --- PHASE 3 : QUARTIERS ---
@@ -593,7 +684,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         let selectedDistricts = [];
 
-        // 1. LA RÈGLE D'OR : FORCER LE QUARTIER GOUVERNEMENTAL (Le Centre)
         const govDistricts = this.districtsData.filter(d => 
             d.poi_types && d.poi_types.includes("gouvernance") &&
             (!d.size_tags || d.size_tags.includes("all") || d.size_tags.includes(size)) &&
@@ -601,18 +691,16 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             (!d.eco_tags || d.eco_tags.includes("all") || d.eco_tags.some(tag => ecoTags.includes(tag)))
         );
         
-        // S'il y a un quartier gouvernemental valide, on le prend en premier !
         if (govDistricts.length > 0) {
             const coreDistrict = govDistricts[Math.floor(Math.random() * govDistricts.length)];
             selectedDistricts.push(coreDistrict);
         }
 
-        // 2. FORCER LE QUARTIER D'EAU (Si littoral/aquatique)
         if ((biome === "Rivage" || biome === "Aquatique") && selectedDistricts.length < numDistricts) {
             const waterDistricts = this.districtsData.filter(d => 
                 d.biome_tags && (d.biome_tags.includes("Rivage") || d.biome_tags.includes("Aquatique")) &&
                 (!d.size_tags || d.size_tags.includes("all") || d.size_tags.includes(size)) &&
-                !selectedDistricts.includes(d) // Éviter les doublons
+                !selectedDistricts.includes(d)
             );
             
             if (waterDistricts.length > 0) {
@@ -621,7 +709,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }
         }
 
-        // 3. REMPLIR LE RESTE DES QUARTIERS ALÉATOIREMENT
         const validDistricts = this.districtsData.filter(d => {
             if (selectedDistricts.includes(d)) return false; 
             const validBiome = !d.biome_tags || d.biome_tags.includes("all") || d.biome_tags.includes(biome);
@@ -630,7 +717,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             return validBiome && validEco && validSize;
         });
 
-        // On calcule combien de quartiers il manque pour atteindre la taille de la ville
         const remainingSlots = Math.max(0, numDistricts - selectedDistricts.length);
         const shuffledDistricts = validDistricts.sort(() => 0.5 - Math.random());
         selectedDistricts = selectedDistricts.concat(shuffledDistricts.slice(0, remainingSlots));
@@ -720,8 +806,9 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                         currencySym = this.themeSettings.currency.symbol[lang] || this.themeSettings.currency.symbol.fr;
                     }
                     
-                    poiHTML += `<span class="cf-poi-badge gen-poi-btn" data-type="${poi}" data-district="${distName}" data-size="${size}" data-region="${regionId}" data-city="${settlementName}" data-biome="${biome}" data-state="${stateId}" data-pricemult="${stateInfo ? stateInfo.price_multiplier : 1.0}" data-currency="${currencySym}" data-leadername="${leaderName}" data-leadertitle="${leaderTitle}" data-govtags="${govTags.join(',')}" data-ecotags="${ecoTags.join(',')}" data-vibetags="${vibeTags.join(',')}" title="Générer ce lieu"><i class="fas ${icon}"></i> <span style="text-transform: capitalize;">${label}</span></span>`;
-                    
+                    // ON UTILISE LA VARIABLE GLOBALE ICI !
+                    poiHTML += `<span class="cf-poi-badge gen-poi-btn" data-type="${poi}" data-district="${distName}" data-size="${size}" data-region="${regionId}" data-city="${settlementName}" data-biome="${biome}" data-state="${stateId}" data-pricemult="${stateInfo ? stateInfo.price_multiplier : 1.0}" data-currency="${currencySym}" data-leadername="${leaderName}" data-leadertitle="${leaderTitle}" data-govtags="${govTags.join(',')}" data-ecotags="${ecoTags.join(',')}" data-vibetags="${vibeTags.join(',')}" data-factions="${factionDataStr}" title="Générer ce lieu"><i class="fas ${icon}"></i> <span style="text-transform: capitalize;">${label}</span></span>`;
+
                     journalPoiHTML += `<li><strong><span style="text-transform: capitalize;">${label}</span></strong> <span style="color:#7f8c8d; font-size: 0.9em;">(${icon === "fa-beer" ? "Taverne" : icon === "fa-store" ? "Boutique" : "Lieu Public"})</span></li>`;
                 });
             }
@@ -743,7 +830,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             `;
         });
 
-        // --- AFFICHAGE DE L'INTERFACE PRINCIPALE ---
         html.find('#res-title').text(settlementName);
         html.find('#res-subtitle').text(`${size} en ${regionName} | Biome : ${biome}`);
 
@@ -785,6 +871,9 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
                 <div style="background: rgba(41, 128, 185, 0.05); padding: 12px; border-radius: 6px; border: 1px solid #d6eaf8;">
                     <h4 style="margin: 0 0 8px 0; color: #2980b9;"><i class="fas fa-landmark"></i> ${govTitle}</h4>
+                    
+                    ${politicalText ? `<div class="cf-political-box" style="background: #fdf5e6; border-left: 3px solid #e67e22; padding: 6px 10px; margin-bottom: 10px; border-radius: 0 4px 4px 0;"><p style="margin: 0; font-size: 0.9em; color: #d35400; font-style: italic;"><i class="fas fa-chess-knight"></i> ${politicalText}</p></div>\n` : ''}
+                    
                     <p style="margin: 0; font-size: 0.95em; line-height: 1.4;">
                         ${dirige} <strong class="cf-leader-highlight"><i class="fas fa-crown"></i> ${leaderName} <i class="fas fa-external-link-alt gen-leader-btn" data-title="${leaderTitle}" data-name="${leaderName}" data-gov="${safeGovText}" data-size="${size}" data-region="${regionId}" data-city="${settlementName}" data-race="${race}" style="cursor:pointer;" title="Générer la Fiche"></i></strong>
                         ${govText}
@@ -809,13 +898,11 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         html.find('#res-narrative').html(narrativeHTML);
         html.find('#res-districts').html(districtsHTML);
 
-        // --- LA MAGIE DE LA PERSISTANCE (ÉTAPE 1) ---
         const journalNarrativeHTML = narrativeHTML.replace(/<i class="fas fa-external-link-alt gen-leader-btn"[\s\S]*?<\/i>/g, '');
 
         this.currentCityJournalData = {
             name: settlementName,
             content: journalNarrativeHTML + journalDistrictsHTML,
-            // NOUVEAU : On capture tout l'ADN de la ville !
             rawData: {
                 regionId, stateId, biome, size, race,
                 settlementName, leaderName, leaderTitle,
@@ -824,24 +911,17 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 vibeText, vibeTags,
                 govText, govTags,
                 ecoText, ecoTags,
+                factionsStr: factionDataStr,
                 districts: selectedDistricts,
-                narrativeHTML: narrativeHTML, // NOUVEAU : Pour la persistance
-                districtsHTML: districtsHTML  // NOUVEAU : Pour la persistance
+                narrativeHTML: narrativeHTML, 
+                districtsHTML: districtsHTML  
             }
         };
 
         html.find('#watabou-btn').data('name', settlementName).data('size', size).data('biome', biome);
         html.find('#results-section').removeClass('hidden');
 
-        // NOUVEAU : Propagation des Auras sur la carte autour de la cité !
-        if (this.targetedHexId && game.modules.get("ultimateforge-hexforge")?.active) {
-            this._propagateAurasToMap(this.targetedHexId, vibeTags, ecoTags);
-        }
     }
-
-    // ==========================================
-    // FONCTIONS DE GÉNÉRATION DYNAMIQUE
-    // ==========================================
 
     async _onCreateLeaderJournal(event) {
         const btn = event.currentTarget;
@@ -855,6 +935,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         
         const npcData = InternalNpcGenerator.generate(name, govDesc, size, regionId, cityName, race, this.npcsData, leaderTitle);
 
+        // 1. Création systématique du Journal
         const entry = await JournalEntry.create({
             name: name,
             pages: [{
@@ -865,120 +946,26 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         });
         entry.sheet.render(true);
 
-        if (game.system.id === "avantis") {
-            try {
-                const valPVI = Math.floor(npcData.stats.pvi / 3) || 1;
-                const valPVE = Math.floor(npcData.stats.pve / 3) || 1;
+        // 2. MODULARITÉ : On cherche le script de création de fiche propre au thème actif
+        let basePath = "modules/ultimateforge-core/data/default_fantasy";
+        if (game.settings.settings.has("ultimateforge-core.activeThemePath")) {
+            basePath = game.settings.get("ultimateforge-core", "activeThemePath").replace(/\/$/, "");
+        }
 
-                const aptitudes = {
-                    "force": { value: valPVE, label: "Force", meridien: "puissance" },
-                    "intimidation": { value: valPVE, label: "Intimidation", meridien: "puissance" },
-                    "magnetisme": { value: valPVE, label: "Magnétisme", meridien: "puissance" },
-                    "vigueur": { value: valPVE, label: "Vigueur", meridien: "puissance" },
-                    "agilite": { value: valPVE, label: "Agilité", meridien: "mouvement" },
-                    "coordination": { value: valPVE, label: "Coordination", meridien: "mouvement" },
-                    "finesse": { value: valPVE, label: "Finesse", meridien: "mouvement" },
-                    "reflexe": { value: valPVE, label: "Réflexe", meridien: "mouvement" },
-                    "adaptation": { value: valPVE, label: "Adaptation", meridien: "vitalite" },
-                    "constitution": { value: valPVE, label: "Constitution", meridien: "vitalite" },
-                    "regeneration": { value: valPVE, label: "Régénération", meridien: "vitalite" },
-                    "resistance": { value: valPVE, label: "Résistance", meridien: "vitalite" },
-                    "commandement": { value: valPVI, label: "Commandement", meridien: "domination" },
-                    "logique": { value: valPVI, label: "Logique", meridien: "domination" },
-                    "ruse": { value: valPVI, label: "Ruse", meridien: "domination" },
-                    "volonte": { value: valPVI, label: "Volonté", meridien: "domination" },
-                    "erudition": { value: valPVI, label: "Érudition", meridien: "savoir" },
-                    "expertise": { value: valPVI, label: "Expertise", meridien: "savoir" },
-                    "perception": { value: valPVI, label: "Perception", meridien: "savoir" },
-                    "sagesse": { value: valPVI, label: "Sagesse", meridien: "savoir" },
-                    "creativite": { value: valPVI, label: "Créativité", meridien: "expression" },
-                    "empathie": { value: valPVI, label: "Empathie", meridien: "expression" },
-                    "intuition": { value: valPVI, label: "Intuition", meridien: "expression" },
-                    "persuasion": { value: valPVI, label: "Persuasion", meridien: "expression" }
-                };
+        try {
+            // Import dynamique : Le code va tenter de charger le fichier en direct
+            const modulePath = `/${basePath}/theme-actor.mjs`;
+            const themeModule = await import(modulePath);
 
-                const actorType = game.documentTypes.Actor.includes("pnj") ? "pnj" : "character";
-
-                const actor = await Actor.create({
-                    name: name,
-                    type: actorType, 
-                    img: "icons/svg/mystery-man.svg", 
-                    system: {
-                        meridiens: {
-                            domination: { value: valPVI, label: "Domination" },
-                            savoir: { value: valPVI, label: "Savoir" },
-                            expression: { value: valPVI, label: "Expression" },
-                            puissance: { value: valPVE, label: "Puissance" },
-                            mouvement: { value: valPVE, label: "Mouvement" },
-                            vitalite: { value: valPVE, label: "Vitalité" }
-                        },
-                        aptitudes: aptitudes,
-                        pointsMaitrise: { value: 0, max: 10 },
-                        pvi: { value: npcData.stats.pvi, max: npcData.stats.pvi },
-                        pve: { value: npcData.stats.pve, max: npcData.stats.pve },
-                        personnalite: { biographie: { histoire: npcData.textBio } }
-                    }
-                });
-
-                const itemsToCreate = [];
-
-                const parseItem = (text, type) => {
-                    if (!text || text === "(Aucune)") return null;
-                    const match = text.match(/^(.*?) \(.*Qualité (\d+)\)$/);
-                    const itemName = match ? match[1] : text;
-                    const quality = match ? parseInt(match[2]) : 0;
-                    
-                    let img = "icons/svg/item-bag.svg";
-                    if (type === "arme") {
-                        if (itemName.toLowerCase().includes("arc")) img = "icons/weapons/bows/shortbow.webp";
-                        else if (itemName.toLowerCase().includes("dague")) img = "icons/weapons/daggers/dagger.webp";
-                        else img = "icons/weapons/swords/sword-iron.webp";
-                    }
-                    if (type === "protection") img = "icons/svg/shield.svg";
-
-                    return {
-                        name: itemName,
-                        type: type, 
-                        img: img,
-                        system: {
-                            description: text,
-                            qualite: quality,
-                            equipe: true 
-                        }
-                    };
-                };
-
-                const weapon = parseItem(npcData.stats.weapon, "arme");
-                if (weapon) itemsToCreate.push(weapon);
-
-                const armor = parseItem(npcData.stats.armor, "protection");
-                if (armor) itemsToCreate.push(armor);
-
-                if (npcData.stats.loot && npcData.stats.loot !== "(Aucun)") {
-                    itemsToCreate.push({
-                        name: npcData.stats.loot,
-                        type: "objet",
-                        img: "icons/svg/chest.svg",
-                        system: { 
-                            description: "Butin généré.",
-                            equipe: false,
-                            quantite: 1
-                        }
-                    });
-                }
-
-                if (itemsToCreate.length > 0) {
-                    await actor.createEmbeddedDocuments("Item", itemsToCreate);
-                }
-                
-                ui.notifications.success(`L'Acteur ${name} a été généré avec son inventaire complet !`);
-                actor.sheet.render(true);
-
-            } catch (error) {
-                console.warn("CITYFORGE | Création de l'acteur Avantis échouée :", error);
+            // Si le fichier existe et possède la fonction createActor, on lance la machine !
+            if (themeModule && themeModule.createActor) {
+                ui.notifications.info(`CityForge | Génération de la fiche Acteur via le thème...`);
+                await themeModule.createActor(name, npcData);
             }
-        } else {
-            ui.notifications.info(`Journal généré. (Création d'Acteur ignorée car le système n'est pas Avantis)`);
+        } catch (error) {
+            // Si l'import échoue (fichier introuvable), c'est normal : le thème ne supporte pas la création de fiche
+            console.log(`CityForge | Aucun générateur d'acteur détecté pour le thème (${basePath}).`);
+            ui.notifications.info(`CityForge | Journal du dirigeant généré (Création de fiche non gérée par ce thème).`);
         }
     }
 
@@ -994,11 +981,12 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const biome = btn.dataset.biome;
         const stateId = btn.dataset.state;
         const priceMult = parseFloat(btn.dataset.pricemult) || 1.0;
-        const currency = btn.dataset.currency || "P";
+        const currency = btn.dataset.currency || "PO";
         
         const leaderName = btn.dataset.leadername;
         const leaderTitle = btn.dataset.leadertitle;
         const govTags = btn.dataset.govtags ? btn.dataset.govtags.split(',') : [];
+        const factionsStr = btn.dataset.factions || ""; 
 
         if (!name) {
             const typeLabel = type.replace(/_/g, ' ');
@@ -1011,7 +999,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         if (type.includes("taverne")) {
             const ecoTags = btn.dataset.ecotags ? btn.dataset.ecotags.split(',') : [];
             const vibeTags = btn.dataset.vibetags ? btn.dataset.vibetags.split(',') : [];
-            content = InternalTavernGenerator.generateHTML(name, type, district, size, region, city, this.namesData, this.tavernsData, biome, stateId, priceMult, currency, govTags, ecoTags, vibeTags);
+            content = InternalTavernGenerator.generateHTML(name, type, district, size, region, city, this.namesData, this.tavernsData, biome, stateId, priceMult, currency, govTags, ecoTags, vibeTags, factionsStr);
         }
         else if (type.includes("bazar") || type.includes("marchand") || type.includes("apothicaire") || type.includes("forge") || type.includes("armurerie") || type.includes("tailleur") || type.includes("tanneur") || type.includes("marche_noir") || type.includes("curiosite") || type.includes("librairie") || type.includes("graveur") || type.includes("archerie") || type.includes("cartographe") || type.includes("antiquaire") || type.includes("ecurie") || type.includes("menagerie") || type.includes("changeur_monnaie") || type.includes("joaillier")) {
             content = InternalShopGenerator.generateHTML(name, type, district, size, region, city, this.namesData, this.shopsData, biome, stateId, priceMult, currency);
@@ -1019,7 +1007,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         else if (type.includes("panneau") || type.includes("doleance") || type.includes("primes")) {
             const ecoTags = btn.dataset.ecotags ? btn.dataset.ecotags.split(',') : [];
             const vibeTags = btn.dataset.vibetags ? btn.dataset.vibetags.split(',') : [];
-            content = InternalBountyGenerator.generateHTML(name, type, district, size, region, city, this.namesData, this.bountiesData, biome, stateId, govTags, ecoTags, vibeTags, currency);
+            content = InternalBountyGenerator.generateHTML(name, type, district, size, region, city, this.namesData, this.bountiesData, biome, stateId, govTags, ecoTags, vibeTags, currency, factionsStr);
         }
         else if (type === "gouvernance" || type.includes("gouvernance")) {
             content = InternalGovernanceGenerator.generateHTML(district, size, region, city, leaderName, leaderTitle, govTags, this.govBuildingsData);
@@ -1045,7 +1033,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }]
         });
 
-        // NOUVEAU : On ajoute une balise secrète pour que le Recalculateur puisse le retrouver !
         await entry.setFlag("ultimateforge-cityforge", "poiData", {
             type: type,
             district: district,
@@ -1056,12 +1043,10 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         entry.sheet.render(true);
     }
 
-    // --- NOUVEAU : LA FONCTION DE SAUVEGARDE AMÉLIORÉE ---
     async _onSaveCityJournal(event) {
         event.preventDefault();
         if (!this.currentCityJournalData) return;
 
-        // 1. On crée le Journal classiquement
         const entry = await JournalEntry.create({
             name: this.currentCityJournalData.name,
             pages: [{
@@ -1071,21 +1056,24 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }]
         });
 
-        // 2. LA MAGIE : On sauvegarde l'ADN brut de la ville dans les "flags" du journal
         await entry.setFlag("ultimateforge-cityforge", "cityData", this.currentCityJournalData.rawData);
 
-        // 3. LA ROBUSTESSE : On vérifie si HexForge est là ET si on a ciblé une case
         if (game.modules.get("ultimateforge-hexforge")?.active && this.targetedHexId) {
-            
-            // On récupère les données actuelles de la case (Biome, Trait, etc.)
             const currentHexData = canvas.scene.getFlag("ultimateforge-hexforge", this.targetedHexId) || {};
-            
-            // On ajoute l'ID du journal à la case !
             currentHexData.cityJournalId = entry.id; 
             
-            // On sauvegarde le tout dans la carte
+            // --- NOUVEAU : SAUVEGARDE ET PROPAGATION DES TAGS UNIQUEMENT À L'ARCHIVAGE ---
+            const rawData = this.currentCityJournalData.rawData;
+            
+            // On inscrit les tags définitifs de la ville dans la case centrale
+            currentHexData.vibe_tags = rawData.vibeTags;
+            currentHexData.eco_tags = rawData.ecoTags;
             await canvas.scene.setFlag("ultimateforge-hexforge", this.targetedHexId, currentHexData);
             
+            // On propage l'influence aux cases alentours
+            this._propagateAurasToMap(this.targetedHexId, rawData.vibeTags, rawData.ecoTags);
+            // -----------------------------------------------------------------------------
+
             ui.notifications.success(`La cité "${this.currentCityJournalData.name}" a été archivée ET implantée sur la carte !`);
         } else {
             ui.notifications.success(`La cité "${this.currentCityJournalData.name}" a été archivée (Mode Autonome).`);
@@ -1160,10 +1148,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         window.open(url, '_blank');
     }
 
-
-    // =========================================================================
-    // NOUVEAU : LE GÉNÉRATEUR FANTÔME POUR LES LIEUX ISOLÉS (Bypass l'UI)
-    // =========================================================================
     static async generateIsolatedPlaceJournal(hexId, traitId, regionId, biome) {
         const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
         
@@ -1173,7 +1157,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
         }
 
-        // 1. Charger silencieusement TOUS les JSON (Ajout de jf_decors.json)
         const [
             namesData, tavernsData, shopsData, bountiesData, npcsData, 
             regionData, statesData, themeSettings, isolatedData, decorsData
@@ -1187,12 +1170,11 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             fetch(`${basePath}/regional_states.json`).then(r => r.json()).catch(()=>({})),
             fetch(`${basePath}/theme.json`).then(r => r.json()).catch(()=>null),
             fetch(`${basePath}/isolated_places.json`).then(r => r.json()).catch(()=>({})),
-            fetch(`${basePath}/jf_decors.json`).then(r => r.json()).catch(()=>[]) // <-- NOUVEAU
+            fetch(`${basePath}/jf_decors.json`).then(r => r.json()).catch(()=>[]) 
         ]);
 
         const getText = (item) => (typeof item === 'object') ? (item[lang] || item.fr || "") : (item || "");
 
-        // 2. ADN de la case (Sécurisé)
         const hexData = canvas.scene.getFlag("ultimateforge-hexforge", hexId) || {};
         const vibeTags = (hexData.vibe_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
         const ecoTags = (hexData.eco_tags || []).filter(t => typeof t === 'string' && t.trim() !== "");
@@ -1205,14 +1187,13 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const safeRegionId = regionId || Object.keys(regionData)[0] || "inconnue";
         const regionInfo = regionData[safeRegionId] || {};
         const safeBiome = biome || "Plaines";
-        const weatherId = canvas.scene?.weather || "clear"; // Capture de la météo actuelle
+        const weatherId = canvas.scene?.weather || "clear"; 
         
         let currencySym = "PO";
         if (themeSettings && themeSettings.currency && themeSettings.currency.symbol) {
             currencySym = themeSettings.currency.symbol[lang] || themeSettings.currency.symbol.fr;
         }
 
-        // 3. Nom du Dirigeant
         let leaderName = lang === 'en' ? "Unknown Owner" : "Propriétaire Inconnu";
         let charPool = namesData[safeRegionId]?.characters;
         if (!charPool) {
@@ -1229,7 +1210,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             }
         }
 
-        // 4. LECTURE DATA-DRIVEN DE LA RECETTE
         const isoConfig = isolatedData[traitId] || {
             name_format: { fr: "Lieu de {Leader}", en: "{Leader}'s Place" },
             leader_title: { fr: "Propriétaire", en: "Owner" },
@@ -1241,21 +1221,17 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const leaderTitle = isoConfig.leader_title[lang] || isoConfig.leader_title.fr;
         const recipe = isoConfig.recipe;
         
-        // --- NOUVEAU : LA MAGIE NARRATIVE DU DÉCOR ---
         let finalDescription = isoConfig.description[lang] || isoConfig.description.fr;
         const validDecors = decorsData.filter(d => d.trait_id === traitId && (!d.weather_tags || d.weather_tags.length === 0 || d.weather_tags.includes(weatherId) || d.weather_tags.includes("all")));
         if (validDecors.length > 0) {
             const selectedDecor = validDecors[Math.floor(Math.random() * validDecors.length)];
             finalDescription = selectedDecor.text[lang] || selectedDecor.text.fr;
         }
-        // ----------------------------------------------
 
-        // 5. Générer les Pages
         let pages = [];
         const regionNameText = regionInfo.name ? (regionInfo.name[lang] || regionInfo.name.fr) : safeRegionId;
         const stateText = stateInfo ? (lang === 'en' ? stateInfo.description.en : stateInfo.description.fr) : "";
         
-        // Formatage élégant des tags d'auras (Mise en majuscules)
         const formatTags = (tagsArray) => tagsArray.map(t => t.charAt(0).toUpperCase() + t.slice(1).replace(/-/g, ' ')).join(', ');
         
         let auraText = vibeTags.length > 0 ? `<br>L'atmosphère du lieu est marquée par : <strong style="color:#8e44ad;">${formatTags(vibeTags)}</strong>.` : "";
@@ -1263,7 +1239,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         const npcData = InternalNpcGenerator.generate(leaderName, "Lieu Isolé / Autonomie totale", size, safeRegionId, settlementName, "Humain", npcsData, leaderTitle);
 
-        // PAGE 1 : L'Aperçu injecte la description tirée de jf_decors.json !
         const overviewHTML = `
             <div style="font-family: var(--font-primary);">
                 <h1 style="color: #2980b9; border-bottom: 2px solid #3498db;"><i class="fas fa-home"></i> ${settlementName}</h1>
@@ -1294,9 +1269,9 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             let contentHTML = "";
 
             if (poi.includes("taverne")) {
-                contentHTML = InternalTavernGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, tavernsData, safeBiome, stateId, priceMult, currencySym, govTags, ecoTags, vibeTags);
+                contentHTML = InternalTavernGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, tavernsData, safeBiome, stateId, priceMult, currencySym, govTags, ecoTags, vibeTags, "");
             } else if (poi.includes("panneau") || poi.includes("primes")) {
-                contentHTML = InternalBountyGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, bountiesData, safeBiome, stateId, govTags, ecoTags, vibeTags, currencySym);
+                contentHTML = InternalBountyGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, bountiesData, safeBiome, stateId, govTags, ecoTags, vibeTags, currencySym, "");
             } else {
                 contentHTML = InternalShopGenerator.generateHTML(poiName, poi, "Le Domaine", size, safeRegionId, settlementName, namesData, shopsData, safeBiome, stateId, priceMult, currencySym);
             }
@@ -1312,11 +1287,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         entry.sheet.render(true);
     }
 
-
-
-    // =========================================================================
-    // LA RADIATION CULTURELLE AVEC RÈGLE D'ÉROSION (Propagation sur 2 cases)
-    // =========================================================================
     async _propagateAurasToMap(centerHexId, vibeTags, ecoTags) {
         if (!vibeTags.length && !ecoTags.length) return;
         
@@ -1325,7 +1295,7 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         const cRow = parseInt(parts[1]);
         const cCol = parseInt(parts[2]);
         
-        const radius = 2; // Propagation sur 2 cases
+        const radius = 2; 
         let flagUpdates = {};
         
         for (let r = cRow - radius; r <= cRow + radius; r++) {
@@ -1363,9 +1333,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
         }
     }
 
-    // =========================================================================
-    // LE RECALCULATEUR D'ATMOSPHÈRE GLOBAL (Aperçu + Lieux secondaires)
-    // =========================================================================
     static async updateCityAtmosphere(journal, hexId, journalData) {
         const lang = (game.i18n.language || "fr").startsWith('en') ? 'en' : 'fr';
         
@@ -1393,7 +1360,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
 
         let nbUpdated = 0;
 
-        // 1. MISE À JOUR DU JOURNAL PRINCIPAL (Aperçu de la ville)
         const mainUpdates = [];
         for (const page of journal.pages.contents) {
             if (page.name.includes("Vue d'ensemble")) {
@@ -1406,12 +1372,10 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             await journal.setFlag("ultimateforge-cityforge", "cityData", cityData);
         }
 
-        // 2. NOUVEAU : RECHERCHE ET MISE À JOUR DES JOURNAUX DE LIEUX SÉPARÉS
         const allJournals = game.journal.contents;
         const linkedJournals = allJournals.filter(j => {
             const poiData = j.getFlag("ultimateforge-cityforge", "poiData");
             if (poiData && poiData.parentHexId === hexId) return true;
-            // Rétrocompatibilité pour les lieux créés avant cette mise à jour
             if (j.name.includes(`(${cityData.settlementName})`)) return true;
             return false;
         });
@@ -1422,7 +1386,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
             let type = poiData.type || "inconnu";
             let district = poiData.district || "Quartier";
 
-            // Déduction pour les vieux journaux sans balise
             if (type === "inconnu") {
                 const lowerName = poiJournal.name.toLowerCase();
                 if (lowerName.includes("taverne")) type = lowerName.includes("louche") ? "taverne_louche" : (lowerName.includes("luxueuse") ? "taverne_luxueuse" : "taverne");
@@ -1433,12 +1396,13 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                 let content = page.text.content;
                 let pageUpdated = false;
                 const cleanName = poiJournal.name;
+                const factionsStr = cityData.factionsStr || ""; 
                 
                 if (type.includes("taverne")) {
-                    content = InternalTavernGenerator.generateHTML(cleanName, type, district, cityData.size, cityData.regionId, cityData.settlementName, namesData, tavernsData, cityData.biome, cityData.stateId, priceMult, currencySym, cityData.govTags, cityData.ecoTags, cityData.vibeTags);
+                    content = InternalTavernGenerator.generateHTML(cleanName, type, district, cityData.size, cityData.regionId, cityData.settlementName, namesData, tavernsData, cityData.biome, cityData.stateId, priceMult, currencySym, cityData.govTags, cityData.ecoTags, cityData.vibeTags, factionsStr);
                     pageUpdated = true;
                 } else if (type.includes("panneau") || type.includes("primes")) {
-                    content = InternalBountyGenerator.generateHTML(cleanName, "panneau_annonces", district, cityData.size, cityData.regionId, cityData.settlementName, namesData, bountiesData, cityData.biome, cityData.stateId, cityData.govTags, cityData.ecoTags, cityData.vibeTags, currencySym);
+                    content = InternalBountyGenerator.generateHTML(cleanName, "panneau_annonces", district, cityData.size, cityData.regionId, cityData.settlementName, namesData, bountiesData, cityData.biome, cityData.stateId, cityData.govTags, cityData.ecoTags, cityData.vibeTags, currencySym, factionsStr);
                     pageUpdated = true;
                 }
 
@@ -1446,7 +1410,6 @@ export class AvantisCityForgeApp extends HandlebarsApplicationMixin(ApplicationV
                     poiUpdates.push({ _id: page.id, "text.content": content });
                 }
             }
-
             if (poiUpdates.length > 0) {
                 await poiJournal.updateEmbeddedDocuments("JournalEntryPage", poiUpdates);
                 nbUpdated++;

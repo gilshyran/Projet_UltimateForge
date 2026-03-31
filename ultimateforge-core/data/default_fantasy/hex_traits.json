@@ -1,0 +1,47 @@
+{
+  "geography": {
+    "label": { "fr": "Géographie & Vestiges", "en": "Geography & Ruins" },
+    "traits": {
+      "route_pavee": { "name": { "fr": "Route Commerciale / Pavée", "en": "Imperial / Paved Road" } },
+      "chemin_terre": { "name": { "fr": "Chemin de terre / Sentier", "en": "Dirt Path / Trail" } },
+      "pont": { "name": { "fr": "Pont (Pierre ou Bois)", "en": "Bridge" } },
+      "tour_guet": { "name": { "fr": "Tour de guet ruinée", "en": "Ruined Watchtower" } },
+      "ruines": { "name": { "fr": "Ruines Antiques", "en": "Ancient Ruins" } },
+      "riviere": { "name": { "fr": "Cours d'eau / Rivière", "en": "Stream / River" } },
+      "lac": { "name": { "fr": "Lac / Étang", "en": "Lake / Pond" } },
+      "cascade": { "name": { "fr": "Cascade / Chute d'eau", "en": "Waterfall" } },
+      "grotte": { "name": { "fr": "Entrée de Grotte", "en": "Cave Entrance" } },
+      "faille": { "name": { "fr": "Faille / Gouffre", "en": "Chasm / Gorge" } },
+      "clairiere": { "name": { "fr": "Clairière remarquable", "en": "Remarkable Clearing" } },
+      "arbre_geant": { "name": { "fr": "Arbre Millénaire / Géant", "en": "Ancient Tree" } },
+      "monolithe": { "name": { "fr": "Monolithes / Pierres", "en": "Standing Stones" } },
+      "sanctuaire": { "name": { "fr": "Sanctuaire oublié", "en": "Forgotten Shrine" } },
+      "cimetiere": { "name": { "fr": "Ancien cimetière", "en": "Old Graveyard" } },
+      "cristaux": { "name": { "fr": "Affleurement Cristallin", "en": "Crystal Outcropping" } },
+      "repaire": { "name": { "fr": "Tanière de bêtes", "en": "Beast Den" } },
+      "terres_corrompues": { "name": { "fr": "Terre Corrompue", "en": "Corrupted Land" } }
+    }
+  },
+  "isolated": {
+    "label": { "fr": "Lieux Isolés (Micro-Hubs)", "en": "Isolated Places" },
+    "traits": {
+      "taverne_isolee": { "name": { "fr": "Auberge / Relais Isolé", "en": "Isolated Inn" } },
+      "ferme": { "name": { "fr": "Ferme / Ranch", "en": "Farm / Ranch" } },
+      "moulin": { "name": { "fr": "Moulin (Eau/Vent)", "en": "Mill" } },
+      "camp_minier": { "name": { "fr": "Camp Minier", "en": "Mining Camp" } },
+      "monastere": { "name": { "fr": "Monastère / Abbaye", "en": "Monastery / Abbey" } }
+    }
+  },
+  "settlements": {
+    "label": { "fr": "Agglomérations (CityForge)", "en": "Settlements" },
+    "traits": {
+      "campement": { "name": { "fr": "Campement", "en": "Camp" } },
+      "hameau": { "name": { "fr": "Hameau", "en": "Hamlet" } },
+      "village": { "name": { "fr": "Village", "en": "Village" } },
+      "petite_ville": { "name": { "fr": "Petite Ville", "en": "Small Town" } },
+      "grande_cite": { "name": { "fr": "Grande Cité", "en": "Large City" } },
+      "metropole": { "name": { "fr": "Métropole", "en": "Metropolis" } },
+      "capitale": { "name": { "fr": "Capitale", "en": "Capital" } }
+    }
+  }
+}

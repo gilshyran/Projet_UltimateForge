@@ -30,7 +30,7 @@ export class InternalBountyGenerator {
     }
 
     // Ajout des paramètres de contexte !
-    static generateHTML(placeName, type, district, citySize, regionId, cityName, namesData, bountiesData, biome, stateId, govTags, ecoTags, vibeTags, currency) {
+    static generateHTML(placeName, type, district, citySize, regionId, cityName, namesData, bountiesData, biome, stateId, govTags, ecoTags, vibeTags, currency, factionsStr) {
         
         const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
         const getText = (item) => (typeof item === 'object') ? (item[lang] || item.fr || "") : (item || "");
@@ -77,6 +77,29 @@ export class InternalBountyGenerator {
                         <p style="text-align: right; font-size: 0.8em; color: #8b7355; margin: 0; font-style: italic;">- ${lang === 'en' ? 'Signed' : 'Signé'} : ${author}</p>
                     </div>`;
             });
+        }
+
+        // --- INJECTION NARRATIVE : PROPAGANDE DE FACTION ---
+        const factions = (factionsStr || "").split('|').filter(f => f).map(f => {
+            const parts = f.split(':'); return { name: parts[0], score: parseInt(parts[1]) };
+        });
+
+        if (factions.length > 0) {
+            const f1 = factions[0];
+            if (factions.length > 1 && factions[1].score >= 2) {
+                const f2 = factions[1];
+                notesHTML = `
+                    <div style="background: #fdf5e6; border: 1px solid #c0392b; padding: 10px; margin-bottom: 10px; transform: rotate(${Math.random() * 4 - 2}deg); box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+                        <p style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 0.95em; color: #c0392b; margin: 0 0 5px 0; font-weight: bold;">"Citoyens ! Ne croyez pas les mensonges de ${f2.name}. Seul ${f1.name} peut restaurer la gloire de cette ville !"</p>
+                        <p style="text-align: right; font-size: 0.8em; color: #c0392b; margin: 0; font-style: italic;">- Tract de propagande arraché</p>
+                    </div>` + notesHTML;
+            } else if (f1.score >= 4) {
+                 notesHTML = `
+                    <div style="background: #fff; border: 2px solid #2980b9; padding: 10px; margin-bottom: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+                        <p style="font-family: serif; font-size: 1em; color: #2980b9; margin: 0 0 5px 0; font-weight: bold; text-align: center;">PROCLAMATION OFFICIELLE</p>
+                        <p style="font-size: 0.9em; color: #333; margin: 0; text-align: justify;">Par ordre de <strong>${f1.name}</strong>, tout acte de sédition, murmure de rébellion ou rassemblement non autorisé sera puni de la peine capitale.</p>
+                    </div>` + notesHTML;
+            }
         }
 
         // 3. GÉNÉRATION DES CONTRATS OFFICIELS (Avis de recherche)

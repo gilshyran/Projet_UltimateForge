@@ -1,0 +1,155 @@
+<form autocomplete="off" style="padding: 10px;">
+    <p style="text-align: center; border-bottom: 1px solid #777; padding-bottom: 5px;">
+        Édition de l'hexagone : <strong>[{{row}}, {{col}}]</strong>
+    </p>
+
+    <div class="form-group">
+        <label><i class="fas fa-globe"></i> Région</label>
+        <div class="form-fields">
+            <select name="region" id="hf-region-select">
+                <option value="">-- Choisir une région --</option>
+                {{#each regions as |region key|}}
+                <option value="{{key}}" {{#if (eq ../currentRegion key)}}selected{{/if}}>{{region.name.fr}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-tree"></i> Biome</label>
+        <div class="form-fields">
+            <select name="biome" id="hf-biome-select">
+                <option value="">-- Choisir un biome --</option>
+                {{#each biomes as |biome key|}}
+                <option value="{{key}}" {{#if (eq ../currentBiome key)}}selected{{/if}}>{{biome.name.fr}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-bolt"></i> État / Tonalité</label>
+        <div class="form-fields">
+            <select name="state">
+                <option value="">-- Choisir un état --</option>
+                {{#each states as |state key|}}
+                <option value="{{key}}" {{#if (eq ../data.state key)}}selected{{/if}}>{{state.name.fr}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-landmark"></i> Trait Remarquable</label>
+        <select name="trait" id="hf-trait-select">
+            <option value="">-- Aucun --</option>
+            {{#each traitsGroups}}
+            <optgroup label="{{this.label}}">
+                {{#each this.items}}
+                <option value="{{this.id}}" data-category="{{../category}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+                {{/each}}
+            </optgroup>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="form-group" style="border-top: 1px solid #777; padding-top: 10px; margin-top: 10px;">
+        <label><i class="fas fa-image"></i> Élément Visuel</label>
+        <div class="form-fields">
+            <select name="overlay" id="hf-overlay-select">
+                <option value="">-- Aucun visuel --</option>
+                {{#each overlays as |overlay key|}}
+                <option value="{{key}}" {{#if (eq ../data.overlay key)}}selected{{/if}}>{{overlay.name.fr}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <style>
+        .hf-stacked-section {
+            border-top: 1px solid #777;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+        .hf-stacked-section > label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+            font-size: 1.05em;
+        }
+        .hf-tags-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: flex-start;
+        }
+        .hf-tag-badge {
+            display: inline-block;
+            background: rgba(20, 20, 20, 0.6); /* Fond sombre et discret */
+            border: 1px solid #555;
+            border-radius: 4px; /* Un style plus carré/moderne que la pilule ronde */
+            padding: 3px 8px;
+            font-size: 0.80em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+            color: #bbb;
+            white-space: nowrap; /* La magie opère ici : empêche le retour à la ligne ! */
+        }
+        .hf-tag-badge:hover {
+            border-color: #d4af37;
+            color: #fff;
+            background: rgba(212, 175, 55, 0.15);
+        }
+        /* Style quand la case cachée est cochée */
+        .hf-tag-badge:has(input:checked) {
+            background: linear-gradient(to bottom, #d4af37, #b58e24); /* Dégradé Or */
+            border-color: #f1c40f;
+            color: #111; /* Texte sombre pour contraster avec l'or */
+            font-weight: bold;
+            box-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
+        }
+    </style>
+
+    <div class="hf-stacked-section">
+        <label><i class="fas fa-theater-masks"></i> Aura d'Ambiance</label>
+        <div class="hf-tags-grid">
+            {{#each vibeTags}}
+            <label class="hf-tag-badge" title="Tag: {{this.value}}">
+                <input type="checkbox" name="vibe_tags" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                {{this.label}}
+            </label>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="hf-stacked-section">
+        <label><i class="fas fa-coins"></i> Aura Économique</label>
+        <div class="hf-tags-grid">
+            {{#each ecoTags}}
+            <label class="hf-tag-badge" title="Tag: {{this.value}}">
+                <input type="checkbox" name="eco_tags" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                {{this.label}}
+            </label>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="hf-stacked-section" id="hf-cityforge-container" style="display: none;">
+        <label id="hf-cityforge-label"><i class="fas fa-map-marker-alt"></i> Lieu Interactif</label>
+        <button type="button" id="hf-btn-cityforge" data-has-city="{{#if data.cityJournalId}}true{{else}}false{{/if}}" style="color: white; border: none; width: 100%; transition: 0.2s;">
+            </button>
+        {{#if data.cityJournalId}}
+        <button type="button" id="hf-btn-unlink" style="background: #c0392b; color: white; border: none; width: 100%; margin-top: 5px; transition: 0.2s;" title="Détruire la colonie de la carte (le journal sera conservé dans vos archives)">
+            <i class="fas fa-fire"></i> Raser le lieu
+        </button>
+        {{/if}}
+    </div>
+
+    <button type="submit" style="margin-top: 15px; background: #e0e0d1; border: 1px solid #b5b5a6;">
+        <i class="fas fa-save"></i> Sauvegarder la case
+    </button>
+</form>
+

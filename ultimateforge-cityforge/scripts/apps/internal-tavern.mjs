@@ -30,7 +30,7 @@ export class InternalTavernGenerator {
     }
 
     // N'oublie pas : le paramètre currency a été ajouté ici !
-    static generateHTML(tavernName, tavernType, district, citySize, regionId, cityName, namesData, tavernsData, biome, stateId, priceMult, currency, govTags, ecoTags, vibeTags) {
+    static generateHTML(tavernName, tavernType, district, citySize, regionId, cityName, namesData, tavernsData, biome, stateId, priceMult, currency, govTags, ecoTags, vibeTags, factionsStr) {
         
         const lang = game.i18n.lang.startsWith('en') ? 'en' : 'fr';
         const getText = (item) => (typeof item === 'object') ? (item[lang] || item.fr || "") : (item || "");
@@ -139,6 +139,39 @@ export class InternalTavernGenerator {
         
         let finalDiscussionsPool = [...preciseDiscussions, ...genericDiscussions];
         let chosenDiscussions = finalDiscussionsPool.slice(0, Math.min(3, finalDiscussionsPool.length));
+
+        // --- INJECTION NARRATIVE : LES DISCUSSIONS DE FACTION ---
+        const factions = (factionsStr || "").split('|').filter(f => f).map(f => {
+            const parts = f.split(':'); return { name: parts[0], score: parseInt(parts[1]) };
+        });
+
+        if (factions.length > 0) {
+            const f1 = factions[0];
+            if (factions.length > 1 && factions[1].score >= 2) {
+                const f2 = factions[1];
+                chosenDiscussions.unshift({ desc: {
+                    fr: `{NPC1} et {NPC2} manquent d'en venir aux mains en débattant bruyamment pour savoir si <strong>${f1.name}</strong> ou <strong>${f2.name}</strong> finira par prendre le contrôle total de la ville.`,
+                    en: `{NPC1} and {NPC2} almost come to blows arguing loudly whether <strong>${f1.name}</strong> or <strong>${f2.name}</strong> will ultimately seize full control.`
+                }});
+            } else if (f1.score >= 4) {
+                chosenDiscussions.unshift({ desc: {
+                    fr: `{NPC1} murmure à {NPC2} de baisser la voix, terrifié à l'idée que des informateurs de <strong>${f1.name}</strong> n'écoutent aux portes.`,
+                    en: `{NPC1} whispers to {NPC2} to keep their voice down, terrified that informants of <strong>${f1.name}</strong> might be eavesdropping.`
+                }});
+            } else if (f1.score >= 2) {
+                chosenDiscussions.unshift({ desc: {
+                    fr: `{NPC1} raconte à {NPC2} avoir vu d'étranges individus se réclamant de <strong>${f1.name}</strong> rôder la nuit près des entrepôts.`,
+                    en: `{NPC1} tells {NPC2} about seeing strange individuals claiming to represent <strong>${f1.name}</strong> prowling near the warehouses at night.`
+                }});
+            } else if (f1.score === 1) {
+                // NOUVEAU : La rumeur lointaine pour le niveau 1
+                chosenDiscussions.unshift({ desc: {
+                    fr: `{NPC1} partage à {NPC2} une vague rumeur concernant <strong>${f1.name}</strong>, bien que personne ici ne prenne cette menace vraiment au sérieux.`,
+                    en: `{NPC1} shares a vague rumor with {NPC2} about <strong>${f1.name}</strong>, though no one here takes the threat seriously.`
+                }});
+            }
+            chosenDiscussions = chosenDiscussions.slice(0, 3); 
+        }
         
         let discussionsHTML = "";
         chosenDiscussions.forEach(disc => {
@@ -214,5 +247,6 @@ export class InternalTavernGenerator {
                 </div>
             </div>
         `;
+        
     }
 }

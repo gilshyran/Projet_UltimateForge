@@ -1,7 +1,13 @@
 [
   {
-    "require_stage_tags": ["pont", "faille"],
-    "require_motiv_tags": ["extorsion", "peage_illegal"],
+    "require_stage_tags": [
+      "pont",
+      "faille"
+    ],
+    "require_motiv_tags": [
+      "extorsion",
+      "peage_illegal"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -11,7 +17,11 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["militaire", "fouille", "autorite"],
+    "require_motiv_tags": [
+      "militaire",
+      "fouille",
+      "autorite"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -21,7 +31,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["militaire_corrompu", "pot-de-vin"],
+    "require_motiv_tags": [
+      "militaire_corrompu",
+      "pot-de-vin"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -31,7 +44,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["commerce_riche", "rumeurs"],
+    "require_motiv_tags": [
+      "commerce_riche",
+      "rumeurs"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -40,8 +56,14 @@
     }
   },
   {
-    "require_stage_tags": ["boue", "ralentissement"],
-    "require_motiv_tags": ["marchand_detresse", "entraide"],
+    "require_stage_tags": [
+      "boue",
+      "ralentissement"
+    ],
+    "require_motiv_tags": [
+      "marchand_detresse",
+      "entraide"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -50,8 +72,30 @@
     }
   },
   {
-    "require_stage_tags": ["halte", "repos", "clairiere"],
-    "require_motiv_tags": ["fete", "hospitalite"],
+    "require_stage_tags": [
+      "chemin_neige"
+    ],
+    "require_motiv_tags": [
+      "marchand_detresse",
+      "entraide"
+    ],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Sur le côté du chemin, un modeste chariot est bloqué par la neige. Son propriétaire, frigorifié et épuisé, tente vainement de faire avancer sa bête de somme et vous lance un regard suppliant.",
+      "en": "On the side of the road, a modest cart is stuck in the snow. Its owner, freezing and exhausted, tries in vain to move his beast of burden forward and gives you a pleading look."
+    }
+  },
+  {
+    "require_stage_tags": [
+      "halte",
+      "repos",
+      "clairiere"
+    ],
+    "require_motiv_tags": [
+      "fete",
+      "hospitalite"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -60,8 +104,14 @@
     }
   },
   {
-    "require_stage_tags": ["eau", "ressource"],
-    "require_motiv_tags": ["rencontre_civile", "paisible"],
+    "require_stage_tags": [
+      "eau",
+      "ressource"
+    ],
+    "require_motiv_tags": [
+      "rencontre_civile",
+      "paisible"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -70,8 +120,15 @@
     }
   },
   {
-    "require_stage_tags": ["ruine", "vestiges", "abri"],
-    "require_motiv_tags": ["refugies", "desespoir"],
+    "require_stage_tags": [
+      "ruine",
+      "vestiges",
+      "abri"
+    ],
+    "require_motiv_tags": [
+      "refugies",
+      "desespoir"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -80,8 +137,14 @@
     }
   },
   {
-    "require_stage_tags": ["grotte", "souterrain"],
-    "require_motiv_tags": ["exiles", "clandestins"],
+    "require_stage_tags": [
+      "grotte",
+      "souterrain"
+    ],
+    "require_motiv_tags": [
+      "exiles",
+      "clandestins"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -91,7 +154,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["mendiants", "harcelement"],
+    "require_motiv_tags": [
+      "mendiants",
+      "harcelement"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -100,8 +166,14 @@
     }
   },
   {
-    "require_stage_tags": ["sanctuaire", "cimetiere"],
-    "require_motiv_tags": ["pelerins", "rite_religieux"],
+    "require_stage_tags": [
+      "sanctuaire",
+      "cimetiere"
+    ],
+    "require_motiv_tags": [
+      "pelerins",
+      "rite_religieux"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -110,8 +182,14 @@
     }
   },
   {
-    "require_stage_tags": ["monolithes", "magie_ancienne"],
-    "require_motiv_tags": ["secte", "fanatiques"],
+    "require_stage_tags": [
+      "monolithes",
+      "magie_ancienne"
+    ],
+    "require_motiv_tags": [
+      "secte",
+      "fanatiques"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -121,7 +199,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["moines", "soins"],
+    "require_motiv_tags": [
+      "moines",
+      "soins"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -130,8 +211,14 @@
     }
   },
   {
-    "require_stage_tags": ["cristaux", "magie_active"],
-    "require_motiv_tags": ["mages", "etude_magique"],
+    "require_stage_tags": [
+      "cristaux",
+      "magie_active"
+    ],
+    "require_motiv_tags": [
+      "mages",
+      "etude_magique"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -140,8 +227,14 @@
     }
   },
   {
-    "require_stage_tags": ["arbre", "clairiere"],
-    "require_motiv_tags": ["druides", "herboristes"],
+    "require_stage_tags": [
+      "arbre",
+      "clairiere"
+    ],
+    "require_motiv_tags": [
+      "druides",
+      "herboristes"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -150,8 +243,14 @@
     }
   },
   {
-    "require_stage_tags": ["grotte", "souterrain"],
-    "require_motiv_tags": ["laboratoire_secret", "magie_noire"],
+    "require_stage_tags": [
+      "grotte",
+      "souterrain"
+    ],
+    "require_motiv_tags": [
+      "laboratoire_secret",
+      "magie_noire"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -160,8 +259,14 @@
     }
   },
   {
-    "require_stage_tags": ["taniere", "predateurs"],
-    "require_motiv_tags": ["betes_sauvages", "combat_animal"],
+    "require_stage_tags": [
+      "taniere",
+      "predateurs"
+    ],
+    "require_motiv_tags": [
+      "betes_sauvages",
+      "combat_animal"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -170,8 +275,13 @@
     }
   },
   {
-    "require_stage_tags": ["traces", "piste"],
-    "require_motiv_tags": ["traque", "embuscade_animale"],
+    "require_stage_tags": [
+      "traces"
+    ],
+    "require_motiv_tags": [
+      "traque",
+      "embuscade_animale"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -180,8 +290,15 @@
     }
   },
   {
-    "require_stage_tags": ["eau", "lac", "danger_eau"],
-    "require_motiv_tags": ["monstre_aquatique", "surprise"],
+    "require_stage_tags": [
+      "eau",
+      "lac",
+      "danger_eau"
+    ],
+    "require_motiv_tags": [
+      "monstre_aquatique",
+      "surprise"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -190,8 +307,14 @@
     }
   },
   {
-    "require_stage_tags": ["arbre", "monumental"],
-    "require_motiv_tags": ["attaque_aerienne", "monstres_arboricoles"],
+    "require_stage_tags": [
+      "arbre",
+      "monumental"
+    ],
+    "require_motiv_tags": [
+      "attaque_aerienne",
+      "monstres_arboricoles"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -200,8 +323,14 @@
     }
   },
   {
-    "require_stage_tags": ["corruption", "maladie"],
-    "require_motiv_tags": ["nuée", "parasites"],
+    "require_stage_tags": [
+      "corruption",
+      "maladie"
+    ],
+    "require_motiv_tags": [
+      "nuée",
+      "parasites"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -210,8 +339,15 @@
     }
   },
   {
-    "require_stage_tags": ["cimetiere", "mort", "macabre"],
-    "require_motiv_tags": ["morts-vivants", "reveil_macabre"],
+    "require_stage_tags": [
+      "cimetiere",
+      "mort",
+      "macabre"
+    ],
+    "require_motiv_tags": [
+      "morts-vivants",
+      "reveil_macabre"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -220,8 +356,14 @@
     }
   },
   {
-    "require_stage_tags": ["faille", "danger_invisible"],
-    "require_motiv_tags": ["esprits", "piege_mortel"],
+    "require_stage_tags": [
+      "faille",
+      "danger_invisible"
+    ],
+    "require_motiv_tags": [
+      "esprits",
+      "piege_mortel"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -230,8 +372,14 @@
     }
   },
   {
-    "require_stage_tags": ["ruine", "melancolie"],
-    "require_motiv_tags": ["fantome", "quete_narrative"],
+    "require_stage_tags": [
+      "ruine",
+      "melancolie"
+    ],
+    "require_motiv_tags": [
+      "fantome",
+      "quete_narrative"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -240,8 +388,14 @@
     }
   },
   {
-    "require_stage_tags": ["pont", "passage_oblige"],
-    "require_motiv_tags": ["gardien", "enigme"],
+    "require_stage_tags": [
+      "pont",
+      "passage_oblige"
+    ],
+    "require_motiv_tags": [
+      "gardien",
+      "enigme"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -250,8 +404,14 @@
     }
   },
   {
-    "require_stage_tags": ["glace", "lac"],
-    "require_motiv_tags": ["sauvetage", "danger_imminent"],
+    "require_stage_tags": [
+      "glace",
+      "lac"
+    ],
+    "require_motiv_tags": [
+      "sauvetage",
+      "danger_imminent"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -260,8 +420,14 @@
     }
   },
   {
-    "require_stage_tags": ["cascade", "bruit_assourdissant"],
-    "require_motiv_tags": ["contrebandiers", "repaire_criminel"],
+    "require_stage_tags": [
+      "cascade",
+      "bruit_assourdissant"
+    ],
+    "require_motiv_tags": [
+      "contrebandiers",
+      "repaire_criminel"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -270,8 +436,14 @@
     }
   },
   {
-    "require_stage_tags": ["clairiere", "repos"],
-    "require_motiv_tags": ["noblesse", "arrogance"],
+    "require_stage_tags": [
+      "clairiere",
+      "repos"
+    ],
+    "require_motiv_tags": [
+      "noblesse",
+      "arrogance"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -281,7 +453,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["personne_perdue", "quete_annexe"],
+    "require_motiv_tags": [
+      "personne_perdue",
+      "quete_annexe"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -290,8 +465,13 @@
     }
   },
   {
-    "require_stage_tags": ["croisement", "choix"],
-    "require_motiv_tags": ["marche_noir", "commerce_illicite"],
+    "require_stage_tags": [
+      "croisement"
+    ],
+    "require_motiv_tags": [
+      "marche_noir",
+      "commerce_illicite"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -300,8 +480,14 @@
     }
   },
   {
-    "require_stage_tags": ["chute_mortelle", "faille"],
-    "require_motiv_tags": ["fugitifs_acciles", "negociation_tendue"],
+    "require_stage_tags": [
+      "chute_mortelle",
+      "faille"
+    ],
+    "require_motiv_tags": [
+      "fugitifs_acciles",
+      "negociation_tendue"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -310,8 +496,14 @@
     }
   },
   {
-    "require_stage_tags": ["cristaux", "ressource"],
-    "require_motiv_tags": ["mineurs", "guilde_artisanale"],
+    "require_stage_tags": [
+      "cristaux",
+      "ressource"
+    ],
+    "require_motiv_tags": [
+      "mineurs",
+      "guilde_artisanale"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -320,8 +512,14 @@
     }
   },
   {
-    "require_stage_tags": ["ruine", "exploration"],
-    "require_motiv_tags": ["pilleurs", "aventuriers_rivaux"],
+    "require_stage_tags": [
+      "ruine",
+      "exploration"
+    ],
+    "require_motiv_tags": [
+      "pilleurs",
+      "aventuriers_rivaux"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -330,8 +528,15 @@
     }
   },
   {
-    "require_stage_tags": ["foudre", "monolithes", "magie_ancienne"],
-    "require_motiv_tags": ["anomalie_magique", "danger_environnemental"],
+    "require_stage_tags": [
+      "foudre",
+      "monolithes",
+      "magie_ancienne"
+    ],
+    "require_motiv_tags": [
+      "anomalie_magique",
+      "danger_environnemental"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -340,8 +545,14 @@
     }
   },
   {
-    "require_stage_tags": ["tour", "observation"],
-    "require_motiv_tags": ["metamorphe", "illusion"],
+    "require_stage_tags": [
+      "tour",
+      "observation"
+    ],
+    "require_motiv_tags": [
+      "metamorphe",
+      "illusion"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -350,8 +561,14 @@
     }
   },
   {
-    "require_stage_tags": ["lac", "mystere"],
-    "require_motiv_tags": ["apparition_divine", "indice_cache"],
+    "require_stage_tags": [
+      "lac",
+      "mystere"
+    ],
+    "require_motiv_tags": [
+      "apparition_divine",
+      "indice_cache"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -360,8 +577,14 @@
     }
   },
   {
-    "require_stage_tags": ["perte_reperes", "mystere"],
-    "require_motiv_tags": ["labyrinthe_naturel", "perte_orientation"],
+    "require_stage_tags": [
+      "perte_reperes",
+      "mystere"
+    ],
+    "require_motiv_tags": [
+      "labyrinthe_naturel",
+      "perte_orientation"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -370,8 +593,13 @@
     }
   },
   {
-    "require_stage_tags": ["glissant", "pont"],
-    "require_motiv_tags": ["sabotage", "piege_chute"],
+    "require_stage_tags": [
+      "pont"
+    ],
+    "require_motiv_tags": [
+      "sabotage",
+      "piege_chute"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -380,8 +608,14 @@
     }
   },
   {
-    "require_stage_tags": ["arbre", "monumental"],
-    "require_motiv_tags": ["ressource_epique", "epreuve_physique"],
+    "require_stage_tags": [
+      "arbre",
+      "monumental"
+    ],
+    "require_motiv_tags": [
+      "ressource_epique",
+      "epreuve_physique"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -390,8 +624,14 @@
     }
   },
   {
-    "require_stage_tags": ["cimetiere", "solennel"],
-    "require_motiv_tags": ["enterrement", "recueillement"],
+    "require_stage_tags": [
+      "cimetiere",
+      "solennel"
+    ],
+    "require_motiv_tags": [
+      "enterrement",
+      "recueillement"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -400,8 +640,14 @@
     }
   },
   {
-    "require_stage_tags": ["halte", "traces"],
-    "require_motiv_tags": ["mercenaires", "avis_de_recherche"],
+    "require_stage_tags": [
+      "halte",
+      "traces"
+    ],
+    "require_motiv_tags": [
+      "mercenaires",
+      "avis_de_recherche"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -411,7 +657,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["saltimbanques", "divertissement"],
+    "require_motiv_tags": [
+      "saltimbanques",
+      "divertissement"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -421,7 +670,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["guerre_des_gangs", "opportunite_pillage"],
+    "require_motiv_tags": [
+      "guerre_des_gangs",
+      "opportunite_pillage"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -431,7 +683,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["oracle", "prophetie"],
+    "require_motiv_tags": [
+      "oracle",
+      "prophetie"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -441,7 +696,10 @@
   },
   {
     "require_stage_tags": [],
-    "require_motiv_tags": ["ambiance_pure", "neutre"],
+    "require_motiv_tags": [
+      "ambiance_pure",
+      "neutre"
+    ],
     "require_vibe_tags": [],
     "require_eco_tags": [],
     "text": {
@@ -452,7 +710,9 @@
   {
     "require_stage_tags": [],
     "require_motiv_tags": [],
-    "require_vibe_tags": ["sauvage"],
+    "require_vibe_tags": [
+      "sauvage"
+    ],
     "require_eco_tags": [],
     "text": {
       "fr": "La sauvagerie de la région s'impose à vous. La piste est difficile à suivre et la faune locale, bien qu'invisible, semble vous scruter à chaque instant.",
@@ -462,7 +722,9 @@
   {
     "require_stage_tags": [],
     "require_motiv_tags": [],
-    "require_vibe_tags": ["magie-forte"],
+    "require_vibe_tags": [
+      "magie-forte"
+    ],
     "require_eco_tags": [],
     "text": {
       "fr": "L'air crépite d'une étrange électricité statique. Les couleurs de la nature environnante semblent légèrement trop vibrantes, prouvant la forte imprégnation magique du territoire.",
@@ -472,8 +734,12 @@
   {
     "require_stage_tags": [],
     "require_motiv_tags": [],
-    "require_vibe_tags": ["securite-forte"],
-    "require_eco_tags": ["militaire"],
+    "require_vibe_tags": [
+      "securite-forte"
+    ],
+    "require_eco_tags": [
+      "militaire"
+    ],
     "text": {
       "fr": "Vous remarquez les restes récents d'un campement militaire extrêmement discipliné. La région est lourdement patrouillée, l'ordre y règne d'une main de fer.",
       "en": "You notice the recent remains of an extremely disciplined military camp. The region is heavily patrolled, order rules with an iron fist."
@@ -482,8 +748,12 @@
   {
     "require_stage_tags": [],
     "require_motiv_tags": [],
-    "require_vibe_tags": ["miserable"],
-    "require_eco_tags": ["survie-pauvre"],
+    "require_vibe_tags": [
+      "miserable"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre"
+    ],
     "text": {
       "fr": "La pauvreté de la région est frappante. Les quelques abris que vous croisez sont délabrés et la terre semble refuser de nourrir ses habitants. Le voyage est morose.",
       "en": "The poverty of the region is striking. The few shelters you pass are dilapidated and the earth seems to refuse to feed its inhabitants. The journey is gloomy."
@@ -492,11 +762,43 @@
   {
     "require_stage_tags": [],
     "require_motiv_tags": [],
-    "require_vibe_tags": ["corrompu"],
-    "require_eco_tags": ["criminelle"],
+    "require_vibe_tags": [
+      "corrompu"
+    ],
+    "require_eco_tags": [
+      "criminelle"
+    ],
     "text": {
       "fr": "L'ambiance est lourde. Vous apercevez des symboles discrets gravés sur les arbres, indiquant que le crime organisé règne en maître sur ces routes.",
       "en": "The atmosphere is heavy. You notice discreet symbols carved into the trees, indicating that organized crime reigns supreme on these roads."
+    }
+  },
+  {
+    "require_stage_tags": [
+      "taverne"
+    ],
+    "require_motiv_tags": [
+      "lieu_isole"
+    ],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "L'extérieur de la taverne semble calme, un palfrenier s'occupe d'un cheval.",
+      "en": "The outside of the tavern seems calm; a groom is tending to a horse."
+    }
+  },
+  {
+    "require_stage_tags": [
+      "taverne_pluie"
+    ],
+    "require_motiv_tags": [
+      "lieu_isole"
+    ],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "text": {
+      "fr": "Des gens se précipite pour rentrer dans la taverne.",
+      "en": "People are rushing to get into the tavern."
     }
   },
   {

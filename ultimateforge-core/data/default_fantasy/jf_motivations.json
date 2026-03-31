@@ -1,399 +1,990 @@
 [
   {
-    "require_stage_tags": ["passage_oblige", "pont", "faille"],
-    "require_vibe_tags": ["corrompu", "loi-faible"],
-    "require_eco_tags": ["criminelle"],
+    "require_stage_tags": [
+      "passage_oblige",
+      "pont",
+      "faille"
+    ],
+    "require_vibe_tags": [
+      "corrompu",
+      "loi-faible"
+    ],
+    "require_eco_tags": [
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Extorsion planifiée. Ces individus contrôlent ce goulot d'étranglement. Ils exigeront un péage exorbitant (en or ou en équipement) et n'hésiteront pas à user de la force si le groupe refuse."
     },
-    "output_tags": ["extorsion", "peage_illegal", "hostile"]
+    "output_tags": [
+      "extorsion",
+      "peage_illegal",
+      "hostile"
+    ]
   },
   {
-    "require_stage_tags": ["route", "pont", "croisement"],
-    "require_vibe_tags": ["securite-forte", "loi-stricte", "paranoia"],
-    "require_eco_tags": ["militaire"],
+    "require_stage_tags": [
+      "route",
+      "pont",
+      "croisement"
+    ],
+    "require_vibe_tags": [
+      "securite-forte",
+      "loi-stricte",
+      "paranoia"
+    ],
+    "require_eco_tags": [
+      "militaire"
+    ],
     "secret_mj": {
       "fr": "Contrôle d'autorité. La patrouille cherche des espions, des contrebandiers ou des déserteurs. Ils fouilleront les chariots et interrogeront les PJ de manière agressive. La moindre insolence finira aux fers."
     },
-    "output_tags": ["militaire", "fouille", "autorite"]
+    "output_tags": [
+      "militaire",
+      "fouille",
+      "autorite"
+    ]
   },
   {
-    "require_stage_tags": ["frontiere", "chemin", "tour"],
-    "require_vibe_tags": ["corrompu", "securite-forte"],
-    "require_eco_tags": ["militaire", "criminelle"],
+    "require_stage_tags": [
+      "frontiere",
+      "chemin",
+      "tour"
+    ],
+    "require_vibe_tags": [
+      "corrompu",
+      "securite-forte"
+    ],
+    "require_eco_tags": [
+      "militaire",
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Abus de pouvoir. Ces gardes ou miliciens officiels sont pourris jusqu'à la moelle. Ils inventeront une taxe imaginaire ou une infraction pour soutirer un pot-de-vin aux joueurs."
     },
-    "output_tags": ["militaire_corrompu", "pot-de-vin", "abus"]
+    "output_tags": [
+      "militaire_corrompu",
+      "pot-de-vin",
+      "abus"
+    ]
   },
   {
-    "require_stage_tags": ["route", "voyage_rapide", "halte"],
-    "require_vibe_tags": ["commerce-fort", "luxe-opulence", "accueillant"],
-    "require_eco_tags": ["commerce", "luxe"],
+    "require_stage_tags": [
+      "route",
+      "halte"
+    ],
+    "require_vibe_tags": [
+      "commerce-fort",
+      "luxe-opulence",
+      "accueillant"
+    ],
+    "require_eco_tags": [
+      "commerce",
+      "luxe"
+    ],
     "secret_mj": {
       "fr": "Négoce de haute volée. Ce convoi transporte des biens précieux. Les marchands sont ouverts à la discussion, au troc de luxe, et regorgent de rumeurs sur les grandes cités, mais ils sont très bien escortés."
     },
-    "output_tags": ["commerce_riche", "rumeurs", "pacifique"]
+    "output_tags": [
+      "commerce_riche",
+      "rumeurs",
+      "pacifique"
+    ]
   },
   {
-    "require_stage_tags": ["chemin", "boue", "ralentissement"],
-    "require_vibe_tags": ["miserable", "commerce-fort"],
-    "require_eco_tags": ["agricole", "artisanat"],
+    "require_stage_tags": [
+      "chemin",
+      "boue",
+      "ralentissement"
+    ],
+    "require_vibe_tags": [
+      "miserable",
+      "commerce-fort"
+    ],
+    "require_eco_tags": [
+      "agricole",
+      "artisanat"
+    ],
     "secret_mj": {
       "fr": "Détresse logistique. Un marchand ou un paysan est embourbé, a cassé une roue, ou a perdu sa bête de somme. Ils demanderont de l'aide en échange d'un peu de troc ou d'informations locales."
     },
-    "output_tags": ["marchand_detresse", "entraide", "social"]
+    "output_tags": [
+      "marchand_detresse",
+      "entraide",
+      "social"
+    ]
   },
   {
-    "require_stage_tags": ["halte", "repos", "clairiere"],
-    "require_vibe_tags": ["festif", "accueillant", "bienveillant"],
-    "require_eco_tags": ["tourisme", "agricole", "bourgeois"],
+    "require_stage_tags": [
+      "halte",
+      "repos",
+      "clairiere"
+    ],
+    "require_vibe_tags": [
+      "festif",
+      "accueillant",
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "tourisme",
+      "agricole",
+      "bourgeois"
+    ],
     "secret_mj": {
       "fr": "Célébration chaleureuse. Les locaux (paysans, voyageurs ou nobles en villégiature) célèbrent un événement. Ils inviteront volontiers les PJ à partager leur feu, leur vin et leurs chants."
     },
-    "output_tags": ["fete", "hospitalite", "repos_bonus"]
+    "output_tags": [
+      "fete",
+      "hospitalite",
+      "repos_bonus"
+    ]
   },
   {
-    "require_stage_tags": ["eau", "ressource", "lac"],
-    "require_vibe_tags": ["bienveillant"],
-    "require_eco_tags": ["eau", "agricole", "elevage"],
+    "require_stage_tags": [
+      "eau",
+      "ressource",
+      "lac"
+    ],
+    "require_vibe_tags": [
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "eau",
+      "agricole",
+      "elevage"
+    ],
     "secret_mj": {
       "fr": "Corvée paisible. Des locaux viennent s'approvisionner en eau, faire boire leurs bêtes ou laver du linge. Ils sont méfiants au début mais se détendent vite si les PJ se montrent respectueux."
     },
-    "output_tags": ["rencontre_civile", "paisible", "quotidien"]
+    "output_tags": [
+      "rencontre_civile",
+      "paisible",
+      "quotidien"
+    ]
   },
   {
-    "require_stage_tags": ["abri", "vestiges", "ruine"],
-    "require_vibe_tags": ["miserable", "paranoia", "climat-terreur"],
-    "require_eco_tags": ["survie-pauvre"],
+    "require_stage_tags": [
+      "abri",
+      "vestiges",
+      "ruine"
+    ],
+    "require_vibe_tags": [
+      "miserable",
+      "paranoia",
+      "climat-terreur"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre"
+    ],
     "secret_mj": {
       "fr": "Terreur et cachette. Ces personnes fuient une menace (la guerre, un monstre, la famine). Ils sont terrifiés, affamés, et pourraient attaquer par pure panique si on les accule."
     },
-    "output_tags": ["refugies", "panique", "desespoir"]
+    "output_tags": [
+      "refugies",
+      "panique",
+      "desespoir"
+    ]
   },
   {
-    "require_stage_tags": ["souterrain", "grotte", "sombre"],
-    "require_vibe_tags": ["paranoia", "loi-stricte", "miserable"],
-    "require_eco_tags": ["survie-pauvre", "criminelle"],
+    "require_stage_tags": [
+      "souterrain",
+      "grotte",
+      "sombre"
+    ],
+    "require_vibe_tags": [
+      "paranoia",
+      "loi-stricte",
+      "miserable"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre",
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Parias de la société. Des exilés, lépreux ou hors-la-loi recherchés se terrent ici. Ils veulent juste qu'on les oublie et feront tout pour chasser les PJ sans déclencher un bain de sang qui attirerait l'attention."
     },
-    "output_tags": ["exiles", "clandestins", "mefiance_extreme"]
+    "output_tags": [
+      "exiles",
+      "clandestins",
+      "mefiance_extreme"
+    ]
   },
   {
-    "require_stage_tags": ["clairiere", "halte", "croisement"],
-    "require_vibe_tags": ["miserable", "corrompu"],
-    "require_eco_tags": ["survie-pauvre"],
+    "require_stage_tags": [
+      "clairiere",
+      "halte",
+      "croisement"
+    ],
+    "require_vibe_tags": [
+      "miserable",
+      "corrompu"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre"
+    ],
     "secret_mj": {
       "fr": "Mendicité agressive. Un groupe de miséreux voit les PJ comme une aubaine. Ils s'accrocheront à eux, pleureront pour des vivres, et n'hésiteront pas à subtiliser discrètement des objets si l'occasion se présente."
     },
-    "output_tags": ["mendiants", "vol_a_la_tire", "harcelement"]
+    "output_tags": [
+      "mendiants",
+      "vol_a_la_tire",
+      "harcelement"
+    ]
   },
   {
-    "require_stage_tags": ["sanctuaire", "religion", "cimetiere"],
-    "require_vibe_tags": ["religion-forte", "pieux"],
-    "require_eco_tags": ["tourisme-foi"],
+    "require_stage_tags": [
+      "sanctuaire",
+      "religion",
+      "cimetiere"
+    ],
+    "require_vibe_tags": [
+      "religion-forte",
+      "pieux"
+    ],
+    "require_eco_tags": [
+      "tourisme-foi"
+    ],
     "secret_mj": {
       "fr": "Ferveur spirituelle. Des pèlerins ou des prêtres accomplissent un rite. Ils demanderont aux PJ de respecter les lieux, de faire une offrande, ou de se joindre à leurs prières pour recevoir une bénédiction."
     },
-    "output_tags": ["pelerins", "rite_religieux", "benediction"]
+    "output_tags": [
+      "pelerins",
+      "rite_religieux",
+      "benediction"
+    ]
   },
   {
-    "require_stage_tags": ["monolithes", "magie_ancienne", "ruine"],
-    "require_vibe_tags": ["religion-forte", "mystique", "paranoia"],
+    "require_stage_tags": [
+      "monolithes",
+      "magie_ancienne",
+      "ruine"
+    ],
+    "require_vibe_tags": [
+      "religion-forte",
+      "mystique",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Fanatisme aveugle. Une secte ou un groupe d'illuminés mène un rituel inquiétant. Ils considèrent les PJ comme des intrus impurs, voire comme des sacrifices potentiels s'ils s'approchent trop."
     },
-    "output_tags": ["secte", "fanatiques", "hostile_magique"]
+    "output_tags": [
+      "secte",
+      "fanatiques",
+      "hostile_magique"
+    ]
   },
   {
-    "require_stage_tags": ["route", "croisement"],
-    "require_vibe_tags": ["religion-forte", "bienveillant"],
-    "require_eco_tags": ["tourisme-foi", "artisanat"],
+    "require_stage_tags": [
+      "route",
+      "croisement"
+    ],
+    "require_vibe_tags": [
+      "religion-forte",
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "tourisme-foi",
+      "artisanat"
+    ],
     "secret_mj": {
       "fr": "Prosélytisme pacifique. Des moines ou missionnaires parcourent la route. Ils soigneront les blessures mineures des PJ gratuitement en échange de quelques minutes d'écoute de leurs préceptes religieux."
     },
-    "output_tags": ["moines", "soins", "pacifique"]
+    "output_tags": [
+      "moines",
+      "soins",
+      "pacifique"
+    ]
   },
   {
-    "require_stage_tags": ["cristaux", "magie_active", "lumiere"],
-    "require_vibe_tags": ["magie-forte", "mystique"],
-    "require_eco_tags": ["savoir-magie"],
+    "require_stage_tags": [
+      "cristaux",
+      "magie_active",
+      "lumiere"
+    ],
+    "require_vibe_tags": [
+      "magie-forte",
+      "mystique"
+    ],
+    "require_eco_tags": [
+      "savoir-magie"
+    ],
     "secret_mj": {
       "fr": "Recherche arcanique. Des érudits ou des mages étudient une anomalie locale. Ils sont fascinés par leur découverte et paieront grassement les PJ s'ils acceptent de les escorter ou de tester l'anomalie pour eux."
     },
-    "output_tags": ["mages", "etude_magique", "quete_secondaire"]
+    "output_tags": [
+      "mages",
+      "etude_magique",
+      "quete_secondaire"
+    ]
   },
   {
-    "require_stage_tags": ["arbre", "nature_ancienne", "clairiere"],
-    "require_vibe_tags": ["mystique", "bienveillant"],
-    "require_eco_tags": ["savoir-magie", "herbe"],
+    "require_stage_tags": [
+      "arbre",
+      "nature_ancienne",
+      "clairiere"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "savoir-magie",
+      "herbe"
+    ],
     "secret_mj": {
       "fr": "Communion avec la nature. Des druides, herboristes ou créatures sylvestres récoltent des composants rares. Ils proposeront des remèdes naturels en échange de la promesse de ne rien détruire."
     },
-    "output_tags": ["druides", "herboristes", "commerce_magique"]
+    "output_tags": [
+      "druides",
+      "herboristes",
+      "commerce_magique"
+    ]
   },
   {
-    "require_stage_tags": ["grotte", "souterrain", "exploration"],
-    "require_vibe_tags": ["mystique", "corrompu", "paranoia"],
-    "require_eco_tags": ["savoir-magie", "criminelle"],
+    "require_stage_tags": [
+      "grotte",
+      "souterrain",
+      "exploration"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "corrompu",
+      "paranoia"
+    ],
+    "require_eco_tags": [
+      "savoir-magie",
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Expériences interdites. Un nécromancien, un alchimiste fou ou un trafiquant d'artefacts a établi son laboratoire ici. Il lâchera ses créations sur les PJ pour protéger ses secrets."
     },
-    "output_tags": ["laboratoire_secret", "magie_noire", "combat_boss"]
+    "output_tags": [
+      "laboratoire_secret",
+      "magie_noire",
+      "combat_boss"
+    ]
   },
   {
-    "require_stage_tags": ["taniere", "predateurs", "danger"],
-    "require_vibe_tags": ["sauvage"],
-    "require_eco_tags": ["survie-pauvre"],
+    "require_stage_tags": [
+      "taniere",
+      "predateurs",
+      "danger"
+    ],
+    "require_vibe_tags": [
+      "sauvage"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre"
+    ],
     "secret_mj": {
       "fr": "Défense territoriale. Une bête féroce ou une meute protège ses petits ou son butin. Si les PJ reculent lentement, le combat peut être évité. S'ils avancent, c'est une lutte à mort."
     },
-    "output_tags": ["betes_sauvages", "territoire", "combat_animal"]
+    "output_tags": [
+      "betes_sauvages",
+      "territoire",
+      "combat_animal"
+    ]
   },
   {
-    "require_stage_tags": ["piste", "traces", "chemin"],
-    "require_vibe_tags": ["sauvage", "paranoia"],
+    "require_stage_tags": [
+      "traces",
+      "chemin"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Traque active. Les PJ sont suivis depuis un moment par des prédateurs intelligents (loups, gobelinoïdes). Les créatures attendent que le groupe soit distrait ou séparé pour frapper le membre le plus faible."
     },
-    "output_tags": ["traque", "predateurs", "embuscade_animale"]
+    "output_tags": [
+      "traque",
+      "predateurs",
+      "embuscade_animale"
+    ]
   },
   {
-    "require_stage_tags": ["eau", "ressource", "lac"],
-    "require_vibe_tags": ["sauvage"],
+    "require_stage_tags": [
+      "eau",
+      "ressource",
+      "lac"
+    ],
+    "require_vibe_tags": [
+      "sauvage"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Embuscade au point d'eau. Un prédateur aquatique ou amphibie se cache juste sous la surface. Il frappera de manière foudroyante dès qu'un PJ ou une monture s'approchera pour boire."
     },
-    "output_tags": ["monstre_aquatique", "surprise", "danger_eau"]
+    "output_tags": [
+      "monstre_aquatique",
+      "surprise",
+      "danger_eau"
+    ]
   },
   {
-    "require_stage_tags": ["arbre", "monumental", "obscurite"],
-    "require_vibe_tags": ["sauvage", "mystique"],
-    "require_eco_tags": ["bois"],
+    "require_stage_tags": [
+      "arbre",
+      "monumental",
+      "obscurite"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "mystique"
+    ],
+    "require_eco_tags": [
+      "bois"
+    ],
     "secret_mj": {
       "fr": "Menace verticale. Le danger vient d'en haut. Des araignées géantes, des harpies ou des créatures arboricoles se préparent à lâcher des toiles ou à fondre sur le groupe en piqué."
     },
-    "output_tags": ["attaque_aerienne", "monstres_arboricoles", "surprise"]
+    "output_tags": [
+      "attaque_aerienne",
+      "monstres_arboricoles",
+      "surprise"
+    ]
   },
   {
-    "require_stage_tags": ["corruption", "maladie", "poison"],
-    "require_vibe_tags": ["miserable", "sauvage"],
+    "require_stage_tags": [
+      "corruption",
+      "maladie",
+      "poison"
+    ],
+    "require_vibe_tags": [
+      "miserable",
+      "sauvage"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Essaim purulent. Des insectes charognards ou des parasites rendus fous par le fléau attaquent tout ce qui a le sang chaud. Le véritable danger n'est pas leurs dégâts, mais la maladie qu'ils transmettent."
     },
-    "output_tags": ["nuée", "parasites", "risque_maladie"]
+    "output_tags": [
+      "nuée",
+      "parasites",
+      "risque_maladie"
+    ]
   },
   {
-    "require_stage_tags": ["cimetiere", "mort", "macabre"],
-    "require_vibe_tags": ["mystique", "paranoia"],
+    "require_stage_tags": [
+      "cimetiere",
+      "mort",
+      "macabre"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Éveil des morts. L'énergie négative du lieu réagit à la force vitale des PJ. Des cadavres ou des squelettes s'extirpent lentement de la terre pour s'en prendre aux vivants."
     },
-    "output_tags": ["morts-vivants", "reveil_macabre", "combat"]
+    "output_tags": [
+      "morts-vivants",
+      "reveil_macabre",
+      "combat"
+    ]
   },
   {
-    "require_stage_tags": ["faille", "danger_invisible", "sombre"],
-    "require_vibe_tags": ["corrompu", "mystique", "paranoia"],
+    "require_stage_tags": [
+      "faille",
+      "danger_invisible",
+      "sombre"
+    ],
+    "require_vibe_tags": [
+      "corrompu",
+      "mystique",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Attrait du vide. Des esprits frappeurs, des feux follets ou des ombres tentent de charmer, d'effrayer ou de pousser physiquement les héros vers la corniche pour provoquer une chute mortelle."
     },
-    "output_tags": ["esprits", "piege_mortel", "surnaturel"]
+    "output_tags": [
+      "esprits",
+      "piege_mortel",
+      "surnaturel"
+    ]
   },
   {
-    "require_stage_tags": ["vestiges", "melancolie", "ruine"],
-    "require_vibe_tags": ["mystique", "pieux"],
+    "require_stage_tags": [
+      "vestiges",
+      "melancolie",
+      "ruine"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "pieux"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Ame en peine. Un fantôme ou une entité spectrale hante ces lieux, prisonnière d'une tâche inachevée. Si les PJ comprennent son besoin et l'aident, ils gagneront un trésor caché. S'ils attaquent, elle se défendra."
     },
-    "output_tags": ["fantome", "quete_narrative", "enigme"]
+    "output_tags": [
+      "fantome",
+      "quete_narrative",
+      "enigme"
+    ]
   },
   {
-    "require_stage_tags": ["pont", "passage_oblige"],
-    "require_vibe_tags": ["sauvage", "magie-forte", "mystique"],
+    "require_stage_tags": [
+      "pont",
+      "passage_oblige"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "magie-forte",
+      "mystique"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Le gardien antique. Une créature féérique, un troll bavard ou un golem pose une énigme ou demande une offrande insolite. La force brute est une mauvaise idée ; la réflexion est de mise."
     },
-    "output_tags": ["gardien", "enigme", "creature_magique"]
+    "output_tags": [
+      "gardien",
+      "enigme",
+      "creature_magique"
+    ]
   },
   {
-    "require_stage_tags": ["lac", "glace", "danger"],
-    "require_vibe_tags": ["miserable", "bienveillant"],
-    "require_eco_tags": ["survie-pauvre", "agricole"],
+    "require_stage_tags": [
+      "lac",
+      "glace",
+      "danger"
+    ],
+    "require_vibe_tags": [
+      "miserable",
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "survie-pauvre",
+      "agricole"
+    ],
     "secret_mj": {
       "fr": "Sauvetage d'urgence. Un voyageur, un pêcheur ou un animal de bât est passé au travers de la glace. Le temps presse, et les PJ doivent faire preuve d'ingéniosité sans tomber à leur tour."
     },
-    "output_tags": ["sauvetage", "danger_imminent", "heroïsme"]
+    "output_tags": [
+      "sauvetage",
+      "danger_imminent",
+      "heroïsme"
+    ]
   },
   {
-    "require_stage_tags": ["cascade", "bruit_assourdissant", "grotte"],
-    "require_vibe_tags": ["corrompu", "loi-faible"],
-    "require_eco_tags": ["criminelle"],
+    "require_stage_tags": [
+      "cascade",
+      "bruit_assourdissant",
+      "grotte"
+    ],
+    "require_vibe_tags": [
+      "corrompu",
+      "loi-faible"
+    ],
+    "require_eco_tags": [
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Planque idéale. Des contrebandiers ou des assassins utilisent le fracas de l'eau pour couvrir le bruit de leurs activités secrètes. Si les PJ les débusquent, les criminels tenteront de les faire taire."
     },
-    "output_tags": ["contrebandiers", "repaire_criminel", "combat_discret"]
+    "output_tags": [
+      "contrebandiers",
+      "repaire_criminel",
+      "combat_discret"
+    ]
   },
   {
-    "require_stage_tags": ["clairiere", "nature", "repos"],
-    "require_vibe_tags": ["luxe-opulence", "securite-forte"],
-    "require_eco_tags": ["bourgeois", "tourisme"],
+    "require_stage_tags": [
+      "clairiere",
+      "nature",
+      "repos"
+    ],
+    "require_vibe_tags": [
+      "luxe-opulence",
+      "securite-forte"
+    ],
+    "require_eco_tags": [
+      "bourgeois",
+      "tourisme"
+    ],
     "secret_mj": {
       "fr": "Arrogance aristocratique. Un groupe de nobles lourdement escortés est en pleine partie de chasse ou de pique-nique. Ils toiseront les PJ de haut et pourraient les provoquer en duel pour se divertir."
     },
-    "output_tags": ["noblesse", "arrogance", "rencontre_sociale"]
+    "output_tags": [
+      "noblesse",
+      "arrogance",
+      "rencontre_sociale"
+    ]
   },
   {
-    "require_stage_tags": ["chemin", "ralentissement", "traces"],
-    "require_vibe_tags": ["bienveillant", "pieux"],
-    "require_eco_tags": ["elevage", "agricole"],
+    "require_stage_tags": [
+      "chemin",
+      "ralentissement",
+      "traces"
+    ],
+    "require_vibe_tags": [
+      "bienveillant",
+      "pieux"
+    ],
+    "require_eco_tags": [
+      "elevage",
+      "agricole"
+    ],
     "secret_mj": {
       "fr": "Recherche désespérée. Un berger, un enfant ou un fermier pleure la perte d'un animal précieux ou d'un proche égaré à proximité. Aider cette personne améliorera grandement la réputation du groupe dans la région."
     },
-    "output_tags": ["personne_perdue", "quete_annexe", "reputation"]
+    "output_tags": [
+      "personne_perdue",
+      "quete_annexe",
+      "reputation"
+    ]
   },
   {
-    "require_stage_tags": ["croisement", "choix"],
-    "require_vibe_tags": ["corrompu", "luxe-opulence", "commerce-fort"],
-    "require_eco_tags": ["criminelle", "commerce"],
+    "require_stage_tags": [
+      "croisement"
+    ],
+    "require_vibe_tags": [
+      "corrompu",
+      "luxe-opulence",
+      "commerce-fort"
+    ],
+    "require_eco_tags": [
+      "criminelle",
+      "commerce"
+    ],
     "secret_mj": {
       "fr": "Le Marché Noir. Un marchand discret et peu scrupuleux propose des marchandises rares, volées, ou des esclaves. Il a de l'or à profusion, mais traiter avec lui pose un vrai dilemme moral."
     },
-    "output_tags": ["marche_noir", "dilemme_moral", "commerce_illicite"]
+    "output_tags": [
+      "marche_noir",
+      "dilemme_moral",
+      "commerce_illicite"
+    ]
   },
   {
-    "require_stage_tags": ["faille", "chute_mortelle", "obstacle_naturel"],
-    "require_vibe_tags": ["paranoia", "securite-forte", "miserable"],
-    "require_eco_tags": ["militaire"],
+    "require_stage_tags": [
+      "faille",
+      "chute_mortelle",
+      "obstacle_naturel"
+    ],
+    "require_vibe_tags": [
+      "paranoia",
+      "securite-forte",
+      "miserable"
+    ],
+    "require_eco_tags": [
+      "militaire"
+    ],
     "secret_mj": {
       "fr": "Acculés au gouffre. Des déserteurs, des fugitifs ou des monstres blessés sont coincés au bord du vide par une force invisible ou par la peur. C'est le moment de négocier ou de les achever."
     },
-    "output_tags": ["fugitifs_acciles", "negociation_tendue", "choix_critique"]
+    "output_tags": [
+      "fugitifs_acciles",
+      "negociation_tendue",
+      "choix_critique"
+    ]
   },
   {
-    "require_stage_tags": ["cristaux", "beaute_naturelle", "ressource"],
-    "require_vibe_tags": ["accueillant", "commerce-fort", "loi-stricte"],
-    "require_eco_tags": ["artisanat", "minerai"],
+    "require_stage_tags": [
+      "cristaux",
+      "beaute_naturelle",
+      "ressource"
+    ],
+    "require_vibe_tags": [
+      "accueillant",
+      "commerce-fort",
+      "loi-stricte"
+    ],
+    "require_eco_tags": [
+      "artisanat",
+      "minerai"
+    ],
     "secret_mj": {
       "fr": "Labeur méticuleux. Une guilde d'artisans ou de mineurs professionnels extrait doucement les ressources. Ils sont bien équipés et proposeront de vendre quelques éclats bruts à bon prix si on ne les dérange pas."
     },
-    "output_tags": ["mineurs", "guilde_artisanale", "commerce_brut"]
+    "output_tags": [
+      "mineurs",
+      "guilde_artisanale",
+      "commerce_brut"
+    ]
   },
   {
-    "require_stage_tags": ["ruine", "mystere", "exploration"],
-    "require_vibe_tags": ["magie-forte", "loi-faible", "sauvage"],
-    "require_eco_tags": ["savoir-magie", "criminelle"],
+    "require_stage_tags": [
+      "ruine",
+      "mystere",
+      "exploration"
+    ],
+    "require_vibe_tags": [
+      "magie-forte",
+      "loi-faible",
+      "sauvage"
+    ],
+    "require_eco_tags": [
+      "savoir-magie",
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Pilleurs de tombes. Un groupe d'aventuriers rivaux ou de pilleurs professionnels est déjà sur place, en train de dynamiter ou profaner les lieux. Ils défendront \"leur\" butin avec violence."
     },
-    "output_tags": ["pilleurs", "aventuriers_rivaux", "concurrence"]
+    "output_tags": [
+      "pilleurs",
+      "aventuriers_rivaux",
+      "concurrence"
+    ]
   },
   {
-    "require_stage_tags": ["monolithes", "magie_ancienne", "foudre"],
-    "require_vibe_tags": ["mystique", "sauvage", "paranoia"],
+    "require_stage_tags": [
+      "monolithes",
+      "magie_ancienne",
+      "foudre"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "sauvage",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Anomalie instable. La météo violente réagit avec la magie du lieu. Des arcs d'énergie crépitent au hasard. Il faut traverser la zone rapidement en esquivant les décharges élémentaires."
     },
-    "output_tags": ["anomalie_magique", "danger_environnemental", "esquive"]
+    "output_tags": [
+      "anomalie_magique",
+      "danger_environnemental",
+      "esquive"
+    ]
   },
   {
-    "require_stage_tags": ["tour", "observation", "militaire"],
-    "require_vibe_tags": ["mystique", "sauvage", "paranoia"],
-    "require_eco_tags": ["savoir-magie", "survie-pauvre"],
+    "require_stage_tags": [
+      "tour",
+      "observation",
+      "militaire"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "sauvage",
+      "paranoia"
+    ],
+    "require_eco_tags": [
+      "savoir-magie",
+      "survie-pauvre"
+    ],
     "secret_mj": {
       "fr": "Vigie corrompue. L'avant-poste semble abandonné, mais une créature métamorphe (doppelgänger, mimic) ou un esprit usurpateur a pris la place du guetteur pour attirer les voyageurs à l'intérieur."
     },
-    "output_tags": ["metamorphe", "piege_mortel", "illusion"]
+    "output_tags": [
+      "metamorphe",
+      "piege_mortel",
+      "illusion"
+    ]
   },
   {
-    "require_stage_tags": ["lac", "mystere", "eau"],
-    "require_vibe_tags": ["mystique", "religion-forte", "bienveillant"],
-    "require_eco_tags": ["tourisme-foi", "eau"],
+    "require_stage_tags": [
+      "lac",
+      "mystere",
+      "eau"
+    ],
+    "require_vibe_tags": [
+      "mystique",
+      "religion-forte",
+      "bienveillant"
+    ],
+    "require_eco_tags": [
+      "tourisme-foi",
+      "eau"
+    ],
     "secret_mj": {
       "fr": "Mirage aquatique. Une apparition bénigne (une nymphe, un esprit des eaux ou une illusion sacrée) se manifeste au-dessus de l'eau. Elle pointe silencieusement vers un objet englouti ou une piste cachée."
     },
-    "output_tags": ["apparition_divine", "indice_cache", "mystique"]
+    "output_tags": [
+      "apparition_divine",
+      "indice_cache",
+      "mystique"
+    ]
   },
   {
-    "require_stage_tags": ["chemin", "perte_reperes", "mystere"],
-    "require_vibe_tags": ["sauvage", "magie-forte", "paranoia"],
+    "require_stage_tags": [
+      "chemin",
+      "perte_reperes",
+      "mystere"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "magie-forte",
+      "paranoia"
+    ],
     "require_eco_tags": [],
     "secret_mj": {
       "fr": "Désorientation féeérique. L'environnement lui-même se modifie subtilement derrière les joueurs. Le chemin du retour disparaît, les arbres bougent. Ils sont tombés dans le domaine d'une entité farceuse ou cruelle."
     },
-    "output_tags": ["labyrinthe_naturel", "illusion_feerique", "perte_orientation"]
+    "output_tags": [
+      "labyrinthe_naturel",
+      "illusion_feerique",
+      "perte_orientation"
+    ]
   },
   {
-    "require_stage_tags": ["pont", "glissant", "chute_mortelle"],
-    "require_vibe_tags": ["sauvage", "miserable", "corrompu"],
-    "require_eco_tags": ["criminelle", "survie-pauvre"],
+    "require_stage_tags": [
+      "chemin_neige"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "miserable",
+      "corrompu"
+    ],
+    "require_eco_tags": [
+      "criminelle",
+      "survie-pauvre"
+    ],
     "secret_mj": {
-      "fr": "Sabotage volontaire. Le danger climatique n'est pas naturel : de l'huile ou des pièges à mâchoire ont été dissimulés sous la neige ou la pluie par des bandits qui attendent de l'autre côté avec des arcs."
+      "fr": "Sabotage volontaire. Le danger climatique n'est pas naturel : des pièges à mâchoire ont été dissimulés sous la neige par des bandits qui attendent en embuscade avec des arcs."
     },
-    "output_tags": ["sabotage", "piege_chute", "embuscade_distance"]
+    "output_tags": [
+      "sabotage",
+      "piege_chute",
+      "embuscade_distance"
+    ]
   },
   {
-    "require_stage_tags": ["arbre", "danger_environnemental", "foudre"],
-    "require_vibe_tags": ["sauvage", "mystique"],
-    "require_eco_tags": ["bois", "artisanat"],
+    "require_stage_tags": [
+      "arbre",
+      "danger_environnemental",
+      "foudre"
+    ],
+    "require_vibe_tags": [
+      "sauvage",
+      "mystique"
+    ],
+    "require_eco_tags": [
+      "bois",
+      "artisanat"
+    ],
     "secret_mj": {
       "fr": "Récolte risquée. Un morceau de bois précieux foudroyé (très prisé en magie ou artisanat) vient de chuter. Le récupérer nécessite de braver la tempête et le terrain instable, sous peine de blessures graves."
     },
-    "output_tags": ["ressource_epique", "epreuve_physique", "recompense_naturelle"]
+    "output_tags": [
+      "ressource_epique",
+      "epreuve_physique",
+      "recompense_naturelle"
+    ]
   },
   {
-    "require_stage_tags": ["cimetiere", "solennel", "mort"],
-    "require_vibe_tags": ["bienveillant", "pieux", "religion-forte"],
-    "require_eco_tags": ["tourisme-foi"],
+    "require_stage_tags": [
+      "cimetiere",
+      "solennel",
+      "mort"
+    ],
+    "require_vibe_tags": [
+      "bienveillant",
+      "pieux",
+      "religion-forte"
+    ],
+    "require_eco_tags": [
+      "tourisme-foi"
+    ],
     "secret_mj": {
       "fr": "Veillée funèbre. Des villageois des environs enterrent un de leurs proches dans le respect. Ils accepteront le groupe s'ils se montrent silencieux et pourraient offrir des informations locales à la fin de l'office."
     },
-    "output_tags": ["enterrement", "recueillement", "rencontre_triste"]
+    "output_tags": [
+      "enterrement",
+      "recueillement",
+      "rencontre_triste"
+    ]
   },
   {
-    "require_stage_tags": ["halte", "traces", "feu"],
-    "require_vibe_tags": ["loi-stricte", "securite-forte", "paranoia"],
-    "require_eco_tags": ["militaire", "criminelle"],
+    "require_stage_tags": [
+      "halte",
+      "traces",
+      "feu"
+    ],
+    "require_vibe_tags": [
+      "loi-stricte",
+      "securite-forte",
+      "paranoia"
+    ],
+    "require_eco_tags": [
+      "militaire",
+      "criminelle"
+    ],
     "secret_mj": {
       "fr": "Chasseurs de primes. Un groupe de mercenaires professionnels s'est installé ici. Ils inspecteront les visages des PJ pour voir s'ils correspondent à leurs avis de recherche. Si un PJ est recherché, c'est l'affrontement."
     },
-    "output_tags": ["mercenaires", "avis_de_recherche", "tension_extreme"]
+    "output_tags": [
+      "mercenaires",
+      "avis_de_recherche",
+      "tension_extreme"
+    ]
   },
   {
     "require_stage_tags": [],
-    "require_vibe_tags": ["festif", "commerce-fort", "luxe-opulence"],
-    "require_eco_tags": ["tourisme", "artisanat", "bourgeois"],
+    "require_vibe_tags": [
+      "festif",
+      "commerce-fort",
+      "luxe-opulence"
+    ],
+    "require_eco_tags": [
+      "tourisme",
+      "artisanat",
+      "bourgeois"
+    ],
     "secret_mj": {
       "fr": "Troupe itinérante. Des bardes, saltimbanques ou comédiens ambulants s'exercent sur le bord de la route. Ils chercheront à soutirer quelques pièces aux PJ par des tours de passe-passe ou des paris amicaux."
     },
-    "output_tags": ["saltimbanques", "divertissement", "paris"]
+    "output_tags": [
+      "saltimbanques",
+      "divertissement",
+      "paris"
+    ]
   },
   {
     "require_stage_tags": [],
-    "require_vibe_tags": ["loi-faible", "sauvage", "corrompu"],
-    "require_eco_tags": ["criminelle", "survie-pauvre", "minerai"],
+    "require_vibe_tags": [
+      "loi-faible",
+      "sauvage",
+      "corrompu"
+    ],
+    "require_eco_tags": [
+      "criminelle",
+      "survie-pauvre",
+      "minerai"
+    ],
     "secret_mj": {
       "fr": "Bagarre de charognards. Deux groupes de PNJ (des bandits rivaux, des gobelins, des pillards) sont en train de s'entretuer pour le butin d'une caravane récente. Les PJ peuvent ignorer la scène, intervenir, ou ramasser les miettes."
     },
-    "output_tags": ["guerre_des_gangs", "opportunite_pillage", "chaos"]
+    "output_tags": [
+      "guerre_des_gangs",
+      "opportunite_pillage",
+      "chaos"
+    ]
   },
   {
     "require_stage_tags": [],
-    "require_vibe_tags": ["mystique", "magie-forte", "religion-forte"],
-    "require_eco_tags": ["savoir-magie", "tourisme-foi"],
+    "require_vibe_tags": [
+      "mystique",
+      "magie-forte",
+      "religion-forte"
+    ],
+    "require_eco_tags": [
+      "savoir-magie",
+      "tourisme-foi"
+    ],
     "secret_mj": {
       "fr": "Le prophète errant. Un individu excentrique (un fou, un oracle ou un dieu déguisé) aborde le groupe pour délivrer un présage ou une prophétie indéchiffrable qui concerne directement la quête principale des héros."
     },
-    "output_tags": ["oracle", "prophetie", "lore_majeur"]
+    "output_tags": [
+      "oracle",
+      "prophetie",
+      "lore_majeur"
+    ]
+  },
+  {
+    "require_stage_tags": [],
+    "require_vibe_tags": [],
+    "require_eco_tags": [],
+    "secret_mj": {
+      "fr": "le lieux est calme.",
+      "en": "The place is quiet."
+    },
+    "output_tags": [
+      "lieu_isole"
+    ]
   },
   {
     "require_stage_tags": [],
@@ -402,6 +993,9 @@
     "secret_mj": {
       "fr": "Simple observation. Un corbeau sur une branche, un voyageur silencieux au loin, ou un paysan qui lève la main pour saluer. L'événement sert uniquement à donner de la vie au monde, sans aucune arrière-pensée."
     },
-    "output_tags": ["ambiance_pure", "neutre"]
+    "output_tags": [
+      "ambiance_pure",
+      "neutre"
+    ]
   }
 ]
