@@ -1,0 +1,125 @@
+<form autocomplete="off" style="padding: 10px;">
+    <p style="text-align: center; border-bottom: 1px solid #777; padding-bottom: 5px;">
+        {{localize 'HEXFORGE.Editor.HexEdit'}} : <strong>[{{row}}, {{col}}]</strong>
+    </p>
+
+    <div class="form-group">
+        <label><i class="fas fa-globe"></i> {{localize 'HEXFORGE.Editor.Region'}}</label>
+        <div class="form-fields">
+            <select name="region" id="hf-region-select">
+                <option value="">{{localize 'HEXFORGE.Editor.SelectRegion'}}</option>
+                {{#each regions as |region key|}}
+                <option value="{{key}}" {{#if (eq ../currentRegion key)}}selected{{/if}}>{{region.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-tree"></i> {{localize 'HEXFORGE.Editor.Biome'}}</label>
+        <div class="form-fields">
+            <select name="biome" id="hf-biome-select">
+                <option value="">{{localize 'HEXFORGE.Editor.SelectBiome'}}</option>
+                {{#each biomes as |biome key|}}
+                <option value="{{key}}" {{#if (eq ../currentBiome key)}}selected{{/if}}>{{biome.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-bolt"></i> {{localize 'HEXFORGE.Editor.StateTone'}}</label>
+        <div class="form-fields">
+            <select name="state">
+                <option value="">{{localize 'HEXFORGE.Editor.SelectState'}}</option>
+                {{#each states as |state key|}}
+                <option value="{{key}}" {{#if (eq ../data.state key)}}selected{{/if}}>{{state.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-mountain"></i> {{localize 'HEXFORGE.Editor.NotableTrait'}}</label>
+        <select name="trait" id="hf-trait-select">
+            <option value="">{{localize 'HEXFORGE.Editor.None'}}</option>
+            {{#each geoTraits}}
+            <option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label><i class="fas fa-users"></i> {{localize 'HEXFORGE.Editor.Occupation'}}</label>
+        <select name="occupation" id="hf-occupation-select">
+            <option value="">{{localize 'HEXFORGE.Editor.NoOccupation'}}</option>
+            {{#each occTraits}}
+            <optgroup label="{{this.label}}">
+                {{#each this.items}}
+                <option value="{{this.id}}" data-category="{{../category}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+                {{/each}}
+            </optgroup>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="form-group" style="border-top: 1px solid #777; padding-top: 10px; margin-top: 10px;">
+        <label><i class="fas fa-image"></i> {{localize 'HEXFORGE.Editor.VisualElement'}}</label>
+        <div class="form-fields">
+            <select name="overlay" id="hf-overlay-select">
+                <option value="">{{localize 'HEXFORGE.Editor.NoVisual'}}</option>
+                {{#each overlays as |overlay key|}}
+                <option value="{{key}}" {{#if (eq ../data.overlay key)}}selected{{/if}}>{{overlay.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <style>
+        .hf-stacked-section { border-top: 1px solid #777; padding-top: 10px; margin-top: 15px; }
+        .hf-stacked-section > label { display: block; font-weight: bold; margin-bottom: 8px; color: #2c3e50; text-shadow: 1px 1px 1px rgba(255,255,255,0.5); font-size: 1.05em; }
+        .hf-tags-grid { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-start; }
+        .hf-tag-badge { display: inline-block; background: rgba(20, 20, 20, 0.6); border: 1px solid #555; border-radius: 4px; padding: 3px 8px; font-size: 0.80em; cursor: pointer; transition: all 0.2s ease; user-select: none; color: #bbb; white-space: nowrap; }
+        .hf-tag-badge:hover { border-color: #d4af37; color: #fff; background: rgba(212, 175, 55, 0.15); }
+        .hf-tag-badge:has(input:checked) { background: linear-gradient(to bottom, #d4af37, #b58e24); border-color: #f1c40f; color: #111; font-weight: bold; box-shadow: 0 0 6px rgba(212, 175, 55, 0.5); }
+    </style>
+
+    <div class="hf-stacked-section">
+        <label><i class="fas fa-theater-masks"></i> {{localize 'HEXFORGE.Editor.VibeAura'}}</label>
+        <div class="hf-tags-grid">
+            {{#each vibeTags}}
+            <label class="hf-tag-badge" title="{{localize 'HEXFORGE.Editor.Tag'}}: {{this.value}}">
+                <input type="checkbox" name="vibe_tags" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                {{this.label}}
+            </label>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="hf-stacked-section">
+        <label><i class="fas fa-coins"></i> {{localize 'HEXFORGE.Editor.EcoAura'}}</label>
+        <div class="hf-tags-grid">
+            {{#each ecoTags}}
+            <label class="hf-tag-badge" title="{{localize 'HEXFORGE.Editor.Tag'}}: {{this.value}}">
+                <input type="checkbox" name="eco_tags" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                {{this.label}}
+            </label>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="hf-stacked-section" id="hf-cityforge-container" style="display: none;">
+        <label id="hf-cityforge-label"><i class="fas fa-map-marker-alt"></i> {{localize 'HEXFORGE.Editor.InteractivePlace'}}</label>
+        <button type="button" id="hf-btn-cityforge" data-has-city="{{#if data.cityJournalId}}true{{else}}false{{/if}}" style="color: white; border: none; width: 100%; transition: 0.2s;">
+        </button>
+        {{#if data.cityJournalId}}
+        <button type="button" id="hf-btn-unlink" style="background: #c0392b; color: white; border: none; width: 100%; margin-top: 5px; transition: 0.2s;" title="{{localize 'HEXFORGE.Editor.RazingTooltip'}}">
+            <i class="fas fa-fire"></i> {{localize 'HEXFORGE.Editor.RazingPlace'}}
+        </button>
+        {{/if}}
+    </div>
+
+    <button type="submit" style="margin-top: 15px; background: #e0e0d1; border: 1px solid #b5b5a6;">
+        <i class="fas fa-save"></i> {{localize 'HEXFORGE.Editor.SaveHex'}}
+    </button>
+</form>

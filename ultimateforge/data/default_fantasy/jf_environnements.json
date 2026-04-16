@@ -1,0 +1,524 @@
+[
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Le soleil brille haut dans le ciel. Vous progressez à bon rythme à travers de vastes étendues dégagées, profitant d'une brise agréable.",
+      "en": "The sun shines high in the sky. You make good progress across vast open expanses, enjoying a pleasant breeze."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "Le soleil décline à l'horizon. Le ciel dégagé offre un paysage magnifique, peignant les nuages lointains de superbes dégradés de rose et d'orange.",
+      "en": "The sun sets on the horizon. The clear sky offers a beautiful landscape, painting the distant clouds in stunning shades of pink and orange."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "La lune éclaire les vastes étendues, baignant le paysage d'une lueur argentée. L'air s'est rafraîchi et le silence de la nuit enveloppe votre marche.",
+      "en": "The moon illuminates the vast expanses, bathing the landscape in a silvery glow. The air has cooled and the silence of the night envelops your walk."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Une pluie battante s'abat sur le paysage ouvert, transformant la terre en boue. Sans abri naturel pour vous protéger, l'avancée est morose et humide.",
+      "en": "A driving rain falls on the open landscape, turning the earth into mud. With no natural shelter to protect you, the advance is bleak and wet."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain", "storm"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "L'obscurité est totale et la pluie glaciale vous cingle le visage. Sans repères dans cette vaste étendue nocturne, garder le cap demande une concentration extrême.",
+      "en": "The darkness is absolute and freezing rain lashes your face. Without landmarks in this vast nocturnal expanse, staying on course requires extreme concentration."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["fog"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Un épais brouillard matinal tapisse le sol, transformant les collines et les champs en un océan blanc où les repères se perdent facilement.",
+      "en": "A thick morning fog blankets the ground, transforming hills and fields into a white ocean where landmarks are easily lost."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Les rayons du soleil percent péniblement la canopée, créant de magnifiques puits de lumière dorée sur les fougères. La faune est bruyante et active.",
+      "en": "Sunlight struggles to pierce the canopy, creating beautiful shafts of golden light on the ferns. The wildlife is loud and active."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "Les ombres s'allongent démesurément entre les troncs massifs. Le chant des oiseaux diurnes s'éteint, remplacé par les premiers bruissements des prédateurs nocturnes.",
+      "en": "Shadows lengthen immensely between the massive trunks. The song of diurnal birds fades, replaced by the first rustlings of nocturnal predators."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Sous le couvert des arbres, la nuit est d'un noir d'encre. Le moindre craquement de branche résonne comme un coup de tonnerre dans cette atmosphère oppressante.",
+      "en": "Under the cover of the trees, the night is pitch black. The slightest snap of a branch echoes like a thunderclap in this oppressive atmosphere."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["rain", "storm"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "L'averse tambourine violemment sur le feuillage épais, créant un vacarme constant. L'eau ruisselle le long des troncs et transforme le sous-bois en patinoire de boue.",
+      "en": "The downpour drums violently on the thick foliage, creating a constant racket. Water streams down the trunks and turns the undergrowth into a mud rink."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["rain", "storm"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Plongés dans les ténèbres, de lourds nuages invisibles crachent une pluie glaciale. Vous progressez à tâtons, vos sens totalement étouffés par le fracas de l'averse dans les arbres.",
+      "en": "Plunged into darkness, invisible heavy clouds spit a freezing rain. You grope your way forward, your senses completely muffled by the roar of the downpour in the trees."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Marais"],
+    "weather_tags": ["fog"],
+    "time_tags": ["jour", "crepuscule", "nuit"],
+    "text": {
+      "fr": "L'obscurité s'allie à un brouillard poisseux. Les ombres des arbres prennent des formes cauchemardesques et la visibilité est presque nulle.",
+      "en": "Darkness combines with a sticky fog. Tree shadows take on nightmarish shapes, and visibility is near zero."
+    }
+  },
+  {
+    "biome_tags": ["Marais"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Le soleil fait chauffer les eaux stagnantes, créant une atmosphère lourde et moite. L'odeur de vase et de décomposition végétale emplit vos poumons à chaque inspiration.",
+      "en": "The sun heats the stagnant waters, creating a heavy and clammy atmosphere. The smell of silt and decaying vegetation fills your lungs with every breath."
+    }
+  },
+  {
+    "biome_tags": ["Marais"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule", "nuit"],
+    "text": {
+      "fr": "Avec la tombée du jour, le marais s'éveille. Des nuées d'insectes bourdonnent, des clapotis suspects résonnent, et d'étranges feux follets dansent au-dessus de la tourbe.",
+      "en": "As daylight fades, the swamp awakens. Swarms of insects buzz, suspicious splashes echo, and strange will-o'-the-wisps dance above the peat."
+    }
+  },
+  {
+    "biome_tags": ["Marais"],
+    "weather_tags": ["rain", "storm"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "La pluie battante fait déborder les vasques d'eau boueuse du marécage. Chaque pas est un effort pour extirper vos bottes de la succion de la vase.",
+      "en": "The driving rain overflows the muddy pools of the swamp. Every step is an effort to pull your boots from the suction of the muck."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "L'air est pur et raréfié. Le soleil scintille presque douloureusement sur les cimes rocheuses et les neiges éternelles, offrant un panorama grandiose.",
+      "en": "The air is pure and thin. The sun sparkles almost painfully on the rocky peaks and eternal snows, offering a grandiose panorama."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "Le soleil disparaît derrière les pics dentelés, teintant les sommets de violet et de pourpre. La température chute brutalement avec les dernières lueurs.",
+      "en": "The sun disappears behind the jagged peaks, tinting the summits in purple and violet. The temperature drops sharply with the fading light."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "La voûte céleste est d'une clarté absolue en cette altitude, mais le froid nocturne est mordant, s'insinuant sous vos vêtements et engourdissant vos membres.",
+      "en": "The night sky is absolutely clear at this altitude, but the nocturnal cold is biting, seeping under your clothes and numbing your limbs."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique", "Taïga"],
+    "weather_tags": ["snow"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "La neige tombe à gros flocons, recouvrant les aspérités du terrain. Progresser demande un effort physique intense pour ouvrir la voie dans cette poudreuse épaisse.",
+      "en": "Snow falls in heavy flakes, covering the rough terrain. Progressing requires intense physical effort to forge a path through this thick powder."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique", "Taïga"],
+    "weather_tags": ["snow", "storm"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Un blizzard cinglant hurle dans la nuit noire. La neige vous aveugle, le vent menace de vous renverser, et le froid extrême met votre survie directement en péril.",
+      "en": "A biting blizzard howls in the dark night. The snow blinds you, the wind threatens to knock you over, and the extreme cold puts your survival directly at risk."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique", "Collines"],
+    "weather_tags": ["fog"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "Des nuages très bas s'accrochent aux reliefs, formant un voile opaque. C'est extrêmement dangereux : la moindre corniche ou crevasse est totalement masquée.",
+      "en": "Very low clouds cling to the terrain, forming an opaque veil. It is extremely dangerous: every ledge or crevasse is completely hidden."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Un soleil de plomb écrase le paysage aride. L'air brûlant ondule au-dessus du sable et de la rocaille, assoiffant les voyageurs à chaque pas.",
+      "en": "A blazing sun crushes the arid landscape. The scorching air ripples above the sand and rocks, parching travelers with every step."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "L'enfer brûlant laisse place à un crépuscule apaisant. Les dunes projettent des ombres démesurées et les créatures du désert commencent à sortir de leurs terriers.",
+      "en": "The burning hell gives way to a soothing twilight. The dunes cast enormous shadows, and desert creatures begin emerging from their burrows."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "La chaleur a disparu, remplacée par un froid glacial typique des nuits désertiques. Sans nuages, le ciel étoilé offre un spectacle d'une majesté écrasante.",
+      "en": "The heat has vanished, replaced by the freezing cold typical of desert nights. Cloudless, the starry sky offers an overwhelmingly majestic spectacle."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["storm", "rain", "fog", "snow"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "Le vent se lève brutalement, soulevant d'immenses vagues de sable et de poussière. Le ciel s'obscurcit et la roche vole, irritant vos yeux et vos poumons.",
+      "en": "The wind kicks up suddenly, raising huge waves of sand and dust. The sky darkens and rock fragments fly, irritating your eyes and lungs."
+    }
+  },
+  {
+    "biome_tags": ["Outreterre"],
+    "weather_tags": ["all"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Bien qu'il fasse probablement jour à la surface, les entrailles de la terre restent figées dans une pénombre minérale, seulement brisée par quelques champignons phosphorescents.",
+      "en": "Though it's likely daylight on the surface, the bowels of the earth remain frozen in a mineral twilight, broken only by a few phosphorescent mushrooms."
+    }
+  },
+  {
+    "biome_tags": ["Outreterre"],
+    "weather_tags": ["all"],
+    "time_tags": ["nuit", "crepuscule"],
+    "text": {
+      "fr": "Le concept de jour ou de nuit n'a aucun sens ici. L'obscurité totale des profondeurs pèse sur vos épaules, accompagnée par l'écho distant de gouttes d'eau.",
+      "en": "The concept of day or night is meaningless here. The total darkness of the depths weighs on your shoulders, accompanied by the distant echo of dripping water."
+    }
+  },
+  {
+    "biome_tags": ["Aquatique", "Sub-aquatique"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Les rayons du soleil traversent la surface de l'eau, dansant sur les fonds marins et offrant une vue spectaculaire sur la vie aquatique bouillonnante.",
+      "en": "Sunrays pierce the water's surface, dancing on the seabed and offering a spectacular view of the bustling aquatic life."
+    }
+  },
+  {
+    "biome_tags": ["Aquatique", "Sub-aquatique"],
+    "weather_tags": ["rain", "storm"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "La météo houleuse à la surface trouble l'eau. Les courants sont plus forts, la vase est soulevée, et la lumière peine à percer les profondeurs agitées.",
+      "en": "Rough weather on the surface muddies the water. Currents are stronger, silt is stirred up, and light struggles to pierce the agitated depths."
+    }
+  },
+  {
+    "biome_tags": ["Aquatique", "Sub-aquatique"],
+    "weather_tags": ["all"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "L'eau noire vous enveloppe complètement. Seules quelques rares créatures bioluminescentes fendent l'obscurité abyssale de ce monde silencieux et froid.",
+      "en": "Black water envelops you completely. Only a few rare bioluminescent creatures pierce the abyssal darkness of this silent, cold world."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["storm"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "La fureur des éléments se déchaîne. Des vents violents tordent la végétation et le ciel hurle, rendant la progression éprouvante et chaotique.",
+      "en": "The fury of the elements is unleashed. Violent winds twist the vegetation and the sky howls, making progress grueling and chaotic."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["storm"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Une tempête d'une violence inouïe ravage la région dans l'obscurité. Chaque éclair déchire la nuit noire, révélant brièvement un paysage malmené par les éléments.",
+      "en": "An incredibly violent storm ravages the region in darkness. Each lightning flash tears through the pitch-black night, briefly revealing a landscape battered by the elements."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["all"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "Le temps s'écoule lentement alors que vous poursuivez votre route à travers la région, attentifs au moindre changement dans votre environnement.",
+      "en": "Time passes slowly as you continue your journey through the region, attentive to any change in your surroundings."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Une pluie fine et tenace sature l'air et détrempe vos vêtements. Le ciel gris pèse sur cet horizon dégagé, peignant le paysage d'une mélancolie froide et humide.",
+      "en": "A fine, stubborn rain saturates the air and soaks your clothes. The gray sky weighs heavily on this open horizon, painting the landscape with a cold, damp melancholy."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "La lumière du jour décline sous un ciel lourd et gorgé d'eau. La pluie qui s'abat sans relâche crée des milliers de flaques boueuses miroitant tristement dans la pénombre naissante.",
+      "en": "Daylight fades under a heavy, waterlogged sky. The relentless rain creates thousands of muddy puddles that reflect sadly in the gathering gloom."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Le vent balaie la pluie en de longues bourrasques obliques qui fouettent la végétation rase. Sans le moindre abri naturel à l'horizon, chaque pas dans cette immensité trempée est une épreuve de volonté.",
+      "en": "The wind sweeps the rain in long oblique gusts that whip the short vegetation. With no natural shelter on the horizon, every step in this soaked immensity is a test of will."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "De petits nuages blancs filent paresseusement dans un ciel bleu azur. La lumière du soleil réchauffe agréablement vos épaules tandis que vous traversez ce paysage vaste et accueillant.",
+      "en": "Small white clouds drift lazily across an azure blue sky. The sunlight pleasantly warms your shoulders as you cross this vast and welcoming landscape."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "Le soleil s'écrase sur l'horizon, étirant démesurément vos ombres sur le sol. Une brise fraîche se lève, faisant frissonner les herbes hautes dans une douce lumière cuivrée.",
+      "en": "The sun crashes on the horizon, immensely stretching your shadows on the ground. A cool breeze picks up, making the tall grass shiver in a soft coppery light."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["fog"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Des bancs de brume traînante s'accrochent aux creux du terrain, engloutissant les chevilles. L'humidité poisseuse de l'air étouffe les sons lointains, isolant votre groupe dans une bulle ouatée.",
+      "en": "Banks of trailing mist cling to the hollows of the terrain, swallowing your ankles. The sticky humidity of the air muffles distant sounds, isolating your group in a cottony bubble."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["rain"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "La dense canopée au-dessus de vous retient une grande partie de l'averse, mais l'eau finit par ruisseler en lourdes gouttes glacées. L'odeur d'humus et de champignons est saturée par l'humidité.",
+      "en": "The dense canopy above holds back much of the downpour, but the water eventually trickles down in heavy, icy drops. The smell of humus and mushrooms is saturated with moisture."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "La lumière crue de la lune peine à traverser l'enchevêtrement des branches. La forêt est plongée dans un clair-obscur fantomatique où chaque tronc prend l'allure d'une sentinelle silencieuse.",
+      "en": "The harsh moonlight struggles to pierce the tangle of branches. The forest is plunged into a ghostly chiaroscuro where every trunk looks like a silent sentinel."
+    }
+  },
+  {
+    "biome_tags": ["Forêt", "Jungle", "Taïga"],
+    "weather_tags": ["fog"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Une brume rampante s'insinue entre les racines noueuses et les buissons épineux. Les arbres disparaissent à quelques pas, devenant de simples piliers grisâtres dans un brouillard oppressant.",
+      "en": "A creeping mist winds its way between the knotty roots and thorny bushes. The trees disappear a few steps away, becoming mere grayish pillars in an oppressive fog."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Collines"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "L'ascension est rude mais récompensée par une vue imprenable. L'air est vif, piquant vos poumons à chaque inspiration, et le ciel d'altitude est d'un bleu d'une pureté absolue.",
+      "en": "The climb is harsh but rewarded with a breathtaking view. The air is crisp, stinging your lungs with every breath, and the high-altitude sky is of absolute pure blue."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique", "Taïga"],
+    "weather_tags": ["snow"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Une neige fine et régulière tombe en silence, s'accumulant sur vos capes et effaçant rapidement vos propres traces de pas derrière vous. L'horizon s'efface dans une blancheur infinie.",
+      "en": "A fine, steady snow falls in silence, accumulating on your cloaks and quickly erasing your own footprints behind you. The horizon fades into infinite whiteness."
+    }
+  },
+  {
+    "biome_tags": ["Montagne", "Arctique"],
+    "weather_tags": ["snow", "storm"],
+    "time_tags": ["nuit", "crepuscule"],
+    "text": {
+      "fr": "Le vent glacé hurle à travers les failles rocheuses, charriant des cristaux de glace qui fouettent douloureusement le visage. Le froid mordant transforme la progression en une lutte désespérée contre l'hypothermie.",
+      "en": "The icy wind howls through the rocky crevices, carrying ice crystals that whip painfully against the face. The biting cold turns the progression into a desperate struggle against hypothermia."
+    }
+  },
+  {
+    "biome_tags": ["Marais"],
+    "weather_tags": ["rain"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "La pluie piquette la surface des eaux noires du marais. Le clapotis constant couvre les bruits de la faune environnante, tandis que la vase détrempée menace d'engloutir vos bottes à la moindre erreur.",
+      "en": "The rain pockmarks the surface of the black swamp waters. The constant splashing drowns out the sounds of surrounding wildlife, while the sodden mud threatens to swallow your boots at the slightest mistake."
+    }
+  },
+  {
+    "biome_tags": ["Marais"],
+    "weather_tags": ["fog"],
+    "time_tags": ["nuit", "crepuscule"],
+    "text": {
+      "fr": "Des émanations brumeuses se lèvent des eaux stagnantes, se mêlant à la tombée de la nuit. L'air y est atrocement lourd et l'obscurité transforme ce labyrinthe végétal en un véritable cauchemar éveillé.",
+      "en": "Misty fumes rise from the stagnant waters, blending with the falling night. The air is atrociously heavy, and the darkness turns this vegetal labyrinth into a true waking nightmare."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Le ciel est impitoyablement dégagé. La chaleur étouffante irradie depuis le sol desséché, brouillant la vision au loin et forçant votre groupe à rationner chaque précieuse goutte d'eau.",
+      "en": "The sky is mercilessly clear. Stifling heat radiates from the parched ground, blurring the distant vision and forcing your group to ration every precious drop of water."
+    }
+  },
+  {
+    "biome_tags": ["Désert"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Sous une myriade d'étoiles scintillantes, le désert a perdu toute sa chaleur. Un vent froid et coupant balaye les dunes silencieuses, rappelant que ce milieu hostile tue aussi bien par le gel que par le feu.",
+      "en": "Under a myriad of twinkling stars, the desert has lost all its heat. A cold, biting wind sweeps the silent dunes, a reminder that this hostile environment kills with frost as surely as with fire."
+    }
+  },
+  {
+    "biome_tags": ["Outreterre"],
+    "weather_tags": ["all"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "L'air stagnant et vicié des profondeurs pèse sur vos poumons. L'obscurité est presque solide, brisée uniquement par l'éclat blafard d'une moisissure accrochée à la roche nue.",
+      "en": "The stagnant, stale air of the depths weighs on your lungs. The darkness is almost solid, broken only by the pale gleam of mold clinging to the bare rock."
+    }
+  },
+  {
+    "biome_tags": ["Littoral"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Le fracas rythmé des vagues contre le rivage accompagne vos pas. L'air marin, fortement iodé, emplit vos poumons d'une fraîcheur revigorante sous un ciel dégagé.",
+      "en": "The rhythmic crashing of waves against the shore accompanies your steps. The sea air, heavy with salt, fills your lungs with an invigorating freshness under a clear sky."
+    }
+  },
+  {
+    "biome_tags": ["Littoral"],
+    "weather_tags": ["storm", "rain"],
+    "time_tags": ["all"],
+    "text": {
+      "fr": "L'océan est en furie. Des vagues gigantesques viennent s'écraser violemment contre la côte, projetant une écume salée et cinglante qui aveugle les voyageurs imprudents.",
+      "en": "The ocean is in a fury. Gigantic waves crash violently against the coast, throwing salty, stinging foam that blinds unwary travelers."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["leaves"],
+    "time_tags": ["jour", "crepuscule"],
+    "text": {
+      "fr": "Des bourrasques automnales agitent les branches, faisant pleuvoir un déluge de feuilles mortes autour de vous. La nature semble s'endormir lentement dans une atmosphère paisible et mélancolique.",
+      "en": "Autumn gusts shake the branches, raining a deluge of dead leaves around you. Nature seems to be slowly falling asleep in a peaceful and melancholic atmosphere."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["clear"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "La nuit est exceptionnellement claire. La Voie lactée s'étend comme un fleuve de diamants au-dessus de vos têtes, offrant assez de lueur pour progresser sans avoir besoin d'allumer de torches.",
+      "en": "The night is exceptionally clear. The Milky Way stretches like a river of diamonds above your heads, offering enough glow to progress without needing to light torches."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["rain"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Une pluie monotone et glaciale s'abat dans l'obscurité. Sans la chaleur du soleil pour vous réconforter, la fatigue du voyage se fait plus lourde, et chaque pas dans la nuit humide résonne tristement.",
+      "en": "A monotonous, freezing rain falls in the darkness. Without the warmth of the sun to comfort you, the fatigue of the journey grows heavier, and every step in the wet night echoes sadly."
+    }
+  },
+  {
+    "biome_tags": ["all"],
+    "weather_tags": ["fog"],
+    "time_tags": ["nuit"],
+    "text": {
+      "fr": "Un brouillard poisseux engloutit la nuit. La lumière de vos lanternes se diffuse mal, créant des halos trompeurs. L'avancée est dangereusement lente, vos sens trompés par ce voile humide.",
+      "en": "A sticky fog swallows the night. The light from your lanterns scatters poorly, creating deceptive halos. The advance is dangerously slow, your senses tricked by this damp veil."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines"],
+    "weather_tags": ["clear"],
+    "time_tags": ["jour"],
+    "text": {
+      "fr": "Le paysage vallonné s'étend à l'infini sous un soleil clément. Les hautes herbes ondulent au rythme du vent, dessinant des vagues vertes et dorées absolument hypnotiques.",
+      "en": "The rolling landscape stretches to infinity under a mild sun. The tall grass undulates to the rhythm of the wind, drawing absolutely hypnotic green and golden waves."
+    }
+  },
+  {
+    "biome_tags": ["Plaines", "Collines", "Littoral"],
+    "weather_tags": ["rain"],
+    "time_tags": ["crepuscule"],
+    "text": {
+      "fr": "Sous les dernières lueurs grisâtres du jour, une pluie battante continue de s'abattre. L'horizon s'estompe dans un rideau d'eau, rendant la recherche d'un bivouac sec particulièrement pressante.",
+      "en": "Under the last grayish light of the day, a driving rain continues to fall. The horizon blurs into a curtain of water, making the search for a dry bivouac particularly urgent."
+    }
+  }
+]

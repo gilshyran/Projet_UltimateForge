@@ -1,0 +1,43 @@
+{
+  "id": "ultimateforge",
+  "title": "UltimateForge - Worldbuilding Suite",
+  "description": "La suite ultime de création de monde systémique. Tous ce dont vous avez besoin dans un seul écosystème dynamique.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Ours_glace",
+      "url": "https://www.avantis.world",
+      "email": "contact@avantis.world"
+    }
+  ],
+  "esmodules": [
+    "scripts/hexforge-app.mjs",
+    "scripts/cityforge-app.mjs",
+    "scripts/journeyforge-app.mjs",
+    "scripts/realmsforge-app.mjs",
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/ultimateforge.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "languages/fr.json"
+    }
+  ],
+  
+  "url": "https://avantis.world",
+  "manifest": "https://raw.githubusercontent.com/gilshyran/Projet_UltimateForge/refs/heads/main/ultimateforge-cityforge/module.json",
+  "download": "https://github.com/gilshyran/Projet_UltimateForge/releases/download/v1.0.0/ultimateforge-cityforge.zip"
+}

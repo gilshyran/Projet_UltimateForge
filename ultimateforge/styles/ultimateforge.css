@@ -1,0 +1,489 @@
+/* ==========================================================================
+   ULTIMATEFORGE - FEUILLE DE STYLE PRINCIPALE (V13)
+   ========================================================================== */
+
+/* --- STYLE GLOBAL DE LA FENÊTRE HUD --- */
+#ultimateforge-hud {
+    background: url('../../../ui/parchment.jpg') repeat; /* Fond parchemin natif de Foundry */
+    border: 2px solid #3c352b;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000000;
+}
+
+.uf-hud-container {
+    padding: 5px;
+    font-family: "Signika", sans-serif;
+}
+
+.uf-hud-container h1, 
+.uf-hud-container h2, 
+.uf-hud-container h3, 
+.uf-hud-container h4 {
+    font-weight: 500;
+    text-shadow: none;
+    letter-spacing: 0.5px;
+}
+
+/* --- BOUCLIER DE SÉCURITÉ V13 (Limite la largeur) --- */
+.ultimateforge-hud-window {
+    max-width: 320px !important;
+    width: 320px !important;
+    overflow-x: hidden;
+}
+
+/* --- HEADER / LOGO --- */
+.uf-header-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.uf-header-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* --- SECTIONS (Conteneurs) --- */
+.uf-section {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #7a6e53;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #f0f0e0;
+}
+
+.uf-title {
+    margin: 0 0 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #7a6e53;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* --- HORLOGE NARRATRICE (Temps) --- */
+.uf-time-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+}
+
+.uf-time-btn {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #555;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 5px 0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.uf-time-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px #d4af37;
+    border-color: #d4af37;
+}
+
+/* --- CONTRÔLES MÉTÉO --- */
+.uf-weather-controls {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.uf-weather-controls select {
+    flex: 1;
+}
+
+.uf-weather-controls button {
+    flex: 0 0 40px;
+    cursor: pointer;
+}
+
+.uf-checkbox-group {
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+/* --- GRILLE DES FORGES (La solution au chevauchement) --- */
+.uf-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Force 3 colonnes de taille égale */
+    gap: 8px; /* Espace entre les boutons */
+}
+
+/* --- BOUTONS DES FORGES --- */
+.uf-tool-btn {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: block; 
+    line-height: 0; 
+    cursor: pointer;
+    /* --- CORRECTIFS ANTI-CHEVAUCHEMENT --- */
+    height: auto !important; /* Écrase la hauteur fixe native de Foundry */
+    min-height: min-content; /* Force le bouton à englober toute l'image */
+    overflow: visible;
+}
+
+.uf-tool-btn img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* -- ÉTATS DYNAMIQUES DES FORGES (Gérés par le MJS) -- */
+
+/* Module Désactivé (Grisé) */
+.uf-tool-btn.uf-disabled {
+    cursor: not-allowed;
+}
+
+.uf-tool-btn.uf-disabled img {
+    filter: grayscale(100%) opacity(40%);
+}
+
+/* Hover classique (Si le module est actif) */
+.uf-tool-btn:not(.uf-disabled):hover img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
+
+/* Module Allumé / Actif (Ex: HexForge en cours d'utilisation) */
+.uf-tool-btn.uf-active img {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px rgba(243, 156, 18, 0.8));
+}
+
+/* ==========================================================================
+   CITYFORGE - STYLE DE L'APPLICATION (V13)
+   ========================================================================== */
+
+.avantis-cityforge {
+    font-family: var(--font-primary, "Signika", sans-serif);
+    color: #2c3e50;
+    padding: 10px;
+}
+
+.cf-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cf-logo {
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
+}
+
+.cf-subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+.cf-controls-panel {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+}
+
+.cf-control-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cf-control-row .control-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cf-control-row label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.cf-control-row select {
+    height: 36px;
+    padding: 4px 8px;
+    line-height: normal;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    background: #ecf0f1;
+    font-family: inherit;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.cf-action-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--font-header, "Modesto Condensed", serif);
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: white;
+    border: 1px solid #1f618d;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.cf-action-btn:not(:disabled):hover {
+    background: linear-gradient(to bottom, #2980b9, #1f618d);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+.cf-results {
+    animation: fadeIn 0.5s ease;
+}
+
+/* --- TITRE ÉDITABLE CITYFORGE --- */
+.cf-city-title-input {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #8e44ad;
+    border: none;
+    background: transparent;
+    border-bottom: 2px dashed rgba(142, 68, 173, 0.3); /* Ligne pointillée pour indiquer que c'est éditable */
+    margin: 0 0 5px 0;
+    font-family: var(--font-header, "Modesto Condensed", serif);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    cursor: text;
+    transition: border-bottom 0.3s ease;
+}
+
+.cf-city-title-input:focus {
+    outline: none;
+    border-bottom: 2px solid #8e44ad; /* Ligne pleine quand on clique dessus */
+}
+
+.cf-city-subtitle {
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8e44ad;
+    padding-bottom: 10px;
+}
+
+.cf-narrative-box {
+    background: url('../../../ui/parchment.jpg') repeat;
+    background-color: #fdf6e3;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1.15em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #2c3e50;
+}
+
+.cf-narrative-box p {
+    margin-bottom: 15px;
+}
+
+.cf-dropcap {
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.8;
+    padding-top: 4px;
+    padding-right: 8px;
+    color: #e67e22;
+    font-family: var(--font-header, "Modesto Condensed", serif);
+}
+
+.cf-leader-highlight {
+    color: #2980b9;
+    padding: 2px 5px;
+    background: rgba(41, 128, 185, 0.1);
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.cf-section-title {
+    font-family: var(--font-header, "Modesto Condensed", serif);
+    font-size: 1.8em;
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    margin-bottom: 15px;
+}
+
+.cf-districts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.cf-district-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #bdc3c7;
+    border-left: 4px solid #27ae60;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cf-district-card h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.cf-district-card p {
+    margin: 0 0 10px 0;
+    font-size: 0.95em;
+    font-style: italic;
+    color: #555;
+}
+
+.cf-district-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cf-district-card li {
+    margin-bottom: 3px;
+}
+
+.hidden { display: none !important; }
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+/* ==========================================================================
+   CITYFORGE - NARRATIVE & JOURNAL BOXES (Thématisation)
+   ========================================================================== */
+.cf-window-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.cf-update-btn {
+    background: linear-gradient(to bottom, #e67e22, #d35400) !important;
+    border-color: #e67e22 !important;
+    margin-left: 15px;
+}
+
+/* --- BOÎTES NARRATIVES GÉNÉRIQUES --- */
+.cf-box {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    line-height: 1.5;
+}
+
+.cf-box h3, .cf-box h4 {
+    margin: 0 0 8px 0;
+    padding-bottom: 5px;
+}
+
+.cf-box p { margin: 0; color: #333; }
+
+/* --- SECTIONS SPÉCIFIQUES --- */
+.cf-intro-box { border-bottom: 1px solid #bdc3c7; padding: 0 0 15px 0; margin-bottom: 15px; }
+.cf-intro-box h3 { color: #2c3e50; border-bottom: 1px solid #bdc3c7; }
+
+.cf-vibe-box { background: rgba(142, 68, 173, 0.05); border-left: 3px solid #8e44ad; }
+.cf-vibe-box h4 { color: #8e44ad; }
+.cf-vibe-summary { display: inline-block; margin-top: 5px; }
+.cf-vibe-and { color: #7b1e1e; font-weight: bold; }
+
+.cf-state-box { background: rgba(192, 57, 43, 0.05); border-left: 4px solid #c0392b; margin-bottom: 15px; border-radius: 0 4px 4px 0; padding: 10px; }
+.cf-state-box h4 { color: #c0392b; margin: 0 0 5px 0; }
+.cf-state-box p { margin: 0; font-size: 0.95em; color: #444; }
+
+.cf-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+
+.cf-gov-box { background: rgba(41, 128, 185, 0.05); border: 1px solid #d6eaf8; }
+.cf-gov-box h4 { color: #2980b9; }
+
+.cf-eco-box { background: rgba(39, 174, 96, 0.05); border: 1px solid #d5f5e3; }
+.cf-eco-box h4 { color: #27ae60; }
+
+.cf-political-box { background: #fdf5e6; border-left: 3px solid #e67e22; padding: 6px 10px; margin-bottom: 10px; border-radius: 0 4px 4px 0; }
+.cf-political-box p { color: #d35400; font-style: italic; font-size: 0.9em; margin: 0; }
+
+.cf-tags-footer { margin-top: 15px; font-size: 0.85em; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 8px; text-align: center; }
+.cf-tag-vibe { color: #8e44ad; text-transform: capitalize; }
+.cf-tag-eco { color: #27ae60; text-transform: capitalize; }
+
+.cf-poi-badge { 
+    display: inline-flex; align-items: center; gap: 5px; 
+    background: rgba(0,0,0,0.05); border: 1px solid #ccc; 
+    padding: 4px 10px; border-radius: 12px; font-size: 0.85em; 
+    cursor: pointer; transition: all 0.2s ease; margin-bottom: 4px; color: #2c3e50;
+}
+.cf-poi-badge:hover { background: #3498db; color: white; border-color: #2980b9; transform: translateY(-1px); }
+
+/* ==========================================================================
+   TAVERNES & POINTS D'INTÉRÊT (Générateurs Internes)
+   ========================================================================== */
+
+/* Titre principal avec couleurs dynamiques selon qualité */
+.cf-poi-title { margin-bottom: 5px; border-bottom: 2px solid; }
+.cf-quality-faible { color: #7f8c8d; border-color: #7f8c8d; }
+.cf-quality-moyenne { color: #27ae60; border-color: #27ae60; }
+.cf-quality-elevee { color: #f39c12; border-color: #f39c12; }
+
+/* Badges d'information sous le titre */
+.cf-poi-tags { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+.cf-poi-tag { background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; color: #333; }
+
+/* Boîte d'ambiance et clientèle */
+.cf-poi-info-box { background: rgba(0,0,0,0.03); padding: 15px; border-left: 4px solid; border-radius: 0 5px 5px 0; margin-bottom: 20px; }
+.cf-quality-border-faible { border-color: #7f8c8d; }
+.cf-quality-border-moyenne { border-color: #27ae60; }
+.cf-quality-border-elevee { border-color: #f39c12; }
+
+/* Sous-titres des sections (Personnel, Repas, Services) */
+.cf-poi-section-title { color: #2c3e50; border-bottom: 1px solid #bdc3c7; margin-top: 15px; padding-bottom: 5px; }
+.cf-poi-section-title:first-child { margin-top: 0; }
+
+/* Listes de personnel et menus */
+.cf-poi-staff-list { list-style-type: none; padding-left: 0; margin-bottom: 20px; color: #333; }
+.cf-poi-staff-list li { margin-bottom: 4px; }
+.cf-poi-menu-list { list-style-type: none; padding-left: 0; margin-top: 5px; }
+.cf-poi-menu-list li { margin-bottom: 5px; border-bottom: 1px dashed #ddd; padding-bottom: 3px; }
+.cf-poi-menu-price { color: #d35400; float: right; font-weight: bold; }
+
+/* Boîte des rumeurs de Taverne */
+.cf-tavern-discussions-box { background: #fdf5e6; border: 1px solid #e67e22; padding: 15px; border-radius: 5px; margin-top: 15px; }
+.cf-tavern-discussions-title { margin: 0 0 8px 0; color: #d35400; }
+.cf-tavern-rumor { margin: 0 0 10px 0; font-style: italic; color: #555; padding-bottom: 5px; border-bottom: 1px dashed #f5cba7; }
+.cf-tavern-rumor:last-child { margin-bottom: 0; border-bottom: none; }
+
+/* Mise en évidence des acteurs dans les rumeurs */
+.cf-faction1-highlight { color: #8e44ad; font-weight: bold; }
+.cf-faction2-highlight { color: #c0392b; font-weight: bold; }
+.cf-npc-highlight { color: #2980b9; font-weight: bold; }
+
+/* Boîte de l'événement de chambre */
+.cf-tavern-room-event { background: #f4f6f7; border: 1px solid #bdc3c7; padding: 15px; border-radius: 5px; }
+.cf-tavern-room-event h4 { margin: 0 0 8px 0; color: #7f8c8d; }

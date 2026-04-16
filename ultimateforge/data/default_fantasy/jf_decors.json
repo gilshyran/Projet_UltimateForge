@@ -1,0 +1,1567 @@
+[
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "La chaleur du soleil fait exhaler aux vieux pavés impériaux une odeur de pierre chaude et de poussière. Le rythme régulier de vos bottes résonne sur cette large voie, marquée par les profondes ornières de milliers de chariots passés avant vous.",
+      "en": "The heat of the sun makes the old imperial cobblestones exhale a smell of hot stone and dust. The steady rhythm of your boots echoes on this wide path, marked by the deep ruts of thousands of carts that came before you."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "decouvert"
+    ]
+  },
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "Les antiques dalles de pierre disparaissent à quelques mètres, englouties par une brume laiteuse et poisseuse. La mousse humide glisse sous vos semelles, et le brouillard étouffe le son de vos pas, rendant cette avancée à l'aveugle particulièrement angoissante.",
+      "en": "The ancient stone slabs disappear a few yards away, swallowed by a milky, sticky mist. Damp moss slips under your soles, and the fog muffles the sound of your footsteps, making this blind advance particularly nerve-wracking."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "L'eau ruisselle en torrents le long du bombement usé de la route, lavant la crasse des pavés lisses. Une forte odeur d'ozone et de terre mouillée emplit l'air tandis que vous marchez, totalement à découvert et trempés jusqu'aux os.",
+      "en": "Water streams in torrents along the worn camber of the road, washing the grime from the smooth cobblestones. A strong smell of ozone and wet earth fills the air as you walk, completely exposed and soaked to the bone."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "decouvert"
+    ]
+  },
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "Un épais manteau blanc étouffe le cliquetis habituel de la chaussée. Seul le tracé rectiligne, bordé de bornes à moitié ensevelies, vous indique que vous marchez bien sur la voie principale et non dans la nature sauvage.",
+      "en": "A thick white mantle muffles the usual clatter of the roadway. Only the straight alignment, bordered by half-buried markers, tells you that you are indeed walking on the main road and not in the wild."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "Les bourrasques hurlent en balayant cette artère totalement exposée aux éléments. Bien que la pierre offre de solides appuis face à la tempête, vous n'avez absolument nulle part où vous abriter des débris projetés par le vent.",
+      "en": "Gales howl as they sweep across this artery totally exposed to the elements. Although the stone offers solid footing against the storm, you have absolutely nowhere to shelter from the wind-blown debris."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Un tapis tourbillonnant de feuilles rousses et dorées masque par endroits les pavés disjoints. À chaque bourrasque, l'odeur douce-amère de l'humus et du bois mort vous rappelle que la saison froide approche à grands pas.",
+      "en": "A swirling carpet of russet and gold leaves obscures the disjointed cobblestones in places. With each gust, the bittersweet smell of humus and dead wood reminds you that the cold season is fast approaching."
+    },
+    "stage_tags": [
+      "voie_principale",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Une simple saignée de terre battue serpente à travers le paysage. L'odeur des herbes folles écrasées sous vos bottes monte dans l'air sec, trahissant un sentier discret mais régulièrement emprunté.",
+      "en": "A simple gash of beaten earth winds through the landscape. The smell of wild weeds crushed under your boots rises in the dry air, betraying a discreet but regularly used trail."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "Le fin sentier se fond imperceptiblement dans le brouillard environnant. Des branches invisibles vous frôlent le visage, humides de rosée, rendant chaque pas incertain dans ce voile cotonneux.",
+      "en": "The thin trail blends imperceptibly into the surrounding fog. Invisible branches brush your face, damp with dew, making every step uncertain in this cottony veil."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "L'averse a transformé le modeste chemin en un bourbier infâme et collant. Chaque pas s'accompagne d'un bruit de succion écœurant, l'argile détrempée tentant de vous arracher vos bottes.",
+      "en": "The downpour has turned the modest path into a foul, sticky quagmire. Each step is accompanied by a sickening sucking sound, the sodden clay trying to rip off your boots."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "La piste n'est plus qu'une discrète dépression dans le paysage immaculé. Sans les hautes herbes pliant sous le poids de la neige sur les côtés, il serait impossible de deviner où le sentier vous mène.",
+      "en": "The track is now just a discreet depression in the pristine landscape. Without the tall grass bending under the weight of the snow on the sides, it would be impossible to guess where the trail leads."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "Le sentier est devenu une véritable ravine où s'écoulent des torrents de boue charriant cailloux et branches brisées. Garder l'équilibre relève de l'exploit sous la fureur de la tempête.",
+      "en": "The trail has become a veritable ravine where torrents of mud flow, carrying pebbles and broken branches. Keeping your balance is quite a feat under the fury of the storm."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Le chemin est littéralement étouffé sous un matelas épais de feuilles mortes croustillantes. Si la marche est souple, le vacarme produit à chaque enjambée rend toute tentative d'approche discrète impossible.",
+      "en": "The path is literally smothered under a thick mattress of crispy dead leaves. While the walk is soft, the racket produced with every stride makes any attempt at a stealthy approach impossible."
+    },
+    "stage_tags": [
+      "voie_secondaire",
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le soleil illumine la solide structure du pont qui enjambe majestueusement l'obstacle en contrebas. La vue dégagée permet de repérer facilement tout mouvement sur l'autre rive avant même de s'engager sur ce goulot d'étranglement.",
+      "en": "The sun illuminates the solid structure of the bridge that majestically spans the obstacle below. The clear view allows you to easily spot any movement on the other bank even before entering this chokepoint."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "L'édifice de pierre plonge dans une brume si épaisse que la rive opposée est invisible. Le vide résonne sous le tablier, et chaque pas produit un écho étrange dans ce coton poisseux qui masque les périls de la traversée.",
+      "en": "The stone edifice plunges into a mist so thick that the opposite bank is invisible. The void echoes beneath the deck, and each step produces a strange echo in this sticky cotton that hides the perils of the crossing."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "danger_environnemental",
+      "danger_structurel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "L'averse s'abat sans pitié sur le pont, rendant les pierres humides et particulièrement glissantes. En contrebas, le tumulte assourdissant des éléments gonflés par la pluie couvre la quasi-totalité des autres bruits.",
+      "en": "The downpour beats mercilessly on the bridge, making the stones wet and particularly slippery. Below, the deafening tumult of the rain-swollen elements drowns out almost all other sounds."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "La neige a accumulé d'épaisses congères sur le parapet de l'ouvrage. Le vent glacial s'engouffre dans la structure, transformant cette traversée à découvert en une dangereuse épreuve d'équilibre sur une surface gelée.",
+      "en": "Snow has accumulated thick drifts on the parapet of the structure. The icy wind rushes through the bridge, turning this exposed crossing into a dangerous balancing act on a frozen surface."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "danger_environnemental",
+      "danger_structurel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "La tempête hurle et s'engouffre avec une violence inouïe autour du pont, qui semble soudain bien fragile face aux bourrasques. Traverser cet axe totalement exposé aux rafales tient du suicide.",
+      "en": "The storm howls and rushes with unprecedented violence around the bridge, which suddenly seems quite fragile against the gusts. Crossing this axis totally exposed to the squalls borders on suicide."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "danger_mortel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "pont"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Des tourbillons de feuilles mortes dansent sur le tablier du pont avant d'être emportés dans le vide. La structure, recouverte d'un tapis ocre et rouge, offre un passage pittoresque mais dont les craquements trahiront votre présence.",
+      "en": "Swirls of dead leaves dance on the bridge deck before being swept into the void. The structure, covered in an ochre and red carpet, offers a picturesque passage but its crunching will betray your presence."
+    },
+    "stage_tags": [
+      "passage_oblige",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "La silhouette fière et usée d'une tour de guet se dresse contre le ciel dégagé. Bien que rongée par les années, son sommet offre toujours un point d'observation stratégique inégalé sur toute la région environnante.",
+      "en": "The proud and worn silhouette of a watchtower stands against the clear sky. Although eaten away by the years, its summit still offers an unparalleled strategic observation point over the entire surrounding region."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "avant_poste",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "Une masse sombre et menaçante perce soudain le brouillard : les ruines d'une tour de guet. L'édifice semble vous épier depuis les hauteurs de la brume, dressé comme un phare aveugle et silencieux.",
+      "en": "A dark and threatening mass suddenly pierces the fog: the ruins of a watchtower. The building seems to spy on you from the heights of the mist, standing like a blind and silent lighthouse."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "avant_poste",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "L'eau dégouline le long des murs moussus de l'ancienne tour de guet. Ses fondations épaisses et la voûte partiellement intacte de son rez-de-chaussée offrent un refuge austère mais vital contre les trombes d'eau.",
+      "en": "Water drips down the mossy walls of the old watchtower. Its thick foundations and the partially intact vault of its ground floor offer an austere but vital refuge from the downpours."
+    },
+    "stage_tags": [
+      "avant_poste",
+      "abri",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "La vieille maçonnerie de la tour contraste rudement avec le blanc immaculé de la neige. Des congères bloquent en partie l'entrée de cet édifice militaire qui a vu passer d'innombrables hivers hostiles.",
+      "en": "The old masonry of the tower contrasts harshly with the pristine white of the snow. Snowdrifts partially block the entrance to this military building that has seen countless hostile winters pass."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "avant_poste",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "Des éclairs déchirent le ciel au-dessus de la tour de guet, dont la silhouette de pierre défie héroïquement la tempête. Ses murs massifs résonnent sous le tonnerre, promettant une protection inébranlable contre le chaos extérieur.",
+      "en": "Lightning tears through the sky above the watchtower, whose stone silhouette heroically defies the storm. Its massive walls resonate under the thunder, promising unshakeable protection against the chaos outside."
+    },
+    "stage_tags": [
+      "avant_poste",
+      "abri",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Du lierre rougi par l'automne grimpe à l'assaut des pierres disjointes de la tour de guet. Des monceaux de feuilles sèches se sont accumulés au pied de ses murailles, embaumant l'air d'une odeur de terre et de souvenirs oubliés.",
+      "en": "Ivy reddened by autumn climbs the disjointed stones of the watchtower. Heaps of dry leaves have accumulated at the foot of its walls, perfuming the air with the smell of earth and forgotten memories."
+    },
+    "stage_tags": [
+      "avant_poste",
+      "point_de_repere",
+      "vestiges"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Les squelettes de pierre d'une civilisation oubliée se dressent fièrement sous la lumière du soleil. Des ombres dures soulignent les bas-reliefs érodés, offrant un terrain d'exploration aussi majestueux qu'intimidant.",
+      "en": "The stone skeletons of a forgotten civilization stand proudly under the sunlight. Harsh shadows highlight the eroded bas-reliefs, offering an exploration ground as majestic as it is intimidating."
+    },
+    "stage_tags": [
+      "vestiges",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "Le brouillard s'engouffre dans les rues mortes et les fenêtres brisées de la cité en ruine. Les statues mutilées surgissent de la brume comme des spectres figés, transformant les décombres en un labyrinthe angoissant.",
+      "en": "The fog rushes into the dead streets and broken windows of the ruined city. Mutilated statues emerge from the mist like frozen specters, turning the rubble into a nerve-wracking labyrinth."
+    },
+    "stage_tags": [
+      "vestiges",
+      "danger_structurel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "Des cascades d'eau sale se déversent depuis les corniches éventrées. Si les pavés disjoints sont devenus de véritables patinoires, les vastes voûtes encore debout offrent de nombreux abris secs pour échapper à l'averse.",
+      "en": "Cascades of dirty water pour from the gutted cornices. While the disjointed cobblestones have become veritable ice rinks, the vast vaults still standing offer numerous dry shelters to escape the downpour."
+    },
+    "stage_tags": [
+      "vestiges",
+      "abri"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "La cité antique dort sous un linceul d'une blancheur immaculée, d'une beauté à couper le souffle. Mais cette neige épaisse est traîtresse : elle dissimule les fosses béantes et les planchers pourris qui ne demandent qu'à céder.",
+      "en": "The ancient city sleeps under a shroud of pristine white, breathtakingly beautiful. But this thick snow is treacherous: it conceals gaping pits and rotten floors just waiting to give way."
+    },
+    "stage_tags": [
+      "vestiges",
+      "danger_structurel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "Le vent hurle à travers les arcades brisées avec un son de flûte macabre. Sous la violence des éléments, des pans entiers de maçonnerie millénaire se détachent et s'écrasent au sol dans un fracas terrifiant.",
+      "en": "The wind howls through the broken arcades with a macabre flute sound. Under the violence of the elements, entire sections of millennial masonry break loose and crash to the ground with a terrifying roar."
+    },
+    "stage_tags": [
+      "vestiges",
+      "danger_structurel",
+      "danger_mortel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Les cours intérieures des ruines sont noyées sous des monticules de feuilles mortes amenées par le vent. Chaque pas résonne bruyamment dans le silence mortuaire de cette architecture à l'abandon.",
+      "en": "The inner courtyards of the ruins are drowned under mounds of dead leaves blown in by the wind. Every step echoes loudly in the deathly silence of this abandoned architecture."
+    },
+    "stage_tags": [
+      "vestiges",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "D'imposantes formations s'élèvent du sol, captant la lumière du jour de manière anormale. L'air crépite d'une énergie résiduelle qui fait frissonner la peau et dresse les poils sur les bras.",
+      "en": "Imposing formations rise from the ground, catching the daylight unnaturally. The air crackles with residual energy that makes the skin shiver and the hair on your arms stand up."
+    },
+    "stage_tags": [
+      "anomalie",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "L'anomalie pulse doucement, diffusant une aura étrange qui repousse ou colore le brouillard autour d'elle. Elle agit comme un phare hypnotique au milieu de la purée de pois.",
+      "en": "The anomaly pulses softly, radiating a strange aura that repels or colors the fog around it. It acts as a hypnotic beacon amidst the pea soup."
+    },
+    "stage_tags": [
+      "anomalie",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "Les gouttes de pluie grésillent et s'évaporent au contact de la structure avant même de la toucher, créant un nuage de vapeur chaude. L'eau ruisselant à sa base semble chargée d'une propriété singulière.",
+      "en": "Raindrops sizzle and evaporate upon contact with the structure before even touching it, creating a cloud of hot steam. The water trickling at its base seems charged with a singular property."
+    },
+    "stage_tags": [
+      "anomalie",
+      "ressource"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "La structure dégage une chaleur douce et constante. La neige a fondu en un cercle parfait tout autour, offrant un îlot de chaleur providentiel et sec au milieu de l'enfer blanc.",
+      "en": "The structure emits a soft, constant heat. The snow has melted in a perfect circle all around it, offering a providential and dry island of warmth amidst the white hell."
+    },
+    "stage_tags": [
+      "anomalie",
+      "abri"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "L'édifice agit comme un paratonnerre colossal. Il absorbe les éclairs de la tempête dans des flashs aveuglants et des détonations assourdissantes. S'en approcher relève de la folie pure.",
+      "en": "The edifice acts as a colossal lightning rod. It absorbs the storm's lightning in blinding flashes and deafening detonations. Approaching it borders on pure madness."
+    },
+    "stage_tags": [
+      "anomalie",
+      "danger_mortel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Les lois de la gravité semblent altérées ici. Les feuilles mortes ne tombent pas : elles tourbillonnent lentement en lévitation autour de la structure, portées par des courants d'énergie invisibles.",
+      "en": "The laws of gravity seem altered here. Dead leaves do not fall: they swirl slowly in levitation around the structure, carried by invisible currents of energy."
+    },
+    "stage_tags": [
+      "anomalie",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "tour_guet",
+      "ruines_antiques",
+      "ruins_city"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Les silhouettes effondrées d'antiques bâtisses de pierre se découpent majestueusement. Leurs murs brisés offrent une protection contre le vent.",
+      "en": "The collapsed silhouettes of ancient stone buildings stand out majestically. Their broken walls offer protection against the wind."
+    },
+    "stage_tags": [
+      "vestiges",
+      "abri"
+    ]
+  },
+  {
+    "trait_tags": [
+      "temple",
+      "sanctuaire"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "À moitié englouti par la nature, un lieu de culte dédié à une divinité oubliée témoigne d'une ferveur passée.",
+      "en": "Half engulfed by nature, a place of worship dedicated to a forgotten deity bears witness to past fervor."
+    },
+    "stage_tags": [
+      "vestiges",
+      "anomalie"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere",
+      "lac",
+      "cascade"
+    ],
+    "weather_tags": [
+      "clear",
+      "all"
+    ],
+    "text": {
+      "fr": "Votre chemin croise une vaste étendue d'eau claire. Le murmure du courant invite à une pause bien méritée.",
+      "en": "Your path crosses a vast expanse of clear water. The murmur of the current invites a well-deserved pause."
+    },
+    "stage_tags": [
+      "ressource",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere",
+      "lac",
+      "cascade"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Les précipitations ont gonflé les eaux, transformant le flot paisible en un torrent dangereux et infranchissable.",
+      "en": "The rainfall has swollen the waters, turning the peaceful flow into a dangerous and impassable torrent."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "grotte"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Sur le flanc d'une paroi, une béance rocheuse forme l'entrée d'une grotte sombre qui s'enfonce sous la terre. Parfait pour échapper à la vue de tous.",
+      "en": "On the side of a rock face, a gaping hole forms the entrance to a dark cave that sinks underground. Perfect to escape sight."
+    },
+    "stage_tags": [
+      "souterrain",
+      "abri",
+      "isole"
+    ]
+  },
+  {
+    "trait_tags": [
+      "faille",
+      "cratere"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Le terrain se déchire brusquement devant vous, révélant un gouffre vertigineux qu'il va falloir contourner avec la plus extrême prudence.",
+      "en": "The ground suddenly tears open before you, revealing a dizzying chasm that you will have to navigate around with extreme caution."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "danger_mortel",
+      "isole"
+    ]
+  },
+  {
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Un arbre colossal, vieux de plusieurs siècles, domine les alentours. Ses racines massives forment un réseau de cachettes naturelles.",
+      "en": "A colossal tree, centuries old, dominates the surroundings. Its massive roots form a network of natural hiding places."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "abri"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monolithe",
+      "cristaux"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "D'étranges formations s'élèvent du sol. L'air crépite d'une énergie ancienne qui fait frissonner la peau.",
+      "en": "Strange formations rise from the ground. The air crackles with an ancient energy that makes the skin shiver."
+    },
+    "stage_tags": [
+      "anomalie",
+      "isole"
+    ]
+  },
+  {
+    "trait_tags": [
+      "carcasse",
+      "repaire"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Une odeur forte de musc et de charogne empeste l'air. Des restes rongés jonchent le sol, indiquant que ce territoire appartient à quelque chose de redoutable.",
+      "en": "A strong smell of musk and carrion stinks the air. Gnawed remains litter the ground, indicating this territory belongs to something fearsome."
+    },
+    "stage_tags": [
+      "macabre",
+      "predateurs",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Le sol ici est malade. La végétation y est tordue et l'air laisse un goût de cendre dans la bouche. Aucun oiseau ne chante.",
+      "en": "The soil here is sick. The vegetation is twisted and the air leaves a taste of ash in the mouth. No birds sing."
+    },
+    "stage_tags": [
+      "danger_environnemental",
+      "isole"
+    ]
+  },
+  {
+    "trait_tags": [
+      "approche_ville",
+      "campement",
+      "hameau",
+      "village",
+      "petite_ville",
+      "grande_cite",
+      "metropole",
+      "capitale"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "L'activité s'intensifie. Les signes de civilisation se multiplient autour de vous, vous sortant de l'isolement des terres sauvages.",
+      "en": "Activity intensifies. Signs of civilization multiply around you, taking you out of the isolation of the wild lands."
+    },
+    "stage_tags": [
+      "approche_civilisation",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "taverne_isolee",
+      "ferme",
+      "moulin",
+      "camp_minier",
+      "monastere"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "À l'écart des grandes routes, une structure isolée offre un havre de chaleur et d'activité humaine au milieu de la nature sauvage.",
+      "en": "Away from the main roads, an isolated structure offers a haven of warmth and human activity amidst the wild nature."
+    },
+    "stage_tags": [
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "L'eau cristalline serpente entre les galets polis, reflétant l'éclat pur du soleil. Le murmure apaisant du courant et la fraîcheur qui s'en dégage invitent à remplir les gourdes et à accorder un instant de répit aux montures.",
+      "en": "The crystal-clear water winds between polished pebbles, reflecting the pure brilliance of the sun. The soothing murmur of the current and the freshness it emanates invite you to fill your waterskins and grant a moment of respite to the mounts."
+    },
+    "stage_tags": [
+      "ressource",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le cours d'eau est ici plus vif, brisant son écume sur des rochers saillants. Une odeur de menthe sauvage et de terre humide flotte dans l'air, tandis que des poissons argentés bondissent occasionnellement hors de l'eau.",
+      "en": "The stream is livelier here, breaking its foam on jutting rocks. A smell of wild mint and damp earth lingers in the air, while silvery fish occasionally leap out of the water."
+    },
+    "stage_tags": [
+      "ressource",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "La rivière n'est plus qu'un grondement invisible sous un voile de brume épaisse. L'air est saturé d'humidité, et les rives glissantes disparaissent dans un néant grisâtre, rendant toute tentative de traversée à gué extrêmement risquée.",
+      "en": "The river is now just an invisible roar beneath a veil of thick fog. The air is saturated with moisture, and the slippery banks disappear into a greyish void, making any attempt to ford extremely risky."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "La pluie cingle la surface de l'eau, créant des milliers de petites pulsations. Le courant est devenu plus sombre, charriant des sédiments et des branches, signe que le niveau monte doucement mais sûrement.",
+      "en": "The rain lashes the water's surface, creating thousands of tiny pulses. The current has grown darker, carrying sediment and branches, a sign that the level is rising slowly but surely."
+    },
+    "stage_tags": [
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "rain"
+    ],
+    "text": {
+      "fr": "Une odeur de vase et de terre détrempée monte des berges qui s'effritent sous l'assaut de l'averse. La rivière gronde sourdement, transformant ce qui était un ruisseau paisible en une barrière boueuse et tumultueuse.",
+      "en": "A smell of silt and waterlogged earth rises from the banks crumbling under the assault of the downpour. The river rumbles dully, turning what was a peaceful stream into a muddy and tumultuous barrier."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "Des plaques de glace translucide dérivent lentement sur une eau d'un bleu profond, presque noir. Un silence irréel règne sur les rives enneigées, seulement rompu par le tintement cristallin des glaçons s'entrechoquant.",
+      "en": "Plates of translucent ice drift slowly on deep blue, almost black water. An unreal silence reigns over the snowy banks, only broken by the crystalline clinking of ice floes colliding."
+    },
+    "stage_tags": [
+      "danger_environnemental",
+      "isole"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "La rivière est entrée dans une rage folle, sortant de son lit pour engloutir les arbres environnants. Le fracas des eaux en furie est assourdissant, et des vagues limoneuses emportent tout sur leur passage avec une force destructrice.",
+      "en": "The river has entered a mad rage, bursting its banks to swallow the surrounding trees. The roar of the raging waters is deafening, and silty waves sweep everything in their path with destructive force."
+    },
+    "stage_tags": [
+      "danger_mortel",
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "riviere"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Un tapis mouvant de feuilles mortes de toutes les nuances d'ocre recouvre presque entièrement la surface de l'eau. Le courant les entraîne dans un ballet silencieux, masquant les rochers traîtres et la profondeur réelle du lit.",
+      "en": "A shifting carpet of dead leaves in every shade of ochre almost entirely covers the water's surface. The current carries them in a silent ballet, masking treacherous rocks and the true depth of the bed."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "lac"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "La vaste étendue d'eau est un miroir parfait pour le ciel azur. L'absence totale de vent rend la surface si lisse qu'il est difficile de distinguer où finit la terre et où commence le reflet des montagnes lointaines.",
+      "en": "The vast expanse of water is a perfect mirror for the azure sky. The total absence of wind makes the surface so smooth that it is hard to distinguish where the land ends and the reflection of the distant mountains begins."
+    },
+    "stage_tags": [
+      "halte",
+      "point_de_repere"
+    ]
+  },
+  {
+    "trait_tags": [
+      "lac"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Une brise légère fait clapotir l'eau contre la rive rocailleuse. L'odeur des joncs et du sel de roche emplit l'air. Des oiseaux aquatiques plongent régulièrement, troublant la quiétude de ce havre sauvage.",
+      "en": "A light breeze laps the water against the rocky shore. The smell of rushes and rock salt fills the air. Water birds dive regularly, disturbing the tranquility of this wild haven."
+    },
+    "stage_tags": [
+      "ressource",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "lac"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "Un brouillard épais et immobile semble s'être déposé à demeure sur les eaux stagnantes. On n'entend que le goutte-à-goutte monotone de l'humidité sur les roseaux invisibles, créant une atmosphère de solitude absolue.",
+      "en": "A thick, stationary fog seems to have settled permanently on the stagnant waters. All that can be heard is the monotonous dripping of moisture on invisible rushes, creating an atmosphere of absolute solitude."
+    },
+    "stage_tags": [
+      "isole",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "lac"
+    ],
+    "weather_tags": [
+      "snow"
+    ],
+    "text": {
+      "fr": "Le lac est figé dans une armure de glace épaisse, recouverte d'une fine pellicule de neige poudreuse. Quelques craquements sinistres résonnent parfois dans les profondeurs gelées, rappelant que l'abysse respire encore sous vos pieds.",
+      "en": "The lake is frozen in thick ice armor, covered with a thin film of powdery snow. A few sinister cracks sometimes echo in the frozen depths, reminding you that the abyss still breathes beneath your feet."
+    },
+    "stage_tags": [
+      "obstacle_terrain",
+      "danger_mortel"
+    ]
+  },
+  {
+    "trait_tags": [
+      "lac"
+    ],
+    "weather_tags": [
+      "leaves"
+    ],
+    "text": {
+      "fr": "Les rives du lac sont noyées sous une bouillie de feuilles rousses en décomposition, dégageant une odeur forte de tourbe. L'eau est sombre, chargée des pigments de l'automne, et semble absorber la lumière déclinante.",
+      "en": "The lake shores are drowned under a mush of decomposing russet leaves, emanating a strong smell of peat. The water is dark, loaded with autumn pigments, and seems to absorb the fading light."
+    },
+    "stage_tags": [
+      "ressource",
+      "traces"
+    ]
+  },
+  {
+    "trait_tags": [
+      "cascade"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Un rideau d'eau étincelante chute bruyamment dans un bassin naturel profond. Une fine pluie de gouttelettes irisées par le soleil crée des arcs-en-ciel éphémères, rafraîchissant l'air ambiant avec une vivacité bienvenue.",
+      "en": "A curtain of sparkling water falls noisily into a deep natural pool. A fine spray of sun-iridescent droplets creates ephemeral rainbows, cooling the ambient air with a welcome vivacity."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "cascade"
+    ],
+    "weather_tags": [
+      "fog"
+    ],
+    "text": {
+      "fr": "On perçoit le tonnerre de la chute bien avant de l'apercevoir. La cascade émerge soudainement du brouillard comme un mur blanc et rugissant, projetant un nuage de vapeur qui se mêle à la brume pour saturer vos vêtements.",
+      "en": "The thunder of the fall is sensed long before it is seen. The waterfall suddenly emerges from the fog like a white, roaring wall, projecting a cloud of vapor that mingles with the mist to saturate your clothes."
+    },
+    "stage_tags": [
+      "point_de_repere",
+      "danger_environnemental"
+    ]
+  },
+  {
+    "trait_tags": [
+      "cascade"
+    ],
+    "weather_tags": [
+      "storm"
+    ],
+    "text": {
+      "fr": "La cascade est devenue un monstre de puissance brute. Le débit titanesque fait trembler le sol sous vos pieds, et le vent de la tempête rejette violemment l'eau vers le haut, créant un chaos liquide où il est impossible de respirer ou de s'entendre.",
+      "en": "The waterfall has become a monster of raw power. The titanic flow makes the ground tremble beneath your feet, and the storm wind violently throws the water upward, creating a liquid chaos where it is impossible to breathe or hear each other."
+    },
+    "stage_tags": [
+      "danger_mortel",
+      "obstacle_terrain"
+    ]
+  },
+  {
+    "trait_tags": [
+      "taverne_isolee"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Une odeur de feu de bois et de graisse rôtie perce l'air sauvage. Au détour du chemin, une bâtisse trapue aux fenêtres chaleureusement éclairées se dresse. C'est un refuge inespéré, un point d'ancrage pour les voyageurs cherchant un toit loin du tumulte du monde.",
+      "en": "A smell of wood fire and roasted fat pierces the wild air. Around the bend in the path, a squat building with warmly lit windows stands. It is an unexpected refuge, an anchor point for travelers seeking a roof away from the world's tumult."
+    },
+    "stage_tags": [
+      "auberge",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ferme",
+      "moulin"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "La nature indomptée cède peu à peu la place à des terres travaillées par la main de l'homme. Des clôtures rudimentaires et le bruit lointain d'outils agricoles annoncent un domaine rustique, un îlot de labeur obstiné dressé face aux éléments.",
+      "en": "Untamed nature gradually gives way to lands worked by human hands. Crude fences and the distant sound of agricultural tools announce a rustic estate, an island of stubborn labor standing against the elements."
+    },
+    "stage_tags": [
+      "ferme",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monastere"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Le tintement grave et lent d'une cloche résonne à travers le paysage. Entouré de hauts murs isolants, un imposant édifice spirituel impose le respect. Le silence et l'ordre règnent en maîtres dans ce sanctuaire coupé des tentations du siècle.",
+      "en": "The deep, slow tolling of a bell echoes across the landscape. Surrounded by high insulating walls, an imposing spiritual building commands respect. Silence and order reign supreme in this sanctuary cut off from the temptations of the age."
+    },
+    "stage_tags": [
+      "monastere",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "camp_minier",
+      "campement"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Des bruits de voix rugueuses, des claquements de toiles de tente et l'odeur âcre de la sueur et de la terre retournée flottent dans l'air. Une petite communauté éphémère s'est installée ici, barricadée derrière des palissades de fortune pour repousser l'hostilité des terres sauvages.",
+      "en": "Rough voices, flapping tent canvas, and the acrid smell of sweat and turned earth float in the air. A small ephemeral community has settled here, barricaded behind makeshift palisades to fend off the hostility of the wild lands."
+    },
+    "stage_tags": [
+      "campement",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "hameau",
+      "village"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Des aboiements de chiens et le crépitement de multiples cheminées annoncent la fin de l'isolement. Un rassemblement de toits serrés les uns contre les autres se dessine devant vous. C'est une communauté rurale tissée serrée, vibrant au rythme de son propre microcosme.",
+      "en": "Barking dogs and the crackling of multiple chimneys announce the end of isolation. A gathering of roofs huddled close together appears before you. It is a tightly-knit rural community, vibrating to the rhythm of its own microcosm."
+    },
+    "stage_tags": [
+      "village",
+      "approche_civilisation"
+    ]
+  },
+  {
+    "trait_tags": [
+      "petite_ville",
+      "grande_cite"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Les chemins de terre laissent place à une large route pavée et entretenue. L'horizon est barré par de hautes murailles de pierre, des tours de guet et un enchevêtrement dense de toitures. Le bourdonnement continu de milliers de vies s'élève dans les airs : vous arrivez aux portes d'une cité.",
+      "en": "Dirt paths give way to a wide, maintained paved road. The horizon is blocked by high stone walls, watchtowers, and a dense tangle of rooftops. The continuous hum of thousands of lives rises in the air: you are arriving at the gates of a city."
+    },
+    "stage_tags": [
+      "cite",
+      "approche_civilisation"
+    ]
+  },
+  {
+    "trait_tags": [
+      "metropole",
+      "capitale"
+    ],
+    "weather_tags": [
+      "all"
+    ],
+    "text": {
+      "fr": "Le ciel lui-même semble altéré par les fumées colossales qui s'en échappent. Une mer infinie de bâtiments grandioses, de dômes et de flèches écrase le paysage. Le rugissement assourdissant de ce cœur de civilisation vous happe bien avant même d'avoir atteint ses imposantes portes principales.",
+      "en": "The sky itself seems altered by the colossal smoke escaping from it. An endless sea of grandiose buildings, domes, and spires crushes the landscape. The deafening roar of this heart of civilization pulls you in long before you even reach its imposing main gates."
+    },
+    "stage_tags": [
+      "capitale",
+      "approche_civilisation"
+    ]
+  },
+  {
+    "trait_tags": [
+      "taverne_isolee"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le parfum alléchant d'un ragoût épicé et le son de rires lointains flottent dans l'air clair. Au bord du chemin, une grande bâtisse de bois et de pierre vous accueille, portes ouvertes. Des montures se reposent à l'ombre, et l'endroit respire la convivialité d'une halte bien méritée.",
+      "en": "The enticing scent of a spicy stew and the sound of distant laughter float in the clear air. By the side of the path, a large wooden and stone building welcomes you with open doors. Mounts rest in the shade, and the place exudes the conviviality of a well-deserved halt."
+    },
+    "stage_tags": [
+      "auberge",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "taverne_isolee"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Sous le déluge implacable, la lueur chaude qui filtre à travers les volets épais de cette bâtisse trapue est un véritable phare salvateur. D'autres voyageurs couverts de boue se précipitent à l'intérieur, cherchant désespérément un abri, la promesse d'un âtre flamboyant et d'un vin chaud.",
+      "en": "Under the relentless deluge, the warm glow filtering through the thick shutters of this squat building is a true saving beacon. Other mud-covered travelers rush inside, desperately seeking shelter, the promise of a blazing hearth, and warm wine."
+    },
+    "stage_tags": [
+      "auberge",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "taverne_isolee"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "La météo aveuglante étouffe les bruits, jusqu'à ce qu'une enseigne grinçante apparaisse comme un spectre. Les fenêtres givrées de l'auberge isolée laissent deviner une foule blottie à l'intérieur. S'y arrêter est une question de survie face au froid et à l'isolement environnant.",
+      "en": "The blinding weather muffles sounds until a creaking sign appears like a specter. The frosted windows of the isolated inn hint at a crowd huddled inside. Stopping there is a matter of survival against the cold and surrounding isolation."
+    },
+    "stage_tags": [
+      "auberge",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ferme"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Les terres sauvages s'effacent pour laisser place à des champs méthodiquement cultivés ou des pâturages grouillant de bétail. Une ferme robuste se dresse au centre. Des travailleurs s'y affairent sous le ciel dégagé, témoignant de la ténacité humaine à dompter la nature.",
+      "en": "The wild lands fade away, giving way to methodically cultivated fields or pastures teeming with livestock. A sturdy farmhouse stands in the center. Workers are busy under the clear sky, testifying to human tenacity in taming nature."
+    },
+    "stage_tags": [
+      "ferme",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "ferme"
+    ],
+    "weather_tags": [
+      "rain",
+      "fog"
+    ],
+    "text": {
+      "fr": "Des clôtures rudimentaires surgissent de la grisaille, délimitant un domaine noyé sous l'humidité. Les bêtes ont été rentrées à la hâte dans les granges, et les outils agricoles reposent dans la boue. La ferme semble recroquevillée sur elle-même, attendant que le temps s'apaise.",
+      "en": "Crude fences emerge from the gloom, marking out an estate drowned in dampness. The animals have been hastily brought into the barns, and farm tools rest in the mud. The farm seems huddled in on itself, waiting for the weather to calm."
+    },
+    "stage_tags": [
+      "ferme",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "moulin"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le grincement régulier d'une gigantesque machinerie en bois rythme votre progression. Un moulin imposant domine le paysage, transformant la force de la nature en ressource vitale. Une fine poussière de farine vole dans l'air, témoignant de l'activité trépidante du meunier.",
+      "en": "The steady creaking of gigantic wooden machinery sets the pace of your progress. An imposing mill dominates the landscape, transforming nature's force into a vital resource. A fine dust of flour flies in the air, testifying to the miller's bustling activity."
+    },
+    "stage_tags": [
+      "moulin",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "moulin"
+    ],
+    "weather_tags": [
+      "storm",
+      "rain"
+    ],
+    "text": {
+      "fr": "La violence des éléments menace de disloquer la charpente de l'édifice. Le mécanisme du moulin a été bloqué et sécurisé à la hâte par des cordages épais pour éviter qu'il ne s'emballe et ne se brise. Le bâtiment craque sous la pression, dressé comme un colosse résistant au chaos.",
+      "en": "The violence of the elements threatens to tear the building's framework apart. The mill's mechanism has been hastily blocked and secured with thick ropes to prevent it from spinning out of control and breaking. The building creaks under the pressure, standing like a colossus resisting the chaos."
+    },
+    "stage_tags": [
+      "moulin",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "camp_minier"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le claquement métallique des pioches et les cris des contremaîtres se font entendre de loin. Un campement minier éventre le terrain naturel. Des tentes de toile et de bois sont entourées de lourds chariots de minerai et de travailleurs couverts de poussière, s'activant frénétiquement.",
+      "en": "The metallic clatter of pickaxes and the shouts of foremen can be heard from afar. A mining camp rips open the natural terrain. Canvas and wood tents are surrounded by heavy ore carts and dust-covered workers, frantically active."
+    },
+    "stage_tags": [
+      "mine",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "camp_minier"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Le campement minier n'est plus qu'un bourbier infâme. Les excavations se remplissent d'une eau saumâtre, et les mineurs épuisés s'abritent comme ils peuvent sous des toiles goudronnées battues par la pluie. L'endroit dégage une profonde sensation de misère et de labeur acharné.",
+      "en": "The mining camp is nothing more than a foul quagmire. The excavations are filling with brackish water, and exhausted miners take shelter as best they can under tarpaulins beaten by the rain. The place gives off a deep sense of misery and relentless labor."
+    },
+    "stage_tags": [
+      "mine",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monastere"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Isolée des tentations du monde, une structure de pierre austère mais magnifique se dévoile. C'est un monastère retranché. Des jardins méticuleusement entretenus bordent de hauts murs protecteurs, et de lointaines mélodies religieuses apportent une paix inattendue à votre voyage.",
+      "en": "Isolated from the world's temptations, an austere but magnificent stone structure is revealed. It is an entrenched monastery. Meticulously maintained gardens border high protective walls, and distant religious melodies bring unexpected peace to your journey."
+    },
+    "stage_tags": [
+      "monastere",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "monastere"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "Le tintement grave et lancinant d'une cloche perce le voile opaque de la météo, vous guidant à travers l'isolement. L'imposante silhouette d'un monastère apparaît soudain. C'est une forteresse spirituelle aveugle et silencieuse, offrant un refuge solennel à ceux qui affrontent le froid mordant.",
+      "en": "The deep, haunting tolling of a bell pierces the opaque veil of the weather, guiding you through the isolation. The imposing silhouette of a monastery suddenly appears. It is a blind and silent spiritual fortress, offering a solemn refuge to those braving the biting cold."
+    },
+    "stage_tags": [
+      "monastere",
+      "halte"
+    ]
+  },
+  {
+    "trait_tags": [
+      "campement"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Des bruits de voix rugueuses, des claquements de toiles de tente et l'odeur âcre de la sueur et de la terre retournée flottent dans l'air. Une petite communauté éphémère s'est installée ici, barricadée derrière des palissades de fortune pour repousser l'hostilité des terres sauvages.",
+      "en": "Rough voices, flapping tent canvas, and the acrid smell of sweat and turned earth float in the air. A small ephemeral community has settled here, barricaded behind makeshift palisades to fend off the hostility of the wild lands."
+    },
+    "stage_tags": [
+      "campement"
+    ]
+  },
+  {
+    "trait_tags": [
+      "campement"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Le martèlement lourd de l'eau sur des toiles tendues trahit une présence humaine. Le campement n'est qu'un bourbier où des silhouettes encapuchonnées luttent frénétiquement pour empêcher leurs abris de fortune d'être emportés par le déluge.",
+      "en": "The heavy drumming of water on stretched canvas betrays a human presence. The camp is a quagmire where hooded figures struggle frantically to keep their makeshift shelters from being washed away by the deluge."
+    },
+    "stage_tags": [
+      "campement"
+    ]
+  },
+  {
+    "trait_tags": [
+      "campement"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "Une faible lueur rougeâtre perce difficilement l'opacité mortelle de l'air. C'est le maigre brasero d'un campement de fortune. Les tentes, recouvertes de givre, semblent prêtes à céder sous les éléments, offrant un refuge précaire mais vital.",
+      "en": "A faint reddish glow barely pierces the deadly opacity of the air. It is the meager brazier of a makeshift camp. The frost-covered tents seem ready to give way under the elements, offering a precarious but vital refuge."
+    },
+    "stage_tags": [
+      "campement"
+    ]
+  },
+  {
+    "trait_tags": [
+      "hameau",
+      "village"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Des aboiements de chiens et le crépitement de multiples cheminées annoncent la fin de l'isolement. Un rassemblement de toits serrés les uns contre les autres se dessine devant vous. C'est une communauté rurale tissée serrée, vibrant au rythme de son propre microcosme.",
+      "en": "Barking dogs and the crackling of multiple chimneys announce the end of isolation. A gathering of roofs huddled close together appears before you. It is a tightly-knit rural community, vibrating to the rhythm of its own microcosm."
+    },
+    "stage_tags": [
+      "village"
+    ]
+  },
+  {
+    "trait_tags": [
+      "hameau",
+      "village"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Les chemins se transforment en fondrières boueuses, menant aux premières habitations d'un village blotti contre la tempête. Les rues sont désertes, les volets hermétiquement clos, mais la chaude lueur filtrant des fenêtres promet un abri contre la fureur de la nature.",
+      "en": "The paths turn into muddy bogs, leading to the first dwellings of a village huddled against the storm. The streets are deserted, the shutters tightly closed, but the warm glow filtering from the windows promises shelter from nature's fury."
+    },
+    "stage_tags": [
+      "village"
+    ]
+  },
+  {
+    "trait_tags": [
+      "hameau",
+      "village"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "L'odeur caractéristique de la tourbe ou du bois brûlé vous guide à l'aveugle. Soudain, les silhouettes trapues de chaumières émergent du voile blanc comme des fantômes. Le village, recouvert par la météo, tourne au ralenti dans un silence ouaté.",
+      "en": "The characteristic smell of burning peat or wood guides you blindly. Suddenly, the squat silhouettes of thatched cottages emerge from the white veil like ghosts. The village, blanketed by the weather, runs in slow motion in a muffled silence."
+    },
+    "stage_tags": [
+      "village"
+    ]
+  },
+  {
+    "trait_tags": [
+      "petite_ville",
+      "grande_cite"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Les chemins de terre laissent place à une large route pavée et entretenue. L'horizon est barré par de hautes murailles de pierre, des tours de guet et un enchevêtrement dense de toitures. Le bourdonnement continu de milliers de vies s'élève dans les airs : vous arrivez aux portes d'une cité.",
+      "en": "Dirt paths give way to a wide, maintained paved road. The horizon is blocked by high stone walls, watchtowers, and a dense tangle of rooftops. The continuous hum of thousands of lives rises in the air: you are arriving at the gates of a city."
+    },
+    "stage_tags": [
+      "cite"
+    ]
+  },
+  {
+    "trait_tags": [
+      "petite_ville",
+      "grande_cite"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "La route se change en larges pavés luisants sous la pluie battante. Face à la tempête, de colossales murailles noires se dressent, impénétrables. Les immenses portes de la ville avalent les voyageurs trempés qui cherchent le réconfort de ses auberges et la sécurité de son rempart.",
+      "en": "The road turns into wide, gleaming cobblestones under the driving rain. Facing the storm, colossal black walls stand impenetrable. The huge city gates swallow soaked travelers seeking the comfort of its inns and the safety of its rampart."
+    },
+    "stage_tags": [
+      "cite"
+    ]
+  },
+  {
+    "trait_tags": [
+      "petite_ville",
+      "grande_cite"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "L'air froid est saturé de fumées de charbon et de bois. Au cœur de la grisaille, les cloches de la cité résonnent sourdement. Les murailles colossales apparaissent au dernier moment, offrant un contraste saisissant entre la froideur de la nature et l'activité fiévreuse intra-muros.",
+      "en": "The cold air is saturated with coal and wood smoke. In the heart of the gloom, the city bells toll dully. The colossal walls appear at the last moment, offering a striking contrast between the coldness of nature and the feverish activity inside."
+    },
+    "stage_tags": [
+      "cite"
+    ]
+  },
+  {
+    "trait_tags": [
+      "metropole",
+      "capitale"
+    ],
+    "weather_tags": [
+      "clear"
+    ],
+    "text": {
+      "fr": "Le ciel lui-même semble altéré par les fumées colossales qui s'en échappent. Une mer infinie de bâtiments grandioses, de dômes et de flèches écrase le paysage. Le rugissement assourdissant de ce cœur de civilisation vous happe bien avant même d'avoir atteint ses imposantes portes principales.",
+      "en": "The sky itself seems altered by the colossal smoke escaping from it. An endless sea of grandiose buildings, domes, and spires crushes the landscape. The deafening roar of this heart of civilization pulls you in long before you even reach its imposing main gates."
+    },
+    "stage_tags": [
+      "capitale"
+    ]
+  },
+  {
+    "trait_tags": [
+      "metropole",
+      "capitale"
+    ],
+    "weather_tags": [
+      "rain",
+      "storm"
+    ],
+    "text": {
+      "fr": "Même la fureur des cieux semble s'écraser contre cette montagne de pierre et de métal. La capitale s'étend à perte de vue, les éclairs illuminant ses immenses cathédrales et palais. Ses faubourgs inondés grouillent d'une activité frénétique qui ne s'arrête jamais, pas même sous le déluge.",
+      "en": "Even the fury of the heavens seems to crash against this mountain of stone and metal. The capital stretches as far as the eye can see, lightning illuminating its huge cathedrals and palaces. Its flooded suburbs teem with a frantic activity that never stops, not even under the deluge."
+    },
+    "stage_tags": [
+      "capitale"
+    ]
+  },
+  {
+    "trait_tags": [
+      "metropole",
+      "capitale"
+    ],
+    "weather_tags": [
+      "fog",
+      "snow"
+    ],
+    "text": {
+      "fr": "Une lueur irréelle et gigantesque baigne l'horizon cotonneux, générée par la chaleur de dizaines de milliers de foyers. Un léviathan urbain se dresse devant vous : la capitale. L'opulence de ses hauts quartiers perce le brouillard, dominant une foule infinie massée à ses portes.",
+      "en": "A gigantic, unreal glow bathes the cottony horizon, generated by the heat of tens of thousands of hearths. An urban leviathan stands before you: the capital. The opulence of its high districts pierces the fog, dominating an endless crowd massed at its gates."
+    },
+    "stage_tags": [
+      "capitale"
+    ]
+  }
+]

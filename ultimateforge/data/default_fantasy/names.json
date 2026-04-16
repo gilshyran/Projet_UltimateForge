@@ -1,0 +1,1103 @@
+{
+  "Pangea": {
+    "settlement_names": {
+      "prefixes": [
+        {
+          "fr": "Ombre-",
+          "en": "Shadow-"
+        },
+        {
+          "fr": "Sombre-",
+          "en": "Dark-"
+        },
+        {
+          "fr": "Blanc-",
+          "en": "White-"
+        },
+        {
+          "fr": "Haut-",
+          "en": "High-"
+        },
+        {
+          "fr": "Fier-",
+          "en": "Proud-"
+        },
+        {
+          "fr": "Givre-",
+          "en": "Frost-"
+        },
+        {
+          "fr": "Dragon-",
+          "en": "Dragon-"
+        },
+        {
+          "fr": "Fer-",
+          "en": "Iron-"
+        },
+        {
+          "fr": "Corbeau-",
+          "en": "Raven-"
+        },
+        {
+          "fr": "Vif-",
+          "en": "Swift-"
+        },
+        {
+          "fr": "Fiel-",
+          "en": "Grim-"
+        },
+        {
+          "fr": "Mont-",
+          "en": "Mount-"
+        },
+        {
+          "fr": "Bourg-",
+          "en": "Burg-"
+        },
+        {
+          "fr": "Castel-",
+          "en": "Castle-"
+        },
+        {
+          "fr": "Roche-",
+          "en": "Rock-"
+        },
+        {
+          "fr": "Noir-",
+          "en": "Black-"
+        },
+        {
+          "fr": "Vert-",
+          "en": "Green-"
+        },
+        {
+          "fr": "Rouge-",
+          "en": "Red-"
+        },
+        {
+          "fr": "Port-",
+          "en": "Port-"
+        },
+        {
+          "fr": "Havre-",
+          "en": "Haven-"
+        },
+        {
+          "fr": "Garde-",
+          "en": "Guard-"
+        },
+        {
+          "fr": "Froid-",
+          "en": "Cold-"
+        },
+        {
+          "fr": "Bel-",
+          "en": "Fair-"
+        },
+        {
+          "fr": "Rive-",
+          "en": "River-"
+        },
+        {
+          "fr": "Bois-",
+          "en": "Wood-"
+        },
+        {
+          "fr": "Valon-",
+          "en": "Glen-"
+        },
+        {
+          "fr": "Heaume-",
+          "en": "Helm-"
+        },
+        {
+          "fr": "Lance-",
+          "en": "Spear-"
+        },
+        {
+          "fr": "Pierre-",
+          "en": "Stone-"
+        },
+        {
+          "fr": "Grand-",
+          "en": "Great-"
+        },
+        {
+          "fr": "Clair-",
+          "en": "Clear-"
+        },
+        {
+          "fr": "Fort-",
+          "en": "Strong-"
+        },
+        {
+          "fr": "Sol-",
+          "en": "Sun-"
+        },
+        {
+          "fr": "Lune-",
+          "en": "Moon-"
+        },
+        {
+          "fr": "Astre-",
+          "en": "Star-"
+        },
+        {
+          "fr": "Gris-",
+          "en": "Grey-"
+        },
+        {
+          "fr": "Cendre-",
+          "en": "Ash-"
+        },
+        {
+          "fr": "Braise-",
+          "en": "Ember-"
+        },
+        {
+          "fr": "Flamme-",
+          "en": "Flame-"
+        },
+        {
+          "fr": "Cuivre-",
+          "en": "Copper-"
+        },
+        {
+          "fr": "Or-",
+          "en": "Gold-"
+        },
+        {
+          "fr": "Argent-",
+          "en": "Silver-"
+        },
+        {
+          "fr": "Morne-",
+          "en": "Mourn-"
+        },
+        {
+          "fr": "Franc-",
+          "en": "Free-"
+        },
+        {
+          "fr": "Âpre-",
+          "en": "Bitter-"
+        },
+        {
+          "fr": "Sauvage-",
+          "en": "Wild-"
+        },
+        {
+          "fr": "Calme-",
+          "en": "Still-"
+        },
+        {
+          "fr": "Sang-",
+          "en": "Blood-"
+        },
+        {
+          "fr": "Aube-",
+          "en": "Dawn-"
+        },
+        {
+          "fr": "Crépuscule-",
+          "en": "Dusk-"
+        },
+        {
+          "fr": "Foudre-",
+          "en": "Storm-"
+        },
+        {
+          "fr": "Vrai-",
+          "en": "True-"
+        },
+        {
+          "fr": "Âge-",
+          "en": "Old-"
+        },
+        {
+          "fr": "Neuf-",
+          "en": "New-"
+        },
+        {
+          "fr": "Brume-",
+          "en": "Mist-"
+        },
+        {
+          "fr": "Vent-",
+          "en": "Wind-"
+        },
+        {
+          "fr": "Clairval-",
+          "en": "Light-"
+        },
+        {
+          "fr": "Dur-",
+          "en": "Hard-"
+        },
+        {
+          "fr": "Âme-",
+          "en": "Soul-"
+        },
+        {
+          "fr": "Nid-",
+          "en": "Nest-"
+        }
+      ],
+      "suffixes": [
+        {
+          "fr": "garde",
+          "en": "guard"
+        },
+        {
+          "fr": "fort",
+          "en": "keep"
+        },
+        {
+          "fr": "pic",
+          "en": "peak"
+        },
+        {
+          "fr": "val",
+          "en": "vale"
+        },
+        {
+          "fr": "roche",
+          "en": "rock"
+        },
+        {
+          "fr": "forge",
+          "en": "forge"
+        },
+        {
+          "fr": "porte",
+          "en": "gate"
+        },
+        {
+          "fr": "cime",
+          "en": "crest"
+        },
+        {
+          "fr": "combe",
+          "en": "hollow"
+        },
+        {
+          "fr": "marche",
+          "en": "march"
+        },
+        {
+          "fr": "bourg",
+          "en": "burg"
+        },
+        {
+          "fr": "pont",
+          "en": "bridge"
+        },
+        {
+          "fr": "rive",
+          "en": "run"
+        },
+        {
+          "fr": "port",
+          "en": "port"
+        },
+        {
+          "fr": "havre",
+          "en": "haven"
+        },
+        {
+          "fr": "ville",
+          "en": "ville"
+        },
+        {
+          "fr": "bois",
+          "en": "wood"
+        },
+        {
+          "fr": "pierre",
+          "en": "stone"
+        },
+        {
+          "fr": "lac",
+          "en": "lake"
+        },
+        {
+          "fr": "eau",
+          "en": "water"
+        },
+        {
+          "fr": "guet",
+          "en": "watch"
+        },
+        {
+          "fr": "sommet",
+          "en": "summit"
+        },
+        {
+          "fr": "creux",
+          "en": "hollow"
+        },
+        {
+          "fr": "fond",
+          "en": "bottom"
+        },
+        {
+          "fr": "tombe",
+          "en": "tomb"
+        },
+        {
+          "fr": "puits",
+          "en": "well"
+        },
+        {
+          "fr": "mur",
+          "en": "wall"
+        },
+        {
+          "fr": "clos",
+          "en": "hold"
+        },
+        {
+          "fr": "champ",
+          "en": "field"
+        },
+        {
+          "fr": "ruine",
+          "en": "ruin"
+        },
+        {
+          "fr": "gué",
+          "en": "ford"
+        },
+        {
+          "fr": "col",
+          "en": "pass"
+        },
+        {
+          "fr": "marée",
+          "en": "tide"
+        },
+        {
+          "fr": "chute",
+          "en": "fall"
+        },
+        {
+          "fr": "mont",
+          "en": "mount"
+        },
+        {
+          "fr": "nid",
+          "en": "nest"
+        },
+        {
+          "fr": "valon",
+          "en": "glen"
+        },
+        {
+          "fr": "ombre",
+          "en": "shadow"
+        },
+        {
+          "fr": "feu",
+          "en": "fire"
+        },
+        {
+          "fr": "glace",
+          "en": "ice"
+        },
+        {
+          "fr": "corail",
+          "en": "reef"
+        },
+        {
+          "fr": "anse",
+          "en": "cove"
+        },
+        {
+          "fr": "marais",
+          "en": "mire"
+        },
+        {
+          "fr": "tour",
+          "en": "tower"
+        },
+        {
+          "fr": "tertre",
+          "en": "barrow"
+        },
+        {
+          "fr": "bosquet",
+          "en": "grove"
+        },
+        {
+          "fr": "pré",
+          "en": "meadow"
+        },
+        {
+          "fr": "hall",
+          "en": "hall"
+        },
+        {
+          "fr": "lande",
+          "en": "moor"
+        },
+        {
+          "fr": "roc",
+          "en": "crag"
+        },
+        {
+          "fr": "source",
+          "en": "spring"
+        },
+        {
+          "fr": "crique",
+          "en": "bay"
+        },
+        {
+          "fr": "faille",
+          "en": "cleft"
+        },
+        {
+          "fr": "pointe",
+          "en": "point"
+        },
+        {
+          "fr": "cour",
+          "en": "court"
+        },
+        {
+          "fr": "gouffre",
+          "en": "chasm"
+        },
+        {
+          "fr": "cendre",
+          "en": "ash"
+        },
+        {
+          "fr": "clairière",
+          "en": "glade"
+        },
+        {
+          "fr": "baie",
+          "en": "bight"
+        },
+        {
+          "fr": "hameau",
+          "en": "hamlet"
+        }
+      ],
+      "standalone": [
+        {
+          "fr": "Kaer-Dhun",
+          "en": "Kaer-Dhun"
+        },
+        {
+          "fr": "Val-d'Argent",
+          "en": "Silvervale"
+        },
+        {
+          "fr": "Hauteroche",
+          "en": "Highrock"
+        },
+        {
+          "fr": "Lance-Glace",
+          "en": "Icespear"
+        },
+        {
+          "fr": "Brisenoire",
+          "en": "Blackbreeze"
+        },
+        {
+          "fr": "Mont-Dragon",
+          "en": "Dragonmount"
+        },
+        {
+          "fr": "Havre-Gris",
+          "en": "Greyhaven"
+        },
+        {
+          "fr": "Port-Émeraude",
+          "en": "Emerald Port"
+        },
+        {
+          "fr": "Castel-Aurore",
+          "en": "Dawnkeep"
+        },
+        {
+          "fr": "Briselame",
+          "en": "Breakwave"
+        },
+        {
+          "fr": "Heaume-Haut",
+          "en": "Highhelm"
+        },
+        {
+          "fr": "Falaise-Vent",
+          "en": "Windcliff"
+        },
+        {
+          "fr": "Source-Bénite",
+          "en": "Holywell"
+        },
+        {
+          "fr": "Val-Rubis",
+          "en": "Rubyvale"
+        },
+        {
+          "fr": "Bourg-Lointain",
+          "en": "Farburg"
+        },
+        {
+          "fr": "Castel-Noir",
+          "en": "Black Keep"
+        },
+        {
+          "fr": "Brise-Cendres",
+          "en": "Ashbreeze"
+        },
+        {
+          "fr": "Mont-Tonnerre",
+          "en": "Thunder Peak"
+        },
+        {
+          "fr": "Havre-Nuit",
+          "en": "Nighthaven"
+        },
+        {
+          "fr": "Bois-Murmure",
+          "en": "Whisperwood"
+        },
+        {
+          "fr": "Tour-Nuage",
+          "en": "Cloudtower"
+        },
+        {
+          "fr": "Garde-Hiver",
+          "en": "Winterguard"
+        },
+        {
+          "fr": "Pointe-Neige",
+          "en": "Snowpoint"
+        },
+        {
+          "fr": "Roc-de-Fer",
+          "en": "Ironcrag"
+        },
+        {
+          "fr": "Mont-Couronne",
+          "en": "Crownmount"
+        },
+        {
+          "fr": "Onde-Sereine",
+          "en": "Stillwater"
+        },
+        {
+          "fr": "Val-Épine",
+          "en": "Thornvale"
+        },
+        {
+          "fr": "Garde-Flot",
+          "en": "Tideguard"
+        },
+        {
+          "fr": "Mont-Céleste",
+          "en": "Starpeak"
+        },
+        {
+          "fr": "Pointe-Sanglante",
+          "en": "Bloodpoint"
+        },
+        {
+          "fr": "Sombrefosse",
+          "en": "Darkpit"
+        },
+        {
+          "fr": "Clairvallon",
+          "en": "Clearwater"
+        },
+        {
+          "fr": "Briseroche",
+          "en": "Shattercrag"
+        },
+        {
+          "fr": "Feuille-Tombante",
+          "en": "Autumnfall"
+        },
+        {
+          "fr": "Gouffre-Noir",
+          "en": "Blackchasm"
+        },
+        {
+          "fr": "Heaume-Gris",
+          "en": "Greyhelm"
+        },
+        {
+          "fr": "Astre-Garde",
+          "en": "Starguard"
+        },
+        {
+          "fr": "Val-Brume",
+          "en": "Mistvale"
+        },
+        {
+          "fr": "Roche-Aigre",
+          "en": "Bitterrock"
+        },
+        {
+          "fr": "Fier-Bourg",
+          "en": "Proudtown"
+        },
+        {
+          "fr": "Tour-de-Guet",
+          "en": "Watchtower"
+        },
+        {
+          "fr": "Port-Soleil",
+          "en": "Sunport"
+        },
+        {
+          "fr": "Chantelame",
+          "en": "Bladechant"
+        },
+        {
+          "fr": "Fend-la-Bise",
+          "en": "Windcleaver"
+        },
+        {
+          "fr": "Tombe-Givre",
+          "en": "Frosttomb"
+        },
+        {
+          "fr": "Val-de-Fer",
+          "en": "Ironvale"
+        },
+        {
+          "fr": "Bois-aux-Cerfs",
+          "en": "Stagwood"
+        },
+        {
+          "fr": "Aube-Claire",
+          "en": "Dawnbright"
+        },
+        {
+          "fr": "Castel-Rune",
+          "en": "Runekeep"
+        },
+        {
+          "fr": "Pic-de-l'Aigle",
+          "en": "Eaglepeak"
+        },
+        {
+          "fr": "Source-Pure",
+          "en": "Purewell"
+        },
+        {
+          "fr": "Brise-Glace",
+          "en": "Icebreaker"
+        },
+        {
+          "fr": "Port-aux-Saphirs",
+          "en": "Sapphire Port"
+        },
+        {
+          "fr": "Colline-Verte",
+          "en": "Greenhill"
+        },
+        {
+          "fr": "Fort-Bastion",
+          "en": "Stronghold"
+        },
+        {
+          "fr": "Havre-Paix",
+          "en": "Peacehaven"
+        },
+        {
+          "fr": "Mont-Silex",
+          "en": "Flintmount"
+        },
+        {
+          "fr": "Rive-Gris",
+          "en": "Greyrun"
+        },
+        {
+          "fr": "Cime-Nuage",
+          "en": "Cloudcrest"
+        },
+        {
+          "fr": "Bois-Noir",
+          "en": "Blackwood"
+        },
+        {
+          "fr": "Garde-Fer",
+          "en": "Ironguard"
+        },
+        {
+          "fr": "Val-Doré",
+          "en": "Goldenvale"
+        },
+        {
+          "fr": "Porte-Cendre",
+          "en": "Ashgate"
+        },
+        {
+          "fr": "Tour-de-Glace",
+          "en": "Icetower"
+        },
+        {
+          "fr": "Morte-Roche",
+          "en": "Deadrock"
+        },
+        "Osgard",
+        "Eldoria",
+        "Stormgard",
+        "Aethelgard",
+        "Vastéria"
+      ]
+    },
+    "characters": {
+      "first_names": {
+        "m": [
+          "Aldric",
+          "Ander",
+          "Barendd",
+          "Borian",
+          "Carric",
+          "Corvus",
+          "Dain",
+          "Delg",
+          "Eberk",
+          "Eldon",
+          "Fargrim",
+          "Fenris",
+          "Gael",
+          "Galinndan",
+          "Halgrim",
+          "Heian",
+          "Iliyar",
+          "Immeral",
+          "Jorin",
+          "Kaelen",
+          "Kildrak",
+          "Laucian",
+          "Lucian",
+          "Mindartis",
+          "Morn",
+          "Nael",
+          "Orin",
+          "Oskar",
+          "Paelias",
+          "Peren",
+          "Quarion",
+          "Riardon",
+          "Rurik",
+          "Soveliss",
+          "Sylas",
+          "Thalion",
+          "Tharivol",
+          "Theren",
+          "Ulfgar",
+          "Valerius",
+          "Varis",
+          "Vondal",
+          "Willem",
+          "Xanaphir",
+          "Yorick",
+          "Zevon",
+          "Zook",
+          "Aelar",
+          "Ghesh",
+          "Tordek",
+          "Travok",
+          "Erevan",
+          "Roland",
+          "Keth",
+          "Balasar",
+          "Garret",
+          "Corrin",
+          "Cade"
+        ],
+        "f": [
+          "Althaea",
+          "Anastrianna",
+          "Andraste",
+          "Bethrynna",
+          "Birel",
+          "Bree",
+          "Caelynn",
+          "Diesa",
+          "Drusilia",
+          "Elara",
+          "Enna",
+          "Falkrunn",
+          "Felosial",
+          "Gunnloda",
+          "Gwenn",
+          "Halia",
+          "Hlin",
+          "Ielenia",
+          "Isolde",
+          "Jelenneth",
+          "Kaelia",
+          "Kithri",
+          "Leshanna",
+          "Lyra",
+          "Meriele",
+          "Mialee",
+          "Naivara",
+          "Nuala",
+          "Odele",
+          "Phidar",
+          "Qillathe",
+          "Quelenna",
+          "Rinn",
+          "Sariel",
+          "Seraphina",
+          "Shanairra",
+          "Silaqui",
+          "Thalia",
+          "Theirastra",
+          "Thia",
+          "Ula",
+          "Vadania",
+          "Valanthe",
+          "Vanya",
+          "Vexia",
+          "Wynne",
+          "Xilumin",
+          "Yera",
+          "Zanna",
+          "Zesiro",
+          "Arveene",
+          "Kára",
+          "Elda",
+          "Jillian",
+          "Myastan",
+          "Biri",
+          "Lia",
+          "Siri"
+        ]
+      },
+      "last_names": [
+        {
+          "fr": " Forge-Lame",
+          "en": " Bladeforge"
+        },
+        {
+          "fr": " Main-Douce",
+          "en": " Softpalm"
+        },
+        {
+          "fr": " Bouclier-de-Chêne",
+          "en": " Oakenshield"
+        },
+        {
+          "fr": " Fleur-de-Cendre",
+          "en": " Ashflower"
+        },
+        {
+          "fr": " Sang-de-Lune",
+          "en": " Moonblood"
+        },
+        {
+          "fr": " Regard-de-Feu",
+          "en": " Firegaze"
+        },
+        {
+          "fr": " Tisse-Ombre",
+          "en": " Shadowweaver"
+        },
+        {
+          "fr": " Voix-de-Soie",
+          "en": " Silkenvoice"
+        },
+        {
+          "fr": " Sang-d'Argent",
+          "en": " Silverblood"
+        },
+        {
+          "fr": " Mère-des-Ours",
+          "en": " Bearmother"
+        },
+        {
+          "fr": " Brise-Sort",
+          "en": " Spellbreaker"
+        },
+        {
+          "fr": " Cherche-Aube",
+          "en": " Dawnseeker"
+        },
+        {
+          "fr": " Garde-Bois",
+          "en": " Woodguard"
+        },
+        {
+          "fr": " Âme-de-Fer",
+          "en": " Ironsoul"
+        },
+        {
+          "fr": " Frappe-Ciel",
+          "en": " Skystrike"
+        },
+        {
+          "fr": " Lame-Vive",
+          "en": " Quickblade"
+        },
+        {
+          "fr": " Marche-Feuille",
+          "en": " Leafwalker"
+        },
+        {
+          "fr": " Cœur-Vaillant",
+          "en": " Braveheart"
+        },
+        {
+          "fr": " Pas-de-Loup",
+          "en": " Wolfstep"
+        },
+        {
+          "fr": " Œil-de-Faucon",
+          "en": " Hawkeye"
+        },
+        {
+          "fr": " Brise-Crâne",
+          "en": " Skullcracker"
+        },
+        {
+          "fr": " Sang-Noir",
+          "en": " Blackblood"
+        },
+        {
+          "fr": " Poing-de-Pierre",
+          "en": " Stonefist"
+        },
+        {
+          "fr": " Souffle-Vent",
+          "en": " Windbreath"
+        },
+        {
+          "fr": " Marche-Nuit",
+          "en": " Nightwalker"
+        },
+        {
+          "fr": " Chantelame",
+          "en": " Bladesong"
+        },
+        {
+          "fr": " Feuille-d'Automne",
+          "en": " Autumnleaf"
+        },
+        {
+          "fr": " Garde-Givre",
+          "en": " Frostguard"
+        },
+        {
+          "fr": " Peau-d'Écorce",
+          "en": " Barkskin"
+        },
+        {
+          "fr": " Porte-Lumière",
+          "en": " Lightbringer"
+        },
+        {
+          "fr": " Cherche-Savoir",
+          "en": " Loreseeker"
+        },
+        {
+          "fr": " Brisecœur",
+          "en": " Heartbreaker"
+        },
+        {
+          "fr": " Croc-d'Acier",
+          "en": " Steelfang"
+        },
+        {
+          "fr": " Main-Leste",
+          "en": " Quickhand"
+        },
+        {
+          "fr": " Cœur-de-Lion",
+          "en": " Lionheart"
+        },
+        {
+          "fr": " Fend-l'Air",
+          "en": " Windcleaver"
+        },
+        {
+          "fr": " Sang-de-Dragon",
+          "en": " Dragonblood"
+        },
+        {
+          "fr": " Œil-de-Corbeau",
+          "en": " Raveneye"
+        },
+        {
+          "fr": " Pas-de-Velours",
+          "en": " Velvetstep"
+        },
+        {
+          "fr": " Brise-Fer",
+          "en": " Ironbreaker"
+        },
+        {
+          "fr": " Murmure-Noir",
+          "en": " Blackwhisper"
+        },
+        {
+          "fr": " Tisse-Givre",
+          "en": " Frostweaver"
+        },
+        {
+          "fr": " Marche-Brumes",
+          "en": " Mistwalker"
+        },
+        {
+          "fr": " Cœur-d'Ambre",
+          "en": " Amberheart"
+        },
+        {
+          "fr": " Plume-Blanche",
+          "en": " Whitefeather"
+        },
+        {
+          "fr": " Ombre-Lame",
+          "en": " Shadowblade"
+        },
+        {
+          "fr": " Épine-Noire",
+          "en": " Blackthorn"
+        },
+        {
+          "fr": " Sang-Sorcier",
+          "en": " Witchblood"
+        },
+        {
+          "fr": " Frappe-Lourde",
+          "en": " Heavyhand"
+        },
+        {
+          "fr": " Voix-du-Tonnerre",
+          "en": " Thundervoice"
+        },
+        {
+          "fr": " Lame-Sainte",
+          "en": " Holyblade"
+        },
+        {
+          "fr": " Tisse-Rêve",
+          "en": " Dreamweaver"
+        },
+        {
+          "fr": " Œil-de-Vipère",
+          "en": " Vipereye"
+        },
+        {
+          "fr": " Sang-d'Or",
+          "en": " Goldblood"
+        },
+        {
+          "fr": " Marteau-Gris",
+          "en": " Greyhammer"
+        }
+      ]
+    }
+  }
+}

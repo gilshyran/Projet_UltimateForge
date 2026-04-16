@@ -1,0 +1,23 @@
+{
+  "fac_noblesse": {
+    "name": { "fr": "L'Empire de Pangéa", "en": "The Empire of Pangea" },
+    "type": { "fr": "Aristocratie", "en": "Aristocracy" },
+    "level": "3",
+    "vibes": ["luxe-opulence", "loi-stricte"],
+    "color": "#2980b9"
+  },
+  "fac_clerge": {
+    "name": { "fr": "Le Saint Clergé", "en": "The Holy Clergy" },
+    "type": { "fr": "Théocratie", "en": "Theocracy" },
+    "level": "2",
+    "vibes": ["religion-forte", "pieux"],
+    "color": "#f1c40f"
+  },
+  "fac_zhentarim": {
+    "name": { "fr": "Le Syndicat", "en": "The Syndicate" },
+    "type": { "fr": "Réseau Criminel", "en": "Criminal Network" },
+    "level": "4",
+    "vibes": ["corrompu", "magie-forte"],
+    "color": "#2c3e50"
+  }
+}

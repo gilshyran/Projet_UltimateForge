@@ -1,0 +1,288 @@
+[
+  {
+    "id": "vit_boom_eco",
+    "vibe_tags": [
+      "laborieux",
+      "opulent"
+    ],
+    "description": {
+      "fr": "L'économie tourne à plein régime, les chantiers se multiplient et les rues sont une véritable fourmilière.",
+      "en": "The economy is booming, construction sites are multiplying, and the streets are a real beehive."
+    }
+  },
+  {
+    "id": "vit_famine",
+    "vibe_tags": [
+      "miserable",
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "La faim tenaille les ventres. La survie quotidienne au détriment des autres a remplacé toute autre préoccupation.",
+      "en": "Hunger gnaws at bellies. Daily survival at the expense of others has replaced all other concerns."
+    }
+  },
+  {
+    "id": "vit_repression",
+    "vibe_tags": [
+      "oppressant"
+    ],
+    "description": {
+      "fr": "Les rafles, les couvre-feux et les taxes écrasantes rythment le quotidien sous le regard terrifié de la population.",
+      "en": "Raids, curfews, and crushing taxes punctuate daily life under the terrified gaze of the population."
+    }
+  },
+  {
+    "id": "vit_guerre_gangs",
+    "vibe_tags": [
+      "loi-du-plus-fort",
+      "corrompu"
+    ],
+    "description": {
+      "fr": "Des factions rivales se déchirent ouvertement dans les rues pour le contrôle des trafics. La rue appartient aux plus armés.",
+      "en": "Rival factions openly tear each other apart in the streets for control of trafficking. The street belongs to the most armed."
+    }
+  },
+  {
+    "id": "vit_paix",
+    "vibe_tags": [
+      "paisible",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Une rare période de calme et de prospérité partagée enveloppe la communauté. Les habitants respirent et s'entraident.",
+      "en": "A rare period of calm and shared prosperity envelops the community. Inhabitants breathe easily and help one another."
+    }
+  },
+  {
+    "id": "vit_inquisition",
+    "vibe_tags": [
+      "fanatique",
+      "oppressant"
+    ],
+    "description": {
+      "fr": "La traque des traîtres et des déviants a atteint son paroxysme. La délation est encouragée et les châtiments sont publics.",
+      "en": "The hunt for traitors and deviants has reached its peak. Informing is encouraged, and punishments are public."
+    }
+  },
+  {
+    "id": "vit_miracle",
+    "vibe_tags": [
+      "pieux"
+    ],
+    "description": {
+      "fr": "Un récent événement perçu comme sacré a ravivé la ferveur locale. De nombreux pèlerins affluent dans le calme pour se recueillir.",
+      "en": "A recent event perceived as sacred has revived local fervor. Many pilgrims flock peacefully to pray."
+    }
+  },
+  {
+    "id": "vit_anomalie",
+    "vibe_tags": [
+      "arcanique"
+    ],
+    "description": {
+      "fr": "Une intense activité magique secoue le lieu, attirant érudits et curieux autour de phénomènes inexpliqués qu'il faut endiguer.",
+      "en": "Intense magical activity shakes the place, attracting scholars and onlookers around unexplained phenomena that must be contained."
+    }
+  },
+  {
+    "id": "vit_terreur",
+    "vibe_tags": [
+      "superstitieux",
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": "De sombres rumeurs de disparitions nocturnes courent. On barricade les portes dès la nuit tombée et on se méfie de son voisin.",
+      "en": "Dark rumors of nocturnal disappearances circulate. Doors are barricaded at nightfall, and everyone distrusts their neighbor."
+    }
+  },
+  {
+    "id": "vit_fete",
+    "vibe_tags": [
+      "festif",
+      "opulent"
+    ],
+    "description": {
+      "fr": "La ville entière est plongée dans un festival de plusieurs jours où les richesses s'affichent et où l'insouciance règne.",
+      "en": "The entire town is plunged into a multi-day festival where wealth is flaunted and carelessness reigns."
+    }
+  },
+  {
+    "id": "vit_blocus",
+    "vibe_tags": [
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": "La ville s'est totalement coupée du monde suite à une crise. La suspicion monte entre les habitants confinés et les vivres manquent.",
+      "en": "The town has totally cut itself off from the world following a crisis. Suspicion rises among confined inhabitants, and supplies are low."
+    }
+  },
+  {
+    "id": "vit_age_or_mafia",
+    "vibe_tags": [
+      "corrompu"
+    ],
+    "description": {
+      "fr": "Le vice et le marché noir n'ont jamais autant rapporté. Le crime est devenu l'institution officielle d'une élite intouchable.",
+      "en": "Vice and the black market have never been so profitable. Crime has become the official institution of an untouchable elite."
+    }
+  },
+  {
+    "id": "vit_revolte_grondante",
+    "vibe_tags": [
+      "inegalitaire",
+      "miserable"
+    ],
+    "description": {
+      "fr": "La colère gronde dans les bas quartiers. Les murmures de rébellion, de grève ou d'émeute se font de plus en plus insistants.",
+      "en": "Anger rumbles in the lower districts. Whispers of rebellion, strikes, or riots are becoming increasingly insistent."
+    }
+  },
+  {
+    "id": "vit_epuisement",
+    "vibe_tags": [
+      "laborieux",
+      "oppressant"
+    ],
+    "description": {
+      "fr": "La population est à bout de forces, écrasée par des cadences infernales ou des exigences tyranniques. L'épuisement se lit sur tous les visages.",
+      "en": "The population is exhausted, crushed by infernal paces or tyrannical demands. Burnout can be seen on every face."
+    }
+  },
+  {
+    "id": "vit_grande_foire",
+    "vibe_tags": [
+      "accueillant",
+      "festif"
+    ],
+    "description": {
+      "fr": "Une grande foire a transformé les rues en un marché grouillant et coloré. Les caravanes affluent et les affaires sont florissantes.",
+      "en": "A grand fair has transformed the streets into a bustling, colorful market. Caravans are pouring in and business is flourishing."
+    }
+  },
+  {
+    "id": "vit_presages",
+    "vibe_tags": [
+      "superstitieux",
+      "pieux"
+    ],
+    "description": {
+      "fr": "Un récent phénomène (céleste, naturel ou macabre) a mis la population en émoi. Tous scrutent les signes en attendant l'accomplissement d'une prophétie.",
+      "en": "A recent phenomenon (celestial, natural, or macabre) has stirred the population. Everyone is watching for signs, awaiting the fulfillment of a prophecy."
+    }
+  },
+  {
+    "id": "vit_complots",
+    "vibe_tags": [
+      "corrompu",
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": "Les alliances se font et se défont dans l'ombre. Personne ne fait confiance à son voisin, et les rumeurs d'assassinats politiques paralysent les élites.",
+      "en": "Alliances are made and broken in the shadows. No one trusts their neighbor, and rumors of political assassinations paralyze the elite."
+    }
+  },
+  {
+    "id": "vit_effervescence_magique",
+    "vibe_tags": [
+      "arcanique"
+    ],
+    "description": {
+      "fr": "Les rues crépitent d'énergies magiques. Apprentis et maîtres testent publiquement de nouvelles merveilles, saturant l'air d'une douce odeur d'ozone.",
+      "en": "The streets crackle with magical energies. Apprentices and masters publicly test new wonders, saturating the air with a sweet scent of ozone."
+    }
+  },
+  {
+    "id": "vit_anarchie_sauvage",
+    "vibe_tags": [
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "La milice a totalement déserté ou s'est rangée du côté des prédateurs. C'est la loi de la jungle absolue en plein jour.",
+      "en": "The militia has completely deserted or sided with the predators. It is absolute jungle law in broad daylight."
+    }
+  },
+  {
+    "id": "vit_pelerinage_massif",
+    "vibe_tags": [
+      "fanatique",
+      "pieux"
+    ],
+    "description": {
+      "fr": "Un événement religieux attire les foules. Les sanctuaires débordent d'offrandes, les chants résonnent partout et une immense ferveur anime les rues.",
+      "en": "A religious event draws crowds. Sanctuaries overflow with offerings, chants echo everywhere, and an immense fervor animates the streets."
+    }
+  },
+  {
+    "id": "vit_ostentation",
+    "vibe_tags": [
+      "opulent",
+      "festif"
+    ],
+    "description": {
+      "fr": "L'argent coule à flots et s'affiche sans pudeur. Les banquets débordent, les tenues sont extravagantes et l'ambiance est à la dépense insouciante.",
+      "en": "Money flows freely and is displayed without shame. Banquets overflow, outfits are extravagant, and the atmosphere is one of carefree spending."
+    }
+  },
+  {
+    "id": "vit_marche_noir_ouvert",
+    "vibe_tags": [
+      "corrompu",
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "Le vice et la contrebande s'étalent au grand jour. Les affaires illicites se concluent à la vue de tous, sans que personne n'ose (ou ne veuille) intervenir.",
+      "en": "Vice and smuggling are out in the open. Illicit deals are made in plain sight, without anyone daring (or wanting) to intervene."
+    }
+  },
+  {
+    "id": "vit_xenophobie",
+    "vibe_tags": [
+      "paranoiaque",
+      "superstitieux"
+    ],
+    "description": {
+      "fr": "La méfiance envers tout ce qui vient de l'extérieur est à son comble. Les regards sont hostiles, les portes claquent au passage des étrangers.",
+      "en": "Distrust of anything from the outside is at an all-time high. Glances are hostile, doors slam shut as strangers pass by."
+    }
+  },
+  {
+    "id": "vit_clivage_cruel",
+    "vibe_tags": [
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "La frontière entre l'élite et le bas peuple n'a jamais été aussi cruelle. Pendant que certains se pavanent en palanquins, d'autres rampent dans la boue.",
+      "en": "The boundary between the elite and the lower classes has never been so cruel. While some parade in palanquins, others crawl in the mud."
+    }
+  },
+  {
+    "id": "vit_quiétude_absolue",
+    "vibe_tags": [
+      "paisible"
+    ],
+    "description": {
+      "fr": "Une quiétude rare berce la communauté. Les journées s'écoulent lentement, rythmées par le chant des oiseaux, les rires d'enfants et les salutations amicales.",
+      "en": "A rare tranquility cradles the community. Days pass slowly, punctuated by birdsong, children's laughter, and friendly greetings."
+    }
+  },
+  {
+    "id": "vit_saison_pleine",
+    "vibe_tags": [
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Une commande massive ou une saison cruciale a mobilisé tous les bras valides. Les outils résonnent du lever au coucher du soleil dans un effort commun.",
+      "en": "A massive order or a crucial season has mobilized all able-bodied people. Tools echo from sunrise to sunset in a joint effort."
+    }
+  },
+  {
+    "id": "vit_fraternite",
+    "vibe_tags": [
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Un vent de fraternité souffle sur les habitations. Les tables sont spontanément partagées et chaque voyageur est accueilli comme un vieil ami.",
+      "en": "A wind of brotherhood blows over the dwellings. Tables are spontaneously shared and every traveler is welcomed like an old friend."
+    }
+  }
+]

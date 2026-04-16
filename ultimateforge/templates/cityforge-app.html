@@ -1,0 +1,63 @@
+<div class="avantis-cityforge">
+    <div id="overlay">
+        <main id="generator-container">
+            
+            <header class="cf-header">
+                <img src="modules/ultimateforge/ui/Logo_Avantis_CityForge.webp" alt="{{localize 'CITYFORGE.Title'}}" class="cf-logo" onerror="this.style.display='none';">
+                <p class="cf-subtitle">{{localize 'CITYFORGE.Subtitle'}}</p>
+            </header>
+
+            <section id="controls-section" class="cf-controls-panel">
+                <div class="cf-control-row">
+                    <div class="control-group">
+                        <label><i class="fas fa-map"></i> {{localize 'CITYFORGE.RegionLabel'}}</label>
+                        <select id="region-select">
+                            <option value="none" selected disabled>{{localize 'CITYFORGE.RegionSelect'}}</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label><i class="fas fa-tree"></i> {{localize 'CITYFORGE.BiomeLabel'}}</label>
+                        <select id="biome-select" disabled>
+                            <option value="auto">{{localize 'CITYFORGE.Random'}}</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label><i class="fas fa-flag"></i> {{localize 'CITYFORGE.ContextLabel'}}</label>
+                        <select id="state-select">
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label><i class="fas fa-home"></i> {{localize 'CITYFORGE.SizeLabel'}}</label>
+                        <select id="size-select" disabled>
+                            <option value="auto">{{localize 'CITYFORGE.Random'}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="generate-btn" class="cf-action-btn" disabled><i class="fas fa-hammer"></i> {{localize 'CITYFORGE.GenerateBtn'}}</button>
+            </section>
+
+            <section id="results-section" class="cf-results hidden">
+                
+                <input type="text" id="res-title-input" class="cf-city-title-input" value="...">
+                <div class="cf-city-subtitle" id="res-subtitle">...</div>
+
+                <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px;">
+                    <button id="save-city-btn" class="cf-action-btn" style="width: auto; padding: 8px 20px; font-size: 1.1em; background: linear-gradient(to bottom, #27ae60, #2ecc71); border-color: #219653;"><i class="fas fa-book-open"></i> {{localize 'CITYFORGE.SaveCityBtn'}}</button>
+                    
+                    <button id="watabou-btn" class="cf-action-btn" style="width: auto; padding: 8px 20px; font-size: 1.1em; background: linear-gradient(to bottom, #8e44ad, #9b59b6); border-color: #732d91;"><i class="fas fa-map-marked-alt"></i> {{localize 'CITYFORGE.WatabouBtn'}}</button>
+                </div>
+
+                <div id="res-narrative" class="cf-narrative-box">
+                </div>
+
+                <div class="cf-districts-wrapper">
+                    <h3 class="cf-section-title"><i class="fas fa-map-marked-alt"></i> {{localize 'CITYFORGE.DistrictsTitle'}}</h3>
+                    <div id="res-districts" class="cf-districts-grid">
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</div>

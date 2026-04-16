@@ -1,0 +1,63 @@
+<div class="uf-hud-container">
+    
+    <div class="uf-header-logo">
+        <img src="modules/ultimateforge/ui/titre_UltimateForge.webp">
+    </div>
+
+    <div class="uf-section">
+        <h4 class="uf-title"><i class="fas fa-hourglass-half"></i> {{localize "ULTIMATEFORGE.HUD.Time.Title"}}</h4>
+        <div class="uf-time-grid">
+            <button class="uf-time-btn" data-time="aube" title="{{localize 'ULTIMATEFORGE.HUD.Time.Dawn'}}"><i class="fas fa-sunrise"></i></button>
+            <button class="uf-time-btn" data-time="matin" title="{{localize 'ULTIMATEFORGE.HUD.Time.Morning'}}"><i class="fas fa-sun" style="color: #fce588;"></i></button>
+            <button class="uf-time-btn" data-time="midi" title="{{localize 'ULTIMATEFORGE.HUD.Time.Noon'}}"><i class="fas fa-sun" style="color: #ffb703;"></i></button>
+            <button class="uf-time-btn" data-time="apresmidi" title="{{localize 'ULTIMATEFORGE.HUD.Time.Afternoon'}}"><i class="fas fa-cloud-sun"></i></button>
+            <button class="uf-time-btn" data-time="crepuscule" title="{{localize 'ULTIMATEFORGE.HUD.Time.Dusk'}}"><i class="fas fa-sunset" style="color: #fb8500;"></i></button>
+            <button class="uf-time-btn" data-time="nuit" title="{{localize 'ULTIMATEFORGE.HUD.Time.Night'}}"><i class="fas fa-moon" style="color: #8ecae6;"></i></button>
+        </div>
+    </div>
+
+    <div class="uf-section">
+        <h4 class="uf-title"><i class="fas fa-cloud-showers-heavy"></i> {{localize "ULTIMATEFORGE.HUD.Weather.Title"}}</h4>
+        <div class="uf-weather-controls">
+            <select id="uf-weather-select">
+                <option value="clear">{{localize "ULTIMATEFORGE.HUD.Weather.Clear"}}</option>
+                <option value="rain">{{localize "ULTIMATEFORGE.HUD.Weather.Rain"}}</option>
+                <option value="snow">{{localize "ULTIMATEFORGE.HUD.Weather.Snow"}}</option>
+                <option value="fog">{{localize "ULTIMATEFORGE.HUD.Weather.Fog"}}</option>
+                <option value="leaves">{{localize "ULTIMATEFORGE.HUD.Weather.Leaves"}}</option> 
+            </select>
+            <button id="uf-weather-force" title="{{localize 'ULTIMATEFORGE.HUD.Weather.Apply'}}"><i class="fas fa-bolt"></i></button>
+        </div>
+        <div class="uf-checkbox-group">
+            <label title="Fonctionnalité à venir avec JourneyForge V2">
+                <input type="checkbox" id="uf-weather-dynamic" checked disabled> 
+                <span style="opacity: 0.6;">{{localize "ULTIMATEFORGE.HUD.Weather.Dynamic"}} (Bientôt)</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="uf-section">
+        <h4 class="uf-title"><i class="fas fa-cogs"></i> {{localize "ULTIMATEFORGE.HUD.Forges.Title"}}</h4>
+        <div class="uf-tools-grid">
+            <button id="uf-btn-hexforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.HexForgeTip'}}">
+                <img src="modules/ultimateforge/ui/HexForge.webp">
+            </button>
+            <button id="uf-btn-cityforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.CityForgeTip'}}">
+                <img src="modules/ultimateforge/ui/CityForge.webp">
+            </button>
+            <button id="uf-btn-journeyforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.JourneyForgeTip'}}">
+                <img src="modules/ultimateforge/ui/JourneyForge.webp">
+            </button>
+            <button id="uf-btn-realmsforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.RealmsForgeTip'}}">
+                <img src="modules/ultimateforge/ui/RealmsForge.webp">
+            </button>
+            <button id="uf-btn-donjonforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.DungeonForgeTip'}}">
+                <img src="modules/ultimateforge/ui/DonjonForge.webp">
+            </button>
+            <button id="uf-btn-guildforge" class="uf-tool-btn" title="{{localize 'ULTIMATEFORGE.HUD.Forges.GuildForgeTip'}}">
+                <img src="modules/ultimateforge/ui/GuildForge.webp">
+            </button>
+        </div>
+    </div>
+
+</div>
