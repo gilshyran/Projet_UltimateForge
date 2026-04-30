@@ -1,0 +1,652 @@
+{
+  "tags": {
+    "all": {
+      "fr": "Tous",
+      "en": "All"
+    },
+    "Aquatique": {
+      "fr": "Aquatique",
+      "en": "Aquatic"
+    },
+    "Arctique": {
+      "fr": "Arctique",
+      "en": "Arctic"
+    },
+    "Collines": {
+      "fr": "Collines",
+      "en": "Hills"
+    },
+    "Désert": {
+      "fr": "Désert",
+      "en": "Desert"
+    },
+    "Forêt": {
+      "fr": "Forêt",
+      "en": "Forest"
+    },
+    "Jungle": {
+      "fr": "Jungle",
+      "en": "Jungle"
+    },
+    "Littoral": {
+      "fr": "Littoral",
+      "en": "Coastal"
+    },
+    "Marais": {
+      "fr": "Marais",
+      "en": "Swamp"
+    },
+    "Montagne": {
+      "fr": "Montagne",
+      "en": "Mountain"
+    },
+    "Outreterre": {
+      "fr": "Outreterre",
+      "en": "Underdark"
+    },
+    "Plaines": {
+      "fr": "Plaines",
+      "en": "Plains"
+    },
+    "Sub-aquatique": {
+      "fr": "Sub-aquatique",
+      "en": "Underwater"
+    },
+    "Taïga": {
+      "fr": "Taïga",
+      "en": "Taiga"
+    },
+    "ressource-bois": {
+      "fr": "Ressource : Bois",
+      "en": "Resource: Wood"
+    },
+    "ressource-herbe": {
+      "fr": "Ressource : Plantes",
+      "en": "Resource: Plants/Herbs"
+    },
+    "ressource-minerai": {
+      "fr": "Ressource : Minerai",
+      "en": "Resource: Ore"
+    },
+    "ressource-agriculture": {
+      "fr": "Ressource : Agriculture",
+      "en": "Resource: Agriculture"
+    },
+    "ressource-elevage": {
+      "fr": "Ressource : Élevage",
+      "en": "Resource: Livestock"
+    },
+    "ressource-chasse": {
+      "fr": "Ressource : Chasse",
+      "en": "Resource: Hunting"
+    },
+    "ressource-eau": {
+      "fr": "Ressource : Eau pure",
+      "en": "Resource: Pure Water"
+    },
+    "ressource-peche": {
+      "fr": "Ressource : Pêche",
+      "en": "Resource: Fishing"
+    },
+    "ressource-chaleur": {
+      "fr": "Ressource : Géothermie",
+      "en": "Resource: Geothermal Heat"
+    },
+    "ressource-gemme": {
+      "fr": "Ressource : Pierres précieuses",
+      "en": "Resource: Gemstones"
+    },
+    "carrefour": {
+      "fr": "Carrefour Stratégique",
+      "en": "Strategic Crossroads"
+    },
+    "isole": {
+      "fr": "Refuge Isolé",
+      "en": "Isolated Refuge"
+    },
+    "defense-naturelle": {
+      "fr": "Défense Naturelle",
+      "en": "Natural Defense"
+    },
+    "avant-poste": {
+      "fr": "Avant-poste",
+      "en": "Outpost"
+    },
+    "survie": {
+      "fr": "Point de Survie",
+      "en": "Survival Point"
+    },
+    "vestige-majeur": {
+      "fr": "Vestige Majeur",
+      "en": "Major Ruin"
+    },
+    "mystique": {
+      "fr": "Lieu Mystique",
+      "en": "Mystical Place"
+    },
+    "refuge-criminel": {
+      "fr": "Refuge Criminel",
+      "en": "Criminal Refuge"
+    },
+    "tribal": {
+      "fr": "Territoire Tribal",
+      "en": "Tribal Territory"
+    },
+    "pelerinage": {
+      "fr": "Lieu de Pèlerinage",
+      "en": "Pilgrimage Site"
+    },
+    "magie": {
+      "fr": "Anomalie Magique",
+      "en": "Magical Anomaly"
+    },
+    "route_pavee": {
+      "fr": "Route Pavée",
+      "en": "Paved Road"
+    },
+    "chemin_terre": {
+      "fr": "Chemin de Terre",
+      "en": "Dirt Path"
+    },
+    "pont": {
+      "fr": "Pont",
+      "en": "Bridge"
+    },
+    "tour_guet": {
+      "fr": "Tour de Guet",
+      "en": "Watchtower"
+    },
+    "ruines_antiques": {
+      "fr": "Ruines Antiques",
+      "en": "Ancient Ruins"
+    },
+    "riviere": {
+      "fr": "Rivière",
+      "en": "River"
+    },
+    "lac": {
+      "fr": "Lac",
+      "en": "Lake"
+    },
+    "cascade": {
+      "fr": "Cascade",
+      "en": "Waterfall"
+    },
+    "grotte": {
+      "fr": "Grotte",
+      "en": "Cave"
+    },
+    "faille": {
+      "fr": "Faille",
+      "en": "Chasm"
+    },
+    "cratere": {
+      "fr": "Cratère",
+      "en": "Crater"
+    },
+    "arbre_geant": {
+      "fr": "Arbre Géant",
+      "en": "Giant Tree"
+    },
+    "monolithe": {
+      "fr": "Monolithe",
+      "en": "Monolith"
+    },
+    "sanctuaire": {
+      "fr": "Sanctuaire",
+      "en": "Shrine"
+    },
+    "ruins_city": {
+      "fr": "Cité en Ruines",
+      "en": "Ruined City"
+    },
+    "cristaux": {
+      "fr": "Cristaux",
+      "en": "Crystals"
+    },
+    "carcasse": {
+      "fr": "Carcasse",
+      "en": "Carcass"
+    },
+    "repaire": {
+      "fr": "Repaire",
+      "en": "Lair"
+    },
+    "terres_corrompues": {
+      "fr": "Terres Corrompues",
+      "en": "Corrupted Lands"
+    },
+    "taverne_isolee": {
+      "fr": "Taverne Isolée",
+      "en": "Isolated Tavern"
+    },
+    "ferme": {
+      "fr": "Ferme",
+      "en": "Farm"
+    },
+    "moulin": {
+      "fr": "Moulin",
+      "en": "Mill"
+    },
+    "camp_minier": {
+      "fr": "Camp Minier",
+      "en": "Mining Camp"
+    },
+    "monastere": {
+      "fr": "Monastère",
+      "en": "Monastery"
+    },
+    "campement": {
+      "fr": "Campement",
+      "en": "Camp"
+    },
+    "hameau": {
+      "fr": "Hameau",
+      "en": "Hamlet"
+    },
+    "village": {
+      "fr": "Village",
+      "en": "Village"
+    },
+    "petite_ville": {
+      "fr": "Petite Ville",
+      "en": "Small Town"
+    },
+    "grande_cite": {
+      "fr": "Grande Cité",
+      "en": "Large City"
+    },
+    "metropole": {
+      "fr": "Métropole",
+      "en": "Metropolis"
+    },
+    "capitale": {
+      "fr": "Capitale",
+      "en": "Capital"
+    },
+    "oppressant": {
+      "fr": "Oppressant",
+      "en": "Oppressive"
+    },
+    "paisible": {
+      "fr": "Paisible",
+      "en": "Peaceful"
+    },
+    "loi-du-plus-fort": {
+      "fr": "Loi du plus fort",
+      "en": "Law of the Strongest"
+    },
+    "inegalitaire": {
+      "fr": "Inégalitaire",
+      "en": "Unequal"
+    },
+    "opulent": {
+      "fr": "Opulent",
+      "en": "Opulent"
+    },
+    "miserable": {
+      "fr": "Misérable",
+      "en": "Miserable"
+    },
+    "fanatique": {
+      "fr": "Fanatique",
+      "en": "Fanatical"
+    },
+    "pieux": {
+      "fr": "Pieux",
+      "en": "Pious"
+    },
+    "arcanique": {
+      "fr": "Arcanique",
+      "en": "Arcane"
+    },
+    "superstitieux": {
+      "fr": "Superstitieux",
+      "en": "Superstitious"
+    },
+    "accueillant": {
+      "fr": "Accueillant",
+      "en": "Welcoming"
+    },
+    "paranoiaque": {
+      "fr": "Paranoïaque",
+      "en": "Paranoid"
+    },
+    "corrompu": {
+      "fr": "Corrompu",
+      "en": "Corrupt"
+    },
+    "laborieux": {
+      "fr": "Laborieux",
+      "en": "Laborious"
+    },
+    "festif": {
+      "fr": "Festif",
+      "en": "Festive"
+    },
+    "tradition": {
+      "fr": "Tradition",
+      "en": "Tradition"
+    },
+    "conseil-anciens": {
+      "fr": "Conseil des Anciens",
+      "en": "Council of Elders"
+    },
+    "democratie-directe": {
+      "fr": "Démocratie Directe",
+      "en": "Direct Democracy"
+    },
+    "democratie-locale": {
+      "fr": "Démocratie Locale",
+      "en": "Local Democracy"
+    },
+    "cite-libre": {
+      "fr": "Cité Libre",
+      "en": "Free City"
+    },
+    "bourgmestre-aubergiste": {
+      "fr": "Bourgmestre Aubergiste",
+      "en": "Innkeeper Burgomaster"
+    },
+    "commune-ouverte": {
+      "fr": "Commune Ouverte",
+      "en": "Open Commune"
+    },
+    "dictature-militaire": {
+      "fr": "Dictature Militaire",
+      "en": "Military Dictatorship"
+    },
+    "tyrannie": {
+      "fr": "Tyrannie",
+      "en": "Tyranny"
+    },
+    "climat-terreur": {
+      "fr": "Climat de Terreur",
+      "en": "Climate of Terror"
+    },
+    "police-secrete": {
+      "fr": "Police Secrète",
+      "en": "Secret Police"
+    },
+    "isolationnisme": {
+      "fr": "Isolationnisme",
+      "en": "Isolationism"
+    },
+    "chef-de-guerre": {
+      "fr": "Chef de Guerre",
+      "en": "Warlord"
+    },
+    "anarchie": {
+      "fr": "Anarchie",
+      "en": "Anarchy"
+    },
+    "loi-du-talion": {
+      "fr": "Loi du Talion",
+      "en": "Law of Retaliation"
+    },
+    "cartel-criminel": {
+      "fr": "Cartel Criminel",
+      "en": "Criminal Cartel"
+    },
+    "mafia": {
+      "fr": "Mafia",
+      "en": "Mafia"
+    },
+    "oligarchie-corrompue": {
+      "fr": "Oligarchie Corrompue",
+      "en": "Corrupt Oligarchy"
+    },
+    "maire-verreux": {
+      "fr": "Maire Véreux",
+      "en": "Crooked Mayor"
+    },
+    "marionnette-locale": {
+      "fr": "Marionnette Locale",
+      "en": "Local Puppet"
+    },
+    "oligarchie-marchande": {
+      "fr": "Oligarchie Marchande",
+      "en": "Merchant Oligarchy"
+    },
+    "ploutocratie": {
+      "fr": "Ploutocratie",
+      "en": "Plutocracy"
+    },
+    "proprietaire-terrien": {
+      "fr": "Propriétaire Terrien",
+      "en": "Landowner"
+    },
+    "domaine-prive": {
+      "fr": "Domaine Privé",
+      "en": "Private Domain"
+    },
+    "feodalite": {
+      "fr": "Féodalité",
+      "en": "Feudalism"
+    },
+    "noblesse": {
+      "fr": "Noblesse",
+      "en": "Nobility"
+    },
+    "inegalite": {
+      "fr": "Inégalité",
+      "en": "Inequality"
+    },
+    "petit-baron": {
+      "fr": "Petit Baron",
+      "en": "Petty Baron"
+    },
+    "servage": {
+      "fr": "Servage",
+      "en": "Serfdom"
+    },
+    "meritocratie": {
+      "fr": "Méritocratie",
+      "en": "Meritocracy"
+    },
+    "gouvernement-de-guildes": {
+      "fr": "Gouvernement de Guildes",
+      "en": "Guild Government"
+    },
+    "gestion-ouvriere": {
+      "fr": "Gestion Ouvrière",
+      "en": "Worker Management"
+    },
+    "contremaitre": {
+      "fr": "Contremaître",
+      "en": "Foreman"
+    },
+    "bureaucratie-decadente": {
+      "fr": "Bureaucratie Décadente",
+      "en": "Decadent Bureaucracy"
+    },
+    "etat-failli": {
+      "fr": "État Failli",
+      "en": "Failed State"
+    },
+    "faiblesse-politique": {
+      "fr": "Faiblesse Politique",
+      "en": "Political Weakness"
+    },
+    "theocratie-rigide": {
+      "fr": "Théocratie Rigide",
+      "en": "Rigid Theocracy"
+    },
+    "inquisition": {
+      "fr": "Inquisition",
+      "en": "Inquisition"
+    },
+    "culte": {
+      "fr": "Culte",
+      "en": "Cult"
+    },
+    "theocratie-douce": {
+      "fr": "Théocratie Douce",
+      "en": "Mild Theocracy"
+    },
+    "eglise-dirigeante": {
+      "fr": "Église Dirigeante",
+      "en": "Ruling Church"
+    },
+    "magocratie": {
+      "fr": "Magocratie",
+      "en": "Magocracy"
+    },
+    "conseil-occulte": {
+      "fr": "Conseil Occulte",
+      "en": "Occult Council"
+    },
+    "magocratie-locale": {
+      "fr": "Magocratie Locale",
+      "en": "Local Magocracy"
+    },
+    "sorcier-tutelaire": {
+      "fr": "Sorcier Tutélaire",
+      "en": "Guardian Sorcerer"
+    },
+    "cabal-secrete": {
+      "fr": "Cabale Secrète",
+      "en": "Secret Cabal"
+    },
+    "eminence-grise": {
+      "fr": "Éminence Grise",
+      "en": "Grey Eminence"
+    },
+    "gouvernance-mystique": {
+      "fr": "Gouvernance Mystique",
+      "en": "Mystical Governance"
+    },
+    "chamanisme": {
+      "fr": "Chamanisme",
+      "en": "Shamanism"
+    },
+    "mecenat": {
+      "fr": "Mécénat",
+      "en": "Patronage"
+    },
+    "gouvernement-populaire": {
+      "fr": "Gouvernement Populaire",
+      "en": "Popular Government"
+    },
+    "feodalite-standard": {
+      "fr": "Féodalité Standard",
+      "en": "Standard Feudalism"
+    },
+    "ressources-brutes": {
+      "fr": "Ressources Brutes",
+      "en": "Raw Resources"
+    },
+    "agricole-elevage": {
+      "fr": "Agriculture & Élevage",
+      "en": "Agriculture & Livestock"
+    },
+    "artisanat-commun": {
+      "fr": "Artisanat Commun",
+      "en": "Common Craftsmanship"
+    },
+    "industrie-lourde": {
+      "fr": "Industrie Lourde",
+      "en": "Heavy Industry"
+    },
+    "artisanat-luxe": {
+      "fr": "Artisanat de Luxe",
+      "en": "Luxury Craftsmanship"
+    },
+    "economie-subsistance": {
+      "fr": "Économie de Subsistance",
+      "en": "Subsistence Economy"
+    },
+    "commerce-local": {
+      "fr": "Commerce Local",
+      "en": "Local Trade"
+    },
+    "commerce-international": {
+      "fr": "Commerce International",
+      "en": "International Trade"
+    },
+    "marche-noir": {
+      "fr": "Marché Noir",
+      "en": "Black Market"
+    },
+    "economie-militaire": {
+      "fr": "Économie Militaire",
+      "en": "Military Economy"
+    },
+    "economie-magique": {
+      "fr": "Économie Magique",
+      "en": "Magical Economy"
+    },
+    "economie-religieuse": {
+      "fr": "Économie Religieuse",
+      "en": "Religious Economy"
+    },
+    "economie-touristique": {
+      "fr": "Économie Touristique",
+      "en": "Tourist Economy"
+    },
+    "economie-bois": {
+      "fr": "Économie Forestière",
+      "en": "Timber Economy"
+    },
+    "economie-minerai": {
+      "fr": "Économie Minière",
+      "en": "Mining Economy"
+    },
+    "economie-peche": {
+      "fr": "Économie de la Pêche",
+      "en": "Fishing Economy"
+    },
+    "clear": {
+      "fr": "Ciel Dégagé",
+      "en": "Clear Sky"
+    },
+    "fog": {
+      "fr": "Brouillard",
+      "en": "Fog"
+    },
+    "rain": {
+      "fr": "Pluie",
+      "en": "Rain"
+    },
+    "snow": {
+      "fr": "Neige",
+      "en": "Snow"
+    },
+    "storm": {
+      "fr": "Tempête",
+      "en": "Storm"
+    },
+    "leaves": {
+      "fr": "Feuilles Mortes",
+      "en": "Falling Leaves"
+    },
+    "aube": {
+      "fr": "Aube",
+      "en": "Dawn"
+    },
+    "apresmidi": {
+      "fr": "Après-Midi",
+      "en": "Afternoon"
+    },
+    "crepuscule": {
+      "fr": "Crépuscule",
+      "en": "Dusk"
+    },
+    "jour": {
+      "fr": "Jour",
+      "en": "Day"
+    },
+    "matin": {
+      "fr": "Matin",
+      "en": "Morning"
+    },
+    "midi": {
+      "fr": "Midi",
+      "en": "Noon"
+    },
+    "nuit": {
+      "fr": "Nuit",
+      "en": "Night"
+    }
+  }
+}

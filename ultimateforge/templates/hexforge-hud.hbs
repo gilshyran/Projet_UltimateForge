@@ -1,0 +1,47 @@
+<div class="hf-hud-container" style="font-family: var(--font-primary); padding: 10px;">
+    
+    <div style="display: flex; gap: 5px; margin-bottom: 15px;">
+        <button id="hf-mode-edit" class="hf-mode-btn active" style="flex: 1; background: #2980b9; color: white; border: none; border-radius: 4px; padding: 8px; font-weight: bold;" title="{{localize 'HEXFORGE.HUD.EditModeTip'}}"><i class="fas fa-mouse-pointer"></i> {{localize 'HEXFORGE.HUD.Edit'}}</button>
+        <button id="hf-mode-brush" class="hf-mode-btn" style="flex: 1; background: #34495e; color: white; border: none; border-radius: 4px; padding: 8px; font-weight: bold;" title="{{localize 'HEXFORGE.HUD.BrushModeTip'}}"><i class="fas fa-paint-brush"></i> {{localize 'HEXFORGE.HUD.Paint'}}</button>
+    </div>
+
+    <div id="hf-brush-options" style="display: none; flex-direction: column; gap: 12px; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 5px; border: 1px solid #bdc3c7;">
+        
+        <div>
+            <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-globe"></i> {{localize 'HEXFORGE.HUD.RegionToPaint'}}</label>
+            <select id="hf-brush-region" style="width: 100%; padding: 4px;">
+                <option value="">{{localize 'HEXFORGE.HUD.DoNotModify'}}</option>
+                <option value="none">{{localize 'HEXFORGE.HUD.EraseRegion'}}</option>
+                {{#each regions}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div>
+            <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-tree"></i> {{localize 'HEXFORGE.HUD.BiomeToPaint'}}</label>
+            <select id="hf-brush-biome" style="width: 100%; padding: 4px;">
+                <option value="">{{localize 'HEXFORGE.HUD.DoNotModify'}}</option>
+                <option value="none">{{localize 'HEXFORGE.HUD.EraseBiome'}}</option>
+                {{#each biomes}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        
+        <div>
+            <label style="font-size: 0.85em; color: #555; font-weight: bold;"><i class="fas fa-road"></i> {{localize 'HEXFORGE.HUD.TraitToPaint'}}</label>
+            <select id="hf-brush-trait" style="width: 100%; padding: 4px;">
+                <option value="">{{localize 'HEXFORGE.HUD.DoNotModify'}}</option>
+                <option value="none">{{localize 'HEXFORGE.HUD.EraseTrait'}}</option>
+                <option value="route_pavee">{{localize 'HEXFORGE.HUD.TraitPavedRoad'}}</option>
+                <option value="chemin_terre">{{localize 'HEXFORGE.HUD.TraitDirtPath'}}</option>
+                <option value="riviere">{{localize 'HEXFORGE.HUD.TraitRiver'}}</option>
+                <option value="lac">{{localize 'HEXFORGE.HUD.TraitLake'}}</option>
+                <option value="faille">{{localize 'HEXFORGE.HUD.TraitChasm'}}</option>
+                <option value="grotte">{{localize 'HEXFORGE.HUD.TraitCave'}}</option>
+            </select>
+        </div>
+        <p style="font-size: 0.8em; color: #e67e22; font-style: italic; margin: 0; text-align: center;"><i class="fas fa-info-circle"></i> {{localize 'HEXFORGE.HUD.DragTip'}}</p>
+    </div>
+</div>

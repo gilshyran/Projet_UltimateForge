@@ -1,0 +1,648 @@
+{
+  "overlays": {
+    "campement": {
+      "name": {
+        "fr": "Campement",
+        "en": "Camp"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_camp_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "campement_lacustre": {
+      "name": {
+        "fr": "Campement lacustre",
+        "en": "Lakeside Camp"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_camp_lacustre.webp",
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "campement_desert": {
+      "name": {
+        "fr": "Campement du Désert",
+        "en": "Desert Camp"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_camp_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "campement_taiga": {
+      "name": {
+        "fr": "Campement de Yourtes",
+        "en": "Yurt Camp"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_camp_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "hameau": {
+      "name": {
+        "fr": "Hameau",
+        "en": "hamlet"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_hameau_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "hameau_lacustre": {
+      "name": {
+        "fr": "Hameau lacustre",
+        "en": "Lakeside hamlet"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_hameau_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "hameau_desert": {
+      "name": {
+        "fr": "Hameau du désert",
+        "en": "Desert hamlet"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_hameau_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "hameau_taiga": {
+      "name": {
+        "fr": "Hameau de Yourtes",
+        "en": "Yurt hamlet"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_hameau_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "village": {
+      "name": {
+        "fr": "Village",
+        "en": "Village"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "village_lacustre": {
+      "name": {
+        "fr": "Village lacustre",
+        "en": "Lakeside village"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "village_flottant": {
+      "name": {
+        "fr": "Village (Aquatique)",
+        "en": "Village (Aquatic)"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_flottant.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Aquatique",
+        "Sub-aquatique"
+      ]
+    },
+    "village_desert": {
+      "name": {
+        "fr": "Village du désert",
+        "en": "Desert village"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "village_taiga": {
+      "name": {
+        "fr": "Village de la taïga",
+        "en": "Taiga village"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "village_troglodyte": {
+      "name": {
+        "fr": "Village troglodyte",
+        "en": "troglodyte village"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_village_troglodyte.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Collines",
+        "Montagne",
+        "Désert"
+      ]
+    },
+    "petite_ville": {
+      "name": {
+        "fr": "Petit Ville",
+        "en": "Small City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_petite_ville_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "petite_ville_lacustre": {
+      "name": {
+        "fr": "Petit Ville lacustre",
+        "en": "Lakeside Small City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_petite_ville_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "petite_ville_desert": {
+      "name": {
+        "fr": "Petit Ville du désert",
+        "en": "Desert Small City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_petite_ville_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "petite_ville_taiga": {
+      "name": {
+        "fr": "Petit Ville dans la taïga",
+        "en": "Taiga Small City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_petite_ville_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "grande_cite": {
+      "name": {
+        "fr": "Grande Cité",
+        "en": "Big City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_city_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "grande_cite_lacustre": {
+      "name": {
+        "fr": "Grande Cité lacustre",
+        "en": "Lakeside Big City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_city_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "grande_cite_desert": {
+      "name": {
+        "fr": "Grande Cité du désert",
+        "en": "Desert Big City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_city_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "grande_cite_taiga": {
+      "name": {
+        "fr": "Grande Cité de la TaÏga",
+        "en": "Taige Big City"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_city_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "metropole": {
+      "name": {
+        "fr": "Métropole",
+        "en": "Metropolis"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_metropolis_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "metropole_lacustre": {
+      "name": {
+        "fr": "Métropole lacustre",
+        "en": "Lakeside Metropolis"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_metropolis_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "metropole_desert": {
+      "name": {
+        "fr": "Métropole du désert",
+        "en": "Desert Metropolis"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_metropolis_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "metropole_taiga": {
+      "name": {
+        "fr": "Métropole de la taïga",
+        "en": "Taiga Metropolis"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_metropolis_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "capitale": {
+      "name": {
+        "fr": "Capitale",
+        "en": "Capital"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_capital_med.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "capitale_lacustre": {
+      "name": {
+        "fr": "Capitale lacustre",
+        "en": "Lakeside Capital"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_capital_lacustre.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Littoral",
+        "Marais"
+      ]
+    },
+    "capitale_desert": {
+      "name": {
+        "fr": "Capitale du désert",
+        "en": "Desert Capital"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_capital_desert.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Désert"
+      ]
+    },
+    "capitale_taiga": {
+      "name": {
+        "fr": "Capitale de la taïga",
+        "en": "Taiga Capital"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_capital_taiga.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Taïga"
+      ]
+    },
+    "mine": {
+      "name": {
+        "fr": "Camp minier",
+        "en": "Mining camp"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_camp_mine.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "cimetiere": {
+      "name": {
+        "fr": "Cimetière",
+        "en": "Cimetary"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_cimetiere.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "ferme": {
+      "name": {
+        "fr": "Ferme isolée",
+        "en": "Isolated Farm"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_ferme.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "taverne_isolee": {
+      "name": {
+        "fr": "Auberge isolée",
+        "en": "Isolated Inn"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_inn.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "monastere": {
+      "name": {
+        "fr": "Monastère",
+        "en": "Monastery"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_monastere.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "moulin": {
+      "name": {
+        "fr": "Moulin à vent",
+        "en": "Windmill"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_moulin_vent.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "crital": {
+      "name": {
+        "fr": "Crital",
+        "en": "Crystal"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_crital.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "grotte": {
+      "name": {
+        "fr": "Grotte",
+        "en": "Cave"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_grotte.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Collines",
+        "Montagne",
+        "Désert"
+      ]
+    },
+    "cascade": {
+      "name": {
+        "fr": "Cascade",
+        "en": "Cascade"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_cascade_grotte.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Collines",
+        "Montagne",
+        "Littoral"
+      ]
+    },
+    "taniere": {
+      "name": {
+        "fr": "Tanière",
+        "en": "Lair"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_taniere.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Collines",
+        "Forêt",
+        "Jungle"
+      ]
+    },
+    "temple": {
+      "name": {
+        "fr": "Temple ancien",
+        "en": "Ancien Temple"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_temple.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Forêt",
+        "Jungle"
+      ]
+    },
+    "monolithe": {
+      "name": {
+        "fr": "Monolithe",
+        "en": "Monolith"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_monolithe.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Plaines",
+        "Collines"
+      ]
+    },
+    "tour_guet": {
+      "name": {
+        "fr": "Tour de guet",
+        "en": "Watchtower"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_tour_guet.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Plaines",
+        "Collines"
+      ]
+    },
+    "tour_mage": {
+      "name": {
+        "fr": "Tour de mage",
+        "en": "Wizard's tower"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_tour_mage.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Plaines",
+        "Collines"
+      ]
+    },
+    "statue_guerrier": {
+      "name": {
+        "fr": "Temple ancien",
+        "en": "Ancien Temple"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_statue_guerrier.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "PLaines",
+        "Littoral"
+      ]
+    },
+    "statue_deite": {
+      "name": {
+        "fr": "Pachamama",
+        "en": "Pachamama"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_statue_pachamama.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    },
+    "faille": {
+      "name": {
+        "fr": "Faille",
+        "en": "Rift"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_faille.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "Plaines",
+        "Collines",
+        "Montagne"
+      ]
+    },
+    "ruines_cite": {
+      "name": {
+        "fr": "Ruines d'un ancien lieu de vie",
+        "en": "Ruins of a former dwelling"
+      },
+      "path": "modules/ultimateforge/data/default_fantasy/assets/ico_city_ruins.webp",
+      "regions": [
+        "all"
+      ],
+      "biomes": [
+        "all"
+      ]
+    }
+  }
+}

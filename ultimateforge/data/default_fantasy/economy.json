@@ -1,0 +1,1214 @@
+[
+  {
+    "id": "eco_av_001",
+    "biome_tags": [
+      "Désert",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-eau"
+    ],
+    "vibe_tags": [
+      "miserable",
+      "loi-du-plus-fort",
+      "oppressant",
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "Monopole sur l'eau potable. L'économie locale tourne presque exclusivement autour de la distribution rationnée de cette ressource vitale. Pénurie : Matériaux de construction solides.",
+      "en": "Monopoly on drinking water. The local economy revolves almost exclusively around the rationed distribution of this vital resource. Shortage: Solid building materials."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_002",
+    "biome_tags": [
+      "Forêt",
+      "Marais",
+      "Jungle",
+      "Plaines",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-herbe"
+    ],
+    "vibe_tags": [
+      "all"
+    ],
+    "description": {
+      "fr": "Cueillette spécialisée, récolte d'herbes médicinales, fabrication d'onguents et de remèdes naturels. Pénurie : Minerais raffinés et outils manufacturés.",
+      "en": "Specialized gathering, harvesting of medicinal herbs, making ointments and natural remedies. Shortage: Refined ores and manufactured tools."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_003",
+    "biome_tags": [
+      "Montagne",
+      "Collines",
+      "Outreterre",
+      "Arctique"
+    ],
+    "origin_tags": [
+      "ressource-minerai"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "inegalitaire",
+      "oppressant",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Extraction de minerais bruts, charbon et métallurgie lourde. Un travail éreintant pour la terre. Pénurie : Nourriture fraîche, étoffes de qualité.",
+      "en": "Extraction of raw ores, coal, and heavy metallurgy. Exhausting work for the earth. Shortage: Fresh food, quality fabrics."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "industrie-lourde",
+      "economie-minerai"
+    ]
+  },
+  {
+    "id": "eco_av_004",
+    "biome_tags": [
+      "Montagne",
+      "Collines",
+      "Outreterre",
+      "Désert",
+      "Littoral"
+    ],
+    "origin_tags": [
+      "ressource-gemme"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "inegalitaire",
+      "corrompu",
+      "festif"
+    ],
+    "description": {
+      "fr": "Taille de pierres précieuses, orfèvrerie et joaillerie de luxe attirant les marchands lointains. Pénurie : Nourriture de base, matériaux de maçonnerie.",
+      "en": "Cutting precious stones, goldsmithing, and luxury jewelry attracting distant merchants. Shortage: Basic food, masonry materials."
+    },
+    "output_tags": [
+      "artisanat-luxe",
+      "commerce-international"
+    ]
+  },
+  {
+    "id": "eco_av_005",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "carrefour"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "accueillant",
+      "festif",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Import-export de biens manufacturés, logistique marchande, vastes marchés et relais de caravanes. Pénurie : Ressources primaires d'origine locale.",
+      "en": "Import-export of manufactured goods, merchant logistics, vast markets, and caravan relays. Shortage: Locally sourced primary resources."
+    },
+    "output_tags": [
+      "commerce-international"
+    ]
+  },
+  {
+    "id": "eco_av_006",
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais"
+    ],
+    "origin_tags": [
+      "ressource-peche"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "paisible",
+      "miserable",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Pêche intensive, salaison de poissons, récolte de coquillages et fabrication de sel. Pénurie : Métaux lourds, armes de qualité.",
+      "en": "Intensive fishing, fish salting, shellfish harvesting, and salt making. Shortage: Heavy metals, quality weapons."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "commerce-local",
+      "economie-peche"
+    ]
+  },
+  {
+    "id": "eco_av_007",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "vestige-majeur"
+    ],
+    "vibe_tags": [
+      "superstitieux",
+      "arcanique",
+      "laborieux",
+      "corrompu",
+      "fanatique"
+    ],
+    "description": {
+      "fr": "Fouille archéologique, revente de ferraille antique, étude d'artefacts d'un autre âge et pillage. Pénurie : Outils agricoles, bétail de trait.",
+      "en": "Archaeological excavation, resale of ancient scrap metal, study of artifacts from another age, and looting. Shortage: Agricultural tools, draft cattle."
+    },
+    "output_tags": [
+      "economie-magique",
+      "marche-noir"
+    ]
+  },
+  {
+    "id": "eco_av_008",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "avant-poste",
+      "defense-naturelle"
+    ],
+    "vibe_tags": [
+      "oppressant",
+      "loi-du-plus-fort",
+      "paranoiaque",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Mercenariat, entretien d'armement léger, ravitaillement de troupes de garnison et péages de protection. Pénurie : Biens de divertissement, art, objets de luxe.",
+      "en": "Mercenary work, light weaponry maintenance, garrison troop supply, and protection tolls. Shortage: Entertainment goods, art, luxury items."
+    },
+    "output_tags": [
+      "economie-militaire"
+    ]
+  },
+  {
+    "id": "eco_av_009",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "pelerinage",
+      "mystique"
+    ],
+    "vibe_tags": [
+      "pieux",
+      "fanatique",
+      "paisible",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Artisanat spirituel, vente de reliques saintes, d'encens, d'onguents purificateurs et gestion des aumônes. Pénurie : Armures lourdes, machinerie profane.",
+      "en": "Spiritual craftsmanship, sale of holy relics, incense, purifying ointments, and alms management. Shortage: Heavy armor, profane machinery."
+    },
+    "output_tags": [
+      "economie-religieuse",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_010",
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Désert",
+      "Outreterre"
+    ],
+    "origin_tags": [
+      "survie",
+      "isole"
+    ],
+    "vibe_tags": [
+      "miserable",
+      "loi-du-plus-fort",
+      "paranoiaque",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Économie de subsistance extrême : recyclage permanent, rationnement et troc de biens de première nécessité. Pénurie : Absolument tout le reste manque cruellement.",
+      "en": "Extreme subsistence economy: constant recycling, rationing, and bartering of basic necessities. Shortage: Absolutely everything else is sorely lacking."
+    },
+    "output_tags": [
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_011",
+    "biome_tags": [
+      "Plaines",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-agriculture"
+    ],
+    "vibe_tags": [
+      "paisible",
+      "laborieux",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Monoculture à grande échelle (céréales, légumes). Le lieu est un véritable grenier pour toute la région. Pénurie : Objets magiques, érudition, épices rares.",
+      "en": "Large-scale monoculture (cereals, vegetables). The place is a true breadbasket for the whole region. Shortage: Magic items, erudition, rare spices."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "commerce-local"
+    ]
+  },
+  {
+    "id": "eco_av_012",
+    "biome_tags": [
+      "Plaines",
+      "Marais",
+      "Taïga",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-elevage"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "paisible",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Élevage intensif en pâturage, production de viandes séchées, de cuirs bruts et de fromages affinés. Pénurie : Minerais raffinés, étoffes fines.",
+      "en": "Intensive pasture breeding, production of dried meats, raw leathers, and aged cheeses. Shortage: Refined ores, fine fabrics."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_013",
+    "biome_tags": [
+      "Forêt",
+      "Marais",
+      "Jungle"
+    ],
+    "origin_tags": [
+      "magie"
+    ],
+    "vibe_tags": [
+      "arcanique",
+      "superstitieux",
+      "isole",
+      "corrompu"
+    ],
+    "description": {
+      "fr": "Alchimie occulte, culture de plantes étranges sous serres, concoction de poisons et de remèdes miracles. Pénurie : Armement lourd, matériaux de maçonnerie.",
+      "en": "Occult alchemy, cultivation of strange plants in greenhouses, concoction of poisons and miracle cures. Shortage: Heavy weaponry, masonry materials."
+    },
+    "output_tags": [
+      "economie-magique",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_014",
+    "biome_tags": [
+      "Jungle",
+      "Forêt",
+      "Taïga"
+    ],
+    "origin_tags": [
+      "ressource-bois"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "opulent",
+      "inegalitaire",
+      "paisible"
+    ],
+    "description": {
+      "fr": "Exploitation forestière massive, charpenterie d'excellence, ébénisterie et construction de solides chariots. Pénurie : Minerais précieux, produits de la mer.",
+      "en": "Massive logging, excellent carpentry, cabinetmaking, and construction of sturdy carts. Shortage: Precious ores, seafood."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "artisanat-commun",
+      "industrie-lourde",
+      "economie-bois"
+    ]
+  },
+  {
+    "id": "eco_av_015",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "refuge-criminel"
+    ],
+    "vibe_tags": [
+      "corrompu",
+      "loi-du-plus-fort",
+      "paranoiaque",
+      "opulent",
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "Marché noir florissant, recel d'objets volés, contrebande, racket de protection et commerce de marchandises illicites. Pénurie : Lois, ordre, biens officiels.",
+      "en": "Flourishing black market, receiving stolen goods, smuggling, protection rackets, and illicit goods trade. Shortage: Laws, order, official goods."
+    },
+    "output_tags": [
+      "marche-noir"
+    ]
+  },
+  {
+    "id": "eco_av_016",
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-chaleur"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "accueillant",
+      "festif",
+      "paisible"
+    ],
+    "description": {
+      "fr": "Tourisme thermal autour de sources chaudes, forges géothermiques ou culture de mets rares en serres chauffées. Pénurie : Bois de chauffage externe.",
+      "en": "Thermal tourism around hot springs, geothermal forges, or cultivation of rare delicacies in heated greenhouses. Shortage: External firewood."
+    },
+    "output_tags": [
+      "economie-touristique",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_017",
+    "biome_tags": [
+      "Forêt",
+      "Taïga",
+      "Arctique",
+      "Jungle",
+      "Plaines"
+    ],
+    "origin_tags": [
+      "ressource-chasse"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "loi-du-plus-fort",
+      "miserable",
+      "tribal"
+    ],
+    "description": {
+      "fr": "Guildes de trappeurs, commerce de fourrures épaisses, viandes fumées, taxidermie et os sculptés. Pénurie : Légumes frais, textiles légers et délicats.",
+      "en": "Trapping guilds, thick fur trade, smoked meats, taxidermy, and carved bones. Shortage: Fresh vegetables, light and delicate textiles."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_018",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "tribal"
+    ],
+    "vibe_tags": [
+      "superstitieux",
+      "loi-du-plus-fort",
+      "paisible",
+      "pieux"
+    ],
+    "description": {
+      "fr": "Artisanat rituel, troc de ressources primaires, cueillette intensive et travail de peaux à l'ancienne. Pénurie : Monnaie frappée, technologie et acier forgé.",
+      "en": "Ritual craftsmanship, bartering of primary resources, intensive gathering, and traditional leatherwork. Shortage: Minted coin, technology, and forged steel."
+    },
+    "output_tags": [
+      "economie-subsistance",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_019",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "magie"
+    ],
+    "vibe_tags": [
+      "arcanique",
+      "opulent",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Académies occultes, enchantement d'objets du quotidien, vente de composants arcaniques et de parchemins. Pénurie : Travailleurs manuels, bétail.",
+      "en": "Occult academies, enchantment of everyday items, sale of arcane components and scrolls. Shortage: Manual laborers, livestock."
+    },
+    "output_tags": [
+      "economie-magique",
+      "commerce-local"
+    ]
+  },
+  {
+    "id": "eco_av_020",
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "origin_tags": [
+      "defense-naturelle"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "paranoiaque",
+      "inegalitaire",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Stockage ultra-sécurisé, coffres forts creusés dans la roche, banques locales et escortes blindées pour les nobles. Pénurie : Terres arables, produits marins.",
+      "en": "Ultra-secure storage, safes carved into the rock, local banks, and armored escorts for nobles. Shortage: Arable land, marine products."
+    },
+    "output_tags": [
+      "commerce-international",
+      "economie-militaire"
+    ]
+  },
+  {
+    "id": "eco_av_021",
+    "biome_tags": [
+      "Montagne",
+      "Taïga",
+      "Outreterre"
+    ],
+    "origin_tags": [
+      "ressource-minerai"
+    ],
+    "vibe_tags": [
+      "oppressant",
+      "laborieux",
+      "inegalitaire",
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "Fonderie massive, création d'armes de siège redoutables et forge d'armures lourdes produites en série. Pénurie : Nourriture délicate, vêtements fins.",
+      "en": "Massive foundry, creation of fearsome siege weapons, and mass-produced heavy armor forging. Shortage: Delicate food, fine clothing."
+    },
+    "output_tags": [
+      "industrie-lourde",
+      "economie-militaire"
+    ]
+  },
+  {
+    "id": "eco_av_022",
+    "biome_tags": [
+      "Désert",
+      "Littoral"
+    ],
+    "origin_tags": [
+      "ressource-gemme"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "laborieux",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Verrerie d'art grâce au sable purifié, travail minutieux de la nacre, du corail et taille de cristaux clairs. Pénurie : Eau douce, bois robuste.",
+      "en": "Fine glasswork from purified sand, meticulous work with mother-of-pearl, coral, and clear crystal cutting. Shortage: Fresh water, sturdy wood."
+    },
+    "output_tags": [
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_023",
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Marais"
+    ],
+    "origin_tags": [
+      "ressource-eau"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "accueillant",
+      "festif",
+      "corrompu"
+    ],
+    "description": {
+      "fr": "Commerce fluvial très actif, moulins à eau pour le grain, transport par barge et péages de franchissement de rivières. Pénurie : Pierres de taille.",
+      "en": "Highly active river trade, water mills for grain, barge transport, and river crossing tolls. Shortage: Cut stones."
+    },
+    "output_tags": [
+      "commerce-local",
+      "agricole-elevage"
+    ]
+  },
+  {
+    "id": "eco_av_024",
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Désert"
+    ],
+    "origin_tags": [
+      "ressource-elevage"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "opulent",
+      "oppressant",
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "Haras de grande renommée, dressage de destriers de guerre, de chameaux rapides ou de bêtes de trait robustes. Pénurie : Produits de la mer, armes magiques.",
+      "en": "Renowned stud farms, training of war steeds, fast camels, or robust draft animals. Shortage: Seafood, magic weapons."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "economie-militaire"
+    ]
+  },
+  {
+    "id": "eco_av_025",
+    "biome_tags": [
+      "Outreterre",
+      "Marais"
+    ],
+    "origin_tags": [
+      "survie",
+      "isole"
+    ],
+    "vibe_tags": [
+      "miserable",
+      "superstitieux",
+      "paranoiaque",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Culture de champignons géants en cave, extraction de tourbe ou élevage d'insectes souterrains comestibles. Pénurie : Viande bovine, lumière du soleil.",
+      "en": "Cave cultivation of giant mushrooms, peat extraction, or breeding of edible underground insects. Shortage: Beef, sunlight."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_026",
+    "biome_tags": [
+      "Aquatique",
+      "Littoral"
+    ],
+    "origin_tags": [
+      "ressource-peche",
+      "ressource-gemme"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "inegalitaire",
+      "corrompu",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Plongée en eaux profondes, récolte de perles rares, de corail noir et d'éponges pour le confort des élites. Pénurie : Montures terrestres, acier forgé.",
+      "en": "Deep-sea diving, harvesting rare pearls, black coral, and sponges for the comfort of the elites. Shortage: Land mounts, forged steel."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "artisanat-luxe",
+      "economie-peche"
+    ]
+  },
+  {
+    "id": "eco_av_027",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "avant-poste"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "accueillant",
+      "paisible",
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": "Logistique frontalière cruciale : réparation de chariots endommagés, chevaux frais et ravitaillement express. Pénurie : Produits de grand luxe et raffinement.",
+      "en": "Crucial border logistics: repair of damaged carts, fresh horses, and express resupply. Shortage: High-end luxury products and refinement."
+    },
+    "output_tags": [
+      "commerce-local",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_028",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "carrefour"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "opulent",
+      "inegalitaire",
+      "festif"
+    ],
+    "description": {
+      "fr": "Concentration de guildes artisanes produisant des biens finis d'excellente qualité (tissus, outils, verrerie). Pénurie : Matières premières brutes (tout est importé).",
+      "en": "Concentration of artisan guilds producing excellent quality finished goods (fabrics, tools, glassware). Shortage: Raw materials (everything is imported)."
+    },
+    "output_tags": [
+      "artisanat-luxe",
+      "commerce-international"
+    ]
+  },
+  {
+    "id": "eco_av_029",
+    "biome_tags": [
+      "Jungle",
+      "Désert",
+      "Outreterre"
+    ],
+    "origin_tags": [
+      "ressource-chasse"
+    ],
+    "vibe_tags": [
+      "corrompu",
+      "inegalitaire",
+      "opulent",
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "Capture de monstres exotiques pour les arènes du monde, ménageries privées et extraction de venins rares. Pénurie : Fer forgé, blé tendre.",
+      "en": "Capture of exotic monsters for the world's arenas, private menageries, and extraction of rare venoms. Shortage: Forged iron, soft wheat."
+    },
+    "output_tags": [
+      "marche-noir",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_030",
+    "biome_tags": [
+      "Forêt",
+      "Montagne"
+    ],
+    "origin_tags": [
+      "ressource-bois",
+      "ressource-minerai"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "paisible",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Extraction simple et besogneuse. Coupe de bois de chauffage ou petites carrières de pierre pour l'exportation. Pénurie : Vêtements chauds, technologie complexe.",
+      "en": "Simple and laborious extraction. Chopping firewood or small stone quarries for export. Shortage: Warm clothing, complex technology."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "economie-subsistance",
+      "economie-bois"
+    ]
+  },
+  {
+    "id": "eco_av_031",
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Forêt"
+    ],
+    "origin_tags": [
+      "ressource-agriculture"
+    ],
+    "vibe_tags": [
+      "festif",
+      "opulent",
+      "laborieux",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Vignobles renommés et brasseries. L'économie est tournée vers la production d'alcools fins, de cidres et d'hydromel. Pénurie : Minerai brut, machinerie lourde.",
+      "en": "Renowned vineyards and breweries. The economy is focused on the production of fine spirits, ciders, and mead. Shortage: Raw ore, heavy machinery."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_032",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "carrefour"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "corrompu",
+      "paranoiaque",
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "Place financière centrale. Changeurs de monnaie, banques, lettres de crédit et assurances pour les caravanes. Pénurie : Ressources primaires non monétisables.",
+      "en": "Central financial hub. Money changers, banks, letters of credit, and insurance for caravans. Shortage: Non-monetizable primary resources."
+    },
+    "output_tags": [
+      "commerce-international"
+    ]
+  },
+  {
+    "id": "eco_av_033",
+    "biome_tags": [
+      "Montagne",
+      "Collines",
+      "Désert"
+    ],
+    "origin_tags": [
+      "ressource-minerai"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "inegalitaire",
+      "oppressant"
+    ],
+    "description": {
+      "fr": "Carrières de pierre de taille, extraction de marbre et de granit pour les monuments des lointaines capitales. Pénurie : Nourriture de qualité, artisanat délicat.",
+      "en": "Freestone quarries, marble and granite extraction for the monuments of distant capitals. Shortage: Quality food, delicate crafts."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "industrie-lourde"
+    ]
+  },
+  {
+    "id": "eco_av_034",
+    "biome_tags": [
+      "Aquatique",
+      "Littoral"
+    ],
+    "origin_tags": [
+      "ressource-peche"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "loi-du-plus-fort",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Chasse aux grands monstres marins, extraction d'ambre gris, d'huile de baleine et d'os gravés. Pénurie : Produits agricoles terrestres, tissus.",
+      "en": "Hunting large sea monsters, extraction of ambergris, whale oil, and engraved bones. Shortage: Terrestrial agricultural products, fabrics."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "industrie-lourde",
+      "economie-peche"
+    ]
+  },
+  {
+    "id": "eco_av_035",
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Taïga"
+    ],
+    "origin_tags": [
+      "ressource-elevage"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "paisible",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Industrie lainière florissante. Tonte, filatures, teintures simples et tissage de vastes tapis ou tapisseries. Pénurie : Pierres précieuses, métaux lourds.",
+      "en": "Flourishing wool industry. Shearing, spinning, simple dyeing, and weaving of large rugs or tapestries. Shortage: Precious stones, heavy metals."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_036",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "vestige-majeur"
+    ],
+    "vibe_tags": [
+      "corrompu",
+      "superstitieux",
+      "loi-du-plus-fort",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Pillage systématique des ruines. Un marché de l'ombre florissant où l'on vend des antiquités prétendument maudites. Pénurie : Biens manufacturés modernes, hygiène.",
+      "en": "Systematic looting of ruins. A flourishing shadow market selling supposedly cursed antiques. Shortage: Modern manufactured goods, hygiene."
+    },
+    "output_tags": [
+      "marche-noir",
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_037",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "isole"
+    ],
+    "vibe_tags": [
+      "paranoiaque",
+      "miserable",
+      "corrompu",
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": "Économie de l'exil et cache pour butins. On y vend au prix fort le silence, le ravitaillement pour hors-la-loi et de faux papiers. Pénurie : Ordre, loi, produits légaux.",
+      "en": "Exile economy and loot stash. Silence, supplies for outlaws, and forged papers are sold at a premium. Shortage: Order, law, legal products."
+    },
+    "output_tags": [
+      "marche-noir",
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_038",
+    "biome_tags": [
+      "Montagne",
+      "Collines",
+      "Arctique"
+    ],
+    "origin_tags": [
+      "defense-naturelle"
+    ],
+    "vibe_tags": [
+      "oppressant",
+      "laborieux",
+      "opulent"
+    ],
+    "description": {
+      "fr": "Académie militaire d'élite. Entraînement de gardes du corps, tacticiens et mercenaires loués à prix d'or à l'extérieur. Pénurie : Érudition magique, art.",
+      "en": "Elite military academy. Training of bodyguards, tacticians, and mercenaries rented at high prices outside. Shortage: Magical erudition, art."
+    },
+    "output_tags": [
+      "economie-militaire"
+    ]
+  },
+  {
+    "id": "eco_av_039",
+    "biome_tags": [
+      "Marais",
+      "Plaines",
+      "Forêt",
+      "Littoral"
+    ],
+    "origin_tags": [
+      "ressource-eau"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "paisible",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Artisanat des berges. Extraction d'argile pour la poterie, vannerie de roseaux et fabrication de papier rustique. Pénurie : Minerai de fer, bois massif.",
+      "en": "Riverbank crafts. Clay extraction for pottery, reed basketry, and rustic paper making. Shortage: Iron ore, solid wood."
+    },
+    "output_tags": [
+      "ressources-brutes",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_040",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "mystique"
+    ],
+    "vibe_tags": [
+      "superstitieux",
+      "arcanique",
+      "paranoiaque",
+      "pieux"
+    ],
+    "description": {
+      "fr": "Services occultes tarifés. Divination, vente de charmes de protection, herboristerie ésotérique et désenvoûtement. Pénurie : Biens laïcs, acier, bétail lourd.",
+      "en": "Priced occult services. Divination, sale of protection charms, esoteric herbalism, and curse breaking. Shortage: Secular goods, steel, heavy livestock."
+    },
+    "output_tags": [
+      "economie-magique",
+      "commerce-local"
+    ]
+  },
+  {
+    "id": "eco_av_041",
+    "biome_tags": [
+      "Arctique",
+      "Désert",
+      "Jungle",
+      "Outreterre"
+    ],
+    "origin_tags": [
+      "survie"
+    ],
+    "vibe_tags": [
+      "laborieux",
+      "loi-du-plus-fort",
+      "miserable"
+    ],
+    "description": {
+      "fr": "Guilde de guides et de pisteurs. L'économie repose sur l'escorte payante de caravanes à travers les terres mortelles. Pénurie : Tout ce qui relève du confort.",
+      "en": "Guild of guides and trackers. The economy relies on paid escorts of caravans through deadly lands. Shortage: Anything related to comfort."
+    },
+    "output_tags": [
+      "economie-subsistance"
+    ]
+  },
+  {
+    "id": "eco_av_042",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "refuge-criminel"
+    ],
+    "vibe_tags": [
+      "corrompu",
+      "inegalitaire",
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": "Blanchiment d'argent, création de fausses identités, et fabrication de poisons indétectables pour l'élite corrompue. Pénurie : Honnêteté, gardes incorruptibles.",
+      "en": "Money laundering, creation of false identities, and production of undetectable poisons for the corrupt elite. Shortage: Honesty, incorruptible guards."
+    },
+    "output_tags": [
+      "marche-noir"
+    ]
+  },
+  {
+    "id": "eco_av_043",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "tribal"
+    ],
+    "vibe_tags": [
+      "superstitieux",
+      "paisible",
+      "loi-du-plus-fort",
+      "pieux"
+    ],
+    "description": {
+      "fr": "Artisanat chamanique et corporel. Tatouages mystiques, scarifications protectrices, et fabrication d'instruments rituels. Pénurie : Technologie, littérature.",
+      "en": "Shamanic and body crafts. Mystic tattoos, protective scarifications, and making ritual instruments. Shortage: Technology, literature."
+    },
+    "output_tags": [
+      "economie-religieuse",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_044",
+    "biome_tags": [
+      "all"
+    ],
+    "origin_tags": [
+      "pelerinage"
+    ],
+    "vibe_tags": [
+      "pieux",
+      "laborieux",
+      "paisible",
+      "fanatique"
+    ],
+    "description": {
+      "fr": "Monastères scriptoriums. Copie de textes sacrés, enluminures magnifiques, fabrication de cierges et statues votives. Pénurie : Armement, divertissement laïc.",
+      "en": "Scriptorium monasteries. Copying of sacred texts, magnificent illuminations, candle making, and votive statues. Shortage: Weaponry, secular entertainment."
+    },
+    "output_tags": [
+      "economie-religieuse",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_045",
+    "biome_tags": [
+      "Forêt",
+      "Jungle",
+      "Outreterre",
+      "Montagne"
+    ],
+    "origin_tags": [
+      "magie"
+    ],
+    "vibe_tags": [
+      "arcanique",
+      "opulent",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Élevage et commerce de familiers magiques exotiques (pseudodragons, chouettes enchantées) et cristallisation de mana. Pénurie : Outils agricoles basiques.",
+      "en": "Breeding and trade of exotic magical familiars (pseudodragons, enchanted owls) and mana crystallization. Shortage: Basic agricultural tools."
+    },
+    "output_tags": [
+      "economie-magique",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_046",
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Forêt",
+      "Taïga"
+    ],
+    "origin_tags": [
+      "ressource-chasse"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "laborieux",
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": "Fauconnerie et dressage. L'élite vient y acheter des rapaces de chasse parfaits ou des molosses de guerre impitoyables. Pénurie : Céréales fines, métaux.",
+      "en": "Falconry and training. The elite comes here to buy perfect hunting raptors or ruthless war hounds. Shortage: Fine cereals, metals."
+    },
+    "output_tags": [
+      "agricole-elevage",
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_047",
+    "biome_tags": [
+      "Désert",
+      "Montagne",
+      "Outreterre"
+    ],
+    "origin_tags": [
+      "ressource-gemme"
+    ],
+    "vibe_tags": [
+      "arcanique",
+      "opulent",
+      "laborieux"
+    ],
+    "description": {
+      "fr": "Optique et horlogerie. Taillage de lentilles pour longues-vues, lunettes d'érudits, prismes magiques et miroirs de luxe. Pénurie : Bois, viande fraîche.",
+      "en": "Optics and clockmaking. Cutting lenses for spyglasses, scholar glasses, magic prisms, and luxury mirrors. Shortage: Wood, fresh meat."
+    },
+    "output_tags": [
+      "artisanat-luxe",
+      "economie-magique"
+    ]
+  },
+  {
+    "id": "eco_av_048",
+    "biome_tags": [
+      "Forêt",
+      "Jungle",
+      "Plaines",
+      "Marais"
+    ],
+    "origin_tags": [
+      "ressource-herbe"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "laborieux",
+      "festif",
+      "accueillant"
+    ],
+    "description": {
+      "fr": "Teinturerie et parfumerie. Extraction de couleurs rares pour la soie des nobles et création d'essences parfumées hors de prix. Pénurie : Armes, minerai brut.",
+      "en": "Dyeing and perfumery. Extraction of rare colors for nobles' silk and creation of priceless scented essences. Shortage: Weapons, raw ore."
+    },
+    "output_tags": [
+      "artisanat-luxe"
+    ]
+  },
+  {
+    "id": "eco_av_049",
+    "biome_tags": [
+      "Forêt",
+      "Taïga",
+      "Jungle"
+    ],
+    "origin_tags": [
+      "ressource-bois"
+    ],
+    "vibe_tags": [
+      "paisible",
+      "festif",
+      "laborieux",
+      "opulent"
+    ],
+    "description": {
+      "fr": "Lutherie et archerie d'art. Fabrication d'instruments de musique d'exception et d'arcs longs taillés dans des bois rares. Pénurie : Pierre de taille, cuir lourd.",
+      "en": "Luthiery and fine archery. Making exceptional musical instruments and longbows carved from rare woods. Shortage: Freestone, heavy leather."
+    },
+    "output_tags": [
+      "artisanat-luxe",
+      "artisanat-commun"
+    ]
+  },
+  {
+    "id": "eco_av_050",
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne",
+      "Collines"
+    ],
+    "origin_tags": [
+      "ressource-chaleur"
+    ],
+    "vibe_tags": [
+      "opulent",
+      "festif",
+      "accueillant",
+      "paisible"
+    ],
+    "description": {
+      "fr": "Vaste complexe thermal de luxe. L'économie est portée par les bains curatifs, les massages et les maisons de repos pour la noblesse. Pénurie : Matériaux froids, glace.",
+      "en": "Vast luxury thermal complex. The economy is driven by curative baths, massages, and rest homes for the nobility. Shortage: Cold materials, ice."
+    },
+    "output_tags": [
+      "economie-touristique"
+    ]
+  }
+]

@@ -1,0 +1,1465 @@
+{
+  "climat_social": [
+    {
+      "trait": {
+        "fr": "une peur constante de l'autorité et une garde omniprésente",
+        "en": "a constant fear of authority and an omnipresent guard"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une quiétude rassurante où les habitants veillent les uns sur les autres",
+        "en": "a reassuring tranquility where inhabitants watch over each other"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-elevage",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un silence contemplatif et respectueux, rythmé par la nature",
+        "en": "a contemplative and respectful silence, punctuated by nature"
+      },
+      "origin_tags": [
+        "mystique",
+        "isole"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des rixes fréquentes où seul le plus agressif impose sa loi",
+        "en": "frequent brawls where only the most aggressive imposes their law"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "survie"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une rudesse clanique où les conflits se règlent par le sang ou l'intimidation",
+        "en": "a clannish harshness where conflicts are settled by blood or intimidation"
+      },
+      "origin_tags": [
+        "tribal",
+        "ressource-chasse"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une ambiance de ruée vers l'or où l'avidité pousse à régler ses comptes dans la rue",
+        "en": "a gold rush atmosphere where greed leads to settling scores in the streets"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "carrefour"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une discipline de fer, brutalement imposée pour garantir la production et la sécurité",
+        "en": "an iron discipline, brutally imposed to guarantee production and security"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "survie"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une atmosphère de recueillement silencieux et de respect mutuel",
+        "en": "an atmosphere of silent contemplation and mutual respect"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "mystique"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une milice brutale qui patrouille sans relâche, étouffant la moindre incartade",
+        "en": "a brutal militia that patrols relentlessly, stifling the slightest misconduct"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "carrefour"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des regards fuyants et une soumission totale aux maîtres des lieux",
+        "en": "shifty glances and total submission to the masters of the place"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des lois draconiennes affichées partout et appliquées à la lettre avec une rigidité glaçante",
+        "en": "draconian laws posted everywhere and applied to the letter with chilling rigidity"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une peur viscérale de l'autorité poussant les habitants à se terrer chez eux au moindre bruit",
+        "en": "a visceral fear of authority pushing inhabitants to hide in their homes at the slightest noise"
+      },
+      "origin_tags": [
+        "survie",
+        "isole"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une discipline étouffante où chaque citoyen est fortement incité à dénoncer son voisin",
+        "en": "a suffocating discipline where every citizen is strongly encouraged to inform on their neighbor"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "mystique"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des gardes surarmés qui n'hésitent pas à rudoyer violemment la foule pour faire de la place",
+        "en": "heavily armed guards who do not hesitate to violently rough up the crowd to make room"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "carrefour"
+      ],
+      "output_tags": [
+        "oppressant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des rues où les enfants jouent librement sous le regard bienveillant des anciens",
+        "en": "streets where children play freely under the benevolent gaze of the elders"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-elevage"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une atmosphère d'une grande sérénité où les portes ne sont jamais verrouillées à clé",
+        "en": "an atmosphere of great serenity where doors are never locked"
+      },
+      "origin_tags": [
+        "isole",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un calme olympien, protégé par une communauté profondément pacifique et soudée",
+        "en": "an Olympian calm, protected by a deeply peaceful and close-knit community"
+      },
+      "origin_tags": [
+        "defense-naturelle",
+        "mystique"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une douce léthargie ambiante où les conflits se règlent toujours par le dialogue",
+        "en": "a sweet ambient lethargy where conflicts are always resolved through dialogue"
+      },
+      "origin_tags": [
+        "ressource-herbe",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une harmonie rassurante où la population vit en parfaite communion avec les forces environnantes",
+        "en": "a reassuring harmony where the population lives in perfect communion with the surrounding forces"
+      },
+      "origin_tags": [
+        "ressource-bois",
+        "magie"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des veillées communes où l'on partage le feu et la nourriture sans la moindre crainte",
+        "en": "communal vigils where fire and food are shared without the slightest fear"
+      },
+      "origin_tags": [
+        "isole",
+        "ressource-chaleur"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un respect si profond des coutumes locales que la présence de gardes en devient inutile",
+        "en": "a respect for local customs so deep that the presence of guards becomes useless"
+      },
+      "origin_tags": [
+        "tribal",
+        "pelerinage"
+      ],
+      "output_tags": [
+        "paisible"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des duels sanglants en pleine rue pour régler la moindre dispute",
+        "en": "bloody duels in the middle of the street to settle the slightest dispute"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "carrefour"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une tension animale où les plus faibles sont constamment rackettés ou malmenés par les forts",
+        "en": "an animal tension where the weakest are constantly extorted or bullied by the strong"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "survie"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une brutalité décomplexée, tolérée par tous comme l'unique moyen de se faire respecter",
+        "en": "an uninhibited brutality, tolerated by all as the only way to gain respect"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "tribal"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des clans ou des gangs rivaux qui s'affrontent ouvertement pour le contrôle des ressources",
+        "en": "rival clans or gangs openly clashing for control of resources"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une violence sourde et constante qui peut exploser brutalement au moindre regard de travers",
+        "en": "a dull and constant violence that can explode brutally at the slightest sideways glance"
+      },
+      "origin_tags": [
+        "ressource-chasse",
+        "refuge-criminel"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des ruelles dangereuses où la milice refuse catégoriquement de patrouiller, abandonnant les lieux aux brutes",
+        "en": "dangerous alleys where the militia flatly refuses to patrol, abandoning the area to brutes"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "isole"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une justice expéditive rendue dans la boue, à la force des poings et des lames",
+        "en": "expeditious justice dispensed in the mud, through the force of fists and blades"
+      },
+      "origin_tags": [
+        "survie",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "loi-du-plus-fort"
+      ]
+    }
+  ],
+  "niveau_vie": [
+    {
+      "trait": {
+        "fr": "une richesse insolente côtoyant une misère absolue dans les ruelles",
+        "en": "insolent wealth rubbing shoulders with absolute misery in the alleys"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "carrefour"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une élite locale exploitant sans vergogne des travailleurs exténués",
+        "en": "a local elite shamelessly exploiting exhausted workers"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une propreté éclatante, des façades ornées et des habitants visiblement fortunés",
+        "en": "sparkling cleanliness, ornate facades, and visibly wealthy inhabitants"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "carrefour",
+        "ressource-chaleur"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une mendicité endémique, des rues insalubres et des bâtiments délabrés",
+        "en": "endemic begging, unsanitary streets, and dilapidated buildings"
+      },
+      "origin_tags": [
+        "survie",
+        "refuge-criminel",
+        "vestige-majeur"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des conditions de vie très rustiques et précaires, limitées au strict minimum",
+        "en": "very rustic and precarious living conditions, limited to the bare minimum"
+      },
+      "origin_tags": [
+        "isole",
+        "ressource-herbe"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des dirigeants vivant dans un luxe ostentatoire pendant que la plèbe s'entasse à l'ombre de leurs murs",
+        "en": "rulers living in ostentatious luxury while the plebs cram into the shadow of their walls"
+      },
+      "origin_tags": [
+        "defense-naturelle",
+        "avant-poste",
+        "magie"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des reliquaires dorés, des soieries et un étalage spectaculaire de richesses",
+        "en": "golden reliquaries, silks, and a spectacular display of wealth"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "magie"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une odeur âcre, des vêtements rapiécés et une lutte constante pour le moindre morceau de pain",
+        "en": "an acrid smell, patched clothes, and a constant struggle for the smallest piece of bread"
+      },
+      "origin_tags": [
+        "ressource-peche",
+        "ressource-chasse"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un luxe tapageur fait de parures étincelantes et de plaisirs onéreux",
+        "en": "a flashy luxury made of sparkling adornments and expensive pleasures"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "ressource-chaleur"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une abondance de mets fins, de tissus précieux et des rues d'une propreté immaculée",
+        "en": "an abundance of fine foods, precious fabrics, and immaculately clean streets"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "carrefour"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une architecture majestueuse et des façades somptueuses visibles à chaque coin de rue",
+        "en": "majestic architecture and sumptuous facades visible on every street corner"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "magie"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des demeures fastueuses où l'on gaspille les ressources sans compter",
+        "en": "lavish mansions where resources are squandered without counting"
+      },
+      "origin_tags": [
+        "ressource-eau",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des banquets décadents servis dans des salles richement décorées de fourrures et de trophées",
+        "en": "decadent banquets served in halls richly decorated with furs and trophies"
+      },
+      "origin_tags": [
+        "ressource-elevage",
+        "ressource-chasse"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un étalage de trésors historiques et d'artefacts conservés dans des palais magnifiques",
+        "en": "a display of historical treasures and artifacts kept in magnificent palaces"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "mystique"
+      ],
+      "output_tags": [
+        "opulent"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des manouvriers couverts de crasse trimant au pied de demeures insolentes de richesse",
+        "en": "grime-covered laborers toiling at the foot of insolently wealthy mansions"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des roturiers affamés regardant passer les chariots lourdement chargés des élites",
+        "en": "starving commoners watching the heavily loaded carts of the elites pass by"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des ruelles boueuses grouillant de mendiants juste en contrebas de quartiers pavés d'or",
+        "en": "muddy alleys teeming with beggars just below gold-paved districts"
+      },
+      "origin_tags": [
+        "carrefour",
+        "refuge-criminel"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une caste privilégiée confisquant toutes les richesses pendant que le peuple survit avec les miettes",
+        "en": "a privileged caste confiscating all wealth while the people survive on crumbs"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des dirigeants bien nourris ignorant totalement la misère noire de la plèbe locale",
+        "en": "well-fed leaders completely ignoring the utter misery of the local plebs"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "magie"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des campements de fortune dressés à l'ombre de monuments grandioses réservés à une minorité",
+        "en": "makeshift camps set up in the shadow of grandiose monuments reserved for a minority"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "pelerinage"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des chefs accaparant les meilleures ressources de la nature, laissant les faibles dépérir",
+        "en": "chiefs hoarding nature's best resources, leaving the weak to wither"
+      },
+      "origin_tags": [
+        "tribal",
+        "ressource-elevage"
+      ],
+      "output_tags": [
+        "inegalitaire"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des cabanes chancelantes, des visages creusés par la faim et une odeur persistante de maladie",
+        "en": "rickety shacks, faces hollowed by hunger, and a persistent smell of sickness"
+      },
+      "origin_tags": [
+        "survie",
+        "isole"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des vêtements rapiécés, des toits percés et une lutte quotidienne pour le moindre morceau de nourriture",
+        "en": "patched clothes, leaky roofs, and a daily struggle for the smallest piece of food"
+      },
+      "origin_tags": [
+        "ressource-chasse",
+        "ressource-herbe"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des bâtisses en ruine, des malades livrés à eux-mêmes et un manque cruel d'hygiène",
+        "en": "ruined buildings, the sick left to fend for themselves, and a cruel lack of hygiene"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "avant-poste"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une puanteur tenace, des rues inondées de boue et des habitants rongés par la malnutrition",
+        "en": "a stubborn stench, mud-flooded streets, and inhabitants plagued by malnutrition"
+      },
+      "origin_tags": [
+        "ressource-peche",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des squatteurs s'entassant pitoyablement dans la poussière et les gravats",
+        "en": "squatters pitifully crammed into dust and rubble"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "ressource-minerai"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des conditions de vie rudimentaires, sans confort ni chaleur, où l'on meurt jeune",
+        "en": "rudimentary living conditions, without comfort or warmth, where people die young"
+      },
+      "origin_tags": [
+        "tribal",
+        "mystique"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une extrême indigence forçant la majorité de la population à mendier ou fouiller les détritus",
+        "en": "extreme destitution forcing the majority of the population to beg or scavenge through garbage"
+      },
+      "origin_tags": [
+        "carrefour",
+        "isole"
+      ],
+      "output_tags": [
+        "miserable"
+      ]
+    }
+  ],
+  "croyance_occulte": [
+    {
+      "trait": {
+        "fr": "une ferveur radicale, des sermons hurlés et une méfiance envers les déviants",
+        "en": "radical fervor, screamed sermons, and a distrust of deviants"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "vestige-majeur"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "de petits autels fleuris, des chants doux et un profond respect du sacré",
+        "en": "small flowered altars, soft chants, and a deep respect for the sacred"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "ressource-agriculture",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une activité magique décomplexée et des merveilles surnaturelles visibles de tous",
+        "en": "uninhibited magical activity and supernatural wonders visible to all"
+      },
+      "origin_tags": [
+        "magie",
+        "ressource-gemme"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des regards fuyants, des murmures craintifs et de nombreux gris-gris accrochés aux portes",
+        "en": "shifty glances, fearful whispers, and numerous charms hung on doors"
+      },
+      "origin_tags": [
+        "isole",
+        "survie",
+        "mystique"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un profond folklore animiste où les esprits sauvages sont craints et respectés",
+        "en": "a deep animistic folklore where wild spirits are feared and respected"
+      },
+      "origin_tags": [
+        "tribal",
+        "ressource-chasse",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des prêcheurs exaltés hurlant des prophéties apocalyptiques aux passants",
+        "en": "exalted preachers screaming apocalyptic prophecies at passersby"
+      },
+      "origin_tags": [
+        "carrefour",
+        "pelerinage"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un culte militariste où le sacrifice de soi est exigé pour expier les péchés",
+        "en": "a militaristic cult where self-sacrifice is demanded to atone for sins"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "survie"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des autodafés publics purgeant par le feu les objets ou personnes considérés comme impurs",
+        "en": "public auto-da-fés purging objects or people considered impure by fire"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "magie"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une dévotion aveugle et cruelle, exigeant la mort pour la moindre offense aux dogmes",
+        "en": "blind and cruel devotion, demanding death for the slightest offense to dogmas"
+      },
+      "origin_tags": [
+        "isole",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des flagellants parcourant les rues pour apaiser la colère divine face aux épreuves de la vie",
+        "en": "flagellants roaming the streets to appease divine wrath in the face of life's trials"
+      },
+      "origin_tags": [
+        "survie",
+        "ressource-chaleur"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des cloches ou des gongs rythmant paisiblement les journées de prière et de labeur",
+        "en": "bells or gongs peacefully pacing the days of prayer and labor"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-minerai"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un immense respect pour les divinités de la nature, systématiquement remerciées pour leurs bienfaits",
+        "en": "an immense respect for the deities of nature, systematically thanked for their blessings"
+      },
+      "origin_tags": [
+        "ressource-bois",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "de nombreux petits sanctuaires et oratoires entretenus avec amour par les habitants",
+        "en": "many small shrines and oratories lovingly maintained by the inhabitants"
+      },
+      "origin_tags": [
+        "carrefour",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une charité religieuse omniprésente où l'on prend grand soin de nourrir les nécessiteux",
+        "en": "omnipresent religious charity where great care is taken to feed the needy"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "ressource-herbe"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des chants sacrés s'élevant des foyers à la tombée de la nuit en signe de gratitude",
+        "en": "sacred chants rising from hearths at nightfall as a sign of gratitude"
+      },
+      "origin_tags": [
+        "ressource-elevage",
+        "isole"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des familiers magiques se faufilant entre les passants et des runes flottantes éclairant les rues",
+        "en": "magical familiars weaving between passersby and floating runes lighting the streets"
+      },
+      "origin_tags": [
+        "carrefour",
+        "magie"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des érudits testant ouvertement des enchantements complexes sur la place publique",
+        "en": "scholars openly testing complex enchantments in the public square"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "mystique"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une architecture défiant les lois de la gravité, soutenue par d'anciennes incantations",
+        "en": "architecture defying the laws of gravity, supported by ancient incantations"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des golems de labeur ou d'antiques automates aidant silencieusement aux tâches quotidiennes",
+        "en": "labor golems or ancient automatons silently assisting with daily tasks"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "vestige-majeur"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un ciel nocturne souvent illuminé par des aurores artificielles ou des expériences de sorciers",
+        "en": "a night sky often illuminated by artificial auroras or sorcerers' experiments"
+      },
+      "origin_tags": [
+        "magie",
+        "isole"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des portes peintes de symboles protecteurs pour repousser le mauvais œil",
+        "en": "doors painted with protective symbols to ward off the evil eye"
+      },
+      "origin_tags": [
+        "ressource-chasse",
+        "isole"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une peur panique de la nuit, poussant les habitants à jeter du sel sur leurs appuis de fenêtre",
+        "en": "a frantic fear of the night, pushing inhabitants to throw salt on their windowsills"
+      },
+      "origin_tags": [
+        "survie",
+        "mystique"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un rejet farouche et craintif de tout ce qui ressemble de près ou de loin à de la sorcellerie",
+        "en": "a fierce and fearful rejection of anything remotely resembling witchcraft"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "avant-poste"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des offrandes de nourriture laissées aux abords du village pour apaiser les esprits rôdeurs",
+        "en": "food offerings left at the edge of the village to appease prowling spirits"
+      },
+      "origin_tags": [
+        "ressource-bois",
+        "tribal"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des murmures constants sur d'anciennes malédictions frappant ceux qui s'éloignent trop",
+        "en": "constant whispers of ancient curses striking those who wander too far"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "ressource-gemme"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    }
+  ],
+  "attitude_activite": [
+    {
+      "trait": {
+        "fr": "des portes ouvertes, des sourires chaleureux et une grande curiosité envers les voyageurs",
+        "en": "open doors, warm smiles, and great curiosity towards travelers"
+      },
+      "origin_tags": [
+        "carrefour",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "accueillant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une hostilité affichée envers les étrangers et des portes lourdement verrouillées",
+        "en": "blatant hostility towards strangers and heavily locked doors"
+      },
+      "origin_tags": [
+        "isole",
+        "avant-poste",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "paranoiaque"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des sourires en coin, des affaires douteuses et des gardes qui détournent le regard",
+        "en": "smirks, shady deals, and guards who look the other way"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "carrefour"
+      ],
+      "output_tags": [
+        "corrompu"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "le fracas constant des outils, l'odeur de sueur et des habitants toujours pressés",
+        "en": "the constant crash of tools, the smell of sweat, and inhabitants always in a hurry"
+      },
+      "origin_tags": [
+        "ressource-bois",
+        "ressource-minerai",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une activité paysanne ininterrompue, rythmée par les saisons et le dur travail manuel",
+        "en": "uninterrupted peasant activity, punctuated by seasons and hard manual labor"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-elevage",
+        "ressource-herbe"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une musique entraînante, des rires résonnants et des tavernes qui ne désemplissent pas",
+        "en": "catchy music, echoing laughter, and taverns that never empty"
+      },
+      "origin_tags": [
+        "carrefour",
+        "ressource-chaleur",
+        "pelerinage"
+      ],
+      "output_tags": [
+        "festif"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des ruines antiques palpitant d'énergies oubliées, étudiées ouvertement et intégrées au quotidien",
+        "en": "ancient ruins pulsating with forgotten energies, studied openly and integrated into daily life"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "mystique"
+      ],
+      "output_tags": [
+        "arcanique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un culte de la fin des temps où le moindre écart à la doctrine est puni par l'exil ou le bûcher",
+        "en": "an end-times cult where the slightest deviation from doctrine is punished by exile or the stake"
+      },
+      "origin_tags": [
+        "survie",
+        "isole"
+      ],
+      "output_tags": [
+        "fanatique"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une foi simple et rassurante, profondément ancrée dans les cycles de la terre et des saisons",
+        "en": "a simple and comforting faith, deeply rooted in the cycles of the earth and the seasons"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-elevage",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "pieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une terreur irrationnelle des malédictions, poussant à accrocher des talismans protecteurs partout",
+        "en": "an irrational terror of curses, leading to hanging protective talismans everywhere"
+      },
+      "origin_tags": [
+        "vestige-majeur",
+        "magie"
+      ],
+      "output_tags": [
+        "superstitieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des tables toujours dressées pour les voyageurs de passage et une curiosité bienveillante",
+        "en": "tables always set for passing travelers and a benevolent curiosity"
+      },
+      "origin_tags": [
+        "carrefour",
+        "pelerinage"
+      ],
+      "output_tags": [
+        "accueillant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une chaleur humaine communicative, poussant les habitants à partager spontanément le fruit de leur travail",
+        "en": "a communicative human warmth, pushing inhabitants to spontaneously share the fruits of their labor"
+      },
+      "origin_tags": [
+        "ressource-agriculture",
+        "ressource-herbe"
+      ],
+      "output_tags": [
+        "accueillant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des portes qui s'ouvrent volontiers pour offrir l'asile et la chaleur d'un âtre face à la rudesse du monde",
+        "en": "doors that willingly open to offer asylum and the warmth of a hearth against the harshness of the world"
+      },
+      "origin_tags": [
+        "survie",
+        "isole"
+      ],
+      "output_tags": [
+        "accueillant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un brassage culturel permanent où chaque nouvel arrivant est vu comme une aubaine pour la communauté",
+        "en": "a constant cultural mixing where every newcomer is seen as a godsend for the community"
+      },
+      "origin_tags": [
+        "carrefour",
+        "ressource-eau"
+      ],
+      "output_tags": [
+        "accueillant"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des miliciens tatillons qui fouillent chaque chariot et dévisagent longuement les étrangers",
+        "en": "fussy militiamen who search every cart and stare at strangers for a long time"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "carrefour"
+      ],
+      "output_tags": [
+        "paranoiaque"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une hostilité silencieuse, où les habitants s'enferment chez eux dès qu'un inconnu approche",
+        "en": "a silent hostility, where inhabitants lock themselves in their homes as soon as a stranger approaches"
+      },
+      "origin_tags": [
+        "isole",
+        "mystique"
+      ],
+      "output_tags": [
+        "paranoiaque"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une suspicion maladive envers toute personne n'appartenant pas à la lignée ou à la communauté locale",
+        "en": "a sickly suspicion towards anyone not belonging to the lineage or the local community"
+      },
+      "origin_tags": [
+        "tribal",
+        "defense-naturelle"
+      ],
+      "output_tags": [
+        "paranoiaque"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des gardes nerveux sur les barricades, prêts à faire feu à la moindre alerte venue de l'extérieur",
+        "en": "nervous guards on the barricades, ready to fire at the slightest alert from the outside"
+      },
+      "origin_tags": [
+        "avant-poste",
+        "survie"
+      ],
+      "output_tags": [
+        "paranoiaque"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un système de pots-de-vin tellement banalisé qu'il remplace presque les taxes officielles",
+        "en": "a bribery system so normalized that it almost replaces official taxes"
+      },
+      "origin_tags": [
+        "ressource-gemme",
+        "carrefour"
+      ],
+      "output_tags": [
+        "corrompu"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une omerta absolue imposée par les caïds locaux ou les syndicats clandestins",
+        "en": "an absolute omerta imposed by local kingpins or clandestine syndicates"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "ressource-minerai"
+      ],
+      "output_tags": [
+        "corrompu"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des guildes aux pratiques mafieuses, prêtes à l'extorsion et au chantage pour écraser la concurrence",
+        "en": "guilds with mafia practices, ready for extortion and blackmail to crush the competition"
+      },
+      "origin_tags": [
+        "carrefour",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "corrompu"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un marché noir tentaculaire où l'on peut tout acheter, même le silence de la garde",
+        "en": "a sprawling black market where you can buy anything, even the silence of the guard"
+      },
+      "origin_tags": [
+        "refuge-criminel",
+        "vestige-majeur"
+      ],
+      "output_tags": [
+        "corrompu"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un ballet incessant de chariots, de cris de contremaîtres et de travailleurs couverts de sueur",
+        "en": "an incessant ballet of carts, shouts of foremen, and sweat-covered workers"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-bois"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une bourgade qui ne dort jamais vraiment, rythmée par les relèves d'artisans ou de travailleurs épuisés",
+        "en": "a settlement that never really sleeps, paced by the shifts of exhausted artisans or workers"
+      },
+      "origin_tags": [
+        "ressource-chaleur",
+        "carrefour"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "un effort collectif constant et harassant, indispensable pour arracher de quoi vivre à cet environnement",
+        "en": "a constant and exhausting collective effort, essential to wrest a living from this environment"
+      },
+      "origin_tags": [
+        "survie",
+        "ressource-peche"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "l'omniprésence d'ateliers et de manufactures dont la fumée âcre obscurcit parfois le ciel",
+        "en": "the omnipresence of workshops and manufactories whose acrid smoke sometimes darkens the sky"
+      },
+      "origin_tags": [
+        "ressource-minerai",
+        "ressource-gemme"
+      ],
+      "output_tags": [
+        "laborieux"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des auberges tonitruantes d'où s'échappent nuit et jour des chants braillards et des éclats de rire",
+        "en": "thundering inns from which bawdy songs and bursts of laughter escape night and day"
+      },
+      "origin_tags": [
+        "ressource-eau",
+        "carrefour"
+      ],
+      "output_tags": [
+        "festif"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une célébration presque quotidienne de la vie, où le vin coule pour oublier la dureté du monde",
+        "en": "an almost daily celebration of life, where wine flows to forget the harshness of the world"
+      },
+      "origin_tags": [
+        "survie",
+        "ressource-agriculture"
+      ],
+      "output_tags": [
+        "festif"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "des processions colorées, de la musique et des danses qui animent continuellement les places publiques",
+        "en": "colorful processions, music, and dances that continually liven up the public squares"
+      },
+      "origin_tags": [
+        "pelerinage",
+        "mystique"
+      ],
+      "output_tags": [
+        "festif"
+      ]
+    },
+    {
+      "trait": {
+        "fr": "une ambiance de foire perpétuelle avec ses saltimbanques, ses illusions et ses vendeurs à la criée",
+        "en": "an atmosphere of a perpetual fair with its acrobats, illusions, and street vendors"
+      },
+      "origin_tags": [
+        "carrefour",
+        "magie"
+      ],
+      "output_tags": [
+        "festif"
+      ]
+    }
+  ]
+}

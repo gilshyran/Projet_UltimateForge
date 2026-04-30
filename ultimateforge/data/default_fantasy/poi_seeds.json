@@ -1,0 +1,247 @@
+[
+  {
+    "type": "taverne",
+    "name": {
+      "fr": "Auberge Standard",
+      "en": "Standard Inn"
+    }
+  },
+  {
+    "type": "taverne_louche",
+    "name": {
+      "fr": "Taverne Coupe-gorge",
+      "en": "Cutthroat Tavern"
+    }
+  },
+  {
+    "type": "taverne_luxueuse",
+    "name": {
+      "fr": "Auberge de qualité",
+      "en": "Quality Inn"
+    }
+  },
+  {
+    "type": "gouvernance",
+    "name": {
+      "fr": "Autorité locale",
+      "en": "Local authority"
+    }
+  },
+  {
+    "type": "panneau_annonces",
+    "name": {
+      "fr": "Panneau d'affichage",
+      "en": "Notice Board"
+    }
+  },
+  {
+    "type": "bureau_primes",
+    "name": {
+      "fr": "Bureau du Guet",
+      "en": "Complaints Office"
+    }
+  },
+  {
+    "type": "bazar",
+    "name": {
+      "fr": "Bazar et Fournitures",
+      "en": "Bazaar & Supplies"
+    }
+  },
+  {
+    "type": "marchand_vivres",
+    "name": {
+      "fr": "Marchand de Rations",
+      "en": "Ration Merchant"
+    }
+  },
+  {
+    "type": "marchand_bois",
+    "name": {
+      "fr": "Comptoir Forestier & Scierie",
+      "en": "Timber Yard & Sawmill"
+    }
+  },
+  {
+    "type": "marchand_noir",
+    "name": {
+      "fr": "Marché noir",
+      "en": "black market"
+    }
+  },
+  {
+    "type": "marchand_poissons",
+    "name": {
+      "fr": "Poissonnerie & Matériel de Pêche",
+      "en": "Fishmonger & Fishing Tackle"
+    }
+  },
+  {
+    "type": "marchand_luxe",
+    "name": {
+      "fr": "Boutique de Luxe",
+      "en": "Luxury Emporium"
+    }
+  },
+  {
+    "type": "forge",
+    "name": {
+      "fr": "Forge",
+      "en": "Clandestine Forge"
+    }
+  },
+  {
+    "type": "armurerie",
+    "name": {
+      "fr": "Armurerie de la Milice",
+      "en": "Militia Armory"
+    }
+  },
+  {
+    "type": "archerie",
+    "name": {
+      "fr": "Archerie & Flèches",
+      "en": "Bowyer & Fletcher"
+    }
+  },
+  {
+    "type": "armurerie_louche",
+    "name": {
+      "fr": "Armurerie de la Milice",
+      "en": "Militia Armory"
+    }
+  },
+  {
+    "type": "tailleur",
+    "name": {
+      "fr": "Tailleur et Tisserand",
+      "en": "Tailor & Weaver"
+    }
+  },
+  {
+    "type": "apothicaire",
+    "name": {
+      "fr": "Échoppe d'Herboriste",
+      "en": "Herbalist Shop"
+    }
+  },
+  {
+    "type": "curiosite",
+    "name": {
+      "fr": "Cabinet de Curiosités",
+      "en": "Cabinet of Curiosities"
+    }
+  },
+  {
+    "type": "librairie_esoterique",
+    "name": {
+      "fr": "Librairie Ésotérique",
+      "en": "Esoteric Bookshop"
+    }
+  },
+  {
+    "type": "graveur_pierre",
+    "name": {
+      "fr": "Graveur de Pierres ",
+      "en": "Stone Engraver"
+    }
+  },
+  {
+    "type": "joaillier",
+    "name": {
+      "fr": "Joaillerie & Orfèvrerie",
+      "en": "Jewelry & Goldsmithing"
+    }
+  },
+  {
+    "type": "cartographe",
+    "name": {
+      "fr": "Atelier du Cartographe",
+      "en": "Cartographer's Workshop"
+    }
+  },
+  {
+    "type": "ecurie",
+    "name": {
+      "fr": "Écuries & Bourrelier",
+      "en": "Stables & Saddlery"
+    }
+  },
+  {
+    "type": "menagerie",
+    "name": {
+      "fr": "Ménagerie Exotique",
+      "en": "Exotic Menagerie"
+    }
+  },
+  {
+    "type": "tanneur",
+    "name": {
+      "fr": "Tanneur",
+      "en": "Tanner"
+    }
+  },
+  {
+    "type": "librairie",
+    "name": {
+      "fr": "Librairie & Archives",
+      "en": "Bookshop & Archives"
+    }
+  },
+  {
+    "type": "antiquaire",
+    "name": {
+      "fr": "Antiquités & Reliques",
+      "en": "Antiques & Relics"
+    }
+  },
+  {
+    "type": "changeur_monnaie",
+    "name": {
+      "fr": "Changeur de Monnaie",
+      "en": "Money Changer"
+    }
+  },
+  {
+    "type": "fumerie",
+    "name": {
+      "fr": "Fumerie & Salon de Narguilé",
+      "en": "Smoking Den & Hookah Lounge"
+    }
+  },
+  {
+    "type": "maison_plaisir",
+    "name": {
+      "fr": "Maison de Plaisirs",
+      "en": "House of Pleasures"
+    }
+  },
+  {
+    "type": "maison_plaisir_louche",
+    "name": {
+      "fr": "Lupanar Clandestin",
+      "en": "Seedy Brothel"
+    }
+  },
+  {
+    "type": "scierie",
+    "name": {
+      "fr": "Scierie",
+      "en": "Sawmill"
+    }
+  },
+  {
+    "type": "caserne",
+    "name": {
+      "fr": "Caserne",
+      "en": "Barracks"
+    }
+  },
+  {
+    "type": "ferme",
+    "name": {
+      "fr": "Fermes et parcelles agricoles",
+      "en": "Farms and agricultural plots"
+    }
+  }
+]

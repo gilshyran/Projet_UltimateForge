@@ -1,0 +1,2012 @@
+[
+  {
+    "id": "dist_gov_camp_plains",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-militaire",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Collines",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "La Place centrale",
+      "en": "The Square center"
+    },
+    "description": {
+      "fr": "Un espace dégagé en terre battue où la communauté se rassemble autour du feu principal.",
+      "en": "A cleared dirt space where the community gathers around the main fire."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_desert",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-militaire",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "La Grande Toile",
+      "en": "The Great Canvas"
+    },
+    "description": {
+      "fr": "Une vaste tente centrale protégeant du soleil cuisant, posée directement sur le sable chaud.",
+      "en": "A vast central tent protecting from the baking sun, set directly on the hot sand."
+    },
+    "poi_types": [
+      "gouvernance",
+      "marchand_vivres"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_snow",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-militaire",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "L'Âtre Central",
+      "en": "The Central Hearth"
+    },
+    "description": {
+      "fr": "Un immense brasero creusé à l'abri du vent glacial, encerclé de lourdes huttes isolées.",
+      "en": "A huge brazier dug sheltered from the icy wind, encircled by heavy insulated huts."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "forge"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_water",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-militaire",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Marais",
+      "Aquatique"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "La Plateforme Majeure",
+      "en": "The Major Platform"
+    },
+    "description": {
+      "fr": "Une large structure de bois humide sur pilotis, craquant au gré des flots et jonchée de cordages.",
+      "en": "A large damp wooden structure on stilts, creaking with the waves and littered with ropes."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "marchand_vivres"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_under",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-militaire",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Outreterre",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "Centre du village",
+      "en": "The Village center"
+    },
+    "description": {
+      "fr": "Une grotte naturelle aménagée, chichement éclairée par de la flore phosphorescente.",
+      "en": "An adapted natural cave, sparsely lit by phosphorescent flora."
+    },
+    "poi_types": [
+      "gouvernance",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_magic_nature",
+    "eco_tags": ["economie-magique"],
+    "biome_tags": ["Forêt", "Jungle", "Marais"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "Le Cercle de Sève",
+      "en": "The Sap Circle"
+    },
+    "description": {
+      "fr": "Des tentes runiques dressées autour d'une anomalie arcanique palpitante, attirant des chercheurs de pouvoir venus marchander herbes et cristaux.",
+      "en": "Runic tents pitched around a pulsating arcane anomaly, attracting power seekers who come to trade herbs and crystals."
+    },
+    "poi_types": ["gouvernance", "composants_magiques", "taverne"]
+  },
+  {
+    "id": "dist_gov_camp_magic_open",
+    "eco_tags": ["economie-magique"],
+    "biome_tags": ["Désert", "Plaines", "Collines", "Littoral", "Aquatique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "L'Oasis des Mirages",
+      "en": "The Mirage Oasis"
+    },
+    "description": {
+      "fr": "Un rassemblement de chariots et de pavillons maintenus par des sortilèges vacillants, servant de halte aux mages itinérants.",
+      "en": "A gathering of wagons and pavilions held up by flickering spells, serving as a rest stop for traveling mages."
+    },
+    "poi_types": ["gouvernance", "bazar_magique", "taverne"]
+  },
+  {
+    "id": "dist_gov_camp_rel_temperate",
+    "eco_tags": ["economie-religieuse"],
+    "biome_tags": ["Plaines", "Collines", "Forêt", "Littoral"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "Le Sanctuaire du Repos",
+      "en": "The Shrine of Respite"
+    },
+    "description": {
+      "fr": "Un campement paisible dressé autour d'un modeste autel de bois, où les pèlerins achètent bénédictions et reliques de protection.",
+      "en": "A peaceful camp pitched around a modest wooden altar, where pilgrims buy blessings and protective relics."
+    },
+    "poi_types": ["gouvernance", "temple", "bazar"]
+  },
+  {
+    "id": "dist_gov_camp_rel_harsh",
+    "eco_tags": ["economie-religieuse"],
+    "biome_tags": ["Désert", "Montagne", "Arctique", "Taïga"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "Le Prieuré des Confins",
+      "en": "The Edge Priory"
+    },
+    "description": {
+      "fr": "Un ermitage austère de la taille d'un hameau, dont l'économie repose sur les offrandes des voyageurs cherchant à survivre à la colère des éléments.",
+      "en": "An austere hermitage the size of a hamlet, whose economy relies on offerings from travelers seeking to survive the elements' wrath."
+    },
+    "poi_types": ["gouvernance", "temple", "herboriste"]
+  },
+  {
+    "id": "dist_gov_camp_rel_dark",
+    "eco_tags": ["economie-religieuse"],
+    "biome_tags": ["Marais", "Jungle", "Outreterre", "Aquatique", "Sub-aquatique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "L'Autel des Profondeurs",
+      "en": "The Altar of the Depths"
+    },
+    "description": {
+      "fr": "Un lieu de culte primitif et oppressant attirant les fanatiques et les désespérés venus offrir leurs richesses aux esprits locaux.",
+      "en": "A primitive and oppressive place of worship attracting fanatics and the desperate who come to offer their wealth to local spirits."
+    },
+    "poi_types": ["gouvernance", "temple", "taverne_louche"]
+  },
+  {
+    "id": "dist_gov_camp_magic_harsh",
+    "eco_tags": ["economie-magique"],
+    "biome_tags": ["Arctique", "Taïga", "Montagne", "Outreterre", "Sub-aquatique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "La Faille Étincelante",
+      "en": "The Glowing Rift"
+    },
+    "description": {
+      "fr": "Un comptoir isolé construit à la hâte autour d'éclats de magie pure figés dans la roche, la glace ou les abysses, âprement disputés par les locaux.",
+      "en": "An isolated outpost hastily built around shards of pure magic frozen in rock, ice, or the abyss, fiercely contested by the locals."
+    },
+    "poi_types": ["gouvernance", "librairie_arcanique", "apothicaire"]
+  },
+
+  {
+    "id": "dist_gov_camp_poor_mud",
+    "eco_tags": [
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "Centre du village",
+      "en": "The Village center"
+    },
+    "description": {
+      "fr": "Un point de rassemblement misérable, jonché de détritus et perpétuellement inondé de boue.",
+      "en": "A miserable gathering point, littered with trash and perpetually flooded with mud."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne_louche",
+      "marchand_noir"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_poor_dust",
+    "eco_tags": [
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Désert",
+      "Plaines",
+      "Collines"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "La Place centrale",
+      "en": "The Square center"
+    },
+    "description": {
+      "fr": "Un repaire balayé par des vents secs, où l'on s'entasse misérablement à l'ombre de taudis rapiécés.",
+      "en": "A den swept by dry winds, where people huddle miserably in the shade of patched slums."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne_louche",
+      "marchand_noir"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_poor_cold",
+    "eco_tags": [
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "name": {
+      "fr": "La place centrale",
+      "en": "The Square center"
+    },
+    "description": {
+      "fr": "Un camp de survie désespéré où les habitants grelottants se disputent la chaleur de rares feux.",
+      "en": "A desperate survival camp where shivering inhabitants fight over the heat of rare fires."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne_louche",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_gov_camp_poor_coast",
+    "eco_tags": ["economie-subsistance", "marche-noir"],
+    "biome_tags": ["Littoral", "Aquatique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "Le Quai des Épaves",
+      "en": "Shipwreck Pier"
+    },
+    "description": {
+      "fr": "Un amas de bois flotté et de filets déchirés où le chef du camp gère d'une main de fer les maigres prises du jour et la contrebande.",
+      "en": "A pile of driftwood and torn nets where the camp leader manages the meager catches of the day and smuggling with an iron fist."
+    },
+    "poi_types": ["gouvernance", "taverne_louche", "bazar"]
+  },
+  {
+    "id": "dist_gov_camp_poor_swamp",
+    "eco_tags": ["economie-subsistance", "marche-noir"],
+    "biome_tags": ["Marais"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "La Bourbe",
+      "en": "The Sludge"
+    },
+    "description": {
+      "fr": "Quelques masures sur pilotis reliées par des planches pourries, empestant la vase, la maladie et les trafics clandestins.",
+      "en": "A few stilt hovels connected by rotting planks, reeking of mud, disease, and clandestine trafficking."
+    },
+    "poi_types": ["gouvernance", "herboriste", "taverne_louche"]
+  },
+  {
+    "id": "dist_gov_camp_poor_underdark",
+    "eco_tags": ["economie-subsistance", "marche-noir"],
+    "biome_tags": ["Outreterre"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "La Fosse aux Champignons",
+      "en": "The Mushroom Pit"
+    },
+    "description": {
+      "fr": "Un refuge précaire éclairé par des lichens maladifs, où les exilés troquent des racines toxiques contre de l'eau à peu près potable.",
+      "en": "A precarious refuge lit by sickly lichens, where exiles trade toxic roots for somewhat drinkable water."
+    },
+    "poi_types": ["gouvernance", "taverne_louche", "bazar"]
+  },
+  {
+    "id": "dist_gov_camp_poor_subaquatic",
+    "eco_tags": ["economie-subsistance", "marche-noir"],
+    "biome_tags": ["Sub-aquatique"],
+    "size_tags": ["Campement", "Hameau", "Village"],
+    "name": {
+      "fr": "L'Abysse Oublié",
+      "en": "The Forgotten Abyss"
+    },
+    "description": {
+      "fr": "Des dômes d'algues séchées accrochés aux récifs sombres, abritant des parias terrés dans les profondeurs pour échapper aux lois de la surface.",
+      "en": "Domes of dried kelp clinging to dark reefs, sheltering outcasts hiding in the depths to escape surface laws."
+    },
+    "poi_types": ["gouvernance", "bazar", "taverne_louche"]
+  },
+  {
+    "id": "dist_gov_city_standard",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Collines",
+      "Littoral",
+      "Marais",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Centre-ville",
+      "en": "The City Center"
+    },
+    "description": {
+      "fr": "De larges rues pavées menant aux imposants bâtiments administratifs et places publiques.",
+      "en": "Wide cobbled streets leading to imposing administrative buildings and public squares."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "panneau_annonces",
+      "bureau_primes"
+    ]
+  },
+  {
+    "id": "dist_gov_city_desert",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "L'Esplanade de Grès",
+      "en": "The Sandstone Esplanade"
+    },
+    "description": {
+      "fr": "Une immense place de grès clair, encerclée de palmiers et d'imposants palais aux toits plats.",
+      "en": "A huge expanse of light sandstone, encircled by palm trees and imposing flat-roofed palaces."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "bureau_primes",
+      "marchand_vivres"
+    ]
+  },
+  {
+    "id": "dist_gov_city_stone",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Outreterre"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Centre-ville",
+      "en": "The City Center"
+    },
+    "description": {
+      "fr": "Un centre névralgique creusé à même la roche, soutenu par des colonnades titanesques.",
+      "en": "A nerve center carved right out of the rock, supported by titanic colonnades."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "forge",
+      "bureau_primes"
+    ]
+  },
+  {
+    "id": "dist_gov_city_ice",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Centre-ville",
+      "en": "The City Center"
+    },
+    "description": {
+      "fr": "Une architecture rude de pierre sombre et de glace, dont les hautes cheminées crachent une fumée constante.",
+      "en": "A harsh architecture of dark stone and ice, whose tall chimneys spew constant smoke."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne",
+      "armurerie",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_gov_city_aqua",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Palais des Profondeurs",
+      "en": "The Palace of Depths"
+    },
+    "description": {
+      "fr": "Un complexe somptueux de corail et de nacre, baigné par d'étranges lumières aquatiques.",
+      "en": "A sumptuous complex of coral and mother-of-pearl, bathed in strange aquatic lights."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne_luxueuse",
+      "joaillier"
+    ]
+  },
+  {
+    "id": "dist_gov_city_mil",
+    "eco_tags": [
+      "economie-militaire",
+      "industrie-lourde"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Centre-ville",
+      "en": "The City Center"
+    },
+    "description": {
+      "fr": "Une zone lourdement fortifiée et martiale, encerclant le commandement central de la cité.",
+      "en": "A heavily fortified and martial area, encircling the central command of the city."
+    },
+    "poi_types": [
+      "gouvernance",
+      "caserne",
+      "armurerie",
+      "bureau_primes"
+    ]
+  },
+  {
+    "id": "dist_gov_city_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "commerce-international",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Haute-Ville",
+      "en": "The High City"
+    },
+    "description": {
+      "fr": "Le siège de l'élite dirigeante, protégé par de hauts murs, des jardins sculptés et des gardes d'élite.",
+      "en": "The seat of the ruling elite, protected by high walls, sculpted gardens, and elite guards."
+    },
+    "poi_types": [
+      "gouvernance",
+      "taverne_luxueuse",
+      "joaillier",
+      "changeur_monnaie"
+    ]
+  },
+  {
+    "id": "dist_gov_city_magic",
+    "eco_tags": [
+      "economie-magique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Centre-ville",
+      "en": "The City Center"
+    },
+    "description": {
+      "fr": "Une place magistrale où les lois de la physique s'inclinent, bordée de flèches lévitantes.",
+      "en": "A masterful square where the laws of physics bow, lined with levitating spires."
+    },
+    "poi_types": [
+      "gouvernance",
+      "librairie_esoterique",
+      "curiosite"
+    ]
+  },
+  {
+    "id": "dist_gov_city_holy",
+    "eco_tags": [
+      "economie-religieuse"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Place du Pontife",
+      "en": "The Pontiff's Square"
+    },
+    "description": {
+      "fr": "Le cœur religieux de la ville, baigné par le son des chants sacrés et dominé par un impressionnant batiment religieux.",
+      "en": "The religious heart of the city, bathed in the sound of sacred chants and dominated by an impressive religious building."
+    },
+    "poi_types": [
+      "gouvernance",
+      "librairie",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_eau_camp",
+    "eco_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau"
+    ],
+    "name": {
+      "fr": "Les Cabanes de Pêcheurs",
+      "en": "Fishermen's Huts"
+    },
+    "description": {
+      "fr": "Des cabanons de bois branlants sentant fort la saumure, avec de petites barques tirées sur la berge.",
+      "en": "Rickety wooden shacks smelling strongly of brine, with small boats pulled up on the bank."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_poissons"
+    ]
+  },
+  {
+    "id": "dist_eau_village",
+    "eco_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Village"
+    ],
+    "name": {
+      "fr": "Le Petit Débarcadère",
+      "en": "The Small Landing"
+    },
+    "description": {
+      "fr": "Quelques pontons de bois usés par les marées où s'entassent filets, casiers et modestes voiliers locaux.",
+      "en": "A few wooden pontoons worn by the tides where nets, traps, and modest local sailboats are piled up."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_poissons",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_eau_city_trade",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-subsistance",
+      "commerce-local",
+      "commerce-international"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Docks",
+      "en": "The Docks"
+    },
+    "description": {
+      "fr": "Un vaste réseau de quais grouillant de marins et de grues grinçantes déchargeant des cargaisons de tous les horizons.",
+      "en": "A vast network of docks teeming with sailors and creaking cranes unloading cargoes from all over."
+    },
+    "poi_types": [
+      "taverne",
+      "taverne_louche",
+      "bureau_primes",
+      "marchand_poissons",
+      "changeur_monnaie"
+    ]
+  },
+  {
+    "id": "dist_eau_city_ind",
+    "eco_tags": [
+      "industrie-lourde",
+      "economie-militaire"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "L'Arsenal Naval",
+      "en": "The Naval Arsenal"
+    },
+    "description": {
+      "fr": "Un port lourdement fortifié, dominé par des cales sèches, des navires de guerre en construction et d'épaisses chaînes de fer.",
+      "en": "A heavily fortified port, dominated by dry docks, warships under construction, and thick iron chains."
+    },
+    "poi_types": [
+      "caserne",
+      "armurerie",
+      "forge",
+      "taverne"
+    ]
+  },
+  {
+    "id": "dist_eau_city_trade2",
+    "eco_tags": [
+      "artisanat-luxe",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Docks Commerciaux",
+      "en": "The Commercial Docks"
+    },
+    "description": {
+      "fr": "Un vaste réseau de quais grouillant de marins et de grues grinçantes déchargeant des cargaisons de tous les horizons.",
+      "en": "A vast network of docks teeming with sailors and creaking cranes unloading cargoes from all over."
+    },
+    "poi_types": [
+      "taverne",
+      "taverne_louche",
+      "bureau_primes",
+      "marchand_poissons",
+      "changeur_monnaie"
+    ]
+  },
+  {
+    "id": "dist_eau_city_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Marina Majestueuse",
+      "en": "The Majestic Marina"
+    },
+    "description": {
+      "fr": "Des pontons immaculés en bois précieux où accostent de somptueux navires de plaisance, des galions dorés et des vaisseaux de pèlerins.",
+      "en": "Immaculate precious wood pontoons where sumptuous pleasure craft, gilded galleons, and pilgrim vessels dock."
+    },
+    "poi_types": [
+      "taverne_luxueuse",
+      "joaillier",
+      "curiosite",
+      "librairie_esoterique"
+    ]
+  },
+  {
+    "id": "dist_eau_city_crime",
+    "eco_tags": [
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Port des Brumes",
+      "en": "The Port of Mists"
+    },
+    "description": {
+      "fr": "Des quais sombres et labyrinthiques, cachés à la vue de la milice, où s'échangent des cargaisons illicites en pleine nuit.",
+      "en": "Dark and labyrinthine docks, hidden from the militia's sight, where illicit cargoes are exchanged in the dead of night."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "marchand_noir",
+      "apothicaire",
+      "armurerie"
+    ]
+  },
+  {
+    "id": "dist_pauvre_crime",
+    "eco_tags": [
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Cour des Miracles",
+      "en": "Court of Miracles"
+    },
+    "description": {
+      "fr": "Un enchevêtrement de tentes et de masures où la milice n'ose plus mettre les pieds.",
+      "en": "A tangle of tents and hovels where the militia no longer dares to set foot."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "marchand_noir",
+      "armurerie",
+      "fumerie",
+      "maison_plaisir_louche",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_pauvre_ind",
+    "eco_tags": [
+      "industrie-lourde",
+      "economie-militaire"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Cendres",
+      "en": "The Ash District"
+    },
+    "description": {
+      "fr": "Des taudis noircis par la suie où s'entassent les travailleurs épuisés après des journées infernales.",
+      "en": "Soot-blackened slums where exhausted workers crowd after infernal days."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "apothicaire",
+      "fumerie",
+      "maison_plaisir_louche",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_pauvre_water",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier Submergé",
+      "en": "The Submerged District"
+    },
+    "description": {
+      "fr": "Des cabanes pourries par l'humidité, à moitié enfoncées dans l'eau croupie ou la boue nauséabonde.",
+      "en": "Cabins rotted by damp, half-sunk in stagnant water or foul mud."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "bazar",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_pauvre_desert",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Ville-Poussière",
+      "en": "Dust Town"
+    },
+    "description": {
+      "fr": "Un bidonville balayé par les vents secs, où l'on survit misérablement sous des toiles rapiécées.",
+      "en": "A shantytown swept by dry winds, where people survive miserably under patched canvas."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "bazar",
+      "fumerie",
+      "maison_plaisir_louche",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_pauvre_cold",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne",
+      "Outreterre"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Gouffres Glacés",
+      "en": "The Icy Chasms"
+    },
+    "description": {
+      "fr": "Des masures glaciales où les plus pauvres s'entassent en luttant désespérément contre le froid mortel.",
+      "en": "Freezing hovels where the poorest crowd together, desperately fighting the deadly cold."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "bazar",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_pauvre_std",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "artisanat-luxe",
+      "commerce-local",
+      "commerce-international",
+      "economie-magique",
+      "economie-religieuse",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Collines",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Bas-Fonds",
+      "en": "The Slums"
+    },
+    "description": {
+      "fr": "Des ruelles étroites, inondées d'ombre et de crasse, où s'entasse la main-d'œuvre la plus pauvre de la ville.",
+      "en": "Narrow alleys, flooded with shadow and grime, where the city's poorest laborers are crammed."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "bazar",
+      "fumerie",
+      "maison_plaisir_louche",
+      "panneau_annonces"
+    ]
+  },
+  {
+    "id": "dist_res_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "commerce-international",
+      "economie-touristique",
+      "economie-magique",
+      "economie-religieuse"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Beaux Quartiers",
+      "en": "The Fine Quarters"
+    },
+    "description": {
+      "fr": "De splendides demeures bourgeoises entourées de jardins soigneusement entretenus et de rues très propres.",
+      "en": "Splendid bourgeois mansions surrounded by carefully manicured gardens and very clean streets."
+    },
+    "poi_types": [
+      "tailleur",
+      "joaillier",
+      "taverne_luxueuse"
+    ]
+  },
+  {
+    "id": "dist_res_ind",
+    "eco_tags": [
+      "industrie-lourde",
+      "economie-militaire",
+      "marche-noir",
+      "economie-subsistance"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier Laborieux",
+      "en": "The Labor District"
+    },
+    "description": {
+      "fr": "Un alignement strict et morne de logements modestes abritant la masse travailleuse de la cité.",
+      "en": "A strict and dreary alignment of modest housing sheltering the working masses of the city."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_vivres",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_res_water",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "commerce-local"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Canaux",
+      "en": "The Canal District"
+    },
+    "description": {
+      "fr": "Un labyrinthe de charmantes maisons sur pilotis ou bordant des voies d'eau navigables très animées.",
+      "en": "A maze of charming stilt houses or lining bustling navigable waterways."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_vivres",
+      "tailleur",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_res_desert",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "commerce-local"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier d'Argile",
+      "en": "The Clay District"
+    },
+    "description": {
+      "fr": "Des habitations à toit plat construites en terre cuite claire, offrant une douce fraîcheur à leurs habitants.",
+      "en": "Flat-roofed dwellings built of light terracotta, offering sweet coolness to their inhabitants."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_vivres",
+      "tailleur",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_res_cold",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "commerce-local"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga",
+      "Montagne",
+      "Outreterre"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Habitations Creusées",
+      "en": "The Carved Dwellings"
+    },
+    "description": {
+      "fr": "De solides maisons de pierre épaisse ou semi-enterrées, calfeutrées pour résister aux éléments extrêmes.",
+      "en": "Solid houses of thick stone or semi-buried, caulked to withstand the extreme elements."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_vivres",
+      "tailleur",
+      "forge"
+    ]
+  },
+  {
+    "id": "dist_res_std",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "commerce-local"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Collines",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier Populaire",
+      "en": "The Working-Class Neighborhood"
+    },
+    "description": {
+      "fr": "Un quartier modeste, dense et très animé, aux façades de bois et de torchis colorés.",
+      "en": "A modest, dense, and very lively neighborhood, with facades of wood and colorful cob."
+    },
+    "poi_types": [
+      "taverne",
+      "marchand_vivres",
+      "tailleur",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_loisir_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "economie-touristique",
+      "commerce-international"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Jardins Suspendus",
+      "en": "The Hanging Gardens"
+    },
+    "description": {
+      "fr": "Un écrin de volupté où les nobles se retrouvent. Musique douce, soieries fines et courtisanes d'exception.",
+      "en": "A haven of delight where nobles gather. Soft music, fine silks, and exceptional courtesans."
+    },
+    "poi_types": [
+      "taverne_luxueuse",
+      "maison_plaisir",
+      "fumerie",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_loisir_magic",
+    "eco_tags": [
+      "economie-magique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "L'Allée des Illusions",
+      "en": "Illusion Alley"
+    },
+    "description": {
+      "fr": "Des spectacles d'artifices arcaniques permanents et des fumeries d'herbes oniriques où l'on perd la notion du temps.",
+      "en": "Permanent arcane firework shows and dream-herb smoking dens where one loses track of time."
+    },
+    "poi_types": [
+      "taverne",
+      "fumerie",
+      "curiosite",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_loisir_crime",
+    "eco_tags": [
+      "marche-noir",
+      "economie-subsistance"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Ruelle des Vices",
+      "en": "Vice Alley"
+    },
+    "description": {
+      "fr": "Un coupe-gorge enfumé éclairé aux lanternes rouges, offrant des plaisirs charnels bon marché et de l'alcool de contrebande.",
+      "en": "A smoky cutthroat alley lit by red lanterns, offering cheap carnal pleasures and bootleg alcohol."
+    },
+    "poi_types": [
+      "taverne_louche",
+      "maison_plaisir",
+      "marchand_noir",
+      "fumerie"
+    ]
+  },
+  {
+    "id": "dist_loisir_std",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "artisanat-commun",
+      "industrie-lourde",
+      "commerce-local",
+      "economie-militaire",
+      "economie-religieuse"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Plaisirs",
+      "en": "The Pleasure District"
+    },
+    "description": {
+      "fr": "Lumières colorées, musiques entraînantes et effluves de bière forte. Le défouloir nocturne de la majorité des travailleurs.",
+      "en": "Colorful lights, catchy music, and scents of strong beer. The nocturnal playground for most workers."
+    },
+    "poi_types": [
+      "taverne",
+      "taverne_louche",
+      "maison_plaisir",
+      "fumerie"
+    ]
+  },
+  {
+    "id": "dist_march_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "commerce-international",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Grand Souk",
+      "en": "The Grand Bazaar"
+    },
+    "description": {
+      "fr": "Grandes avenues bordées d'échoppes prestigieuses offrant des merveilles venues de loin.",
+      "en": "Large avenues lined with prestigious stalls offering wonders from afar."
+    },
+    "poi_types": [
+      "changeur_monnaie",
+      "joaillier",
+      "antiquaire",
+      "marchand_luxe"
+    ]
+  },
+  {
+    "id": "dist_march_std",
+    "eco_tags": [
+      "commerce-local",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-religieuse",
+      "economie-magique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Halle Centrale",
+      "en": "The Central Hall"
+    },
+    "description": {
+      "fr": "Un vaste espace couvert où se côtoient agriculteurs, artisans et acheteurs du quotidien.",
+      "en": "A vast covered space where farmers, artisans, and everyday buyers mingle."
+    },
+    "poi_types": [
+      "marchand_vivres",
+      "bazar",
+      "tailleur",
+      "apothicaire"
+    ]
+  },
+  {
+    "id": "dist_march_ind",
+    "eco_tags": [
+      "industrie-lourde",
+      "economie-militaire",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Marché aux Fournitures",
+      "en": "The Supply Market"
+    },
+    "description": {
+      "fr": "Une place bruyante et poussiéreuse dédiée à la vente de matériaux bruts, de bêtes de somme et d'outils lourds.",
+      "en": "A noisy and dusty square dedicated to the sale of raw materials, beasts of burden, and heavy tools."
+    },
+    "poi_types": [
+      "marchand_bois",
+      "forge",
+      "armurerie",
+      "ecurie"
+    ]
+  },
+  {
+    "id": "dist_march_poor",
+    "eco_tags": [
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Marché aux Puces",
+      "en": "The Flea Market"
+    },
+    "description": {
+      "fr": "Un enchevêtrement de tapis à même le sol où l'on revend de la ferraille, des objets volés et des herbes douteuses.",
+      "en": "A tangle of rugs on the ground where scrap metal, stolen goods, and dubious herbs are resold."
+    },
+    "poi_types": [
+      "marchand_noir",
+      "bazar",
+      "curiosite",
+      "fumerie"
+    ]
+  },
+  {
+    "id": "dist_art_lux",
+    "eco_tags": [
+      "artisanat-luxe",
+      "commerce-international"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Ruelle des Orfèvres",
+      "en": "Goldsmiths' Alley"
+    },
+    "description": {
+      "fr": "De petites boutiques calmes et très bien gardées, aux vitrines discrètes mais inestimables.",
+      "en": "Small, quiet, heavily guarded shops with discreet but priceless window displays."
+    },
+    "poi_types": [
+      "joaillier",
+      "tailleur",
+      "graveur_pierre",
+      "marchand_luxe"
+    ]
+  },
+  {
+    "id": "dist_art_ind",
+    "eco_tags": [
+      "industrie-lourde",
+      "economie-militaire"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Forges",
+      "en": "The Forge District"
+    },
+    "description": {
+      "fr": "L'air y est saturé de suie et la chaleur des hauts fourneaux est perceptible de très loin.",
+      "en": "The air is saturated with soot and the heat from blast furnaces is noticeable from afar."
+    },
+    "poi_types": [
+      "forge",
+      "armurerie",
+      "graveur_pierre"
+    ]
+  },
+  {
+    "id": "dist_art_magic",
+    "eco_tags": [
+      "economie-magique",
+      "economie-religieuse"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Rue des Érudits",
+      "en": "Scholars' Street"
+    },
+    "description": {
+      "fr": "Une rue silencieuse sentant le vieux parchemin et la cire fondue, abritant les artisans de l'esprit.",
+      "en": "A silent street smelling of old parchment and melted wax, housing the artisans of the mind."
+    },
+    "poi_types": [
+      "librairie_esoterique",
+      "librairie",
+      "apothicaire",
+      "curiosite"
+    ]
+  },
+  {
+    "id": "dist_art_std",
+    "eco_tags": [
+      "artisanat-commun",
+      "commerce-local",
+      "economie-touristique"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Rue des Artisans",
+      "en": "Artisans' Street"
+    },
+    "description": {
+      "fr": "Les bruits d'outils rythment les journées. On y trouve de tout, du menuisier au tisserand.",
+      "en": "The sounds of tools punctuate the days. You can find everything from a carpenter to a weaver."
+    },
+    "poi_types": [
+      "tailleur",
+      "tanneur",
+      "archerie",
+      "cartographe"
+    ]
+  },
+  {
+    "id": "dist_art_brute",
+    "eco_tags": [
+      "ressources-brutes",
+      "agricole-elevage",
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Transformateurs",
+      "en": "The Processing District"
+    },
+    "description": {
+      "fr": "Une zone odorante et mal famée où l'on tanne les peaux, découpe le bois et sale les viandes.",
+      "en": "A smelly and disreputable area where skins are tanned, wood is chopped, and meats are salted."
+    },
+    "poi_types": [
+      "tanneur",
+      "marchand_bois",
+      "bazar",
+      "marchand_vivres"
+    ]
+  },
+  {
+    "id": "dist_farm_plains",
+    "eco_tags": [
+      "agricole-elevage",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Collines"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Terres Agricoles",
+      "en": "The Farmlands"
+    },
+    "description": {
+      "fr": "Un amas de granges, de moulins et de grands champs s'étendant à perte de vue autour des murs.",
+      "en": "A cluster of barns, mills, and large fields stretching as far as the eye can see around the walls."
+    },
+    "poi_types": [
+      "marchand_vivres",
+      "ecurie",
+      "menagerie"
+    ]
+  },
+  {
+    "id": "dist_farm_forest",
+    "eco_tags": [
+      "agricole-elevage",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Taïga",
+      "Jungle"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Chantiers Sylvestres",
+      "en": "The Sylvan Camps"
+    },
+    "description": {
+      "fr": "À la lisière des arbres, d'immenses entrepôts de rondins et des camps de trappeurs bordent la ville.",
+      "en": "At the edge of the trees, huge log warehouses and trappers' camps line the city."
+    },
+    "poi_types": [
+      "marchand_bois",
+      "archerie",
+      "tanneur"
+    ]
+  },
+  {
+    "id": "dist_farm_desert",
+    "eco_tags": [
+      "agricole-elevage",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Jardins de l'Oasis",
+      "en": "The Oasis Gardens"
+    },
+    "description": {
+      "fr": "Un réseau de canaux d'irrigation précieux nourrissant des palmeraies et des enclos à chameaux.",
+      "en": "A network of precious irrigation canals feeding palm groves and camel pens."
+    },
+    "poi_types": [
+      "marchand_vivres",
+      "apothicaire",
+      "ecurie"
+    ]
+  },
+  {
+    "id": "dist_farm_under",
+    "eco_tags": [
+      "agricole-elevage",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Outreterre",
+      "Arctique"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Cultures Souterraines",
+      "en": "The Underground Crops"
+    },
+    "description": {
+      "fr": "Des serres volcaniques ou de vastes grottes humides dédiées à la culture de champignons et l'élevage d'insectes géants.",
+      "en": "Volcanic greenhouses or vast damp caves dedicated to growing mushrooms and breeding giant insects."
+    },
+    "poi_types": [
+      "marchand_vivres",
+      "apothicaire",
+      "forge"
+    ]
+  },
+  {
+    "id": "dist_farm_water",
+    "eco_tags": [
+      "agricole-elevage",
+      "ressources-brutes"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais",
+      "Sub-aquatique"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Les Bassins d'Élevage",
+      "en": "The Breeding Pools"
+    },
+    "description": {
+      "fr": "De vastes parcs à huîtres, des nasses géantes et des bassins salants taillés à même la côte.",
+      "en": "Vast oyster beds, giant fish traps, and salt pans carved right into the coast."
+    },
+    "poi_types": [
+      "marchand_vivres",
+      "apothicaire",
+      "bazar"
+    ]
+  },
+  {
+    "id": "dist_mil_elite",
+    "eco_tags": [
+      "economie-militaire"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "La Forteresse Centrale",
+      "en": "The Central Fortress"
+    },
+    "description": {
+      "fr": "Un immense complexe martial entouré de douves, abritant des terrains d'entraînement boueux et des machines de siège.",
+      "en": "A huge martial complex surrounded by moats, housing muddy training grounds and siege engines."
+    },
+    "poi_types": [
+      "armurerie",
+      "ecurie",
+      "forge"
+    ]
+  },
+  {
+    "id": "dist_mil_std",
+    "eco_tags": [
+      "artisanat-luxe",
+      "commerce-international",
+      "economie-touristique",
+      "commerce-local",
+      "agricole-elevage",
+      "artisanat-commun",
+      "economie-magique",
+      "industrie-lourde",
+      "ressources-brutes",
+      "economie-subsistance",
+      "marche-noir"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Casernes",
+      "en": "The Barracks District"
+    },
+    "description": {
+      "fr": "Le lieu de garnison de la garde de la ville, avec ses tentes d'intendance et ses râteliers d'armes bien alignés.",
+      "en": "The garrison of the city guard, with its quartermaster tents and neatly aligned weapon racks."
+    },
+    "poi_types": [
+      "armurerie",
+      "forge"
+    ]
+  },
+  {
+    "id": "dist_mil_rel",
+    "eco_tags": [
+      "economie-religieuse"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "name": {
+      "fr": "Le Quartier des Juges",
+      "en": "The religious heart of the city, bathed in the sound of sacred chants and dominated by an impressive religious building."
+    },
+    "description": {
+      "fr": "Le lieu de l'autorité local. Les inquisiteurs sont à la fois les juge, les jurés et les bourreaux. Sur la place on peut voir une estrade, lieu d'execusions sommaires.",
+      "en": "The seat of local authority. The inquisitors acted as judge, jury, and executioner. In the square, one could see a platform, the site of summary executions."
+    },
+    "poi_types": [
+      "armurerie",
+      "forge",
+      "bureau_primes"
+    ]
+  }
+]

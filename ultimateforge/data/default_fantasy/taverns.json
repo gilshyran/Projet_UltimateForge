@@ -1,0 +1,3606 @@
+{
+  "name_parts": {
+    "nouns": [
+      {
+        "fr": "Sanglier",
+        "en": "Boar"
+      },
+      {
+        "fr": "Chien",
+        "en": "Hound"
+      },
+      {
+        "fr": "Bouclier",
+        "en": "Shield"
+      },
+      {
+        "fr": "Troll",
+        "en": "Troll"
+      },
+      {
+        "fr": "Kraken",
+        "en": "Kraken"
+      },
+      {
+        "fr": "Dragon",
+        "en": "Dragon"
+      },
+      {
+        "fr": "Griffon",
+        "en": "Griffin"
+      },
+      {
+        "fr": "Loup",
+        "en": "Wolf"
+      },
+      {
+        "fr": "Ours",
+        "en": "Bear"
+      },
+      {
+        "fr": "Corbeau",
+        "en": "Raven"
+      },
+      {
+        "fr": "Renard",
+        "en": "Fox"
+      },
+      {
+        "fr": "Cerf",
+        "en": "Stag"
+      },
+      {
+        "fr": "Poney",
+        "en": "Pony"
+      },
+      {
+        "fr": "Coq",
+        "en": "Rooster"
+      },
+      {
+        "fr": "Taureau",
+        "en": "Bull"
+      },
+      {
+        "fr": "Lion",
+        "en": "Lion"
+      },
+      {
+        "fr": "Faucon",
+        "en": "Hawk"
+      },
+      {
+        "fr": "Crapaud",
+        "en": "Toad"
+      },
+      {
+        "fr": "Serpent",
+        "en": "Serpent"
+      },
+      {
+        "fr": "Rat",
+        "en": "Rat"
+      },
+      {
+        "fr": "Épée",
+        "en": "Sword"
+      },
+      {
+        "fr": "Hache",
+        "en": "Axe"
+      },
+      {
+        "fr": "Enclume",
+        "en": "Anvil"
+      },
+      {
+        "fr": "Calice",
+        "en": "Chalice"
+      },
+      {
+        "fr": "Chope",
+        "en": "Tankard"
+      },
+      {
+        "fr": "Tonneau",
+        "en": "Barrel"
+      },
+      {
+        "fr": "Heaume",
+        "en": "Helm"
+      },
+      {
+        "fr": "Lanterne",
+        "en": "Lantern"
+      },
+      {
+        "fr": "Marmite",
+        "en": "Cauldron"
+      },
+      {
+        "fr": "Fer à cheval",
+        "en": "Horseshoe"
+      },
+      {
+        "fr": "Roue",
+        "en": "Wheel"
+      },
+      {
+        "fr": "Cloche",
+        "en": "Bell"
+      },
+      {
+        "fr": "Navire",
+        "en": "Ship"
+      },
+      {
+        "fr": "Grappin",
+        "en": "Anchor"
+      },
+      {
+        "fr": "Fléau",
+        "en": "Flail"
+      },
+      {
+        "fr": "Forgeron",
+        "en": "Blacksmith"
+      },
+      {
+        "fr": "Chasseur",
+        "en": "Hunter"
+      },
+      {
+        "fr": "Chevalier",
+        "en": "Knight"
+      },
+      {
+        "fr": "Mage",
+        "en": "Mage"
+      },
+      {
+        "fr": "Roi",
+        "en": "King"
+      },
+      {
+        "fr": "Fou",
+        "en": "Fool"
+      },
+      {
+        "fr": "Moine",
+        "en": "Monk"
+      },
+      {
+        "fr": "Marin",
+        "en": "Sailor"
+      },
+      {
+        "fr": "Voleur",
+        "en": "Thief"
+      },
+      {
+        "fr": "Barde",
+        "en": "Bard"
+      },
+      {
+        "fr": "Pèlerin",
+        "en": "Pilgrim"
+      },
+      {
+        "fr": "Chêne",
+        "en": "Oak"
+      },
+      {
+        "fr": "Pin",
+        "en": "Pine"
+      },
+      {
+        "fr": "Cygne",
+        "en": "Swan"
+      },
+      {
+        "fr": "Lutin",
+        "en": "Imp"
+      }
+    ],
+    "adjectives": [
+      {
+        "fr": "Rieur",
+        "en": "Laughing"
+      },
+      {
+        "fr": "Borgne",
+        "en": "One-Eyed"
+      },
+      {
+        "fr": "Sanglant",
+        "en": "Bloody"
+      },
+      {
+        "fr": "Gourmand",
+        "en": "Gluttonous"
+      },
+      {
+        "fr": "Brisé",
+        "en": "Broken"
+      },
+      {
+        "fr": "Noir",
+        "en": "Black"
+      },
+      {
+        "fr": "Blanc",
+        "en": "White"
+      },
+      {
+        "fr": "Rouge",
+        "en": "Red"
+      },
+      {
+        "fr": "Vert",
+        "en": "Green"
+      },
+      {
+        "fr": "Bleu",
+        "en": "Blue"
+      },
+      {
+        "fr": "Doré",
+        "en": "Golden"
+      },
+      {
+        "fr": "d'Argent",
+        "en": "Silver"
+      },
+      {
+        "fr": "de Cuivre",
+        "en": "Copper"
+      },
+      {
+        "fr": "de Fer",
+        "en": "Iron"
+      },
+      {
+        "fr": "Endormi",
+        "en": "Sleeping"
+      },
+      {
+        "fr": "Ivre",
+        "en": "Drunken"
+      },
+      {
+        "fr": "Aveugle",
+        "en": "Blind"
+      },
+      {
+        "fr": "Boiteux",
+        "en": "Lame"
+      },
+      {
+        "fr": "Vaillant",
+        "en": "Valiant"
+      },
+      {
+        "fr": "Fringant",
+        "en": "Prancing"
+      },
+      {
+        "fr": "Joyeux",
+        "en": "Merry"
+      },
+      {
+        "fr": "Triste",
+        "en": "Sorrowful"
+      },
+      {
+        "fr": "Mort",
+        "en": "Dead"
+      },
+      {
+        "fr": "Noyé",
+        "en": "Drowned"
+      },
+      {
+        "fr": "Perdu",
+        "en": "Lost"
+      },
+      {
+        "fr": "Caché",
+        "en": "Hidden"
+      },
+      {
+        "fr": "Hurlant",
+        "en": "Howling"
+      },
+      {
+        "fr": "Chuchotant",
+        "en": "Whispering"
+      },
+      {
+        "fr": "Dansant",
+        "en": "Dancing"
+      },
+      {
+        "fr": "Chantant",
+        "en": "Singing"
+      },
+      {
+        "fr": "Flamboyant",
+        "en": "Flaming"
+      },
+      {
+        "fr": "Fumé",
+        "en": "Smoked"
+      },
+      {
+        "fr": "Brûlé",
+        "en": "Burned"
+      },
+      {
+        "fr": "Enchaîné",
+        "en": "Chained"
+      },
+      {
+        "fr": "Gras",
+        "en": "Fat"
+      },
+      {
+        "fr": "Fou",
+        "en": "Mad"
+      },
+      {
+        "fr": "Sage",
+        "en": "Wise"
+      },
+      {
+        "fr": "Sombre",
+        "en": "Dark"
+      },
+      {
+        "fr": "Sauvage",
+        "en": "Wild"
+      },
+      {
+        "fr": "Solitaire",
+        "en": "Lonely"
+      },
+      {
+        "fr": "Magique",
+        "en": "Magic"
+      },
+      {
+        "fr": "Fier",
+        "en": "Proud"
+      },
+      {
+        "fr": "Maudit",
+        "en": "Cursed"
+      },
+      {
+        "fr": "Béni",
+        "en": "Blessed"
+      },
+      {
+        "fr": "Silencieux",
+        "en": "Silent"
+      },
+      {
+        "fr": "Bavard",
+        "en": "Chatty"
+      },
+      {
+        "fr": "Rapide",
+        "en": "Swift"
+      },
+      {
+        "fr": "Lourd",
+        "en": "Heavy"
+      },
+      {
+        "fr": "Repu",
+        "en": "Sated"
+      },
+      {
+        "fr": "Écarlate",
+        "en": "Scarlet"
+      }
+    ]
+  },
+  "regional_drinks": [
+    {
+      "id_region": "Pandora",
+      "fr": "Pisco Fumé de la Cognerie",
+      "en": "Smoky Cognerie Pisco",
+      "price": 10
+    }
+  ],
+  "qualities": {
+    "faible": {
+      "quirks": [
+        {
+          "fr": "Le plancher colle aux bottes, l'air est enfumé et les tables sont entaillées de coups de couteaux.",
+          "en": "The floor sticks to your boots, the air is smoky, and the tables are scarred with knife marks."
+        },
+        {
+          "fr": "Le toit fuit abondamment et des seaux rouillés parsèment la salle pour récolter l'eau.",
+          "en": "The roof leaks heavily and rusty buckets are scattered across the room to catch the water."
+        },
+        {
+          "fr": "Une odeur tenace de bière rance, de chou bouilli et de chien mouillé imprègne l'endroit.",
+          "en": "A stubborn smell of stale beer, boiled cabbage, and wet dog permeates the place."
+        },
+        {
+          "fr": "Des crânes de gobelins et de monstres mineurs, très mal empaillés, décorent les murs rongés par l'humidité.",
+          "en": "Poorly stuffed skulls of goblins and minor monsters decorate the damp-eaten walls."
+        },
+        {
+          "fr": "L'éclairage provient de quelques bougies suiffeuses qui projettent des ombres longues et inquiétantes.",
+          "en": "The lighting comes from a few tallow candles casting long, unsettling shadows."
+        },
+        {
+          "fr": "Un nid de rats d'une taille alarmante est visible dans les chevrons de la salle commune.",
+          "en": "An alarmingly large rat's nest is visible in the rafters of the common room."
+        },
+        {
+          "fr": "La porte d'entrée ne tient plus que par un seul gond et grince atrocement à chaque coup de vent.",
+          "en": "The front door is hanging by a single hinge and creaks atrociously with every gust of wind."
+        },
+        {
+          "fr": "Des taches de sang douteuses, à moitié nettoyées, sont encore visibles sur le comptoir principal.",
+          "en": "Questionable, half-cleaned blood stains are still visible on the main counter."
+        },
+        {
+          "fr": "Des champignons violets luisants poussent dans les coins les plus sombres et moites de la salle.",
+          "en": "Glowing purple mushrooms grow in the darkest, dampest corners of the room."
+        },
+        {
+          "fr": "Un nain ivre et crasseux dort sous une table, personne ne semblant s'en soucier.",
+          "en": "A drunk, grimy dwarf sleeps under a table, with no one seeming to care."
+        }
+      ],
+      "clientele": [
+        {
+          "fr": "Des contrebandiers, des ouvriers épuisés et des parias qui évitent de croiser les regards.",
+          "en": "Smugglers, exhausted workers, and outcasts avoiding eye contact."
+        },
+        {
+          "fr": "Des mercenaires balafrés comptant nerveusement leurs pièces de cuivre émoussées.",
+          "en": "Scarred mercenaries nervously counting their dulled copper coins."
+        },
+        {
+          "fr": "Des voleurs à la tire gardant un œil sur la porte et l'autre sur les bourses des nouveaux arrivants.",
+          "en": "Pickpockets keeping one eye on the door and the other on newcomers' purses."
+        },
+        {
+          "fr": "Des gobelins pacifiés mais bruyants, tolérés ici, qui jouent aux dés dans un coin.",
+          "en": "Pacified but noisy goblins, tolerated here, playing dice in a corner."
+        },
+        {
+          "fr": "Un groupe de cultistes encapuchonnés essayant de recruter discrètement des désespérés.",
+          "en": "A group of hooded cultists trying to discreetly recruit desperate people."
+        },
+        {
+          "fr": "Des mages ratés ou renvoyés de leur académie, faisant des tours de passe-passe minables pour une bière.",
+          "en": "Failed or expelled mages doing cheap parlor tricks for an ale."
+        },
+        {
+          "fr": "Des marins d'eau douce bagarreurs racontant des mensonges éhontés sur des monstres marins.",
+          "en": "Brawling freshwater sailors telling blatant lies about sea monsters."
+        },
+        {
+          "fr": "Des chasseurs de primes louches qui comparent des avis de recherche couverts de sang.",
+          "en": "Shady bounty hunters comparing blood-stained wanted posters."
+        },
+        {
+          "fr": "Des vétérans de guerre estropiés noyant les fantômes de leur passé dans l'alcool bon marché.",
+          "en": "Crippled war veterans drowning the ghosts of their past in cheap alcohol."
+        },
+        {
+          "fr": "Des fugitifs silencieux, couverts de capes crasseuses, fuyant la justice du seigneur local.",
+          "en": "Silent fugitives covered in grimy cloaks, fleeing the local lord's justice."
+        }
+      ],
+      "staff_roles": {
+        "owner_traits": [
+          {
+            "fr": "qui garde une arbalète chargée sous le comptoir.",
+            "en": "who keeps a loaded crossbow under the counter."
+          },
+          {
+            "fr": "qui a un œil de verre qui semble suivre les clients de manière magique.",
+            "en": "who has a glass eye that seems to magically follow the patrons."
+          },
+          {
+            "fr": "qui tousse grassement en essuyant les chopes avec un chiffon douteux.",
+            "en": "who coughs heavily while wiping mugs with a questionable rag."
+          },
+          {
+            "fr": "qui compte chaque pièce en les mordant avec des dents en or pour vérifier leur authenticité.",
+            "en": "who bites every coin with gold teeth to check its authenticity."
+          },
+          {
+            "fr": "qui porte une main mécanique rouillée et grinçante à la place de l'avant-bras gauche.",
+            "en": "who wears a rusty, squeaking mechanical hand instead of a left forearm."
+          },
+          {
+            "fr": "qui crache par terre à chaque fois qu'on prononce le nom de la garde de la ville.",
+            "en": "who spits on the floor every time the city guard's name is mentioned."
+          },
+          {
+            "fr": "qui porte un tablier de cuir maculé de taches impossibles à identifier.",
+            "en": "who wears a leather apron stained with unidentifiable marks."
+          },
+          {
+            "fr": "qui est accompagné d'un molosse féroce, couturé de cicatrices, attaché au comptoir.",
+            "en": "who is accompanied by a fierce, scar-covered mastiff tied to the counter."
+          },
+          {
+            "fr": "qui doit visiblement de l'argent à la pègre et sursaute au moindre bruit soudain.",
+            "en": "who visibly owes money to the underworld and jumps at the slightest sudden noise."
+          },
+          {
+            "fr": "qui cache une matraque cloutée dans sa botte et n'hésite pas à la montrer.",
+            "en": "who hides a spiked club in their boot and doesn't hesitate to show it."
+          }
+        ],
+        "others": [
+          {
+            "role": {
+              "fr": "Serveuse",
+              "en": "Waitress"
+            },
+            "trait": {
+              "fr": "harcelée par des clients éméchés, elle a le regard las.",
+              "en": "harassed by tipsy patrons, she has a weary look."
+            }
+          },
+          {
+            "role": {
+              "fr": "Videur",
+              "en": "Bouncer"
+            },
+            "trait": {
+              "fr": "un demi-orque colérique qui craque ses phalanges dans un coin.",
+              "en": "an angry half-orc cracking his knuckles in a corner."
+            }
+          },
+          {
+            "role": {
+              "fr": "Marmiton",
+              "en": "Scullion"
+            },
+            "trait": {
+              "fr": "un jeune gobelin terrorisé qui nettoie les sols avec une serpillère trouée.",
+              "en": "a terrified young goblin cleaning the floors with a holed mop."
+            }
+          },
+          {
+            "role": {
+              "fr": "Barde",
+              "en": "Bard"
+            },
+            "trait": {
+              "fr": "qui joue d'un luth désaccordé et chante fort pour couvrir les bruits de bagarre.",
+              "en": "who plays an out-of-tune lute and sings loudly to cover the sounds of brawling."
+            }
+          },
+          {
+            "role": {
+              "fr": "Serveur",
+              "en": "Waiter"
+            },
+            "trait": {
+              "fr": "qui boite bas, renverse la moitié des pintes et a la main leste sur les bourses.",
+              "en": "who limps, spills half the pints, and has light fingers for purses."
+            }
+          },
+          {
+            "role": {
+              "fr": "Cuisinier",
+              "en": "Cook"
+            },
+            "trait": {
+              "fr": "un vieillard borgne qui semble cuisiner uniquement à l'odeur et au hasard.",
+              "en": "a one-eyed old man who seems to cook entirely by smell and guesswork."
+            }
+          },
+          {
+            "role": {
+              "fr": "Garde du corps",
+              "en": "Bodyguard"
+            },
+            "trait": {
+              "fr": "un mercenaire balafré engagé par le patron, qui dort debout les yeux mi-clos.",
+              "en": "a scarred mercenary hired by the owner, sleeping standing up with half-closed eyes."
+            }
+          },
+          {
+            "role": {
+              "fr": "Chasseur de rats",
+              "en": "Rat Catcher"
+            },
+            "trait": {
+              "fr": "qui promène deux furets hargneux en laisse à travers la salle commune.",
+              "en": "who walks two vicious ferrets on leashes through the common room."
+            }
+          },
+          {
+            "role": {
+              "fr": "Fille de salle",
+              "en": "Barmaid"
+            },
+            "trait": {
+              "fr": "qui glisse des informations à la guilde des voleurs contre quelques pièces.",
+              "en": "who slips information to the thieves' guild for a few coins."
+            }
+          },
+          {
+            "role": {
+              "fr": "Videur",
+              "en": "Bouncer"
+            },
+            "trait": {
+              "fr": "un golem de chair mal recousu qui sent légèrement la pourriture.",
+              "en": "a poorly stitched flesh golem that smells slightly of rot."
+            }
+          }
+        ]
+      },
+      "menus": [
+        {
+          "fr": "Soupe aux choux claire et quignon de pain dur",
+          "en": "Clear cabbage soup and a heel of hard bread",
+          "price": 0.1
+        },
+        {
+          "fr": "Gruau d'avoine et une pomme ridée",
+          "en": "Oat gruel and a wrinkled apple",
+          "price": 0.05
+        },
+        {
+          "fr": "Ragoût de haricots blancs au lard salé",
+          "en": "White bean stew with salted fatback",
+          "price": 0.1
+        },
+        {
+          "fr": "Navets bouillis et fromage de chèvre très fort",
+          "en": "Boiled turnips and very strong goat cheese",
+          "price": 0.05
+        },
+        {
+          "fr": "Bouillon d'os épaissi avec des herbes amères",
+          "en": "Bone broth thickened with bitter herbs",
+          "price": 0.05
+        },
+        {
+          "fr": "Galette de sarrasin et oignons rôtis sous la cendre",
+          "en": "Buckwheat flatbread and ash-roasted onions",
+          "price": 0.05
+        },
+        {
+          "fr": "Petite truite de rivière fumée et pommes de terre",
+          "en": "Small smoked river trout and potatoes",
+          "price": 0.1
+        },
+        {
+          "fr": "Potée de lentilles grises sans viande",
+          "en": "Meatless gray lentil stew",
+          "price": 0.05
+        },
+        {
+          "fr": "Saucisse sèche très épicée (pour masquer le goût)",
+          "en": "Very spicy dry sausage (to hide the taste)",
+          "price": 0.1
+        },
+        {
+          "fr": "Pâté de foie de porc sur une épaisse tranche de pain noir",
+          "en": "Pork liver pâté on a thick slice of black bread",
+          "price": 0.1
+        },
+        {
+          "fr": "Champignons des bois sautés à la graisse de mouton",
+          "en": "Wild mushrooms sautéed in mutton fat",
+          "price": 0.1
+        },
+        {
+          "fr": "Tripes mijotées pendant des heures à la bière aigre",
+          "en": "Tripe stewed for hours in sour ale",
+          "price": 0.1
+        },
+        {
+          "fr": "Pigeon farci rôti à la broche et purée de pois",
+          "en": "Spit-roasted stuffed pigeon and mushy peas",
+          "price": 0.1
+        },
+        {
+          "fr": "Soupe à l'oignon brunie et morceaux de pain rassis",
+          "en": "Browned onion soup and chunks of stale bread",
+          "price": 0.1
+        },
+        {
+          "fr": "Grosse pomme de terre cuite sous la cendre, gros sel",
+          "en": "Large ash-baked potato, coarse salt",
+          "price": 0.05
+        },
+        {
+          "fr": "Bouillie de maïs épaisse et couennes de porc grillées",
+          "en": "Thick corn mush and grilled pork rinds",
+          "price": 0.05
+        },
+        {
+          "fr": "Friture de petits poissons de rivière au saindoux",
+          "en": "Fried small river fish in lard",
+          "price": 0.1
+        },
+        {
+          "fr": "Quartier de tourte à la viande (origine incertaine)",
+          "en": "Slice of meat pie (uncertain origin)",
+          "price": 0.1
+        },
+        {
+          "fr": "Salade de racines sauvages amères et deux œufs durs",
+          "en": "Bitter wild root salad and two hard-boiled eggs",
+          "price": 0.1
+        },
+        {
+          "fr": "Oreilles de cochon grillées à la braise",
+          "en": "Ears of a pig grilled over embers",
+          "price": 0.05
+        },
+        {
+          "fr": "Soupe de poireaux et pain lourd frotté à l'ail",
+          "en": "Leek soup and heavy bread rubbed with garlic",
+          "price": 0.1
+        },
+        {
+          "fr": "Bouts de gras salés étalés sur une galette d'orge",
+          "en": "Salted fat scraps spread on a barley cake",
+          "price": 0.05
+        },
+        {
+          "fr": "Escargots gros comme le poing, sauce très aillée",
+          "en": "Fist-sized snails, very garlicky sauce",
+          "price": 0.1
+        },
+        {
+          "fr": "Porridge chaud aux quartiers de pommes séchées",
+          "en": "Hot porridge with dried apple wedges",
+          "price": 0.05
+        },
+        {
+          "fr": "Ragoût de pattes de poulet et de carottes molles",
+          "en": "Chicken foot and soft carrot stew",
+          "price": 0.05
+        },
+        {
+          "fr": "Morceau de viande séchée à mâcher pendant des heures",
+          "en": "Piece of jerky to chew for hours",
+          "price": 0.1
+        },
+        {
+          "fr": "Beignets de légumes racines frits dans la vieille graisse",
+          "en": "Root vegetable fritters fried in old fat",
+          "price": 0.05
+        },
+        {
+          "fr": "Omelette baveuse faite avec de gros œufs d'oiseaux sauvages",
+          "en": "Runny omelet made from large wild bird eggs",
+          "price": 0.1
+        },
+        {
+          "fr": "Le pot-au-feu du pauvre (les restes de la veille recuits)",
+          "en": "The poor man's stew (yesterday's leftovers recooked)",
+          "price": 0.05
+        },
+        {
+          "fr": "Boudin noir rustique et moutarde qui monte au nez",
+          "en": "Rustic black pudding and nose-tingling mustard",
+          "price": 0.1
+        }
+      ],
+      "drinks": [
+        {
+          "fr": "Fonds de fûts mélangés (Rincure de taverne)",
+          "en": "Mixed barrel dregs (Tavern rinsings)",
+          "price": 0.01
+        },
+        {
+          "fr": "Bière rance, très coupée à l'eau de pluie",
+          "en": "Stale ale, heavily watered down with rainwater",
+          "price": 0.02
+        },
+        {
+          "fr": "Tord-boyaux local distillé à l'aveugle",
+          "en": "Local gut-rot distilled blind",
+          "price": 0.04
+        },
+        {
+          "fr": "Cidre piqué au vinaigre qui fait plisser les yeux",
+          "en": "Vinegar-sour cider that makes you squint",
+          "price": 0.03
+        },
+        {
+          "fr": "Vin âpre et tachant, vendu au pichet",
+          "en": "Harsh, staining wine, sold by the pitcher",
+          "price": 0.05
+        },
+        {
+          "fr": "Eau-de-vie de navet, forte odeur de terre",
+          "en": "Turnip brandy, strong smell of dirt",
+          "price": 0.03
+        },
+        {
+          "fr": "Bière naine frelatée (rallongée 5 fois)",
+          "en": "Adulterated dwarven ale (watered down 5 times)",
+          "price": 0.06
+        },
+        {
+          "fr": "Infusion d'herbes amères des marais (sans alcool)",
+          "en": "Bitter swamp herb infusion (non-alcoholic)",
+          "price": 0.01
+        },
+        {
+          "fr": "Alcool de pomme de terre trouble et brûlant",
+          "en": "Cloudy and burning potato spirit",
+          "price": 0.04
+        },
+        {
+          "fr": "'Feu de Brousse', liqueur qui arrache la gorge",
+          "en": "'Brushfire', a liquor that tears the throat",
+          "price": 0.05
+        },
+        {
+          "fr": "Lait de chèvre tourné et légèrement fermenté",
+          "en": "Spoiled and slightly fermented goat milk",
+          "price": 0.02
+        },
+        {
+          "fr": "Hydromel lourd rempli d'insectes et de résidus",
+          "en": "Heavy mead full of insects and residue",
+          "price": 0.05
+        },
+        {
+          "fr": "Bière noire très épaisse (sert aussi de repas)",
+          "en": "Very thick black ale (also serves as a meal)",
+          "price": 0.04
+        },
+        {
+          "fr": "Jus de betterave fermenté et mousseux",
+          "en": "Fermented and frothy beetroot juice",
+          "price": 0.02
+        },
+        {
+          "fr": "Vin coupé à la sève de bouleau tiède",
+          "en": "Wine cut with lukewarm birch sap",
+          "price": 0.04
+        },
+        {
+          "fr": "Grog du pauvre (eau chaude, poivre et reste d'alcool)",
+          "en": "Poor man's grog (hot water, pepper, and leftover alcohol)",
+          "price": 0.02
+        },
+        {
+          "fr": "Bière aux champignons des grottes (goût de moisi)",
+          "en": "Cave mushroom beer (musty taste)",
+          "price": 0.04
+        },
+        {
+          "fr": "Liqueur d'écorce de pin, très astringente",
+          "en": "Pine bark liquor, very astringent",
+          "price": 0.03
+        },
+        {
+          "fr": "'Larme de Gobelin', contrebande d'origine inconnue",
+          "en": "'Goblin's Tear', moonshine of unknown origin",
+          "price": 0.06
+        },
+        {
+          "fr": "Eau de rivière bouillie avec des feuilles de menthe sauvage",
+          "en": "Boiled river water with wild mint leaves",
+          "price": 0.01
+        },
+        {
+          "fr": "Bière rousse éventée, servie tiède",
+          "en": "Flat red ale, served lukewarm",
+          "price": 0.03
+        },
+        {
+          "fr": "Cidre mousseux avec des morceaux d'écorce flottants",
+          "en": "Frothy cider with floating pieces of bark",
+          "price": 0.04
+        },
+        {
+          "fr": "Boisson noire et amère, laisse un dépôt sur les dents",
+          "en": "Black, bitter drink, leaves a film on the teeth",
+          "price": 0.05
+        },
+        {
+          "fr": "Vin rouge aigre aromatisé à la cannelle bon marché",
+          "en": "Sour red wine flavored with cheap cinnamon",
+          "price": 0.06
+        },
+        {
+          "fr": "Bière de maïs granuleuse",
+          "en": "Gritty corn beer",
+          "price": 0.02
+        },
+        {
+          "fr": "Liqueur de racines sucrée (masque mal un goût rance)",
+          "en": "Sweet root liquor (poorly masks a rancid taste)",
+          "price": 0.04
+        },
+        {
+          "fr": "Chouchen (hydromel breton) rudimentaire, pique le nez",
+          "en": "Rudimentary mead, stings the nose",
+          "price": 0.05
+        },
+        {
+          "fr": "Piquette locale vendue dans des crânes de bois",
+          "en": "Local cheap wine sold in wooden skulls",
+          "price": 0.03
+        },
+        {
+          "fr": "Bouillon de seigle alcoolisé",
+          "en": "Alcoholic rye broth",
+          "price": 0.02
+        },
+        {
+          "fr": "Absinthe frelatée (risque de rendre aveugle quelques heures)",
+          "en": "Adulterated absinthe (risk of temporary blindness)",
+          "price": 0.06
+        }
+      ],
+      "services": [
+        {
+          "desc": {
+            "fr": "Une place sur la paille près de l'âtre",
+            "en": "A spot on the straw near the hearth"
+          },
+          "price": 3,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Un barde talentueux anime les soirées dans l'auberge avec sa musique et ses histoires captivantes, offrant une atmosphère animée et divertissante pour les clients.",
+            "en": "A talented bard enlivens the evenings in the inn with his music and captivating stories, providing a lively and entertaining atmosphere for the guests."
+          },
+          "price": 0,
+          "trigger_staff": {
+            "fr": "Barde",
+            "en": "Bard"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Jeu de bonneteau truqué dans le fond de la salle",
+            "en": "Rigged shell game in the back of the room"
+          },
+          "price": 5,
+          "trigger_staff": {
+            "fr": "Charlatan",
+            "en": "Con artist"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Recel discret de petits objets volés",
+            "en": "Discreet fencing of small stolen goods"
+          },
+          "price": 0,
+          "trigger_staff": {
+            "fr": "Receleur",
+            "en": "Fence"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Bain d'eau tiède (l'eau a déjà servi à d'autres)",
+            "en": "Warm bath (water has already been used by others)"
+          },
+          "price": 2,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Combat à poings nus dans la boue de l'arrière-cour",
+            "en": "Bare-knuckle fighting in the muddy backyard"
+          },
+          "price": 5,
+          "trigger_staff": {
+            "fr": "Organisateur de combats",
+            "en": "Fight promoter"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Informations et rumeurs du marché noir",
+            "en": "Black market information and rumors"
+          },
+          "price": 5,
+          "trigger_staff": {
+            "fr": "Mendiant aux grandes oreilles",
+            "en": "Big-eared beggar"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Un service de navette est disponible pour transporter les clients vers des destinations locales telles que des sites historiques, des villages voisins ou des sentiers de randonnée.",
+            "en": "A shuttle service is available to transport customers to local destinations such as historical sites, neighboring villages, or hiking trails."
+          },
+          "price": 1,
+          "trigger_staff": {
+            "fr": "Service de navette",
+            "en": "Shuttle service"
+          }
+        }
+      ],
+      "room_events": [
+        {
+          "fr": "Des grattements étranges et des chuchotements en draconique proviennent de la chambre voisine.",
+          "en": "Strange scratching and Draconic whispering come from the next room."
+        },
+        {
+          "fr": "Vous trouvez une petite bourse tachée de sang cachée sous le matelas de paille piquée.",
+          "en": "You find a small blood-stained purse hidden under the prickly straw mattress."
+        },
+        {
+          "fr": "Pendant la nuit, des puces de lit géantes mutantes tentent de vous piquer.",
+          "en": "During the night, mutant giant bedbugs try to bite you."
+        },
+        {
+          "fr": "Le plancher pourri cède sous votre poids, et votre jambe passe à travers le plafond de la salle commune.",
+          "en": "The rotten floor gives way under your weight, and your leg goes through the common room ceiling."
+        },
+        {
+          "fr": "Quelqu'un essaie discrètement de crocheter la serrure de votre porte avec un poignard rouillé.",
+          "en": "Someone discreetly tries to pick your door lock with a rusty dagger."
+        },
+        {
+          "fr": "Il pleut à verse dehors, et l'eau coule directement sur votre lit à travers un trou dans le toit.",
+          "en": "It's pouring outside, and water leaks directly onto your bed through a hole in the roof."
+        },
+        {
+          "fr": "Une cachette secrète sous une latte de parquet révèle une fiole de poison à moitié vide.",
+          "en": "A secret stash under a floorboard reveals a half-empty vial of poison."
+        },
+        {
+          "fr": "Une odeur de cadavre se dégage de l'armoire... qui contient les restes d'un gobelin oublié.",
+          "en": "A corpse smell emanates from the wardrobe... which contains the forgotten remains of a goblin."
+        },
+        {
+          "fr": "La chambre du dessous est le théâtre d'un rituel de magie noire très bruyant.",
+          "en": "The room below is the scene of a very noisy black magic ritual."
+        },
+        {
+          "fr": "Un rat chapardeur énorme sort d'un trou dans la plinthe et tente de s'enfuir avec l'un de vos petits objets.",
+          "en": "A huge thieving rat comes out of a hole in the baseboard and tries to run off with one of your small items."
+        }
+      ]
+    },
+    "moyenne": {
+      "quirks": [
+        {
+          "fr": "Un grand feu crépite dans l'âtre, réchauffant la salle aux lourdes tables de chêne bien cirées.",
+          "en": "A large fire crackles in the hearth, warming the room with its well-waxed heavy oak tables."
+        },
+        {
+          "fr": "Le sol est recouvert de sciure propre, balayée plusieurs fois par jour pour absorber l'humidité.",
+          "en": "The floor is covered with clean sawdust, swept several times a day to absorb moisture."
+        },
+        {
+          "fr": "Une belle collection d'armes anciennes et polies est accrochée au-dessus du comptoir.",
+          "en": "A beautiful collection of antique, polished weapons hangs above the bar."
+        },
+        {
+          "fr": "Un grand tableau noir affiche le menu du jour à la craie et quelques offres d'emploi locales.",
+          "en": "A large blackboard displays the daily menu in chalk and a few local job offers."
+        },
+        {
+          "fr": "Une odeur réconfortante de pain chaud et de viande rôtie flotte en permanence dans l'air.",
+          "en": "A comforting smell of warm bread and roasted meat constantly wafts through the air."
+        },
+        {
+          "fr": "De robustes box en bois offrent des alcôves semi-privées pour les réunions discrètes.",
+          "en": "Sturdy wooden booths offer semi-private alcoves for discreet meetings."
+        },
+        {
+          "fr": "Le chat de la taverne dort paresseusement sur la table la plus proche de la cheminée.",
+          "en": "The tavern cat sleeps lazily on the table closest to the fireplace."
+        },
+        {
+          "fr": "Les chopes sont en étain lourd, toujours bien astiquées et impeccables.",
+          "en": "The mugs are heavy pewter, always well-polished and spotless."
+        },
+        {
+          "fr": "Un trophée de chasse imposant (comme une tête d'ours) trône fièrement sur le mur principal.",
+          "en": "An imposing hunting trophy (like a bear's head) sits proudly on the main wall."
+        },
+        {
+          "fr": "Des lampes à huile en laiton diffusent une lumière chaude, claire et sans fumée noire.",
+          "en": "Brass oil lamps cast a warm, clear light without black smoke."
+        }
+      ],
+      "clientele": [
+        {
+          "fr": "Une foule bruyante et joyeuse de marchands, d'artisans, d'aventuriers et de gardes en repos.",
+          "en": "A loud and cheerful crowd of merchants, craftsmen, adventurers, and off-duty guards."
+        },
+        {
+          "fr": "Des gardes de caravanes jouant aux cartes et riant bruyamment après un long voyage.",
+          "en": "Caravan guards playing cards and laughing loudly after a long journey."
+        },
+        {
+          "fr": "Des commerçants locaux venus boire une pinte bien méritée après la fermeture de leurs échoppes.",
+          "en": "Local shopkeepers having a well-deserved pint after closing their stalls."
+        },
+        {
+          "fr": "Un groupe d'aventuriers débutants montrant une carte étalée et débattant de leur itinéraire.",
+          "en": "A group of novice adventurers pointing at an unrolled map and debating their route."
+        },
+        {
+          "fr": "Des marchands nains négociant le prix du minerai autour de grandes assiettes de viande.",
+          "en": "Dwarven merchants negotiating ore prices over large plates of meat."
+        },
+        {
+          "fr": "Une famille de voyageurs fatiguée mais soulagée d'avoir atteint une ville sûre.",
+          "en": "A traveling family, tired but relieved to have reached a safe town."
+        },
+        {
+          "fr": "Des négociants halfelins partageant des histoires et un immense plateau de fromages.",
+          "en": "Halfling traders sharing stories and a massive platter of cheese."
+        },
+        {
+          "fr": "Des miliciens de la ville en pause, l'armure légèrement desserrée, discutant du quartier.",
+          "en": "City militiamen on break, armor slightly loosened, discussing the neighborhood."
+        },
+        {
+          "fr": "Quelques érudits ou scribes lisant près du feu avec un verre de vin épicé.",
+          "en": "A few scholars or scribes reading by the fire with a glass of spiced wine."
+        },
+        {
+          "fr": "Des fermiers venus au marché en ville, s'offrant un bon repas avant de rentrer.",
+          "en": "Farmers who came to the city market, treating themselves to a good meal before heading back."
+        }
+      ],
+      "staff_roles": {
+        "owner_traits": [
+          {
+            "fr": "chaleureux et bavard, il offre souvent la première tournée aux nouveaux.",
+            "en": "warm and chatty, often offers the first round to newcomers."
+          },
+          {
+            "fr": "un ancien aventurier qui boite, adorant entendre les nouvelles de la route.",
+            "en": "a limping retired adventurer who loves hearing news from the road."
+          },
+          {
+            "fr": "un nain strict mais juste, qui se souvient de la boisson préférée de chacun.",
+            "en": "a strict but fair dwarf who remembers everyone's favorite drink."
+          },
+          {
+            "fr": "une halfeline maternelle qui insiste pour que tout le monde mange à sa faim.",
+            "en": "a motherly halfling who insists everyone eats until they are full."
+          },
+          {
+            "fr": "nettoie méticuleusement les verres tout en observant la salle avec un œil vif.",
+            "en": "meticulously cleans glasses while observing the room with a sharp eye."
+          },
+          {
+            "fr": "a toujours une blague joviale ou une devinette pour les voyageurs.",
+            "en": "always has a jovial joke or a riddle for travelers."
+          },
+          {
+            "fr": "arbore fièrement l'insigne officiel de la guilde locale des aubergistes.",
+            "en": "proudly wears the official badge of the local innkeepers' guild."
+          },
+          {
+            "fr": "calme et imposant, il sépare les disputes d'un simple raclement de gorge.",
+            "en": "calm and imposing, breaking up arguments with just a loud throat-clear."
+          },
+          {
+            "fr": "un ancien quartier-maître qui tient les comptes et l'inventaire à la perfection.",
+            "en": "a former quartermaster who keeps the accounts and inventory perfectly."
+          },
+          {
+            "fr": "se plaint constamment des taxes, mais donne secrètement les restes aux orphelins.",
+            "en": "constantly complains about taxes, but secretly gives leftovers to orphans."
+          }
+        ],
+        "others": [
+          {
+            "role": {
+              "fr": "Serveur",
+              "en": "Waiter"
+            },
+            "trait": {
+              "fr": "qui court de table en table avec une agilité et un équilibre impressionnants.",
+              "en": "running from table to table with impressive agility and balance."
+            }
+          },
+          {
+            "role": {
+              "fr": "Cuisinier",
+              "en": "Cook"
+            },
+            "trait": {
+              "fr": "qui hurle des insultes créatives (mais affectueuses) depuis les cuisines.",
+              "en": "yelling creative (but affectionate) insults from the kitchens."
+            }
+          },
+          {
+            "role": {
+              "fr": "Serveuse",
+              "en": "Waitress"
+            },
+            "trait": {
+              "fr": "dotée d'une mémoire prodigieuse, elle prend dix commandes sans rien noter.",
+              "en": "gifted with prodigious memory, she takes ten orders without writing anything down."
+            }
+          },
+          {
+            "role": {
+              "fr": "Barde",
+              "en": "Bard"
+            },
+            "trait": {
+              "fr": "un musicien talentueux qui accepte les requêtes musicales pour quelques cuivres.",
+              "en": "a talented musician taking song requests for a few coppers."
+            }
+          },
+          {
+            "role": {
+              "fr": "Fille d'écurie",
+              "en": "Stablehand"
+            },
+            "trait": {
+              "fr": "une adolescente robuste et silencieuse qui prend un soin méticuleux des montures.",
+              "en": "a strong, quiet teenager who takes meticulous care of the mounts."
+            }
+          },
+          {
+            "role": {
+              "fr": "Videur",
+              "en": "Bouncer"
+            },
+            "trait": {
+              "fr": "un demi-orque très poli en costume qui préfère la diplomatie à la violence.",
+              "en": "a very polite half-orc in a suit who prefers diplomacy over violence."
+            }
+          },
+          {
+            "role": {
+              "fr": "Plongeur",
+              "en": "Dishwasher"
+            },
+            "trait": {
+              "fr": "un jeune garçon qui chante joyeusement en lavant une montagne d'assiettes.",
+              "en": "a young boy happily singing while washing a mountain of plates."
+            }
+          },
+          {
+            "role": {
+              "fr": "Garde-manger",
+              "en": "Pantry Keeper"
+            },
+            "trait": {
+              "fr": "une dame âgée qui protège les clés de la cave avec la férocité d'un dragon.",
+              "en": "an elderly woman fiercely protecting the cellar keys like a dragon."
+            }
+          },
+          {
+            "role": {
+              "fr": "Chien de taverne",
+              "en": "Tavern Dog"
+            },
+            "trait": {
+              "fr": "un gros chien affectueux qui rapporte les objets tombés aux clients.",
+              "en": "a large, affectionate dog that brings dropped items back to patrons."
+            }
+          },
+          {
+            "role": {
+              "fr": "Aide-cuisinier",
+              "en": "Kitchen Hand"
+            },
+            "trait": {
+              "fr": "porte des sacs de farine massifs sur ses épaules avec un grand sourire.",
+              "en": "carries massive sacks of flour on their shoulders with a big smile."
+            }
+          }
+        ]
+      },
+      "menus": [
+        {
+          "fr": "Tourte campagnarde au poulet et légumes de saison",
+          "en": "Country chicken pie with seasonal vegetables",
+          "price": 0.4
+        },
+        {
+          "fr": "Cuissot de porc rôti à la broche et pommes de terre au jus",
+          "en": "Spit-roasted pork haunch and potatoes in gravy",
+          "price": 0.5
+        },
+        {
+          "fr": "Ragoût de bœuf mijoté à la bière brune, pain épais",
+          "en": "Beef stew simmered in dark ale, thick bread",
+          "price": 0.4
+        },
+        {
+          "fr": "Demi-canard laqué au miel et navets fondants",
+          "en": "Roasted half-duck with honey and melting turnips",
+          "price": 0.6
+        },
+        {
+          "fr": "Grand bol de soupe à l'oignon gratinée au fromage",
+          "en": "Large bowl of French onion soup with melted cheese crust",
+          "price": 0.3
+        },
+        {
+          "fr": "Assiette de saucisses fumées, moutarde forte et cornichons",
+          "en": "Smoked sausage platter, sharp mustard, and pickles",
+          "price": 0.4
+        },
+        {
+          "fr": "Truite de rivière fraîche, cuite au four aux amandes",
+          "en": "Freshly caught river trout, baked with almonds",
+          "price": 0.5
+        },
+        {
+          "fr": "Côtelettes de mouton grillées à l'ail et au romarin",
+          "en": "Grilled mutton chops with garlic and rosemary",
+          "price": 0.6
+        },
+        {
+          "fr": "Quiche aux légumes du soleil et pâte au beurre",
+          "en": "Vegetable quiche with a buttery crust",
+          "price": 0.3
+        },
+        {
+          "fr": "Civet de sanglier sauvage aux champignons et marrons",
+          "en": "Wild boar stew with mushrooms and chestnuts",
+          "price": 0.7
+        },
+        {
+          "fr": "Œufs au plat, lard grillé et quartiers de pommes de terre épicées",
+          "en": "Fried eggs, grilled bacon, and spiced potato wedges",
+          "price": 0.4
+        },
+        {
+          "fr": "Épaisse tranche de jambon braisé au glaçage de pomme douce",
+          "en": "Thick slice of braised ham with sweet apple glaze",
+          "price": 0.5
+        },
+        {
+          "fr": "Légumes racines rôtis au four et généreux fromage de chèvre",
+          "en": "Oven-roasted root vegetables and generous goat cheese",
+          "price": 0.3
+        },
+        {
+          "fr": "Boulettes de viande sauce poivrée sur lit de nouilles aux œufs",
+          "en": "Meatballs in pepper sauce on a bed of egg noodles",
+          "price": 0.4
+        },
+        {
+          "fr": "Poulet rôti entier à partager, assaisonné au thym frais",
+          "en": "Whole roasted chicken to share, seasoned with fresh thyme",
+          "price": 0.8
+        },
+        {
+          "fr": "Tourte savoureuse au lapin et salade de jeunes pousses",
+          "en": "Savory rabbit pie and young greens salad",
+          "price": 0.5
+        },
+        {
+          "fr": "Travers de bœuf braisés (la viande se détache de l'os)",
+          "en": "Braised beef ribs (the meat falls off the bone)",
+          "price": 0.7
+        },
+        {
+          "fr": "Choux farcis servis avec une sauce crémeuse à l'aneth",
+          "en": "Stuffed cabbage rolls served with a creamy dill sauce",
+          "price": 0.4
+        },
+        {
+          "fr": "Saumon fumé sur pain de seigle grillé et fromage frais",
+          "en": "Smoked salmon on toasted rye bread and cream cheese",
+          "price": 0.6
+        },
+        {
+          "fr": "Bol roboratif de chili de chevreuil et pain de maïs",
+          "en": "Hearty bowl of venison chili and cornbread",
+          "price": 0.5
+        },
+        {
+          "fr": "Pigeonneau rôti accompagné de petits pois au beurre",
+          "en": "Roasted squab accompanied by buttered peas",
+          "price": 0.6
+        },
+        {
+          "fr": "Épaisse tranche de pain de viande et sauce aux champignons",
+          "en": "Thick slice of meatloaf and mushroom gravy",
+          "price": 0.4
+        },
+        {
+          "fr": "Saucisses poêlées accompagnées de chou rouge braisé",
+          "en": "Pan-seared sausages accompanied by braised red cabbage",
+          "price": 0.4
+        },
+        {
+          "fr": "Velouté de pommes de terre et poireaux servi dans une miche",
+          "en": "Creamy potato and leek soup served in a bread bowl",
+          "price": 0.3
+        },
+        {
+          "fr": "Tranche de gigot d'agneau rôti et gelée de menthe",
+          "en": "Slice of roast lamb leg and mint jelly",
+          "price": 0.7
+        },
+        {
+          "fr": "Plateau de fromages locaux, charcuteries et fruits frais",
+          "en": "Platter of local cheeses, cured meats, and fresh fruits",
+          "price": 0.6
+        },
+        {
+          "fr": "Filet de cabillaud au four, beurre à l'ail et fines herbes",
+          "en": "Baked cod fillet, garlic butter, and fine herbs",
+          "price": 0.5
+        },
+        {
+          "fr": "Ailes de poulet frites avec sauce douce au miel épicé",
+          "en": "Fried chicken wings with a sweet and spicy honey sauce",
+          "price": 0.4
+        },
+        {
+          "fr": "Ragoût de légumes onctueux à l'orge et biscuits chauds",
+          "en": "Smooth vegetable stew with barley and warm biscuits",
+          "price": 0.3
+        },
+        {
+          "fr": "Brochettes de bœuf mariné et poivrons, cuites à la flamme",
+          "en": "Marinated beef and pepper skewers, flame-grilled",
+          "price": 0.5
+        }
+      ],
+      "drinks": [
+        {
+          "fr": "Bonne bière ambrée de la brasserie locale",
+          "en": "Good amber ale from the local brewery",
+          "price": 0.04
+        },
+        {
+          "fr": "Vin rouge de table, honnête et charpenté",
+          "en": "Honest and robust red table wine",
+          "price": 0.1
+        },
+        {
+          "fr": "Cidre de pomme vif, rafraîchissant et légèrement sucré",
+          "en": "Crisp apple cider, refreshing and slightly sweet",
+          "price": 0.05
+        },
+        {
+          "fr": "Bière noire amère avec une belle mousse crémeuse",
+          "en": "Dark bitter stout with a beautiful creamy head",
+          "price": 0.06
+        },
+        {
+          "fr": "Vin chaud aux épices, servi fumant dans une tasse de grès",
+          "en": "Spiced mulled wine, served steaming in a stoneware mug",
+          "price": 0.1
+        },
+        {
+          "fr": "Hydromel doux fait avec le miel des fleurs sauvages locales",
+          "en": "Sweet mead made with local wildflower honey",
+          "price": 0.15
+        },
+        {
+          "fr": "Bière naine d'importation, de bonne qualité et abordable",
+          "en": "Imported dwarven ale, good quality and affordable",
+          "price": 0.12
+        },
+        {
+          "fr": "Bière blonde légère, parfaite pour se désaltérer après la route",
+          "en": "Light pale ale, perfect for quenching thirst after the road",
+          "price": 0.05
+        },
+        {
+          "fr": "Liqueur de cerise rubis, douce mais dangereusement forte",
+          "en": "Ruby cherry liqueur, sweet but dangerously strong",
+          "price": 0.2
+        },
+        {
+          "fr": "Eau-de-vie de poire, servie dans un petit verre élégant",
+          "en": "Pear brandy, served in a small elegant glass",
+          "price": 0.25
+        },
+        {
+          "fr": "Eau de source elfique avec un soupçon de menthe fraîche",
+          "en": "Elven spring water with a hint of fresh mint",
+          "price": 0.02
+        },
+        {
+          "fr": "Thé noir corsé servi avec une généreuse cuillère de miel",
+          "en": "Strong black tea served with a generous spoonful of honey",
+          "price": 0.03
+        },
+        {
+          "fr": "Jus de pomme chaud à la cannelle et aux clous de girofle",
+          "en": "Hot apple juice with cinnamon and cloves",
+          "price": 0.06
+        },
+        {
+          "fr": "Whisky tourbé distillé dans la région, au goût fumé",
+          "en": "Peat-smoked whiskey distilled locally, with a smoky taste",
+          "price": 0.2
+        },
+        {
+          "fr": "Vin blanc sec et vif, en provenance des vallées du sud",
+          "en": "Dry and crisp white wine, from the southern valleys",
+          "price": 0.12
+        },
+        {
+          "fr": "Vin aigrelet aux fruits rouges, étonnamment rafraîchissant",
+          "en": "Tart red berry wine, surprisingly refreshing",
+          "price": 0.1
+        },
+        {
+          "fr": "Bière amère, la boisson favorite de la garde locale",
+          "en": "Bitter ale, the favorite drink of the local guard",
+          "price": 0.05
+        },
+        {
+          "fr": "Schnaps à la prune qui réchauffe instantanément le ventre",
+          "en": "Plum schnapps that instantly warms the belly",
+          "price": 0.15
+        },
+        {
+          "fr": "Lait ribot (babeurre), frais et conservé à la cave",
+          "en": "Buttermilk, fresh and kept in the cellar",
+          "price": 0.03
+        },
+        {
+          "fr": "Infusion d'orge torréfiée (boisson chaude sans alcool)",
+          "en": "Roasted barley infusion (hot non-alcoholic drink)",
+          "price": 0.02
+        },
+        {
+          "fr": "Un pichet du vin rouge de la maison (bon marché mais buvable)",
+          "en": "A pitcher of the house red wine (cheap but drinkable)",
+          "price": 0.2
+        },
+        {
+          "fr": "Un pichet de bière blonde de la maison pour partager",
+          "en": "A pitcher of the house blonde ale to share",
+          "price": 0.15
+        },
+        {
+          "fr": "Eau gazeuse aromatisée à la fleur de sureau",
+          "en": "Sparkling water flavored with elderflower",
+          "price": 0.04
+        },
+        {
+          "fr": "Rhum épicé 'Souffle de Dragon' (chauffe la gorge)",
+          "en": "'Dragon's Breath' spiced rum (warms the throat)",
+          "price": 0.25
+        },
+        {
+          "fr": "Vin doux aux mûres sauvages de la forêt voisine",
+          "en": "Sweet wine made from wild blackberries of the nearby forest",
+          "price": 0.15
+        },
+        {
+          "fr": "Hydromel doré avec une pointe de gingembre piquant",
+          "en": "Golden mead with a touch of spicy ginger",
+          "price": 0.18
+        },
+        {
+          "fr": "Café noir corsé importé des terres lointaines",
+          "en": "Strong black coffee imported from distant lands",
+          "price": 0.08
+        },
+        {
+          "fr": "Lait chaud sucré aux épices (réconfortant en hiver)",
+          "en": "Sweet hot milk with spices (comforting in winter)",
+          "price": 0.1
+        },
+        {
+          "fr": "Tisane apaisante à la camomille et à la menthe",
+          "en": "Soothing chamomile and mint herbal tea",
+          "price": 0.03
+        },
+        {
+          "fr": "Vieille bière vieillie en fût de chêne (pour fêter un contrat)",
+          "en": "Old oak-aged ale (to celebrate a contract)",
+          "price": 0.3
+        }
+      ],
+      "services": [
+        {
+          "desc": {
+            "fr": "Chambre privée confortable avec un bon verrou",
+            "en": "Comfortable private room with a good lock"
+          },
+          "price": 0.5,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Bain d'eau chaude propre, servi avec du savon parfumé",
+            "en": "Clean hot water bath, served with scented soap"
+          },
+          "price": 0.1,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Place à l'écurie avec avoine de qualité pour une monture",
+            "en": "Stabling with quality oats for one mount"
+          },
+          "price": 0.2,
+          "trigger_staff": {
+            "fr": "Fille d'écurie",
+            "en": "Stablehand"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Service de blanchisserie (vêtements lavés et séchés pour le matin)",
+            "en": "Laundry service (clothes washed and dried by morning)"
+          },
+          "price": 0.1,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Coffre sécurisé derrière le comptoir pour la nuit",
+            "en": "Secure lockbox behind the counter for the night"
+          },
+          "price": 0.2,
+          "trigger_staff": {
+            "fr": "Tavernier",
+            "en": "Barkeep"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Grande chambre avec quatre lits pour tout le groupe",
+            "en": "Large room with four beds for the whole group"
+          },
+          "price": 1.5,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Panier-repas pour la route (pain, fromage, pomme, viande fumée)",
+            "en": "Packed lunch for the road (bread, cheese, apple, smoked meat)"
+          },
+          "price": 0.3,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Nettoyage et graissage des armes/armures par un aide",
+            "en": "Weapon and armor cleaning/oiling by a helper"
+          },
+          "price": 0.1,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Réservation de l'alcôve privée pour une réunion discrète",
+            "en": "Reservation of the private alcove for a discreet meeting"
+          },
+          "price": 0.3,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Gamin de course pour porter un message en ville",
+            "en": "Errand boy to carry a message into town"
+          },
+          "price": 0.05,
+          "trigger_staff": null
+        }
+      ],
+      "room_events": [
+        {
+          "fr": "Un client s'est trompé de porte en pleine nuit et s'excuse platement avant de fuir.",
+          "en": "A patron mistook your door in the middle of the night and apologizes profusely before fleeing."
+        },
+        {
+          "fr": "La literie sent étonnamment bon la lavande, offrant une nuit parfaite et très réparatrice.",
+          "en": "The bedding smells surprisingly good of lavender, offering a perfect and very restful night."
+        },
+        {
+          "fr": "Vous entendez le chant étouffé et joyeux d'un barde venant de la salle commune jusqu'à minuit.",
+          "en": "You hear the cheerful, muffled singing of a bard from the common room downstairs until midnight."
+        },
+        {
+          "fr": "Le gentil chat de la taverne se glisse dans votre chambre et se roule en boule au pied du lit.",
+          "en": "The friendly tavern cat slips into your room and curls up at the foot of your bed."
+        },
+        {
+          "fr": "Vous trouvez une vieille bague en cuivre sans valeur oubliée dans le tiroir de la table de chevet.",
+          "en": "You find a worthless old copper ring forgotten in the bedside table drawer."
+        },
+        {
+          "fr": "Le matelas est rembourré de plumes et non de paille, un luxe qui efface toute votre fatigue.",
+          "en": "The mattress is stuffed with feathers, not straw, a luxury that erases all your fatigue."
+        },
+        {
+          "fr": "Une pluie douce tapote contre la fenêtre parfaitement propre, berçant votre sommeil.",
+          "en": "A gentle rain taps against the perfectly clean window, lulling you to sleep."
+        },
+        {
+          "fr": "Vous entendez la garde patrouiller calmement dans la rue, ce qui vous donne un grand sentiment de sécurité.",
+          "en": "You hear the guard calmly patrolling the street outside, giving you a great sense of security."
+        },
+        {
+          "fr": "L'odeur délicieuse du pain en train de cuire vous réveille tout en douceur à l'aube.",
+          "en": "The delicious smell of baking bread wakes you up gently at dawn."
+        },
+        {
+          "fr": "La femme de chambre a laissé un petit bonbon au miel sur votre oreiller en signe de bienvenue.",
+          "en": "The maid left a small honey candy on your pillow as a welcome sign."
+        }
+      ]
+    },
+    "elevee": {
+      "quirks": [
+        {
+          "fr": "Des lustres en cristal illuminent la salle, et le sol est recouvert d'épais tapis importés.",
+          "en": "Crystal chandeliers illuminate the room, and the floor is covered with thick imported rugs."
+        },
+        {
+          "fr": "L'éclairage est assuré par de douces lumières magiques flottantes qui changent de couleur selon l'ambiance.",
+          "en": "Lighting is provided by soft floating magical lights that change color according to the mood."
+        },
+        {
+          "fr": "Un quatuor à cordes joue une mélodie apaisante depuis un balcon en fer forgé.",
+          "en": "A string quartet plays a soothing melody from a wrought-iron balcony."
+        },
+        {
+          "fr": "Les tables en acajou sont espacées pour garantir la plus stricte intimité aux conversations.",
+          "en": "The mahogany tables are spaced out to ensure the strictest privacy for conversations."
+        },
+        {
+          "fr": "Une agréable odeur de bois de santal et d'encens rare flotte dans l'air, purifié par magie.",
+          "en": "A pleasant scent of sandalwood and rare incense floats in the air, purified by magic."
+        },
+        {
+          "fr": "La vaisselle est en fine porcelaine elfique et les couverts sont en argent massif.",
+          "en": "The tableware is fine elven porcelain and the cutlery is solid silver."
+        },
+        {
+          "fr": "Des sorts de silence mineurs isolent chaque table, empêchant d'écouter les voisins.",
+          "en": "Minor silence spells isolate each table, preventing eavesdropping on neighbors."
+        },
+        {
+          "fr": "Les fauteuils sont recouverts de velours cramoisi et rembourrés de duvet de cygne.",
+          "en": "The armchairs are covered in crimson velvet and stuffed with swan down."
+        },
+        {
+          "fr": "Des toiles de maîtres et des tapisseries inestimables dépeignant des victoires historiques ornent les murs.",
+          "en": "Masterpiece paintings and priceless tapestries depicting historical victories adorn the walls."
+        },
+        {
+          "fr": "Une immense cheminée en marbre blanc brûle du bois magique qui ne produit ni fumée ni cendre.",
+          "en": "A huge white marble fireplace burns magical wood that produces neither smoke nor ash."
+        }
+      ],
+      "clientele": [
+        {
+          "fr": "Des nobles vêtus de soie, de riches politiciens et des seigneurs marchands discutant à voix basse.",
+          "en": "Silk-clad nobles, wealthy politicians, and merchant lords discussing in hushed tones."
+        },
+        {
+          "fr": "Des ambassadeurs étrangers entourés d'une garde d'honneur discrète mais mortelle.",
+          "en": "Foreign ambassadors surrounded by a discreet but deadly honor guard."
+        },
+        {
+          "fr": "Des archimages de l'académie locale débattant de théories arcaniques autour d'un grand cru.",
+          "en": "Archmages from the local academy debating arcane theories over a vintage wine."
+        },
+        {
+          "fr": "Des dames de la haute société échangeant des ragots scandaleux derrière leurs éventails.",
+          "en": "High society ladies exchanging scandalous gossip behind their fans."
+        },
+        {
+          "fr": "Des aventuriers célèbres (et richissimes) racontant leurs exploits épiques à des courtisans admiratifs.",
+          "en": "Famous (and extremely wealthy) adventurers telling their epic exploits to admiring courtiers."
+        },
+        {
+          "fr": "Des maîtres de guildes puissantes en train de finaliser des monopoles commerciaux valant des fortunes.",
+          "en": "Powerful guild masters finalizing commercial monopolies worth fortunes."
+        },
+        {
+          "fr": "Un membre de la famille royale voyageant incognito (mais tout le monde fait semblant de ne pas le savoir).",
+          "en": "A member of the royal family traveling incognito (but everyone pretends not to know)."
+        },
+        {
+          "fr": "Des prêtres de haut rang dans des robes immaculées brodées de fil d'or.",
+          "en": "High-ranking priests in immaculate robes embroidered with gold thread."
+        },
+        {
+          "fr": "Des artistes de renommée mondiale cherchant un riche mécène pour leur prochaine œuvre.",
+          "en": "World-renowned artists seeking a wealthy patron for their next masterpiece."
+        },
+        {
+          "fr": "De mystérieux aristocrates elfes ou vampires qui ne touchent jamais à leur nourriture.",
+          "en": "Mysterious elven or vampire aristocrats who never touch their food."
+        }
+      ],
+      "staff_roles": {
+        "owner_traits": [
+          {
+            "fr": "un maître d'hôtel distingué qui juge votre tenue d'un regard condescendant.",
+            "en": "a distinguished maitre d' who judges your attire with a condescending glare."
+          },
+          {
+            "fr": "une ancienne aristocrate qui connaît les moindres secrets et scandales de tous ses clients.",
+            "en": "a former aristocrat who knows the deepest secrets and scandals of all her clients."
+          },
+          {
+            "fr": "un elfe à la prestance impériale qui dirige l'établissement depuis trois siècles.",
+            "en": "an elf of imperial presence who has run the establishment for three centuries."
+          },
+          {
+            "fr": "sourit avec politesse mais n'hésite pas à refuser l'entrée à quiconque porte des bottes boueuses.",
+            "en": "smiles politely but does not hesitate to refuse entry to anyone wearing muddy boots."
+          },
+          {
+            "fr": "se souvient parfaitement des titres de noblesse et de la lignée de chaque invité de marque.",
+            "en": "perfectly remembers the noble titles and lineage of every distinguished guest."
+          },
+          {
+            "fr": "jauge instantanément la valeur en pièces d'or des bijoux portés par les nouveaux arrivants.",
+            "en": "instantly gauges the gold piece value of the jewelry worn by newcomers."
+          },
+          {
+            "fr": "parle à voix basse et s'attend à être obéi instantanément par son personnel terrifié.",
+            "en": "speaks in a low voice and expects to be obeyed instantly by the terrified staff."
+          },
+          {
+            "fr": "décante personnellement les vins millésimés avec des gestes d'une grâce absolue.",
+            "en": "personally decants vintage wines with gestures of absolute grace."
+          },
+          {
+            "fr": "inspecte la vaisselle d'argent avec un monocle pour y traquer la moindre trace de doigt.",
+            "en": "inspects the silver tableware with a monocle to track down the slightest fingerprint."
+          },
+          {
+            "fr": "porte des vêtements de soie sur mesure valant plus cher que l'équipement d'un aventurier moyen.",
+            "en": "wears bespoke silk clothing worth more than an average adventurer's gear."
+          }
+        ],
+        "others": [
+          {
+            "role": {
+              "fr": "Sommelier",
+              "en": "Sommelier"
+            },
+            "trait": {
+              "fr": "qui vante les mérites d'un vin vieux de deux siècles avec un lyrisme poétique.",
+              "en": "praising the merits of a two-century-old wine with poetic lyricism."
+            }
+          },
+          {
+            "role": {
+              "fr": "Garde Privé",
+              "en": "Private Guard"
+            },
+            "trait": {
+              "fr": "en armure rutilante, veillant discrètement sur les nobles et armé d'une lame magique.",
+              "en": "in gleaming armor, discreetly watching over the nobles and armed with a magic blade."
+            }
+          },
+          {
+            "role": {
+              "fr": "Valet",
+              "en": "Valet"
+            },
+            "trait": {
+              "fr": "qui ouvre les portes et prend les manteaux avec une courbette parfaitement synchronisée.",
+              "en": "who opens doors and takes coats with a perfectly synchronized bow."
+            }
+          },
+          {
+            "role": {
+              "fr": "Concierge",
+              "en": "Concierge"
+            },
+            "trait": {
+              "fr": "capable d'organiser absolument n'importe quoi, de l'opéra aux duels illégaux, pour le bon prix.",
+              "en": "capable of arranging absolutely anything, from opera to illegal duels, for the right price."
+            }
+          },
+          {
+            "role": {
+              "fr": "Goûteur",
+              "en": "Taster"
+            },
+            "trait": {
+              "fr": "teste discrètement la nourriture des seigneurs paranoïaques pour détecter les poisons.",
+              "en": "discreetly tests the food of paranoid lords to detect poisons."
+            }
+          },
+          {
+            "role": {
+              "fr": "Chef Étoilé",
+              "en": "Master Chef"
+            },
+            "trait": {
+              "fr": "un génie culinaire arrogant qui refuse de modifier ses recettes pour les clients.",
+              "en": "an arrogant culinary genius who refuses to modify their recipes for clients."
+            }
+          },
+          {
+            "role": {
+              "fr": "Domestique magique",
+              "en": "Magical Cleaner"
+            },
+            "trait": {
+              "fr": "un apprenti mage qui utilise Prestidigitation pour nettoyer instantanément la moindre tache.",
+              "en": "an apprentice mage who uses Prestidigitation to instantly clean the slightest stain."
+            }
+          },
+          {
+            "role": {
+              "fr": "Harpiste",
+              "en": "Harpist"
+            },
+            "trait": {
+              "fr": "une virtuose aveugle dont la musique semble apaiser magiquement les tensions.",
+              "en": "a blind virtuoso whose music seems to magically soothe tensions."
+            }
+          },
+          {
+            "role": {
+              "fr": "Majordome d'étage",
+              "en": "Floor Butler"
+            },
+            "trait": {
+              "fr": "assigné personnellement aux suites luxueuses, invisible mais toujours là quand on a besoin de lui.",
+              "en": "personally assigned to luxurious suites, invisible but always there when needed."
+            }
+          },
+          {
+            "role": {
+              "fr": "Préposé aux bains",
+              "en": "Bath Attendant"
+            },
+            "trait": {
+              "fr": "prépare des bains aux huiles rares et offre des serviettes chauffées magiquement.",
+              "en": "prepares baths with rare oils and offers magically heated towels."
+            }
+          }
+        ]
+      },
+      "menus": [
+        {
+          "fr": "Pigeon farci aux dattes, sauce au miel et aux épices",
+          "en": "Roasted pigeon stuffed with dates, honey and spice sauce",
+          "price": 5.0
+        },
+        {
+          "fr": "Filet de bœuf de Keldar, purée truffée et légumes glacés",
+          "en": "Keldar beef tenderloin, truffled mash and glazed vegetables",
+          "price": 8.0
+        },
+        {
+          "fr": "Caviar d'Esturgeon d'Argent sur de fins toasts de cristal",
+          "en": "Caviar of the Silver Sturgeon on fine crystal toast",
+          "price": 10.0
+        },
+        {
+          "fr": "Poitrine de griffon rôtie et son glaçage au miel de truffe",
+          "en": "Roasted griffon breast with truffle honey glaze",
+          "price": 12.0
+        },
+        {
+          "fr": "Noix de Saint-Jacques poêlées au beurre de safran",
+          "en": "Seared scallops in saffron butter",
+          "price": 4.5
+        },
+        {
+          "fr": "Médaillon de gibier aux baies sauvages et réduction de vin elfique",
+          "en": "Venison medallion with wild berries and elven wine reduction",
+          "price": 6.0
+        },
+        {
+          "fr": "Paon rôti dans son plumage, servi avec des fruits exotiques",
+          "en": "Peacock roasted in its plumage, served with exotic fruits",
+          "price": 15.0
+        },
+        {
+          "fr": "Asperges blanches et leur délicate vinaigrette à la feuille d'or",
+          "en": "White asparagus with a delicate gold-leaf vinaigrette",
+          "price": 3.5
+        },
+        {
+          "fr": "Steak de tortue-dragon poêlé (cuisson saignante recommandée)",
+          "en": "Pan-seared dragon-turtle steak (rare recommended)",
+          "price": 18.0
+        },
+        {
+          "fr": "Velouté de champignons aux truffes des Profondeurs",
+          "en": "Cream of mushroom with deep-earth truffles",
+          "price": 2.5
+        },
+        {
+          "fr": "Saumon poché dans une émulsion d'aneth et de vin blanc",
+          "en": "Poached salmon in a dill and white wine emulsion",
+          "price": 4.0
+        },
+        {
+          "fr": "Caille farcie au foie gras et éclats de pistaches",
+          "en": "Quail stuffed with foie gras and pistachios",
+          "price": 7.0
+        },
+        {
+          "fr": "Queue de homard flambée à la vieille eau-de-vie",
+          "en": "Lobster tail flambéed with aged brandy",
+          "price": 9.0
+        },
+        {
+          "fr": "Légumes racines rôtis et glacés au miel de manticore",
+          "en": "Roasted root vegetables glazed in manticore honey",
+          "price": 3.0
+        },
+        {
+          "fr": "Couronne d'agneau rôtie au confit d'ail et menthe fraîche",
+          "en": "Crown roast of lamb with mint and garlic confit",
+          "price": 8.5
+        },
+        {
+          "fr": "Huîtres perlières sur lit de glace, garniture de poudre de nacre",
+          "en": "Oysters on the half shell with a pearl-dust garnish",
+          "price": 5.0
+        },
+        {
+          "fr": "Flanc d'ours-hibou braisé lentement dans un jus sombre",
+          "en": "Slow-braised owlbear flank in dark gravy",
+          "price": 6.5
+        },
+        {
+          "fr": "Tourte de faisan avec une croûte au beurre d'une finesse exquise",
+          "en": "Pheasant pie with an exquisitely flaky butter crust",
+          "price": 4.5
+        },
+        {
+          "fr": "Consommé délicat de cygne royal",
+          "en": "Delicate royal swan consommé",
+          "price": 3.5
+        },
+        {
+          "fr": "Côtelettes de veau en croûte d'herbes et pointes d'asperges",
+          "en": "Herb-crusted veal chops with asparagus spears",
+          "price": 5.5
+        },
+        {
+          "fr": "Travers de sanglier féroce laqués aux épices naines brûlantes",
+          "en": "Dire-boar ribs glazed with fiery dwarven spices",
+          "price": 7.5
+        },
+        {
+          "fr": "Ris de veau sautés au beurre clarifié et aux câpres",
+          "en": "Sweetbreads pan-fried in clarified butter and capers",
+          "price": 4.0
+        },
+        {
+          "fr": "Risotto au safran et écrevisses de rivière fraîchement pêchées",
+          "en": "Saffron risotto with freshly caught river prawns",
+          "price": 5.0
+        },
+        {
+          "fr": "Fonds d'artichauts farcis à la chair de crabe assaisonnée",
+          "en": "Artichoke hearts stuffed with seasoned crab meat",
+          "price": 4.5
+        },
+        {
+          "fr": "Cochon de lait rôti entier avec un glaçage pomme et cannelle",
+          "en": "Whole roast suckling pig with an apple and cinnamon glaze",
+          "price": 10.0
+        },
+        {
+          "fr": "Sorbet aux baies d'hiver pour se rincer le palais (entremets)",
+          "en": "Sorbet of winter berries to cleanse the palate (side)",
+          "price": 1.5
+        },
+        {
+          "fr": "Plateau de fruits exotiques importés des jungles du sud",
+          "en": "Exotic fruit platter imported from the southern jungles",
+          "price": 3.0
+        },
+        {
+          "fr": "Pétales de roses confites et desserts en sucre filé",
+          "en": "Candied rose petals and spun-sugar desserts",
+          "price": 2.5
+        },
+        {
+          "fr": "Pâtes rubans truffées avec copeaux de fromage vieilli cent ans",
+          "en": "Truffled pasta ribbons with shavings of century-old cheese",
+          "price": 4.0
+        },
+        {
+          "fr": "Cocatrice rôtie entière (glandes venimeuses soigneusement retirées)",
+          "en": "Whole roasted cockatrice (venom glands carefully removed)",
+          "price": 14.0
+        }
+      ],
+      "drinks": [
+        {
+          "fr": "Vin millésimé des caves du Domaine d'Astoria",
+          "en": "Vintage wine from the cellars of the Domain of Astoria",
+          "price": 40.0
+        },
+        {
+          "fr": "Liqueur rare infusée aux pétales d'Orchidée Solaire",
+          "en": "Rare liqueur infused with Solar Orchid petals",
+          "price": 100.0
+        },
+        {
+          "fr": "Vin-Étoile Elfique (luisant d'une douce lueur argentée)",
+          "en": "Elven Star-Wine (glowing with a soft silver light)",
+          "price": 15.0
+        },
+        {
+          "fr": "Cuvée de Réserve du Roi Nain (Brune épaisse et onctueuse)",
+          "en": "Dwarven King's Reserve Stout",
+          "price": 5.0
+        },
+        {
+          "fr": "Vin pétillant avec de véritables paillettes d'or en suspension",
+          "en": "Sparkling wine with real suspended gold flakes",
+          "price": 20.0
+        },
+        {
+          "fr": "Vin de sang de dragon, rouge rubis et extrêmement épicé",
+          "en": "Ruby-red dragonblood wine, extremely spicy",
+          "price": 25.0
+        },
+        {
+          "fr": "Vin de glace récolté sur les plus hauts sommets gelés",
+          "en": "Ice-wine harvested from the highest frozen peaks",
+          "price": 12.0
+        },
+        {
+          "fr": "Nectar de Féerie (son goût rappelle les souvenirs heureux)",
+          "en": "Feywild nectar (tastes like happy memories)",
+          "price": 30.0
+        },
+        {
+          "fr": "Eau-de-vie vieillie servie dans un verre en cristal de roche",
+          "en": "Aged brandy served in a rock crystal snifter",
+          "price": 8.0
+        },
+        {
+          "fr": "Thé de soie épicé importé des grands empires de l'est",
+          "en": "Spiced silk-tea imported from the great eastern empires",
+          "price": 2.0
+        },
+        {
+          "fr": "Hydromel d'Ambroisie, vieilli pendant 100 ans en fûts sacrés",
+          "en": "Ambrosia mead, aged 100 years in sacred casks",
+          "price": 50.0
+        },
+        {
+          "fr": "Grand vin blanc sec, fleuron de la côte ensoleillée",
+          "en": "Fine dry white wine, the pride of the sunny coast",
+          "price": 3.0
+        },
+        {
+          "fr": "Jus de melon-lune, servi parfaitement frappé",
+          "en": "Moon-melon juice, served perfectly chilled",
+          "price": 1.5
+        },
+        {
+          "fr": "Liqueur délicate de violettes confites",
+          "en": "Delicate liqueur of candied violets",
+          "price": 4.0
+        },
+        {
+          "fr": "Le Galop du Centaure (un spiritueux herbacé et très puissant)",
+          "en": "Centaur's Gallop (a strong, herbal spirit)",
+          "price": 6.0
+        },
+        {
+          "fr": "Eau pétillante pure tirée d'une source sacrée",
+          "en": "Pure sparkling water drawn from a sacred spring",
+          "price": 1.0
+        },
+        {
+          "fr": "Vin de cerise noire, au goût de velours incroyablement riche",
+          "en": "Dark cherry wine, incredibly rich velvety taste",
+          "price": 5.0
+        },
+        {
+          "fr": "Thé céleste, dégageant une brume argentée au lieu de vapeur",
+          "en": "Celestial tea, steams with a silvery mist instead of vapor",
+          "price": 10.0
+        },
+        {
+          "fr": "Porto royal, vieilli en fûts de chêne pendant des décennies",
+          "en": "Royal port wine, aged in oak barrels for decades",
+          "price": 18.0
+        },
+        {
+          "fr": "Absinthe émeraude avec une évidente touche de magie",
+          "en": "Emerald absinthe with an obvious magical kick",
+          "price": 14.0
+        },
+        {
+          "fr": "Larmes de Sirène (doux, salé, et merveilleusement enivrant)",
+          "en": "Tears of the Siren (sweet, salty, and wonderfully intoxicating)",
+          "price": 22.0
+        },
+        {
+          "fr": "Liqueur de pêche gorgée de soleil",
+          "en": "Sun-kissed peach liqueur",
+          "price": 3.5
+        },
+        {
+          "fr": "Vin de champignons de l'Outreterre (étonnamment fruité)",
+          "en": "Underdark mushroom wine (surprisingly fruity)",
+          "price": 7.0
+        },
+        {
+          "fr": "Whisky queue-de-manticore (arrache légèrement la gorge)",
+          "en": "Manticore-tail whiskey (has a sharp bite)",
+          "price": 9.0
+        },
+        {
+          "fr": "Cognac d'une rare finesse, servi tiède",
+          "en": "Fine cognac of rare finesse, served warm",
+          "price": 6.5
+        },
+        {
+          "fr": "Nectar des Dieux (mythique, hautement illégal dans certaines régions)",
+          "en": "Nectar of the Gods (mythical, highly illegal in some regions)",
+          "price": 80.0
+        },
+        {
+          "fr": "Infusion de feuille d'argent (éclaircit instantanément l'esprit)",
+          "en": "Silver-leaf infusion (instantly clears the mind)",
+          "price": 4.0
+        },
+        {
+          "fr": "Cocktail délicat à l'orange sanguine et au safran",
+          "en": "Delicate blood-orange and saffron cocktail",
+          "price": 2.5
+        },
+        {
+          "fr": "Stout au lait de pégase (une rareté d'une onctuosité absolue)",
+          "en": "Pegasus-milk stout (a rarity of absolute creaminess)",
+          "price": 11.0
+        },
+        {
+          "fr": "Rhum nain millésimé, passé en contrebande depuis les forteresses",
+          "en": "Vintage dwarven rum, smuggled from the deep holds",
+          "price": 16.0
+        }
+      ],
+      "services": [
+        {
+          "desc": {
+            "fr": "Suite luxueuse avec balcon privatif et feu de cheminée",
+            "en": "Luxurious suite with private balcony and fireplace"
+          },
+          "price": 15.0,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Massage et soins relaxants avec huiles rares",
+            "en": "Relaxing massage and care with rare oils"
+          },
+          "price": 5.0,
+          "trigger_staff": {
+            "fr": "Masseuse professionnelle",
+            "en": "Professional Masseuse"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Concert privé en chambre",
+            "en": "Private concert in room"
+          },
+          "price": 8.0,
+          "trigger_staff": {
+            "fr": "Harpiste virtuose",
+            "en": "Virtuoso Harpist"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Service de blanchisserie avec repassage et raccommodage magique",
+            "en": "Laundry service with magical pressing and mending"
+          },
+          "price": 1.0,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Accès à un coffre arcanique sécurisé pour les artefacts précieux",
+            "en": "Access to a secure arcane vault for precious artifacts"
+          },
+          "price": 10.0,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Service de valet de chambre ou camériste personnel pour la journée",
+            "en": "Personal valet or maid service for the day"
+          },
+          "price": 2.0,
+          "trigger_staff": {
+            "fr": "Valet / Camériste",
+            "en": "Valet / Maid"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Bain moussant préparé avec des sels exotiques et du lait de chèvre",
+            "en": "Bubble bath prepared with exotic salts and goat milk"
+          },
+          "price": 3.0,
+          "trigger_staff": {
+            "fr": "Préposé aux bains",
+            "en": "Bath Attendant"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Livraison de messages sécurisés par un coursier magique",
+            "en": "Secure message delivery via magical courier"
+          },
+          "price": 5.0,
+          "trigger_staff": null
+        },
+        {
+          "desc": {
+            "fr": "Taille de barbe et soins du visage par un maître barbier",
+            "en": "Beard trimming and facial grooming by a master barber"
+          },
+          "price": 2.5,
+          "trigger_staff": {
+            "fr": "Maître Barbier",
+            "en": "Master Barber"
+          }
+        },
+        {
+          "desc": {
+            "fr": "Réservation de la salle à manger privée avec personnel dédié",
+            "en": "Private dining room reservation with dedicated staff"
+          },
+          "price": 10.0,
+          "trigger_staff": null
+        }
+      ],
+      "room_events": [
+        {
+          "fr": "Vous surprenez une conversation politique secrète sur le balcon voisin.",
+          "en": "You overhear a secret political conversation on the neighboring balcony."
+        },
+        {
+          "fr": "On vous fait livrer une bouteille de vin anonyme avec un mot : 'Bienvenue en ville'.",
+          "en": "An anonymous bottle of wine is delivered to you with a note: 'Welcome to town'."
+        },
+        {
+          "fr": "Quelqu'un a glissé une invitation dorée pour un bal masqué très fermé sous votre porte.",
+          "en": "Someone slipped a golden invitation to a highly exclusive masquerade ball under your door."
+        },
+        {
+          "fr": "Le lit est chauffé magiquement et si confortable que vous gagnez des points de vie temporaires.",
+          "en": "The magically heated bed is so comfortable you gain temporary hit points."
+        },
+        {
+          "fr": "Vous trouvez la chevalière oubliée d'une grande maison noble dans un tiroir en velours.",
+          "en": "You find a forgotten signet ring of a major noble house in a velvet drawer."
+        },
+        {
+          "fr": "Une domestique illusoire apparaît poliment pour demander si vous désirez un oreiller de soie supplémentaire.",
+          "en": "An illusory maid politely appears to ask if you desire an extra silk pillow."
+        },
+        {
+          "fr": "Le sortilège d'intimité vacille une seconde, vous laissant entendre les prémices d'un complot d'assassinat à côté.",
+          "en": "The privacy ward flickers for a second, letting you hear the start of an assassination plot next door."
+        },
+        {
+          "fr": "Une douce brise conjurée par magie transporte un parfum relaxant de jasmin à travers la pièce.",
+          "en": "A magically conjured gentle breeze carries a relaxing scent of jasmine through the room."
+        },
+        {
+          "fr": "Un pigeon voyageur merveilleusement dressé tape à la vitre en verre renforcé de votre chambre.",
+          "en": "A highly trained carrier pigeon taps at your reinforced glass window."
+        },
+        {
+          "fr": "Le miroir enchanté de la salle de bain vous fait des compliments très polis sur votre apparence.",
+          "en": "The enchanted bathroom mirror gives you very polite compliments on your appearance."
+        }
+      ]
+    }
+  },
+  "discussions": [
+    {
+      "vibe_tags": [
+        "oppressant",
+        "paranoiaque"
+      ],
+      "desc": {
+        "fr": "{NPC1} murmure à {NPC2} de baisser la voix, terrifié à l'idée que des informateurs de {Faction1} n'écoutent aux portes.",
+        "en": "{NPC1} whispers to {NPC2} to keep their voice down, terrified that informants of {Faction1} might be eavesdropping."
+      }
+    },
+    {
+      "vibe_tags": [
+        "festif",
+        "opulent"
+      ],
+      "desc": {
+        "fr": "{NPC1} lève sa chope bien remplie et crie à la santé de {Faction1} pour avoir financé les festivités de ce soir !",
+        "en": "{NPC1} raises a full mug and shouts to the health of {Faction1} for funding tonight's festivities!"
+      }
+    },
+    {
+      "vibe_tags": [
+        "pieux",
+        "fanatique"
+      ],
+      "gov_tags": [
+        "magocratie",
+        "sorcier-tutelaire"
+      ],
+      "desc": {
+        "fr": "{NPC1} fait le signe des Dieux, jurant à {NPC2} que les rituels impies pratiqués par {Faction1} vont attirer la colère divine sur la ville.",
+        "en": "{NPC1} makes the sign of the Gods, swearing to {NPC2} that the unholy rituals practiced by {Faction1} will bring divine wrath upon the city."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu"
+      ],
+      "desc": {
+        "fr": "{NPC1} et {NPC2} manquent d'en venir aux mains en débattant bruyamment pour savoir si {Faction1} ou {Faction2} finira par prendre le contrôle total des trafics de la ville.",
+        "en": "{NPC1} and {NPC2} almost come to blows arguing loudly whether {Faction1} or {Faction2} will ultimately seize full control of the city's trafficking."
+      }
+    },
+    {
+      "vibe_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "{NPC1} perd un bras de fer contre {NPC2} et exige immédiatement une revanche, rouge de colère.",
+        "en": "{NPC1} loses an arm-wrestling match to {NPC2} and immediately, red with anger, demands a rematch."
+      }
+    },
+    {
+      "vibe_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "{NPC1} laisse tomber une pièce en argent, et {NPC1} comme {NPC2} plongent simultanément sous la table pour la récupérer.",
+        "en": "{NPC1} drops a silver coin, and both {NPC1} and {NPC2} simultaneously dive under the table to grab it."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu",
+        "oppressant"
+      ],
+      "gov_tags": [
+        "dictature-militaire",
+        "police-secrete",
+        "climat-terreur",
+        "tyrannie"
+      ],
+      "desc": {
+        "fr": "{NPC1} murmure à {NPC2} de se taire en jetant des regards terrifiés vers la table des gardes.",
+        "en": "{NPC1} whispers to {NPC2} to shut up while casting terrified glances at the guards' table."
+      }
+    },
+    {
+      "vibe_tags": [
+        "festif"
+      ],
+      "desc": {
+        "fr": "{NPC1} tente de convaincre {NPC2} de monter sur la table pour chanter une chanson paillarde à tue-tête.",
+        "en": "{NPC1} tries to convince {NPC2} to get on the table and sing a bawdy song at the top of their lungs."
+      }
+    },
+    {
+      "vibe_tags": [
+        "laborieux"
+      ],
+      "eco_tags": [
+        "industrie-lourde",
+        "ressources-brutes"
+      ],
+      "desc": {
+        "fr": "{NPC1} montre ses mains couvertes de callosités et de suie à {NPC2} en se plaignant des cadences infernales.",
+        "en": "{NPC1} shows their calloused, soot-covered hands to {NPC2}, complaining about the hellish pace."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu",
+        "loi-du-plus-fort"
+      ],
+      "eco_tags": [
+        "marche-noir"
+      ],
+      "desc": {
+        "fr": "{NPC1} glisse discrètement un petit paquet enveloppé de cuir à {NPC2} sous la table, sans un mot.",
+        "en": "{NPC1} discreetly slides a small leather-wrapped package to {NPC2} under the table, without a word."
+      }
+    },
+    {
+      "vibe_tags": [
+        "miserable"
+      ],
+      "weather_tags": [
+        "snow",
+        "rain"
+      ],
+      "desc": {
+        "fr": "{NPC1} et {NPC2} se serrent l'un contre l'autre près de l'âtre, grelottant et fixant les flammes d'un air absent.",
+        "en": "{NPC1} and {NPC2} huddle together near the hearth, shivering and staring blankly at the flames."
+      }
+    },
+    {
+      "vibe_tags": [
+        "arcanique"
+      ],
+      "gov_tags": [
+        "magocratie",
+        "conseil-occulte",
+        "sorcier-tutelaire"
+      ],
+      "desc": {
+        "fr": "{NPC1} explique à {NPC2} qu'une expérience a encore mal tourné à l'Académie, vu la couleur violette des nuages hier.",
+        "en": "{NPC1} explains to {NPC2} that an experiment went wrong at the Academy again, given the purple clouds yesterday."
+      }
+    },
+    {
+      "vibe_tags": [
+        "pieux",
+        "fanatique"
+      ],
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte"
+      ],
+      "desc": {
+        "fr": "{NPC1} réprimande sévèrement {NPC2} pour avoir juré, brandissant un symbole sacré sous son nez.",
+        "en": "{NPC1} severely reprimands {NPC2} for swearing, brandishing a holy symbol under their nose."
+      }
+    },
+    {
+      "vibe_tags": [
+        "opulent"
+      ],
+      "desc": {
+        "fr": "{NPC1} se vante bruyamment auprès de {NPC2} des bénéfices ahurissants réalisés sur sa dernière cargaison de soie.",
+        "en": "{NPC1} loudly boasts to {NPC2} about the staggering profits made on their last cargo of silk."
+      }
+    },
+    {
+      "biome_tags": [
+        "Littoral",
+        "Aquatique"
+      ],
+      "weather_tags": [
+        "storm",
+        "fog"
+      ],
+      "desc": {
+        "fr": "{NPC1} jure à {NPC2} avoir vu des silhouettes écailleuses ramper hors de l'eau sur les quais cette nuit.",
+        "en": "{NPC1} swears to {NPC2} they saw scaly silhouettes crawling out of the water on the docks last night."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux",
+        "paranoiaque"
+      ],
+      "desc": {
+        "fr": "{NPC1} jette du sel par-dessus son épaule pendant que {NPC2} trace un signe de conjuration en regardant la porte.",
+        "en": "{NPC1} throws salt over their shoulder while {NPC2} traces a warding sign looking at the door."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paisible",
+        "accueillant"
+      ],
+      "eco_tags": [
+        "agricole-elevage"
+      ],
+      "desc": {
+        "fr": "{NPC1} et {NPC2} débattent paisiblement pour savoir si l'orge ou le houblon fera la meilleure bière cette année.",
+        "en": "{NPC1} and {NPC2} peacefully debate whether barley or hops will make the best beer this year."
+      }
+    },
+    {
+      "gov_tags": [
+        "oligarchie-marchande",
+        "ploutocratie",
+        "maire-verreux"
+      ],
+      "desc": {
+        "fr": "{NPC1} tape du poing sur la table en expliquant à {NPC2} que les nouvelles taxes vont les jeter à la rue.",
+        "en": "{NPC1} slams their fist on the table, explaining to {NPC2} that the new taxes will put them on the street."
+      }
+    },
+    {
+      "biome_tags": [
+        "Outreterre",
+        "Montagne"
+      ],
+      "eco_tags": [
+        "ressources-brutes",
+        "industrie-lourde"
+      ],
+      "desc": {
+        "fr": "{NPC1} raconte à {NPC2} que les mineurs du niveau inférieur ont percé un mur qui n'aurait jamais dû être ouvert.",
+        "en": "{NPC1} tells {NPC2} that the miners on the lower level broke through a wall that never should have been opened."
+      }
+    },
+    {
+      "vibe_tags": [
+        "loi-du-plus-fort"
+      ],
+      "gov_tags": [
+        "chef-de-guerre",
+        "anarchie",
+        "loi-du-talion"
+      ],
+      "desc": {
+        "fr": "{NPC1} compare ses impressionnantes cicatrices avec celles de {NPC2}, en riant grassement de leurs vieux combats.",
+        "en": "{NPC1} compares their impressive scars with {NPC2}'s, laughing coarsely about their old fights."
+      }
+    },
+    {
+      "vibe_tags": [
+        "miserable"
+      ],
+      "gov_tags": [
+        "bureaucratie-decadente",
+        "etat-failli",
+        "survie"
+      ],
+      "desc": {
+        "fr": "{NPC1} partage un quignon de pain dur avec {NPC2}, en se demandant combien de temps la ville pourra encore tenir.",
+        "en": "{NPC1} shares a crust of hard bread with {NPC2}, wondering how much longer the town can hold out."
+      }
+    },
+    {
+      "vibe_tags": [
+        "festif"
+      ],
+      "gov_tags": [
+        "mecenat",
+        "gouvernement-populaire",
+        "cite-libre"
+      ],
+      "desc": {
+        "fr": "{NPC1} lève sa chope pour porter un toast fracassant à la santé de la ville, aussitôt suivi par {NPC2}.",
+        "en": "{NPC1} raises their mug to propose a resounding toast to the town's health, immediately followed by {NPC2}."
+      }
+    },
+    {
+      "vibe_tags": [
+        "arcanique"
+      ],
+      "eco_tags": [
+        "economie-magique"
+      ],
+      "desc": {
+        "fr": "{NPC1} montre à {NPC2} un étrange bibelot qui luit d'une lueur bleutée, puis le cache précipitamment.",
+        "en": "{NPC1} shows {NPC2} a strange trinket glowing with a faint blue light, then hastily hides it."
+      }
+    },
+    {
+      "gov_tags": [
+        "cabal-secrete",
+        "eminence-grise",
+        "police-secrete"
+      ],
+      "vibe_tags": [
+        "paranoiaque"
+      ],
+      "desc": {
+        "fr": "{NPC1} et {NPC2} communiquent uniquement par des signes de la main complexes et des regards obliques.",
+        "en": "{NPC1} and {NPC2} communicate solely through complex hand signs and sidelong glances."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu",
+        "inegalitaire"
+      ],
+      "gov_tags": [
+        "oligarchie-corrompue",
+        "maire-verreux"
+      ],
+      "desc": {
+        "fr": "{NPC1} murmure à {NPC2} que l'incendie tragique de l'entrepôt concurrent n'avait rien d'accidentel, et que le bourgmestre a été vu comptant une lourde bourse juste après.",
+        "en": "{NPC1} whispers to {NPC2} that the tragic fire at the rival warehouse was no accident, and that the burgomaster was seen counting a heavy purse right after."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paranoiaque",
+        "oppressant"
+      ],
+      "gov_tags": [
+        "police-secrete",
+        "climat-terreur",
+        "tyrannie"
+      ],
+      "desc": {
+        "fr": "{NPC1} se penche par-dessus sa chope pour jurer à {NPC2} que les 'nouveaux' gardes affectés à la porte nord ne clignent jamais des yeux et ne respirent pas.",
+        "en": "{NPC1} leans over their mug to swear to {NPC2} that the 'new' guards assigned to the north gate never blink and don't breathe."
+      }
+    },
+    {
+      "gov_tags": [
+        "noblesse",
+        "feodalite"
+      ],
+      "desc": {
+        "fr": "{NPC1} raconte à voix basse à {NPC2} que le fils légitime du Duc est mort en bas âge, et que celui qui parade au château est un sosie acheté dans les bas-fonds.",
+        "en": "{NPC1} tells {NPC2} in a hushed voice that the Duke's legitimate son died in infancy, and the one parading at the castle is a lookalike bought in the slums."
+      }
+    },
+    {
+      "vibe_tags": [
+        "arcanique"
+      ],
+      "gov_tags": [
+        "magocratie",
+        "conseil-occulte",
+        "sorcier-tutelaire"
+      ],
+      "desc": {
+        "fr": "{NPC1} soutient mordicus à {NPC2} que l'Archimage n'est pas 'en retraite spirituelle', mais qu'il a été pétrifié par sa propre création dans les sous-sols fermés de la tour.",
+        "en": "{NPC1} adamantly insists to {NPC2} that the Archmage is not 'on a spiritual retreat', but was petrified by his own creation in the locked basements of the tower."
+      }
+    },
+    {
+      "vibe_tags": [
+        "fanatique",
+        "pieux",
+        "paranoiaque"
+      ],
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte"
+      ],
+      "desc": {
+        "fr": "{NPC1} demande avec angoisse à {NPC2} s'il a remarqué que les cendres des derniers hérétiques brûlés sur la place ont formé un symbole démoniaque en s'envolant.",
+        "en": "{NPC1} anxiously asks {NPC2} if they noticed that the ashes of the last heretics burned in the square formed a demonic symbol as they blew away."
+      }
+    },
+    {
+      "vibe_tags": [
+        "laborieux",
+        "corrompu"
+      ],
+      "eco_tags": [
+        "industrie-lourde"
+      ],
+      "desc": {
+        "fr": "{NPC1} accuse {NPC2} à demi-mot d'avoir vendu les plans de la grève au maître de guilde en échange d'une promotion, la main dangereusement posée sur sa dague.",
+        "en": "{NPC1} half-accuses {NPC2} of selling the strike plans to the guild master in exchange for a promotion, a hand resting dangerously on their dagger."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux",
+        "paranoiaque"
+      ],
+      "gov_tags": [
+        "cabal-secrete",
+        "eminence-grise"
+      ],
+      "desc": {
+        "fr": "{NPC1} dessine un œil avec de la bière renversée sur la table, expliquant frénétiquement à {NPC2} que ce symbole apparaît sur la porte de ceux qui vont disparaître le lendemain.",
+        "en": "{NPC1} draws an eye with spilled beer on the table, frantically explaining to {NPC2} that this symbol appears on the doors of those who will disappear the next day."
+      }
+    },
+    {
+      "vibe_tags": [
+        "loi-du-plus-fort"
+      ],
+      "gov_tags": [
+        "anarchie",
+        "chef-de-guerre",
+        "cartel-criminel"
+      ],
+      "desc": {
+        "fr": "{NPC1} propose un plan suicidaire à {NPC2} : le lieutenant du Caïd veut prendre la place du chef et paiera une véritable fortune à qui plantera le couteau pendant son sommeil.",
+        "en": "{NPC1} proposes a suicidal plan to {NPC2}: the Boss's lieutenant wants to take his place and will pay a fortune to whoever plants the knife in his sleep."
+      }
+    },
+    {
+      "vibe_tags": [
+        "miserable"
+      ],
+      "gov_tags": [
+        "etat-failli",
+        "survie",
+        "faiblesse-politique"
+      ],
+      "desc": {
+        "fr": "{NPC1} exhibe une vieille clé rouillée à {NPC2}, affirmant qu'elle ouvre la chambre forte secrète du gouverneur qui a fui la ville il y a un an en y laissant tout l'or.",
+        "en": "{NPC1} shows off an old rusty key to {NPC2}, claiming it opens the secret vault of the governor who fled the city a year ago, leaving all the gold behind."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu",
+        "oppressant"
+      ],
+      "eco_tags": [
+        "marche-noir"
+      ],
+      "desc": {
+        "fr": "{NPC1} avertit {NPC2} de ne pas traîner près des quais ce soir. Deux familles rivales se sont donné rendez-vous en secret pour régler le vol d'une cargaison de lotus noir.",
+        "en": "{NPC1} warns {NPC2} not to hang around the docks tonight. Two rival families have a secret rendezvous to settle the theft of a black lotus cargo."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paisible",
+        "corrompu"
+      ],
+      "gov_tags": [
+        "democratie-locale",
+        "cite-libre"
+      ],
+      "desc": {
+        "fr": "{NPC1} explique avec cynisme à {NPC2} que le récent vote citoyen était truqué, affirmant avoir vu des caisses d'armes luxueuses livrées de nuit chez les conseillers.",
+        "en": "{NPC1} cynically explains to {NPC2} that the recent citizen vote was rigged, claiming to have seen crates of luxurious weapons delivered to the councilors at night."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux",
+        "fanatique"
+      ],
+      "gov_tags": [
+        "culte",
+        "gouvernance-mystique"
+      ],
+      "desc": {
+        "fr": "{NPC1} tremble de tout son long en jurant à {NPC2} que le grand prêtre n'avait pas de reflet lorsqu'il s'est penché sur l'eau sacrée du bassin de purification ce matin.",
+        "en": "{NPC1} trembles all over, swearing to {NPC2} that the high priest cast no reflection when he leaned over the sacred water of the purification basin this morning."
+      }
+    },
+    {
+      "vibe_tags": [
+        "oppressant"
+      ],
+      "gov_tags": [
+        "dictature-militaire",
+        "tyrannie"
+      ],
+      "desc": {
+        "fr": "{NPC1} glisse à {NPC2} une carte froissée, lui expliquant que la garnison nord compte faire mutinerie demain à l'aube et qu'il faut fuir la ville avant le bain de sang.",
+        "en": "{NPC1} slips a crumpled map to {NPC2}, explaining that the north garrison plans to mutiny tomorrow at dawn and they need to flee the city before the bloodbath."
+      }
+    },
+    {
+      "vibe_tags": [
+        "inegalitaire",
+        "corrompu"
+      ],
+      "gov_tags": [
+        "oligarchie-marchande",
+        "ploutocratie"
+      ],
+      "desc": {
+        "fr": "{NPC1} assure à {NPC2} que la pénurie de blé est une mascarade cruelle inventée par le Consortium pour justifier le triplement des prix avant les premières neiges.",
+        "en": "{NPC1} assures {NPC2} that the wheat shortage is a cruel masquerade invented by the Consortium to justify tripling prices before the first snows."
+      }
+    },
+    {
+      "vibe_tags": [
+        "arcanique",
+        "corrompu"
+      ],
+      "eco_tags": [
+        "economie-magique",
+        "marche-noir"
+      ],
+      "desc": {
+        "fr": "{NPC1} raconte à {NPC2} qu'un alchimiste clandestin a trouvé le moyen de distiller des souvenirs liquides, et que certains nobles paient des fortunes pour 'boire' la jeunesse des autres.",
+        "en": "{NPC1} tells {NPC2} that an underground alchemist found a way to distill liquid memories, and some nobles pay fortunes to 'drink' the youth of others."
+      }
+    },
+    {
+      "biome_tags": [
+        "Outreterre",
+        "Montagne"
+      ],
+      "vibe_tags": [
+        "paranoiaque"
+      ],
+      "desc": {
+        "fr": "{NPC1} tape frénétiquement sur la table en jurant à {NPC2} que les tremblements de terre ne sont pas naturels, mais causés par un ver pourpre qu'on a réveillé en creusant trop profond.",
+        "en": "{NPC1} frantically taps the table, swearing to {NPC2} that the earthquakes aren't natural, but caused by a purple worm awakened by digging too deep."
+      }
+    },
+    {
+      "biome_tags": [
+        "Littoral",
+        "Aquatique"
+      ],
+      "gov_tags": [
+        "cartel-criminel",
+        "mafia"
+      ],
+      "desc": {
+        "fr": "{NPC1} explique à {NPC2} que le gardien du phare l'éteint volontairement trois nuits par mois pour laisser accoster les navires sans pavillon d'un effroyable syndicat du crime étranger.",
+        "en": "{NPC1} explains to {NPC2} that the lighthouse keeper turns it off on purpose three nights a month to let unmarked ships of a terrifying foreign crime syndicate dock."
+      }
+    },
+    {
+      "weather_tags": [
+        "fog"
+      ],
+      "vibe_tags": [
+        "paranoiaque"
+      ],
+      "desc": {
+        "fr": "{NPC1} attrape brusquement le bras de {NPC2} pour le supplier de ne jamais sortir dans le brouillard, car c'est à ce moment-là que les 'Récolteurs' viennent chercher de nouveaux cobayes.",
+        "en": "{NPC1} abruptly grabs {NPC2}'s arm, begging them never to go out in the fog, because that's when the 'Harvesters' come looking for new test subjects."
+      }
+    },
+    {
+      "vibe_tags": [
+        "festif",
+        "corrompu"
+      ],
+      "gov_tags": [
+        "noblesse",
+        "ploutocratie"
+      ],
+      "desc": {
+        "fr": "{NPC1} murmure à {NPC2} avec un sourire en coin que les bruyants feux d'artifice du grand festival serviront de signal pour l'assassinat simultané de trois membres gênants du conseil.",
+        "en": "{NPC1} whispers to {NPC2} with a smirk that the loud fireworks of the grand festival will serve as a signal for the simultaneous assassination of three troublesome council members."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux"
+      ],
+      "gov_tags": [
+        "tradition",
+        "conseil-anciens",
+        "chamanisme"
+      ],
+      "desc": {
+        "fr": "{NPC1} se lamente auprès de {NPC2}, intimement persuadé que les Anciens n'enterrent pas vraiment les morts du village, mais les offrent en pâture à la 'Chose de la Forêt'.",
+        "en": "{NPC1} laments to {NPC2}, intimately convinced that the Elders don't really bury the village dead, but offer them as food to the 'Thing in the Forest'."
+      }
+    },
+    {
+      "vibe_tags": [
+        "laborieux",
+        "oppressant"
+      ],
+      "eco_tags": [
+        "industrie-lourde"
+      ],
+      "desc": {
+        "fr": "{NPC1} montre discrètement à {NPC2} un étrange morceau de charbon creux contenant de la poudre noire explosive, affirmant que les mineurs préparent un coup d'état destructeur.",
+        "en": "{NPC1} discreetly shows {NPC2} a strange hollow piece of coal containing explosive black powder, claiming the miners are preparing a destructive coup."
+      }
+    },
+    {
+      "vibe_tags": [
+        "opulent",
+        "arcanique"
+      ],
+      "eco_tags": [
+        "artisanat-luxe"
+      ],
+      "desc": {
+        "fr": "{NPC1} affirme à {NPC2} que les joyaux de la couronne actuellement exposés sont des répliques parfaites, les vrais ayant été dévorés par le dragon de compagnie caché par le Roi.",
+        "en": "{NPC1} claims to {NPC2} that the crown jewels currently on display are perfect replicas, the real ones having been devoured by the pet dragon hidden by the King."
+      }
+    },
+    {
+      "vibe_tags": [
+        "loi-du-plus-fort"
+      ],
+      "eco_tags": [
+        "economie-militaire"
+      ],
+      "desc": {
+        "fr": "{NPC1} explique avec aigreur à {NPC2} que le Général prolonge la guerre frontalière de façon délibérée, simplement pour continuer à toucher sa part secrète sur les contrats d'armement.",
+        "en": "{NPC1} explains with bitterness to {NPC2} that the General is deliberately prolonging the border war, simply to continue collecting his secret cut on arms contracts."
+      }
+    },
+    {
+      "vibe_tags": [
+        "pieux",
+        "corrompu"
+      ],
+      "gov_tags": [
+        "theocratie-douce",
+        "eglise-dirigeante"
+      ],
+      "desc": {
+        "fr": "{NPC1} révèle à {NPC2} que les prétendus 'miracles de guérison' de la Grande Prêtresse ne sont dus qu'à de puissantes (et illégales) potions alchimiques achetées à l'étranger à prix d'or.",
+        "en": "{NPC1} reveals to {NPC2} that the High Priestess's supposed 'healing miracles' are entirely due to powerful (and illegal) alchemical potions bought abroad for a fortune."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paranoiaque"
+      ],
+      "gov_tags": [
+        "isolationnisme",
+        "police-secrete"
+      ],
+      "desc": {
+        "fr": "{NPC1} prévient vivement {NPC2} de ne pas regarder le ciel cette nuit, affirmant que les 'étoiles filantes' sont en réalité les yeux magiques des guetteurs astraux du Seigneur.",
+        "en": "{NPC1} strongly warns {NPC2} not to look at the sky tonight, claiming that the 'shooting stars' are actually the magical eyes of the Lord's astral watchers."
+      }
+    },
+    {
+      "vibe_tags": [
+        "accueillant",
+        "festif"
+      ],
+      "eco_tags": [
+        "economie-touristique"
+      ],
+      "desc": {
+        "fr": "{NPC1} promet en riant à {NPC2} que les étrangers de passage n'oublieront jamais la fête majestueuse de ce soir.",
+        "en": "{NPC1} laughingly promises {NPC2} that the passing foreigners will never forget tonight's majestic party."
+      }
+    },
+    {
+      "vibe_tags": [
+        "miserable",
+        "inegalitaire"
+      ],
+      "gov_tags": [
+        "noblesse",
+        "servage"
+      ],
+      "desc": {
+        "fr": "{NPC1} montre à {NPC2} son pain moisi, crachant avec amertume que les chiens du seigneur sont mieux nourris qu'eux.",
+        "en": "{NPC1} shows {NPC2} their moldy bread, spitting bitterly that the lord's dogs are better fed than them."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux"
+      ],
+      "eco_tags": [
+        "economie-peche"
+      ],
+      "desc": {
+        "fr": "{NPC1} refuse de reprendre la mer, jurant à {NPC2} que les filets remontent désormais des choses qui murmurent dans les abysses.",
+        "en": "{NPC1} refuses to go back to sea, swearing to {NPC2} that the nets now bring up things whispering in the abyss."
+      }
+    },
+    {
+      "gov_tags": [
+        "gouvernement-de-guildes",
+        "oligarchie-marchande"
+      ],
+      "eco_tags": [
+        "artisanat-luxe"
+      ],
+      "desc": {
+        "fr": "{NPC1} débat fiévreusement avec {NPC2} pour savoir quelle guilde obtiendra l'exclusivité sur la toute nouvelle cargaison de mithril.",
+        "en": "{NPC1} debates feverishly with {NPC2} over which guild will get exclusivity on the brand-new mithril shipment."
+      }
+    },
+    {
+      "vibe_tags": [
+        "pieux"
+      ],
+      "gov_tags": [
+        "theocratie-douce",
+        "eglise-dirigeante"
+      ],
+      "desc": {
+        "fr": "{NPC1} raconte avec émotion à {NPC2} comment la grande prière de l'Aube a miraculeusement guéri les maux de dos du vieux forgeron.",
+        "en": "{NPC1} emotionally tells {NPC2} how the grand Dawn prayer miraculously cured the old blacksmith's backache."
+      }
+    },
+    {
+      "vibe_tags": [
+        "laborieux"
+      ],
+      "eco_tags": [
+        "economie-bois"
+      ],
+      "desc": {
+        "fr": "{NPC1} masse son épaule endolorie, expliquant à {NPC2} qu'il faut abattre deux fois plus d'arbres ce mois-ci pour remplir le quota absurde de la scierie.",
+        "en": "{NPC1} massages their aching shoulder, explaining to {NPC2} that they must fell twice as many trees this month to meet the sawmill's absurd quota."
+      }
+    },
+    {
+      "vibe_tags": [
+        "arcanique",
+        "paranoiaque"
+      ],
+      "gov_tags": [
+        "magocratie",
+        "cabal-secrete"
+      ],
+      "desc": {
+        "fr": "{NPC1} couvre sa bouche avec sa main, chuchotant à {NPC2} que les mages de la grande tour peuvent lire dans les pensées de n'importe quel citoyen endormi.",
+        "en": "{NPC1} covers their mouth with their hand, whispering to {NPC2} that the mages from the great tower can read any sleeping citizen's mind."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu",
+        "loi-du-plus-fort"
+      ],
+      "eco_tags": [
+        "marche-noir"
+      ],
+      "desc": {
+        "fr": "{NPC1} glisse furtivement une bourse à {NPC2}, exigeant que la garde regarde ailleurs lors du déchargement prévu à minuit.",
+        "en": "{NPC1} furtively slips a purse to {NPC2}, demanding the guard look the other way during the midnight unloading."
+      }
+    },
+    {
+      "vibe_tags": [
+        "opulent"
+      ],
+      "eco_tags": [
+        "commerce-international"
+      ],
+      "desc": {
+        "fr": "{NPC1} se vante grassement auprès de {NPC2} d'avoir acquis des épices du continent sud qui valent plus cher que le poids de la taverne en or.",
+        "en": "{NPC1} boasts loudly to {NPC2} about acquiring spices from the southern continent worth more than the tavern's weight in gold."
+      }
+    },
+    {
+      "gov_tags": [
+        "dictature-militaire",
+        "tyrannie"
+      ],
+      "eco_tags": [
+        "economie-militaire"
+      ],
+      "desc": {
+        "fr": "{NPC1} se plaint à voix basse à {NPC2} que l'armée réquisitionne encore tout l'acier de la région, ne laissant rien pour réparer les outils agricoles.",
+        "en": "{NPC1} complains in a low voice to {NPC2} that the army is requisitioning all the steel in the region again, leaving nothing to repair farm tools."
+      }
+    },
+    {
+      "vibe_tags": [
+        "corrompu"
+      ],
+      "gov_tags": [
+        "maire-verreux",
+        "oligarchie-corrompue"
+      ],
+      "desc": {
+        "fr": "{NPC1} lève les yeux au ciel pendant que {NPC2} explique comment le beau-frère du bourgmestre a mystérieusement remporté l'appel d'offres pour le nouveau pont.",
+        "en": "{NPC1} rolls their eyes while {NPC2} explains how the burgomaster's brother-in-law mysteriously won the bid for the new bridge."
+      }
+    },
+    {
+      "vibe_tags": [
+        "fanatique"
+      ],
+      "eco_tags": [
+        "economie-religieuse"
+      ],
+      "desc": {
+        "fr": "{NPC1} harcèle {NPC2} pour lui vendre une fiole d'eau bénite à un prix exorbitant, affirmant que c'est la seule protection contre la fin du monde imminente.",
+        "en": "{NPC1} harasses {NPC2} to sell them a vial of holy water at an exorbitant price, claiming it's the only protection against the impending end of the world."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paisible"
+      ],
+      "gov_tags": [
+        "conseil-anciens",
+        "tradition"
+      ],
+      "desc": {
+        "fr": "{NPC1} et {NPC2} partagent un tabac parfumé près du feu, se remémorant avec nostalgie les étés cléments de leur jeunesse avant que la route ne soit pavée.",
+        "en": "{NPC1} and {NPC2} share some fragrant tobacco by the fire, nostalgically reminiscing about the mild summers of their youth before the road was paved."
+      }
+    },
+    {
+      "vibe_tags": [
+        "oppressant",
+        "miserable"
+      ],
+      "gov_tags": [
+        "bureaucratie-decadente",
+        "etat-failli"
+      ],
+      "desc": {
+        "fr": "{NPC1} déchire un formulaire officiel de rage, expliquant à {NPC2} qu'il faut maintenant trois tampons différents de fonctionnaires absents juste pour acheter du grain.",
+        "en": "{NPC1} tears up an official form in rage, explaining to {NPC2} that it now takes three different stamps from absent officials just to buy grain."
+      }
+    },
+    {
+      "vibe_tags": [
+        "superstitieux"
+      ],
+      "eco_tags": [
+        "agricole-elevage"
+      ],
+      "desc": {
+        "fr": "{NPC1} assure très sérieusement à {NPC2} que si les vaches donnent du lait tourné depuis trois jours, c'est parce qu'une sorcière a traversé le pré à l'aube.",
+        "en": "{NPC1} assures {NPC2} very seriously that if the cows have been giving sour milk for three days, it's because a witch crossed the meadow at dawn."
+      }
+    },
+    {
+      "vibe_tags": [
+        "festif",
+        "laborieux"
+      ],
+      "eco_tags": [
+        "artisanat-commun"
+      ],
+      "desc": {
+        "fr": "{NPC1} tape joyeusement dans le dos de {NPC2}, fêtant avec force bière la livraison de la centième charrette réparée par leur atelier cette saison.",
+        "en": "{NPC1} joyfully slaps {NPC2} on the back, celebrating with plenty of ale the delivery of the hundredth cart repaired by their workshop this season."
+      }
+    },
+    {
+      "vibe_tags": [
+        "paranoiaque"
+      ],
+      "gov_tags": [
+        "cartel-criminel",
+        "mafia"
+      ],
+      "desc": {
+        "fr": "{NPC1} vérifie trois fois la serrure de la fenêtre pendant que {NPC2} compte frénétiquement des pièces, mort de peur d'avoir floué le Syndicat de quelques cuivres.",
+        "en": "{NPC1} checks the window lock three times while {NPC2} frantically counts coins, scared to death of having shortchanged the Syndicate by a few coppers."
+      }
+    },
+    {
+      "eco_tags": [
+        "economie-minerai"
+      ],
+      "desc": {
+        "fr": "{NPC1} montre une pépite brute scintillante à {NPC2}, murmurant que le nouveau filon est incroyablement riche, mais que le gaz au fond du puits a déjà tué deux hommes.",
+        "en": "{NPC1} shows a sparkling raw nugget to {NPC2}, whispering that the new vein is incredibly rich, but the gas at the bottom of the shaft has already killed two men."
+      }
+    },
+    {
+      "vibe_tags": [
+        "inegalitaire",
+        "opulent"
+      ],
+      "gov_tags": [
+        "ploutocratie"
+      ],
+      "desc": {
+        "fr": "{NPC1} se pince le nez avec un mouchoir de soie, se plaignant hautainement à {NPC2} de l'odeur des mendiants qui gâchent la vue depuis son nouveau carrosse.",
+        "en": "{NPC1} pinches their nose with a silk handkerchief, haughtily complaining to {NPC2} about the smell of beggars ruining the view from their new carriage."
+      }
+    },
+    {
+      "vibe_tags": [
+        "accueillant"
+      ],
+      "gov_tags": [
+        "democratie-locale",
+        "commune-ouverte"
+      ],
+      "desc": {
+        "fr": "{NPC1} invite chaleureusement {NPC2} à participer à l'assemblée publique du soir pour voter tous ensemble sur le financement et la réparation du toit du lavoir.",
+        "en": "{NPC1} warmly invites {NPC2} to participate in the evening public assembly to vote together on funding and repairing the washhouse roof."
+      }
+    }
+  ],
+  "tensions": [
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} regarde nerveusement par-dessus son épaule et murmure : 'Il paraît que {Faction2} a des espions en ville... La chute de {Faction1} n'est qu'une question de temps.'",
+        "en": "{NPC1} looks nervously over their shoulder and whispers: 'Word is {Faction2} has spies in town... The fall of {Faction1} is only a matter of time.'"
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC2} refuse d'accepter une pièce frappée du symbole de {Faction2}, terrifié à l'idée d'être accusé de trahison par {Faction1}.",
+        "en": "{NPC2} refuses to accept a coin minted with the symbol of {Faction2}, terrified of being accused of treason by {Faction1}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} montre discrètement à {NPC2} un objet portant la marque de {Faction2} trouvé près du marché, se demandant à voix basse ce que cela annonce pour l'avenir de la ville.",
+        "en": "{NPC1} discreetly shows {NPC2} an object bearing the mark of {Faction2} found near the market, whispering and wondering what this means for the city's future."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "Un silence gêné s'installe à la table quand {NPC1} demande innocemment à {NPC2} s'il est vrai que les idéaux de {Faction2} commencent à séduire certains membres de la garde locale.",
+        "en": "An awkward silence settles over the table when {NPC1} innocently asks {NPC2} if it's true that the ideals of {Faction2} are starting to appeal to some members of the local guard."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} se plaint dans sa barbe que les marchands du coin parlent de plus en plus des 'opportunités' offertes par {Faction2}, au grand dam des loyalistes de {Faction1}.",
+        "en": "{NPC1} mutters into their beard that local merchants are increasingly talking about the 'opportunities' offered by {Faction2}, much to the dismay of {Faction1} loyalists."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} frappe violemment du poing sur la table : 'On n'est plus chez nous ! {Faction2} achète la moitié des commerces et {Faction1} laisse faire !'",
+        "en": "{NPC1} slams their fist violently on the table: 'This isn't our home anymore! {Faction2} is buying half the shops and {Faction1} does nothing!'"
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 3,
+      "desc": {
+        "fr": "Une violente bagarre éclate soudainement au fond de la salle entre des partisans de {Faction1} et des provocateurs arborant fièrement les couleurs de {Faction2}.",
+        "en": "A violent brawl suddenly breaks out in the back of the room between supporters of {Faction1} and provocateurs proudly wearing the colors of {Faction2}."
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 4,
+      "desc": {
+        "fr": "{NPC1} hausse les épaules avec fatalisme. 'Ils ne savent même plus à qui obéir... {Faction1} fait les lois, mais c'est {Faction2} qui tient vraiment les rues désormais.'",
+        "en": "{NPC1} shrugs fatalistically. 'They don't even know who to obey anymore... {Faction1} makes the laws, but {Faction2} really holds the streets now.'"
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "Le tavernier intervient vivement pour séparer {NPC1} et {NPC2}, qui se hurlaient dessus pour savoir si l'influence grandissante de {Faction2} était une bénédiction ou une malédiction pour leur foyer.",
+        "en": "The barkeep quickly steps in to separate {NPC1} and {NPC2}, who were screaming at each other over whether the growing influence of {Faction2} is a blessing or a curse for their home."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} parie une chope avec {NPC2} que d'ici la prochaine lune, l'autorité de {Faction1} ne sera plus qu'un lointain souvenir face au poids politique de {Faction2}.",
+        "en": "{NPC1} bets a mug with {NPC2} that by the next moon, the authority of {Faction1} will be nothing but a distant memory faced with the political weight of {Faction2}."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "Quelqu'un a recouvert un édit de {Faction1} placardé sur le mur de l'auberge pour y afficher fièrement les couleurs de {Faction2}. {NPC1} observe cela avec un sourire en coin.",
+        "en": "Someone covered an edict of {Faction1} plastered on the inn's wall to proudly display the colors of {Faction2}. {NPC1} watches this with a smirk."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 1,
+      "desc": {
+        "fr": "{NPC1} fait remarquer à {NPC2} que les enfants dans la rue ne jouent plus aux héros de {Faction1}, mais imitent désormais les champions de {Faction2}.",
+        "en": "{NPC1} points out to {NPC2} that the children in the street no longer play as the heroes of {Faction1}, but now imitate the champions of {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 1,
+      "desc": {
+        "fr": "{NPC1} s'étonne à voix basse que le forgeron ait remplacé les emblèmes de {Faction1} dans sa boutique par de très discrètes références à {Faction2}.",
+        "en": "{NPC1} whispers in surprise that the blacksmith replaced the emblems of {Faction1} in their shop with very discreet references to {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 1,
+      "desc": {
+        "fr": "{NPC1} murmure avoir vu un navire marchand décharger des caisses marquées du sceau de {Faction2} cette nuit, mais {NPC2} lui dit de se taire avant d'attirer l'attention de {Faction1}.",
+        "en": "{NPC1} whispers about seeing a merchant ship unloading crates marked with the seal of {Faction2} last night, but {NPC2} tells them to shut up before attracting the attention of {Faction1}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 1,
+      "desc": {
+        "fr": "Le barde joue une chanson satirique qui se moque subtilement de {Faction1}. {NPC1} sourit, notant que c'est un air très populaire chez {Faction2}.",
+        "en": "The bard plays a satirical song that subtly mocks {Faction1}. {NPC1} smiles, noting it's a very popular tune among {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} affirme à {NPC2} que les mercenaires récemment arrivés en ville ne travaillent pas pour {Faction1}, mais sont secrètement financés par {Faction2}.",
+        "en": "{NPC1} claims to {NPC2} that the mercenaries who recently arrived in town don't work for {Faction1}, but are secretly funded by {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} refuse de porter un toast à la gloire de {Faction1}, prétextant une toux, ce qui arrache un regard complice et approbateur à un partisan de {Faction2}.",
+        "en": "{NPC1} refuses to toast to the glory of {Faction1}, feigning a cough, which draws a knowing and approving look from a supporter of {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "Un avis de recherche émis par {Faction1} a été mystérieusement arraché. {NPC2} chuchote que la pègre locale protège désormais les agents de {Faction2}.",
+        "en": "A wanted poster issued by {Faction1} was mysteriously torn down. {NPC2} whispers that the local underworld now protects the agents of {Faction2}."
+      }
+    },
+    {
+      "min_score": 1,
+      "max_score": 2,
+      "desc": {
+        "fr": "{NPC1} explique à {NPC2} que les taxes imposées par {Faction1} étouffent le marché, et que beaucoup espèrent secrètement que {Faction2} prenne le relais.",
+        "en": "{NPC1} explains to {NPC2} that the taxes imposed by {Faction1} are suffocating the market, and many secretly hope {Faction2} takes over."
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 4,
+      "desc": {
+        "fr": "Des gardes affiliés à {Faction1} entrent avec fracas et tabassent un marchand soupçonné de financer {Faction2}, sous le regard outré de {NPC1}.",
+        "en": "Guards affiliated with {Faction1} burst in and beat up a merchant suspected of funding {Faction2}, under the outraged gaze of {NPC1}."
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 4,
+      "desc": {
+        "fr": "{NPC1} crache aux pieds d'un percepteur de {Faction1}, hurlant que la ville appartiendra bientôt légitimement à {Faction2}.",
+        "en": "{NPC1} spits at the feet of a tax collector from {Faction1}, shouting that the city will soon rightfully belong to {Faction2}."
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 4,
+      "desc": {
+        "fr": "Le tavernier refuse catégoriquement de servir à boire à des soldats de {Faction1}, déclarant que cet établissement est désormais sous la protection de {Faction2}.",
+        "en": "The barkeep flatly refuses to serve drinks to soldiers from {Faction1}, declaring that this establishment is now under the protection of {Faction2}."
+      }
+    },
+    {
+      "min_score": 3,
+      "max_score": 4,
+      "desc": {
+        "fr": "Un incendie ravage un entrepôt au loin. {NPC2} regarde par la fenêtre avec un sourire mauvais : '{Faction2} vient de couper le ravitaillement de {Faction1}.'",
+        "en": "A fire ravages a warehouse in the distance. {NPC2} looks out the window with an evil smile: '{Faction2} just cut off {Faction1}'s supplies.'"
+      }
+    },
+    {
+      "min_score": 4,
+      "max_score": 4,
+      "desc": {
+        "fr": "Le tocsin sonne à toute volée ! {NPC1} barricade la porte de la taverne en hurlant que les partisans de {Faction2} ont pris le château et massacrent les loyalistes de {Faction1}.",
+        "en": "The alarm bell rings wildly! {NPC1} barricades the tavern door, screaming that the supporters of {Faction2} have taken the castle and are slaughtering the loyalists of {Faction1}."
+      }
+    },
+    {
+      "min_score": 4,
+      "max_score": 5,
+      "desc": {
+        "fr": "Une explosion fait trembler les murs de la salle. {NPC2} tire son épée en criant : 'C'est l'heure ! {Faction2} lance l'assaut final contre {Faction1}, choisissez votre camp !'",
+        "en": "An explosion shakes the walls of the room. {NPC2} draws their sword, shouting: 'It's time! {Faction2} is launching the final assault against {Faction1}, choose your side!'"
+      }
+    },
+    {
+      "min_score": 4,
+      "max_score": 5,
+      "desc": {
+        "fr": "{NPC1} entre en titubant, couvert de sang, et s'effondre. 'Ils l'ont tué... Le chef de {Faction1} est mort. {Faction2} contrôle les portes, la guerre civile a commencé...'",
+        "en": "{NPC1} stumbles in, covered in blood, and collapses. 'They killed him... The leader of {Faction1} is dead. {Faction2} controls the gates, the civil war has begun...'"
+      }
+    },
+    {
+      "min_score": 4,
+      "max_score": 5,
+      "desc": {
+        "fr": "Des flèches enflammées traversent les fenêtres. {NPC1} hurle aux clients de s'armer : la purge ordonnée par {Faction1} contre les sympathisants de {Faction2} vient de frapper la taverne !",
+        "en": "Flaming arrows shatter the windows. {NPC1} screams at the patrons to arm themselves: the purge ordered by {Faction1} against {Faction2} sympathizers just hit the tavern!"
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} s'indigne auprès de {NPC2} que le juge local ait acquitté des contrebandiers de {Faction2} malgré des preuves accablantes présentées par les gardes de {Faction1}.",
+        "en": "{NPC1} expresses outrage to {NPC2} that the local judge acquitted smugglers from {Faction2} despite overwhelming evidence presented by {Faction1} guards."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} montre du doigt une patrouille de {Faction1} qui détourne délibérément le regard pendant que des agents de {Faction2} déchargent des caisses d'armes suspectes.",
+        "en": "{NPC1} points at a {Faction1} patrol deliberately looking the other way while agents of {Faction2} unload suspicious crates of weapons."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} apprend à {NPC2} que le bourgmestre loyal à {Faction1} a 'démissionné pour raisons de santé' et que son remplaçant dîne tous les soirs avec les émissaires de {Faction2}.",
+        "en": "{NPC1} tells {NPC2} that the burgomaster loyal to {Faction1} 'resigned for health reasons' and his replacement dines every night with {Faction2} emissaries."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "Un groupe attablé porte ouvertement un toast aux idéaux de {Faction2}. {NPC1} note que, la semaine dernière encore, {Faction1} les aurait fait jeter au cachot pour cela.",
+        "en": "A seated group openly toasts the ideals of {Faction2}. {NPC1} notes that just last week, {Faction1} would have thrown them in the dungeon for that."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} murmure que la guilde des marchands refuse désormais les lettres de crédit de {Faction1}, n'acceptant plus que les garanties signées par {Faction2}.",
+        "en": "{NPC1} whispers that the merchant guild now refuses {Faction1} letters of credit, only accepting guarantees signed by {Faction2}."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} se plaint à {NPC2} de devoir payer une double taxe : l'officielle pour {Faction1}, et la 'contribution volontaire' exigée par les hommes de main de {Faction2}.",
+        "en": "{NPC1} complains to {NPC2} about paying a double tax: the official one for {Faction1}, and the 'voluntary contribution' demanded by {Faction2}'s thugs."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} lit un nouvel édit affiché au mur, expliquant avec amertume à {NPC2} que les nouvelles lois de {Faction1} ont clairement été dictées par les intérêts de {Faction2}.",
+        "en": "{NPC1} reads a new edict posted on the wall, bitterly explaining to {NPC2} that {Faction1}'s new laws were clearly dictated by the interests of {Faction2}."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} ricane en racontant à {NPC2} comment l'entrepôt principal de {Faction1} a été mystérieusement incendié, profitant miraculeusement au monopole de {Faction2}.",
+        "en": "{NPC1} snickers while telling {NPC2} how the main {Faction1} warehouse was mysteriously burned down, miraculously benefiting {Faction2}'s monopoly."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} jure à {NPC2} avoir vu le capitaine de la garde de {Faction1} sortir discrètement d'une réunion nocturne dans un domaine contrôlé par {Faction2}.",
+        "en": "{NPC1} swears to {NPC2} they saw the guard captain of {Faction1} discreetly leaving a night meeting in an estate controlled by {Faction2}."
+      }
+    },
+    {
+      "min_score": 2,
+      "max_score": 3,
+      "desc": {
+        "fr": "{NPC1} fait remarquer à {NPC2} que les bannières de {Faction1} sur la place principale sont en lambeaux et non remplacées, tandis que celles de {Faction2} fleurissent aux balcons nobles.",
+        "en": "{NPC1} points out to {NPC2} that {Faction1}'s banners in the main square are in tatters and unreplaced, while those of {Faction2} are blooming on noble balconies."
+      }
+    }
+  ]
+}

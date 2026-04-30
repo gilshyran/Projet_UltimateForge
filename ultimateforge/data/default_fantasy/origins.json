@@ -1,0 +1,6162 @@
+[
+  {
+    "id": "orig_av_001",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Construit autour d'une oasis asséchée, le lieu survit grâce à un puits artésien extrêmement profond, foré à l'époque des Anciens.",
+      "en": "Built around a dried oasis, the place survives thanks to an extremely deep artesian well, drilled in the time of the Ancients."
+    },
+    "output_tags": [
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "orig_av_002",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Marais"
+    ],
+    "description": {
+      "fr": "À l'origine, c'était un simple campement de fouineurs et herboristes venus exploiter cette zone particulièrement dense en bois rares et en herbes médicinales.",
+      "en": "Originally, it was a simple camp of foragers and herbalists who came to exploit an area of ​​Khora particularly dense in rare woods and medicinal herbs."
+    },
+    "output_tags": [
+      "ressource-bois",
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "orig_av_003",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique",
+      "Marais"
+    ],
+    "description": {
+      "fr": "La cité a grandi autour d'une épave titanesque d'un navire de l'Avant, dont la coque rouillée sert aujourd'hui de muraille protectrice et de sanctuaire.",
+      "en": "The city grew around the titanic wreck of a Before-ship, whose rusted hull now serves as a protective wall and sanctuary."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-forte"
+    ]
+  },
+  {
+    "id": "orig_av_004",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "description": {
+      "fr": "Le lieu s'est bâti à l'entrée d'une mine colossale éventrée, où les premiers colons espéraient extraire des pierres magiques enfouies dans la roche.",
+      "en": "The site was built at the entrance to a colossal, gutted mine, where the first settlers hoped to extract magics stones buried in the rock."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "orig_av_005",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "pont"
+    ],
+    "description": {
+      "fr": "La ville a été fondée sur les ruines d'un antique pont enjambant une faille, devenant un passage obligé pour les marchands et les voyageurs.",
+      "en": "The city was founded on the ruins of an ancient bridge spanning a rift, becoming a mandatory passage for merchants and travelers."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "orig_av_006",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert",
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Autrefois, ce n'était qu'un camp de réfugiés fuyant les conditions extrêmes de la région. Ils sont restés, piégés ou habitués à cette terre hostile.",
+      "en": "It used to be just a refugee camp for people fleeing the extreme conditions in the region. They stayed, trapped or accustomed to this hostile land."
+    },
+    "output_tags": [
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "orig_av_008",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "monolithe"
+    ],
+    "description": {
+      "fr": "Le village s'est développé autour d'un étrange monolithe qui repousse naturellement les bêtes sauvages, attirant pèlerins et curieux.",
+      "en": "The village grew around a strange monolith that naturally repels wild beasts, attracting pilgrims and the curious."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique",
+      "magie"
+    ]
+  },
+  {
+    "id": "orig_av_009",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "faille"
+    ],
+    "description": {
+      "fr": "Les habitants se sont regroupés autour d'une faille géothermique qui crache une vapeur tiède, seul rempart contre le froid de la région.",
+      "en": "The inhabitants gathered around a geothermal rift spewing warm steam, the only shield against the region's deadly cold."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "survie"
+    ]
+  },
+  {
+    "id": "orig_av_010",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "Le hameau originel a été fondé par des parias et des pêcheurs sur un archipel de rochers pointus, difficile d'accès par la terre comme par la mer.",
+      "en": "The original hamlet was founded by outcasts and fishermen on an archipelago of sharp rocks, hard to reach by land or sea."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "isole",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "orig_av_012",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Les habitants ont bâti leurs abris à l'intérieur de la cage thoracique d'une immense bête datant d'une ère oubliée.",
+      "en": "The inhabitants built their shelters inside the ribcage of a huge beast dating from a forgotten era."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "orig_av_013",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "cratere"
+    ],
+    "description": {
+      "fr": "Le village est installé au fond d'un immense cratère d'impact vitrifié, riche en éclats de critaux magique et autres minéraux étranges.",
+      "en": "The village is settled at the bottom of a massive vitrified impact crater, rich in Vrill shards and other strange minerals."
+    },
+    "output_tags": [
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "orig_av_014",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Aquatique",
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Construit sur d'épais pilotis, cet ancien comptoir de contrebandiers est devenu un passage incontournable.",
+      "en": "Built on thick stilts over treacherous waters, this former smuggler's post has become a vital crossing."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "orig_av_016",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt",
+      "Collines"
+    ],
+    "description": {
+      "fr": "Les fondateurs ont découvert une vallée extraordinairement fertile, naturellement protégée des vents.",
+      "en": "The founders discovered an extraordinarily fertile valley, naturally protected from the corruption-bearing winds of Khora."
+    },
+    "output_tags": [
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "orig_av_017",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "grotte"
+    ],
+    "description": {
+      "fr": "Ce réseau de grottes fut un refuge durant les guerres passées. Aujourd'hui, il est devenu une véritable forteresse troglodyte imprenable.",
+      "en": "This cave network was a refuge during the Fall. Today, it has become a truly impregnable troglodyte fortress."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "orig_av_018",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "Le bourg s'enroule autour de la base d'un phare antique colossal qui fonctionne toujours de manière autonome, guidant les navires.",
+      "en": "The town wraps around the base of a colossal ancient lighthouse that still functions autonomously, guiding ships."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "orig_av_019",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "description": {
+      "fr": "Ce n'était autrefois qu'un lieu de rassemblement saisonnier pour les tribus nomades, devenu sédentaire avec l'accumulation des richesses.",
+      "en": "It was once merely a seasonal gathering place for nomadic tribes, which became sedentary with the accumulation of wealth."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-bois",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "orig_av_020",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Marais"
+    ],
+    "description": {
+      "fr": "La ville a poussé sur un ancien et sanglant champ de bataille. Les premiers colons étaient des charognards fouillant les cadavres.",
+      "en": "The city grew on an ancient and bloody battlefield. The first settlers were scavengers scavenging for corpses."
+    },
+    "output_tags": [
+      "survie"
+    ]
+  },
+  {
+    "id": "orig_av_021",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "description": {
+      "fr": "Ce lieu était autrefois une simple tour de guet. Sécurisant la zone, les colons se sont installés, se sentant en sécurité.",
+      "en": "This place was once a simple watchtower. Securing the area, settlers moved in, feeling safe."
+    },
+    "output_tags": [
+      "avant-poste",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "orig_av_022",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Les colons se sont installés au abord d'une rivière paisible, fréquentée par de nombreuses espèce d'herbivores.",
+      "en": "The settlers established themselves near a river frequented by numerous species of herbivores."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "orig_av_023",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, la cité fut fondée sur les berges de l'unique fleuve traversant les terres arides, transformant ce ruban d'eau en une véritable artère vitale et agricole.",
+      "en": "Historically, the city was founded on the banks of the only river crossing the arid lands, transforming this ribbon of water into a true vital agricultural artery."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "ressource-agriculture",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "orig_av_024",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, ce fut un modeste campement de bûcherons qui utilisaient le puissant courant de la rivière pour acheminer les troncs massifs vers les royaumes alentours.",
+      "en": "Originally, it was a modest lumber camp that used the powerful current of the river to transport massive logs to the surrounding kingdoms."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "orig_av_025",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des moines ascètes s'y sont isolés jadis, persuadés que les eaux pures et glaciales de ce lac d'altitude étaient les larmes d'une divinité oubliée.",
+      "en": "Ascetic monks isolated themselves here long ago, convinced that the pure, freezing waters of this high-altitude lake were the tears of a forgotten deity."
+    },
+    "output_tags": [
+      "pelerinage",
+      "isole",
+      "mystique",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "orig_av_026",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Fuyant les prédateurs mortels de la canopée, les premiers habitants ont érigé cette colonie entièrement sur pilotis, au milieu d'un lac boueux et stagnant.",
+      "en": "Fleeing the deadly predators of the canopy, the first inhabitants erected this colony entirely on stilts, in the middle of a muddy, stagnant lake."
+    },
+    "output_tags": [
+      "tribal",
+      "defense-naturelle",
+      "ressource-chasse",
+      "survie"
+    ]
+  },
+  {
+    "id": "orig_av_027",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La ville a explosé en quelques mois lors d'une frénétique ruée vers l'or, quand les pionniers ont commencé à tamiser les riches eaux de la rivière.",
+      "en": "The town exploded in a few months during a frantic gold rush, when pioneers began panning the rich waters of the river."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "orig_av_028",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des bannis acculés ont trouvé leur salut sur les rives de ce lac en parti souterrain, dont les eaux calmes sont doucement éclairées par des champignons magiques.",
+      "en": "Cornered exiles have found salvation on the shores of this partly underground lake, whose calm waters are gently lit by magic mushrooms."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "mystique"
+    ]
+  },
+  {
+    "id": "orig_av_029",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Pour survivre au gel éternel, la colonie a été bâtie le long d'une rivière thermale surnaturelle qui ne gèle jamais, offrant chaleur et poissons à ses habitants.",
+      "en": "To survive the eternal frost, the colony was built along a supernatural thermal river that never freezes, providing heat and fish to its inhabitants."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "survie",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "orig_av_030",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "D'anciens contrebandiers ont choisi les eaux calmes de ce cratère inondé et dissimulé entre les cimes pour y établir un repaire parfait et imprenable.",
+      "en": "Former smugglers chose the calm waters of this flooded crater hidden between the peaks to establish a perfect and impregnable lair."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "orig_av_031",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "La fertilité exceptionnelle des rives de ce grand lac d'eau douce a poussé les premiers colons à y fonder ce qui allait devenir le grenier à blé de la région.",
+      "en": "The exceptional fertility of the shores of this large freshwater lake prompted the first settlers to found what would become the region's breadbasket."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "orig_av_032",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Un empire antique a initialement érigé cette place forte pour contrôler le seul gué franchissable de la rivière turbulente, taxant impitoyablement les voyageurs.",
+      "en": "An ancient empire initially erected this stronghold to control the only fordable crossing of the turbulent river, ruthlessly taxing travelers."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "orig_av_033",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "all"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La colonie a été établie du jour au lendemain suite à la découverte de critaux magiques par une poignée de pionniers.",
+      "en": "The colony was established overnight following the discovery of magical crystals by a handful of pioneers."
+    },
+    "output_tags": [
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Littoral"
+    ],
+    "description": {
+      "fr": "À l'origine, ce n'était qu'un modeste campement de plongeurs fondé sur un atoll pour exploiter un gisement exceptionnel de perles rares.",
+      "en": "Originally, it was just a modest divers' camp founded on an atoll to exploit an exceptional deposit of rare pearls."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Fuyant de redoutables prédateurs terrestres, des tribus nomades ont jadis tressé des îles flottantes géantes en roseaux pour trouver refuge au milieu de ce grand lac.",
+      "en": "Fleeing fearsome land predators, nomadic tribes once wove giant floating reed islands to find refuge in the middle of this large lake."
+    },
+    "output_tags": [
+      "tribal",
+      "defense-naturelle",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "Historiquement, une grande cité s'est affaissée dans les flots suite à un cataclysme. Des survivants acharnés ont rebâti un village de fortune directement sur les toits inondés.",
+      "en": "Historically, a great city sank into the waves following a cataclysm. Relentless survivors rebuilt a makeshift village directly on the flooded roofs."
+    },
+    "output_tags": [
+      "survie",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Sub-aquatique"
+    ],
+    "description": {
+      "fr": "Des mages exilés ont jadis façonné un dôme d'air magique perpétuel sous la surface pour s'y cacher, fondant une colonie invisible aux yeux du monde.",
+      "en": "Exiled mages once fashioned a perpetual magical air dome beneath the surface to hide, founding a colony invisible to the world."
+    },
+    "output_tags": [
+      "magie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Ce bastion naval a été érigé de toutes pièces par la marine pour contrôler le traffic maritime et percevoir des taxes sur chaque navire de passage.",
+      "en": "This naval stronghold was built from scratch by the navy to control maritime traffic and collect taxes on every passing ship."
+    },
+    "output_tags": [
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "trait_tags": [],
+    "description": {
+      "fr": "La bourgade fut fondée par une flotte de chasseurs ayant réussi à terrasser un léviathan. Ils ont amarré leurs navires et bâti leurs maisons à l'intérieur de sa cage thoracique colossale.",
+      "en": "The town was founded by a fleet of hunters who managed to slay a leviathan. They moored their ships and built their homes inside its colossal ribcage."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "description": {
+      "fr": "À l'origine, des contrebandiers ont utilisé ces eaux saumâtres et ces labyrinthes de mangroves pour dissimuler leur flotte, finissant par y fonder une véritable ville hors-la-loi.",
+      "en": "Originally, smugglers used these brackish waters and mangrove labyrinths to hide their fleet, eventually founding a true outlaw city."
+    },
+    "output_tags": [
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "Une expédition a découvert ici un récif formé d'immenses cristaux crépitants d'énergie arcanique. Ils ont immédiatement bâti une plateforme de forage pour les extraire.",
+      "en": "An expedition discovered a reef here formed of immense crystals crackling with arcane energy. They immediately built a drilling platform to extract them."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "Suite à une méga-tempête dévastatrice, plusieurs clans nomades des mers ont attaché leurs navires endommagés les uns aux autres, créant une île artificielle permanente.",
+      "en": "Following a devastating mega-storm, several nomadic sea clans lashed their damaged ships together, creating a permanent artificial island."
+    },
+    "output_tags": [
+      "tribal",
+      "survie",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des réfugiés fuyant les guerres de la surface ont bravé les profondeurs pour fonder leur nouvelle vie sur les rivages noirs de cet immense océan souterrain.",
+      "en": "Refugees fleeing surface wars braved the depths to found their new life on the black shores of this immense underground ocean."
+    },
+    "output_tags": [
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "Une secte d'exilés a volontairement fondé ce sanctuaire marin au cœur d'eaux maudites et toxiques, s'immunisant au poison pour s'assurer que personne ne vienne les chercher.",
+      "en": "A cult of exiles intentionally founded this marine sanctuary in the heart of cursed and toxic waters, immunizing themselves to the poison to ensure no one would come looking for them."
+    },
+    "output_tags": [
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Ce lieu a vu le jour lorsque des éleveurs ont enclos une gigantesque baie naturelle pour y faire se reproduire des montures aquatiques.",
+      "en": "This place came into being when breeders enclosed a gigantic natural bay to breed aquatic mounts."
+    },
+    "output_tags": [
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Forêt"
+    ],
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "description": {
+      "fr": "La communauté s'est enracinée autour d'un arbre colossal poussant en pleine mer, dont les racines filtrent magiquement l'eau salée pour offrir une source d'eau douce inépuisable.",
+      "en": "The community took root around a colossal tree growing in the open sea, whose roots magically filter saltwater to provide an inexhaustible freshwater source."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "mystique",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Historiquement, ce fut un rassemblement hivernal de pêcheurs sur glace qui ont fini par ancrer définitivement leurs huttes flottantes sur les rives gelées du permafrost.",
+      "en": "Historically, it was a winter gathering of ice fishers who eventually permanently anchored their floating huts to the frozen permafrost shores."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "La cité a commencé comme un marché neutre flottant où les mystérieuses races des abysses remontaient pour commercer pacifiquement avec les marins de la surface.",
+      "en": "The city began as a neutral floating market where mysterious abyssal races came up to trade peacefully with surface sailors."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "L'agglomération est née suite de la formation d'un barrage détournant la rivière et inondant les terres cultivables. Les paysans se sont adaptés en cultivant des algues nutritives dans ce nouveau lac artificiel.",
+      "en": "The settlement arose following the construction of a dam that diverted the river and flooded the farmland. The farmers adapted by cultivating nutritious algae in this new artificial lake."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-eau",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Des moines navigateurs ont érigé ce monastère isolé sur un récif lointain pour veiller sur une relique engloutie et vénérer la puissance de l'océan.",
+      "en": "Navigating monks erected this isolated monastery on a distant reef to watch over a sunken relic and worship the power of the ocean."
+    },
+    "output_tags": [
+      "pelerinage",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique",
+      "Marais",
+      "Montagne",
+      "Collines"
+    ],
+    "trait_tags": [
+      "repaire"
+    ],
+    "description": {
+      "fr": "Une milice audacieuse a jadis purgé cet immense réseau de grottes inondées de l'hydre qui l'occupait, transformant l'antre du monstre en une base lourdement fortifiée.",
+      "en": "A daring militia once purged this immense network of flooded caves of the hydra that occupied it, transforming the monster's lair into a heavily fortified base."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_aquatique_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Aquatique"
+    ],
+    "description": {
+      "fr": "L'île artificielle a été construite autour d'une cheminée hydrothermale sous-marine. La chaleur dégagée permet aux colons de forger des métaux et de survivre au milieu des flots froids.",
+      "en": "The artificial island was built around an underwater hydrothermal vent. The heat released allows the colonists to forge metals and survive amidst the cold waves."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "description": {
+      "fr": "Historiquement, la colonie a été fondée autour d'une rare source géothermique. Les premiers pionniers s'y sont blottis pour ne pas mourir gelés.",
+      "en": "Historically, the settlement was founded around a rare geothermal spring. The early pioneers huddled there to keep from freezing to death."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Ce campement de bûcherons a été établi jadis par un ancien empire pour exploiter un bois pétrifié par le gel, d'une dureté exceptionnelle.",
+      "en": "This lumber camp was established long ago by an ancient empire to exploit wood petrified by frost, of exceptional hardness."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "À l'origine, une forteresse austère fut taillée à même la glace d'un sommet inaccessible pour surveiller les menaces.",
+      "en": "Originally, an austere fortress was carved out of the ice of an inaccessible peak to watch for threats."
+    },
+    "output_tags": [
+      "isole",
+      "defense-naturelle",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "description": {
+      "fr": "La ville est née lorsque des survivants d'un terrible blizzard ont trouvé un abri inespéré à l'intérieur de l'immense cage thoracique d'un titan mort, prisonnier des glaces.",
+      "en": "The city was born when survivors of a terrible blizzard found an unexpected shelter inside the immense ribcage of a dead titan, trapped in the ice."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Il y a des siècles, une tribu nomade s'est définitivement sédentarisée ici afin d'élever de grandes bêtes à fourrure, seules capables de braver le froid polaire.",
+      "en": "Centuries ago, a nomadic tribe settled here permanently to breed big furred beasts, the only ones capable of braving the polar cold."
+    },
+    "output_tags": [
+      "tribal",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "description": {
+      "fr": "Ce rassemblement de tentes fut initialement dressé par des exilés pour qui l'enfer blanc offrait une cachette bien plus sûre que des barreaux de fer.",
+      "en": "This gathering of tents was initially pitched by exiles for whom the white hell offered a much safer hiding place than iron bars."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "Un ermite fonda jadis ce sanctuaire reculé sur la paroi d'une crevasse, y attirant peu à peu des fidèles venus chercher l'illumination.",
+      "en": "A hermit once founded this remote sanctuary on the wall of a crevasse, gradually attracting faithful seeking enlightenment."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "La communauté a vu le jour sur cet immense lac lorsque des chasseurs téméraires ont compris comment percer la glace pour harponner les monstres des profondeurs.",
+      "en": "The community was born on this immense lake when daring hunters figured out how to pierce the ice to harpoon the monsters of the deep."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "Historiquement, la colonie a été bâtie pour dissimuler et protéger un filon de métaux rares s'enfonçant profondément dans un réseau de grottes cristallines.",
+      "en": "Historically, the colony was built to hide and protect a vein of rare metals plunging deep into a network of crystalline caves."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Ce lieu d'étude fut créé par des mages botanistes ayant réussi à ériger des serres chauffées magiquement pour y cultiver une flore rare s'épanouissant sous les aurores boréales.",
+      "en": "This place of study was created by botanical mages who managed to erect magically heated greenhouses to cultivate rare flora blooming under the auroras."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "description": {
+      "fr": "Ce poste avancé s'est imposé de lui-même à la croisée des rares pistes de la toundra, devenant l'unique espoir de ravitaillement pour les caravanes transies.",
+      "en": "This outpost established itself at the crossroads of the few tundra trails, becoming the only hope of resupply for freezing caravans."
+    },
+    "output_tags": [
+      "carrefour",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "description": {
+      "fr": "À l'origine, des érudits ont gravi cette montagne balayée par les tempêtes pour y fonder un observatoire, fascinés par l'énergie arcanique qui y crépite sans fin.",
+      "en": "Originally, scholars climbed this storm-swept mountain to found an observatory, fascinated by the arcane energy endlessly crackling there."
+    },
+    "output_tags": [
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "trait_tags": [
+      "pont"
+    ],
+    "description": {
+      "fr": "L'empire fonda cette colonie lourdement armée dans un seul but : sécuriser et taxer l'unique pont titanesque traversant un gouffre vertigineux de la région.",
+      "en": "The empire founded this heavily armed colony for a single purpose: to secure and tax the only titanic bridge crossing a dizzying chasm in the region."
+    },
+    "output_tags": [
+      "avant-poste",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Ce qui n'était jadis qu'un campement d'hiver temporaire pour les clans fuyant le pire du blizzard est devenu une bourgade permanente régie par d'anciennes coutumes.",
+      "en": "What was once just a temporary winter camp for clans fleeing the worst of the blizzard has become a permanent town governed by ancient customs."
+    },
+    "output_tags": [
+      "tribal",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "Des fanatiques du froid éternel ont sculpté ce monastère à même un glacier, apprenant à endurer le gel en consommant le lichen poussant sur leurs statues de glace.",
+      "en": "Fanatics of eternal cold sculpted this monastery directly into a glacier, learning to endure the frost by consuming lichen growing on their ice statues."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La ville a surgi du jour au lendemain suite à une frénétique ruée vers les cristaux, après que des pionniers eurent découvert des gemmes emprisonnées dans la glace pure.",
+      "en": "The city sprang up overnight following a frantic crystal rush, after pioneers discovered gems trapped in the pure ice."
+    },
+    "output_tags": [
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Pour échapper aux représailles de leurs ancien royaume, une confrérie de voleurs fonda ce repaire caché au plus profond des bois enneigés, s'y entraînant à la survie extrême.",
+      "en": "To escape reprisals from their former kingdom, a brotherhood of thieves founded this hidden hideout deep in the snowy woods, training themselves in extreme survival."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Historiquement, la bourgade s'est construite le long de sources thermales souterraines, devenant très vite une escale salvatrice pour dégeler les voyageurs engourdis.",
+      "en": "Historically, the town was built along underground thermal springs, quickly becoming a lifesaving stopover to thaw numb travelers."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_arctique_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Arctique"
+    ],
+    "description": {
+      "fr": "Pour échapper aux impitoyables prédateurs des neiges, les premiers mineurs ont dû creuser leurs logements à la verticale dans la glace vive, fondant une cité puits.",
+      "en": "To escape the ruthless snow predators, the first miners had to dig their dwellings vertically into the solid ice, founding a pit city."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "survie",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_collines_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Historiquement, cette bourgade difficile d'accès a été fondée par des bandits de grand chemin qui utilisaient la vallée encaissée pour échapper aux patrouilles.",
+      "en": "Historically, this hard-to-reach town was founded by highwaymen who used the steep valley to escape patrols."
+    },
+    "output_tags": [
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_collines_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Plaines"
+    ],
+    "description": {
+      "fr": "À l'origine, des éleveurs nomades ont sculpté ces pentes douces en immenses terrasses agricoles, s'y installant définitivement pour faire paître leurs troupeaux.",
+      "en": "Originally, nomadic herders carved these gentle slopes into immense agricultural terraces, settling there permanently to graze their herds."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_collines_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "description": {
+      "fr": "La cité s'est développée après qu'une expédition archéologique a mis au jour des tumulus funéraires millénaires émettant une puissante résonance arcanique.",
+      "en": "The city developed after an archaeological expedition unearthed millennial burial mounds emitting a powerful arcane resonance."
+    },
+    "output_tags": [
+      "mystique",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_collines_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "description": {
+      "fr": "Ce lieu a vu le jour lorsqu'un seigneur de guerre fit ériger un impressionnant fortin au sommet de cette colline chauve pour surveiller les mouvements dans la vallée.",
+      "en": "This place was born when a warlord erected an impressive small fort atop this bald hill to monitor movements in the valley."
+    },
+    "output_tags": [
+      "avant-poste",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_collines_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Marais"
+    ],
+    "description": {
+      "fr": "La colonie a été bâtie par des herboristes désespérés cherchant à récolter les rares plantes médicinales poussant au milieu des vapeurs toxiques de cette zone.",
+      "en": "The colony was built by desperate herbalists seeking to harvest the rare medicinal plants growing amid the toxic vapors of these mounds."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_collines_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "description": {
+      "fr": "Le village s'est formé autour des premiers moulins à vent construits sur ces crêtes, devenant très vite le point de rendez-vous de tous les fermiers de la région.",
+      "en": "The village formed around the first windmills built on these ridges, quickly becoming the meeting point for all the farmers in the region."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_collines_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Montagne",
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Pour survivre à l'hiver mordant, les premiers colons ont fondé leur campement autour d'un réseau de fumerolles géothermiques perçant la roche.",
+      "en": "To survive the biting winter, the first settlers founded their camp around a network of geothermal fumaroles piercing the rock."
+    },
+    "output_tags": [
+      "ressource-chaleur"
+    ]
+  },
+  {
+    "id": "ori_av_collines_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "description": {
+      "fr": "L'endroit a été colonisé par des fidèles venus vénérer un titanesque cercle de pierres levées, érigé par des puissances oubliées au sommet de la plus haute colline.",
+      "en": "The place was colonized by faithful who came to worship a titanic circle of standing stones, erected by forgotten powers atop the highest hill."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique",
+      "vestige-majeur"
+    ]
+  },
+  {
+    "id": "ori_av_collines_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "trait_tags": [
+      "cratere",
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La ville est née d'une véritable ruée vers l'or magique, lorsqu'un ancien cratère météoritique regorgeant de cristaux instables a été découvert entre deux vallons.",
+      "en": "The city was born from a true magical gold rush, when an ancient meteor crater brimming with unstable crystals was discovered between two dales."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_collines_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Plaines"
+    ],
+    "description": {
+      "fr": "Fuyant les grands prédateurs de la plaine, les fondateurs ont survécu en creusant un vaste réseau de terriers aménagés directement sous la surface de cette zone vallonée.",
+      "en": "Fleeing the large predators of the plains, the founders survived by digging a vast network of burrows built directly beneath the surface of this hilly area."
+    },
+    "output_tags": [
+      "survie",
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_collines_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Désert"
+    ],
+    "description": {
+      "fr": "Des clans nomades ont fini par se sédentariser définitivement ici lorsqu'ils ont découvert une source d'eau jaillissant miraculeusement de cette zone rocailleuse.",
+      "en": "Nomadic clans eventually settled permanently here when they discovered a spring of water miraculously gushing from this rocky area."
+    },
+    "output_tags": [
+      "tribal",
+      "ressource-eau",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_collines_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "À l'origine, cette agglomération n'était qu'un gigantesque camp de tailleurs de pierre extrayant les blocs colossaux destinés aux grandes capitales du monde.",
+      "en": "Originally, this settlement was just a gigantic camp of stonemasons extracting the colossal blocks destined for the great capitals of the world."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_collines_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Une tribu primitive a jadis élu domicile à l'intérieur du crâne colossal d'un ancien dragon échoué sur cette colline, y fondant une culture imprégnée de superstitions.",
+      "en": "A primitive tribe once made its home inside the colossal skull of an ancient dragon stranded on this hill, founding a culture steeped in superstitions."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "mystique",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_collines_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "Ce havre a été fondé sur un promontoire venteux par des mages exilés qui cherchaient un lieu isolé pour étudier les intenses lignes de force terrestres.",
+      "en": "This haven was founded on a windy promontory by exiled mages seeking an isolated place to study the intense earthly ley lines."
+    },
+    "output_tags": [
+      "isole",
+      "magie",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_collines_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "description": {
+      "fr": "Historiquement, l'endroit abritait une prison de haute sécurité. Les détenus se sont révoltés, l'ont conquise, et ont transformé l'édifice en ville fortifiée indépendante.",
+      "en": "Historically, the place housed a high-security prison. The inmates rebelled, conquered it, and turned the building into an independent fortified town."
+    },
+    "output_tags": [
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_collines_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "La bourgade a été établie par des sylviculteurs désireux d'exploiter secrètement des bosquets cachés produisant un bois d'œuvre magique réputé imputrescible.",
+      "en": "The town was established by foresters eager to secretly exploit hidden groves producing a magical timber renowned for being rot-proof."
+    },
+    "output_tags": [
+      "ressource-bois",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_collines_21",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Collines"
+    ],
+    "description": {
+      "fr": "Autrefois simple point de ralliement nomade lors des équinoxes grandioses, ce vaste plateau rocheux a fini par devenir un véritable sanctuaire sédentaire pour les clans.",
+      "en": "Once a simple nomadic rallying point during grandiose equinoxes, this vast rocky plateau eventually became a true sedentary sanctuary for the clans."
+    },
+    "output_tags": [
+      "tribal",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_desert_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "La ville est née de la découverte d'une nappe phréatique miraculeuse.",
+      "en": "The city was born from the discovery of a miraculous aquifer."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_desert_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "La bourgade a été construite dans l'ombre gigantesque d'une statue brisée, dont le visage mystérieux fixe l'horizon aride depuis l'Aube des Temps.",
+      "en": "The town was built in the gigantic shadow of a broken statue, whose mysterious face has stared at the arid horizon since the Dawn of Time."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "mystique",
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_desert_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Historiquement, ce havre a été fondé autour d'une oasis miraculeuse dont les eaux ne s'assèchent jamais, devenant très vite une halte vitale pour les caravaniers.",
+      "en": "Historically, this haven was founded around a miraculous oasis whose waters never run dry, quickly becoming a vital stop for caravaneers."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_desert_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "temple"
+    ],
+    "description": {
+      "fr": "La colonie a été bâtie sur les ruines à moitié ensablées d'un temple antique, où des pèlerins se sont d'abord installés pour prier le dieu Soleil.",
+      "en": "The colony was built upon the half-buried ruins of an ancient temple, where pilgrims first settled to pray to the Sun god."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_desert_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "À l'origine, des exilés fuyant la justice impériale ont trouvé refuge dans ce canyon labyrinthique, s'y établissant définitivement pour échapper à leurs poursuivants.",
+      "en": "Originally, exiles fleeing imperial justice found refuge in this labyrinthine canyon, settling there permanently to escape their pursuers."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_desert_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "critaux",
+      "all"
+    ],
+    "description": {
+      "fr": "La ville a été fondée par une expédition minière après la découverte fortuite d'un immense gisement de cristaux magiques enfoui sous les dunes de sable.",
+      "en": "The city was founded by a mining expedition following the accidental discovery of a massive deposit of magical crystals buried under the sand dunes."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_desert_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Des tribus nomades du désert se sont sédentarisées ici pour y élever de grands reptiles de bât, seuls capables de traverser les sables brûlants.",
+      "en": "Nomadic desert tribes settled here to raise large pack reptiles, the only animals capable of crossing the burning sands."
+    },
+    "output_tags": [
+      "tribal",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_desert_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Ce bastion fut érigé par un ancien seigneur de guerre pour sécuriser le seul puits artésien de la région, lui permettant de contrôler impitoyablement les routes commerciales.",
+      "en": "This bastion was erected by an ancient warlord to secure the region's only artesian well, allowing him to ruthlessly control the trade routes."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_desert_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "carcasse",
+      "all"
+    ],
+    "description": {
+      "fr": "C'est à l'intérieur de la carcasse colossale d'un ver des sables que le village originel s'est développé, offrant aux pionniers une ombre et une protection inespérées.",
+      "en": "It was inside the colossal carcass of a sandworm that the original village developed, offering the pioneers unexpected shade and protection."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_desert_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "La cité est née là où une chaleur cataclysmique a jadis vitrifié le sable sur des kilomètres, créant une immense surface de verre parfaite pour étudier les flux arcaniques.",
+      "en": "The city was born where a cataclysmic heat once vitrified the sand for miles, creating a massive glass surface perfect for studying arcane flows."
+    },
+    "output_tags": [
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_desert_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Pour survivre, les premiers colons ont été contraints de creuser leurs habitations à même les parois rocheuses d'une immense doline, échappant ainsi aux tempêtes mortelles.",
+      "en": "To survive, the first settlers were forced to carve their homes directly into the rocky walls of a massive sinkhole, thus escaping deadly storms."
+    },
+    "output_tags": [
+      "survie",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_desert_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Cet avant-poste a été créé par des alchimistes obsédés par une rare succulente ne poussant que sur ces crêtes arides, dont la sève permet de concocter de puissants remèdes.",
+      "en": "This outpost was created by alchemists obsessed with a rare succulent growing only on these arid ridges, whose sap is used to concoct powerful remedies."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_desert_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "lac",
+      "riviere"
+    ],
+    "description": {
+      "fr": "Ce lieu a vu le jour lorsqu'une communauté a réussi à terrasser un plateau rocailleux aride pour y cultiver des dattiers grâce à un système d'irrigation ingénieux, puisant l'eau des environs.",
+      "en": "This place came into being when a community managed to level an arid rocky plateau to cultivate date palms using an ingenious irrigation system, drawing water from the surrounding area."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_desert_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Les fondations de la ville reposent sur un ancien camp de travaux forcés, où des prisonniers ont passé des décennies à extraire un précieux minerai de fer sous un soleil de plomb.",
+      "en": "The city's foundations rest on a former forced labor camp, where prisoners spent decades extracting precious iron ore under a blazing sun."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_desert_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Historiquement, c'était un ermitage reculé où des ascètes venaient endurer le jeûne et la chaleur pour obtenir des visions mystiques, finissant par y attirer des fidèles.",
+      "en": "Historically, it was a remote hermitage where ascetics came to endure fasting and heat to obtain mystical visions, eventually attracting followers."
+    },
+    "output_tags": [
+      "mystique",
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_desert_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "terres_corrompues",
+      "all"
+    ],
+    "description": {
+      "fr": "La bourgade s'est implantée il y a bien longtemps autour d'une forêt pétrifiée engloutie par les sables, dont le bois fossilisé et indestructible est toujours exploité.",
+      "en": "The town was established long ago around a petrified forest engulfed by the sands, whose fossilized and indestructible wood is still harvested."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_desert_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Ce havre a été fondé par un puissant archimage qui est parvenu à stabiliser un mirage géant, créant un dôme d'air frais et illusoire en plein milieu de la fournaise.",
+      "en": "This haven was founded by a powerful archmage who managed to stabilize a giant mirage, creating a dome of cool, illusory air right in the middle of the furnace."
+    },
+    "output_tags": [
+      "magie",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_desert_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "À l'origine, des contrebandiers ont découvert une petite rivière souterraine au fond de cette faille aride, décidant d'y établir un marché caché de tous.",
+      "en": "Originally, smugglers discovered a small underground river at the bottom of this arid rift, deciding to establish a market hidden from all."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_desert_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Des chamans nomades ont jadis uni leurs clans pour ériger leurs tentes sous les ossements blanchis d'un béhémoth du désert, déclarant ce sol éternellement neutre et sacré.",
+      "en": "Nomadic shamans once united their clans to pitch their tents under the bleached bones of a desert behemoth, declaring this ground eternally neutral and sacred."
+    },
+    "output_tags": [
+      "tribal",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_desert_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La ville est sortie du sable en quelques mois seulement à la suite d'une frénétique ruée vers l'or, lorsque de massives pépites ont été trouvées dans le lit du fleuve.",
+      "en": "The city sprang up from the sand in just a few months following a frenzied gold rush, when massive nuggets were found in the riverbed."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_desert_21",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "description": {
+      "fr": "Ce campement fortifié a été commandité et construit par un empire paranoïaque pour servir de première ligne de défense contre les créatures cauchemardesques du désert profond.",
+      "en": "This fortified camp was commissioned and built by a paranoid empire to serve as the first line of defense against the nightmarish creatures of the deep desert."
+    },
+    "output_tags": [
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_desert_22",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "description": {
+      "fr": "Historiquement, des voyageurs affamés s'y sont terrés pour survivre, apprenant à récolter et cuire d'énormes insectes des sables en utilisant la chaleur naturelle des roches noires.",
+      "en": "Historically, starving travelers hid here to survive, learning to harvest and cook enormous sand insects using the natural heat of the black rocks."
+    },
+    "output_tags": [
+      "survie",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_desert_23",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, des hors-la-loi en fuite découvrirent ce fleuve encaissé au fond d'un canyon aride, y fondant un repaire imprenable où l'eau ne manquait jamais.",
+      "en": "Originally, fleeing outlaws discovered this river entrenched at the bottom of an arid canyon, founding an impregnable lair where water never failed."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "refuge-criminel",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_desert_24",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "lac",
+      "cratere",
+      "faille"
+    ],
+    "description": {
+      "fr": "La cité s'est érigée autour d'un immense lac souterrain dont le plafond de roche s'est effondré, créant un cratère fertile devenu un lieu de pèlerinage pour les peuples des sables.",
+      "en": "The city was built around a massive underground lake whose rock ceiling collapsed, creating a fertile crater that became a pilgrimage site for the sand peoples."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "pelerinage",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_desert_25",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Désert"
+    ],
+    "trait_tags": [
+      "riviere",
+      "pont"
+    ],
+    "description": {
+      "fr": "Un ancien empire a jadis bâti un pont fortifié pour contrôler le seul gué peu profond du fleuve, forçant toutes les caravanes et les éleveurs nomades à s'y arrêter.",
+      "en": "An ancient empire once built a fortified bridge to control the only shallow ford of the river, forcing all caravans and nomadic herders to stop there."
+    },
+    "output_tags": [
+      "carrefour",
+      "avant-poste",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_foret_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "description": {
+      "fr": "À l'origine, un puissant syndicat marchand a défriché cette zone pour y établir un camp d'abattage, exploitant massivement les chênes centenaires des environs.",
+      "en": "Originally, a powerful merchant syndicate cleared this area to establish a logging camp, massively exploiting the centuries-old oaks in the vicinity."
+    },
+    "output_tags": [
+      "ressource-bois",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_foret_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "description": {
+      "fr": "La cité fut fondée par d'anciens peuples sylvestres qui tissèrent des ponts de lianes et creusèrent leurs demeures à même le tronc d'un arbre colossal.",
+      "en": "The city was founded by ancient sylvan peoples who wove vine bridges and carved their homes directly into the trunk of a colossal tree."
+    },
+    "output_tags": [
+      "tribal",
+      "defense-naturelle",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_foret_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Historiquement, des pionniers pacifiques découvrirent cette immense trouée naturelle dans la canopée, décidant de s'y installer pour cultiver cette terre vierge et fertile.",
+      "en": "Historically, peaceful pioneers discovered this immense natural gap in the canopy, deciding to settle there to cultivate this virgin and fertile land."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_foret_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "route_pavee",
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "À l'origine, ce lieu était un relais fortifié a été bâti par les armées locales pour sécuriser cette route qui traverse ces bois sombres, offrant un refuge vital aux caravanes.",
+      "en": "Originally, this place was a fortified relay station built by local armies to secure this road that crosses these dark woods, offering vital refuge to caravans."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_foret_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Fuyant la persécution, un conclave de druides fonda ce refuge secret pour y étudier les intenses courants arcaniques qui font palpiter la sève des arbres alentour.",
+      "en": "Fleeing persecution, a conclave of druids founded this secret refuge to study the intense arcane currents that make the sap of the surrounding trees pulsate."
+    },
+    "output_tags": [
+      "magie",
+      "mystique",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_foret_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "ruines_antiques",
+      "temple"
+    ],
+    "description": {
+      "fr": "La bourgade s'est développée lorsque des explorateurs décidèrent de défricher et de réhabiliter les superbes vestiges d'une civilisation elfique oubliée.",
+      "en": "The town developed when explorers decided to clear and rehabilitate the stunning remains of a forgotten elven civilization."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_foret_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee",
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Au départ, ce n'était qu'un repaire de braconniers et de bandits de grand chemin à proximité d'une route fréquentée qui utilisaient l'épaisseur des fourrés pour échapper à la potence.",
+      "en": "Initially, it was just a hideout for poachers and highwaymen near a busy road who used the thick undergrowth to escape the gallows."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "ressource-chasse",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_foret_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Le lieu a vu le jour lorsqu'une guilde d'apothicaires décida de s'implanter au plus près d'une sous-espèce de fougères médicinales ne poussant nulle part ailleurs.",
+      "en": "The place was born when a guild of apothecaries decided to settle as close as possible to a subspecies of medicinal ferns growing nowhere else."
+    },
+    "output_tags": [
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "ori_av_foret_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "La colonie fut fondée sur les berges d'un lac forestier cristallin, devenant très vite florissante grâce à l'abondance de truites argentées et d'écrevisses.",
+      "en": "The colony was founded on the shores of a crystalline forest lake, quickly flourishing thanks to the abundance of silver trout and crayfish."
+    },
+    "output_tags": [
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_foret_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Historiquement, une lignée de dresseurs a établi ses chenils ici pour y capturer, élever et dompter les redoutables sangliers géants des sous-bois.",
+      "en": "Historically, a lineage of tamers established their kennels here to capture, breed, and tame the fearsome giant boars of the undergrowth."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_foret_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Le village s'est construit autour d'un grand moulin à aubes, utilisant la rivière pour scier les rondins et moudre le grain des rares fermes sylvestres.",
+      "en": "The village was built around a large watermill, using the river to saw logs and mill the grain of the few sylvan farms."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_foret_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Une modeste chapelle dédiée à la déesse de la chasse a fini par attirer tant de fidèles que le campement temporaire est devenu une véritable communauté sédentaire.",
+      "en": "A modest chapel dedicated to the goddess of the hunt eventually attracted so many faithful that the temporary camp became a true sedentary community."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique",
+      "ressource-chasse",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_foret_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "grotte"
+    ],
+    "description": {
+      "fr": "Pour échapper aux meutes de prédateurs nocturnes, les pionniers durent se retrancher et fortifier l'entrée de cet immense réseau de grottes masqué par la végétation.",
+      "en": "To escape packs of nocturnal predators, the pioneers had to entrench themselves and fortify the entrance of this immense cave network hidden by vegetation."
+    },
+    "output_tags": [
+      "survie",
+      "ressource-chasse",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_foret_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La découverte fortuite d'arbres dont la sève s'était cristallisée en de précieuses gemmes ambrées a déclenché l'émergence chaotique de cette bourgade minière.",
+      "en": "The accidental discovery of trees whose sap had crystallized into precious amber gems triggered the chaotic emergence of this mining town."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_foret_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "À l'origine, des purificateurs fanatiques ont établi ce bastion aux limites d'une zone maudite de la forêt, déterminés à empêcher la corruption de s'étendre davantage.",
+      "en": "Originally, fanatical purifiers established this bastion at the edge of a cursed area of the forest, determined to prevent the corruption from spreading further."
+    },
+    "output_tags": [
+      "survie",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_foret_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "description": {
+      "fr": "C'est dans l'urgence que des paysans chassés de leurs terres ont fondé ce hameau, défrichant avec acharnement les sous-bois à la hache pour y planter quelques tubercules.",
+      "en": "It was in a state of emergency that peasants driven from their lands founded this hamlet, fiercely clearing the undergrowth with axes to plant a few tubers."
+    },
+    "output_tags": [
+      "survie",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_foret_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "repaire"
+    ],
+    "description": {
+      "fr": "Une compagnie de mercenaires parvint jadis à massacrer l'essaim de créatures insectoïdes qui terrorisait la région, transformant ensuite leur ruche gigantesque en base militaire.",
+      "en": "A mercenary company once managed to slaughter the swarm of insectoid creatures terrorizing the region, then transforming their gigantic hive into a military base."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_foret_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "La ville a poussé organiquement au croisement de plusieurs pistes de gibier, devenant le point de rendez-vous incontournable de tous les trappeurs du comté.",
+      "en": "The town grew organically at the intersection of several game trails, becoming the essential meeting point for all the trappers in the county."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_foret_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Historiquement, d'audacieux mineurs remarquèrent que les racines des arbres centenaires ramenaient des pépites de cuivre à la surface, décidant de creuser directement sous les souches.",
+      "en": "Historically, daring miners noticed that the roots of centuries-old trees were bringing copper nuggets to the surface, deciding to dig directly under the stumps."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_foret_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "cascade"
+    ],
+    "description": {
+      "fr": "Des exilés ont trouvé une vallée cachée derrière une puissante chute d'eau forestière. La brume perpétuelle qui s'en dégage dissimule parfaitement leurs habitations suspendues.",
+      "en": "Exiles found a hidden valley behind a powerful forest waterfall. The perpetual mist rising from it perfectly conceals their suspended dwellings."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_foret_21",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, cette colonie était une simple scierie créée par une famille de bûcherons qui utilisaient le courant de la rivière pour acheminer les troncs vers la ville la plus proche.",
+      "en": "To escape the packs of nocturnal predators, the pioneers had to entrench themselves and fortify the entrance to this immense network of caves hidden by vegetation."
+    },
+    "output_tags": [
+      "ressource-bois",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_foret_22",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, ce village s'est formé autour d'un ancien gué où les pêcheurs locaux avaient pour habitude de se rassembler pour piéger les esturgeons remontant le courant.",
+      "en": "Historically, this village formed around an ancient ford where local fishermen used to gather to trap sturgeon swimming upstream."
+    },
+    "output_tags": [
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_foret_23",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La cité fut fondée par un ordre monastique qui croyait que les eaux de cette rivière possédaient des vertus purificatrices, attirant très vite des milliers de fidèles.",
+      "en": "The city was founded by a monastic order who believed the waters of this river possessed purifying virtues, quickly attracting thousands of followers."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_foret_24",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, ce fut un bastion militaire érigé sur un méandre de la rivière pour surveiller les incursions tribales et protéger le ravitaillement par voie d'eau.",
+      "en": "Originally, it was a military bastion erected on a river bend to monitor tribal incursions and protect water-borne supplies."
+    },
+    "output_tags": [
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_foret_25",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La bourgade est née d'une petite communauté de prospecteurs qui avaient découvert des paillettes de cuivre dans le lit de la rivière, s'y établissant pour survivre.",
+      "en": "The town was born from a small community of prospectors who had discovered copper flakes in the riverbed, settling there to survive."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_foret_26",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Un relais marchand fut jadis construit sur ordre de l'empereur pour servir de poste de douane et de halte sécurisée le long de la grande route pavée.",
+      "en": "A merchant relay was once built by order of the emperor to serve as a customs post and a secure stop along the great paved road."
+    },
+    "output_tags": [
+      "carrefour",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_foret_27",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Historiquement, ce village de chasseurs s'est développé organiquement au croisement de plusieurs sentiers de terre battue empruntés par les habitants du coin.",
+      "en": "Historically, this hunting village developed organically at the crossroads of several dirt paths used by local inhabitants."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-chasse",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_foret_28",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee",
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "L'endroit fut fondé par des clercs qui érigèrent un sanctuaire sur les restes d'une ancienne borne impériale, à l'intersection de deux routes commerciale majeures.",
+      "en": "The place was founded by clerics who erected a sanctuary on the remains of an ancient imperial milestone, at the intersection of two major trade routes."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_foret_29",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "À l'origine, des réfugiés fuyant un conflit lointain suivirent ce chemin de terre jusqu'à son extrémité pour fonder un village caché au plus profond des bois.",
+      "en": "Originally, refugees fleeing a distant conflict followed this dirt path to its end to found a hidden village deep in the woods."
+    },
+    "output_tags": [
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_foret_30",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "La ville s'est développée suite à l'effondrement d'une portion de la route principale, forçant les caravanes à s'arrêter et créant ainsi une zone de commerce florissante.",
+      "en": "The town developed following the collapse of a section of the main road, forcing caravans to stop and thus creating a thriving trading area."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_foret_31",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Ce poste fut créé jadis par la noblesse locale pour surveiller un large chemin de terre utilisé pour l'entraînement et l'élevage des montures de guerre.",
+      "en": "This post was once created by local nobility to monitor a wide dirt path used for the training and breeding of war mounts."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_foret_32",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "À l'origine, des colons investirent des ruines impériales qui bordaient la route principale, utilisant les fondations antiques pour bâtir une enceinte protectrice.",
+      "en": "Originally, settlers invested in imperial ruins that lined the main road, using the ancient foundations to build a protective enclosure."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_foret_33",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre",
+      "all"
+    ],
+    "description": {
+      "fr": "Historiquement, ce fut un simple camp d'herboristes établi sur un sentier riche en flore rare, dont la proximité avec une source magique attirait les mages.",
+      "en": "Historically, it was a simple herbalists' camp established on a path rich in rare flora, whose proximity to a magical spring attracted mages."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_foret_34",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Ce bourg fut fondé par un seigneur opportuniste qui fit construire une barrière et un péage sur cette route commerciale, taxant impitoyablement les voyageurs de passage.",
+      "en": "This town was founded by an opportunistic lord who built a barrier and a toll on this trade route, ruthlessly taxing passing travelers."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_foret_35",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre",
+      "all"
+    ],
+    "description": {
+      "fr": "La bourgade est née du regroupement d'exilés et de parias qui se retrouvaient secrètement le long d'un sentier abandonné, à l'abri des regards indiscrets.",
+      "en": "The town was born from the gathering of exiles and outcasts who met secretly along an abandoned path, away from prying eyes."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "À l'origine, l'ancien empire a fondé ce camp de bûcherons au cœur de l'enfer vert pour abattre des arbres colossaux dont le bois précieux résiste à toutes les pourritures.",
+      "en": "Originally, the ancien empire founded this logging camp in the heart of the green hell to fell colossal trees whose precious wood resists all rot."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "ruines_antiques",
+      "temple"
+    ],
+    "description": {
+      "fr": "La bourgade est née lorsque des explorateurs ont découvert une antique cité de pierre avalée par les lianes et ont décidé de déblayer ses temples pour s'y installer.",
+      "en": "The town was born when explorers discovered an ancient stone city swallowed by vines and decided to clear its temples to settle there."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Marais"
+    ],
+    "description": {
+      "fr": "La colonie a été bâtie par des alchimistes désespérés cherchant à récolter en masse les toxines mortelles et les orchidées rares de ce milieu hostile.",
+      "en": "The colony was built by desperate alchemists seeking to mass-harvest the deadly toxins and rare orchids of this hostile environment."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, des pirates fluviaux ont creusé ce repaire à l'embouchure d'un fleuve, utilisant l'épaisse canopée tropicale pour dissimuler les mâts de leurs navires.",
+      "en": "Historically, river pirates dug this hideout at the mouth of a river, using the thick tropical canopy to conceal the masts of their ships."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Pour échapper aux terribles prédateurs, les tribus locales ont depuis longtemps construit leurs huttes en hauteur, tissant une ville suspendue dans les branches gigantesques.",
+      "en": "To escape the terrible predators, local tribes long ago built their huts up high, weaving a suspended city in the gigantic branches."
+    },
+    "output_tags": [
+      "tribal",
+      "survie",
+      "ressource-chasse",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "cratere",
+      "faille",
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Le lieu saint s'est développé autour d'un immense cénote inondé, un puits naturel où d'anciennes civilisations jetaient des offrandes chargées d'énergie arcanique.",
+      "en": "The holy site developed around an immense flooded cenote, a natural sinkhole where ancient civilizations threw offerings charged with arcane energy."
+    },
+    "output_tags": [
+      "pelerinage",
+      "ressource-eau",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Ce comptoir a été établi à la confluence de deux fleuves boueux, devenant rapidement la seule véritable artère marchande capable de pénétrer le cœur de la jungle.",
+      "en": "This trading post was established at the confluence of two muddy rivers, quickly becoming the only true merchant artery capable of penetrating the heart of the jungle."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Collines"
+    ],
+    "trait_tags": [
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "La ville a explosé en quelques mois lors de la découverte de filons d'émeraudes brutes qui affleuraient sous les racines étouffantes des fougères géantes.",
+      "en": "The city exploded in a few months upon the discovery of raw emerald veins cropping out beneath the stifling roots of giant ferns."
+    },
+    "output_tags": [
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "D'audacieux pionniers se sont sédentarisés dans cette clairière pour y capturer et domestiquer de colossaux insectes de la jungle, s'en servant comme de robustes bêtes de somme.",
+      "en": "Daring pioneers settled in this clearing to capture and domesticate colossal jungle insects, using them as sturdy beasts of burden."
+    },
+    "output_tags": [
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Des mages fuyant la civilisation ont fondé cet asile secret là où l'air lui-même ondule, attirés par les intenses lignes de force magique qui parcourent la terre humide.",
+      "en": "Mages fleeing civilization founded this secret asylum where the air itself ripples, drawn by the intense magical ley lines running through the damp earth."
+    },
+    "output_tags": [
+      "magie",
+      "mystique",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "trait_tags": [
+      "cascade",
+      "lac",
+      "riviere",
+      "all"
+    ],
+    "description": {
+      "fr": "Historiquement, des voyageurs rongés par les fièvres tropicales se sont arrêtés ici pour se baigner dans des sources géothermales purificatrices, finissant par y fonder une colonie.",
+      "en": "Historically, travelers plagued by tropical fevers stopped here to bathe in purifying geothermal springs, eventually founding a colony."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Ce village lourdement piégé fut érigé par des esclaves en fuite, qui trouvèrent dans cet environnement mortel et impénétrable une barrière naturelle contre leurs anciens maîtres.",
+      "en": "This heavily trapped village was erected by fleeing slaves, who found in this deadly and impenetrable environment a natural barrier against their former masters."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "defense-naturelle",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Les premiers fermiers ont volontairement déclenché un vaste incendie contrôlé pour profiter des cendres, transformant une jungle infertile en une exploitation de fruits exotiques luxuriante.",
+      "en": "The first farmers intentionally set a vast controlled fire to utilize the ashes, transforming an infertile jungle into a lush exotic fruit farm."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "La communauté s'est étrangement développée autour de l'épave titanesque d'un navire céleste, écrasé au milieu de la canopée il y a des siècles de cela.",
+      "en": "The community strangely developed around the titanic wreck of a celestial ship, crashed in the middle of the canopy centuries ago."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "magie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Des missionnaires fanatiques ont jadis défriché ce lopin de terre à la sueur de leur front, déterminés à implanter leur culte au milieu des peuplades sauvages.",
+      "en": "Fanatical missionaries once cleared this patch of land by the sweat of their brow, determined to establish their cult among the wild peoples."
+    },
+    "output_tags": [
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Autrefois une simple clairière sacrée utilisée pour les trêves, cet endroit s'est transformé en regroupement de tribus forestières.",
+      "en": "Once a simple sacred clearing used for truces, this place has transformed into a gathering place for forest tribes."
+    },
+    "output_tags": [
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Marais"
+    ],
+    "description": {
+      "fr": "La ville est née d'un afflux soudain de prospecteurs venus patauger dans la boue étouffante pour tamiser les paillettes d'or charriées par les eaux de la mousson.",
+      "en": "The city was born from a sudden influx of prospectors coming to wade in the stifling mud to pan the gold flakes carried by monsoon waters."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle"
+    ],
+    "description": {
+      "fr": "Des pisteurs professionnels ont bâti ce camp fortifié pour résister aux assauts nocturnes des redoutables super-prédateurs qu'ils chassent sans répit pour leurs peaux.",
+      "en": "Professional trackers built this fortified camp to withstand the nocturnal assaults of the fearsome super-predators they relentlessly hunt for their pelts."
+    },
+    "output_tags": [
+      "survie",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "La légende dit que les premiers habitants n'ont pas abattu d'arbres : grâce à d'antiques chants arcaniques, ils ont persuadé les troncs vivants de s'entrelacer pour former de colossales demeures naturelles.",
+      "en": "Legend has it that the first inhabitants did not cut down any trees: thanks to ancient arcane chants, they persuaded the living trunks to intertwine to form colossal natural dwellings."
+    },
+    "output_tags": [
+      "magie",
+      "ressource-bois",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_jungle_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Jungle",
+      "Marais"
+    ],
+    "description": {
+      "fr": "Ce dangereux labyrinthe de palétuviers impénétrables a été choisi à dessein par des marchands de l'ombre pour y dissimuler la plaque tournante de leur contrebande.",
+      "en": "This dangerous labyrinth of impenetrable mangroves was deliberately chosen by shadow merchants to conceal the hub of their smuggling."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "description": {
+      "fr": "À l'origine, quelques marins audacieux ont jeté l'ancre dans cette baie abritée pour y fonder un port de pêche, attirés par l'abondance inépuisable des bancs de poissons.",
+      "en": "Originally, a few daring sailors anchored in this sheltered bay to found a fishing port, drawn by the inexhaustible abundance of fish shoals."
+    },
+    "output_tags": [
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, la cité s'est développée dans le riche delta d'un grand fleuve se jetant dans l'océan, les premiers colons profitant de terres limoneuses incroyablement fertiles.",
+      "en": "Historically, the city developed in the rich delta of a large river emptying into the ocean, the first settlers taking advantage of incredibly fertile silty lands."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-peche",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "grotte"
+    ],
+    "description": {
+      "fr": "Des pirates en fuite découvrirent jadis cet immense réseau de grottes marines, y établissant un marché noir souterrain dont les entrées sont protégées par les marées.",
+      "en": "Fleeing pirates once discovered this immense network of sea caves, establishing an underground black market whose entrances are protected by the tides."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "L'empire a initialement bâti cette colonie fortifiée autour d'un imposant phare, dans le but de sécuriser la fin de la route côtière et de guider les navires marchands.",
+      "en": "The empire initially built this fortified colony around an imposing lighthouse, in order to secure the end of the coastal road and guide merchant ships."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Les premiers habitants se sont installés sur ces hauts-fonds balayés par les vents pour creuser de vastes marais salants, une denrée qui valait autrefois son pesant d'or.",
+      "en": "The first inhabitants settled on these wind-swept shallows to dig vast salt pans, a commodity that was once worth its weight in gold."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "ruines_antiques"
+    ],
+    "description": {
+      "fr": "La ville s'est construite sur les restes cyclopéens d'une antique cité portuaire à moitié engloutie, dont les digues brise-lames millénaires tiennent toujours face à la houle.",
+      "en": "The city was built on the cyclopean remains of an ancient, half-sunken port city, whose millennial breakwater dikes still withstand the swell."
+    },
+    "output_tags": [
+      "vestige-majeur"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Un prêtre solitaire bâtit jadis un ermitage à flanc de falaise face à l'océan déchaîné. Avec le temps, les fidèles affluèrent pour fonder une communauté vouée à l'écoute des vagues.",
+      "en": "A solitary priest once built a hermitage on a cliffside facing the raging ocean. Over time, the faithful flocked to found a community dedicated to listening to the waves."
+    },
+    "output_tags": [
+      "pelerinage",
+      "isole",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "description": {
+      "fr": "La découverte fortuite d'un récif corallien regorgeant d'huîtres aux perles immenses a provoqué l'établissement hâtif et chaotique de cette communauté de plongeurs.",
+      "en": "The accidental discovery of a coral reef teeming with oysters bearing immense pearls provoked the hasty and chaotic establishment of this diver community."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Des naufragés désespérés ont survécu en démantelant la carcasse de leur immense galion échoué sur la grève, dont les membrures servent encore aujourd'hui de fondation au village.",
+      "en": "Desperate castaways survived by dismantling the carcass of their immense galleon beached on the shore, whose frames still serve as the village's foundation today."
+    },
+    "output_tags": [
+      "survie",
+      "vestige-majeur"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Des mages, fascinés par la bioluminescence arcanique émise par le plancton lors des grandes marées, fondèrent ici un observatoire qui s'est lentement transformé en ville.",
+      "en": "Mages, fascinated by the arcane bioluminescence emitted by plankton during high tides, founded an observatory here that slowly transformed into a city."
+    },
+    "output_tags": [
+      "magie",
+      "mystique",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Une tribu nomade a fini par se sédentariser définitivement sur cette plage paradisiaque afin d'y protéger et de chevaucher les colossales tortues marines qui viennent y pondre.",
+      "en": "A nomadic tribe eventually settled permanently on this paradisiacal beach to protect and ride the colossal sea turtles that come to lay their eggs."
+    },
+    "output_tags": [
+      "tribal",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "L'agglomération s'est développée à flanc de falaise de manière vertigineuse, après que des prospecteurs mirent au jour des veines de quartz magique brillant au contact de l'écume salée.",
+      "en": "The settlement developed on the cliffside in a dizzying manner, after prospectors unearthed veins of magical quartz glowing on contact with the salty sea foam."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "ressource-minerai",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "cascade"
+    ],
+    "description": {
+      "fr": "C'est au pied d'une vertigineuse cascade se jetant directement dans la mer que des marins épuisés trouvèrent jadis une source d'eau douce providentielle, décidant de s'y établir.",
+      "en": "It was at the foot of a dizzying waterfall plunging directly into the sea that exhausted sailors once found a providential source of fresh water, deciding to settle there."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "Historiquement, un culte d'exilés s'est établi sur cette grève toxique où la mer recrache des résidus noirs, convaincus de pouvoir y puiser un pouvoir interdit.",
+      "en": "Historically, a cult of exiles settled on this toxic shore where the sea spits up black residue, convinced they could draw forbidden power from it."
+    },
+    "output_tags": [
+      "mystique",
+      "isole",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_littoral_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Littoral"
+    ],
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "description": {
+      "fr": "Les pères fondateurs ont tissé leurs maisons dans les racines colossales d'un palétuvier géant qui s'avance fièrement dans l'océan, offrant une protection absolue contre les tempêtes.",
+      "en": "The founding fathers wove their houses into the colossal roots of a giant mangrove that steps proudly into the ocean, offering absolute protection against storms."
+    },
+    "output_tags": [
+      "tribal",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_marais_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Jungle"
+    ],
+    "description": {
+      "fr": "À l'origine, ce fut un campement d'herboristes audacieux, venus s'embourber volontairement pour récolter les lotus noirs et les champignons rares qui ne poussent que dans cette fange.",
+      "en": "Originally, it was a camp of daring herbalists who intentionally bogged themselves down to harvest the black lotuses and rare mushrooms that only grow in this muck."
+    },
+    "output_tags": [
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "ori_av_marais_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "lac",
+      "all"
+    ],
+    "description": {
+      "fr": "Fuyant une ancienne guerre, des réfugiés désespérés ont bâti ce village entièrement sur pilotis au-dessus d'un lac d'eau stagnante, se nourrissant de ce que la vase voulait bien leur offrir.",
+      "en": "Fleeing an ancient war, desperate refugees built this village entirely on stilts over a lake of stagnant water, feeding on whatever the mud would offer them."
+    },
+    "output_tags": [
+      "survie",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_marais_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Plaines"
+    ],
+    "description": {
+      "fr": "Historiquement, l'endroit s'est développé autour d'une exploitation de tourbe et de fer des tourbières, les mineurs arrachant de précieux combustibles à la terre détrempée.",
+      "en": "Historically, the place developed around a peat and bog iron operation, with miners tearing precious fuel from the sodden earth."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_marais_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "ruines_antiques",
+      "temple"
+    ],
+    "description": {
+      "fr": "Des exilés ont jadis trouvé refuge dans les fondations d'une antique cité engloutie par la vase, utilisant les superbes murs de pierre affaissés pour se protéger des prédateurs.",
+      "en": "Exiles once found refuge in the foundations of an ancient city swallowed by the mud, using the beautiful sunken stone walls to protect themselves from predators."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_marais_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Jungle",
+      "Forêt"
+    ],
+    "trait_tags": [
+      "repaire"
+    ],
+    "description": {
+      "fr": "La bourgade est née après qu'une bande de traqueurs eut purgé la tanière d'un immense reptile amphibie. L'absence du prédateur à eu comme effet d'augmenter considérablement la faune dans la région. Ainsi l'ancienne antre du reptile est devenu un poste de chasse très lucratif.",
+      "en": "The village was founded after a band of hunters cleared the lair of a massive amphibious reptile. The predator's absence led to a significant increase in wildlife in the area. Thus, the reptile's former lair became a highly lucrative hunting ground."
+    },
+    "output_tags": [
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_marais_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "pont"
+    ],
+    "description": {
+      "fr": "Le lieu fut fondé par une famille d'ingénieurs royaux chargés d'entretenir un grand pont de bois enjambant les tourbières meurtrières, forçant les marchands à s'y arrêter pour payer la taxe.",
+      "en": "The place was founded by a family of royal engineers tasked with maintaining a large wooden bridge spanning the deadly bogs, forcing merchants to stop and pay the toll."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_marais_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Forêt",
+      "Jungle"
+    ],
+    "trait_tags": [
+      "arbre_geant",
+      "all"
+    ],
+    "description": {
+      "fr": "Au départ, c'était le refuge précaire d'un peuple fuyant l'esclavage, qui a creusé ses huttes dans les racines aériennes d'un saule colossal trônant au centre du bourbier.",
+      "en": "Initially, it was the precarious refuge of a people fleeing slavery, who carved their huts into the aerial roots of a colossal willow reigning in the center of the quagmire."
+    },
+    "output_tags": [
+      "tribal",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_marais_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "Une secte d'illuminés s'y est établie il y a des décennies, fascinée par l'eau toxique et les effluves empoisonnées du marais qu'ils considèrent comme une bénédiction divine.",
+      "en": "A cult of fanatics settled here decades ago, fascinated by the toxic water and poisonous fumes of the swamp which they consider a divine blessing."
+    },
+    "output_tags": [
+      "mystique",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_marais_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "La communauté s'est construite autour de la cabane isolée d'une puissante sorcière locale. Au fil du temps, le lieu est devenu un pèlerinage pour ceux cherchant remèdes et malédictions.",
+      "en": "The community built itself around the isolated hut of a powerful local witch. Over time, the place became a pilgrimage for those seeking cures and curses."
+    },
+    "output_tags": [
+      "mystique",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_marais_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "À l'origine, des bûcherons téméraires ont installé ce campement pour abattre de rares cyprès imputrescibles, dont le bois noir est extrêmement prisé par les chantiers navals.",
+      "en": "Originally, reckless loggers set up this camp to fell rare rot-resistant cypresses, whose black wood is highly prized by shipyards."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_marais_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La cité est née sur les berges vaseuses d'une rivière très lente. Les premiers pionniers survécurent en chassant les alligators et en piégeant d'énormes silures dans les eaux troubles.",
+      "en": "The city was born on the muddy banks of a very slow river. The first pioneers survived by hunting alligators and trapping huge catfish in the murky waters."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_marais_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Historiquement, une route impériale traversait cette zone avant de s'enfoncer dans la vase. Les habitants s'y sont installés pour guider les voyageurs perdus... ou les détrousser.",
+      "en": "Historically, an imperial road crossed this area before sinking into the mud. Inhabitants settled there to guide lost travelers... or rob them."
+    },
+    "output_tags": [
+      "survie",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_marais_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Forêt"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "L'endroit a été fondé par des contrebandiers au bout d'un sentier impraticable pour les chariots lourds, créant ainsi une plaque tournante secrète et inaccessible aux autorités.",
+      "en": "The place was founded by smugglers at the end of a path impassable for heavy carts, creating a secret hub inaccessible to the authorities."
+    },
+    "output_tags": [
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_marais_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "description": {
+      "fr": "La bourgade doit son existence à d'anciens fermiers qui réussirent l'exploit d'enclore de vastes bassins de boue pour y élever et dresser de féroces amphibiens géants.",
+      "en": "The town owes its existence to former farmers who managed the feat of enclosing vast mud basins to breed and train fierce giant amphibians."
+    },
+    "output_tags": [
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_marais_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Le lieu fut bâti de toutes pièces autour et à l'intérieur du squelette colossal d'un monstre mortellement enlisé, dont les os géants servent désormais de charpente aux habitations.",
+      "en": "The place was built from scratch around and inside the colossal skeleton of a lethally bogged down monster, whose giant bones now serve as the framework for dwellings."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_marais_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Outreterre"
+    ],
+    "trait_tags": [],
+    "description": {
+      "fr": "Fuyant la surface inhospitalière, des bannis ont établi ce village à l'entrée d'une vaste caverne marécageuse, cultivant un étrange champignon bioluminescent poussant sur la mousse.",
+      "en": "Fleeing the inhospitable surface, exiles established this village at the entrance of a vast swampy cavern, cultivating a strange bioluminescent mushroom growing on the moss."
+    },
+    "output_tags": [
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_marais_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "trait_tags": [
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "L'avidité a poussé des prospecteurs à braver la malaria lorsqu'ils découvrirent que la vase de ce marais crachait d'étranges géodes de magie pure lors des grandes crues.",
+      "en": "Greed pushed prospectors to brave malaria when they discovered that the mud of this swamp spit out strange geodes of pure magic during major floods."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_marais_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "description": {
+      "fr": "Les premiers habitants, acculés par la faim et la boue, n'ont dû leur salut qu'à une poignée d'irréductibles trappeurs qui apprirent à se repérer et à chasser dans les brumes toxiques.",
+      "en": "The first inhabitants, cornered by hunger and mud, owed their salvation only to a handful of die-hard trappers who learned to navigate and hunt in the toxic mists."
+    },
+    "output_tags": [
+      "survie",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_marais_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais"
+    ],
+    "description": {
+      "fr": "Une faction militaire a jadis ordonné la construction de ce poste avancé peu enviable, forçant les soldats à s'acclimater à la maladie pour empêcher quiconque de traverser le bourbier.",
+      "en": "A military faction once ordered the construction of this unenviable outpost, forcing soldiers to acclimatize to disease to prevent anyone from crossing the quagmire."
+    },
+    "output_tags": [
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_marais_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Marais",
+      "Aquatique",
+      "Littoral"
+    ],
+    "description": {
+      "fr": "Le culte d'une divinité aquatique oubliée a vu le jour ici, ses prêtres construisant de magnifiques jardins flottants qui ont fini par former une véritable ville sanctuaire.",
+      "en": "The cult of a forgotten aquatic deity was born here, its priests building magnificent floating gardens that eventually formed a true sanctuary city."
+    },
+    "output_tags": [
+      "mystique",
+      "tribal",
+      "pelerinage",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "À l'origine, ce bastion a été érigé par un antique empire pour contrôler l'unique col permettant de franchir la chaîne montagneuse, taxant lourdement marchands et voyageurs.",
+      "en": "Originally, this bastion was erected by an ancient empire to control the only pass allowing passage through the mountain range, heavily taxing merchants and travelers."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La bourgade est née lorsqu'une communauté de pionniers a exploité la force d'un torrent glaciaire pour faire tourner d'immenses scieries, acheminant le bois abattu sur les pentes.",
+      "en": "The town was born when a community of pioneers harnessed the power of a glacial torrent to run immense sawmills, transporting the timber felled on the slopes."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "grotte",
+      "all"
+    ],
+    "description": {
+      "fr": "Historiquement, de courageux prospecteurs se sont enfoncés dans les entrailles de ce pic rocheux, découvrant des filons de fer d'une pureté exceptionnelle et y fondant une colonie souterraine.",
+      "en": "Historically, brave prospectors delved into the bowels of this rocky peak, discovering iron veins of exceptional purity and founding an underground colony there."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "La cité a été fondée par des moines ascètes autour d'un lac de haute altitude, persuadés que ses eaux glaciales et cristallines étaient les larmes d'une divinité oubliée.",
+      "en": "The city was founded by ascetic monks around a high-altitude lake, convinced that its freezing, crystalline waters were the tears of a forgotten deity."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Le lieu a vu le jour lorsque des éleveurs nomades ont décidé de s'y sédentariser pour profiter des riches pâturages des versants, créant un refuge isolé au bout d'un sentier escarpé.",
+      "en": "The place came into being when nomadic herders decided to settle there to take advantage of the rich pastures on the slopes, creating an isolated refuge at the end of a steep path."
+    },
+    "output_tags": [
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "faille"
+    ],
+    "description": {
+      "fr": "Pour échapper à la justice, des contrebandiers ont jeté des passerelles de fortune au-dessus de ce gouffre mortel, créant un village suspendu inaccessible à la garde royale.",
+      "en": "To escape justice, smugglers threw makeshift footbridges over this deadly chasm, creating a suspended village inaccessible to the royal guard."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "chemin_terre",
+      "all"
+    ],
+    "description": {
+      "fr": "Initialement un simple camp de base, le village s'est développé grâce aux trappeurs intrépides qui revendaient à prix d'or les fourrures des redoutables prédateurs des cimes.",
+      "en": "Initially a simple base camp, the village developed thanks to intrepid trappers who sold the furs of fearsome peak predators for a fortune."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "ruines_antiques"
+    ],
+    "description": {
+      "fr": "Des exilés ont trouvé leur salut en s'abritant dans les ruines cyclopéennes d'une forteresse bâtie par des géants il y a des millénaires, s'appropriant ses murs imprenables.",
+      "en": "Exiles found their salvation by sheltering in the cyclopean ruins of a fortress built by giants millennia ago, taking over its impregnable walls."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La découverte de cristaux résonnant de magie pure, affleurant directement la roche glacée, a provoqué une ruée frénétique de mages et de prospecteurs avides.",
+      "en": "The discovery of crystals resonating with pure magic, outcropping directly from the icy rock, provoked a frantic rush of mages and greedy prospectors."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "cascade"
+    ],
+    "description": {
+      "fr": "La cité a été bâtie dans la roche même, juste derrière le rideau assourdissant d'une immense chute d'eau, offrant à ses fondateurs une cachette parfaite et de l'eau à volonté.",
+      "en": "The city was built into the rock itself, right behind the deafening curtain of an immense waterfall, offering its founders a perfect hiding place and unlimited water."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "isole",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "pont",
+      "all"
+    ],
+    "description": {
+      "fr": "Le lieu s'est formé autour d'un pont d'ingénierie magistrale reliant deux pics. Les marchands n'ont eu d'autre choix que d'y faire étape avant d'entamer la dangereuse traversée.",
+      "en": "The place formed around a masterfully engineered bridge connecting two peaks. Merchants had no choice but to stop there before attempting the dangerous crossing."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Collines"
+    ],
+    "trait_tags": [
+      "route_pavee",
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Historiquement, la ville fut érigée au pied du grand col pavé. Les marchands y louent des bêtes de somme robustes et des mercenaires avant d'affronter la dure ascension.",
+      "en": "Historically, the town was erected at the foot of the great paved pass. Merchants rent sturdy pack animals and mercenaries there before braving the harsh ascent."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des tribus nomades se sont sédentarisées autour de cette caldeira inondée, brisant la glace tenace chaque hiver pour s'assurer une pêche miraculeuse et vitale.",
+      "en": "Nomadic tribes settled around this flooded caldera, breaking the stubborn ice every winter to ensure a miraculous and vital catch."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "repaire",
+      "all"
+    ],
+    "description": {
+      "fr": "La colonie fut fondée par une illustre guilde de mercenaires qui réussit à abattre le dragon régnant sur ces sommets, transformant son vaste repaire en forteresse inviolable.",
+      "en": "The colony was founded by an illustrious mercenary guild that managed to slay the dragon ruling these peaks, transforming its vast lair into an inviolable fortress."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "À l'origine, seuls des herboristes téméraires s'aventuraient sur ces sentiers pour cueillir des fleurs de givre extrêmement rares, finissant par y bâtir un refuge permanent.",
+      "en": "Originally, only reckless herbalists ventured onto these trails to pick extremely rare frost flowers, eventually building a permanent refuge there."
+    },
+    "output_tags": [
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Taïga"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La frénésie a gagné ce torrent de montagne lorsque des prospecteurs y ont trouvé des pépites d'or pur. Des campements de fortune y ont pullulé en quelques semaines à peine.",
+      "en": "Frenzy overtook this mountain torrent when prospectors found pure gold nuggets in it. Makeshift camps swarmed there in just a few weeks."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Un ermite bâtit jadis un autel au Dieu des Tempêtes sur ce sommet frappé par la foudre. Depuis, le lieu sacré est entretenu par un village de fidèles fanatiques.",
+      "en": "A hermit once built an altar to the God of Storms on this lightning-struck peak. Since then, the sacred site is maintained by a village of fanatical followers."
+    },
+    "output_tags": [
+      "pelerinage",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne",
+      "Outreterre"
+    ],
+    "description": {
+      "fr": "Le village fut fondé autour d'une cheminée géothermique sifflante. La chaleur dégagée par les entrailles de la terre a permis aux colons de survivre aux hivers meurtriers.",
+      "en": "The village was founded around a whistling geothermal vent. The heat released from the bowels of the earth allowed colonists to survive the deadly winters."
+    },
+    "output_tags": [
+      "ressource-chaleur"
+    ]
+  },
+  {
+    "id": "ori_av_montagne_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Montagne"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "Historiquement, une poignée d'occultistes a fui le royaume pour s'installer sur ce pic désolé et maudit, espérant que la sombre magie des lieux protégerait leurs recherches interdites.",
+      "en": "Historically, a handful of occultists fled the kingdom to settle on this desolate and cursed peak, hoping the dark magic of the place would protect their forbidden research."
+    },
+    "output_tags": [
+      "magie",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [],
+    "description": {
+      "fr": "À l'origine, une poignée de prospecteurs nains s'enfonça dans ce réseau de cavernes pour y extraire un filon de fer noir, finissant par y fonder une colonie permanente loin de la surface.",
+      "en": "Originally, a handful of dwarven prospectors delved into this cavern network to extract a vein of black iron, eventually founding a permanent colony far from the surface."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Fuyant la lumière du jour, des exilés découvrirent cet immense lac d'eau douce souterrain. Ils s'y établirent pour survivre en pêchant d'étranges poissons aveugles et albinos.",
+      "en": "Fleeing the light of day, exiles discovered this immense underground freshwater lake. They settled there to survive by fishing for strange blind, albino fish."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "La cité fut fondée dans l'urgence après la découverte d'une immense géode crépitante d'énergie arcanique, attirant les mages les plus fous et les mineurs les plus cupides.",
+      "en": "The city was founded in a hurry after the discovery of an immense geode crackling with arcane energy, attracting the maddest mages and the greediest miners."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "description": {
+      "fr": "Historiquement, la survie de cette communauté a reposé sur la culture patiente et méticuleuse d'immenses forêts de champignons bioluminescents et nutritifs.",
+      "en": "Historically, the survival of this community has relied on the patient and meticulous cultivation of immense forests of bioluminescent and nutritious mushrooms."
+    },
+    "output_tags": [
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "faille"
+    ],
+    "description": {
+      "fr": "Pour échapper aux vers fouisseurs géants, les fondateurs bâtirent ce vertigineux village suspendu par des chaînes au-dessus d'un gouffre insondable.",
+      "en": "To escape giant burrowing worms, the founders built this dizzying village suspended by chains over an unfathomable chasm."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Ce relais a été établi sur les berges d'une rivière souterraine tumultueuse, devenant le principal axe de contrebande entre les profondeurs et les royaumes de la surface.",
+      "en": "This relay was established on the banks of a tumultuous underground river, becoming the main smuggling route between the depths and the surface kingdoms."
+    },
+    "output_tags": [
+      "carrefour",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "ruines_antiques"
+    ],
+    "description": {
+      "fr": "Les premiers habitants s'approprièrent les vestiges cyclopéens d'une architecture inhumaine, utilisant ces murailles indestructibles pour se protéger des horreurs rôdant dans l'obscurité.",
+      "en": "The first inhabitants took over the cyclopean remains of inhuman architecture, using these indestructible walls to protect themselves from the horrors lurking in the dark."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "repaire"
+    ],
+    "description": {
+      "fr": "Une redoutable guilde de traqueurs parvint jadis à massacrer la reine arachnide locale. Ils transformèrent son immense tanière en un comptoir de chasse réputé dans tous les tunnels.",
+      "en": "A fearsome guild of trackers once managed to slaughter the local arachnid queen. They transformed her immense lair into a renowned hunting post throughout the tunnels."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "description": {
+      "fr": "La colonie fut fondée autour d'une faille volcanique. La chaleur infernale qui s'en dégage permet aux habitants de forger l'acier et de survivre au froid glacial des grottes environnantes.",
+      "en": "The colony was founded around a volcanic rift. The infernal heat it releases allows the inhabitants to forge steel and survive the freezing cold of the surrounding caves."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "L'empire nain a érigé cette forteresse pour verrouiller l'Antique Voie des Profondeurs, contrôlant ainsi fermement tout accès entre le monde d'en haut et le monde d'en bas.",
+      "en": "The dwarven empire erected this fortress to lock down the Ancient Deep Way, thus firmly controlling all access between the world above and the world below."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Jadis, des fanatiques s'enfoncèrent dans les ténèbres pour y adorer un dieu oublié. Leur sombre autel a fini par devenir le cœur d'une vaste nécropole habitée.",
+      "en": "Long ago, fanatics delved into the darkness to worship a forgotten god. Their dark altar eventually became the heart of a vast inhabited necropolis."
+    },
+    "output_tags": [
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "description": {
+      "fr": "Ce village tribal s'est constitué autour de l'élevage intensif de grands lézards grimpeurs, les seules montures capables de naviguer sur les plafonds de ce labyrinthe rocheux.",
+      "en": "This tribal village was formed around the intensive breeding of large climbing lizards, the only mounts capable of navigating the ceilings of this rocky labyrinth."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "cascade"
+    ],
+    "description": {
+      "fr": "L'eau pure d'une cascade souterraine plongeant dans l'abîme a convaincu les premiers fuyards de s'installer ici, l'eau potable étant la denrée la plus précieuse de ces profondeurs.",
+      "en": "The pure water of an underground waterfall plunging into the abyss convinced the first fugitives to settle here, drinking water being the most precious commodity in these depths."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "La bourgade s'est mystérieusement développée dans une zone inondée de spores hallucinogènes. Les habitants, immunisés par le temps, cultivent farouchement leur dangereux isolement.",
+      "en": "The town mysteriously developed in an area flooded with hallucinogenic spores. The inhabitants, immunized by time, fiercely cultivate their dangerous isolation."
+    },
+    "output_tags": [
+      "isole",
+      "ressource-herbe"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Ce n'était qu'une étape secrète sur un sentier tortueux connu des seuls assassins et esclavagistes. Aujourd'hui, c'est le marché noir le plus tristement célèbre des entrailles de la terre.",
+      "en": "It was only a secret stop on a tortuous path known only to assassins and slavers. Today, it is the most infamous black market in the bowels of the earth."
+    },
+    "output_tags": [
+      "carrefour",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Les fondateurs ont eu l'idée de génie d'utiliser la cage thoracique d'un ver primordial fossilisé pour y adosser leurs remparts, créant une enceinte littéralement indestructible.",
+      "en": "The founders had the brilliant idea of using the ribcage of a fossilized primordial worm to support their ramparts, creating a literally indestructible enclosure."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [],
+    "description": {
+      "fr": "La découverte d'une invraisemblable forêt de bois pétrifié sous la croûte terrestre a attiré des artisans venus sculpter ce matériau aussi dur que l'acier mais léger comme la cendre.",
+      "en": "The discovery of an unbelievable petrified forest beneath the Earth's crust attracted artisans who came to carve this material, hard as steel but light as ash."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "faille",
+      "all"
+    ],
+    "description": {
+      "fr": "Suspendu au bord d'une faille d'où s'élèvent de violents courants d'air chaud, le village a été conçu pour chasser au harpon les prédateurs volants qui planent dans les ténèbres.",
+      "en": "Suspended on the edge of a rift from which violent updrafts of hot air rise, the village was designed to harpoon hunt the flying predators gliding in the darkness."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des exilés audacieux ont construit d'immenses radeaux de champignons pour flotter sur un lac sans fond, à l'abri des horreurs terrestres qui hantent ces sombres cavernes.",
+      "en": "Daring exiles built immense mushroom rafts to float on a bottomless lake, safe from the terrestrial horrors that haunt these dark caverns."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_outreterre_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Outreterre"
+    ],
+    "trait_tags": [
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "L'endroit a été hautement militarisé dès la découverte d'un affleurement de cristaux anti-magiques, une ressource inestimable capable de neutraliser les sortilèges des créatures abyssales.",
+      "en": "The place was highly militarized upon the discovery of an outcropping of anti-magic crystals, an invaluable resource capable of neutralizing the spells of abyssal creatures."
+    },
+    "output_tags": [
+      "avant-poste",
+      "ressource-gemme",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "description": {
+      "fr": "À l'origine, de courageux fermiers s'installèrent au milieu de cet océan de hautes herbes, labourant sans relâche pour transformer la terre vierge en un immense domaine agricole.",
+      "en": "Originally, brave farmers settled in the middle of this ocean of tall grass, plowing relentlessly to transform the virgin land into a massive agricultural estate."
+    },
+    "output_tags": [
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Collines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "La bourgade s'est développée organiquement autour d'un grand relais pour caravanes, profitant du passage constant sur cet axe commercial majeur pour faire fortune.",
+      "en": "The town developed organically around a large caravan relay, taking advantage of the constant traffic on this major trade route to make a fortune."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, la cité fut bâtie là où les eaux lentes du fleuve fertilisent naturellement les rives à chaque crue, créant le grenier à blé de toute la région.",
+      "en": "Historically, the city was built where the slow waters of the river naturally fertilize the banks with every flood, creating the breadbasket of the entire region."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Les premiers colons jetèrent leurs filets dans cet immense lac d'eau douce au cœur de la prairie, fondant une prospère communauté de pêcheurs loin de la mer.",
+      "en": "The first settlers cast their nets in this immense freshwater lake in the heart of the prairie, founding a prosperous fishing community far from the sea."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "chemin_terre",
+      "all"
+    ],
+    "description": {
+      "fr": "Le village naquit lorsque des éleveurs nomades décidèrent d'enclore ces riches pâturages herbeux à l'intersection de plusieurs sentiers migratoires.",
+      "en": "The village was born when nomadic herders decided to enclose these rich grassy pastures at the intersection of several migratory trails."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Un puissant syndicat de trappeurs a jadis érigé ce campement pour organiser les grandes battues dans les grandes étendues environnantes.",
+      "en": "A powerful syndicate of trappers once erected this camp to organize large hunts in the vast surrounding areas."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Cette forteresse fut commanditée par l'autorité locale pour pacifier cette vaste artère commerciale et protéger les riches marchands des pillards à cheval.",
+      "en": "This fortress was commissioned by the local authority to pacify this vast commercial artery and protect wealthy merchants from mounted raiders."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "ruines_antiques",
+      "temple"
+    ],
+    "description": {
+      "fr": "Des exilés ont trouvé refuge dans les fondations d'un immense temple effondré émergeant des hautes herbes, cultivant le sol sacré avec une révérence craintive.",
+      "en": "Exiles found refuge in the foundations of an immense collapsed temple emerging from the tall grass, cultivating the sacred soil with fearful reverence."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "ressource-agriculture",
+      "pelerinage",
+      "mystique",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines",
+      "Collines",
+      "Forêt"
+    ],
+    "trait_tags": [
+      "monolithe"
+    ],
+    "description": {
+      "fr": "La cité s'est bâtie autour d'une mystérieuse pierre dressée au milieu de nulle part, dont l'aura magique accélère surnaturellement la croissance des récoltes.",
+      "en": "The city was built around a mysterious standing stone in the middle of nowhere, whose magical aura supernaturally accelerates crop growth."
+    },
+    "output_tags": [
+      "magie",
+      "mystique",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, un astucieux marchand établit ici un service de bacs payants pour faire traverser ce large fleuve, créant de fait une étape marchande incontournable.",
+      "en": "Originally, a clever merchant established a paid ferry service here to cross this wide river, effectively creating an essential trading stop."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "description": {
+      "fr": "Le lieu a commencé comme un gigantesque marché aux chevaux à ciel ouvert, où tous les clans des plaines se réunissaient pour vendre leurs meilleures montures.",
+      "en": "The place began as a gigantic open-air horse market, where all the plains clans gathered to sell their best mounts."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "carrefour",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Pour se prémunir des meutes de loups rôdant dans la steppe, les fondateurs ont ingénieusement érigé leur village sur une île artificielle au centre du lac.",
+      "en": "To protect themselves from wolf packs roaming the steppe, the founders ingeniously erected their village on an artificial island in the center of the lake."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "ressource-peche",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "C'est au croisement de la grande artère marchande et des pistes de transhumance que la ville est née, devenant le plus grand abattoir et marché aux cuirs de la région.",
+      "en": "It was at the crossroads of the great trade artery and transhumance trails that the town was born, becoming the largest slaughterhouse and leather market in the region."
+    },
+    "output_tags": [
+      "carrefour",
+      "ressource-chasse",
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "tour_guet"
+    ],
+    "description": {
+      "fr": "Les paysans locaux se sont d'abord massés autour de cette antique tour de guet pour y stocker leurs céréales en sécurité, avant d'y bâtir des remparts.",
+      "en": "Local peasants first clustered around this ancient watchtower to safely store their grain, before building ramparts there."
+    },
+    "output_tags": [
+      "avant-poste",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "repaire"
+    ],
+    "description": {
+      "fr": "Une poignée de pisteurs a héroïquement exterminé l'essaim de monstres fouisseurs qui ravageait la plaine. Ils ont transformé les profonds terriers en de formidables caves.",
+      "en": "A handful of trackers heroically exterminated the swarm of burrowing monsters ravaging the plain. They transformed the deep burrows into formidable cellars."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "cratere"
+    ],
+    "description": {
+      "fr": "Historiquement, une étoile filante a creusé ce cratère en plein champ. Les forgerons qui s'y installèrent découvrirent que le métal céleste produisait des armes exceptionnelles.",
+      "en": "Historically, a shooting star dug this crater in an open field. The blacksmiths who settled there discovered that the celestial metal produced exceptional weapons."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "pont"
+    ],
+    "description": {
+      "fr": "Un pont de pierre magistral fut jeté ici pour relier deux royaumes. La ville s'est agglutinée des deux côtés de l'ouvrage pour monopoliser le commerce frontalier.",
+      "en": "A masterful stone bridge was thrown here to connect two kingdoms. The city gathered on both sides of the structure to monopolize border trade."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Jadis, la voie rapide fut coupée par un camp de brigands devenu si puissant qu'il finit par se légitimer, se transformant en une riche ville aux origines mafieuses.",
+      "en": "Once, the highway was cut off by a bandit camp that became so powerful it eventually legitimized itself, turning into a wealthy city with mafia origins."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "Au beau milieu des champs, un affleurement de cristaux magiques s'est mis à pulser d'énergie, incitant des mages érudits à racheter les terres pour y fonder une académie.",
+      "en": "Right in the middle of the fields, an outcropping of magical crystals began pulsing with energy, prompting erudite mages to buy up the land to found an academy."
+    },
+    "output_tags": [
+      "magie",
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "La cité fut établie par d'ingénieux prospecteurs qui ont détourné les eaux du fleuve pour laver les graviers aurifères découverts dans les hauts-fonds de la plaine.",
+      "en": "The city was established by ingenious prospectors who diverted the river's waters to wash the auriferous gravel discovered in the plain's shallows."
+    },
+    "output_tags": [
+      "ressource-minerai",
+      "ressource-eau"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_21",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "L'agglomération a poussé le long de ce modeste sentier de pèlerinage, offrant le gîte et le couvert aux voyageurs épuisés par la traversée de la steppe.",
+      "en": "The settlement grew along this modest pilgrimage path, offering shelter and food to travelers exhausted by crossing the steppe."
+    },
+    "output_tags": [
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_22",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "description": {
+      "fr": "Le seul repère à des lieues à la ronde était cet arbre colossal et solitaire. Les fondateurs bâtirent la ville à son ombre bienveillante, à l'abri des vents violents.",
+      "en": "The only landmark for miles around was this colossal, solitary tree. The founders built the city in its benevolent shade, sheltered from violent winds."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "mystique",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_23",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "description": {
+      "fr": "À l'origine, cette commune pacifiste fut fondée par une secte prônant le retour à la terre, transformant une vaste étendue sauvage en un patchwork de cultures idylliques.",
+      "en": "Originally, this pacifist commune was founded by a sect advocating a return to the land, transforming a vast wilderness into a patchwork of idyllic crops."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "mystique",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_24",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "La cité a vu le jour lorsqu'une armée en campagne a établi un gigantesque campement logistique le long de la grande route, qui s'est finalement pérennisé avec le temps.",
+      "en": "The city was born when a campaigning army established a gigantic logistical camp along the main road, which eventually became permanent over time."
+    },
+    "output_tags": [
+      "avant-poste",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_25",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des exilés bannis ont découvert que les algues de ce lac de prairie possédaient de puissantes propriétés curatives, fondant la base d'une guilde d'alchimistes renommée.",
+      "en": "Banished exiles discovered that the algae of this prairie lake possessed powerful healing properties, laying the foundation for a renowned alchemists' guild."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_26",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "La bourgade fut bâtie pour encercler et surveiller un champ stérile où la terre semble pourrir de l'intérieur, empêchant quiconque d'approcher la source de la malédiction.",
+      "en": "The town was built to encircle and monitor a barren field where the earth seems to rot from within, preventing anyone from approaching the source of the curse."
+    },
+    "output_tags": [
+      "avant-poste",
+      "mystique",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_27",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Historiquement, une série de moulins à aubes a été construite le long de ce puissant cours d'eau pour moudre les récoltes de toute la province, créant une véritable puissance économique.",
+      "en": "Historically, a series of watermills was built along this powerful waterway to mill the harvests of the entire province, creating a true economic powerhouse."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_28",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Le village fut fondé à l'intérieur et autour de la cage thoracique gigantesque d'un béhémoth mort il y a des éons, ses ossements courbés servant de charpente aux auberges.",
+      "en": "The village was founded inside and around the gigantic ribcage of a behemoth that died eons ago, its curved bones serving as the framework for inns."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_29",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Les pères fondateurs étaient des charrons et des forgerons qui s'installèrent sur cet axe commercial rugueux pour réparer les chariots brisés des riches marchands.",
+      "en": "The founding fathers were wheelwrights and blacksmiths who settled on this rough trade route to repair the broken carts of wealthy merchants."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_30",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "description": {
+      "fr": "La colonie n'était au départ qu'un vaste domaine d'élevage de chiens de chasse et de faucons, attirant la noblesse de la région entière.",
+      "en": "The colony was initially just a vast breeding estate for hunting dogs and falcons, attracting nobility from the entire region."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_31",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Un prêtre pacifique a érigé un petit autel à la Déesse des Moissons. La ferveur paysanne a fait le reste, transformant le lieu de culte en un village foisonnant de vie.",
+      "en": "A peaceful priest erected a small altar to the Goddess of Harvests. Peasant fervor did the rest, transforming the place of worship into a village teeming with life."
+    },
+    "output_tags": [
+      "pelerinage",
+      "ressource-agriculture"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_32",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "grotte",
+      "all"
+    ],
+    "description": {
+      "fr": "Dans cette plaine plate, une soudaine doline mène à un réseau souterrain où coule une source chaude. Les fondateurs y ont bâti des thermes protégés des rudesses de la surface.",
+      "en": "In this flat plain, a sudden sinkhole leads to an underground network where a hot spring flows. The founders built baths there, protected from the harshness of the surface."
+    },
+    "output_tags": [
+      "ressource-chaleur"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_33",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "cascade"
+    ],
+    "description": {
+      "fr": "La ville a été bâtie sur le seul dénivelé de la région, où une large rivière chute brutalement. L'énergie hydraulique colossale a propulsé le développement industriel du lieu.",
+      "en": "The city was built on the only elevation in the region, where a wide river drops abruptly. The colossal hydraulic energy propelled the industrial development of the place."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_34",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "Historiquement, ce fut un camp de transit tenu par une pègre locale, où des marchandises volées étaient stockées en attendant d'être écoulées discrètement par les pistes secrètes.",
+      "en": "Historically, it was a transit camp run by a local underworld, where stolen goods were stored waiting to be discreetly sold via secret trails."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_35",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "L'abondance de l'argile pure sur les rives de ce cours d'eau a attiré des dizaines de potiers et sculpteurs, transformant un simple gué en la capitale régionale de la céramique.",
+      "en": "The abundance of pure clay on the banks of this waterway attracted dozens of potters and sculptors, transforming a simple ford into the regional capital of ceramics."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_36",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "Fuyant une famine, des milliers de serfs ont convergé vers le grand axe commercial et y ont littéralement posé leurs bagages, refusant de bouger et forçant la création d'une ville.",
+      "en": "Fleeing a famine, thousands of serfs converged on the major trade route and literally set down their baggage there, refusing to move and forcing the creation of a town."
+    },
+    "output_tags": [
+      "survie",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_37",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "ruins_city"
+    ],
+    "description": {
+      "fr": "La cité a été reconstruite de force par-dessus les cendres d'un ancien bourg rasé lors d'une grande guerre des plaines, les paysans utilisant les pierres calcinées pour bâtir leurs murs.",
+      "en": "The city was forcibly rebuilt over the ashes of an old borough razed during a great plains war, with peasants using the charred stones to build their walls."
+    },
+    "output_tags": [
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_38",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "faille"
+    ],
+    "description": {
+      "fr": "Une crevasse abrupte déchire la plaine en deux à cet endroit précis. Les fondateurs en ont profité pour y déverser leurs déchets et y rejeter les criminels indésirables.",
+      "en": "A steep crevasse tears the plain in two at this exact spot. The founders took advantage of it to dump their waste and cast off unwanted criminals."
+    },
+    "output_tags": [
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_39",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "La présence rarissime de nénuphars soyeux à la surface de ce lac a justifié l'installation d'une riche guilde de tisserands, faisant la renommée vestimentaire de la ville.",
+      "en": "The extremely rare presence of silky water lilies on the surface of this lake justified the installation of a wealthy weavers' guild, making the town renowned for its clothing."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-eau",
+      "ressource-peche",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_plaines_40",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Plaines"
+    ],
+    "trait_tags": [
+      "chemin_terre"
+    ],
+    "description": {
+      "fr": "À l'origine, un simple camp de pisteurs s'est installé au bout de cette piste broussailleuse pour traquer inlassablement les redoutables prédateurs des prairies qui décimaient les troupeaux.",
+      "en": "Originally, a simple camp of trackers settled at the end of this bushy trail to tirelessly hunt the fearsome prairie predator that decimated the herds."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "description": {
+      "fr": "À l'origine, des peuples marins ont cultivé cet immense récif corallien pour y élever des nuées de poissons et y récolter une nacre d'une pureté exceptionnelle.",
+      "en": "Originally, sea peoples cultivated this immense coral reef to breed schools of fish and harvest mother-of-pearl of exceptional purity."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "sanctuaire"
+    ],
+    "description": {
+      "fr": "Fuyant un cataclysme de surface, de puissants mages érigèrent jadis un dôme d'air perpétuel autour de cet autel englouti, créant une bulle de vie sous les flots.",
+      "en": "Fleeing a surface cataclysm, powerful mages once erected a perpetual air dome around this sunken altar, creating a bubble of life beneath the waves."
+    },
+    "output_tags": [
+      "magie",
+      "isole",
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "faille"
+    ],
+    "description": {
+      "fr": "La colonie fut bâtie au bord d'une fosse abyssale crachant de l'eau bouillante, offrant chaleur et énergie vitale au fond d'un océan autrement glacial et mortel.",
+      "en": "The colony was built on the edge of an abyssal trench spewing boiling water, offering heat and vital energy at the bottom of an otherwise freezing and deadly ocean."
+    },
+    "output_tags": [
+      "ressource-chaleur"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "ruines_antiques",
+      "temple",
+      "all"
+    ],
+    "description": {
+      "fr": "Historiquement, cette cité prospère a sombré intacte lors d'un effondrement sismique. Des créatures amphibies s'y sont peu à peu installées, s'appropriant les vieux palais.",
+      "en": "Historically, this prosperous city sank intact during a seismic collapse. Amphibious creatures gradually settled there, taking over the old palaces."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "carcasse"
+    ],
+    "description": {
+      "fr": "Les fondateurs ont évidé le squelette cyclopéen d'un kraken millénaire pour en faire une forteresse imprenable contre les prédateurs gigantesques des profondeurs.",
+      "en": "The founders hollowed out the cyclopean skeleton of a millennial kraken to make it an impregnable fortress against the gigantic predators of the depths."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "description": {
+      "fr": "Une tribu de chasseurs nomades s'est définitivement établie dans cette gigantesque forêt de varech pour y traquer les redoutables bêtes marines qui s'y dissimulent.",
+      "en": "A tribe of nomadic hunters settled permanently in this gigantic kelp forest to track the fearsome marine beasts hiding within."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "tribal"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "cristaux"
+    ],
+    "description": {
+      "fr": "La découverte de cristaux luminescents éclairant les abysses poussa des mineurs aquatiques à forer la roche sous-marine pour extraire ces joyaux magiques inestimables.",
+      "en": "The discovery of luminescent crystals illuminating the abyss pushed aquatic miners to drill the underwater rock to extract these invaluable magical jewels."
+    },
+    "output_tags": [
+      "ressource-gemme"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "ruins_city",
+      "all"
+    ],
+    "description": {
+      "fr": "Le lieu est né de l'agglutination de dizaines de galions naufragés au fond d'un terrible maelstrom, devenant un refuge labyrinthique pour les habitants des profondeurs.",
+      "en": "The place was born from the agglomeration of dozens of shipwrecked galleons at the bottom of a terrible maelstrom, becoming a labyrinthine refuge for the inhabitants of the depths."
+    },
+    "output_tags": [
+      "isole",
+      "defense-naturelle",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "cratere"
+    ],
+    "description": {
+      "fr": "D'ingénieux forgerons aquatiques ont fondé cette base dans le cratère d'un volcan sous-marin éteint pour exploiter son magma refroidi, incroyablement riche en métaux lourds.",
+      "en": "Ingenious aquatic blacksmiths founded this base in the crater of an extinct underwater volcano to exploit its cooled magma, incredibly rich in heavy metals."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "repaire",
+      "all"
+    ],
+    "description": {
+      "fr": "À l'origine, ce fut un camp de dompteurs audacieux ayant réussi à capturer et élever des requins géants dans ce vaste réseau de grottes submergées.",
+      "en": "Originally, it was a camp of daring tamers who managed to capture and breed giant sharks in this vast network of submerged caves."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "ressource-chasse",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "route_pavee"
+    ],
+    "description": {
+      "fr": "La cité s'est organiquement formée le long du Grand Courant, une véritable autoroute sous-marine naturelle reliant plusieurs royaumes des abysses et facilitant le commerce.",
+      "en": "The city formed organically along the Great Current, a true natural underwater highway connecting several abyssal kingdoms and facilitating trade."
+    },
+    "output_tags": [
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "monolithe"
+    ],
+    "description": {
+      "fr": "Des prêtresses des mers ont consacré ce site autour d'un étrange monolithe émettant des ondes apaisantes, tenant à distance les grands prédateurs pélagiques.",
+      "en": "Sea priestesses consecrated this site around a strange  monolith emitting soothing waves, keeping large pelagic predators at bay."
+    },
+    "output_tags": [
+      "mystique",
+      "pelerinage"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "faille",
+      "all"
+    ],
+    "description": {
+      "fr": "Un puissant empire triton a érigé cette garnison lourdement armée pour surveiller la frontière avec la zone aphotique et repousser les cauchemars remontant des profondeurs.",
+      "en": "A powerful triton empire erected this heavily armed garrison to monitor the border with the aphotic zone and repel nightmares rising from the depths."
+    },
+    "output_tags": [
+      "avant-poste",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "terres_corrompues"
+    ],
+    "description": {
+      "fr": "La communauté s'est développée dans un immense cimetière de coraux morts où prolifère une flore toxique, très prisée par les alchimistes et assassins du marché noir.",
+      "en": "The community developed in an immense graveyard of dead coral where toxic flora proliferates, highly prized by alchemists and black market assassins."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "magie",
+      "refuge-criminel"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "lac"
+    ],
+    "description": {
+      "fr": "Des réfugiés de la surface découvrirent un immense lac totalement immergé sous la croûte terrestre. Ils s'y adaptèrent en usant d'élixirs de branchies pour y fonder une ville cachée.",
+      "en": "Surface refugees discovered an immense lake completely submerged beneath the Earth's crust. They adapted using gill elixirs to found a hidden city there."
+    },
+    "output_tags": [
+      "survie",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "arbre_geant"
+    ],
+    "description": {
+      "fr": "Le village fut littéralement tissé dans les ramifications d'une plante aquatique gargantuesque dont les bourgeons produisent miraculeusement de grandes bulles d'air respirable.",
+      "en": "The village was literally woven into the branches of a gargantuan aquatic plant whose buds miraculously produce large bubbles of breathable air."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "Ce campement vit le jour près d'une puissante rivière de saumure sous-marine qui draine un afflux constant de nutriments, attirant des nuées de proies à chasser.",
+      "en": "This camp was born near a powerful underwater brine river that drains a constant influx of nutrients, attracting swarms of prey to hunt."
+    },
+    "output_tags": [
+      "ressource-chasse",
+      "ressource-peche"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "pont"
+    ],
+    "description": {
+      "fr": "Un pont de corail magique fut autrefois bâti pour enjamber une faille bouillonnante. La cité s'est accrochée à cet édifice majestueux pour taxer les voyageurs des fonds.",
+      "en": "A magical coral bridge was once built to span a bubbling rift. The city clung to this majestic structure to tax travelers of the deep."
+    },
+    "output_tags": [
+      "carrefour",
+      "avant-poste"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "trait_tags": [
+      "grotte"
+    ],
+    "description": {
+      "fr": "Historiquement, de hardis explorateurs ont percé le flanc d'une montagne sous-marine pour y établir une base lourdement fortifiée, totalement à l'abri des typhons de la surface.",
+      "en": "Historically, bold explorers pierced the flank of an underwater mountain to establish a heavily fortified base, completely sheltered from surface typhoons."
+    },
+    "output_tags": [
+      "defense-naturelle",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_subaquatique_20",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Sub-aquatique"
+    ],
+    "description": {
+      "fr": "La cité fut créée par une secte radicale qui s'est enchaînée aux fonds marins pour s'isoler des péchés du monde de l'air, survivant uniquement grâce à l'incantation arcanique.",
+      "en": "The city was created by a radical sect that chained itself to the seabed to isolate itself from the sins of the air world, surviving solely through arcane incantation."
+    },
+    "output_tags": [
+      "mystique",
+      "magie",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_01",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "À l'origine, l'empire a fondé ce camp de bûcherons pour exploiter les pins millénaires de la région, dont la résine confère une résistance quasi magique au bois.",
+      "en": "Originally, the empire founded this logging camp to harvest the region's millennial pines, whose resin grants the wood an almost magical resistance."
+    },
+    "output_tags": [
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_02",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Historiquement, ce refuge s'est formé autour d'un réseau de sources chaudes bouillonnantes, devenant la seule halte viable pour les voyageurs bravant ces bois gelés.",
+      "en": "Historically, this refuge formed around a network of bubbling hot springs, becoming the only viable stopover for travelers braving these frozen woods."
+    },
+    "output_tags": [
+      "ressource-chaleur",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_03",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Il y a des siècles, des clans de chasseurs se sont sédentarisés ici pour protéger et vénérer un esprit sylvestre primordial endormi sous le permafrost.",
+      "en": "Centuries ago, hunting clans settled here permanently to protect and worship a primordial sylvan spirit sleeping beneath the permafrost."
+    },
+    "output_tags": [
+      "tribal",
+      "mystique",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_04",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Montagne"
+    ],
+    "description": {
+      "fr": "La colonie a été bâtie secrètement dans un ravin escarpé par d'anciens forçats et déserteurs cherchant à disparaître sous l'épaisse canopée enneigée.",
+      "en": "The colony was built secretly in a steep ravine by former convicts and deserters seeking to disappear beneath the thick snowy canopy."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "isole",
+      "defense-naturelle"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_05",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "La bourgade a vu le jour lorsque des alchimistes en exil ont découvert un lichen luminescent aux puissantes propriétés curatives poussant sous la neige.",
+      "en": "The town was born when exiled alchemists discovered a luminescent lichen with powerful healing properties growing under the snow."
+    },
+    "output_tags": [
+      "ressource-herbe",
+      "isole"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_06",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Plaines",
+      "Forêt",
+      "Collines"
+    ],
+    "description": {
+      "fr": "Ce village est né lorsque des barbares nomades ont commencé à y parquer et élever des troupeaux de cervidés à la fourrure précieuse.",
+      "en": "This village was born when nomadic barbarians began to pen and raise herds of deer with valuable fur there."
+    },
+    "output_tags": [
+      "ressource-elevage"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_07",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "temple",
+      "ruines_antiques",
+      "all"
+    ],
+    "description": {
+      "fr": "Les tout premiers colons ont survécu à un hiver féroce en trouvant abri dans les ruines titanesques d'un temple de pierre, aujourd'hui envahi par les conifères.",
+      "en": "The very first settlers survived a fierce winter by taking shelter in the titanic ruins of a stone temple, now overgrown with conifers."
+    },
+    "output_tags": [
+      "vestige-majeur",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_08",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "riviere"
+    ],
+    "description": {
+      "fr": "À l'origine, c'était un modeste camp de trappeurs établi sur la seule portion de la rivière qui ne gèle jamais totalement, attirant rapidement les caravanes.",
+      "en": "Originally, it was a modest trappers' camp established on the only section of the river that never fully freezes, quickly attracting caravans."
+    },
+    "output_tags": [
+      "ressource-peche",
+      "ressource-chasse",
+      "carrefour"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_09",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "cratere",
+      "cristaux",
+      "all"
+    ],
+    "description": {
+      "fr": "La cité a émergé après qu'une pluie de météores s'est abattue sur la forêt boréale, incitant les prospecteurs à braver le gel pour extraire les cristaux célestes.",
+      "en": "The city emerged after a meteor shower struck the boreal forest, prompting prospectors to brave the frost to extract the celestial crystals."
+    },
+    "output_tags": [
+      "ressource-gemme",
+      "mystique"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_10",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "sanctuaire",
+      "all"
+    ],
+    "description": {
+      "fr": "Ce sanctuaire de bois a été fondé par un saint homme ayant miraculeusement survécu au froid sans aucun vêtement, inspirant des centaines de pèlerins.",
+      "en": "This wooden sanctuary was founded by a holy man who miraculously survived the cold without any clothes, inspiring hundreds of pilgrims."
+    },
+    "output_tags": [
+      "pelerinage",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_11",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "tour_guet",
+      "all"
+    ],
+    "description": {
+      "fr": "L'agglomération fut d'abord un fortin militaire érigé avec les troncs massifs locaux pour empêcher les tribus hostiles du nord de franchir la frontière arborée.",
+      "en": "The settlement was initially a military small fort built with massive local logs to prevent hostile northern tribes from crossing the timbered border."
+    },
+    "output_tags": [
+      "avant-poste",
+      "ressource-bois"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_12",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Historiquement, des érudits errants se sont établis autour d'un grand lac maintenu miraculeusement à l'état liquide par une étrange chaleur magique.",
+      "en": "Historically, wandering scholars settled around a large lake miraculously kept in a liquid state by a strange magical heat."
+    },
+    "output_tags": [
+      "ressource-eau",
+      "magie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_13",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "La ville a été arrachée à la terre gelée suite à la découverte d'un riche filon de charbon, forçant les premiers pionniers à creuser dans le permafrost.",
+      "en": "The city was torn from the frozen earth following the discovery of a rich coal seam, forcing the early pioneers to dig into the permafrost."
+    },
+    "output_tags": [
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_14",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Montagne"
+    ],
+    "trait_tags": [
+      "grotte"
+    ],
+    "description": {
+      "fr": "D'anciens contrebandiers ont fondé cette ville troglodyte en s'enfonçant dans des mines d'argent abandonnées, sous les racines mêmes des conifères géants.",
+      "en": "Former smugglers founded this troglodyte town by delving into abandoned silver mines, right beneath the roots of the giant conifers."
+    },
+    "output_tags": [
+      "refuge-criminel",
+      "defense-naturelle",
+      "ressource-minerai"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_15",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Cet avant-poste a été conçu par la noblesse spécifiquement pour capturer et dresser les redoutables loups géants de la région afin d'en faire des montures.",
+      "en": "This outpost was designed by the nobility specifically to capture and train the formidable giant wolves of the region to serve as mounts."
+    },
+    "output_tags": [
+      "ressource-elevage",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_16",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Contre toute attente, la colonie a prospéré lorsqu'un groupe de druides a réussi à cultiver des céréales d'hiver endurantes grâce à des sources d'eau chaude souterraines.",
+      "en": "Against all odds, the colony thrived when a group of druids managed to grow hardy winter grains using underground hot springs."
+    },
+    "output_tags": [
+      "ressource-agriculture",
+      "ressource-chaleur"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_17",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "trait_tags": [
+      "arbre_geant",
+      "terres_corrompues",
+      "all"
+    ],
+    "description": {
+      "fr": "Les clans de chasseurs ont érigé cette ville sacrée autour d'un arbre-monde foudroyé, croyant que ses racines retenaient l'âme de leurs ancêtres prisonnière des glaces.",
+      "en": "Hunter clans erected this sacred city around a lightning-struck world tree, believing its roots held the souls of their ancestors trapped in the ice."
+    },
+    "output_tags": [
+      "pelerinage",
+      "vestige-majeur",
+      "tribal",
+      "ressource-chasse"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_18",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga"
+    ],
+    "description": {
+      "fr": "Jadis un simple relais, la ville est devenue la porte d'entrée incontournable du Grand Nord, là où le bois d'œuvre abonde avant que l'aridité ne prenne le relais.",
+      "en": "Once a simple relay, the city became the essential gateway to the Far North, where timber is abundant before the aridity takes over."
+    },
+    "output_tags": [
+      "ressource-bois",
+      "survie"
+    ]
+  },
+  {
+    "id": "ori_av_taiga_19",
+    "region_tags": [
+      "all"
+    ],
+    "biome_tags": [
+      "Taïga",
+      "Forêt"
+    ],
+    "description": {
+      "fr": "Ce repaire reculé a été fondé par un conclave d'illusionnistes pour dissimuler leurs dangereuses expériences au milieu du brouillard tenace qui hante toujours ces bois.",
+      "en": "This remote lair was founded by a conclave of illusionists to conceal their dangerous experiments amidst the stubborn fog that always haunts these woods."
+    },
+    "output_tags": [
+      "magie",
+      "mystique",
+      "isole"
+    ]
+  }
+]

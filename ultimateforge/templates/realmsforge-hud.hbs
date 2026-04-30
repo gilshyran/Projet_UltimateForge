@@ -1,0 +1,185 @@
+<div class="realmsforge-container" style="font-family: var(--font-primary); height: 100%; display: flex; flex-direction: column;">
+    
+    <header style="text-align: center; margin-bottom: 10px; padding-top: 5px;">
+        <img src="modules/ultimateforge/ui/titre_RealmsForge.webp" alt="Avantis RealmsForge" style="max-width: 45%; max-height: 80px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
+    </header>
+
+    <nav class="rf-tabs" style="display: flex; border-bottom: 2px solid #8e44ad; margin-bottom: 0; background: rgba(0,0,0,0.05);">
+        <a class="rf-tab-item active" data-tab="factions" style="flex: 1; text-align: center; padding: 8px; font-weight: bold; cursor: pointer; border-bottom: 3px solid #8e44ad; color: #8e44ad;"><i class="fas fa-chess-knight"></i> {{localize 'REALMSFORGE.HUD.TabFactions'}}</a>
+        <a class="rf-tab-item" data-tab="regions" style="flex: 1; text-align: center; padding: 8px; font-weight: bold; cursor: pointer; border-bottom: 3px solid transparent; color: #555;"><i class="fas fa-book-journal-whills"></i> {{localize 'REALMSFORGE.HUD.TabCodex'}}</a>
+    </nav>
+
+    <div class="rf-tab-content active" data-tab="factions" style="flex-grow: 1; display: flex; overflow: hidden;">
+        
+        <div style="width: 35%; border-right: 2px solid #bdc3c7; display: flex; flex-direction: column; background: rgba(0,0,0,0.02);">
+            
+            <div style="padding: 10px; display: flex; gap: 5px;">
+                <button id="rf-add-faction" style="flex: 1; padding: 6px; background: #27ae60; color: white; border: none; font-weight: bold; border-radius: 4px; font-size: 0.8em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fas fa-plus"></i> Créer</button>
+                <button id="rf-import-factions" style="flex: 1; padding: 6px; background: #e67e22; color: white; border: none; font-weight: bold; border-radius: 4px; font-size: 0.8em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fas fa-file-import"></i> Importer</button>
+            </div>
+
+            <div style="padding: 5px 10px; background: #ecf0f1; border-top: 1px solid #bdc3c7; border-bottom: 1px solid #bdc3c7; font-size: 0.75em; color: #2c3e50; text-align: center;">
+                <strong>Monde Connu :</strong> {{worldStats.totalCities}} Cités | {{worldStats.totalWilds}} Terres
+            </div>
+
+            <div style="flex-grow: 1; overflow-y: auto; padding: 5px;">
+                {{#each factions}}
+                <div class="rf-faction-list-item {{#if (eq this.id ../activeFactionId)}}active{{/if}}" data-id="{{this.id}}" style="display: flex; align-items: center; gap: 10px; padding: 10px; margin-bottom: 5px; cursor: pointer; border-radius: 4px; border: 1px solid {{#if (eq this.id ../activeFactionId)}}{{this.color}}{{else}}transparent{{/if}}; background: {{#if (eq this.id ../activeFactionId)}}rgba(0,0,0,0.08){{else}}transparent{{/if}}; transition: 0.2s;">
+                    <div style="width: 16px; height: 16px; border-radius: 50%; background-color: {{this.color}};"></div>
+                    <div style="flex-grow: 1; overflow: hidden;">
+                        <div style="font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #2c3e50;">{{this.name}}</div>
+                        <div style="font-size: 0.75em; color: #7f8c8d;">
+                            <i class="fas fa-city" style="color:#8e44ad;"></i> {{this.cities.length}} | <i class="fas fa-tree" style="color:#27ae60;"></i> {{this.wilds.length}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+                {{#unless factions.length}}
+                    <p style="text-align: center; color: #95a5a6; font-size: 0.9em; font-style: italic; padding: 20px;">{{localize 'REALMSFORGE.HUD.NoFaction'}}</p>
+                {{/unless}}
+            </div>
+            
+            <div style="padding: 10px; border-top: 1px solid #bdc3c7;">
+                <button id="rf-toggle-polmap" style="width: 100%; padding: 8px; background: #8e44ad; color: white; border: none; font-weight: bold; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fas fa-eye"></i> {{localize 'REALMSFORGE.HUD.BtnPolMap'}}</button>
+            </div>
+        </div>
+
+        <div style="width: 65%; overflow-y: auto; padding: 15px; position: relative;">
+            {{#if activeFaction}}
+            <div id="rf-active-faction-data" data-id="{{activeFaction.id}}">
+                
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                    <div style="display: flex; gap: 10px; align-items: center; width: 80%;">
+                        <input type="color" class="rf-edit-field" data-field="color" value="{{activeFaction.color}}" style="width: 30px; height: 30px; border: none; cursor: pointer; padding: 0; border-radius: 4px;">
+                        <input type="text" class="rf-edit-field" data-field="name" value="{{activeFaction.name}}" placeholder="{{localize 'REALMSFORGE.HUD.FactionName'}}" style="font-weight: bold; font-size: 1.4em; border: none; background: transparent; flex-grow: 1; color: #2c3e50;">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <a class="rf-toggle-visibility" style="color: {{#if (eq activeFaction.visible false)}}#95a5a6{{else}}#2c3e50{{/if}}; cursor: pointer; font-size: 1.2em;" title="Visibilité">
+                            <i class="fas {{#if (eq activeFaction.visible false)}}fa-eye-slash{{else}}fa-eye{{/if}}"></i>
+                        </a>
+                        <a class="rf-delete-faction" style="color: #c0392b; cursor: pointer; font-size: 1.2em;"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 5px; margin-bottom: 15px; border-bottom: 2px solid {{activeFaction.color}}; padding-bottom: 15px;">
+                    <div style="flex:1; background:#f1c40f; color:#fff; text-align:center; padding:5px; border-radius:4px; font-weight:bold; text-shadow:1px 1px 0 rgba(0,0,0,0.3);" title="Richesse & Économie"><i class="fas fa-coins"></i> {{activeFaction.stats.eco}}</div>
+                    <div style="flex:1; background:#e74c3c; color:#fff; text-align:center; padding:5px; border-radius:4px; font-weight:bold; text-shadow:1px 1px 0 rgba(0,0,0,0.3);" title="Puissance Militaire"><i class="fas fa-swords"></i> {{activeFaction.stats.mil}}</div>
+                    <div style="flex:1; background:#3498db; color:#fff; text-align:center; padding:5px; border-radius:4px; font-weight:bold; text-shadow:1px 1px 0 rgba(0,0,0,0.3);" title="Foi & Religion"><i class="fas fa-praying-hands"></i> {{activeFaction.stats.faith}}</div>
+                    <div style="flex:1; background:#9b59b6; color:#fff; text-align:center; padding:5px; border-radius:4px; font-weight:bold; text-shadow:1px 1px 0 rgba(0,0,0,0.3);" title="Savoir & Occulte"><i class="fas fa-book-dead"></i> {{activeFaction.stats.sci}}</div>
+                    <div style="flex:1; background:{{#if (lt activeFaction.stats.stab 0)}}#34495e{{else}}#2ecc71{{/if}}; color:#fff; text-align:center; padding:5px; border-radius:4px; font-weight:bold; text-shadow:1px 1px 0 rgba(0,0,0,0.3);" title="Stabilité & Ordre"><i class="fas fa-balance-scale"></i> {{activeFaction.stats.stab}}</div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                    <div>
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">{{localize 'REALMSFORGE.HUD.Type'}}</label>
+                        <input type="text" class="rf-edit-field" data-field="type" value="{{activeFaction.type}}" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 3px;">
+                    </div>
+                    <div>
+                        <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">{{localize 'REALMSFORGE.HUD.InfluenceRadius'}}</label>
+                        <select class="rf-edit-field" data-field="level" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 3px;">
+                            <option value="1" {{#if (eq activeFaction.level "1")}}selected{{/if}}>{{localize 'REALMSFORGE.HUD.Lvl1'}}</option>
+                            <option value="2" {{#if (eq activeFaction.level "2")}}selected{{/if}}>{{localize 'REALMSFORGE.HUD.Lvl2'}}</option>
+                            <option value="3" {{#if (eq activeFaction.level "3")}}selected{{/if}}>{{localize 'REALMSFORGE.HUD.Lvl3'}}</option>
+                            <option value="4" {{#if (eq activeFaction.level "4")}}selected{{/if}}>{{localize 'REALMSFORGE.HUD.Lvl4'}}</option>
+                            <option value="5" {{#if (eq activeFaction.level "5")}}selected{{/if}}>{{localize 'REALMSFORGE.HUD.Lvl5'}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label style="font-size: 0.75em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;">{{localize 'REALMSFORGE.HUD.FactionAura'}}</label>
+                    <div style="border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 10px; background: rgba(0,0,0,0.02); display: flex; flex-wrap: wrap; gap: 8px;">
+                        {{#each activeFaction.vibeList}}
+                        <label style="background: {{#if this.selected}}linear-gradient(to bottom, #8e44ad, #732d91){{else}}#e0e0e0{{/if}}; color: {{#if this.selected}}white{{else}}#444{{/if}}; padding: 4px 10px; border-radius: 12px; font-size: 0.8em; cursor: pointer; user-select: none; transition: 0.2s;">
+                            <input type="checkbox" class="rf-vibe-checkbox" value="{{this.value}}" {{#if this.selected}}checked{{/if}} style="display:none;">
+                            {{this.label}}
+                        </label>
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div style="background: #e8f4f8; border-left: 4px solid #3498db; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+                    <label style="font-size: 0.75em; color: #2980b9; font-weight: bold; text-transform: uppercase;"><i class="fas fa-chess-rook"></i> Commandement (Épicentre)</label>
+                    <div style="display: flex; gap: 5px; margin-top: 5px;">
+                        <input type="text" class="rf-edit-field" data-field="hexId" value="{{activeFaction.hexId}}" placeholder="{{localize 'REALMSFORGE.HUD.CapitalPlaceholder'}}" style="width: calc(100% - 40px); padding: 6px; border: 1px solid #bdc3c7; border-radius: 3px;">
+                        <button class="rf-target-btn" title="{{localize 'REALMSFORGE.HUD.TargetHex'}}" style="width: 35px; background: #2c3e50; color: white; border: none; border-radius: 3px; cursor: pointer;"><i class="fas fa-crosshairs"></i></button>
+                    </div>
+                    <button class="rf-propagate-btn" style="background: #2980b9; color: white; border: none; margin-top: 10px; padding: 8px; width: 100%; border-radius: 4px; font-size: 0.9em; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fas fa-broadcast-tower"></i> {{localize 'REALMSFORGE.HUD.LaunchWave'}}</button>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    
+                    <div style="background: rgba(142, 68, 173, 0.05); padding: 10px; border-radius: 4px; border: 1px solid rgba(142, 68, 173, 0.2);">
+                        <label style="font-size: 0.85em; color: #8e44ad; font-weight: bold; display: block; border-bottom: 1px solid rgba(142, 68, 173, 0.3); padding-bottom: 5px; margin-bottom: 10px;"><i class="fas fa-city"></i> Bastions & Cités ({{activeFaction.cities.length}})</label>
+                        <div style="max-height: 180px; overflow-y: auto; padding-right: 5px;">
+                            {{#if activeFaction.cities.length}}
+                                {{#each activeFaction.cities}}
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 6px 0;">
+                                    <span style="flex-grow: 1; color: #2c3e50; font-weight: bold; font-size: 0.9em;">{{this.name}}</span>
+                                    <span style="margin: 0 10px; letter-spacing: 2px; font-size: 0.8em;" title="{{localize 'REALMSFORGE.HUD.InfluenceLevel'}} {{this.score}}/5">{{{this.dots}}}</span>
+                                    <div style="display: flex; gap: 4px;">
+                                        <button class="rf-inf-btn rf-inf-minus" data-hex="{{this.hexId}}" style="width: 22px; height: 22px; padding: 0; font-weight: bold; background: #e74c3c; border: none; border-radius: 3px; color: white; cursor: pointer;">-</button>
+                                        <button class="rf-inf-btn rf-inf-plus" data-hex="{{this.hexId}}" style="width: 22px; height: 22px; padding: 0; font-weight: bold; background: #2ecc71; border: none; border-radius: 3px; color: white; cursor: pointer;">+</button>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            {{else}}
+                                <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 5px 0;">Aucune cité contrôlée.</p>
+                            {{/if}}
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(39, 174, 96, 0.05); padding: 10px; border-radius: 4px; border: 1px solid rgba(39, 174, 96, 0.2);">
+                        <label style="font-size: 0.85em; color: #27ae60; font-weight: bold; display: block; border-bottom: 1px solid rgba(39, 174, 96, 0.3); padding-bottom: 5px; margin-bottom: 10px;"><i class="fas fa-tree"></i> Terres Sauvages ({{activeFaction.wilds.length}})</label>
+                        <div style="max-height: 150px; overflow-y: auto; padding-right: 5px;">
+                            {{#if activeFaction.wilds.length}}
+                                {{#each activeFaction.wilds}}
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 4px 0;">
+                                    <span style="flex-grow: 1; color: #555; font-size: 0.85em;">{{this.name}}</span>
+                                    <span style="margin: 0 10px; letter-spacing: 2px; font-size: 0.7em;">{{{this.dots}}}</span>
+                                    <div style="display: flex; gap: 4px;">
+                                        <button class="rf-inf-btn rf-inf-minus" data-hex="{{this.hexId}}" style="width: 20px; height: 20px; padding: 0; font-weight: bold; background: #e74c3c; border: none; border-radius: 3px; color: white; cursor: pointer;">-</button>
+                                        <button class="rf-inf-btn rf-inf-plus" data-hex="{{this.hexId}}" style="width: 20px; height: 20px; padding: 0; font-weight: bold; background: #2ecc71; border: none; border-radius: 3px; color: white; cursor: pointer;">+</button>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            {{else}}
+                                <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 5px 0;">Aucune terre sauvage contrôlée.</p>
+                            {{/if}}
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            {{else}}
+                <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #95a5a6;">
+                    <i class="fas fa-chess-board" style="font-size: 3em; margin-bottom: 15px; opacity: 0.5;"></i>
+                    <h3>Sélectionnez une faction</h3>
+                    <p style="text-align: center; font-size: 0.9em;">Cliquez sur une faction dans la liste de gauche pour afficher ses détails, étendre son influence et gérer son territoire.</p>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="rf-tab-content" data-tab="regions" style="flex-grow: 1; overflow-y: auto; padding: 15px; display: none;">
+        <div style="margin-bottom: 15px;">
+            <select id="rf-codex-select" style="width: 100%; padding: 8px; font-size: 1.1em; font-weight: bold; background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 5px;">
+                <option value="none" selected disabled>{{localize 'REALMSFORGE.HUD.SelectRegion'}}</option>
+                {{#each allCodexRegions}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div id="rf-codex-body" style="display: none;">
+            <div style="position: relative; text-align: center; margin-bottom: 15px;">
+                <img id="rf-codex-img" src="icons/svg/mystery-man.svg" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #bdc3c7;">
+            </div>
+            <div id="rf-codex-narrative" style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 5px; border-left: 4px solid #3498db; margin-bottom: 15px; font-size: 0.95em;"></div>
+            <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                <button id="rf-btn-codex-journal" style="background: #27ae60; color: white; border: none; padding: 8px; border-radius: 4px;"><i class="fas fa-book-open"></i> Archiver le Codex</button>
+            </div>
+        </div>
+    </div>
+</div>

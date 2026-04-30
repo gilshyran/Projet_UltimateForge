@@ -1,0 +1,531 @@
+[
+  {
+    "id": "gov_paisible_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "paisible"
+    ],
+    "description": {
+      "fr": ", un ancien respecté et bienveillant, dont la sagesse et la connaissance des traditions guident la communauté dans la paix.",
+      "en": ", a respected and benevolent elder, whose wisdom and knowledge of traditions guide the community in peace."
+    },
+    "output_tags": [
+      "tradition",
+      "conseil-anciens",
+      "democratie-directe"
+    ]
+  },
+  {
+    "id": "gov_accueillant_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Village",
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole"
+    ],
+    "vibe_tags": [
+      "accueillant",
+      "paisible"
+    ],
+    "description": {
+      "fr": ", fraîchement élu(e) par l'assemblée des citoyens pour représenter la voix du peuple au sein d'une république libre et ouverte.",
+      "en": ", freshly elected by the citizens' assembly to represent the voice of the people in a free and open republic."
+    },
+    "output_tags": [
+      "democratie-locale",
+      "cite-libre"
+    ]
+  },
+  {
+    "id": "gov_oppressant_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "oppressant"
+    ],
+    "description": {
+      "fr": ", un tyran inflexible qui a instauré la loi martiale, dirigeant la milice locale et écrasant toute opposition d'une main de fer.",
+      "en": ", an inflexible tyrant who instituted martial law, ruling the local militia and crushing any opposition with an iron fist."
+    },
+    "output_tags": [
+      "dictature-militaire",
+      "tyrannie"
+    ]
+  },
+  {
+    "id": "gov_paranoiaque_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "paranoiaque"
+    ],
+    "description": {
+      "fr": ", un despote reclus qui gouverne dans le secret et la méfiance, appuyé(e) par un dangereux réseau d'informateurs et d'assassins.",
+      "en": ", a reclusive despot who rules in secrecy and suspicion, supported by a dangerous network of informants and assassins."
+    },
+    "output_tags": [
+      "climat-terreur",
+      "police-secrete",
+      "isolationnisme"
+    ]
+  },
+  {
+    "id": "gov_loiduplusfort_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "loi-du-plus-fort"
+    ],
+    "description": {
+      "fr": ", un chef de guerre brutal qui maintient son autorité instable par la violence pure, à la tête de la faction la plus lourdement armée.",
+      "en": ", a brutal warlord who maintains unstable authority through sheer violence, leading the most heavily armed faction."
+    },
+    "output_tags": [
+      "chef-de-guerre",
+      "anarchie",
+      "loi-du-talion"
+    ]
+  },
+  {
+    "id": "gov_corrompu_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "corrompu"
+    ],
+    "description": {
+      "fr": ", une figure notoire de la pègre qui a acheté les gardes, menacé les juges et éliminé ses rivaux pour devenir le parrain incontesté de la cité.",
+      "en": ", a notorious underworld figure who bought guards, threatened judges, and eliminated rivals to become the city's undisputed godfather."
+    },
+    "output_tags": [
+      "cartel-criminel",
+      "mafia",
+      "oligarchie-corrompue"
+    ]
+  },
+  {
+    "id": "gov_opulent_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "opulent"
+    ],
+    "description": {
+      "fr": ", à la tête d'un puissant Conseil de Princes-Marchands qui gèrent la cité comme une entreprise impitoyable tournée vers le profit.",
+      "en": ", heading a powerful Council of Merchant Princes who run the city like a ruthless profit-driven enterprise."
+    },
+    "output_tags": [
+      "oligarchie-marchande",
+      "ploutocratie"
+    ]
+  },
+  {
+    "id": "gov_inegalitaire_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": ", un aristocrate issu d'une très ancienne lignée de petite noblesse, totalement déconnecté de la réalité de son peuple affamé.",
+      "en": ", an aristocrat from a very old lineage of minor nobility, totally disconnected from the reality of their starving people."
+    },
+    "output_tags": [
+      "feodalite",
+      "noblesse",
+      "inegalite"
+    ]
+  },
+  {
+    "id": "gov_laborieux_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "laborieux"
+    ],
+    "description": {
+      "fr": ", le Grand Maître du Syndicat des Artisans, dirigeant la ville à travers les lois très strictes des guildes et le culte du travail.",
+      "en": ", the Grand Master of the Artisans' Syndicate, ruling the city through strict guild laws and the cult of hard work."
+    },
+    "output_tags": [
+      "meritocratie",
+      "gouvernement-de-guildes"
+    ]
+  },
+  {
+    "id": "gov_miserable_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "miserable"
+    ],
+    "description": {
+      "fr": ", un survivant désespéré qui tente de maintenir son peuple en vie jour après jour, en l'absence cruelle d'aide extérieure.",
+      "en": ", a desperate survivor trying to keep their people alive day by day, in the cruel absence of outside help."
+    },
+    "output_tags": [
+      "survie",
+      "faiblesse-politique"
+    ]
+  },
+  {
+    "id": "gov_fanatique_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "fanatique"
+    ],
+    "description": {
+      "fr": ", un Grand Inquisiteur fanatique qui purge le péché par le feu et dicte chaque aspect de la vie civile selon des dogmes extrémistes.",
+      "en": ", a fanatical Grand Inquisitor who purges sin with fire and dictates every aspect of civil life according to extremist dogmas."
+    },
+    "output_tags": [
+      "theocratie-rigide",
+      "inquisition",
+      "culte"
+    ]
+  },
+  {
+    "id": "gov_pieux_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "pieux"
+    ],
+    "description": {
+      "fr": ", un haut-prêtre ou pontife siégeant à la tête d'un clergé bienveillant, où les lois de la cité et la morale religieuse ne font qu'un.",
+      "en": ", a high priest or pontiff sitting at the head of a benevolent clergy, where city laws and religious morality are one and the same."
+    },
+    "output_tags": [
+      "theocratie-douce",
+      "eglise-dirigeante"
+    ]
+  },
+  {
+    "id": "gov_arcanique_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "arcanique"
+    ],
+    "description": {
+      "fr": ", un puissant Archimage à la tête d'un conclave d'érudits, régissant la cité par la logique, les mathématiques et la haute magie.",
+      "en": ", a powerful Archmage leading a conclave of scholars, ruling the city through logic, mathematics, and high magic."
+    },
+    "output_tags": [
+      "magocratie",
+      "conseil-occulte"
+    ]
+  },
+  {
+    "id": "gov_arcanique_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "arcanique"
+    ],
+    "description": {
+      "fr": ", un sorcier solitaire et craint, dont la maîtrise écrasante des forces occultes contraint la bourgade à le servir.",
+      "en": ", a solitary and feared sorcerer whose overwhelming mastery of occult forces compels the settlement to serve them."
+    },
+    "output_tags": [
+      "magocratie-locale",
+      "sorcier-tutelaire"
+    ]
+  },
+  {
+    "id": "gov_superstitieux_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village",
+      "Petite Ville"
+    ],
+    "vibe_tags": [
+      "superstitieux"
+    ],
+    "description": {
+      "fr": ", un vieux druide ou chaman qui consulte les esprits et les présages locaux avant de prendre la moindre décision pour le village.",
+      "en": ", an old druid or shaman who consults spirits and local omens before making any decision for the village."
+    },
+    "output_tags": [
+      "gouvernance-mystique",
+      "chamanisme"
+    ]
+  },
+  {
+    "id": "gov_festif_all",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "festif"
+    ],
+    "description": {
+      "fr": ", une figure excentrique et très charismatique, davantage tournée vers le mécénat et les arts que vers la gestion stricte du royaume.",
+      "en": ", an eccentric and highly charismatic figure, focused more on patronage and the arts than on strict kingdom management."
+    },
+    "output_tags": [
+      "mecenat",
+      "gouvernement-populaire"
+    ]
+  },
+  {
+    "id": "gov_fallback_default",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "all"
+    ],
+    "vibe_tags": [
+      "all"
+    ],
+    "description": {
+      "fr": ", un noble désigné par la couronne ou un maire local, s'efforçant de maintenir un semblant de gestion standard.",
+      "en": ", a noble appointed by the crown or a local mayor, striving to maintain a semblance of standard management."
+    },
+    "output_tags": [
+      "feodalite-standard"
+    ]
+  },
+  {
+    "id": "gov_laborieux_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "laborieux"
+    ],
+    "description": {
+      "fr": ", un chef de chantier ou contremaître bourru, gérant la colonie davantage comme un camp d'exploitation que comme un véritable village.",
+      "en": ", a gruff site manager or foreman, running the settlement more like an exploitation camp than a real village."
+    },
+    "output_tags": [
+      "gestion-ouvriere",
+      "contremaitre"
+    ]
+  },
+  {
+    "id": "gov_corrompu_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "corrompu"
+    ],
+    "description": {
+      "fr": ", un bourgmestre véreux et lâche, servant secrètement les intérêts de bandits ou de seigneurs locaux en échange de pots-de-vin.",
+      "en": ", a crooked and cowardly burgomaster, secretly serving the interests of bandits or local lords in exchange for bribes."
+    },
+    "output_tags": [
+      "maire-verreux",
+      "marionnette-locale"
+    ]
+  },
+  {
+    "id": "gov_opulent_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Hameau",
+      "Village",
+      "Petite Ville"
+    ],
+    "vibe_tags": [
+      "opulent"
+    ],
+    "description": {
+      "fr": ", un riche propriétaire terrien possédant la quasi-totalité des terres et des commerces, traitant les habitants comme ses simples employés.",
+      "en": ", a wealthy landowner possessing almost all the local land and businesses, treating the inhabitants as their simple employees."
+    },
+    "output_tags": [
+      "proprietaire-terrien",
+      "domaine-prive"
+    ]
+  },
+  {
+    "id": "gov_inegalitaire_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "inegalitaire"
+    ],
+    "description": {
+      "fr": ", un petit baron tyrannique retranché dans son manoir, qui écrase les paysans locaux sous des taxes abusives pour maintenir son train de vie.",
+      "en": ", a tyrannical petty baron entrenched in their manor, crushing local peasants under abusive taxes to maintain their lifestyle."
+    },
+    "output_tags": [
+      "petit-baron",
+      "servage"
+    ]
+  },
+  {
+    "id": "gov_miserable_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Petite Ville",
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "miserable"
+    ],
+    "description": {
+      "fr": ", une bureaucratie décadente et inefficace, incapable d'endiguer la misère et se contentant de barricader les derniers beaux quartiers.",
+      "en": ", a decadent and inefficient bureaucracy, unable to stem the misery and contenting itself with barricading the last wealthy districts."
+    },
+    "output_tags": [
+      "bureaucratie-decadente",
+      "etat-failli"
+    ]
+  },
+  {
+    "id": "gov_accueillant_small",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Campement",
+      "Hameau",
+      "Village"
+    ],
+    "vibe_tags": [
+      "accueillant",
+      "festif"
+    ],
+    "description": {
+      "fr": ", l'aubergiste le plus populaire du village, agissant comme maire officieux et réglant la plupart des conflits autour d'une bonne pinte.",
+      "en": ", the village's most popular innkeeper, acting as unofficial mayor and settling most disputes over a good pint."
+    },
+    "output_tags": [
+      "bourgmestre-aubergiste",
+      "commune-ouverte"
+    ]
+  },
+  {
+    "id": "gov_superstitieux_large",
+    "region_tags": [
+      "all"
+    ],
+    "size_tags": [
+      "Grande Cité",
+      "Métropole",
+      "Capitale"
+    ],
+    "vibe_tags": [
+      "superstitieux"
+    ],
+    "description": {
+      "fr": ", un dirigeant fantoche, secrètement manipulé par un cercle d'augures et d'astrologues dont les prophéties irrationnelles dictent les lois.",
+      "en": ", a puppet ruler, secretly manipulated by a circle of augurs and astrologers whose irrational prophecies dictate the laws."
+    },
+    "output_tags": [
+      "cabal-secrete",
+      "eminence-grise"
+    ]
+  }
+]

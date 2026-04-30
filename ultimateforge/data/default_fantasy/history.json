@@ -1,0 +1,48 @@
+{
+  "ages": {
+    "weighted": { "Récent": 15, "Établi": 45, "Ancien": 30, "Millénaire": 10 },
+    "descriptions": {
+      "Récent": { "fr": "fondé il y a seulement quelques années", "en": "founded only a few years ago" },
+      "Établi": { "fr": "établi depuis plusieurs décennies", "en": "established for several decades" },
+      "Ancien": { "fr": "vieux de plusieurs siècles", "en": "centuries old" },
+      "Millénaire": { "fr": "très vieux, avec des fondations millénaires", "en": "with millennial foundations" }
+    }
+  },
+  "past_events": [
+    {
+      "biome_tags": ["all"],
+      "origin_tags": ["all"],
+      "description": { "fr": "Une ancienne épidémie a laissé un quartier entier vide et scellé jusqu'à ce jour.", "en": "An old plague left an entire district empty and sealed to this day." }
+    },
+    {
+      "biome_tags": ["all"],
+      "origin_tags": ["avant-poste", "defense-naturelle"],
+      "description": { "fr": "Un siège meurtrier dans le passé a poussé les habitants à fortifier de manière obsessionnelle leurs caves.", "en": "A deadly siege in the past forced inhabitants to obsessively fortify their cellars." }
+    },
+    {
+      "biome_tags": ["all"],
+      "origin_tags": ["refuge-criminel"],
+      "description": { "fr": "La guilde des voleurs a pris le contrôle total du gouvernement de manière officielle pendant dix ans.", "en": "The thieves' guild took official and total control of the government for ten years." }
+    },
+    {
+      "biome_tags": ["Plaines", "Forêt", "Collines", "Taïga"],
+      "origin_tags": ["all"],
+      "description": { "fr": "La ville a survécu à un incendie dévastateur qui a ravagé la moitié des bâtiments d'origine.", "en": "The town survived a devastating fire that ravaged half the original buildings." }
+    },
+    {
+      "biome_tags": ["Aquatique", "Littoral"],
+      "origin_tags": ["all"],
+      "description": { "fr": "Un tsunami d'une rare violence a rasé l'agglomération par le passé, forçant les survivants à tout reconstruire avec les épaves.", "en": "A rare and violent tsunami razed the settlement in the past, forcing survivors to rebuild everything from shipwrecks." }
+    },
+    {
+      "biome_tags": ["Outreterre", "Montagne"],
+      "origin_tags": ["ressource-minerai"],
+      "description": { "fr": "Des mineurs ont accidentellement percé une faille vers le Plan du Feu, nécessitant l'intervention d'archimages.", "en": "Miners accidentally breached a rift to the Plane of Fire, requiring the intervention of archmages." }
+    },
+    {
+      "biome_tags": ["all"],
+      "origin_tags": ["pelerinage", "mystique", "magie"],
+      "description": { "fr": "L'avatar d'une divinité est apparu lors d'une famine passée pour bénir les puits et sauver les fidèles.", "en": "The avatar of a deity appeared during a past famine to bless the wells and save the faithful." }
+    }
+  ]
+}

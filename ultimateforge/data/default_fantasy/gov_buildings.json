@@ -1,0 +1,669 @@
+{
+  "buildings": {
+    "Campement": {
+      "fr": "La Tente du Chef",
+      "en": "The Chief's Tent"
+    },
+    "Hameau": {
+      "fr": "La Longère",
+      "en": "The Longhouse"
+    },
+    "Village": {
+      "fr": "La Maison Commune",
+      "en": "The Town House"
+    },
+    "Petite Ville": {
+      "fr": "Le Manoir",
+      "en": "The Manor"
+    },
+    "Grande Cité": {
+      "fr": "Le Palais",
+      "en": "The Palace"
+    },
+    "Métropole": {
+      "fr": "La Citadelle",
+      "en": "The Citadel"
+    },
+    "Capitale": {
+      "fr": "Le Donjon",
+      "en": "The Keep"
+    }
+  },
+  "ambiances": [
+    {
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte",
+        "theocratie-douce",
+        "eglise-dirigeante"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Le bâtiment ressemble davantage à un temple majestueux et austère. L'air y est lourd d'encens et des clercs murmurent des prières dans les vastes couloirs.",
+        "en": "The building looks more like a majestic, austere temple. The air is heavy with incense and clerics whisper prayers in the vast halls."
+      }
+    },
+    {
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte",
+        "theocratie-douce",
+        "eglise-dirigeante",
+        "gouvernance-mystique",
+        "chamanisme"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "L'endroit tient davantage du sanctuaire que d'une mairie. La pièce est saturée par la fumée d'herbes sacrées et les murs sont couverts d'idoles et de talismans protecteurs.",
+        "en": "The place feels more like a makeshift shrine than a town hall. The room is thick with the smoke of sacred herbs, and the walls are covered in idols and protective talismans."
+      }
+    },
+    {
+      "gov_tags": [
+        "dictature-militaire",
+        "tyrannie",
+        "climat-terreur",
+        "police-secrete",
+        "isolationnisme"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "C'est une véritable forteresse urbaine. Des gardes en armure lourde filtrent chaque visiteur avec une méfiance assumée et les fenêtres sont pourvues de solides barreaux.",
+        "en": "It's a true urban fortress. Heavily armored guards screen every visitor with open suspicion, and the windows have solid bars."
+      }
+    },
+    {
+      "gov_tags": [
+        "dictature-militaire",
+        "tyrannie",
+        "chef-de-guerre",
+        "loi-du-talion"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Le lieu est entouré de solides pieux et de râteliers d'armes. Les miliciens locaux vous dévisagent durement, la main sur le pommeau de leur épée.",
+        "en": "The place is surrounded by solid stakes and weapon racks. Local militiamen stare at you harshly, hands on their sword hilts."
+      }
+    },
+    {
+      "gov_tags": [
+        "proprietaire-terrien",
+        "domaine-prive",
+        "petit-baron",
+        "servage"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "La demeure détonne cruellement avec la pauvreté du reste du lieu. Le dirigeant a accaparé les meilleures fourrures et la seule vaisselle en argent du village.",
+        "en": "The dwelling cruelly clashes with the poverty of the rest of the place. The leader has hoarded the best furs and the only silver tableware in the village."
+      }
+    },
+    {
+      "gov_tags": [
+        "oligarchie-marchande",
+        "ploutocratie",
+        "noblesse",
+        "inegalite"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "La demeure étale une richesse indécente pour asseoir son pouvoir : tapisseries importées, statues dorées et domestiques vêtus de soie.",
+        "en": "The residence displays indecent wealth to assert its power: imported tapestries, gilded statues, and silk-clad servants."
+      }
+    },
+    {
+      "gov_tags": [
+        "cartel-criminel",
+        "mafia",
+        "oligarchie-corrompue",
+        "maire-verreux",
+        "marionnette-locale"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "La façade est discrète, presque banale, mais l'intérieur révèle un confort tapageur et des gardes patibulaires qui ressemblent davantage à des gros bras de taverne.",
+        "en": "The facade is discreet, almost mundane, but the interior reveals flashy comfort and sinister guards who look more like tavern thugs."
+      }
+    },
+    {
+      "gov_tags": [
+        "tradition",
+        "conseil-anciens",
+        "chamanisme"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "L'intérieur est décoré de trophées de chasse et d'anciennes reliques de la communauté. Un grand feu réconfortant brûle en permanence au centre de la pièce.",
+        "en": "The interior is decorated with hunting trophies and ancient community relics. A large comforting fire burns constantly in the center of the room."
+      }
+    },
+    {
+      "gov_tags": [
+        "democratie-directe",
+        "bourgmestre-aubergiste",
+        "commune-ouverte"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "La porte est grande ouverte. Une longue table usée occupe le centre, où chacun peut venir s'asseoir, boire un coup et donner son avis sans cérémonie.",
+        "en": "The door is wide open. A long worn table occupies the center, where anyone can sit, have a drink, and share their opinion without ceremony."
+      }
+    },
+    {
+      "gov_tags": [
+        "anarchie",
+        "faiblesse-politique",
+        "survie",
+        "loi-du-talion"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "La bâtisse est en piteux état, le toit fuit et le sol est couvert de boue. Des ivrognes dorment à proximité et personne ne semble réellement donner d'ordres ici.",
+        "en": "The building is in a pitiful state, the roof leaks and the floor is covered in mud. Drunks sleep nearby and no one seems to really give orders here."
+      }
+    },
+    {
+      "gov_tags": [
+        "bureaucratie-decadente",
+        "etat-failli"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "L'édifice tombe en ruine. Les plafonds s'écaillent, les archives moisissent dans les coins et les quelques clercs présents semblent avoir renoncé depuis longtemps.",
+        "en": "The building is falling into ruin. Ceilings are peeling, archives are molding in corners, and the few clerks present seem to have given up long ago."
+      }
+    },
+    {
+      "gov_tags": [
+        "magocratie",
+        "conseil-occulte",
+        "cabal-secrete"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Une architecture qui défie la gravité. Des orbes de lumière lévitent silencieusement dans les couloirs et l'air sent fortement l'ozone et le parchemin antique.",
+        "en": "Architecture that defies gravity. Orbs of light silently levitate in the corridors, and the air smells strongly of ozone and ancient parchment."
+      }
+    },
+    {
+      "gov_tags": [
+        "magocratie-locale",
+        "sorcier-tutelaire",
+        "chamanisme"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Une habitation recluse, littéralement incrustée dans l'environnement sauvage. Des livres volant tout seuls et des fioles bouillonnantes encombrent le moindre recoin.",
+        "en": "A reclusive dwelling, literally embedded in the wild environment. Self-flying books and bubbling vials clutter every corner."
+      }
+    },
+    {
+      "gov_tags": [
+        "meritocratie",
+        "gouvernement-de-guildes"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Le hall ressemble au siège d'une immense entreprise. De gigantesques tableaux noirs recensent les rendements quotidiens, les quotas et les prix des matières premières.",
+        "en": "The hall looks like the headquarters of a massive corporation. Giant blackboards list daily yields, quotas, and raw material prices."
+      }
+    },
+    {
+      "gov_tags": [
+        "gestion-ouvriere",
+        "contremaitre"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "C'est davantage un bureau de contremaître qu'une maison. Les murs sont couverts de plans d'exploitation, de fiches de paie et d'outils de mesure.",
+        "en": "It's more of a foreman's office than a house. The walls are covered in operational plans, payrolls, and measuring tools."
+      }
+    },
+    {
+      "gov_tags": [
+        "mecenat",
+        "gouvernement-populaire"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Une ambiance de cour de théâtre : des musiciens jouent en fond, les murs sont couverts de toiles colorées et l'étiquette y est aussi extravagante que détendue.",
+        "en": "A theater court atmosphere: musicians play in the background, walls are covered in colorful canvases, and etiquette is as extravagant as it is relaxed."
+      }
+    },
+    {
+      "gov_tags": [
+        "feodalite",
+        "feodalite-standard",
+        "democratie-locale",
+        "cite-libre"
+      ],
+      "size_tags": [
+        "Grande Cité",
+        "Métropole",
+        "Capitale",
+        "Petite Ville"
+      ],
+      "desc": {
+        "fr": "C'est un bâtiment administratif classique et fonctionnel, avec ses bureaux encombrés de registres et ses secrétaires affairés.",
+        "en": "It's a classic and functional administrative building, with desks cluttered with ledgers and busy clerks."
+      }
+    },
+    {
+      "gov_tags": [
+        "feodalite-standard"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Une demeure locale, un peu plus robuste que les autres, avec un grand bureau couvert de registres de récoltes et de cartes des environs.",
+        "en": "A local dwelling, slightly sturdier than the rest, with a large desk covered in harvest ledgers and local maps."
+      }
+    }
+  ],
+  "events": [
+    {
+      "gov_tags": [
+        "democratie-locale",
+        "cite-libre",
+        "conseil-anciens"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Un groupe de citoyens dépose pacifiquement une pétition auprès des greffiers.",
+        "en": "A group of citizens is peacefully filing a petition with the clerks."
+      }
+    },
+    {
+      "gov_tags": [
+        "tradition",
+        "feodalite-standard"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Deux fermiers se disputent bruyamment pour une histoire de clôture abattue, cherchant un arbitrage.",
+        "en": "Two farmers are arguing loudly over a torn-down fence, seeking arbitration."
+      }
+    },
+    {
+      "gov_tags": [
+        "oligarchie-marchande",
+        "ploutocratie"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Des marchands influents sortent tout juste des appartements privés, le sourire aux lèvres et des bourses tintantes.",
+        "en": "Influential merchants just left the private chambers, smiling with clinking purses."
+      }
+    },
+    {
+      "gov_tags": [
+        "cartel-criminel",
+        "mafia",
+        "maire-verreux",
+        "oligarchie-corrompue"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Vous surprenez un échange discret entre un garde et une silhouette encapuchonnée glissant une lourde bourse dans son gantelet.",
+        "en": "You catch a discreet exchange between a guard and a hooded figure slipping a heavy purse into their gauntlet."
+      }
+    },
+    {
+      "gov_tags": [
+        "dictature-militaire",
+        "tyrannie",
+        "chef-de-guerre"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un officier aboie des ordres à une escouade de recrues terrifiées en train de récurer le sol.",
+        "en": "An officer barks orders at a squad of terrified recruits scrubbing the floor."
+      }
+    },
+    {
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un prêche enflammé résonne dans le hall, menaçant de damnation quiconque cache des hérésies.",
+        "en": "A fiery sermon echoes in the hall, threatening damnation to anyone hiding heresies."
+      }
+    },
+    {
+      "gov_tags": [
+        "bureaucratie-decadente",
+        "etat-failli",
+        "faiblesse-politique"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un scribe débordé pleure presque devant une montagne de plaintes non traitées. Le dirigeant est introuvable.",
+        "en": "An overwhelmed scribe is nearly crying over a mountain of unhandled complaints. The leader is nowhere to be found."
+      }
+    },
+    {
+      "gov_tags": [
+        "climat-terreur",
+        "police-secrete",
+        "isolationnisme"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Le lieu est exceptionnellement calme et oppressant... Chaque pas résonne comme une alarme.",
+        "en": "The place is exceptionally quiet and oppressive... Every footstep echoes like an alarm."
+      }
+    },
+    {
+      "gov_tags": [
+        "tyrannie",
+        "climat-terreur",
+        "loi-du-talion"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un garde annonce brutalement une sentence. Un pauvre bougre est traîné vers la cour pour y perdre une main.",
+        "en": "A guard brutally announces a sentence. A poor wretch is dragged to the courtyard to lose a hand."
+      }
+    },
+    {
+      "gov_tags": [
+        "oligarchie-marchande",
+        "inegalite",
+        "petit-baron",
+        "servage"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Un percepteur presse un paysan en pleurs, exigeant de nouvelles taxes inventées le matin même.",
+        "en": "A tax collector squeezes a crying peasant, demanding new taxes invented just this morning."
+      }
+    },
+    {
+      "gov_tags": [
+        "cartel-criminel",
+        "marionnette-locale",
+        "anarchie"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Des brutes patibulaires sont attablées en plein hall, se partageant le butin d'une extorsion au vu et au su de tous.",
+        "en": "Sinister thugs are sitting in the main hall, dividing extortion loot in plain sight."
+      }
+    },
+    {
+      "gov_tags": [
+        "magocratie",
+        "conseil-occulte",
+        "magocratie-locale",
+        "cabal-secrete"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Des érudits se disputent bruyamment autour d'un parchemin flottant au centre de la pièce.",
+        "en": "Scholars are arguing loudly around a parchment floating in the center of the room."
+      }
+    },
+    {
+      "gov_tags": [
+        "dictature-militaire",
+        "climat-terreur"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole"
+      ],
+      "desc": {
+        "fr": "Des soldats en armure lourde traînent des jeunes gens de force pour les enrôler dans la milice.",
+        "en": "Heavily armored soldiers are dragging young people by force to conscript them into the militia."
+      }
+    },
+    {
+      "gov_tags": [
+        "noblesse",
+        "inegalite",
+        "domaine-prive"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale",
+        "Hameau"
+      ],
+      "desc": {
+        "fr": "Un noble fait un scandale, exigeant qu'on fouette le serviteur qui a renversé une goutte de vin sur son manteau.",
+        "en": "A noble is causing a scene, demanding the whipping of a servant who spilled a drop of wine on his coat."
+      }
+    },
+    {
+      "gov_tags": [
+        "democratie-directe",
+        "commune-ouverte"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Les habitants déposent tour à tour une pierre blanche ou noire dans une urne en bois pour voter une décision.",
+        "en": "Residents take turns dropping a white or black stone in a wooden urn to vote on a decision."
+      }
+    },
+    {
+      "gov_tags": [
+        "bourgmestre-aubergiste",
+        "commune-ouverte"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Le dirigeant est en train de partager une chope de bière et un fou rire avec la milice et les marchands locaux.",
+        "en": "The leader is sharing a mug of ale and a good laugh with the militia and local merchants."
+      }
+    },
+    {
+      "gov_tags": [
+        "theocratie-rigide",
+        "inquisition",
+        "culte"
+      ],
+      "size_tags": [
+        "Village",
+        "Petite Ville",
+        "Grande Cité",
+        "Métropole",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Des inquisiteurs examinent sévèrement des reliques confisquées avant de les jeter dans un grand feu purificateur.",
+        "en": "Inquisitors strictly examine confiscated relics before throwing them into a large purifying fire."
+      }
+    },
+    {
+      "gov_tags": [
+        "gouvernance-mystique",
+        "chamanisme"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Le dirigeant semble en transe profonde. Une odeur de sauge remplit l'espace pendant qu'il consulte les esprits.",
+        "en": "The leader seems to be in a deep trance. A smell of sage fills the space while they consult the spirits."
+      }
+    },
+    {
+      "gov_tags": [
+        "anarchie",
+        "loi-du-talion"
+      ],
+      "size_tags": [
+        "Campement",
+        "Hameau",
+        "Village"
+      ],
+      "desc": {
+        "fr": "Une bagarre éclate violemment en plein milieu de la pièce. Personne n'intervient, c'est celui qui gagne qui aura raison.",
+        "en": "A violent brawl breaks out right in the middle of the room. No one intervenes; whoever wins will be right."
+      }
+    },
+    {
+      "gov_tags": [
+        "police-secrete",
+        "climat-terreur"
+      ],
+      "size_tags": [
+        "Petite Ville",
+        "Grande Cité",
+        "Capitale"
+      ],
+      "desc": {
+        "fr": "Des gardes masqués emmènent une personne encapuchonnée vers les sous-sols. On entend des suppliques étouffées.",
+        "en": "Masked guards are taking a hooded person to the basement. Muffled pleas can be heard."
+      }
+    },
+    {
+      "gov_tags": [
+        "gestion-ouvriere",
+        "contremaitre",
+        "gouvernement-de-guildes"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un responsable s'époumone en lisant les quotas de production de la semaine, menaçant de baisser les rations.",
+        "en": "A manager screams out the weekly production quotas, threatening to cut rations."
+      }
+    },
+    {
+      "gov_tags": [
+        "mecenat",
+        "gouvernement-populaire"
+      ],
+      "size_tags": [
+        "all"
+      ],
+      "desc": {
+        "fr": "Un barde termine une représentation sous les applaudissements du dirigeant, qui semble avoir oublié la file d'attente à sa porte.",
+        "en": "A bard finishes a performance to the applause of the leader, who seems to have forgotten the line of people waiting at their door."
+      }
+    }
+  ]
+}
