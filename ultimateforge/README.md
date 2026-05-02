@@ -1,29 +1,40 @@
-# 🏰 Avantis CityForge
+# 🌍 UltimateForge - Worldbuilding Suite (Foundry VTT)
 
-**Avantis CityForge** est un module de macro-génération urbaine pour Foundry VTT. Bien qu'il ait été conçu à l'origine pour l'univers post-apocalyptique d'**Avantis.World**, il est **universel** et fonctionne sur n'importe quel système de jeu (D&D5e, Pathfinder, etc.).
+**UltimateForge** est la suite ultime de création de mondes et de gestion de campagnes pour Foundry VTT. 
+Auparavant divisé en 6 modules distincts, l'écosystème entier a été refondu et unifié dans ce méga-module unique, offrant une expérience fluide, systémique et centralisée.
 
-## 🌟 Fonctionnalités
+Que vous gériez l'exploration d'un hexagone, la politique d'un royaume, l'économie d'une cité ou les événements narratifs d'un long voyage, UltimateForge lie tout cela dans une interface unifiée (le HUD UltimateForge).
 
-CityForge ne se contente pas de tirer des noms au hasard. Il génère un écosystème logique grâce à une approche en "cascade" :
-1. **L'Âme :** Tire l'origine du lieu, son âge et son ambiance selon le biome.
-2. **Le Corps :** Déduit le type de gouvernance (selon l'ambiance) et l'économie (selon le biome et l'origine).
-3. **La Structure :** Génère les quartiers et les points d'intérêts (Tavernes, Boutiques, Bâtiments officiels) en fonction de la taille de la ville et de son économie.
-4. **L'Interactivité (Le Micro-détail) :** Un clic sur un bâtiment génère à la volée un *Journal Foundry* détaillé (Vendeurs, Menus de tavernes, Objets à vendre).
+---
 
-### ⚔️ Intégration Avantis.World
-Si CityForge détecte qu'il est utilisé sur le système de jeu **Avantis**, il va encore plus loin :
-* Génération et création automatique des **Fiches d'Acteur (PNJ)** avec leurs attributs, leurs jauges de PVI/PVE (calculés selon la puissance du lieu) et leur équipement.
-* L'équipement, les armes, et le butin sont ajoutés physiquement dans l'inventaire du personnage, prêts à être utilisés !
+## 🛠️ Les Forges de l'Écosystème
 
-## 🛠️ Installation
+UltimateForge regroupe les outils suivants, qui interagissent tous entre eux :
 
-1. Copiez le dossier `avantis-cityforge` dans votre répertoire `Data/modules/` de Foundry VTT.
-2. Lancez Foundry VTT, allez dans la gestion de votre Monde, et activez le module **Avantis CityForge**.
-3. Dans la barre latérale, vous trouverez une icône pour lancer le générateur.
+* 🗺️ **HexForge** : Générateur et gestionnaire de cartes hexagonales. Définissez vos biomes, régions, ressources et points d'intérêt d'un simple clic.
+* 🏙️ **CityForge** : Bâtisseur d'infrastructures urbaines. Générez des villes cohérentes, des gouvernements, des économies locales, jusqu'aux auberges détaillées avec leurs menus, rumeurs et PNJ.
+* 🧭 **JourneyForge** : Le moteur narratif systémique. Déplacez vos joueurs sur la carte et laissez le moteur générer des scènes de voyage (météo, décors, événements de factions, rencontres) basées sur les tags de l'hexagone.
+* 👑 **RealmsForge** : Gestionnaire de royaumes et de factions. Suivez les tensions, les alliances et l'influence politique à l'échelle continentale.
+* ⚔️ **DungeonForge** *(À venir)* : Outil de conception et de génération de donjons dynamiques.
+* 🛡️ **GuildForge** *(À venir)* : Gestion approfondie des guildes, sectes et organisations pour vos joueurs et PNJ.
 
-## ⚙️ Personnalisation (Pour les MJ)
+---
 
-Toute la base de données est accessible et modifiable ! Vous pouvez ajouter vos propres régions, noms, objets et tavernes en éditant les fichiers JSON situés dans `data/avantis/` :
-* `names.json` : Base de noms et prénoms.
-* `shops_loot.json` : Tables de loot et prix pour les boutiques.
-* `districts.json` : Quartiers disponibles.
+## ⚙️ Installation
+
+**⚠️ AVERTISSEMENT IMPORTANT :** Si vous utilisiez les anciennes versions séparées (ex: *Avantis HexForge*, *Avantis CityForge*, etc.), **désinstallez-les** avant d'installer UltimateForge pour éviter tout conflit.
+
+1. Ouvrez Foundry VTT, allez dans l'onglet **Modules Add-on**.
+2. Cliquez sur **Install Module**.
+3. Dans le champ "Manifest URL", collez le lien suivant :
+   `https://raw.githubusercontent.com/gilshyran/Projet_UltimateForge/refs/heads/main/ultimateforge/module.json`
+4. Cliquez sur **Install**.
+5. Dans votre monde, activez le module **UltimateForge**. Le bouton d'accès au HUD apparaîtra dans vos contrôles de tokens (côté MJ).
+
+---
+
+## 📖 Utilisation Rapide
+En tant que Maître de Jeu, sélectionnez l'outil **UltimateForge HUD** (l'icône de globe) dans la barre de contrôle des tokens. Depuis cette interface centrale, vous pouvez contrôler l'heure, forcer la météo, et lancer n'importe quelle "Forge" pour construire votre session en direct.
+
+---
+*Créé par Ours_glace (Avantis.world) - Compatible avec Foundry VTT v12+*

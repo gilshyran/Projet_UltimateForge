@@ -431,16 +431,11 @@ export class AvantisRealmsForgeApp extends HandlebarsApplicationMixin(Applicatio
             const influences = { ...(hexData.influence || {}) };
             let currentScore = influences[factionId] || 0;
             
+            // Définition du nouveau score
             if (isPlus) currentScore = Math.min(5, currentScore + 1);
             else currentScore = Math.max(0, currentScore - 1);
             
-            if (currentScore === 0) {
-                delete influences[factionId];
-                influences[`-=${factionId}`] = null; 
-            } else {
-                influences[factionId] = currentScore;
-            }
-
+            // Calcul des nouvelles ambiances (Vibe Tags)
             let newVibeTags = [...(hexData.vibe_tags || [])];
             if (currentScore >= 3) {
                 const allFactions = game.settings.get("ultimateforge", "factionsData") || {};
@@ -457,14 +452,21 @@ export class AvantisRealmsForgeApp extends HandlebarsApplicationMixin(Applicatio
                 }
             }
 
-            let unsets = {};
-            unsets[`flags.ultimateforge.${targetHexId}.-=vibe_tags`] = null;
-            await canvas.scene.update(unsets);
+            // Moteur V14 : On prépare un seul objet de mise à jour propre
+            let updates = {};
+            
+            // A. Mise à jour de l'influence (si 0, on supprime la clé en V14 avec null)
+            if (currentScore === 0) {
+                updates[`flags.ultimateforge.${targetHexId}.influence.${factionId}`] = null; 
+            } else {
+                updates[`flags.ultimateforge.${targetHexId}.influence.${factionId}`] = currentScore;
+            }
 
-            let sets = {};
-            sets[`flags.ultimateforge.${targetHexId}.influence`] = influences;
-            sets[`flags.ultimateforge.${targetHexId}.vibe_tags`] = newVibeTags;
-            await canvas.scene.update(sets);
+            // B. Remplacement direct des Vibe Tags
+            updates[`flags.ultimateforge.${targetHexId}.vibe_tags`] = newVibeTags;
+
+            // Envoi unique à la base de données
+            await canvas.scene.update(updates);
             
             AvantisRealmsForgeApp.drawPoliticalMap();
             this._saveScroll();
@@ -583,8 +585,8 @@ export class AvantisRealmsForgeApp extends HandlebarsApplicationMixin(Applicatio
                 let flagUpdates = {};
                 for (const [hexId, hexData] of Object.entries(allHexes)) {
                     if (hexData.region === regionId) {
-                        flagUpdates[`flags.ultimateforge.${hexId}.-=vibe_tags`] = null;
-                        flagUpdates[`flags.ultimateforge.${hexId}.-=eco_tags`] = null;
+                        flagUpdates[`flags.ultimateforge.${hexId}.vibe_tags`] = null;
+                        flagUpdates[`flags.ultimateforge.${hexId}.eco_tags`] = null;
                     }
                 }
                 if (Object.keys(flagUpdates).length > 0) {
@@ -613,8 +615,8 @@ export class AvantisRealmsForgeApp extends HandlebarsApplicationMixin(Applicatio
 
                 for (const [hexId, hexData] of Object.entries(allHexes)) {
                     if (hexData.region === regionId && hexData.cityJournalId) {
-                        flagUpdates[`flags.ultimateforge.${hexId}.-=cityJournalId`] = null;
-                        flagUpdates[`flags.ultimateforge.${hexId}.-=occupation`] = null; 
+                        flagUpdates[`flags.ultimateforge.${hexId}.cityJournalId`] = null;
+                        flagUpdates[`flags.ultimateforge.${hexId}.occupation`] = null; 
                         flagUpdates[`flags.ultimateforge.${hexId}.overlay`] = "ruines_cite";
                         const tile = canvas.scene.tiles.find(t => t.flags["ultimateforge"]?.hexId === hexId);
                         if (tile) tileUpdates.push({ _id: tile.id, "texture.src": ruinsPath });
@@ -690,10 +692,8 @@ export class AvantisRealmsForgeApp extends HandlebarsApplicationMixin(Applicatio
                         });
                     }
 
-                    flagUnsets[`flags.ultimateforge.${hexId}.-=vibe_tags`] = null;
-                    flagSets[`flags.ultimateforge.${hexId}.influence`] = influences;
+                    flagSets[`flags.ultimateforge.${hexId}.influence.${factionId}`] = newScore;
                     flagSets[`flags.ultimateforge.${hexId}.vibe_tags`] = newVibeTags;
-                    
                     hexCount++;
                 }
             }

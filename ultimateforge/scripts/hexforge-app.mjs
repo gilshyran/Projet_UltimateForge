@@ -361,10 +361,10 @@ export class HexForgeEditor extends HandlebarsApplicationMixin(ApplicationV2) {
             });
 
             if (confirm) {
-                await canvas.scene.setFlag("ultimateforge", this.hexId, { 
-                    "-=cityJournalId": null,
-                    "-=occupation": null, 
-                    "overlay": "ruines_cite"
+                await canvas.scene.update({ 
+                    [`flags.ultimateforge.${this.hexId}.cityJournalId`]: null,
+                    [`flags.ultimateforge.${this.hexId}.occupation`]: null, 
+                    [`flags.ultimateforge.${this.hexId}.overlay`]: "ruines_cite"
                 });
                 
                 const existingTile = canvas.scene.tiles.find(t => t.flags["ultimateforge"]?.hexId === this.hexId);
@@ -647,26 +647,26 @@ export class HexForgeManager {
 
         let updates = {};
         
+        let sceneUpdates = {};
+        
         if (HexForgeManager.brushRegion === "none") {
-            updates["-=region"] = null; 
+            sceneUpdates[`flags.ultimateforge.${hex.id}.region`] = null; 
         } else if (HexForgeManager.brushRegion) {
-            updates["region"] = HexForgeManager.brushRegion;
+            sceneUpdates[`flags.ultimateforge.${hex.id}.region`] = HexForgeManager.brushRegion;
         }
-
         if (HexForgeManager.brushBiome === "none") {
-            updates["-=biome"] = null; 
+            sceneUpdates[`flags.ultimateforge.${hex.id}.biome`] = null; 
         } else if (HexForgeManager.brushBiome) {
-            updates["biome"] = HexForgeManager.brushBiome;
+            sceneUpdates[`flags.ultimateforge.${hex.id}.biome`] = HexForgeManager.brushBiome;
         }
-
         if (HexForgeManager.brushTrait === "none") {
-            updates["-=trait"] = null; 
+            sceneUpdates[`flags.ultimateforge.${hex.id}.trait`] = null; 
         } else if (HexForgeManager.brushTrait) {
-            updates["trait"] = HexForgeManager.brushTrait;
+            sceneUpdates[`flags.ultimateforge.${hex.id}.trait`] = HexForgeManager.brushTrait;
         }
         
-        if (Object.keys(updates).length > 0) {
-            await canvas.scene.setFlag("ultimateforge", hex.id, updates);
+        if (Object.keys(sceneUpdates).length > 0) {
+            await canvas.scene.update(sceneUpdates);
         }
     }
 
